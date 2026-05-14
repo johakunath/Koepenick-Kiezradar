@@ -10,6 +10,7 @@ interface WeeklyViewProps {
 
 function getWeekStats(entries: Entry[]) {
   const electionCount = entries.filter((e) => e.election_relevant).length;
+  const eventCount = entries.filter((e) => e.tags.includes("veranstaltung")).length;
 
   const tagCounts = entries
     .flatMap((e) => e.tags)
@@ -22,11 +23,15 @@ function getWeekStats(entries: Entry[]) {
     | Tag
     | undefined;
 
-  return { electionCount, topTag };
+  const topEntries = [...entries]
+    .sort((a, b) => b.local_relevance_score - a.local_relevance_score)
+    .slice(0, 5);
+
+  return { electionCount, eventCount, topEntries, topTag };
 }
 
 export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
-  const { electionCount, topTag } = getWeekStats(entries);
+  const { electionCount, eventCount, topEntries, topTag } = getWeekStats(entries);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
@@ -56,7 +61,7 @@ export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
         </div>
 
         <div
-          className="flex gap-4 text-sm mb-8 p-4 rounded-lg"
+          className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm mb-6 p-4 rounded-lg"
           style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
         >
           <div>
@@ -74,10 +79,6 @@ export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
               Einträge
             </p>
           </div>
-          <div
-            className="w-px self-stretch"
-            style={{ background: "var(--border)" }}
-          />
           <div>
             <span
               style={{
@@ -93,33 +94,63 @@ export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
               wahlrelevant
             </p>
           </div>
+          <div>
+            <span
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontWeight: 600,
+                fontSize: "1.5rem",
+                color: "var(--forest)",
+              }}
+            >
+              {eventCount}
+            </span>
+            <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
+              Veranstaltungen
+            </p>
+          </div>
           {topTag && (
-            <>
-              <div
-                className="w-px self-stretch"
-                style={{ background: "var(--border)" }}
-              />
-              <div>
-                <span
-                  style={{
-                    fontFamily: "var(--font-fraunces)",
-                    fontWeight: 600,
-                    fontSize: "1rem",
-                    color: "var(--forest)",
-                  }}
-                >
-                  {TAG_LABELS[topTag]}
-                </span>
-                <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
-                  Top-Thema
-                </p>
-              </div>
-            </>
+            <div>
+              <span
+                style={{
+                  fontFamily: "var(--font-fraunces)",
+                  fontWeight: 600,
+                  fontSize: "1rem",
+                  color: "var(--water-deep)",
+                }}
+              >
+                {TAG_LABELS[topTag]}
+              </span>
+              <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
+                Top-Thema
+              </p>
+            </div>
           )}
         </div>
 
+        <section
+          className="mb-8 rounded-lg p-5"
+          style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
+        >
+          <h2
+            className="text-xl mb-2"
+            style={{
+              fontFamily: "var(--font-fraunces)",
+              fontWeight: 600,
+              color: "var(--water-deep)",
+            }}
+          >
+            Wochenfazit
+          </h2>
+          <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+            Diese Skizze wird später automatisch aus echten Meldungen und Veranstaltungen
+            zusammengefasst. Bis dahin zeigt sie die wichtigsten Einträge der Woche nach lokaler
+            Relevanz.
+          </p>
+        </section>
+
         <div className="space-y-4">
-          {entries.map((entry) => (
+          {topEntries.map((entry) => (
             <EntryCard key={entry.id} entry={entry} />
           ))}
         </div>

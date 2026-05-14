@@ -2,10 +2,13 @@
   "name": "koepenick-kiezradar",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.25.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "ingest": "node scripts/ingest.mjs",
+    "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-claude"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",

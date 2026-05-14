@@ -25,6 +25,7 @@ Hyperlokales Monitoring-Tool für Berlin-Köpenick. Aggregiert lokale Meldungen 
 - Verwaltung / BVV / Bezirksamt
 - Lokale Politik & Wahl 2026
 - Infrastruktur
+- Veranstaltungen
 - Sonstiges
 
 ### Out of Scope v0
@@ -41,7 +42,8 @@ Hyperlokales Monitoring-Tool für Berlin-Köpenick. Aggregiert lokale Meldungen 
 ### v0 — Must-have
 | Quelle | Typ | Status |
 |---|---|---|
-| Polizei Berlin Pressemeldungen | RSS / Atom | https://www.berlin.de/polizei/polizeimeldungen/index/rss.php |
+| Polizei Berlin Pressemeldungen | Webseite, RSS falls verfügbar | https://www.berlin.de/polizei/polizeimeldungen/ |
+| Berlin.de Veranstaltungskalender Treptow-Köpenick | Webseite | https://www.berlin.de/land/kalender/index.php?c=13&suchmaske= |
 | Bezirksamt Treptow-Köpenick Pressemitteilungen | RSS / Webseite | https://www.berlin.de/ba-treptow-koepenick/aktuelles/ |
 | BVV Treptow-Köpenick (Ratsinformationssystem) | OParl API / Webseite | https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/ |
 
@@ -57,6 +59,7 @@ Hyperlokales Monitoring-Tool für Berlin-Köpenick. Aggregiert lokale Meldungen 
 {
   "id": "uuid",
   "source": "polizei-berlin",
+  "source_id": "polizei-berlin",
   "source_url": "https://...",
   "title": "Originaltitel",
   "published_at": "2026-05-14T10:00:00Z",
@@ -69,7 +72,9 @@ Hyperlokales Monitoring-Tool für Berlin-Köpenick. Aggregiert lokale Meldungen 
   "local_relevance_score": 0.85,
   "political_relevance_score": 0.3,
   "election_relevant": false,
-  "ai_reasoning": "Warum diese Meldung für Köpenick relevant ist (1 Satz)"
+  "ai_reasoning": "Warum diese Meldung für Köpenick relevant ist (1 Satz)",
+  "event_start_at": null,
+  "venue": null
 }
 ```
 
@@ -115,7 +120,7 @@ Scores 0–1, von KI vergeben. Schwellenwert konfigurierbar.
 
 ### `/` Feed (Mobile-first)
 - Header: Logo + Subtitle + Wochen-Link
-- Tag-Filter: 6 Toggle-Chips
+- Tag-Filter: 7 Toggle-Chips
 - Liste: Cards mit Datum, Titel, KI-Summary (2 Zeilen), Tags, Quelle (Link)
 - Klick auf Card → öffnet Originalquelle in neuem Tab
 - Footer: Disclaimer, "Generiert am [Datum]"
@@ -164,20 +169,21 @@ KI markiert Einträge, die zu diesen Themen passen, mit `election_relevant: true
 
 ## 11. Roadmap
 
-### Iteration 1 — Klickbarer Prototyp (1 Wochenende)
+### Iteration 1 — Klickbarer Prototyp (abgeschlossen)
 - Next.js Skeleton
 - Statische Mock-Daten in `entries.json`
 - Feed + Filter funktionieren
 - Eine Designrichtung umgesetzt
 - Disclaimer-Footer
-- Deploy auf Vercel
+- Vercel-Deployment als nächster operativer Schritt
 
 ### Iteration 2 — Erste echte Daten + KI
 - Polizei-RSS ziehen via GitHub Action
+- Berlin.de Veranstaltungskalender Treptow-Köpenick ziehen
 - Claude API Enrichment Pipeline
 - `entries.json` automatisch aktualisiert
-- BVV OParl-Anbindung (komplexer)
-- Bezirksamt-Scraping
+- Monatsarchiv unter `data/archive/YYYY-MM.json`
+- BVV OParl und Bezirksamt erst nach stabilem Polizei-/Event-Import
 
 ### Iteration 3 — Wochenüberblick + zweite Welle Quellen
 - `/woche`-Seite

@@ -17,7 +17,7 @@ export default function Footer() {
             <span style={{ fontFamily: "var(--font-fraunces)", fontWeight: 500 }}>
               Köpenick Kiezradar
             </span>{" "}
-            · Iteration 1 · Mock-Daten
+            · Iteration 2 vorbereitet · Mock- und künftig Echt-Daten
           </p>
           <p className="leading-relaxed">
             Privates Lern- und Experimentierprojekt. Keine offizielle Quelle. Alle Inhalte sind

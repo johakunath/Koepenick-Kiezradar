@@ -164,5 +164,25 @@
     "election_topic": "Wohnen",
     "ai_reasoning": "Wohnen ist das Top-Wahlthema, konkreter Bauantrag in unmittelbarer Nachbarschaft.",
     "is_mock": true
+  },
+  {
+    "id": "11",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
+    "title": "Nachbarschaftlicher Aktionstag im Volkspark Köpenick",
+    "published_at": "2026-05-15T08:00:00Z",
+    "ingested_at": "2026-05-15T09:00:00Z",
+    "raw_excerpt": "Öffentliche Veranstaltung im Bezirk mit Mitmachangeboten und Austausch für Anwohnerinnen und Anwohner.",
+    "ai_summary": "Ein öffentlicher Aktionstag bringt Nachbarschaft, Vereine und lokale Initiativen im Volkspark Köpenick zusammen.",
+    "tags": ["veranstaltung"],
+    "location": "Volkspark Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.72,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung ist lokal erreichbar und stärkt Austausch im unmittelbaren Kiez.",
+    "event_start_at": "2026-05-22T14:00:00+02:00",
+    "venue": "Volkspark Köpenick",
+    "is_mock": true
   }
 ]

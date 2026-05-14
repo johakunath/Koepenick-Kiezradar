@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Polizei Berlin</title>
+    <item>
+      <title>Verkehrsunfall in Köpenick</title>
+      <link>https://www.berlin.de/polizei/polizeimeldungen/fixture-koepenick</link>
+      <guid>fixture-koepenick</guid>
+      <pubDate>Fri, 15 May 2026 08:00:00 +0200</pubDate>
+      <description>In der Bahnhofstraße in Köpenick kam es zu einem Verkehrsunfall.</description>
+    </item>
+  </channel>
+</rss>

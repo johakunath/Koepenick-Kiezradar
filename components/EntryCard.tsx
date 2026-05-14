@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowUpRight, MapPin, Vote, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowUpRight, CalendarDays, ChevronDown, ChevronUp, MapPin } from "lucide-react";
 import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 
@@ -15,12 +15,27 @@ function timeAgo(iso: string): string {
   return `vor ${days} Tag${days > 1 ? "en" : ""}`;
 }
 
+function formatEventDate(iso?: string): string | null {
+  if (!iso) return null;
+
+  return new Date(iso).toLocaleString("de-DE", {
+    day: "numeric",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
 interface EntryCardProps {
   entry: Entry;
 }
 
 export default function EntryCard({ entry }: EntryCardProps) {
   const [reasoningOpen, setReasoningOpen] = useState(false);
+  const eventDate = formatEventDate(entry.event_start_at);
+  const reasoning =
+    entry.ai_reasoning ??
+    "Noch keine KI-Begründung vorhanden. Maßgeblich bleibt die Originalquelle.";
 
   return (
     <article
@@ -39,23 +54,6 @@ export default function EntryCard({ entry }: EntryCardProps) {
         (e.currentTarget as HTMLElement).style.boxShadow = "none";
       }}
     >
-      {entry.election_relevant && entry.election_topic && (
-        <div
-          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded mb-3 w-full"
-          style={{
-            background: "linear-gradient(135deg, rgba(156,74,46,0.08), rgba(156,74,46,0.15))",
-            color: "var(--brick)",
-            border: "1px solid rgba(156,74,46,0.2)",
-            letterSpacing: "0.03em",
-            textTransform: "uppercase",
-            fontSize: "11px",
-          }}
-        >
-          <Vote size={12} />
-          <span>Wahlrelevant · {entry.election_topic}</span>
-        </div>
-      )}
-
       <div className="flex items-center gap-2 mb-3 flex-wrap">
         {entry.tags.map((t: Tag, i: number) => (
           <span key={t}>
@@ -94,6 +92,23 @@ export default function EntryCard({ entry }: EntryCardProps) {
       <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
         {entry.ai_summary}
       </p>
+
+      {eventDate && (
+        <div
+          className="flex flex-wrap items-center gap-3 text-xs mb-4 px-3 py-2 rounded"
+          style={{
+            background: "rgba(74, 107, 58, 0.08)",
+            border: "1px solid rgba(74, 107, 58, 0.18)",
+            color: "var(--forest)",
+          }}
+        >
+          <span className="flex items-center gap-1">
+            <CalendarDays size={12} />
+            {eventDate}
+          </span>
+          {entry.venue && <span>{entry.venue}</span>}
+        </div>
+      )}
 
       <div className="mb-3">
         <div
@@ -165,7 +180,7 @@ export default function EntryCard({ entry }: EntryCardProps) {
           className="text-xs mt-1 leading-relaxed"
           style={{ color: "var(--ink-soft)", fontStyle: "italic" }}
         >
-          {entry.ai_reasoning}
+          {reasoning}
         </p>
       )}
     </article>
