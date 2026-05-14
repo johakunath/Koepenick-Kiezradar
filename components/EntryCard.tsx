@@ -1,0 +1,173 @@
+"use client";
+
+import { useState } from "react";
+import { ArrowUpRight, MapPin, Vote, ChevronDown, ChevronUp } from "lucide-react";
+import type { Entry, Tag } from "@/lib/types";
+import { TAG_LABELS } from "@/lib/types";
+
+function timeAgo(iso: string): string {
+  const now = new Date();
+  const d = new Date(iso);
+  const hours = Math.floor((now.getTime() - d.getTime()) / (1000 * 60 * 60));
+  if (hours < 1) return "gerade eben";
+  if (hours < 24) return `vor ${hours} Std.`;
+  const days = Math.floor(hours / 24);
+  return `vor ${days} Tag${days > 1 ? "en" : ""}`;
+}
+
+interface EntryCardProps {
+  entry: Entry;
+}
+
+export default function EntryCard({ entry }: EntryCardProps) {
+  const [reasoningOpen, setReasoningOpen] = useState(false);
+
+  return (
+    <article
+      className="rounded-lg p-5 transition-all duration-150 hover:-translate-y-px"
+      style={{
+        background: "var(--bg-card)",
+        border: "1px solid var(--border)",
+      }}
+      onMouseEnter={(e) => {
+        (e.currentTarget as HTMLElement).style.borderColor = "var(--water-mid)";
+        (e.currentTarget as HTMLElement).style.boxShadow =
+          "0 4px 16px -8px rgba(31, 78, 107, 0.2)";
+      }}
+      onMouseLeave={(e) => {
+        (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
+        (e.currentTarget as HTMLElement).style.boxShadow = "none";
+      }}
+    >
+      {entry.election_relevant && entry.election_topic && (
+        <div
+          className="flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded mb-3 w-full"
+          style={{
+            background: "linear-gradient(135deg, rgba(156,74,46,0.08), rgba(156,74,46,0.15))",
+            color: "var(--brick)",
+            border: "1px solid rgba(156,74,46,0.2)",
+            letterSpacing: "0.03em",
+            textTransform: "uppercase",
+            fontSize: "11px",
+          }}
+        >
+          <Vote size={12} />
+          <span>Wahlrelevant · {entry.election_topic}</span>
+        </div>
+      )}
+
+      <div className="flex items-center gap-2 mb-3 flex-wrap">
+        {entry.tags.map((t: Tag, i: number) => (
+          <span key={t}>
+            {i > 0 && (
+              <span className="mr-2" style={{ color: "var(--ink-soft)" }}>
+                ·
+              </span>
+            )}
+            <span
+              style={{
+                color: "var(--water-deep)",
+                fontSize: "11px",
+                letterSpacing: "0.04em",
+                textTransform: "uppercase",
+                fontWeight: 500,
+              }}
+            >
+              {TAG_LABELS[t]}
+            </span>
+          </span>
+        ))}
+      </div>
+
+      <h2
+        className="text-xl leading-snug mb-2"
+        style={{
+          fontFamily: "var(--font-fraunces)",
+          fontWeight: 500,
+          letterSpacing: "-0.01em",
+          color: "var(--ink)",
+        }}
+      >
+        {entry.title}
+      </h2>
+
+      <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
+        {entry.ai_summary}
+      </p>
+
+      <div className="mb-3">
+        <div
+          className="flex items-center justify-between text-xs mb-1"
+          style={{ color: "var(--ink-soft)" }}
+        >
+          <span>Lokale Relevanz</span>
+          <span style={{ fontFamily: "var(--font-fraunces)", fontWeight: 500 }}>
+            {Math.round(entry.local_relevance_score * 100)} %
+          </span>
+        </div>
+        <div
+          style={{
+            height: "3px",
+            background: "var(--border)",
+            borderRadius: "999px",
+            overflow: "hidden",
+          }}
+        >
+          <div
+            style={{
+              height: "100%",
+              width: `${entry.local_relevance_score * 100}%`,
+              background: "linear-gradient(90deg, var(--water-mid), var(--water-deep))",
+            }}
+          />
+        </div>
+      </div>
+
+      <div
+        className="flex items-center justify-between gap-3 pt-3"
+        style={{ borderTop: "1px solid var(--border)" }}
+      >
+        <div className="flex items-center gap-3 text-xs" style={{ color: "var(--ink-soft)" }}>
+          <span className="flex items-center gap-1">
+            <MapPin size={12} />
+            {entry.location}
+          </span>
+          <span>{timeAgo(entry.published_at)}</span>
+        </div>
+        <a
+          href={entry.source_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-1 text-xs font-medium transition-colors"
+          style={{ color: "var(--water-mid)" }}
+          onMouseEnter={(e) =>
+            ((e.currentTarget as HTMLElement).style.color = "var(--water-deep)")
+          }
+          onMouseLeave={(e) =>
+            ((e.currentTarget as HTMLElement).style.color = "var(--water-mid)")
+          }
+        >
+          {entry.source}
+          <ArrowUpRight size={12} />
+        </a>
+      </div>
+
+      <button
+        onClick={() => setReasoningOpen((v) => !v)}
+        className="flex items-center gap-1 text-xs mt-3 transition-opacity opacity-60 hover:opacity-100"
+        style={{ color: "var(--ink-soft)" }}
+      >
+        {reasoningOpen ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+        Warum relevant?
+      </button>
+      {reasoningOpen && (
+        <p
+          className="text-xs mt-1 leading-relaxed"
+          style={{ color: "var(--ink-soft)", fontStyle: "italic" }}
+        >
+          {entry.ai_reasoning}
+        </p>
+      )}
+    </article>
+  );
+}

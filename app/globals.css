@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f4ede0;
+  --bg-card: #faf6ec;
+  --water-deep: #1f4e6b;
+  --water-mid: #3a7396;
+  --water-light: #c9dde6;
+  --forest: #4a6b3a;
+  --sand: #d4c4a8;
+  --ink: #1a2933;
+  --ink-soft: #4a5a64;
+  --brick: #9c4a2e;
+  --border: #e0d6c2;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-card: var(--bg-card);
+  --color-water-deep: var(--water-deep);
+  --color-water-mid: var(--water-mid);
+  --color-water-light: var(--water-light);
+  --color-forest: var(--forest);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-brick: var(--brick);
+  --color-border: var(--border);
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter-tight);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter-tight), system-ui, sans-serif;
+}
