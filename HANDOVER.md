@@ -28,14 +28,14 @@ Vollständiges Briefing: `PRD.md`.
 - **Design-System**: Kiez/Wasser/Wald-Palette, Fraunces + Inter Tight Fonts
 - **Entry-Cards**: KI-Summary, Relevanz-Balken, „Warum relevant?"-Klapptext, Veranstaltungs-Datum
 - **10 Mock-Einträge** in `data/entries.json` (werden durch ersten echten Ingest ersetzt)
-- **Ingestion-Script** `scripts/ingest.mjs` — Polizei RSS + Berlin.de Veranstaltungskalender + Claude Enrichment
+- **Ingestion-Script** `scripts/ingest.mjs` — Polizei RSS + Berlin.de Veranstaltungskalender + Gemini Enrichment
 - **GitHub Action** `.github/workflows/daily-ingest.yml` — täglich 04:00 UTC (= 06:00 CEST)
 - **Archiv-Struktur** vorbereitet (`data/archive/`, `data/weekly/`)
 - **AGENTS.md** für Georg / Codex
 
 ### ⏳ Noch zu tun
 
-- [ ] `ANTHROPIC_API_KEY` als GitHub Secret setzen (Settings → Secrets → Actions)
+- [ ] `GEMINI_API_KEY` als GitHub Secret setzen (Settings → Secrets → Actions)
 - [ ] GitHub Action manuell triggern und erstes echtes Ergebnis prüfen
 - [ ] Mock-Daten durch echte Daten ersetzen (passiert automatisch beim ersten Ingest)
 - [ ] Bezirksamt-Scraping (Iteration 3)
@@ -51,7 +51,7 @@ pnpm install
 pnpm dev              # → http://localhost:3000
 pnpm build            # Produktions-Build testen
 pnpm ingest:dry       # Ingest testen ohne API-Key und ohne Schreiben
-ANTHROPIC_API_KEY=xxx pnpm ingest   # Echter Ingest mit Claude-Enrichment
+GEMINI_API_KEY=xxx pnpm ingest   # Echter Ingest mit Gemini-Enrichment
 ```
 
 ---
@@ -67,7 +67,7 @@ ANTHROPIC_API_KEY=xxx pnpm ingest   # Echter Ingest mit Claude-Enrichment
 | Archiv | `data/archive/YYYY-MM.json` | ✅ vorbereitet |
 | Ingestion | `scripts/ingest.mjs` (pures Node.js, keine Extra-Deps) | ✅ bereit |
 | Cron | GitHub Action `daily-ingest.yml` | ✅ konfiguriert |
-| KI | Claude API via `ANTHROPIC_API_KEY` env-var | ⏳ Secret setzen |
+| KI | Gemini API (Free Tier) via `GEMINI_API_KEY` env-var | ⏳ Secret setzen |
 | Paketmanager | pnpm | ✅ |
 
 ---
@@ -96,7 +96,7 @@ ANTHROPIC_API_KEY=xxx pnpm ingest   # Echter Ingest mit Claude-Enrichment
 │   ├── archive/              # Monatsarchive YYYY-MM.json
 │   └── weekly/               # Spätere KI-Wochenfazits
 ├── scripts/
-│   ├── ingest.mjs            # Polizei + Veranstaltungen + Claude-Enrichment
+│   ├── ingest.mjs            # Polizei + Veranstaltungen + Gemini-Enrichment
 │   └── fixtures/             # Test-Fixtures für --dry-run
 ├── .github/workflows/
 │   └── daily-ingest.yml      # Täglicher Cron 04:00 UTC
@@ -172,4 +172,4 @@ Top-5-Wahlthemen:
 
 ---
 
-*Letzte Aktualisierung: 15.05.2026 — Iteration 2 Pipeline fertig, wartet auf ANTHROPIC_API_KEY Secret*
+*Letzte Aktualisierung: 15.05.2026 — Iteration 2 Pipeline fertig, wartet auf GEMINI_API_KEY Secret*

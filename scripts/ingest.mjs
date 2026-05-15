@@ -45,7 +45,7 @@ function parseArgs() {
 
   return {
     dryRun: args.has("--dry-run"),
-    skipClaude: args.has("--skip-claude"),
+    skipClaude: args.has("--skip-ai") || args.has("--skip-claude"),
     fixturePolice: valueAfter("--fixture-polizei"),
     fixtureEvents: valueAfter("--fixture-events"),
     limit: Number(valueAfter("--limit") ?? "25"),
@@ -229,7 +229,7 @@ function parseGermanDate(text) {
 
 function parseEventsHtml(html) {
   const eventLinks = [
-    ...html.matchAll(/<a\b[^>]*href="([^"]*kalender[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi),
+    ...html.matchAll(/<a\b[^>]*href="([^"]*kalender[^"]*)"|[^>]*>([\s\S]*?)<\/a>/gi),
   ];
   const seen = new Set();
 
@@ -271,44 +271,41 @@ function parseEventsHtml(html) {
     .slice(0, 20);
 }
 
-async function enrichWithClaude(entries, { skipClaude }) {
+async function enrichWithAI(entries, { skipClaude }) {
   if (skipClaude || entries.length === 0) return entries;
 
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) {
-    throw new Error("ANTHROPIC_API_KEY fehlt. Für lokale Tests nutze --skip-claude.");
+    throw new Error("GEMINI_API_KEY fehlt. Für lokale Tests nutze --skip-ai.");
   }
 
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01",
-    },
-    body: JSON.stringify({
-      model: process.env.CLAUDE_MODEL ?? "claude-sonnet-4-5",
-      max_tokens: 4000,
-      messages: [
-        {
-          role: "user",
-          content:
-            "Du enrichst Einträge für Köpenick Kiezradar. Antworte ausschließlich als JSON-Array. Behalte id bei. Felder: id, ai_summary, tags, location, location_relevant, local_relevance_score, political_relevance_score, election_relevant, election_topic, ai_reasoning. Tags nur aus: " +
-            TAGS.join(", ") +
-            ". Events nur dann politisch bewerten, wenn sie inhaltlich Wahl-/Politikbezug haben.\n\n" +
-            JSON.stringify(entries, null, 2),
-        },
-      ],
-    }),
-  });
+  const model = process.env.GEMINI_MODEL ?? "gemini-1.5-flash";
+  const prompt =
+    "Du enrichst Einträge für Köpenick Kiezradar. Antworte ausschließlich als JSON-Array. Behalte id bei. Felder: id, ai_summary, tags, location, location_relevant, local_relevance_score, political_relevance_score, election_relevant, election_topic, ai_reasoning. Tags nur aus: " +
+    TAGS.join(", ") +
+    ". Events nur dann politisch bewerten, wenn sie inhaltlich Wahl-/Politikbezug haben.\n\n" +
+    JSON.stringify(entries, null, 2);
+
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: prompt }] }],
+        generationConfig: { maxOutputTokens: 4000 },
+      }),
+    }
+  );
 
   if (!response.ok) {
-    throw new Error(`Claude API failed ${response.status}: ${await response.text()}`);
+    throw new Error(`Gemini API failed ${response.status}: ${await response.text()}`);
   }
 
   const payload = await response.json();
-  const text = payload.content?.find((part) => part.type === "text")?.text ?? "[]";
-  const enriched = JSON.parse(text);
+  const text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "[]";
+  const jsonMatch = text.match(/\[[\s\S]*\]/);
+  const enriched = JSON.parse(jsonMatch?.[0] ?? "[]");
   const byId = new Map(enriched.map((entry) => [entry.id, entry]));
 
   return entries.map((entry) => ({ ...entry, ...(byId.get(entry.id) ?? {}) }));
@@ -356,7 +353,7 @@ async function main() {
   ].slice(0, options.limit);
   const knownIds = new Set(existing.map((entry) => entry.id));
   const newEntries = rawEntries.filter((entry) => !knownIds.has(entry.id));
-  const enriched = await enrichWithClaude(newEntries, options);
+  const enriched = await enrichWithAI(newEntries, options);
   const merged = mergeEntries(existing, enriched);
 
   console.log(
