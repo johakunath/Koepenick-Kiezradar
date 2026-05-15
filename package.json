@@ -8,11 +8,13 @@
     "build": "next build",
     "start": "next start",
     "ingest": "node scripts/ingest.mjs",
-    "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai"
+    "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai",
+    "weekly-digest": "node scripts/weekly-digest.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",
     "next": "16.2.6",
+    "pdf-parse": "^2.4.5",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },

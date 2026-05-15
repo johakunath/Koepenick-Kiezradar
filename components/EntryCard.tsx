@@ -117,6 +117,23 @@ export default function EntryCard({ entry }: EntryCardProps) {
         </div>
       )}
 
+      {entry.pdf_excerpt && entry.document_type === "pdf" && (
+        <div
+          className="text-xs mb-4 px-3 py-2 rounded leading-relaxed"
+          style={{
+            background: "rgba(31, 78, 107, 0.06)",
+            border: "1px solid rgba(31, 78, 107, 0.14)",
+            color: "var(--ink-soft)",
+            fontStyle: "italic",
+          }}
+        >
+          <span style={{ color: "var(--water-deep)", fontStyle: "normal", fontWeight: 500 }}>
+            Auszug S. {entry.pdf_page}:{" "}
+          </span>
+          {entry.pdf_excerpt}
+        </div>
+      )}
+
       <div className="mb-3">
         <div
           className="flex items-center justify-between text-xs mb-1"

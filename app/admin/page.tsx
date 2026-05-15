@@ -34,6 +34,9 @@ const SOURCE_LABELS: Record<string, string> = {
   "polizei-berlin": "Polizei Berlin",
   "berlin-events": "Berlin Events",
   "bezirksamt-tk": "Bezirksamt TK",
+  "bvv-tk": "BVV Treptow-Köpenick",
+  "amtsblatt-berlin": "Amtsblatt für Berlin",
+  "viz-baustellen": "VIZ Baustellen",
 };
 
 async function loadStatus(): Promise<IngestStatus | null> {
