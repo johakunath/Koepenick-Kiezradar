@@ -16,6 +16,7 @@ import type {
   Tag,
   Topic,
 } from "@/lib/types";
+import { ALL_TAGS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 export { slugify };
 
@@ -55,7 +56,7 @@ function isThinSummary(entry: Entry): boolean {
 }
 
 function fallbackSummary(entry: Entry): string {
-  if (entry.tags.includes("veranstaltung") || entry.kind === "veranstaltung" || entry.event_start_at) {
+  if ((entry.tags ?? []).includes("veranstaltung") || entry.kind === "veranstaltung" || entry.event_start_at) {
     const date = entry.event_start_at
       ? new Date(entry.event_start_at).toLocaleString("de-DE", {
           day: "numeric",
@@ -86,6 +87,51 @@ function fallbackSummary(entry: Entry): string {
   }
 
   return `Noch nicht KI-zusammengefasst. Details stehen in der Originalquelle.`;
+}
+
+function isTag(value: unknown): value is Tag {
+  return typeof value === "string" && (ALL_TAGS as readonly string[]).includes(value);
+}
+
+function normalizeTags(entry: Entry): Tag[] {
+  const tags = new Set<Tag>();
+  const sourceId = entry.source_id ?? slugify(entry.source);
+  const haystack = [
+    entry.title,
+    entry.ai_summary,
+    entry.raw_excerpt ?? "",
+    entry.location,
+    entry.venue ?? "",
+    entry.election_topic ?? "",
+  ]
+    .join(" ")
+    .toLocaleLowerCase("de-DE");
+
+  for (const tag of entry.tags ?? []) {
+    if (isTag(tag)) tags.add(tag);
+  }
+
+  if (isTag(entry.tag)) tags.add(entry.tag);
+  if (entry.election_relevant) tags.add("wahl");
+  if (entry.kind === "veranstaltung" || entry.event_start_at || entry.venue || sourceId === "berlin-events") {
+    tags.add("veranstaltung");
+  }
+  if (sourceId === "polizei-berlin") tags.add("sicherheit");
+  if (sourceId === "bezirksamt-tk") tags.add("verwaltung");
+  if (sourceId === "bvv-tk") {
+    tags.add("politik");
+    tags.add("verwaltung");
+  }
+
+  if (/verkehr|unfall|straße|strasse|sperrung|bahn|radweg|fahrrad|baustelle/.test(haystack)) tags.add("verkehr");
+  if (/schule|kita|bau|sanierung|wasser|strom|brücke|infrastruktur/.test(haystack)) tags.add("infrastruktur");
+  if (/bvv|partei|antrag|senat|wahl|kandidat|abgeordnetenhaus/.test(haystack)) tags.add("politik");
+  if (/wahl|kandidat|wahlkreis|abgeordnetenhaus/.test(haystack)) tags.add("wahl");
+
+  if (tags.size > 1) tags.delete("sonstiges");
+  if (tags.size === 0) tags.add("sonstiges");
+
+  return ALL_TAGS.filter((tag) => tags.has(tag));
 }
 
 export function getTopics(): Topic[] {
@@ -150,22 +196,24 @@ function inferTopicSlugs(entry: Entry): string[] {
 }
 
 export function normalizeEntry(entry: Entry): Entry {
+  const sourceId = entry.source_id ?? slugify(entry.source);
+  const tags = normalizeTags({ ...entry, source_id: sourceId });
   const district = getDistrictForEntry(entry);
   const normalizedKind =
     entry.kind ??
-    (entry.tags.includes("veranstaltung")
+    (tags.includes("veranstaltung")
       ? "veranstaltung"
       : entry.document_url || entry.document_type
         ? "dokument"
         : "meldung");
-  const baseEntry = { ...entry, kind: normalizedKind };
+  const baseEntry = { ...entry, source_id: sourceId, kind: normalizedKind, tags };
+  const topicSlugs = [...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)])];
 
   return {
     ...baseEntry,
     slug: entry.slug ?? slugify(entry.title),
     ai_summary: isThinSummary(baseEntry) ? fallbackSummary(baseEntry) : entry.ai_summary,
-    source_id: entry.source_id ?? slugify(entry.source),
-    topic_slugs: entry.topic_slugs ?? inferTopicSlugs(entry),
+    topic_slugs: topicSlugs,
     district_slug: entry.district_slug ?? district?.slug,
   };
 }

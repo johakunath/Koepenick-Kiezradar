@@ -206,6 +206,10 @@ function inferTags(text, sourceId) {
   if (sourceId === "polizei-berlin") tags.add("sicherheit");
   if (sourceId === "berlin-events") tags.add("veranstaltung");
   if (sourceId === "bezirksamt-tk") tags.add("verwaltung");
+  if (sourceId === "bvv-tk") {
+    tags.add("politik");
+    tags.add("verwaltung");
+  }
   if (/verkehr|unfall|straße|strasse|sperrung|bahn|rad/.test(haystack)) tags.add("verkehr");
   if (/bvv|partei|antrag|senat|politik/.test(haystack)) tags.add("politik");
   if (/wahl|kandidat|wahlkreis|abgeordnetenhaus/.test(haystack)) tags.add("wahl");
@@ -215,7 +219,7 @@ function inferTags(text, sourceId) {
   if (/bezirksamt|bürgeramt|verwaltung|amt/.test(haystack)) tags.add("verwaltung");
 
   if (tags.size === 0) tags.add("sonstiges");
-  return [...tags].filter((tag) => TAGS.includes(tag)).slice(0, 3);
+  return [...tags].filter((tag) => TAGS.includes(tag));
 }
 
 function inferLocation(text) {
@@ -740,7 +744,7 @@ async function enrichWithAI(entries, { skipClaude }) {
 Pflichtfelder pro Eintrag:
 - id (unverändert)
 - ai_summary: 1–2 Sätze, sachlich, deutsch, was passiert ist
-- tags: Array, nur aus [${TAGS.join(", ")}], max 3, Events nur "politik" wenn inhaltlich Wahl-/Politikbezug
+- tags: Array, nur aus [${TAGS.join(", ")}], 1-5 Tags. Nutze mehrere Tags, wenn mehrere Kategorien wirklich passen; Events nur "politik" wenn inhaltlich Wahl-/Politikbezug
 - location: kurze Ortsbezeichnung im Bezirk
 - location_relevant: boolean
 - local_relevance_score: 0.0–1.0

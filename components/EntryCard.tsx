@@ -66,25 +66,22 @@ export default function EntryCard({ entry }: EntryCardProps) {
         </span>
       )}
 
-      <div className="flex items-center gap-2 mb-3 flex-wrap">
-        {entry.tags.map((t: Tag, i: number) => (
-          <span key={t}>
-            {i > 0 && (
-              <span className="mr-2" style={{ color: "var(--ink-soft)" }}>
-                ·
-              </span>
-            )}
-            <span
-              style={{
-                color: "var(--water-deep)",
-                fontSize: "10.5px",
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-                fontWeight: 600,
-              }}
-            >
-              {TAG_LABELS[t]}
-            </span>
+      <div className="flex items-center gap-1.5 mb-3 flex-wrap">
+        {entry.tags.map((tag: Tag) => (
+          <span
+            key={tag}
+            className="rounded-full px-2 py-0.5"
+            style={{
+              color: "var(--water-deep)",
+              background: "rgba(31, 78, 107, 0.07)",
+              border: "1px solid rgba(31, 78, 107, 0.14)",
+              fontSize: "10.5px",
+              letterSpacing: "0.06em",
+              textTransform: "uppercase",
+              fontWeight: 600,
+            }}
+          >
+            {TAG_LABELS[tag]}
           </span>
         ))}
       </div>

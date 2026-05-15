@@ -21,6 +21,7 @@ export interface Entry {
   ingested_at: string;
   raw_excerpt?: string;
   ai_summary: string;
+  tag?: Tag;
   tags: Tag[];
   topic_slugs?: string[];
   location: string;
