@@ -7,6 +7,7 @@ interface SourceStatus {
   status: "ok" | "error";
   fetched?: number;
   parsed?: number;
+  raw_items?: number;
   error?: string;
 }
 
@@ -90,6 +91,7 @@ export default async function AdminPage() {
                   <tr className="text-xs text-left" style={{ color: "var(--ink-soft)" }}>
                     <th className="pb-2 font-normal">Quelle</th>
                     <th className="pb-2 font-normal text-right">Status</th>
+                    <th className="pb-2 font-normal text-right">Roh</th>
                     <th className="pb-2 font-normal text-right">Geparst</th>
                     <th className="pb-2 font-normal text-right">Neu</th>
                   </tr>
@@ -102,7 +104,16 @@ export default async function AdminPage() {
                       </td>
                       <td className="py-2 text-right">
                         {src.status === "ok" ? (
-                          <span style={{ color: "var(--forest)" }}>✓</span>
+                          (src.parsed ?? 0) > 0 ? (
+                            <span style={{ color: "var(--forest)" }}>✓</span>
+                          ) : (
+                            <span
+                              title="Quelle erreichbar, aber keine Einträge geparst — Parser prüfen"
+                              style={{ color: "#b58900", cursor: "help" }}
+                            >
+                              ⚠
+                            </span>
+                          )
                         ) : (
                           <span
                             title={src.error}
@@ -111,6 +122,9 @@ export default async function AdminPage() {
                             ✗
                           </span>
                         )}
+                      </td>
+                      <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
+                        {src.raw_items ?? "—"}
                       </td>
                       <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
                         {src.status === "ok" ? (src.parsed ?? "—") : "—"}

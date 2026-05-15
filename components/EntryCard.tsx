@@ -34,8 +34,9 @@ export default function EntryCard({ entry }: EntryCardProps) {
   const [reasoningOpen, setReasoningOpen] = useState(false);
   const eventDate = formatEventDate(entry.event_start_at);
   const reasoning =
-    entry.ai_reasoning ??
-    "Noch keine KI-Begründung vorhanden. Maßgeblich bleibt die Originalquelle.";
+    entry.ai_reasoning && entry.ai_reasoning.trim().length > 0
+      ? entry.ai_reasoning
+      : `Aus Quelle ${entry.source}. Originallink prüfen für vollständigen Kontext.`;
 
   return (
     <article

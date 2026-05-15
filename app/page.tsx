@@ -9,7 +9,9 @@ import TagFilter from "@/components/TagFilter";
 import EntryCard from "@/components/EntryCard";
 import Footer from "@/components/Footer";
 
-const entries = entriesData as import("@/lib/types").Entry[];
+const allEntries = entriesData as import("@/lib/types").Entry[];
+const hasRealData = allEntries.some((e) => !e.is_mock);
+const entries = hasRealData ? allEntries.filter((e) => !e.is_mock) : allEntries;
 
 export default function FeedPage() {
   const [activeTags, setActiveTags] = useState<Tag[]>([]);

@@ -266,6 +266,10 @@ function parseEventsHtml(html) {
       const venueMatch = item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
       const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
 
+      // Filter: must mention Köpenick somewhere (title or venue)
+      // Berlin.de calendar c=13 lists Treptow-Köpenick events but mixes in city-wide ones
+      if (!containsKoepenick(`${title} ${venue ?? ""}`)) return null;
+
       return {
         id: hashId(["berlin-events", sourceUrl, title]),
         source_id: "berlin-events",
@@ -476,6 +480,20 @@ async function main() {
   const eventsEntries = parseEventsHtml(eventsHtml);
   const bezirksamtEntries = parseBezirksamtSource(bezirksamtText);
 
+  // Count raw items in each source (before Köpenick-filter) for diagnostics
+  const countRawItems = (text, sourceType) => {
+    if (!text) return 0;
+    if (sourceType === "rss") return [...text.matchAll(/<item\b/gi)].length;
+    if (sourceType === "html") return [...text.matchAll(/<li\b/gi)].length;
+    return 0;
+  };
+
+  const rawCounts = {
+    "polizei-berlin": countRawItems(policeText, /<item\b/i.test(policeText) ? "rss" : "html"),
+    "berlin-events": countRawItems(eventsHtml, "html"),
+    "bezirksamt-tk": countRawItems(bezirksamtText, /<item\b/i.test(bezirksamtText) ? "rss" : "html"),
+  };
+
   for (const [sourceId, parsed] of [
     ["polizei-berlin", policeEntries],
     ["berlin-events", eventsEntries],
@@ -483,6 +501,7 @@ async function main() {
   ]) {
     if (sourceStatus[sourceId]?.status === "ok") {
       sourceStatus[sourceId].parsed = parsed.length;
+      sourceStatus[sourceId].raw_items = rawCounts[sourceId];
       delete sourceStatus[sourceId].text;
     }
   }
@@ -515,8 +534,8 @@ async function main() {
       Object.entries(sourceStatus).map(([id, s]) => [
         id,
         s.status === "ok"
-          ? { status: "ok", fetched: newEntries.filter((e) => e.source_id === id).length, parsed: s.parsed ?? 0 }
-          : { status: "error", error: s.error, fetched: 0 },
+          ? { status: "ok", fetched: newEntries.filter((e) => e.source_id === id).length, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
+          : { status: "error", error: s.error, fetched: 0, raw_items: s.raw_items ?? 0 },
       ])
     ),
     new_entries: newEntries.length,
