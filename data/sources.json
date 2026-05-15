@@ -1,0 +1,50 @@
+[
+  {
+    "id": "polizei-berlin",
+    "name": "Polizei Berlin",
+    "url": "https://www.berlin.de/polizei/polizeimeldungen/",
+    "type": "html",
+    "status": "experimental",
+    "notes": "RSS liefert aktuell keine stabilen Treffer; Import nutzt die öffentliche Meldungsübersicht."
+  },
+  {
+    "id": "berlin-events",
+    "name": "Berlin.de Veranstaltungskalender",
+    "url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
+    "type": "html",
+    "status": "experimental",
+    "notes": "Nur echte Veranstaltungstreffer importieren, keine Kategorien oder Pagination."
+  },
+  {
+    "id": "bezirksamt-tk",
+    "name": "Bezirksamt Treptow-Köpenick",
+    "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/",
+    "type": "html",
+    "status": "active",
+    "notes": "Pressemitteilungen und bezirkliche Hinweise."
+  },
+  {
+    "id": "bvv-tk",
+    "name": "BVV Treptow-Köpenick",
+    "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
+    "type": "html",
+    "status": "experimental",
+    "notes": "Erste politische Dokumentquelle; tiefere Gremienstruktur bleibt Folgearbeit."
+  },
+  {
+    "id": "viz-baustellen",
+    "name": "VIZ Berlin Baustellen",
+    "url": "https://viz.berlin.de/",
+    "type": "geojson",
+    "status": "error",
+    "notes": "API-Endpunkte waren im letzten Lauf nicht erreichbar."
+  },
+  {
+    "id": "amtsblatt-berlin",
+    "name": "Amtsblatt für Berlin",
+    "url": "https://www.berlin.de/landesverwaltungsamt/service/amtsblatt-fuer-berlin/",
+    "type": "pdf",
+    "status": "error",
+    "notes": "Index-URLs waren im letzten Lauf nicht erreichbar."
+  }
+]

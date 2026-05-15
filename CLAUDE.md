@@ -4,7 +4,7 @@ Diese Datei ist die Anleitung für Claude Code (und Codex), wenn an diesem Repo 
 
 ## Projekt-Kontext in 3 Sätzen
 
-Köpenick Kiezradar ist ein hyperlokales Monitoring-Tool für Berlin-Köpenick, gebaut von zwei Nachbarn ohne Programmiererfahrung. Es aggregiert öffentliche Meldungen, fasst sie per Claude API zusammen und zeigt sie in einem mobilfähigen Feed. Vollständiges Briefing in `PRD.md`.
+Köpenick Kiezradar ist ein hyperlokales Monitoring-Tool für Berlin-Köpenick, gebaut von zwei Nachbarn ohne Programmiererfahrung. Es aggregiert öffentliche Meldungen, Termine und Dokumente, fasst sie per KI zusammen und zeigt sie in Feed, Karte, Wochenblick und Detailseiten. Vollständiges Briefing in `PRD.md`.
 
 ## Working Principles
 
@@ -49,9 +49,10 @@ Köpenick Kiezradar ist ein hyperlokales Monitoring-Tool für Berlin-Köpenick, 
 4. **Vorher fragen statt nachher fixen.** Wenn eine Anforderung unklar ist, eine knappe Rückfrage statt ein 200-Zeilen-Patch in die falsche Richtung.
 5. **Keine Dokumentations-Inflation.** Kommentare nur, wo der Code nicht selbsterklärend ist.
 
-## Claude API Usage (für das Tool selbst)
+## KI API Usage (für das Tool selbst)
 
-- **Modell:** `claude-sonnet-4-5` für Enrichment (gutes Preis-Leistungs-Verhältnis)
+- **Aktuell:** Gemini API via `GEMINI_API_KEY` für Enrichment
+- **Modell:** `GEMINI_MODEL` env-var, sonst Script-Default
 - **Max Tokens:** 1000 pro Aufruf reicht für Summary + Tags + Scores
 - **Batching:** Wenn möglich mehrere Einträge in einem Call, max 10 pro Batch
 - **Cost-Cap:** Hard limit 5 € / Tag bei der Ingestion. Wenn überschritten → Action stoppt, Issue erstellen.
@@ -69,4 +70,4 @@ Lieber Stopp-and-Ask als blind weiterprogrammieren. Frag konkret, was unklar ist
 
 ## Stand der Iteration
 
-Aktueller Stand und nächste Schritte: siehe Issues im Repo bzw. `PRD.md §11 Roadmap`.
+Stand 15.05.2026: App ist live auf Vercel; GitHub `main` ist Quelle der Wahrheit. Vor lokaler Arbeit immer fetch/pull. Aktueller Stand und nächste Schritte: siehe `HANDOVER.md` und `PRD.md §15`.

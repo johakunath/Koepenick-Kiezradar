@@ -1,0 +1,28 @@
+[
+  {
+    "slug": "nachbarschaftlicher-aktionstag-volkspark-koepenick",
+    "title": "Nachbarschaftlicher Aktionstag im Volkspark Köpenick",
+    "kind": "veranstaltung",
+    "meeting_at": "2026-05-22T14:00:00+02:00",
+    "place": "Volkspark Köpenick",
+    "district": "Altstadt Köpenick",
+    "district_slug": "altstadt-koepenick",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
+    "public_note": "Öffentliche Veranstaltung laut Berlin.de Veranstaltungskalender.",
+    "summary": "Nachbarschaft, Vereine und lokale Initiativen kommen im Volkspark Köpenick zusammen."
+  },
+  {
+    "slug": "bvv-sitzung-mai-2026-schulplatzmangel",
+    "title": "BVV-Sitzung zu Schulplatzmangel und Sicherheit",
+    "kind": "sitzung",
+    "meeting_at": "2026-05-21T17:00:00+02:00",
+    "place": "Rathaus Treptow-Köpenick",
+    "district": "Treptow-Köpenick",
+    "district_slug": "treptow-koepenick",
+    "body_slug": "bvv-treptow-koepenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
+    "public_note": "Beispieltermin bis zur echten BVV-Sitzungsanbindung.",
+    "agenda_item": "Schulplatzmangel, Polizeipräsenz und lokale Infrastruktur",
+    "summary": "Mock-Sitzung für die spätere Darstellung von Gremien, Tagesordnung und Drucksachen."
+  }
+]

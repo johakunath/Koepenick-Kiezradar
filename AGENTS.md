@@ -1,12 +1,14 @@
-# AGENTS.md — Codex Working Agreement
+# AGENTS.md - Codex Working Agreement
 
-> Read this file fully before doing anything. Then read CLAUDE.md, then PRD.md.
+> Read this file fully before doing anything. Then read `CLAUDE.md`, then `PRD.md`.
 
 ---
 
-## Project in 3 Sentences
+## Current Status
 
-Köpenick Kiezradar is a hyperlocal monitoring tool for Berlin-Köpenick, built by two neighbors without programming experience. It aggregates public announcements, summarizes them via Claude API, and displays them in a mobile-friendly feed. Full briefing in `PRD.md`.
+Stand 15.05.2026: GitHub `main` is the source of truth. Always fetch/pull before local work.
+
+Köpenick Kiezradar is live on Vercel at https://koepenick-kiezradar.vercel.app/. It now has feed, filters, Wahl-Watch, map, weekly overview, admin trigger, RSS feed, ingestion status, parser fixtures, archive data, internal detail pages, topics, places, meetings and sources.
 
 ---
 
@@ -14,13 +16,13 @@ Köpenick Kiezradar is a hyperlocal monitoring tool for Berlin-Köpenick, built 
 
 | Layer | Choice |
 |---|---|
-| Framework | Next.js 15, App Router, TypeScript |
+| Framework | Next.js App Router, TypeScript |
 | Styling | Tailwind CSS + CSS custom properties |
 | Package manager | pnpm |
 | Hosting | Vercel |
-| Data | JSON files in `/data/` (git-committed) |
-| AI enrichment | Claude API (`claude-sonnet-4-5`) |
-| Cron | GitHub Actions (Iteration 2+) |
+| Data | JSON files in `/data/` |
+| AI enrichment | Gemini API via `GEMINI_API_KEY` |
+| Cron | GitHub Actions |
 
 ---
 
@@ -28,119 +30,46 @@ Köpenick Kiezradar is a hyperlocal monitoring tool for Berlin-Köpenick, built 
 
 ```bash
 pnpm install
-pnpm dev        # http://localhost:3000
-pnpm build      # production build check
+pnpm dev
+pnpm build
+pnpm test:parsers
+pnpm ingest:dry
 ```
+
+`pnpm build` needs network access for Google Fonts. `pnpm ingest:dry` needs network access to Berlin.de sources.
 
 ---
 
 ## Repository Layout
 
+```text
+/app                    App Router pages, API route, feed.xml
+/components             Domain-oriented UI components
+/data                   entries, archive, weekly, topics, districts, sources
+/lib                    shared types, data helpers, geo helpers
+/scripts                ingest, weekly digest, parser smoke tests
+/.github/workflows      daily ingest and weekly digest automation
+/prototype              old design reference only
 ```
-/app                    Next.js App Router pages
-  layout.tsx            Root layout, fonts, metadata
-  page.tsx              Feed (/)
-  woche/page.tsx        Weekly overview (/woche)
-/components             UI components (domain-sorted, not type-sorted)
-  EntryCard.tsx
-  TagFilter.tsx
-  Header.tsx
-  DisclaimerBanner.tsx
-  WeeklyView.tsx
-  Footer.tsx
-/lib
-  types.ts              Entry interface, Tag type, constants
-/data
-  entries.json          Mock data now; real data in Iteration 2+
-/prototype
-  koepenick-radar-v0.jsx   Design reference only — do not modify
-/scripts                Ingestion script (Iteration 2)
-/.github/workflows      Daily cron (Iteration 2)
-```
-
----
-
-## Data Model
-
-```typescript
-interface Entry {
-  id: string;
-  source: string;
-  source_url: string;
-  title: string;
-  published_at: string;       // ISO 8601
-  ingested_at: string;        // ISO 8601
-  ai_summary: string;         // 1–3 sentences
-  tags: Tag[];                // see Tag type in lib/types.ts
-  location: string;
-  local_relevance_score: number;      // 0–1
-  political_relevance_score: number;  // 0–1
-  election_relevant: boolean;
-  election_topic?: string;
-  ai_reasoning: string;
-  is_mock?: boolean;
-}
-
-type Tag = "verkehr" | "sicherheit" | "verwaltung" | "politik" | "infrastruktur" | "sonstiges";
-```
-
----
-
-## Design System
-
-CSS variables defined in `app/globals.css`:
-
-```
---bg: #f4ede0          (page background)
---bg-card: #faf6ec     (card background)
---water-deep: #1f4e6b  (primary accent, headers, active states)
---water-mid: #3a7396   (links, secondary accent)
---water-light: #c9dde6 (subtle fills)
---forest: #4a6b3a      (stats accent)
---ink: #1a2933         (primary text)
---ink-soft: #4a5a64    (secondary text, captions)
---brick: #9c4a2e       (election badge only)
---border: #e0d6c2      (card borders, dividers)
-```
-
-Fonts: `var(--font-fraunces)` for headings, `var(--font-inter-tight)` for body.
-Use CSS variables, not hardcoded hex. Use Tailwind classes where possible.
 
 ---
 
 ## Coding Rules
 
-- TypeScript strict — no `any`
-- Functional React components only, no classes
-- `kebab-case` for file names, `PascalCase` for component names
-- Tailwind for layout/spacing, CSS variables for colors
-- No inline styles except where Tailwind can't express a CSS variable value
-- `async/await`, not `.then()` chains
-- No unnecessary dependencies — check if a need is already covered first
-- Server components by default; add `"use client"` only when needed (state, events)
+- Do not revert Claude or user changes.
+- Keep changes additive and scoped.
+- Server components by default; use `"use client"` only for interaction.
+- Keep JSON-as-database until scale or search requires a real DB.
+- Do not add newsletter, accounts, or deep OParl normalization without a fresh plan.
+- If VIZ, Amtsblatt, or other public sources are unstable, treat them defensively instead of forcing brittle imports.
 
 ---
 
-## What NOT to Touch Without Discussion
+## Current Anti-Goals
 
-- `PRD.md` — product decisions only via PR with discussion
-- `README.md` disclaimer section — keep it, always
-- `prototype/koepenick-radar-v0.jsx` — read-only design reference
-- `.github/workflows/daily-ingest.yml` — critical path, change carefully (Iteration 2+)
-
-## Current Iteration
-
-**Iteration 1** — clickable prototype with mock data. No real data import yet.
-See `PRD.md §11 Roadmap` for what's next.
-
----
-
-## Anti-Goals
-
-- No login / accounts
-- No newsletter / email
-- No map view
-- No search (later)
-- No app store app
+- No login/accounts
+- No newsletter/email
 - No partisan political judgement
-- No database yet (JSON files are fine until 500+ entries)
+- No database yet
+- No full editorial CMS
+- No large source expansion before parser/data quality is stable

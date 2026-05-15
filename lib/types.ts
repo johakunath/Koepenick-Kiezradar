@@ -10,7 +10,10 @@ export type Tag =
 
 export interface Entry {
   id: string;
+  slug?: string;
+  kind?: "meldung" | "veranstaltung" | "dokument";
   source_id?: string;
+  source_record_id?: string;
   source: string;
   source_url: string;
   title: string;
@@ -19,7 +22,9 @@ export interface Entry {
   raw_excerpt?: string;
   ai_summary: string;
   tags: Tag[];
+  topic_slugs?: string[];
   location: string;
+  district_slug?: string;
   location_relevant?: boolean;
   local_relevance_score: number;
   political_relevance_score: number;
@@ -39,6 +44,63 @@ export interface Entry {
   lat?: number;
   lng?: number;
   is_mock?: boolean;
+}
+
+export interface Topic {
+  slug: string;
+  label: string;
+  description: string;
+  tag?: Tag;
+}
+
+export interface DistrictRecord {
+  slug: string;
+  label: string;
+  description: string;
+  keywords: string[];
+}
+
+export interface SourceRecord {
+  id: string;
+  name: string;
+  url: string;
+  type: "rss" | "html" | "api" | "pdf" | "geojson";
+  status: "active" | "experimental" | "planned" | "error";
+  notes: string;
+}
+
+export interface Body {
+  slug: string;
+  name: string;
+  type: "bvv" | "bezirksamt" | "source";
+  url: string;
+}
+
+export interface Meeting {
+  slug: string;
+  title: string;
+  kind: "sitzung" | "veranstaltung";
+  meeting_at: string;
+  place: string;
+  district?: string;
+  district_slug?: string;
+  body_slug?: string;
+  source_url: string;
+  public_note: string;
+  agenda_item?: string;
+  summary: string;
+}
+
+export interface SourceDocument {
+  slug: string;
+  title: string;
+  body_slug: string;
+  source_url: string;
+  document_url?: string;
+  published_at: string;
+  topic_slugs: string[];
+  district_slug?: string;
+  summary: string;
 }
 
 export const TAG_LABELS: Record<Tag, string> = {

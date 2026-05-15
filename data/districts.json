@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "altstadt-koepenick",
+    "label": "Altstadt Köpenick",
+    "description": "Historischer Kern rund um Schlossinsel, Rathaus und Alt-Köpenick.",
+    "keywords": ["altstadt", "alt-köpenick", "alt-koepenick", "schlossinsel"]
+  },
+  {
+    "slug": "dammvorstadt",
+    "label": "Dammvorstadt",
+    "description": "Wohn- und Geschäftsquartier zwischen Bahnhofstraße und Altstadt.",
+    "keywords": ["dammvorstadt"]
+  },
+  {
+    "slug": "bahnhof-koepenick",
+    "label": "Bahnhof Köpenick",
+    "description": "Umfeld von S-Bahnhof, Bahnhofstraße und Verkehrsknoten.",
+    "keywords": ["bahnhof köpenick", "bahnhof koepenick", "bahnhofstraße", "bahnhofstrasse"]
+  },
+  {
+    "slug": "spindlersfeld",
+    "label": "Spindlersfeld",
+    "description": "Quartier südlich der Altstadt mit Verkehr, Schule und Wohnentwicklung.",
+    "keywords": ["spindlersfeld"]
+  },
+  {
+    "slug": "friedrichshagen",
+    "label": "Friedrichshagen",
+    "description": "Kiez am Müggelsee mit Kultur, Verkehr und Naherholung.",
+    "keywords": ["friedrichshagen"]
+  },
+  {
+    "slug": "mueggelheim",
+    "label": "Müggelheim",
+    "description": "Ortsteil am Müggelsee mit Natur-, Verkehr- und Infrastrukturthemen.",
+    "keywords": ["müggelheim", "mueggelheim", "müggelsee", "mueggelsee"]
+  },
+  {
+    "slug": "wendenschloss",
+    "label": "Wendenschloss",
+    "description": "Wohngebiet an Dahme und Müggelspree mit Fähr- und Verkehrsthemen.",
+    "keywords": ["wendenschloss"]
+  },
+  {
+    "slug": "treptow-koepenick",
+    "label": "Treptow-Köpenick",
+    "description": "Bezirksweite Vorgänge mit möglicher Relevanz für Köpenick.",
+    "keywords": ["treptow-köpenick", "treptow-koepenick", "köpenick", "koepenick"]
+  }
+]

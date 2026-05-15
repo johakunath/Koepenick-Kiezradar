@@ -9,6 +9,7 @@
     "start": "next start",
     "ingest": "node scripts/ingest.mjs",
     "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai",
+    "test:parsers": "node scripts/parser-smoke-test.mjs",
     "weekly-digest": "node scripts/weekly-digest.mjs"
   },
   "dependencies": {
