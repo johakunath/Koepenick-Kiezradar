@@ -56,13 +56,24 @@ export default function Header({ count }: HeaderProps) {
               Köpenick Kiezradar
             </h1>
           </div>
-          <Link
-            href="/woche"
-            className="text-xs font-medium transition-colors"
-            style={{ color: "var(--water-mid)" }}
-          >
-            Diese Woche →
-          </Link>
+          <div className="flex items-center gap-3">
+            <Link
+              href="/woche"
+              className="text-xs font-medium transition-colors"
+              style={{ color: "var(--water-mid)" }}
+            >
+              Diese Woche →
+            </Link>
+            <a
+              href="/feed.xml"
+              className="text-xs transition-opacity opacity-50 hover:opacity-100"
+              style={{ color: "var(--water-mid)" }}
+              title="RSS-Feed abonnieren"
+              aria-label="RSS-Feed"
+            >
+              RSS
+            </a>
+          </div>
         </div>
         <p
           className="text-sm mb-4"

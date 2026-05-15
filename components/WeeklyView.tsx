@@ -3,9 +3,24 @@ import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 import EntryCard from "./EntryCard";
 
+interface DigestTopic {
+  name: string;
+  summary: string;
+  entry_ids: string[];
+}
+
+interface Digest {
+  week: string;
+  range: string;
+  generated_at: string;
+  entry_count: number;
+  topics: DigestTopic[];
+}
+
 interface WeeklyViewProps {
   entries: Entry[];
   weekRange: string;
+  digest?: Digest | null;
 }
 
 function getWeekStats(entries: Entry[]) {
@@ -30,8 +45,9 @@ function getWeekStats(entries: Entry[]) {
   return { electionCount, eventCount, topEntries, topTag };
 }
 
-export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
+export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewProps) {
   const { electionCount, eventCount, topEntries, topTag } = getWeekStats(entries);
+  const entryById = new Map(entries.map((e) => [e.id, e]));
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
@@ -128,32 +144,74 @@ export default function WeeklyView({ entries, weekRange }: WeeklyViewProps) {
           )}
         </div>
 
-        <section
-          className="mb-8 rounded-lg p-5"
-          style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
-        >
-          <h2
-            className="text-xl mb-2"
-            style={{
-              fontFamily: "var(--font-fraunces)",
-              fontWeight: 600,
-              color: "var(--water-deep)",
-            }}
+        {digest && digest.topics.length > 0 ? (
+          <div className="space-y-6 mb-8">
+            {digest.topics.map((topic) => {
+              const topicEntries = topic.entry_ids
+                .map((id) => entryById.get(id))
+                .filter((e): e is Entry => e != null);
+              return (
+                <section key={topic.name}>
+                  <h2
+                    className="text-lg mb-2"
+                    style={{
+                      fontFamily: "var(--font-fraunces)",
+                      fontWeight: 600,
+                      color: "var(--water-deep)",
+                    }}
+                  >
+                    {topic.name}
+                  </h2>
+                  <p
+                    className="text-sm leading-relaxed mb-3"
+                    style={{ color: "var(--ink-soft)" }}
+                  >
+                    {topic.summary}
+                  </p>
+                  {topicEntries.length > 0 && (
+                    <div className="space-y-3">
+                      {topicEntries.map((entry) => (
+                        <EntryCard key={entry.id} entry={entry} />
+                      ))}
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+            <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
+              KI-generierter Wochenrückblick · Stand:{" "}
+              {new Date(digest.generated_at).toLocaleDateString("de-DE")}
+            </p>
+          </div>
+        ) : (
+          <section
+            className="mb-8 rounded-lg p-5"
+            style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
           >
-            Wochenfazit
-          </h2>
-          <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-            Diese Skizze wird später automatisch aus echten Meldungen und Veranstaltungen
-            zusammengefasst. Bis dahin zeigt sie die wichtigsten Einträge der Woche nach lokaler
-            Relevanz.
-          </p>
-        </section>
+            <h2
+              className="text-xl mb-2"
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontWeight: 600,
+                color: "var(--water-deep)",
+              }}
+            >
+              Wochenfazit
+            </h2>
+            <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+              Der KI-Wochenrückblick wird jeden Sonntag automatisch generiert. Bis dahin sind
+              hier die relevantesten Einträge der Woche nach lokaler Relevanz sortiert.
+            </p>
+          </section>
+        )}
 
-        <div className="space-y-4">
-          {topEntries.map((entry) => (
-            <EntryCard key={entry.id} entry={entry} />
-          ))}
-        </div>
+        {!digest && (
+          <div className="space-y-4">
+            {topEntries.map((entry) => (
+              <EntryCard key={entry.id} entry={entry} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

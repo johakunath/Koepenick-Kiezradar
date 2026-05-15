@@ -1,0 +1,43 @@
+name: Weekly digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 22 * * 0"
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Run weekly digest
+        run: pnpm weekly-digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+
+      - name: Commit weekly digest
+        run: |
+          if git diff --quiet -- data/weekly; then
+            echo "No new digest."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/weekly
+          git commit -m "chore: weekly digest $(date -u +%Y-W%V)"
+          git push
