@@ -227,48 +227,9 @@ function parseGermanDate(text) {
   ).toISOString();
 }
 
-function parseEventsHtml(html) {
-  const eventLinks = [
-    ...html.matchAll(/<a\b[^>]*href="([^"]*kalender[^"]*)'"[^>]*>([\s\S]*?)<\/a>/gi),
-  ];
-  const seen = new Set();
-
-  return eventLinks
-    .map((match) => {
-      const href = match[1].startsWith("http") ? match[1] : new URL(match[1], EVENTS_URL).toString();
-      const title = decodeEntities(match[2]);
-      const contextStart = Math.max(0, match.index - 500);
-      const contextEnd = Math.min(html.length, match.index + match[0].length + 500);
-      const context = decodeEntities(html.slice(contextStart, contextEnd));
-      const eventStart = parseGermanDate(context);
-      const text = `${title} ${context}`;
-
-      if (!title || title.length < 8 || seen.has(href)) return null;
-      seen.add(href);
-
-      return {
-        id: hashId(["berlin-events", href, title]),
-        source_id: "berlin-events",
-        source: "Berlin.de Veranstaltungskalender",
-        source_url: href,
-        title,
-        published_at: eventStart ?? new Date().toISOString(),
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: context.slice(0, 500),
-        ai_summary: context.slice(0, 220) || title,
-        tags: ["veranstaltung"],
-        location: inferLocation(text),
-        location_relevant: true,
-        local_relevance_score: containsKoepenick(text) ? 0.72 : 0.5,
-        political_relevance_score: 0.05,
-        election_relevant: false,
-        ai_reasoning: "Die Veranstaltung stammt aus dem offiziellen Kalender für Treptow-Köpenick.",
-        event_start_at: eventStart ?? undefined,
-        venue: inferLocation(text),
-      };
-    })
-    .filter(Boolean)
-    .slice(0, 20);
+function parseEventsHtml(_html) {
+  // TODO: Veranstaltungs-Scraping wird in Iteration 3 implementiert
+  return [];
 }
 
 async function enrichWithAI(entries, { skipClaude }) {
