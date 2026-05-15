@@ -6,6 +6,7 @@ import type { District } from "@/lib/shared/koepenick-geo";
 import entriesData from "@/data/entries.json";
 import Header from "@/components/Header";
 import DisclaimerBanner from "@/components/DisclaimerBanner";
+import WahlWatch from "@/components/WahlWatch";
 import TagFilter from "@/components/TagFilter";
 import DistrictFilter from "@/components/DistrictFilter";
 import EntryCard from "@/components/EntryCard";
@@ -58,6 +59,9 @@ export default function FeedPage() {
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Header count={entries.length} />
 
+      <WahlWatch electionCount={entries.filter((e) => e.election_relevant).length} />
+      <DisclaimerBanner />
+
       <TagFilter activeTags={activeTags} onToggle={toggleTag} onReset={() => setActiveTags([])} />
       <DistrictFilter
         activeDistricts={activeDistricts}
@@ -102,7 +106,6 @@ export default function FeedPage() {
         </div>
       </main>
 
-      <DisclaimerBanner />
       <Footer />
     </div>
   );

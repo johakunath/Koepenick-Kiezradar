@@ -16,8 +16,8 @@ const BEZIRKSAMT_RSS_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles
 const BEZIRKSAMT_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/";
 const BVV_ALLRIS_RSS_URL = "https://www.berlin.de/presse/pressemitteilungen/index/feed?institutions%5B%5D=Bezirksamt+Treptow-K%C3%B6penick";
 const BVV_ALLRIS_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/";
-const AMTSBLATT_INDEX_URL = "https://www.berlin.de/landesverwaltungsamt/zentrale-dienste/amtsblatt-fuer-berlin/";
-const VIZ_BAUSTELLEN_URL = "https://api.viz.berlin.de/daten/baustellen";
+const AMTSBLATT_INDEX_URL = "https://www.berlin.de/landesverwaltungsamt/service/amtsblatt-fuer-berlin/";
+const VIZ_BAUSTELLEN_URL = "https://api.viz.berlin.de/api/verkehr/baustellen";
 
 const TAGS = [
   "verkehr",
@@ -203,8 +203,9 @@ function parsePoliceRss(xml) {
       const title = field(item, "title");
       const sourceUrl = field(item, "link");
       const rawExcerpt = field(item, "description");
+      const category = field(item, "category");
       const publishedAt = new Date(field(item, "pubDate") || Date.now()).toISOString();
-      const text = `${title} ${rawExcerpt}`;
+      const text = `${title} ${rawExcerpt} ${category}`;
 
       return {
         id: hashId(["polizei-berlin", sourceUrl, title]),
@@ -327,10 +328,6 @@ function parseEventsHtml(html) {
       const publishedAt = eventStartAt ?? new Date().toISOString();
       const venueMatch = item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
       const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
-
-      // Filter: must mention Köpenick somewhere (title or venue)
-      // Berlin.de calendar c=13 lists Treptow-Köpenick events but mixes in city-wide ones
-      if (!containsKoepenick(`${title} ${venue ?? ""}`)) return null;
 
       return {
         id: hashId(["berlin-events", sourceUrl, title]),
