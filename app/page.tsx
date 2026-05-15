@@ -5,7 +5,6 @@ import type { Tag } from "@/lib/types";
 import type { District } from "@/lib/shared/koepenick-geo";
 import entriesData from "@/data/entries.json";
 import Header from "@/components/Header";
-import DisclaimerBanner from "@/components/DisclaimerBanner";
 import WahlWatch from "@/components/WahlWatch";
 import TagFilter from "@/components/TagFilter";
 import DistrictFilter from "@/components/DistrictFilter";
@@ -72,7 +71,7 @@ export default function FeedPage() {
       />
 
       <main className="px-5 pt-2">
-        <div className="max-w-2xl lg:max-w-4xl mx-auto space-y-4">
+        <div className="max-w-2xl lg:max-w-4xl mx-auto space-y-5">
           {sorted.length === 0 ? (
             <div className="text-center py-12 text-sm" style={{ color: "var(--ink-soft)" }}>
               Keine Einträge mit diesen Filtern.
@@ -108,7 +107,6 @@ export default function FeedPage() {
         </div>
       </main>
 
-      <DisclaimerBanner />
       <Footer />
     </div>
   );

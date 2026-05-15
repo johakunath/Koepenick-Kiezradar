@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #f4ede0;
-  --bg-card: #faf6ec;
-  --water-deep: #1f4e6b;
-  --water-mid: #3a7396;
-  --water-light: #c9dde6;
-  --forest: #4a6b3a;
-  --sand: #d4c4a8;
-  --ink: #1a2933;
-  --ink-soft: #4a5a64;
-  --brick: #9c4a2e;
-  --border: #e0d6c2;
+  --bg: #f2e8d5;
+  --bg-card: #faf4e8;
+  --water-deep: #143d56;
+  --water-mid: #2d6080;
+  --water-light: #b8d2e0;
+  --forest: #3a5c2a;
+  --sand: #d0bfa0;
+  --ink: #141f26;
+  --ink-soft: #445562;
+  --brick: #b85c3a;
+  --border: #ddd0b8;
 }
 
 @theme inline {

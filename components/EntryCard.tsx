@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ArrowUpRight, CalendarDays, ChevronDown, ChevronUp, MapPin } from "lucide-react";
 import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
+import RelevanceWaves from "@/components/RelevanceWaves";
 
 function timeAgo(iso: string): string {
   const now = new Date();
@@ -40,7 +41,7 @@ export default function EntryCard({ entry }: EntryCardProps) {
 
   return (
     <article
-      className="relative p-5 transition-all duration-150 hover:-translate-y-px"
+      className="relative p-6 transition-all duration-150 hover:-translate-y-px"
       style={{
         borderRadius: 12,
         background: "var(--bg-card)",
@@ -153,39 +154,12 @@ export default function EntryCard({ entry }: EntryCardProps) {
         </div>
       )}
 
-      <div className="mb-3">
-        <div
-          className="flex items-center justify-between text-xs mb-1"
-          style={{ color: "var(--ink-soft)" }}
-        >
-          <span>Lokale Relevanz</span>
-          <span style={{ fontFamily: "var(--font-fraunces)", fontWeight: 500 }}>
-            {Math.round(entry.local_relevance_score * 100)} %
-          </span>
-        </div>
-        <div
-          style={{
-            height: "3px",
-            background: "var(--border)",
-            borderRadius: "999px",
-            overflow: "hidden",
-          }}
-        >
-          <div
-            style={{
-              height: "100%",
-              width: `${entry.local_relevance_score * 100}%`,
-              background: "linear-gradient(90deg, var(--water-mid), var(--water-deep))",
-            }}
-          />
-        </div>
-      </div>
-
       <div
         className="flex items-center justify-between gap-3 pt-3"
         style={{ borderTop: "1px solid var(--border)" }}
       >
         <div className="flex items-center gap-3 text-xs" style={{ color: "var(--ink-soft)" }}>
+          <RelevanceWaves score={entry.local_relevance_score} />
           <span className="flex items-center gap-1">
             <MapPin size={12} />
             {entry.location}
