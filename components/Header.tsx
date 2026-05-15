@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RadarNav from "@/components/RadarNav";
 
 interface HeaderProps {
   count: number;
@@ -41,8 +42,8 @@ export default function Header({ count }: HeaderProps) {
       }}
     >
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
-        <div className="flex items-center justify-between mb-1">
-          <div className="flex items-baseline gap-2">
+        <div className="flex items-center justify-between gap-4 mb-1">
+          <Link href="/" className="flex min-w-0 items-baseline gap-2">
             <WaveLogo />
             <h1
               className="text-3xl"
@@ -55,37 +56,12 @@ export default function Header({ count }: HeaderProps) {
             >
               Köpenick Kiezradar
             </h1>
-          </div>
-          <div className="flex items-center gap-3">
-            <Link
-              href="/karte"
-              className="text-xs font-medium transition-colors"
-              style={{ color: "var(--water-mid)" }}
-            >
-              Karte
-            </Link>
-            <Link
-              href="/woche"
-              className="text-xs font-medium transition-colors"
-              style={{ color: "var(--water-mid)" }}
-            >
-              Diese Woche →
-            </Link>
-            <a
-              href="/feed.xml"
-              className="text-xs transition-opacity opacity-50 hover:opacity-100"
-              style={{ color: "var(--water-mid)" }}
-              title="RSS-Feed abonnieren"
-              aria-label="RSS-Feed"
-            >
-              RSS
-            </a>
-          </div>
+          </Link>
+          <Link href="/admin" className="shrink-0 text-xs" style={{ color: "var(--water-mid)", opacity: 0.7 }}>
+            Admin
+          </Link>
         </div>
-        <p
-          className="text-sm mb-4"
-          style={{ color: "var(--ink-soft)", fontStyle: "italic" }}
-        >
+        <p className="text-sm mb-4" style={{ color: "var(--ink-soft)", fontStyle: "italic" }}>
           Was in unserem Kiez passiert
         </p>
         <div className="flex items-baseline gap-3 text-xs" style={{ color: "var(--ink-soft)" }}>
@@ -101,6 +77,7 @@ export default function Header({ count }: HeaderProps) {
           <span>·</span>
           <span>{count} aktuelle Einträge</span>
         </div>
+        <RadarNav />
       </div>
     </header>
   );

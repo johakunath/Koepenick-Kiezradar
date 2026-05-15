@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
+import RadarNav from "@/components/RadarNav";
 import { getDisplayEntries, getDistrictBySlug, getEntryBySlug, getTopicBySlug } from "@/lib/data";
 import { TAG_LABELS } from "@/lib/types";
 
@@ -19,6 +20,7 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
+        <RadarNav />
         <Link href="/" className="text-xs font-medium" style={{ color: "var(--water-mid)" }}>
           ← Zum Feed
         </Link>

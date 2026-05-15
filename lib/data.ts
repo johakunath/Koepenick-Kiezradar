@@ -38,6 +38,56 @@ const electionTopicMap: Record<string, string> = {
   "wahl 2026": "wahl-2026",
 };
 
+function compactText(value = ""): string {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function truncateSentence(value: string, maxLength = 220): string {
+  const text = compactText(value);
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1).replace(/\s+\S*$/, "")}…`;
+}
+
+function isThinSummary(entry: Entry): boolean {
+  const summary = compactText(entry.ai_summary);
+  const title = compactText(entry.title);
+  return summary.length === 0 || summary.toLocaleLowerCase("de-DE") === title.toLocaleLowerCase("de-DE");
+}
+
+function fallbackSummary(entry: Entry): string {
+  if (entry.tags.includes("veranstaltung") || entry.kind === "veranstaltung" || entry.event_start_at) {
+    const date = entry.event_start_at
+      ? new Date(entry.event_start_at).toLocaleString("de-DE", {
+          day: "numeric",
+          month: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      : null;
+    const where = entry.venue || entry.location;
+    if (date && where) return `Veranstaltung am ${date} in ${where}.`;
+    if (where) return `Veranstaltung in ${where}.`;
+  }
+
+  if (entry.raw_excerpt && compactText(entry.raw_excerpt).toLocaleLowerCase("de-DE") !== compactText(entry.title).toLocaleLowerCase("de-DE")) {
+    return truncateSentence(entry.raw_excerpt);
+  }
+
+  if (entry.source_id === "bezirksamt-tk") {
+    return `Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.`;
+  }
+
+  if (entry.source_id === "polizei-berlin") {
+    return `Polizeimeldung mit Köpenick-Bezug. Details stehen in der Originalquelle.`;
+  }
+
+  if (entry.source_id === "bvv-tk") {
+    return `BVV-Vorgang mit Bezug zu Treptow-Köpenick. Details stehen in der Originalquelle.`;
+  }
+
+  return `Noch nicht KI-zusammengefasst. Details stehen in der Originalquelle.`;
+}
+
 export function getTopics(): Topic[] {
   return topicsData as Topic[];
 }
@@ -101,16 +151,19 @@ function inferTopicSlugs(entry: Entry): string[] {
 
 export function normalizeEntry(entry: Entry): Entry {
   const district = getDistrictForEntry(entry);
+  const normalizedKind =
+    entry.kind ??
+    (entry.tags.includes("veranstaltung")
+      ? "veranstaltung"
+      : entry.document_url || entry.document_type
+        ? "dokument"
+        : "meldung");
+  const baseEntry = { ...entry, kind: normalizedKind };
+
   return {
-    ...entry,
+    ...baseEntry,
     slug: entry.slug ?? slugify(entry.title),
-    kind:
-      entry.kind ??
-      (entry.tags.includes("veranstaltung")
-        ? "veranstaltung"
-        : entry.document_url || entry.document_type
-          ? "dokument"
-          : "meldung"),
+    ai_summary: isThinSummary(baseEntry) ? fallbackSummary(baseEntry) : entry.ai_summary,
     source_id: entry.source_id ?? slugify(entry.source),
     topic_slugs: entry.topic_slugs ?? inferTopicSlugs(entry),
     district_slug: entry.district_slug ?? district?.slug,
@@ -135,7 +188,8 @@ function isNavigationEvent(entry: Entry): boolean {
     const url = new URL(entry.source_url);
     return (
       url.pathname.endsWith("index.php") &&
-      (url.searchParams.has("kategorie[0]") || url.searchParams.has("ls"))
+      (url.searchParams.has("kategorie[0]") ||
+        (url.searchParams.has("ls") && !url.searchParams.has("detail")))
     );
   } catch {
     return false;

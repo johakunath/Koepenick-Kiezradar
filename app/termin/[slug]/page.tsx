@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
+import RadarNav from "@/components/RadarNav";
 import { getBodies, getMeetingBySlug, getMeetings } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -18,6 +19,7 @@ export default async function MeetingPage({ params }: { params: Promise<{ slug: 
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
+        <RadarNav />
         <Link href="/termine" className="text-xs font-medium" style={{ color: "var(--water-mid)" }}>
           ← Alle Termine
         </Link>

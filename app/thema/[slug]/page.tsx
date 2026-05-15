@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import EntryCard from "@/components/EntryCard";
+import RadarNav from "@/components/RadarNav";
 import { getEntriesForTopic, getTopicBySlug, getTopics } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -16,6 +17,7 @@ export default async function TopicPage({ params }: { params: Promise<{ slug: st
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
+        <RadarNav />
         <Link href="/themen" className="text-xs font-medium" style={{ color: "var(--water-mid)" }}>
           ← Alle Themen
         </Link>
