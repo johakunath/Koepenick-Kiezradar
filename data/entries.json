@@ -196,6 +196,56 @@
     "is_mock": false
   },
   {
+    "id": "ea00b9c5b7611576",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671325.php",
+    "title": "Autorinnenlesung: Julia Pustet",
+    "published_at": "2026-05-15T09:00:00.000Z",
+    "ingested_at": "2026-05-15T15:11:00.292Z",
+    "raw_excerpt": "Die Mittelpunktbibliothek Alte Feuerwache Treptow lädt am Donnerstag, 21.05. 2026, um 19:00 Uhr zur Lesung mit der Autorin Julia Pustet ein. Sie stellt ihren Roman „Alles ganz schlimm“ vor. Mitreißend und pointiert liefert Julia Pustet die Geschichte einer Frau, die sich mit der ganzen Welt konfrontiert, um am Ende nur wieder bei sich selbst anzukommen.",
+    "ai_summary": "Die Mittelpunktbibliothek Alte Feuerwache Treptow lädt am Donnerstag, 21.05. 2026, um 19:00 Uhr zur Lesung mit der Autorin Julia Pustet ein. Sie stellt ihren Roman „Alles ganz schlimm“ vor. Mitreißend und pointiert liefert Julia Pustet die Geschichte einer Frau, die sich mit der ganzen Welt konfrontiert, um am Ende nur wieder bei sich selbst anzukommen.",
+    "tags": [
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671325.php",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "d3f9cdfbba333378",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671320.php",
+    "title": "Arabischkurs für Kinder",
+    "published_at": "2026-05-15T08:49:00.000Z",
+    "ingested_at": "2026-05-15T15:11:00.292Z",
+    "raw_excerpt": "Ab Dienstag, 12. Mai 2026, startet in der Stadtteilbibliothek Altglienicke der Kurs „Arabischunterricht Lesen und Schreiben (Muttersprache) in Kooperation mit BENN (Berlin Entwickelt Neue Nachbarschaften). Der Kurs findet immer dienstags von 16:30-18:00 Uhr in der Bibliothek statt (außer in den Ferien) und geht von Mai bis Dezember 2026. Zielgruppe sind Kinder von 6 bis 13 Jahren, die Teilnehmerzahl ist auf 15 begrenzt.",
+    "ai_summary": "Ab Dienstag, 12. Mai 2026, startet in der Stadtteilbibliothek Altglienicke der Kurs „Arabischunterricht Lesen und Schreiben (Muttersprache) in Kooperation mit BENN (Berlin Entwickelt Neue Nachbarschaften). Der Kurs findet immer dienstags von 16:30-18:00 Uhr in der Bibliothek statt (außer in den Ferien) und geht von Mai bis Dezember 2026. Zielgruppe sind Kinder von 6 bis 13 Jahren, die Teilnehmerzahl ist auf 15 begrenzt.",
+    "tags": [
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671320.php",
+    "district": "Altglienicke",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "11",
     "source": "Berlin.de Veranstaltungskalender",
     "source_url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
@@ -216,6 +266,31 @@
     "event_start_at": "2026-05-22T14:00:00+02:00",
     "venue": "Volkspark Köpenick",
     "is_mock": true
+  },
+  {
+    "id": "079087126b3a8e53",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670228.php",
+    "title": "Startschuss für den Aktionszeitraum zum Ehrentag: Treptow-Köpenick feiert Engagement und Nachbarschaft",
+    "published_at": "2026-05-15T06:00:00.000Z",
+    "ingested_at": "2026-05-15T15:11:00.293Z",
+    "raw_excerpt": "Im Rahmen des bundesweiten „Ehrentages“ des Bundespräsidenten startet in Treptow-Köpenick ein vielfältiges Programm. Den Auftakt macht eine kreative Demokratie-Werkstatt, gefolgt von einem großen Nachbarschaftsfest zur Einweihung des neu gestalteten Volksparks. Unter dem Motto „Für dich. Für uns. Für alle.“ wird in den kommenden Wochen das bürgerschaftliche Engagement im Bezirk sichtbar gemacht.",
+    "ai_summary": "Im Rahmen des bundesweiten „Ehrentages“ des Bundespräsidenten startet in Treptow-Köpenick ein vielfältiges Programm. Den Auftakt macht eine kreative Demokratie-Werkstatt, gefolgt von einem großen Nachbarschaftsfest zur Einweihung des neu gestalteten Volksparks. Unter dem Motto „Für dich. Für uns. Für alle.“ wird in den kommenden Wochen das bürgerschaftliche Engagement im Bezirk sichtbar gemacht.",
+    "tags": [
+      "sonstiges"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670228.php",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
   },
   {
     "id": "1",
@@ -255,6 +330,31 @@
     "election_topic": "Innere Sicherheit",
     "ai_reasoning": "BVV-Antrag mit direktem Bezug zu Köpenick und Wahlkampfthema.",
     "is_mock": true
+  },
+  {
+    "id": "f2d9e3828dc9a608",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671067.php",
+    "title": "Geflügelveranstaltungen in Treptow-Köpenick vorerst untersagt",
+    "published_at": "2026-05-13T12:55:00.000Z",
+    "ingested_at": "2026-05-15T15:11:00.293Z",
+    "raw_excerpt": "Wegen der aktuellen Ausbreitung der Newcastle-Krankheit (atypische Geflügelpest) hat das Bezirksamt Treptow-Köpenick eine tierseuchenrechtliche Allgemeinverfügung erlassen. Ab dem 12. Mai 2026 sind im gesamten Bezirk Geflügelausstellungen, Geflügelmärkte, Geflügelschauen sowie ähnliche Veranstaltungen mit Geflügel oder Tauben bis auf Weiteres verboten.",
+    "ai_summary": "Wegen der aktuellen Ausbreitung der Newcastle-Krankheit (atypische Geflügelpest) hat das Bezirksamt Treptow-Köpenick eine tierseuchenrechtliche Allgemeinverfügung erlassen. Ab dem 12. Mai 2026 sind im gesamten Bezirk Geflügelausstellungen, Geflügelmärkte, Geflügelschauen sowie ähnliche Veranstaltungen mit Geflügel oder Tauben bis auf Weiteres verboten.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671067.php",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
   },
   {
     "id": "2bccbb2e952b6d73",
@@ -382,6 +482,34 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "7bdc4d88a45265a8",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
+    "title": "Sprechstunde des stellvertretenden Bezirksbürgermeisters im Mai verschoben",
+    "published_at": "2026-05-13T11:50:00.000Z",
+    "ingested_at": "2026-05-15T15:11:00.293Z",
+    "raw_excerpt": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
+    "ai_summary": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
+    "tags": [
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
+    "district": "Treptow",
+    "addresses": [
+      "Ortolfstr. 164"
+    ],
+    "street": "Ortolfstr.",
     "is_mock": false
   },
   {
