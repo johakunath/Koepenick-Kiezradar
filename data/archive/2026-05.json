@@ -531,6 +531,57 @@
     "is_mock": true
   },
   {
+    "id": "ece17463edd72a70",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670882.php",
+    "title": "Spielplatz an der Ottomar-Geschke-Straße in Köpenick soll bunter werden – Kinder und Jugendliche zum Malen mit Kreide eingeladen",
+    "published_at": "2026-05-13T09:28:00.000Z",
+    "ingested_at": "2026-05-15T16:01:01.766Z",
+    "raw_excerpt": "Das Straßen- und Grünflächenamt plant, den Spielplatz Ottomar-Geschke-Straße / Spindlersfelder Straße weiter aufzuwerten. Nachdem dort in den vergangenen zwei Jahren bereits eine neue Calisthenics-Anlage entstanden ist und der Bolzplatz aufgefrischt wurde, soll ein neues, inklusives Spielgerät und weitere Sitzbänke aufgestellt werden. Auf dem Spielplatz befindet sich auch eine weitläufige Asphaltfläche, die unter anderem gerne zum Skaten genutzt wird.",
+    "ai_summary": "Das Straßen- und Grünflächenamt plant, den Spielplatz Ottomar-Geschke-Straße / Spindlersfelder Straße weiter aufzuwerten. Nachdem dort in den vergangenen zwei Jahren bereits eine neue Calisthenics-Anlage entstanden ist und der Bolzplatz aufgefrischt wurde, soll ein neues, inklusives Spielgerät und weitere Sitzbänke aufgestellt werden. Auf dem Spielplatz befindet sich auch eine weitläufige Asphaltfläche, die unter anderem gerne zum Skaten genutzt wird.",
+    "tags": [
+      "verkehr",
+      "verwaltung"
+    ],
+    "location": "Spindlersfeld",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670882.php",
+    "district": "Spindlersfeld",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "13b8a89c81929ef9",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670843.php",
+    "title": "„Beziehungen, die uns stärken“: Woche der Religionen in Treptow-Köpenick vom 11.06. bis 14.06.2026",
+    "published_at": "2026-05-13T08:44:00.000Z",
+    "ingested_at": "2026-05-15T16:01:01.766Z",
+    "raw_excerpt": "Die vierte Woche der Religionen in Treptow-Köpenick lädt dazu ein, die spirituelle Vielfalt des Bezirks neu zu entdecken. Mit dem Projekt „Zusammen interreligiös in Treptow-Köpenick“ entwickelt die Kommunale Ökumene ihr Netzwerk von 27 Kirchengemeinden zu einem interreligiösen Netzwerk weiter – durch Kooperationen zwischen religiösen Gemeinschaften, lokalen Initiativen und Projekten sowie mit Unterstützung der Bezirksverwaltung.",
+    "ai_summary": "Die vierte Woche der Religionen in Treptow-Köpenick lädt dazu ein, die spirituelle Vielfalt des Bezirks neu zu entdecken. Mit dem Projekt „Zusammen interreligiös in Treptow-Köpenick“ entwickelt die Kommunale Ökumene ihr Netzwerk von 27 Kirchengemeinden zu einem interreligiösen Netzwerk weiter – durch Kooperationen zwischen religiösen Gemeinschaften, lokalen Initiativen und Projekten sowie mit Unterstützung der Bezirksverwaltung.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670843.php",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "4",
     "source": "VIZ Berlin",
     "source_url": "https://viz.berlin.de/",
@@ -548,6 +599,33 @@
     "election_relevant": false,
     "ai_reasoning": "Lange Sperrung mit erheblichem Einfluss auf den Alltag in Spindlersfeld.",
     "is_mock": true
+  },
+  {
+    "id": "c0de61da60a5422e",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670291.php",
+    "title": "Arndtstraße / Arndtplatz - un:umstrittenes Erbe? - Podiumsdiskussion zum Umgang mit den Straßenbenennungen nach Ernst Moritz Arndt",
+    "published_at": "2026-05-13T06:00:00.000Z",
+    "ingested_at": "2026-05-15T16:01:01.767Z",
+    "raw_excerpt": "Am Montag, dem 8.06.2026 um 18:00 Uhr, findet im Kulturzentrum ALTE SCHULE Adlershof eine Podiumsdiskussion zum zukünftigen Umgang mit der nach Ernst Moritz Arndt benannten Arndtstraße sowie des Arndtplatzes statt. Es handelt sich dabei um eine gemeinsame Veranstaltung des Beauftragten für Antisemitismusprävention des Bezirks Treptow-Köpenick, der Museen Treptow-Köpenick, Fachbereich Kultur und Museum, Amt für Weiterbildung und Kultur und der Sozialraumorientierten Planungskoordination sowie dem Raum für Beteiligung Treptow-Köpenick.",
+    "ai_summary": "Am Montag, dem 8.06.2026 um 18:00 Uhr, findet im Kulturzentrum ALTE SCHULE Adlershof eine Podiumsdiskussion zum zukünftigen Umgang mit der nach Ernst Moritz Arndt benannten Arndtstraße sowie des Arndtplatzes statt. Es handelt sich dabei um eine gemeinsame Veranstaltung des Beauftragten für Antisemitismusprävention des Bezirks Treptow-Köpenick, der Museen Treptow-Köpenick, Fachbereich Kultur und Museum, Amt für Weiterbildung und Kultur und der Sozialraumorientierten Planungskoordination sowie dem Raum für Beteiligung Treptow-Köpenick.",
+    "tags": [
+      "verkehr",
+      "infrastruktur",
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670291.php",
+    "district": "Adlershof",
+    "addresses": [],
+    "is_mock": false
   },
   {
     "id": "6",

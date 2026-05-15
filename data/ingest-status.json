@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-15T15:11:00.478Z",
+  "last_run": "2026-05-15T16:01:01.975Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -21,25 +21,25 @@
     },
     "bvv-tk": {
       "status": "ok",
-      "fetched": 5,
+      "fetched": 3,
       "parsed": 10,
       "raw_items": 10
     },
     "viz-baustellen": {
       "status": "error",
-      "error": "Fetch failed 404 for https://api.viz.berlin.de/daten/baustellen",
+      "error": "all URLs failed",
       "fetched": 0,
       "raw_items": 0
     },
     "amtsblatt-berlin": {
       "status": "error",
-      "error": "Amtsblatt index fetch failed: HTTP 404",
+      "error": "Amtsblatt index fetch failed: all URLs returned errors",
       "fetched": 0,
       "raw_items": 0
     }
   },
-  "new_entries": 5,
-  "total_entries": 42,
+  "new_entries": 3,
+  "total_entries": 45,
   "dry_run": false,
   "ai_error": "Gemini API failed 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
 }
