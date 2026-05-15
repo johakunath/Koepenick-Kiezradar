@@ -51,7 +51,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
-      <div className="max-w-2xl mx-auto px-5 py-8">
+      <div className="max-w-2xl lg:max-w-4xl mx-auto px-5 py-8">
         <div className="mb-6">
           <Link
             href="/"

@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="mt-12 pb-10 px-5">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl lg:max-w-4xl mx-auto">
         <div
           className="mb-6"
           style={{

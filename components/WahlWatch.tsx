@@ -12,7 +12,7 @@ export default function WahlWatch({ electionCount }: WahlWatchProps) {
   const days = daysToElection();
 
   return (
-    <div className="max-w-2xl mx-auto px-5 mb-3">
+    <div className="max-w-2xl lg:max-w-4xl mx-auto px-5 mb-3">
       <div
         className="flex items-center justify-between gap-3 px-4 py-3 rounded-xl"
         style={{

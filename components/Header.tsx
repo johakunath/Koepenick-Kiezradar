@@ -40,7 +40,7 @@ export default function Header({ count }: HeaderProps) {
           "radial-gradient(ellipse at 20% 0%, rgba(58,115,150,0.08), transparent 50%), radial-gradient(ellipse at 80% 100%, rgba(74,107,58,0.06), transparent 50%)",
       }}
     >
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl lg:max-w-4xl mx-auto">
         <div className="flex items-center justify-between mb-1">
           <div className="flex items-baseline gap-2">
             <WaveLogo />

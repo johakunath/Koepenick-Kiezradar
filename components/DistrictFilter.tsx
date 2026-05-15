@@ -14,7 +14,7 @@ export default function DistrictFilter({ activeDistricts, onToggle, onReset }: D
       className="px-5 py-2"
       style={{ borderBottom: "1px solid var(--border)" }}
     >
-      <div className="max-w-2xl mx-auto flex items-center gap-2">
+      <div className="max-w-2xl lg:max-w-4xl mx-auto flex items-center gap-2">
         <div className="flex gap-2 overflow-x-auto pb-1 flex-1 min-w-0" style={{ scrollbarWidth: "none" }}>
           {DISTRICTS.map((district) => {
             const active = activeDistricts.includes(district);

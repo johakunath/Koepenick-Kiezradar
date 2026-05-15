@@ -9,7 +9,7 @@ export default function DisclaimerBanner() {
   if (!visible) return null;
 
   return (
-    <div className="max-w-2xl mx-auto px-5">
+    <div className="max-w-2xl lg:max-w-4xl mx-auto px-5">
       <div
         className="flex items-start gap-3 text-xs px-4 py-3 rounded-lg"
         style={{
