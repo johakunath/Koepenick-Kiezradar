@@ -1,5 +1,201 @@
 [
   {
+    "id": "648e77300c63ccac",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?&c=13&date_start=15.05.2026&kategorie[0]=1",
+    "title": "Ausstellungen",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.282Z",
+    "raw_excerpt": "",
+    "ai_summary": "Ausstellungen",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "8e5f98d007605cbc",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?&c=13&date_start=15.05.2026&kategorie[0]=21",
+    "title": "Spaziergänge, Ausflüge",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.282Z",
+    "raw_excerpt": "",
+    "ai_summary": "Spaziergänge, Ausflüge",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "28742a4524b06398",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?&c=13&date_start=15.05.2026&kategorie[0]=121",
+    "title": "Infoveranstaltungen",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.282Z",
+    "raw_excerpt": "",
+    "ai_summary": "Infoveranstaltungen",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "c053bba10513512a",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?&c=13&date_start=15.05.2026&kategorie[0]=19",
+    "title": "Gesundheit, Umwelt",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.282Z",
+    "raw_excerpt": "",
+    "ai_summary": "Gesundheit, Umwelt",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "eebe9ed021adfaf4",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?&c=13&date_start=15.05.2026&kategorie[0]=7",
+    "title": "Politik, Bürgerservice",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.282Z",
+    "raw_excerpt": "",
+    "ai_summary": "Politik, Bürgerservice",
+    "tags": [
+      "veranstaltung",
+      "politik"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "48b21ca8aa49f2f3",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?ls=290&c=13&date_start=15.05.2026",
+    "title": "Seite 30",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.283Z",
+    "raw_excerpt": "",
+    "ai_summary": "Seite 30",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-05-15T12:00:00.000Z",
+    "is_mock": false
+  },
+  {
+    "id": "2404032fb32f5cb9",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671325.php",
+    "title": "Autorinnenlesung: Julia Pustet",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Autorinnenlesung: Julia Pustet",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "6c4edc669c57eb31",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671320.php",
+    "title": "Arabischkurs für Kinder",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Arabischkurs für Kinder",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "e07c55a7e73332e0",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670228.php",
+    "title": "Startschuss für den Aktionszeitraum zum Ehrentag: Treptow-Köpenick feiert Engagement und Nachbarschaft",
+    "published_at": "2026-05-15T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Startschuss für den Aktionszeitraum zum Ehrentag: Treptow-Köpenick feiert Engagement und Nachbarschaft",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
     "id": "11",
     "source": "Berlin.de Veranstaltungskalender",
     "source_url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
@@ -59,6 +255,134 @@
     "election_topic": "Innere Sicherheit",
     "ai_reasoning": "BVV-Antrag mit direktem Bezug zu Köpenick und Wahlkampfthema.",
     "is_mock": true
+  },
+  {
+    "id": "2bccbb2e952b6d73",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671067.php",
+    "title": "Geflügelveranstaltungen in Treptow-Köpenick vorerst untersagt",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Geflügelveranstaltungen in Treptow-Köpenick vorerst untersagt",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "4aee52c7bf8d957f",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
+    "title": "Sprechstunde des stellvertretenden Bezirksbürgermeisters im Mai verschoben",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Sprechstunde des stellvertretenden Bezirksbürgermeisters im Mai verschoben",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "7f873c1be1264445",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670882.php",
+    "title": "Spielplatz an der Ottomar-Geschke-Straße in Köpenick soll bunter werden – Kinder und Jugendliche zum Malen mit Kreide eingeladen",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "Spielplatz an der Ottomar-Geschke-Straße in Köpenick soll bunter werden – Kinder und Jugendliche zum Malen mit Kreide eingeladen",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "2b56046690ee499c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670843.php",
+    "title": "„Beziehungen, die uns stärken“: Woche der Religionen in Treptow-Köpenick vom 11.06. bis 14.06.2026",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.284Z",
+    "raw_excerpt": "",
+    "ai_summary": "„Beziehungen, die uns stärken“: Woche der Religionen in Treptow-Köpenick vom 11.06. bis 14.06.2026",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "402c9cec9c300182",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670291.php",
+    "title": "Arndtstraße / Arndtplatz - un:umstrittenes Erbe? - Podiumsdiskussion zum Umgang mit den Straßenbenennungen nach Ernst Moritz Arndt",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Arndtstraße / Arndtplatz - un:umstrittenes Erbe? - Podiumsdiskussion zum Umgang mit den Straßenbenennungen nach Ernst Moritz Arndt",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "6c63373421dad931",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670681.php",
+    "title": "Köpenick soll bunt werden: Bezirksamt verlängert Aufruf zum Festumzug des 65. Köpenicker Sommers",
+    "published_at": "2026-05-13T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Köpenick soll bunt werden: Bezirksamt verlängert Aufruf zum Festumzug des 65. Köpenicker Sommers",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
   },
   {
     "id": "3",
@@ -136,6 +460,48 @@
     "is_mock": true
   },
   {
+    "id": "6bc0051bb696a230",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670632.php",
+    "title": "Öffentliche Stadtführungen in der „Langen Woche der Kiezgeschichte“",
+    "published_at": "2026-05-12T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Öffentliche Stadtführungen in der „Langen Woche der Kiezgeschichte“",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
+    "id": "0f26e9c297302d1c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670294.php",
+    "title": "Änderung im Filialnetz der Deutschen Post in Köpenick",
+    "published_at": "2026-05-12T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Änderung im Filialnetz der Deutschen Post in Köpenick",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
+  },
+  {
     "id": "7",
     "source": "Polizei Berlin",
     "source_url": "https://www.berlin.de/polizei/polizeimeldungen/",
@@ -153,6 +519,27 @@
     "election_relevant": false,
     "ai_reasoning": "Einzelfall, aber Hinweis auf bekannte Gefahrenstelle.",
     "is_mock": true
+  },
+  {
+    "id": "f79990e67d325ed0",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670091.php",
+    "title": "Gedenkstein auf dem Albineaplatz wieder hergestellt",
+    "published_at": "2026-05-11T12:00:00.000Z",
+    "ingested_at": "2026-05-15T12:59:53.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Gedenkstein auf dem Albineaplatz wieder hergestellt",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "is_mock": false
   },
   {
     "id": "8",

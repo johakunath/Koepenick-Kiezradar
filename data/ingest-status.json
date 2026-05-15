@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-15T12:43:39.136Z",
+  "last_run": "2026-05-15T12:59:53.444Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -8,17 +8,17 @@
     },
     "berlin-events": {
       "status": "ok",
-      "fetched": 25,
-      "parsed": 359
+      "fetched": 13,
+      "parsed": 13
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 0,
+      "fetched": 12,
       "parsed": 20
     }
   },
   "new_entries": 25,
-  "total_entries": 36,
+  "total_entries": 29,
   "dry_run": false,
   "ai_error": "Gemini API failed 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available to new users. Please update your code to use a newer model for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
 }
