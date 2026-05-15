@@ -13,7 +13,7 @@ export default function TagFilter({ activeTags, onToggle, onReset }: TagFilterPr
   return (
     <div
       className="px-5 py-2 sticky top-0 z-10"
-      style={{ background: "var(--bg)", borderBottom: "1px solid var(--border)" }}
+      style={{ background: "var(--bg)" }}
     >
       <div className="max-w-2xl mx-auto flex items-center gap-2">
         <div
