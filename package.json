@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "ingest": "node scripts/ingest.mjs",
-    "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-claude"
+    "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",
