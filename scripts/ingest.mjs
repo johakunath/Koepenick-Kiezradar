@@ -10,6 +10,8 @@ const ARCHIVE_DIR = path.join(ROOT, "data", "archive");
 const POLICE_RSS_URL = "https://www.berlin.de/polizei/polizeimeldungen/index/rss.php";
 const POLICE_PAGE_URL = "https://www.berlin.de/polizei/polizeimeldungen/";
 const EVENTS_URL = "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=";
+const BEZIRKSAMT_RSS_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/index/rss.php";
+const BEZIRKSAMT_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/";
 
 const TAGS = [
   "verkehr",
@@ -48,6 +50,7 @@ function parseArgs() {
     skipClaude: args.has("--skip-ai") || args.has("--skip-claude"),
     fixturePolice: valueAfter("--fixture-polizei"),
     fixtureEvents: valueAfter("--fixture-events"),
+    fixtureBezirksamt: valueAfter("--fixture-bezirksamt"),
     limit: Number(valueAfter("--limit") ?? "25"),
   };
 }
@@ -87,6 +90,7 @@ function inferTags(text, sourceId) {
 
   if (sourceId === "polizei-berlin") tags.add("sicherheit");
   if (sourceId === "berlin-events") tags.add("veranstaltung");
+  if (sourceId === "bezirksamt-tk") tags.add("verwaltung");
   if (/verkehr|unfall|straße|strasse|sperrung|bahn|rad/.test(haystack)) tags.add("verkehr");
   if (/bvv|wahl|partei|antrag|senat|politik/.test(haystack)) tags.add("politik");
   if (/bau|schule|kita|wasser|strom|sanierung|infrastruktur/.test(haystack)) {
@@ -227,9 +231,128 @@ function parseGermanDate(text) {
   ).toISOString();
 }
 
-function parseEventsHtml(_html) {
-  // TODO: Veranstaltungs-Scraping wird in Iteration 3 implementiert
-  return [];
+function parseEventsHtml(html) {
+  if (!html) return [];
+
+  // berlin.de event list: <li> blocks containing a link and a German date
+  const items = [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((m) => m[1]);
+  const entries = items
+    .map((item) => {
+      const linkMatch = item.match(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i);
+      if (!linkMatch) return null;
+      const [, href, titleHtml] = linkMatch;
+      const title = decodeEntities(titleHtml);
+      if (!title) return null;
+
+      const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
+      const dateMatch = item.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\s+\d{1,2}:\d{2})?)/);
+      const eventStartAt = dateMatch ? parseGermanDate(dateMatch[1]) : null;
+      const publishedAt = eventStartAt ?? new Date().toISOString();
+      const venueMatch = item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
+      const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
+
+      return {
+        id: hashId(["berlin-events", sourceUrl, title]),
+        source_id: "berlin-events",
+        source: "Berlin.de Veranstaltungskalender",
+        source_url: sourceUrl,
+        title,
+        published_at: publishedAt,
+        ingested_at: new Date().toISOString(),
+        raw_excerpt: venue ? `Ort: ${venue}` : "",
+        ai_summary: title,
+        tags: inferTags(title, "berlin-events"),
+        location: venue ? inferLocation(venue) : "Treptow-Köpenick",
+        location_relevant: true,
+        local_relevance_score: 0.75,
+        political_relevance_score: 0.1,
+        election_relevant: false,
+        ai_reasoning: "Veranstaltung im Bezirk Treptow-Köpenick.",
+        event_start_at: eventStartAt ?? undefined,
+        venue,
+      };
+    })
+    .filter((e) => e && e.title && e.source_url);
+
+  console.log(`Events parsed: ${entries.length} from ${items.length} list items`);
+  return entries;
+}
+
+function parseBezirksamtRss(xml) {
+  const items = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
+
+  return items
+    .map((item) => {
+      const title = field(item, "title");
+      const sourceUrl = field(item, "link");
+      const rawExcerpt = field(item, "description");
+      const publishedAt = new Date(field(item, "pubDate") || Date.now()).toISOString();
+      const text = `${title} ${rawExcerpt}`;
+      const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(text);
+
+      return {
+        id: hashId(["bezirksamt-tk", sourceUrl, title]),
+        source_id: "bezirksamt-tk",
+        source: "Bezirksamt Treptow-Köpenick",
+        source_url: sourceUrl,
+        title,
+        published_at: publishedAt,
+        ingested_at: new Date().toISOString(),
+        raw_excerpt: rawExcerpt,
+        ai_summary: rawExcerpt || title,
+        tags: inferTags(text, "bezirksamt-tk"),
+        location: inferLocation(text),
+        location_relevant: true,
+        local_relevance_score: 0.7,
+        political_relevance_score: /wahl|partei|bvv|antrag|senat/.test(text.toLocaleLowerCase("de-DE")) ? 0.6 : 0.3,
+        election_relevant: hasElectionTopic,
+        election_topic: hasElectionTopic ? "Wahl 2026" : undefined,
+        ai_reasoning: "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+      };
+    })
+    .filter((e) => e.title && e.source_url);
+}
+
+function parseBezirksamtHtml(html) {
+  const matches = [
+    ...html.matchAll(
+      /(\d{1,2}\.\d{1,2}\.\d{4})[^<]*<\/[^>]+>[\s\S]{0,300}?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi
+    ),
+  ];
+
+  return matches
+    .map(([, dateText, href, titleHtml]) => {
+      const title = decodeEntities(titleHtml);
+      if (!title) return null;
+      const sourceUrl = href.startsWith("http") ? href : new URL(href, BEZIRKSAMT_PAGE_URL).toString();
+      const publishedAt = parseGermanDate(dateText) ?? new Date().toISOString();
+      const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(title);
+
+      return {
+        id: hashId(["bezirksamt-tk", sourceUrl, title]),
+        source_id: "bezirksamt-tk",
+        source: "Bezirksamt Treptow-Köpenick",
+        source_url: sourceUrl,
+        title,
+        published_at: publishedAt,
+        ingested_at: new Date().toISOString(),
+        raw_excerpt: "",
+        ai_summary: title,
+        tags: inferTags(title, "bezirksamt-tk"),
+        location: inferLocation(title),
+        location_relevant: true,
+        local_relevance_score: 0.7,
+        political_relevance_score: /wahl|partei|bvv|antrag|senat/.test(title.toLocaleLowerCase("de-DE")) ? 0.6 : 0.3,
+        election_relevant: hasElectionTopic,
+        election_topic: hasElectionTopic ? "Wahl 2026" : undefined,
+        ai_reasoning: "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+      };
+    })
+    .filter((e) => e && e.title && e.source_url);
+}
+
+function parseBezirksamtSource(text) {
+  return /<item\b/i.test(text) ? parseBezirksamtRss(text) : parseBezirksamtHtml(text);
 }
 
 async function enrichWithAI(entries, { skipClaude }) {
@@ -307,10 +430,13 @@ async function main() {
     ? await readText(POLICE_RSS_URL, options.fixturePolice)
     : await readText(POLICE_RSS_URL).catch(async () => readText(POLICE_PAGE_URL));
   const eventsHtml = await readText(EVENTS_URL, options.fixtureEvents).catch(() => "");
+  const bezirksamtText = await readText(BEZIRKSAMT_RSS_URL, options.fixtureBezirksamt)
+    .catch(async () => readText(BEZIRKSAMT_PAGE_URL).catch(() => ""));
 
   const rawEntries = [
     ...parsePoliceSource(policeText),
     ...parseEventsHtml(eventsHtml),
+    ...parseBezirksamtSource(bezirksamtText),
   ].slice(0, options.limit);
   const knownIds = new Set(existing.map((entry) => entry.id));
   const newEntries = rawEntries.filter((entry) => !knownIds.has(entry.id));
