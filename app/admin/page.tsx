@@ -17,6 +17,7 @@ interface IngestStatus {
   new_entries: number;
   total_entries: number;
   dry_run: boolean;
+  ai_error?: string;
 }
 
 function timeAgo(iso: string): string {
@@ -54,7 +55,7 @@ export default async function AdminPage() {
 
   return (
     <div className="min-h-screen px-5 py-10" style={{ background: "var(--bg)" }}>
-      <div className="max-w-lg mx-auto space-y-8">
+      <div className="max-w-3xl mx-auto space-y-8">
         <div>
           <h1
             className="text-2xl mb-1"
@@ -89,6 +90,20 @@ export default async function AdminPage() {
                 )}
               </p>
 
+              {status.ai_error && (
+                <div
+                  className="text-xs px-3 py-2 rounded"
+                  style={{
+                    background: "rgba(156,74,46,0.08)",
+                    border: "1px solid rgba(156,74,46,0.3)",
+                    color: "var(--brick)",
+                  }}
+                >
+                  <span className="font-semibold">KI-Enrichment Fehler: </span>
+                  {status.ai_error}
+                </div>
+              )}
+
               <table className="w-full text-sm border-collapse">
                 <thead>
                   <tr className="text-xs text-left" style={{ color: "var(--ink-soft)" }}>
@@ -97,46 +112,47 @@ export default async function AdminPage() {
                     <th className="pb-2 font-normal text-right">Roh</th>
                     <th className="pb-2 font-normal text-right">Geparst</th>
                     <th className="pb-2 font-normal text-right">Neu</th>
+                    <th className="pb-2 font-normal pl-4">Hinweis</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {Object.entries(status.sources).map(([id, src]) => (
-                    <tr key={id} style={{ borderTop: "1px solid var(--border)" }}>
-                      <td className="py-2" style={{ color: "var(--ink)" }}>
-                        {SOURCE_LABELS[id] ?? id}
-                      </td>
-                      <td className="py-2 text-right">
-                        {src.status === "ok" ? (
-                          (src.parsed ?? 0) > 0 ? (
-                            <span style={{ color: "var(--forest)" }}>✓</span>
+                  {Object.entries(status.sources).map(([id, src]) => {
+                    const warning =
+                      src.status === "ok" && (src.parsed ?? 0) === 0
+                        ? "Quelle erreichbar, aber keine Einträge geparst — Parser prüfen"
+                        : null;
+                    const errorMsg = src.status === "error" ? (src.error ?? "Unbekannter Fehler") : null;
+                    return (
+                      <tr key={id} style={{ borderTop: "1px solid var(--border)" }}>
+                        <td className="py-2" style={{ color: "var(--ink)" }}>
+                          {SOURCE_LABELS[id] ?? id}
+                        </td>
+                        <td className="py-2 text-right">
+                          {src.status === "ok" ? (
+                            (src.parsed ?? 0) > 0 ? (
+                              <span style={{ color: "var(--forest)" }}>✓</span>
+                            ) : (
+                              <span style={{ color: "#b58900" }}>⚠</span>
+                            )
                           ) : (
-                            <span
-                              title="Quelle erreichbar, aber keine Einträge geparst — Parser prüfen"
-                              style={{ color: "#b58900", cursor: "help" }}
-                            >
-                              ⚠
-                            </span>
-                          )
-                        ) : (
-                          <span
-                            title={src.error}
-                            style={{ color: "var(--brick)", cursor: "help" }}
-                          >
-                            ✗
-                          </span>
-                        )}
-                      </td>
-                      <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
-                        {src.raw_items ?? "—"}
-                      </td>
-                      <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
-                        {src.status === "ok" ? (src.parsed ?? "—") : "—"}
-                      </td>
-                      <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
-                        {src.status === "ok" ? (src.fetched ?? "—") : "—"}
-                      </td>
-                    </tr>
-                  ))}
+                            <span style={{ color: "var(--brick)" }}>✗</span>
+                          )}
+                        </td>
+                        <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
+                          {src.raw_items ?? "—"}
+                        </td>
+                        <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
+                          {src.status === "ok" ? (src.parsed ?? "—") : "—"}
+                        </td>
+                        <td className="py-2 text-right" style={{ color: "var(--ink-soft)" }}>
+                          {src.status === "ok" ? (src.fetched ?? "—") : "—"}
+                        </td>
+                        <td className="py-2 pl-4 text-xs" style={{ color: warning ? "#b58900" : "var(--brick)" }}>
+                          {warning ?? errorMsg ?? ""}
+                        </td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
 
