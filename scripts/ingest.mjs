@@ -14,8 +14,8 @@ const POLICE_PAGE_URL = "https://www.berlin.de/polizei/polizeimeldungen/";
 const EVENTS_URL = "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=";
 const BEZIRKSAMT_RSS_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/index/rss.php";
 const BEZIRKSAMT_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/";
-const BVV_ALLRIS_RSS_URL = "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/rss/buergerantrag.rss";
-const BVV_ALLRIS_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/online/index.asp";
+const BVV_ALLRIS_RSS_URL = "https://www.berlin.de/presse/pressemitteilungen/index/feed?institutions%5B%5D=Bezirksamt+Treptow-K%C3%B6penick";
+const BVV_ALLRIS_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/";
 const AMTSBLATT_INDEX_URL = "https://www.berlin.de/landesverwaltungsamt/zentrale-dienste/amtsblatt-fuer-berlin/";
 const VIZ_BAUSTELLEN_URL = "https://api.viz.berlin.de/daten/baustellen";
 
@@ -32,6 +32,8 @@ const TAGS = [
 const KOEPENICK_KEYWORDS = [
   "köpenick",
   "koepenick",
+  "treptow-köpenick",
+  "treptow köpenick",
   "alt-köpenick",
   "altstadt",
   "dammvorstadt",
@@ -42,6 +44,12 @@ const KOEPENICK_KEYWORDS = [
   "bahnhofstrasse",
   "bahnhof köpenick",
   "wuhlheide",
+  "friedrichshagen",
+  "wendenschloss",
+  "grünau",
+  "müggelheim",
+  "schmöckwitz",
+  "rahnsdorf",
 ];
 
 // District keyword → label (for pre-AI regex fallback, same order as koepenick-geo.ts)
@@ -300,6 +308,16 @@ function parseEventsHtml(html) {
       if (title.trim().length < 8) return null;
 
       const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
+
+      // Filter: reject category-filter and pagination links (index.php with ?kategorie or ?ls)
+      // Real events have dedicated URLs; nav items point back to index.php
+      try {
+        const u = new URL(sourceUrl);
+        if (u.pathname.endsWith("index.php") || u.searchParams.has("kategorie[0]") || u.searchParams.has("ls")) return null;
+      } catch {
+        return null;
+      }
+
       const dateMatch = item.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\s+\d{1,2}:\d{2})?)/);
 
       // Filter: require a date — real events always have one, nav items don't
@@ -615,7 +633,7 @@ async function enrichWithAI(entries, { skipClaude }) {
     throw new Error("GEMINI_API_KEY fehlt. Für lokale Tests nutze --skip-ai.");
   }
 
-  const model = process.env.GEMINI_MODEL ?? "gemini-2.0-flash";
+  const model = process.env.GEMINI_MODEL ?? "gemini-1.5-flash";
   const districts = DISTRICT_KEYWORDS.map(([, label]) => [...new Set([label])]).flat().filter((v, i, a) => a.indexOf(v) === i);
   const prompt =
     `Du enrichst Einträge für Köpenick Kiezradar. Antworte ausschließlich als JSON-Array. Behalte id bei.
