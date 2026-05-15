@@ -28,6 +28,10 @@ export interface Entry {
   event_start_at?: string;
   event_end_at?: string;
   venue?: string;
+  document_type?: "rss" | "html" | "pdf" | "oparl" | "geojson";
+  document_url?: string;
+  pdf_page?: number;
+  pdf_excerpt?: string;
   is_mock?: boolean;
 }
 
