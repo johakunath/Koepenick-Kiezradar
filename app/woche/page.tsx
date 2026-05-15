@@ -34,7 +34,9 @@ async function loadLatestDigest(): Promise<Digest | null> {
 }
 
 export default async function WochePage() {
-  const entries = (entriesData as Entry[]).sort(
+  const allEntries = entriesData as Entry[];
+  const hasRealData = allEntries.some((e) => !e.is_mock);
+  const entries = (hasRealData ? allEntries.filter((e) => !e.is_mock) : allEntries).sort(
     (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
   );
   const digest = await loadLatestDigest();

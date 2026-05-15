@@ -10,9 +10,12 @@ interface DistrictFilterProps {
 
 export default function DistrictFilter({ activeDistricts, onToggle, onReset }: DistrictFilterProps) {
   return (
-    <div className="px-5 pb-2">
-      <div className="max-w-2xl mx-auto">
-        <div className="flex gap-2 overflow-x-auto pb-1" style={{ scrollbarWidth: "none" }}>
+    <div
+      className="px-5 py-2"
+      style={{ borderBottom: "1px solid var(--border)" }}
+    >
+      <div className="max-w-2xl mx-auto flex items-center gap-2">
+        <div className="flex gap-2 overflow-x-auto pb-1 flex-1 min-w-0" style={{ scrollbarWidth: "none" }}>
           {DISTRICTS.map((district) => {
             const active = activeDistricts.includes(district);
             return (
@@ -38,16 +41,16 @@ export default function DistrictFilter({ activeDistricts, onToggle, onReset }: D
               </button>
             );
           })}
-          {activeDistricts.length > 0 && (
-            <button
-              onClick={onReset}
-              className="text-xs px-2.5 py-1 rounded-full whitespace-nowrap"
-              style={{ color: "var(--ink-soft)" }}
-            >
-              zurücksetzen
-            </button>
-          )}
         </div>
+        {activeDistricts.length > 0 && (
+          <button
+            onClick={onReset}
+            className="text-xs px-2 py-1 rounded shrink-0 transition-opacity"
+            style={{ color: "var(--ink-soft)", opacity: 0.7 }}
+          >
+            ✕ zurücksetzen
+          </button>
+        )}
       </div>
     </div>
   );

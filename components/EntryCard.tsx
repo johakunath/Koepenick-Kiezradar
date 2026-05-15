@@ -40,8 +40,9 @@ export default function EntryCard({ entry }: EntryCardProps) {
 
   return (
     <article
-      className="relative rounded-lg p-5 transition-all duration-150 hover:-translate-y-px"
+      className="relative p-5 transition-all duration-150 hover:-translate-y-px"
       style={{
+        borderRadius: 12,
         background: "var(--bg-card)",
         border: "1px solid var(--border)",
       }}
@@ -72,16 +73,47 @@ export default function EntryCard({ entry }: EntryCardProps) {
             <span
               style={{
                 color: "var(--water-deep)",
-                fontSize: "11px",
-                letterSpacing: "0.04em",
+                fontSize: "10.5px",
+                letterSpacing: "0.06em",
                 textTransform: "uppercase",
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
               {TAG_LABELS[t]}
             </span>
           </span>
         ))}
+        {entry.election_relevant && (
+          <span className="ml-auto shrink-0">
+            <span
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 4,
+                fontSize: 10,
+                textTransform: "uppercase",
+                letterSpacing: "0.08em",
+                color: "var(--brick)",
+                background: "rgba(156,74,46,0.08)",
+                border: "1px solid rgba(156,74,46,0.25)",
+                borderRadius: 4,
+                padding: "2px 6px",
+                fontWeight: 600,
+              }}
+            >
+              <span
+                style={{
+                  width: 5,
+                  height: 5,
+                  borderRadius: 999,
+                  background: "var(--brick)",
+                  display: "inline-block",
+                }}
+              />
+              Wahl 2026
+            </span>
+          </span>
+        )}
       </div>
 
       <h2
