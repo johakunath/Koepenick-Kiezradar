@@ -843,13 +843,16 @@ async function main() {
     }
   }
 
+  // Cap each source individually so a high-volume source (e.g. Events with 400+ items)
+  // cannot crowd out smaller but higher-quality sources (Bezirksamt, BVV, Amtsblatt).
+  const PER_SOURCE_CAP = Math.max(5, Math.floor(options.limit / 3));
   const rawEntries = [
-    ...policeEntries,
-    ...eventsEntries,
-    ...bezirksamtEntries,
-    ...bvvEntries,
-    ...vizEntries,
-    ...amtsblattEntries,
+    ...policeEntries.slice(0, PER_SOURCE_CAP),
+    ...eventsEntries.slice(0, PER_SOURCE_CAP),
+    ...bezirksamtEntries.slice(0, PER_SOURCE_CAP),
+    ...bvvEntries.slice(0, PER_SOURCE_CAP),
+    ...vizEntries.slice(0, PER_SOURCE_CAP),
+    ...amtsblattEntries.slice(0, PER_SOURCE_CAP),
   ].slice(0, options.limit);
   const knownIds = new Set(existing.map((entry) => entry.id));
   const newEntries = prefillGeoFields(rawEntries.filter((entry) => !knownIds.has(entry.id)));
