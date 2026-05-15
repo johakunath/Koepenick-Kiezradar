@@ -66,6 +66,12 @@ function decodeEntities(value = "") {
     .replaceAll("&apos;", "'")
     .replaceAll("&lt;", "<")
     .replaceAll("&gt;", ">")
+    .replace(/&#(\d+);/g, (_, code) => {
+      const n = Number(code);
+      if (n === 173) return ""; // soft hyphen → strip
+      return String.fromCharCode(n);
+    })
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -243,11 +249,19 @@ function parseEventsHtml(html) {
       if (!linkMatch) return null;
       const [, href, titleHtml] = linkMatch;
       const title = decodeEntities(titleHtml);
+
+      // Filter: must have a real title (not a year, not navigation, not too short)
       if (!title) return null;
+      if (/^\d{4}$/.test(title.trim())) return null;
+      if (title.trim().length < 8) return null;
 
       const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
       const dateMatch = item.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\s+\d{1,2}:\d{2})?)/);
-      const eventStartAt = dateMatch ? parseGermanDate(dateMatch[1]) : null;
+
+      // Filter: require a date — real events always have one, nav items don't
+      if (!dateMatch) return null;
+
+      const eventStartAt = parseGermanDate(dateMatch[1]);
       const publishedAt = eventStartAt ?? new Date().toISOString();
       const venueMatch = item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
       const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
