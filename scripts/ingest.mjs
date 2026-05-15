@@ -38,6 +38,8 @@ const TAGS = [
   "wahl",
   "sonstiges",
 ];
+const DEFAULT_GEMINI_MODEL = "gemini-2.0-flash";
+const GEMINI_FALLBACK_MODELS = ["gemini-2.5-flash"];
 
 const KOEPENICK_KEYWORDS = [
   "köpenick",
@@ -139,6 +141,50 @@ function decodeEntities(value = "") {
     .trim();
 }
 
+function compactText(value = "") {
+  return value.replace(/\s+/g, " ").trim();
+}
+
+function truncateText(value = "", maxLength = 220) {
+  const text = compactText(value);
+  if (text.length <= maxLength) return text;
+  return `${text.slice(0, maxLength - 1).replace(/\s+\S*$/, "")}…`;
+}
+
+function fallbackSourceSummary({ title, rawExcerpt, sourceId, venue, eventStartAt }) {
+  if (sourceId === "berlin-events") {
+    const date = eventStartAt
+      ? new Date(eventStartAt).toLocaleString("de-DE", {
+          day: "numeric",
+          month: "long",
+          hour: "2-digit",
+          minute: "2-digit",
+        })
+      : null;
+    if (date && venue) return `Veranstaltung am ${date} in ${venue}.`;
+    if (venue) return `Veranstaltung in ${venue}.`;
+  }
+
+  const cleanedExcerpt = truncateText(rawExcerpt);
+  if (cleanedExcerpt && cleanedExcerpt.toLocaleLowerCase("de-DE") !== compactText(title).toLocaleLowerCase("de-DE")) {
+    return cleanedExcerpt;
+  }
+
+  if (sourceId === "bezirksamt-tk") {
+    return "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.";
+  }
+
+  if (sourceId === "polizei-berlin") {
+    return "Polizeimeldung mit Köpenick-Bezug. Details stehen in der Originalquelle.";
+  }
+
+  if (sourceId === "bvv-tk") {
+    return "BVV-Vorgang mit Bezug zu Treptow-Köpenick. Details stehen in der Originalquelle.";
+  }
+
+  return "Noch nicht KI-zusammengefasst. Details stehen in der Originalquelle.";
+}
+
 function field(block, name) {
   const match = block.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`, "i"));
   return decodeEntities(match?.[1] ?? "");
@@ -227,7 +273,7 @@ export function parsePoliceRss(xml) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || title,
+        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "polizei-berlin" }),
         tags: inferTags(text, "polizei-berlin"),
         location: inferLocation(text),
         location_relevant: containsKoepenick(text),
@@ -268,7 +314,7 @@ export function parsePoliceHtml(html) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: rawExcerpt,
-        ai_summary: title,
+          ai_summary: fallbackSourceSummary({ title, rawExcerpt: location, sourceId: "polizei-berlin" }),
         tags: inferTags(text, "polizei-berlin"),
         location: inferLocation(text),
         location_relevant: containsKoepenick(text),
@@ -366,6 +412,12 @@ export function parseEventsHtml(html) {
         item.match(/<dt>\s*Veranstaltungsort:\s*<\/dt>\s*<dd>([\s\S]*?)<\/dd>/i) ??
         item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
       const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
+      const summary = fallbackSourceSummary({
+        title,
+        sourceId: "berlin-events",
+        venue,
+        eventStartAt,
+      });
 
       return {
         id: hashId(["berlin-events", sourceUrl, title]),
@@ -376,7 +428,7 @@ export function parseEventsHtml(html) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: venue ? `Ort: ${venue}` : "",
-        ai_summary: title,
+        ai_summary: summary,
         tags: inferTags(title, "berlin-events"),
         location: venue ? inferLocation(venue) : "Treptow-Köpenick",
         location_relevant: true,
@@ -415,7 +467,7 @@ function parseBezirksamtRss(xml) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || title,
+        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "bezirksamt-tk" }),
         tags: inferTags(text, "bezirksamt-tk"),
         location: inferLocation(text),
         location_relevant: true,
@@ -453,7 +505,7 @@ function parseBezirksamtHtml(html) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: "",
-        ai_summary: title,
+        ai_summary: fallbackSourceSummary({ title, sourceId: "bezirksamt-tk" }),
         tags: inferTags(title, "bezirksamt-tk"),
         location: inferLocation(title),
         location_relevant: true,
@@ -496,7 +548,7 @@ function parseBvvAllrisRss(xml) {
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
         raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || title,
+        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "bvv-tk" }),
         tags: inferTags(text, "bvv-tk"),
         location: inferLocation(text),
         location_relevant: true,
@@ -675,7 +727,12 @@ async function enrichWithAI(entries, { skipClaude }) {
     throw new Error("GEMINI_API_KEY fehlt. Für lokale Tests nutze --skip-ai.");
   }
 
-  const model = process.env.GEMINI_MODEL ?? "gemini-1.5-flash";
+  const modelCandidates = [
+    process.env.GEMINI_MODEL,
+    DEFAULT_GEMINI_MODEL,
+    ...GEMINI_FALLBACK_MODELS,
+  ].filter(Boolean);
+  const models = [...new Set(modelCandidates)];
   const districts = DISTRICT_KEYWORDS.map(([, label]) => [...new Set([label])]).flat().filter((v, i, a) => a.indexOf(v) === i);
   const prompt =
     `Du enrichst Einträge für Köpenick Kiezradar. Antworte ausschließlich als JSON-Array. Behalte id bei.
@@ -698,23 +755,36 @@ Pflichtfelder pro Eintrag:
 Eingabe:\n\n` +
     JSON.stringify(entries, null, 2);
 
-  const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-    {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { maxOutputTokens: 4000 },
-      }),
-    }
-  );
+  let payload = null;
+  const failures = [];
 
-  if (!response.ok) {
-    throw new Error(`Gemini API failed ${response.status}: ${await response.text()}`);
+  for (const model of models) {
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { maxOutputTokens: 4000 },
+        }),
+      }
+    );
+
+    if (response.ok) {
+      payload = await response.json();
+      break;
+    }
+
+    const errorText = await response.text();
+    failures.push(`${model}: ${response.status} ${errorText}`);
+    if (response.status !== 404) break;
   }
 
-  const payload = await response.json();
+  if (!payload) {
+    throw new Error(`Gemini API failed: ${failures.join(" | ")}`);
+  }
+
   const text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "[]";
   const jsonMatch = text.match(/\[[\s\S]*\]/);
   const enriched = JSON.parse(jsonMatch?.[0] ?? "[]");
@@ -819,7 +889,13 @@ async function main() {
         console.log(`VIZ: ${vizUrl} → ${err.message}`);
       }
     }
-    if (!vizText) sourceStatus["viz-baustellen"] = { status: "error", error: "all URLs failed", raw_items: 0 };
+    if (!vizText) {
+      sourceStatus["viz-baustellen"] = {
+        status: "skipped",
+        error: "Optionale Quelle aktuell nicht erreichbar: alle VIZ-URLs lieferten Fehler",
+        raw_items: 0,
+      };
+    }
   }
 
   // Amtsblatt: async PDF fetcher with its own error tracking
@@ -827,10 +903,20 @@ async function main() {
   try {
     if (!options.skipAmtsblatt) {
       amtsblattEntries = await fetchAmtsblattEntries();
+      sourceStatus["amtsblatt-berlin"] = { status: "ok", parsed: amtsblattEntries.length, raw_items: amtsblattEntries.length };
+    } else {
+      sourceStatus["amtsblatt-berlin"] = {
+        status: "skipped",
+        error: "Optionale Quelle in diesem Lauf übersprungen",
+        raw_items: 0,
+      };
     }
-    sourceStatus["amtsblatt-berlin"] = { status: "ok", parsed: amtsblattEntries.length, raw_items: amtsblattEntries.length };
   } catch (err) {
-    sourceStatus["amtsblatt-berlin"] = { status: "error", error: err.message, raw_items: 0 };
+    sourceStatus["amtsblatt-berlin"] = {
+      status: "skipped",
+      error: `Optionale Quelle aktuell nicht erreichbar: ${err.message}`,
+      raw_items: 0,
+    };
   }
 
   const policeEntries = parsePoliceSource(policeText);
@@ -909,6 +995,8 @@ async function main() {
         id,
         s.status === "ok"
           ? { status: "ok", fetched: newEntries.filter((e) => e.source_id === id).length, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
+          : s.status === "skipped"
+            ? { status: "skipped", error: s.error, fetched: 0, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
           : { status: "error", error: s.error, fetched: 0, raw_items: s.raw_items ?? 0 },
       ])
     ),

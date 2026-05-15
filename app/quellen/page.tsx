@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RadarNav from "@/components/RadarNav";
 import { getSources } from "@/lib/data";
 
 export default function SourcesPage() {
@@ -7,6 +8,7 @@ export default function SourcesPage() {
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
+        <RadarNav />
         <Link href="/" className="text-xs font-medium" style={{ color: "var(--water-mid)" }}>
           ← Zum Feed
         </Link>

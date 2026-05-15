@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CalendarDays } from "lucide-react";
+import RadarNav from "@/components/RadarNav";
 import { getMeetings } from "@/lib/data";
 
 export default function MeetingsPage() {
@@ -8,6 +9,7 @@ export default function MeetingsPage() {
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
+        <RadarNav />
         <Link href="/" className="text-xs font-medium" style={{ color: "var(--water-mid)" }}>
           ← Zum Feed
         </Link>
