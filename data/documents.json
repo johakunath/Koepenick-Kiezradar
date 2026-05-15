@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "mehr-polizeipraesenz-s-bahnhof-koepenick",
+    "title": "CDU-Antrag: Mehr Polizeipräsenz am S-Bahnhof Köpenick",
+    "body_slug": "bvv-treptow-koepenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
+    "published_at": "2026-05-13T18:00:00Z",
+    "topic_slugs": ["sicherheit", "politik", "wahl-2026"],
+    "district_slug": "bahnhof-koepenick",
+    "summary": "Mock-Drucksache für die spätere BVV-Dokumentansicht."
+  },
+  {
+    "slug": "resolution-schulplatzmangel-spindlersfeld",
+    "title": "BVV beschließt Resolution zu Schulplatzmangel in Spindlersfeld",
+    "body_slug": "bvv-treptow-koepenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
+    "published_at": "2026-05-12T20:30:00Z",
+    "topic_slugs": ["bildung", "verwaltung", "politik"],
+    "district_slug": "spindlersfeld",
+    "summary": "Mock-Drucksache für die spätere Auswertung von Bildungs- und BVV-Themen."
+  }
+]

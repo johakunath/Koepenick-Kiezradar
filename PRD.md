@@ -31,9 +31,6 @@ Hyperlokales Monitoring-Tool für Berlin-Köpenick. Aggregiert lokale Meldungen 
 ### Out of Scope v0
 - Login, Accounts
 - Newsletter, E-Mail
-- Karte
-- Suche
-- Detailansicht als eigene Seite (Titel + Summary + Link reicht)
 - Eigene DB
 - App Store App
 
@@ -96,7 +93,7 @@ Scores 0–1, von KI vergeben. Schwellenwert konfigurierbar.
         └──────────────┬────────────────┘
                        ▼
         ┌───────────────────────────────┐
-        │  Claude API Enrichment        │
+        │  Gemini/KI Enrichment         │
         │  - Köpenick relevant? J/N     │
         │  - Tags                       │
         │  - Summary                    │
@@ -121,9 +118,18 @@ Scores 0–1, von KI vergeben. Schwellenwert konfigurierbar.
 ### `/` Feed (Mobile-first)
 - Header: Logo + Subtitle + Wochen-Link
 - Tag-Filter: 7 Toggle-Chips
+- Ortsfilter und Search-Lite
 - Liste: Cards mit Datum, Titel, KI-Summary (2 Zeilen), Tags, Quelle (Link)
-- Klick auf Card → öffnet Originalquelle in neuem Tab
+- Card-Titel führt auf interne Detailseite, Originalquelle bleibt verlinkt
 - Footer: Disclaimer, "Generiert am [Datum]"
+
+### Radar-Navigation
+- `/eintrag/[slug]` Detailseiten mit Quelle, KI-Begründung und Original-Link
+- `/themen` und `/thema/[slug]`
+- `/orte`
+- `/termine` und `/termin/[slug]`
+- `/karte`
+- `/quellen`
 
 ### `/woche` Wochenüberblick
 - Generiert sonntags 22:00 CET via GitHub Action
@@ -178,12 +184,13 @@ KI markiert Einträge, die zu diesen Themen passen, mit `election_relevant: true
 - Vercel-Deployment als nächster operativer Schritt
 
 ### Iteration 2 — Erste echte Daten + KI
-- Polizei-RSS ziehen via GitHub Action
+- Polizei-/Berlin.de-Quellen ziehen via GitHub Action
 - Berlin.de Veranstaltungskalender Treptow-Köpenick ziehen
-- Claude API Enrichment Pipeline
+- Gemini-Enrichment Pipeline
 - `entries.json` automatisch aktualisiert
 - Monatsarchiv unter `data/archive/YYYY-MM.json`
-- BVV OParl und Bezirksamt erst nach stabilem Polizei-/Event-Import
+- Detailseiten, Themen, Orte, Termine und Quellenübersicht als Düsseldorf-Radar-inspirierte Struktur
+- BVV/OParl-Tiefe erst nach stabiler Quellenklärung
 
 ### Iteration 3 — Wochenüberblick + zweite Welle Quellen
 - `/woche`-Seite
@@ -222,3 +229,11 @@ KI markiert Einträge, die zu diesen Themen passen, mit `election_relevant: true
 5. Wie wird "Köpenick-relevant" bei stadtweiten Themen (z.B. Sparpolitik) behandelt? Eigene Logik nötig.
 
 Diese Fragen werden in Iteration 1 nicht beantwortet — explizit Out of Scope.
+
+## 15. Aktueller Implementierungsstand 15.05.2026
+
+- Live auf Vercel: https://koepenick-kiezradar.vercel.app/
+- Feed, Wochenüberblick, Karte, Admin-Trigger und RSS-Feed sind vorhanden.
+- Search-Lite, interne Detailseiten, Themen, Orte, Termine und Quellen sind als Datenfundament-Schritt umgesetzt.
+- Parser-Smoke-Tests sichern Polizei- und Event-Parser gegen Navigationsartefakte ab.
+- VIZ und Amtsblatt bleiben technisch vorbereitet, aber defensiv behandelt, weil die Quellen zuletzt nicht stabil erreichbar waren.

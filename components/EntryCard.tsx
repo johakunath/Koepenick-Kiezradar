@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { ArrowUpRight, CalendarDays, ChevronDown, ChevronUp, MapPin } from "lucide-react";
 import type { Entry, Tag } from "@/lib/types";
+import { slugify } from "@/lib/slug";
 import { TAG_LABELS } from "@/lib/types";
 import RelevanceWaves from "@/components/RelevanceWaves";
 
@@ -34,6 +36,7 @@ interface EntryCardProps {
 export default function EntryCard({ entry }: EntryCardProps) {
   const [reasoningOpen, setReasoningOpen] = useState(false);
   const eventDate = formatEventDate(entry.event_start_at);
+  const detailHref = `/eintrag/${entry.slug ?? slugify(entry.title)}`;
   const reasoning =
     entry.ai_reasoning && entry.ai_reasoning.trim().length > 0
       ? entry.ai_reasoning
@@ -84,24 +87,6 @@ export default function EntryCard({ entry }: EntryCardProps) {
             </span>
           </span>
         ))}
-        {entry.election_relevant && (
-          <span
-            className="ml-auto shrink-0"
-            style={{
-              fontSize: 9,
-              textTransform: "uppercase",
-              letterSpacing: "0.07em",
-              color: "var(--brick)",
-              border: "1px solid rgba(156,74,46,0.3)",
-              borderRadius: 3,
-              padding: "1px 4px",
-              fontWeight: 600,
-              lineHeight: 1.4,
-            }}
-          >
-            Wahl 26
-          </span>
-        )}
       </div>
 
       <h2
@@ -113,7 +98,9 @@ export default function EntryCard({ entry }: EntryCardProps) {
           color: "var(--ink)",
         }}
       >
-        {entry.title}
+        <Link href={detailHref} className="hover:underline">
+          {entry.title}
+        </Link>
       </h2>
 
       <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--ink-soft)" }}>
@@ -183,6 +170,14 @@ export default function EntryCard({ entry }: EntryCardProps) {
           <ArrowUpRight size={12} />
         </a>
       </div>
+
+      <Link
+        href={detailHref}
+        className="inline-block text-xs mt-3 font-medium"
+        style={{ color: "var(--water-mid)" }}
+      >
+        Details im Radar
+      </Link>
 
       <button
         onClick={() => setReasoningOpen((v) => !v)}

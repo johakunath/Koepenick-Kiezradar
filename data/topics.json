@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "wahl-2026",
+    "label": "Wahl 2026",
+    "description": "Wahlkreise, Kandidaturen und Vorgänge mit erkennbarem Wahlbezug.",
+    "tag": "wahl"
+  },
+  {
+    "slug": "verkehr",
+    "label": "Verkehr",
+    "description": "Baustellen, Sperrungen, ÖPNV, Radverkehr und Mobilität im Alltag.",
+    "tag": "verkehr"
+  },
+  {
+    "slug": "sicherheit",
+    "label": "Sicherheit",
+    "description": "Polizei, Ordnung, Gefahrenstellen und lokale Sicherheitsdebatten.",
+    "tag": "sicherheit"
+  },
+  {
+    "slug": "verwaltung",
+    "label": "Verwaltung",
+    "description": "Bezirksamt, Bürgerdienste, öffentliche Hinweise und Amtsvorgänge.",
+    "tag": "verwaltung"
+  },
+  {
+    "slug": "politik",
+    "label": "Politik",
+    "description": "BVV, Anträge, Gremien und politische Entscheidungen im Bezirk.",
+    "tag": "politik"
+  },
+  {
+    "slug": "infrastruktur",
+    "label": "Infrastruktur",
+    "description": "Bau, Wasser, Strom, Schulen, Kitas und öffentliche Einrichtungen.",
+    "tag": "infrastruktur"
+  },
+  {
+    "slug": "veranstaltungen",
+    "label": "Veranstaltungen",
+    "description": "Öffentliche Termine, Kultur, Nachbarschaft und Beteiligung.",
+    "tag": "veranstaltung"
+  },
+  {
+    "slug": "wohnen",
+    "label": "Wohnen",
+    "description": "Mieten, Bauanträge, neue Wohnungen und Flächenentwicklung."
+  },
+  {
+    "slug": "bildung",
+    "label": "Bildung",
+    "description": "Schulen, Kitas, Schulplätze und Bildungsinfrastruktur."
+  }
+]

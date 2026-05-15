@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { PDFParse } from "pdf-parse";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -206,7 +206,7 @@ async function readText(url, fixturePath) {
   return response.text();
 }
 
-function parsePoliceRss(xml) {
+export function parsePoliceRss(xml) {
   const items = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((match) => match[1]);
 
   return items
@@ -242,7 +242,7 @@ function parsePoliceRss(xml) {
     .filter((entry) => entry.title && entry.source_url && entry.location_relevant);
 }
 
-function parsePoliceHtml(html) {
+export function parsePoliceHtml(html) {
   const matches = [
     ...html.matchAll(
       /(\d{1,2}\.\d{1,2}\.\d{4}\s+\d{1,2}:\d{2})\s*Uhr[\s\S]*?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*Ereignisort:\s*([^<\n]+)/gi
@@ -284,11 +284,11 @@ function parsePoliceHtml(html) {
     .filter((entry) => entry.title && entry.source_url && entry.location_relevant);
 }
 
-function parsePoliceSource(text) {
+export function parsePoliceSource(text) {
   return /<item\b/i.test(text) ? parsePoliceRss(text) : parsePoliceHtml(text);
 }
 
-function parseGermanDate(text) {
+export function parseGermanDate(text) {
   const match = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})(?:\D+(\d{1,2}):(\d{2}))?/);
   if (!match) return null;
 
@@ -302,14 +302,32 @@ function parseGermanDate(text) {
   ).toISOString();
 }
 
-function parseEventsHtml(html) {
+export function parseEventsHtml(html) {
   if (!html) return [];
 
-  // berlin.de event list: <li> blocks containing a link and a German date
-  const items = [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((m) => m[1]);
+  // berlin.de currently renders event teasers as articles; keep the li fallback for fixtures/older markup.
+  const articles = [
+    ...html.matchAll(/<article\b[^>]*\b(?:teaser--event|js-ems-event-teaser)\b[^>]*>([\s\S]*?)<\/article>/gi),
+  ].map((m) => m[1]);
+  const items = articles.length
+    ? articles
+    : [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((m) => m[1]);
   const entries = items
     .map((item) => {
-      const linkMatch = item.match(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i);
+      const headingLinkMatch = item.match(
+        /<a\b[^>]*class="[^"]*\bjs-ems-event-teaser-heading\b[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i
+      );
+      const detailLinkMatches = [...item.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)];
+      const linkMatch =
+        headingLinkMatch ??
+        detailLinkMatches.find((m) => {
+          const text = decodeEntities(m[2]);
+          return m[1].includes("detail=") && text && !/^zur veranstaltung$/i.test(text);
+        }) ??
+        detailLinkMatches.find((m) => {
+          const text = decodeEntities(m[2]);
+          return text && !/^zur veranstaltung$/i.test(text);
+        });
       if (!linkMatch) return null;
       const [, href, titleHtml] = linkMatch;
       const title = decodeEntities(titleHtml);
@@ -321,23 +339,32 @@ function parseEventsHtml(html) {
 
       const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
 
-      // Filter: reject category-filter and pagination links (index.php with ?kategorie or ?ls)
-      // Real events have dedicated URLs; nav items point back to index.php
+      // Filter: reject category-filter and pagination links.
+      // Berlin.de real event links may be index.php?detail=..., so allow that shape.
       try {
         const u = new URL(sourceUrl);
-        if (u.pathname.endsWith("index.php") || u.searchParams.has("kategorie[0]") || u.searchParams.has("ls")) return null;
+        if (u.searchParams.has("kategorie[0]")) return null;
+        if (u.searchParams.has("ls") && !u.searchParams.has("detail")) return null;
+        if (u.pathname.endsWith("index.php") && !u.searchParams.has("detail")) return null;
       } catch {
         return null;
       }
 
-      const dateMatch = item.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\s+\d{1,2}:\d{2})?)/);
+      const explicitDate = item.match(/<span\b[^>]*class="[^"]*\bdate\b[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
+      const explicitTime = item.match(/<span\b[^>]*class="[^"]*\btime\b[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
+      const dateText = explicitDate
+        ? `${decodeEntities(explicitDate[1])} ${decodeEntities(explicitTime?.[1] ?? "")}`
+        : item;
+      const dateMatch = dateText.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\D+\d{1,2}:\d{2})?)/);
 
-      // Filter: require a date — real events always have one, nav items don't
+      // Filter: require a date - real events always have one, nav items don't.
       if (!dateMatch) return null;
 
       const eventStartAt = parseGermanDate(dateMatch[1]);
       const publishedAt = eventStartAt ?? new Date().toISOString();
-      const venueMatch = item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
+      const venueMatch =
+        item.match(/<dt>\s*Veranstaltungsort:\s*<\/dt>\s*<dd>([\s\S]*?)<\/dd>/i) ??
+        item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
       const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
 
       return {
@@ -610,7 +637,7 @@ function parseVizBaustellenGeoJson(json) {
       const street = props.strasse ?? props.street ?? props.strasseName ?? "";
       const start = props.gueltigVon ?? props.gueltig_von ?? props.startDate;
       const end = props.gueltigBis ?? props.gueltig_bis ?? props.endDate;
-      const sourceUrl = props.url ?? VIZ_BAUSTELLEN_URL;
+      const sourceUrl = props.url ?? VIZ_BAUSTELLEN_URLS[0];
       const text = `${title} ${street}`;
       const publishedAt = start ? new Date(start).toISOString() : new Date().toISOString();
 
@@ -890,9 +917,13 @@ async function main() {
     dry_run: options.dryRun,
     ...(aiError ? { ai_error: aiError } : {}),
   };
-  await writeFile(STATUS_PATH, `${JSON.stringify(statusPayload, null, 2)}\n`, "utf8");
 
-  if (options.dryRun) return;
+  if (options.dryRun) {
+    console.log(JSON.stringify(statusPayload, null, 2));
+    return;
+  }
+
+  await writeFile(STATUS_PATH, `${JSON.stringify(statusPayload, null, 2)}\n`, "utf8");
 
   // Geocode new entries only (existing ones keep their coords from previous runs)
   const geocoded = await geocodeEntries(enriched);
@@ -956,7 +987,9 @@ async function geocodeEntries(entries) {
   return entries;
 }
 
-main().catch((error) => {
-  console.error(error instanceof Error ? error.message : error);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error instanceof Error ? error.message : error);
+    process.exit(1);
+  });
+}

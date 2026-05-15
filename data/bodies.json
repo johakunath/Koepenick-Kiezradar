@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "bvv-treptow-koepenick",
+    "name": "BVV Treptow-Köpenick",
+    "type": "bvv",
+    "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/"
+  },
+  {
+    "slug": "bezirksamt-treptow-koepenick",
+    "name": "Bezirksamt Treptow-Köpenick",
+    "type": "bezirksamt",
+    "url": "https://www.berlin.de/ba-treptow-koepenick/"
+  },
+  {
+    "slug": "polizei-berlin",
+    "name": "Polizei Berlin",
+    "type": "source",
+    "url": "https://www.berlin.de/polizei/polizeimeldungen/"
+  }
+]
