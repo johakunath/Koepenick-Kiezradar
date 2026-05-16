@@ -33,7 +33,26 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {/* Panorama watermark — fixed, shows on all pages behind semi-transparent cards */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/illustrations/heron-schloss-panorama.png"
+          alt=""
+          aria-hidden="true"
+          className="illus-mark hidden md:block"
+          style={{
+            position: "fixed",
+            top: 0,
+            right: 0,
+            width: 820,
+            opacity: 0.38,
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        />
+        <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+      </body>
     </html>
   );
 }

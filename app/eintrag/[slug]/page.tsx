@@ -58,10 +58,6 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Header />
       <div className="max-w-[1280px] mx-auto px-5 md:px-20 py-8">
-        <p style={{ fontFamily: "var(--font-inter-tight)", fontSize: 11, color: "var(--ink-mute)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>
-          Start › Feed › Eintrag
-        </p>
-
         <article
           className="mt-6 p-6"
           style={{

@@ -5,7 +5,7 @@ import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 import IllusBanner from "@/components/IllusBanner";
-import ThemeToggle from "@/components/ThemeToggle";
+import Header from "@/components/Header";
 
 interface DigestTopic {
   name: string;
@@ -194,78 +194,12 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
-      {/* Slim header — mirrors main Header layout */}
-      <header
-        className="sticky top-0 z-20 w-full"
-        style={{ height: 60, background: "var(--bg)", borderBottom: "1px solid var(--rule)" }}
-      >
-        <div className="mx-auto max-w-[1280px] px-5 md:px-20 flex items-center gap-5 h-full">
-          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
-            <div
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 600,
-                fontSize: 20,
-                letterSpacing: "-0.022em",
-                lineHeight: 1,
-                color: "var(--water)",
-              }}
-            >
-              Kiezradar
-            </div>
-            <div
-              style={{
-                fontFamily: "var(--font-inter-tight)",
-                fontSize: 10,
-                letterSpacing: "0.14em",
-                textTransform: "uppercase",
-                color: "var(--ink-mute)",
-                marginTop: 2,
-              }}
-            >
-              <i style={{ fontStyle: "normal", color: "var(--reed)" }}>Wochenausgabe</i>
-              {" · "}KW {weekNo}
-            </div>
-          </Link>
-          <div style={{ flex: 1 }} />
-          {/* "← Feed" in same right position as "Diese Woche" on main header */}
-          <Link
-            href="/"
-            style={{
-              fontFamily: "var(--font-inter-tight)",
-              fontSize: 13,
-              fontWeight: 500,
-              color: "var(--water-2)",
-              textDecoration: "none",
-              whiteSpace: "nowrap",
-            }}
-          >
-            ← Feed
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
+      <Header />
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-20 pt-4">
         {/* Hero */}
-        <section className="relative pt-8 pb-6 overflow-hidden">
-          {/* Panorama backdrop — desktop */}
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/illustrations/heron-schloss-panorama.png"
-            alt=""
-            aria-hidden="true"
-            className="illus-mark hidden md:block absolute"
-            style={{
-              width: 980,
-              right: 0,
-              top: 20,
-              opacity: 0.44,
-              pointerEvents: "none",
-              zIndex: 0,
-            }}
-          />
-          <div style={{ position: "relative", zIndex: 1 }}>
+        <section className="relative pt-8 pb-6">
+          <div>
             <div
               style={{
                 fontFamily: "var(--font-inter-tight)",

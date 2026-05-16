@@ -59,39 +59,9 @@ export default function FeedPage() {
       <Header />
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
-        {/* Breadcrumb */}
-        <div
-          style={{
-            fontFamily: "var(--font-inter-tight)",
-            fontSize: 11,
-            color: "var(--ink-mute)",
-            letterSpacing: "0.08em",
-            textTransform: "uppercase",
-            paddingTop: 16,
-            paddingBottom: 12,
-          }}
-        >
-          Start › Feed
-        </div>
-
-        {/* Hero strip with panorama */}
-        <section className="relative pb-6">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/illustrations/heron-schloss-panorama.png"
-            alt=""
-            aria-hidden="true"
-            className="illus-mark hidden md:block absolute"
-            style={{
-              width: 860,
-              right: -40,
-              top: -20,
-              opacity: 0.38,
-              pointerEvents: "none",
-              zIndex: 0,
-            }}
-          />
-          <div style={{ position: "relative", zIndex: 1 }}>
+        {/* Hero strip */}
+        <section className="relative pb-6 pt-6">
+          <div>
             <h1
               style={{
                 fontFamily: "var(--font-fraunces)",

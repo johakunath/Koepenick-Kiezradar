@@ -146,7 +146,6 @@ export default function FilterBar({
           >
             {TAG_LABELS[tag]}{" "}
             <span style={{ opacity: 0.65, fontSize: 11 }}>{count}</span>
-            {active && <span style={{ marginLeft: 3, fontSize: 10, opacity: 0.8 }}>×</span>}
           </button>
         );
       })}

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
 import Header from "@/components/Header";
@@ -20,9 +19,6 @@ export default async function MeetingPage({ params }: { params: Promise<{ slug: 
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Header />
       <div className="max-w-[1280px] mx-auto px-5 md:px-20 py-8">
-        <p style={{ fontFamily: "var(--font-inter-tight)", fontSize: 11, color: "var(--ink-mute)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>
-          Start › <Link href="/termine" style={{ color: "var(--water-2)", textDecoration: "none" }}>Termine</Link> › {meeting.title}
-        </p>
         <article
           className="mt-6 p-6"
           style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 12 }}

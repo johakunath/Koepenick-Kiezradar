@@ -9,9 +9,6 @@ export default function TopicsPage() {
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
       <Header />
       <div className="max-w-[1280px] mx-auto px-5 md:px-20 py-8">
-        <p style={{ fontFamily: "var(--font-inter-tight)", fontSize: 11, color: "var(--ink-mute)", letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 12 }}>
-          Start › Themen
-        </p>
         <h1 style={{ fontFamily: "var(--font-fraunces)", fontWeight: 500, fontSize: "clamp(22px, 2.5vw, 30px)", color: "var(--ink)", marginBottom: 24 }}>
           Themen
         </h1>
