@@ -1,104 +1,25 @@
-import { createHash } from "node:crypto";
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { PDFParse } from "pdf-parse";
+
+import { readText, inferDistrictFromText, extractAddresses } from "./lib/shared.mjs";
+import { parsePoliceSource, POLICE_RSS_URL, POLICE_PAGE_URL } from "./sources/police.mjs";
+import { parseEventsHtml, EVENTS_URL } from "./sources/events.mjs";
+import { parseBezirksamtSource, BEZIRKSAMT_RSS_URL, BEZIRKSAMT_PAGE_URL } from "./sources/bezirksamt.mjs";
+import { parseBvvAllrisRss, BVV_ALLRIS_RSS_URL, BVV_ALLRIS_PAGE_URL } from "./sources/bvv.mjs";
+import { fetchAmtsblattEntries } from "./sources/amtsblatt.mjs";
+import { parseVizBaustellenGeoJson, VIZ_BAUSTELLEN_URLS } from "./sources/viz.mjs";
+import { enrichWithAI } from "./lib/enrich.mjs";
+import { geocodeEntries } from "./lib/geocode.mjs";
+
+// Re-export parsers so parser-smoke-test.mjs can import from this file
+export { parsePoliceRss, parsePoliceHtml, parsePoliceSource, parseGermanDate } from "./sources/police.mjs";
+export { parseEventsHtml } from "./sources/events.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ENTRIES_PATH = path.join(ROOT, "data", "entries.json");
 const ARCHIVE_DIR = path.join(ROOT, "data", "archive");
 const STATUS_PATH = path.join(ROOT, "data", "ingest-status.json");
-const GEOCODE_CACHE_PATH = path.join(ROOT, "data", "geocode-cache.json");
-
-const POLICE_RSS_URL = "https://www.berlin.de/polizei/polizeimeldungen/index/rss.php";
-const POLICE_PAGE_URL = "https://www.berlin.de/polizei/polizeimeldungen/";
-const EVENTS_URL = "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=";
-const BEZIRKSAMT_RSS_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/index/rss.php";
-const BEZIRKSAMT_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/";
-const BVV_ALLRIS_RSS_URL = "https://www.berlin.de/presse/pressemitteilungen/index/feed?institutions%5B%5D=Bezirksamt+Treptow-K%C3%B6penick";
-const BVV_ALLRIS_PAGE_URL = "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/";
-const AMTSBLATT_INDEX_URLS = [
-  "https://www.berlin.de/landesverwaltungsamt/service/amtsblatt-fuer-berlin/",
-  "https://www.berlin.de/landesverwaltungsamt/zentrale-dienste/amtsblatt-fuer-berlin/",
-  "https://www.berlin.de/sen/justiz/service/amtsblatt-fuer-berlin/",
-];
-const VIZ_BAUSTELLEN_URLS = [
-  "https://api.viz.berlin.de/api/verkehr/baustellen",
-  "https://api.viz.berlin.de/daten/baustellen",
-  "https://viz.berlin.de/api/v1/baustellen",
-];
-
-const TAGS = [
-  "verkehr",
-  "sicherheit",
-  "verwaltung",
-  "politik",
-  "infrastruktur",
-  "veranstaltung",
-  "wahl",
-  "sonstiges",
-];
-const DEFAULT_GEMINI_MODEL = "gemini-2.0-flash";
-const GEMINI_FALLBACK_MODELS = ["gemini-2.5-flash"];
-
-const KOEPENICK_KEYWORDS = [
-  "köpenick",
-  "koepenick",
-  "treptow-köpenick",
-  "treptow köpenick",
-  "alt-köpenick",
-  "altstadt",
-  "dammvorstadt",
-  "spindlersfeld",
-  "müggelsee",
-  "mueggelsee",
-  "bahnhofstraße",
-  "bahnhofstrasse",
-  "bahnhof köpenick",
-  "wuhlheide",
-  "friedrichshagen",
-  "wendenschloss",
-  "grünau",
-  "müggelheim",
-  "schmöckwitz",
-  "rahnsdorf",
-];
-
-// District keyword → label (for pre-AI regex fallback, same order as koepenick-geo.ts)
-const DISTRICT_KEYWORDS = [
-  ["altstadt", "Altstadt Köpenick"],
-  ["alt-köpenick", "Altstadt Köpenick"],
-  ["dammvorstadt", "Dammvorstadt"],
-  ["spindlersfeld", "Spindlersfeld"],
-  ["friedrichshagen", "Friedrichshagen"],
-  ["müggelheim", "Müggelheim"],
-  ["mueggelsee", "Müggelheim"],
-  ["müggelsee", "Müggelheim"],
-  ["wendenschloss", "Wendenschloss"],
-  ["grünau", "Grünau"],
-  ["adlershof", "Adlershof"],
-  ["köllnische heide", "Köllnische Heide"],
-  ["rahnsdorf", "Rahnsdorf"],
-  ["schmöckwitz", "Schmöckwitz"],
-  ["bohnsdorf", "Bohnsdorf"],
-  ["niederschöneweide", "Niederschöneweide"],
-  ["oberschöneweide", "Oberschöneweide"],
-  ["johannisthal", "Johannisthal"],
-  ["altglienicke", "Altglienicke"],
-  ["treptow", "Treptow"],
-];
-
-// German address pattern: "Musterstraße 12" or "Muster-Str. 15a"
-const ADDRESS_REGEX = /[A-ZÄÖÜ][a-zäöüß]+-?(?:straße|strasse|str\.|weg|allee|platz|damm|ufer|ring|gasse)\s+\d+\w*/gi;
-
-function inferDistrictFromText(text) {
-  const lc = text.toLocaleLowerCase("de-DE");
-  return DISTRICT_KEYWORDS.find(([kw]) => lc.includes(kw))?.[1] ?? undefined;
-}
-
-function extractAddresses(text) {
-  return [...new Set((text.match(ADDRESS_REGEX) ?? []).map((a) => a.trim()))].slice(0, 5);
-}
 
 function parseArgs() {
   const args = new Set(process.argv.slice(2));
@@ -120,683 +41,6 @@ function parseArgs() {
   };
 }
 
-function decodeEntities(value = "") {
-  return value
-    .replaceAll("<![CDATA[", "")
-    .replaceAll("]]>", "")
-    .replaceAll("&amp;", "&")
-    .replaceAll("&quot;", '"')
-    .replaceAll("&#39;", "'")
-    .replaceAll("&apos;", "'")
-    .replaceAll("&lt;", "<")
-    .replaceAll("&gt;", ">")
-    .replace(/&#(\d+);/g, (_, code) => {
-      const n = Number(code);
-      if (n === 173) return ""; // soft hyphen → strip
-      return String.fromCharCode(n);
-    })
-    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
-    .replace(/<[^>]+>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function compactText(value = "") {
-  return value.replace(/\s+/g, " ").trim();
-}
-
-function truncateText(value = "", maxLength = 220) {
-  const text = compactText(value);
-  if (text.length <= maxLength) return text;
-  return `${text.slice(0, maxLength - 1).replace(/\s+\S*$/, "")}…`;
-}
-
-function fallbackSourceSummary({ title, rawExcerpt, sourceId, venue, eventStartAt }) {
-  if (sourceId === "berlin-events") {
-    const date = eventStartAt
-      ? new Date(eventStartAt).toLocaleString("de-DE", {
-          day: "numeric",
-          month: "long",
-          hour: "2-digit",
-          minute: "2-digit",
-        })
-      : null;
-    if (date && venue) return `Veranstaltung am ${date} in ${venue}.`;
-    if (venue) return `Veranstaltung in ${venue}.`;
-  }
-
-  const cleanedExcerpt = truncateText(rawExcerpt);
-  if (cleanedExcerpt && cleanedExcerpt.toLocaleLowerCase("de-DE") !== compactText(title).toLocaleLowerCase("de-DE")) {
-    return cleanedExcerpt;
-  }
-
-  if (sourceId === "bezirksamt-tk") {
-    return "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.";
-  }
-
-  if (sourceId === "polizei-berlin") {
-    return "Polizeimeldung mit Köpenick-Bezug. Details stehen in der Originalquelle.";
-  }
-
-  if (sourceId === "bvv-tk") {
-    return "BVV-Vorgang mit Bezug zu Treptow-Köpenick. Details stehen in der Originalquelle.";
-  }
-
-  return "Noch nicht KI-zusammengefasst. Details stehen in der Originalquelle.";
-}
-
-function field(block, name) {
-  const match = block.match(new RegExp(`<${name}[^>]*>([\\s\\S]*?)<\\/${name}>`, "i"));
-  return decodeEntities(match?.[1] ?? "");
-}
-
-function hashId(parts) {
-  return createHash("sha256").update(parts.filter(Boolean).join("|")).digest("hex").slice(0, 16);
-}
-
-function containsKoepenick(text) {
-  const haystack = text.toLocaleLowerCase("de-DE");
-  return KOEPENICK_KEYWORDS.some((keyword) => haystack.includes(keyword));
-}
-
-function inferTags(text, sourceId) {
-  const haystack = text.toLocaleLowerCase("de-DE");
-  const tags = new Set();
-
-  if (sourceId === "polizei-berlin") tags.add("sicherheit");
-  if (sourceId === "berlin-events") tags.add("veranstaltung");
-  if (sourceId === "bezirksamt-tk") tags.add("verwaltung");
-  if (sourceId === "bvv-tk") {
-    tags.add("politik");
-    tags.add("verwaltung");
-  }
-  if (/verkehr|unfall|straße|strasse|sperrung|bahn|rad/.test(haystack)) tags.add("verkehr");
-  if (/bvv|partei|antrag|senat|politik/.test(haystack)) tags.add("politik");
-  if (/wahl|kandidat|wahlkreis|abgeordnetenhaus/.test(haystack)) tags.add("wahl");
-  if (/bau|schule|kita|wasser|strom|sanierung|infrastruktur/.test(haystack)) {
-    tags.add("infrastruktur");
-  }
-  if (/bezirksamt|bürgeramt|verwaltung|amt/.test(haystack)) tags.add("verwaltung");
-
-  if (tags.size === 0) tags.add("sonstiges");
-  return [...tags].filter((tag) => TAGS.includes(tag));
-}
-
-function inferLocation(text) {
-  const haystack = text.toLocaleLowerCase("de-DE");
-  const knownLocations = [
-    ["spindlersfeld", "Spindlersfeld"],
-    ["dammvorstadt", "Dammvorstadt"],
-    ["müggelsee", "Müggelsee"],
-    ["mueggelsee", "Müggelsee"],
-    ["bahnhof", "Bahnhof Köpenick"],
-    ["altstadt", "Altstadt Köpenick"],
-    ["alt-köpenick", "Altstadt Köpenick"],
-    ["köpenick", "Köpenick"],
-  ];
-
-  return knownLocations.find(([needle]) => haystack.includes(needle))?.[1] ?? "Treptow-Köpenick";
-}
-
-async function readText(url, fixturePath) {
-  if (fixturePath) {
-    return readFile(path.resolve(ROOT, fixturePath), "utf8");
-  }
-
-  const response = await fetch(url, {
-    headers: {
-      "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)",
-    },
-  });
-
-  if (!response.ok) {
-    throw new Error(`Fetch failed ${response.status} for ${url}`);
-  }
-
-  return response.text();
-}
-
-export function parsePoliceRss(xml) {
-  const items = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((match) => match[1]);
-
-  return items
-    .map((item) => {
-      const title = field(item, "title");
-      const sourceUrl = field(item, "link");
-      const rawExcerpt = field(item, "description");
-      const category = field(item, "category");
-      const publishedAt = new Date(field(item, "pubDate") || Date.now()).toISOString();
-      const text = `${title} ${rawExcerpt} ${category}`;
-
-      return {
-        id: hashId(["polizei-berlin", sourceUrl, title]),
-        source_id: "polizei-berlin",
-        source: "Polizei Berlin",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "polizei-berlin" }),
-        tags: inferTags(text, "polizei-berlin"),
-        location: inferLocation(text),
-        location_relevant: containsKoepenick(text),
-        local_relevance_score: containsKoepenick(text) ? 0.75 : 0.25,
-        political_relevance_score: 0.1,
-        election_relevant: false,
-        ai_reasoning: containsKoepenick(text)
-          ? "Die Meldung nennt einen Ort im Köpenicker Kerngebiet."
-          : "Die Meldung wurde importiert, muss aber noch auf Kiez-Relevanz geprüft werden.",
-      };
-    })
-    .filter((entry) => entry.title && entry.source_url && entry.location_relevant);
-}
-
-export function parsePoliceHtml(html) {
-  const matches = [
-    ...html.matchAll(
-      /(\d{1,2}\.\d{1,2}\.\d{4}\s+\d{1,2}:\d{2})\s*Uhr[\s\S]*?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*Ereignisort:\s*([^<\n]+)/gi
-    ),
-  ];
-
-  return matches
-    .map((match) => {
-      const [, dateText, href, titleHtml, locationHtml] = match;
-      const title = decodeEntities(titleHtml);
-      const location = decodeEntities(locationHtml);
-      const sourceUrl = href.startsWith("http") ? href : new URL(href, POLICE_PAGE_URL).toString();
-      const publishedAt = parseGermanDate(dateText) ?? new Date().toISOString();
-      const rawExcerpt = `Ereignisort: ${location}`;
-      const text = `${title} ${location}`;
-
-      return {
-        id: hashId(["polizei-berlin", sourceUrl, title]),
-        source_id: "polizei-berlin",
-        source: "Polizei Berlin",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: rawExcerpt,
-          ai_summary: fallbackSourceSummary({ title, rawExcerpt: location, sourceId: "polizei-berlin" }),
-        tags: inferTags(text, "polizei-berlin"),
-        location: inferLocation(text),
-        location_relevant: containsKoepenick(text),
-        local_relevance_score: containsKoepenick(text) ? 0.75 : 0.25,
-        political_relevance_score: /wahl|plakat|versammlung|politik/i.test(text) ? 0.45 : 0.1,
-        election_relevant: /wahl|plakat/i.test(text),
-        election_topic: /wahl|plakat/i.test(text) ? "Wahl 2026" : undefined,
-        ai_reasoning: containsKoepenick(text)
-          ? "Die Meldung nennt Treptow-Köpenick oder einen Ort im Köpenicker Kerngebiet."
-          : "Die Meldung wurde importiert, muss aber noch auf Kiez-Relevanz geprüft werden.",
-      };
-    })
-    .filter((entry) => entry.title && entry.source_url && entry.location_relevant);
-}
-
-export function parsePoliceSource(text) {
-  return /<item\b/i.test(text) ? parsePoliceRss(text) : parsePoliceHtml(text);
-}
-
-export function parseGermanDate(text) {
-  const match = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})(?:\D+(\d{1,2}):(\d{2}))?/);
-  if (!match) return null;
-
-  const [, day, month, year, hour = "12", minute = "00"] = match;
-  return new Date(
-    Number(year),
-    Number(month) - 1,
-    Number(day),
-    Number(hour),
-    Number(minute)
-  ).toISOString();
-}
-
-export function parseEventsHtml(html) {
-  if (!html) return [];
-
-  // berlin.de currently renders event teasers as articles; keep the li fallback for fixtures/older markup.
-  const articles = [
-    ...html.matchAll(/<article\b[^>]*\b(?:teaser--event|js-ems-event-teaser)\b[^>]*>([\s\S]*?)<\/article>/gi),
-  ].map((m) => m[1]);
-  const items = articles.length
-    ? articles
-    : [...html.matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((m) => m[1]);
-  const entries = items
-    .map((item) => {
-      const headingLinkMatch = item.match(
-        /<a\b[^>]*class="[^"]*\bjs-ems-event-teaser-heading\b[^"]*"[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i
-      );
-      const detailLinkMatches = [...item.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi)];
-      const linkMatch =
-        headingLinkMatch ??
-        detailLinkMatches.find((m) => {
-          const text = decodeEntities(m[2]);
-          return m[1].includes("detail=") && text && !/^zur veranstaltung$/i.test(text);
-        }) ??
-        detailLinkMatches.find((m) => {
-          const text = decodeEntities(m[2]);
-          return text && !/^zur veranstaltung$/i.test(text);
-        });
-      if (!linkMatch) return null;
-      const [, href, titleHtml] = linkMatch;
-      const title = decodeEntities(titleHtml);
-
-      // Filter: must have a real title (not a year, not navigation, not too short)
-      if (!title) return null;
-      if (/^\d{4}$/.test(title.trim())) return null;
-      if (title.trim().length < 8) return null;
-
-      const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
-
-      // Filter: reject category-filter and pagination links.
-      // Berlin.de real event links may be index.php?detail=..., so allow that shape.
-      try {
-        const u = new URL(sourceUrl);
-        if (u.searchParams.has("kategorie[0]")) return null;
-        if (u.searchParams.has("ls") && !u.searchParams.has("detail")) return null;
-        if (u.pathname.endsWith("index.php") && !u.searchParams.has("detail")) return null;
-      } catch {
-        return null;
-      }
-
-      const explicitDate = item.match(/<span\b[^>]*class="[^"]*\bdate\b[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
-      const explicitTime = item.match(/<span\b[^>]*class="[^"]*\btime\b[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
-      const dateText = explicitDate
-        ? `${decodeEntities(explicitDate[1])} ${decodeEntities(explicitTime?.[1] ?? "")}`
-        : item;
-      const dateMatch = dateText.match(/(\d{1,2}\.\d{1,2}\.\d{4}(?:\D+\d{1,2}:\d{2})?)/);
-
-      // Filter: require a date - real events always have one, nav items don't.
-      if (!dateMatch) return null;
-
-      const eventStartAt = parseGermanDate(dateMatch[1]);
-      const publishedAt = eventStartAt ?? new Date().toISOString();
-      const venueMatch =
-        item.match(/<dt>\s*Veranstaltungsort:\s*<\/dt>\s*<dd>([\s\S]*?)<\/dd>/i) ??
-        item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
-      const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
-      const summary = fallbackSourceSummary({
-        title,
-        sourceId: "berlin-events",
-        venue,
-        eventStartAt,
-      });
-
-      return {
-        id: hashId(["berlin-events", sourceUrl, title]),
-        source_id: "berlin-events",
-        source: "Berlin.de Veranstaltungskalender",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: venue ? `Ort: ${venue}` : "",
-        ai_summary: summary,
-        tags: inferTags(title, "berlin-events"),
-        location: venue ? inferLocation(venue) : "Treptow-Köpenick",
-        location_relevant: true,
-        local_relevance_score: 0.75,
-        political_relevance_score: 0.1,
-        election_relevant: false,
-        ai_reasoning: "Veranstaltung im Bezirk Treptow-Köpenick.",
-        event_start_at: eventStartAt ?? undefined,
-        venue,
-      };
-    })
-    .filter((e) => e && e.title && e.source_url);
-
-  console.log(`Events parsed: ${entries.length} from ${items.length} list items`);
-  return entries;
-}
-
-function parseBezirksamtRss(xml) {
-  const items = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
-
-  return items
-    .map((item) => {
-      const title = field(item, "title");
-      const sourceUrl = field(item, "link");
-      const rawExcerpt = field(item, "description");
-      const publishedAt = new Date(field(item, "pubDate") || Date.now()).toISOString();
-      const text = `${title} ${rawExcerpt}`;
-      const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(text);
-
-      return {
-        id: hashId(["bezirksamt-tk", sourceUrl, title]),
-        source_id: "bezirksamt-tk",
-        source: "Bezirksamt Treptow-Köpenick",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "bezirksamt-tk" }),
-        tags: inferTags(text, "bezirksamt-tk"),
-        location: inferLocation(text),
-        location_relevant: true,
-        local_relevance_score: 0.7,
-        political_relevance_score: /wahl|partei|bvv|antrag|senat/.test(text.toLocaleLowerCase("de-DE")) ? 0.6 : 0.3,
-        election_relevant: hasElectionTopic,
-        election_topic: hasElectionTopic ? "Wahl 2026" : undefined,
-        ai_reasoning: "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-      };
-    })
-    .filter((e) => e.title && e.source_url);
-}
-
-function parseBezirksamtHtml(html) {
-  const matches = [
-    ...html.matchAll(
-      /(\d{1,2}\.\d{1,2}\.\d{4})[^<]*<\/[^>]+>[\s\S]{0,300}?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi
-    ),
-  ];
-
-  return matches
-    .map(([, dateText, href, titleHtml]) => {
-      const title = decodeEntities(titleHtml);
-      if (!title) return null;
-      const sourceUrl = href.startsWith("http") ? href : new URL(href, BEZIRKSAMT_PAGE_URL).toString();
-      const publishedAt = parseGermanDate(dateText) ?? new Date().toISOString();
-      const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(title);
-
-      return {
-        id: hashId(["bezirksamt-tk", sourceUrl, title]),
-        source_id: "bezirksamt-tk",
-        source: "Bezirksamt Treptow-Köpenick",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: "",
-        ai_summary: fallbackSourceSummary({ title, sourceId: "bezirksamt-tk" }),
-        tags: inferTags(title, "bezirksamt-tk"),
-        location: inferLocation(title),
-        location_relevant: true,
-        local_relevance_score: 0.7,
-        political_relevance_score: /wahl|partei|bvv|antrag|senat/.test(title.toLocaleLowerCase("de-DE")) ? 0.6 : 0.3,
-        election_relevant: hasElectionTopic,
-        election_topic: hasElectionTopic ? "Wahl 2026" : undefined,
-        ai_reasoning: "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-      };
-    })
-    .filter((e) => e && e.title && e.source_url);
-}
-
-function parseBezirksamtSource(text) {
-  return /<item\b/i.test(text) ? parseBezirksamtRss(text) : parseBezirksamtHtml(text);
-}
-
-function parseBvvAllrisRss(xml) {
-  if (!xml) return [];
-  const items = [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].map((m) => m[1]);
-
-  return items
-    .map((item) => {
-      const title = field(item, "title");
-      const sourceUrl = field(item, "link");
-      const rawExcerpt = field(item, "description");
-      const pubDateRaw = field(item, "pubDate");
-      const publishedAt = new Date(pubDateRaw || Date.now()).toISOString();
-      const text = `${title} ${rawExcerpt}`;
-      const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(text);
-
-      if (!title || !sourceUrl) return null;
-
-      return {
-        id: hashId(["bvv-tk", sourceUrl, title]),
-        source_id: "bvv-tk",
-        source: "BVV Treptow-Köpenick",
-        source_url: sourceUrl,
-        title,
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: rawExcerpt,
-        ai_summary: rawExcerpt || fallbackSourceSummary({ title, rawExcerpt, sourceId: "bvv-tk" }),
-        tags: inferTags(text, "bvv-tk"),
-        location: inferLocation(text),
-        location_relevant: true,
-        local_relevance_score: 0.8,
-        political_relevance_score: 0.7,
-        election_relevant: hasElectionTopic,
-        election_topic: hasElectionTopic ? "Wahl 2026" : undefined,
-        ai_reasoning: "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
-        document_type: "oparl",
-        document_url: sourceUrl,
-      };
-    })
-    .filter(Boolean);
-}
-
-async function fetchAmtsblattEntries() {
-  let indexHtml;
-  let resolvedBaseUrl;
-  for (const url of AMTSBLATT_INDEX_URLS) {
-    try {
-      const resp = await fetch(url, {
-        headers: { "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)" },
-      });
-      if (!resp.ok) { console.log(`Amtsblatt: ${url} → ${resp.status}`); continue; }
-      indexHtml = await resp.text();
-      resolvedBaseUrl = url;
-      console.log(`Amtsblatt: using ${url}`);
-      break;
-    } catch (err) {
-      console.log(`Amtsblatt: ${url} → ${err.message}`);
-    }
-  }
-  if (!indexHtml) throw new Error("Amtsblatt index fetch failed: all URLs returned errors");
-
-  // Extract links to PDF files from the index page
-  const pdfLinks = [
-    ...indexHtml.matchAll(/href="([^"]*\.pdf[^"]*)"/gi),
-  ]
-    .map((m) => {
-      const href = m[1];
-      return href.startsWith("http") ? href : new URL(href, resolvedBaseUrl).toString();
-    })
-    .filter((url, i, arr) => arr.indexOf(url) === i) // deduplicate
-    .slice(0, 3); // only latest 3 PDFs to stay within cost/time budget
-
-  const entries = [];
-
-  for (const pdfUrl of pdfLinks) {
-    try {
-      const resp = await fetch(pdfUrl, {
-        headers: { "user-agent": "Koepenick-Kiezradar/0.2" },
-      });
-      if (!resp.ok) continue;
-
-      const buffer = Buffer.from(await resp.arrayBuffer());
-      const parser = new PDFParse({ data: new Uint8Array(buffer) });
-      const result = await parser.getText();
-      const pages = result.pages.map((p) => p.text);
-
-      // Find pages mentioning Köpenick
-      pages.forEach((pageText, pageIndex) => {
-        if (!containsKoepenick(pageText)) return;
-
-        // Extract a short excerpt around the first Köpenick mention
-        const lc = pageText.toLocaleLowerCase("de-DE");
-        const mentionIdx = KOEPENICK_KEYWORDS.reduce((best, kw) => {
-          const pos = lc.indexOf(kw);
-          return pos >= 0 && pos < best ? pos : best;
-        }, Infinity);
-
-        const start = Math.max(0, mentionIdx - 100);
-        const excerpt = pageText.slice(start, start + 300).replace(/\s+/g, " ").trim();
-
-        // Try to extract a title from the surrounding text (first non-empty line near mention)
-        const nearLines = pageText.slice(Math.max(0, mentionIdx - 400), mentionIdx + 400)
-          .split(/\n/)
-          .map((l) => l.trim())
-          .filter((l) => l.length > 10 && l.length < 120);
-        const title = nearLines[0] ?? `Amtsblatt für Berlin – Seite ${pageIndex + 1}`;
-
-        const pageNumber = pageIndex + 1;
-        const pdfPageUrl = `${pdfUrl}#page=${pageNumber}`;
-
-        entries.push({
-          id: hashId(["amtsblatt-berlin", pdfPageUrl, title]),
-          source_id: "amtsblatt-berlin",
-          source: "Amtsblatt für Berlin",
-          source_url: pdfPageUrl,
-          title: title.slice(0, 120),
-          published_at: new Date().toISOString(),
-          ingested_at: new Date().toISOString(),
-          raw_excerpt: excerpt,
-          ai_summary: excerpt,
-          tags: inferTags(excerpt, "amtsblatt-berlin"),
-          location: inferLocation(excerpt),
-          location_relevant: true,
-          local_relevance_score: 0.75,
-          political_relevance_score: 0.5,
-          election_relevant: /wahl|kandidat|wahlkreis/i.test(excerpt),
-          ai_reasoning: `Köpenick-Bezug im Amtsblatt für Berlin (Seite ${pageNumber}).`,
-          document_type: "pdf",
-          document_url: pdfUrl,
-          pdf_page: pageNumber,
-          pdf_excerpt: excerpt,
-        });
-      });
-    } catch {
-      // skip individual PDF errors
-    }
-  }
-
-  return entries;
-}
-
-function parseVizBaustellenGeoJson(json) {
-  let features;
-  try {
-    const data = JSON.parse(json);
-    features = data.features ?? data.baustellen ?? [];
-  } catch {
-    return [];
-  }
-
-  // Bounding box for Treptow-Köpenick
-  const LAT_MIN = 52.38, LAT_MAX = 52.52, LNG_MIN = 13.47, LNG_MAX = 13.75;
-
-  return features
-    .filter((f) => {
-      const coords = f.geometry?.coordinates;
-      if (!coords) return false;
-      // Support both Point and LineString
-      const [lng, lat] = Array.isArray(coords[0]) ? coords[0] : coords;
-      return lat >= LAT_MIN && lat <= LAT_MAX && lng >= LNG_MIN && lng <= LNG_MAX;
-    })
-    .map((f) => {
-      const props = f.properties ?? {};
-      const title = props.beschreibung ?? props.title ?? props.name ?? "Baustelle";
-      const street = props.strasse ?? props.street ?? props.strasseName ?? "";
-      const start = props.gueltigVon ?? props.gueltig_von ?? props.startDate;
-      const end = props.gueltigBis ?? props.gueltig_bis ?? props.endDate;
-      const sourceUrl = props.url ?? VIZ_BAUSTELLEN_URLS[0];
-      const text = `${title} ${street}`;
-      const publishedAt = start ? new Date(start).toISOString() : new Date().toISOString();
-
-      return {
-        id: hashId(["viz-baustellen", title, street, String(start ?? "")]),
-        source_id: "viz-baustellen",
-        source: "VIZ Berlin Baustellen",
-        source_url: sourceUrl,
-        title: `Baustelle: ${title}`.slice(0, 120),
-        published_at: publishedAt,
-        ingested_at: new Date().toISOString(),
-        raw_excerpt: street ? `Straße: ${street}` : "",
-        ai_summary: street ? `Baustelle in ${street}: ${title}` : title,
-        tags: ["verkehr", "infrastruktur"],
-        location: street ? inferLocation(street) : "Treptow-Köpenick",
-        location_relevant: true,
-        local_relevance_score: 0.8,
-        political_relevance_score: 0.1,
-        election_relevant: false,
-        ai_reasoning: "Verkehrseinschränkung oder Baustelle im Bezirk Treptow-Köpenick.",
-        document_type: "geojson",
-        event_start_at: start ? new Date(start).toISOString() : undefined,
-        event_end_at: end ? new Date(end).toISOString() : undefined,
-        venue: street || undefined,
-      };
-    })
-    .filter((e) => e.title);
-}
-
-async function enrichWithAI(entries, { skipClaude }) {
-  if (skipClaude || entries.length === 0) return entries;
-
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    throw new Error("GEMINI_API_KEY fehlt. Für lokale Tests nutze --skip-ai.");
-  }
-
-  const modelCandidates = [
-    process.env.GEMINI_MODEL,
-    DEFAULT_GEMINI_MODEL,
-    ...GEMINI_FALLBACK_MODELS,
-  ].filter(Boolean);
-  const models = [...new Set(modelCandidates)];
-  const districts = DISTRICT_KEYWORDS.map(([, label]) => [...new Set([label])]).flat().filter((v, i, a) => a.indexOf(v) === i);
-  const prompt =
-    `Du enrichst Einträge für Köpenick Kiezradar. Antworte ausschließlich als JSON-Array. Behalte id bei.
-
-Pflichtfelder pro Eintrag:
-- id (unverändert)
-- ai_summary: 1–2 Sätze, sachlich, deutsch, was passiert ist
-- tags: Array, nur aus [${TAGS.join(", ")}], 1-5 Tags. Nutze mehrere Tags, wenn mehrere Kategorien wirklich passen; Events nur "politik" wenn inhaltlich Wahl-/Politikbezug
-- location: kurze Ortsbezeichnung im Bezirk
-- location_relevant: boolean
-- local_relevance_score: 0.0–1.0
-- political_relevance_score: 0.0–1.0
-- election_relevant: boolean
-- election_topic: string oder null
-- ai_reasoning: EXAKT 2 Sätze auf Deutsch. Satz 1: Was passiert konkret? Satz 2: Warum ist das für Köpenick-Anwohner relevant? Konkret, kein Marketing-Sprech, max 40 Wörter gesamt.
-- district: Stadtteil aus dieser Liste oder null: [${districts.join(", ")}]
-- street: Hauptstraße wenn erkennbar, sonst null
-- addresses: Array mit erkannten Adressen (Format "Straße Hausnummer"), leer wenn keine
-
-Eingabe:\n\n` +
-    JSON.stringify(entries, null, 2);
-
-  let payload = null;
-  const failures = [];
-
-  for (const model of models) {
-    const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
-      {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { maxOutputTokens: 4000 },
-        }),
-      }
-    );
-
-    if (response.ok) {
-      payload = await response.json();
-      break;
-    }
-
-    const errorText = await response.text();
-    failures.push(`${model}: ${response.status} ${errorText}`);
-    if (response.status !== 404) break;
-  }
-
-  if (!payload) {
-    throw new Error(`Gemini API failed: ${failures.join(" | ")}`);
-  }
-
-  const text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "[]";
-  const jsonMatch = text.match(/\[[\s\S]*\]/);
-  const enriched = JSON.parse(jsonMatch?.[0] ?? "[]");
-  const byId = new Map(enriched.map((entry) => [entry.id, entry]));
-
-  return entries.map((entry) => ({ ...entry, ...(byId.get(entry.id) ?? {}) }));
-}
-
 function prefillGeoFields(entries) {
   return entries.map((e) => {
     if (e.district && e.addresses) return e;
@@ -813,7 +57,10 @@ function mergeEntries(existing, incoming) {
 
   for (const entry of incoming) {
     const oldEntry = byId.get(entry.id);
-    byId.set(entry.id, oldEntry ? { ...oldEntry, ...entry, is_mock: false } : { ...entry, is_mock: false });
+    byId.set(
+      entry.id,
+      oldEntry ? { ...oldEntry, ...entry, is_mock: false } : { ...entry, is_mock: false }
+    );
   }
 
   return [...byId.values()].sort(
@@ -875,6 +122,7 @@ async function main() {
     BVV_ALLRIS_PAGE_URL,
     options.fixtureBvv
   );
+
   let vizText = null;
   if (options.fixtureViz) {
     vizText = await fetchSource("viz-baustellen", VIZ_BAUSTELLEN_URLS[0], null, options.fixtureViz);
@@ -882,9 +130,14 @@ async function main() {
     for (const vizUrl of VIZ_BAUSTELLEN_URLS) {
       try {
         const resp = await fetch(vizUrl, {
-          headers: { "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)" },
+          headers: {
+            "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)",
+          },
         });
-        if (!resp.ok) { console.log(`VIZ: ${vizUrl} → ${resp.status}`); continue; }
+        if (!resp.ok) {
+          console.log(`VIZ: ${vizUrl} → ${resp.status}`);
+          continue;
+        }
         vizText = await resp.text();
         sourceStatus["viz-baustellen"] = { status: "ok" };
         console.log(`VIZ: using ${vizUrl}`);
@@ -902,12 +155,15 @@ async function main() {
     }
   }
 
-  // Amtsblatt: async PDF fetcher with its own error tracking
   let amtsblattEntries = [];
   try {
     if (!options.skipAmtsblatt) {
       amtsblattEntries = await fetchAmtsblattEntries();
-      sourceStatus["amtsblatt-berlin"] = { status: "ok", parsed: amtsblattEntries.length, raw_items: amtsblattEntries.length };
+      sourceStatus["amtsblatt-berlin"] = {
+        status: "ok",
+        parsed: amtsblattEntries.length,
+        raw_items: amtsblattEntries.length,
+      };
     } else {
       sourceStatus["amtsblatt-berlin"] = {
         status: "skipped",
@@ -929,14 +185,16 @@ async function main() {
   const bvvEntries = parseBvvAllrisRss(bvvText);
   const vizEntries = parseVizBaustellenGeoJson(vizText);
 
-  // Count raw items in each source (before Köpenick-filter) for diagnostics
   const countRawItems = (text, sourceType) => {
     if (!text) return 0;
     if (sourceType === "rss") return [...text.matchAll(/<item\b/gi)].length;
     if (sourceType === "html") return [...text.matchAll(/<li\b/gi)].length;
     if (sourceType === "json") {
-      try { return (JSON.parse(text).features ?? JSON.parse(text).baustellen ?? []).length; }
-      catch { return 0; }
+      try {
+        return (JSON.parse(text).features ?? JSON.parse(text).baustellen ?? []).length;
+      } catch {
+        return 0;
+      }
     }
     return 0;
   };
@@ -963,8 +221,7 @@ async function main() {
     }
   }
 
-  // Cap each source individually so a high-volume source (e.g. Events with 400+ items)
-  // cannot crowd out smaller but higher-quality sources (Bezirksamt, BVV, Amtsblatt).
+  // Cap per source so high-volume sources don't crowd out smaller/higher-quality ones
   const PER_SOURCE_CAP = Math.max(5, Math.floor(options.limit / 3));
   const rawEntries = [
     ...policeEntries.slice(0, PER_SOURCE_CAP),
@@ -974,6 +231,7 @@ async function main() {
     ...vizEntries.slice(0, PER_SOURCE_CAP),
     ...amtsblattEntries.slice(0, PER_SOURCE_CAP),
   ].slice(0, options.limit);
+
   const knownIds = new Set(existing.map((entry) => entry.id));
   const newEntries = prefillGeoFields(rawEntries.filter((entry) => !knownIds.has(entry.id)));
 
@@ -998,10 +256,15 @@ async function main() {
       Object.entries(sourceStatus).map(([id, s]) => [
         id,
         s.status === "ok"
-          ? { status: "ok", fetched: newEntries.filter((e) => e.source_id === id).length, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
+          ? {
+              status: "ok",
+              fetched: newEntries.filter((e) => e.source_id === id).length,
+              parsed: s.parsed ?? 0,
+              raw_items: s.raw_items ?? 0,
+            }
           : s.status === "skipped"
             ? { status: "skipped", error: s.error, fetched: 0, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
-          : { status: "error", error: s.error, fetched: 0, raw_items: s.raw_items ?? 0 },
+            : { status: "error", error: s.error, fetched: 0, raw_items: s.raw_items ?? 0 },
       ])
     ),
     new_entries: newEntries.length,
@@ -1017,66 +280,15 @@ async function main() {
 
   await writeFile(STATUS_PATH, `${JSON.stringify(statusPayload, null, 2)}\n`, "utf8");
 
-  // Geocode new entries only (existing ones keep their coords from previous runs)
   const geocoded = await geocodeEntries(enriched);
   const mergedWithCoords = mergeEntries(existing, geocoded);
 
-  await writeFile(ENTRIES_PATH, `${JSON.stringify(mergedWithCoords.slice(0, 250), null, 2)}\n`, "utf8");
+  await writeFile(
+    ENTRIES_PATH,
+    `${JSON.stringify(mergedWithCoords.slice(0, 250), null, 2)}\n`,
+    "utf8"
+  );
   await writeArchive(mergedWithCoords);
-}
-
-// Nominatim bounding box for Berlin (viewbox: west,north,east,south)
-const NOMINATIM_VIEWBOX = "13.09,52.68,13.76,52.34";
-const NOMINATIM_UA = "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)";
-
-async function loadGeocodeCache() {
-  try {
-    return JSON.parse(await readFile(GEOCODE_CACHE_PATH, "utf8"));
-  } catch {
-    return {};
-  }
-}
-
-async function nominatimLookup(query) {
-  const url =
-    `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query + ", Berlin")}&countrycodes=de&bounded=1&viewbox=${NOMINATIM_VIEWBOX}&format=json&limit=1`;
-  try {
-    const resp = await fetch(url, { headers: { "user-agent": NOMINATIM_UA } });
-    if (!resp.ok) return null;
-    const results = await resp.json();
-    if (!results.length) return null;
-    return { lat: parseFloat(results[0].lat), lng: parseFloat(results[0].lon) };
-  } catch {
-    return null;
-  }
-}
-
-async function geocodeEntries(entries) {
-  const cache = await loadGeocodeCache();
-  const toGeocode = entries.filter((e) => e.lat == null && (e.addresses?.length || e.location));
-  if (toGeocode.length === 0) return entries;
-
-  let added = 0;
-  for (const entry of toGeocode) {
-    const query = entry.addresses?.[0] ?? entry.location;
-    if (!query || query === "Treptow-Köpenick") continue;
-
-    if (cache[query]) {
-      if (cache[query].lat) { entry.lat = cache[query].lat; entry.lng = cache[query].lng; }
-      continue;
-    }
-
-    // Rate-limit: 1 req/sec per Nominatim policy
-    await new Promise((r) => setTimeout(r, 1100));
-    const coords = await nominatimLookup(query);
-    cache[query] = coords ?? { lat: null, lng: null };
-    if (coords) { entry.lat = coords.lat; entry.lng = coords.lng; added++; }
-    console.log(`Geocoded "${query}": ${coords ? `${coords.lat},${coords.lng}` : "not found"}`);
-  }
-
-  await writeFile(GEOCODE_CACHE_PATH, `${JSON.stringify(cache, null, 2)}\n`, "utf8");
-  console.log(`Geocoding: ${added} new coordinates (${toGeocode.length} entries checked)`);
-  return entries;
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

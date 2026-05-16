@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseEventsHtml, parsePoliceHtml, parsePoliceRss } from "./ingest.mjs";
+import { parsePoliceRss, parsePoliceHtml } from "./sources/police.mjs";
+import { parseEventsHtml } from "./sources/events.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const fixture = (name) => readFile(path.join(ROOT, "scripts", "fixtures", name), "utf8");

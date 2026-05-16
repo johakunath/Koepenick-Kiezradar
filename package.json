@@ -10,6 +10,8 @@
     "ingest": "node scripts/ingest.mjs",
     "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai",
     "test:parsers": "node scripts/parser-smoke-test.mjs",
+    "test:data": "tsx scripts/data-smoke-test.ts",
+    "test": "node scripts/parser-smoke-test.mjs && tsx scripts/data-smoke-test.ts",
     "weekly-digest": "node scripts/weekly-digest.mjs"
   },
   "dependencies": {
@@ -28,6 +30,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
+    "tsx": "^4.22.0",
     "typescript": "^5"
   }
 }
