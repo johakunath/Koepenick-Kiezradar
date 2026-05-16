@@ -247,10 +247,29 @@ async function main() {
   const knownIds = new Set(existing.map((entry) => entry.id));
   const newEntries = prefillGeoFields(rawEntries.filter((entry) => !knownIds.has(entry.id)));
 
+  // Re-enrich entries whose ai_summary is still a thin placeholder (title echo or known fallback)
+  const REENRICH_CAP = 10;
+  function isThinAiSummary(e) {
+    const s = (e.ai_summary ?? "").trim().toLowerCase();
+    const t = (e.title ?? "").trim().toLowerCase();
+    if (!s || s === t) return true;
+    return /^(offizielle pressemitteilung|veranstaltung im bezirk|bvv-vorgang|polizeimeldung|noch nicht ki)/.test(s);
+  }
+  const staleEntries = existing
+    .filter((e) => !e.is_mock && isThinAiSummary(e))
+    .slice(0, REENRICH_CAP);
+
   let enriched = newEntries;
   let aiError = null;
   try {
-    enriched = prefillGeoFields(await enrichWithAI(newEntries, options));
+    const toEnrich = [...newEntries, ...staleEntries];
+    const enrichedAll = prefillGeoFields(await enrichWithAI(toEnrich, options));
+    enriched = enrichedAll.slice(0, newEntries.length);
+    const enrichedStale = enrichedAll.slice(newEntries.length);
+    if (enrichedStale.length > 0) {
+      console.log(`Re-enriched ${enrichedStale.length} stale entries.`);
+      enriched = [...enriched, ...enrichedStale];
+    }
   } catch (err) {
     aiError = err.message;
     console.warn(`AI enrichment skipped: ${aiError}`);

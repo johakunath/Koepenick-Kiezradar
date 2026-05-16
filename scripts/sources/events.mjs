@@ -45,6 +45,17 @@ export function parseEventsHtml(html) {
       if (/^\d{4}$/.test(title.trim())) return null;
       if (title.trim().length < 8) return null;
 
+      // Reject berlin.de navigation category titles that slip through link extraction
+      const NAVIGATION_TITLES = new Set([
+        "ausstellungen",
+        "spaziergänge, ausflüge",
+        "infoveranstaltungen",
+        "gesundheit, umwelt",
+        "politik, bürgerservice",
+      ]);
+      if (NAVIGATION_TITLES.has(title.trim().toLocaleLowerCase("de-DE"))) return null;
+      if (/^seite\s+\d+$/i.test(title.trim())) return null;
+
       const sourceUrl = href.startsWith("http") ? href : new URL(href, EVENTS_URL).toString();
 
       // Reject category-filter and pagination links.
