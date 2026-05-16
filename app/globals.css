@@ -85,7 +85,9 @@ body {
   transition: opacity 0.2s ease;
 }
 [data-theme="dark"] .illus-mark {
-  opacity: 0 !important;
+  filter: invert(1);
+  opacity: 0.12 !important;
+  mix-blend-mode: normal;
 }
 [data-theme="dark"] .illus-banner {
   mix-blend-mode: screen;
