@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-05-16T21:38:40.284Z",
+  "last_run": "2026-05-16T22:20:26.930Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -22,8 +22,8 @@
     "bvv-tk": {
       "status": "ok",
       "fetched": 0,
-      "parsed": 10,
-      "raw_items": 10
+      "parsed": 0,
+      "raw_items": 0
     },
     "viz-baustellen": {
       "status": "skipped",
