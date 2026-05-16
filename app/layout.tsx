@@ -25,6 +25,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de" className={`${fraunces.variable} ${interTight.variable} h-full`}>
+      {/* Prevent FOUC: apply saved theme before first paint */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var t=localStorage.getItem('kiezradar-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}`,
+          }}
+        />
+      </head>
       <body className="min-h-full">{children}</body>
     </html>
   );

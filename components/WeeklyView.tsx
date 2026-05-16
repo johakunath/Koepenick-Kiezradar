@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
+import IllusBanner from "@/components/IllusBanner";
 
 interface DigestTopic {
   name: string;
@@ -52,17 +53,22 @@ function groupByDay(entries: Entry[]): DayGroup[] {
     });
 }
 
-function getWeekStats(entries: Entry[]) {
-  const electionCount = entries.filter((e) => e.election_relevant).length;
-  const eventCount = entries.filter((e) => e.tags.includes("veranstaltung")).length;
-  const tagCounts = entries
-    .flatMap((e) => e.tags)
-    .reduce<Record<string, number>>((acc, t) => {
-      acc[t] = (acc[t] ?? 0) + 1;
-      return acc;
-    }, {});
-  const topTag = Object.entries(tagCounts).sort((a, b) => b[1] - a[1])[0]?.[0] as Tag | undefined;
-  return { electionCount, eventCount, topTag };
+function WaveStrip() {
+  return (
+    <svg
+      width="100%"
+      height="18"
+      viewBox="0 0 600 18"
+      preserveAspectRatio="none"
+      style={{ display: "block" }}
+      aria-hidden="true"
+    >
+      <g stroke="var(--water-2)" strokeWidth="1.2" fill="none" strokeLinecap="round" opacity="0.45">
+        <path d="M0 8 Q 30 2, 60 8 T 120 8 T 180 8 T 240 8 T 300 8 T 360 8 T 420 8 T 480 8 T 540 8 T 600 8" />
+        <path d="M0 13 Q 30 7, 60 13 T 120 13 T 180 13 T 240 13 T 300 13 T 360 13 T 420 13 T 480 13 T 540 13 T 600 13" opacity="0.6" />
+      </g>
+    </svg>
+  );
 }
 
 function LogbookEntry({ entry }: { entry: Entry }) {
@@ -71,66 +77,61 @@ function LogbookEntry({ entry }: { entry: Entry }) {
 
   return (
     <div className="relative mb-5 last:mb-0">
-      {/* Timeline dot */}
       <div
         style={{
           position: "absolute",
           left: -25,
           top: 6,
-          width: 8,
-          height: 8,
+          width: 7,
+          height: 7,
           borderRadius: "50%",
-          background: "var(--water-mid)",
+          background: "var(--water-2)",
           border: "2px solid var(--bg)",
-          flexShrink: 0,
         }}
       />
-
       {primaryTag && (
         <span
           style={{
-            display: "inline-block",
+            fontFamily: "var(--font-inter-tight)",
             fontSize: 9,
             textTransform: "uppercase",
-            letterSpacing: "0.08em",
+            letterSpacing: "0.12em",
             fontWeight: 700,
-            color: "var(--water-deep)",
-            background: "rgba(20, 61, 86, 0.07)",
-            border: "1px solid rgba(20, 61, 86, 0.12)",
-            borderRadius: 3,
-            padding: "1px 5px",
+            color: "var(--water)",
             marginBottom: 4,
+            display: "inline-block",
           }}
         >
           {TAG_LABELS[primaryTag]}
         </span>
       )}
-
       <Link
         href={href}
-        className="block hover:underline"
         style={{
+          display: "block",
           fontFamily: "var(--font-fraunces)",
           fontWeight: 500,
           fontSize: "0.97rem",
           color: "var(--ink)",
           lineHeight: 1.35,
+          textDecoration: "none",
         }}
+        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water)")}
+        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
       >
         {entry.title}
       </Link>
-
       <div
-        className="flex gap-2 mt-1 text-xs flex-wrap"
-        style={{ color: "var(--ink-soft)", fontSize: 11 }}
+        className="flex gap-2 mt-1 flex-wrap"
+        style={{ color: "var(--ink-mute)", fontSize: 11, fontFamily: "var(--font-inter-tight)" }}
       >
         <span>{entry.location}</span>
-        <span style={{ opacity: 0.4 }}>·</span>
+        <span style={{ opacity: 0.5 }}>·</span>
         <a
           href={entry.source_url}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "var(--water-mid)" }}
+          style={{ color: "var(--water-2)", textDecoration: "none" }}
         >
           {entry.source}
         </a>
@@ -142,22 +143,17 @@ function LogbookEntry({ entry }: { entry: Entry }) {
 function Logbook({ entries }: { entries: Entry[] }) {
   const days = groupByDay(entries);
   if (days.length === 0) return null;
-
   return (
     <div className="space-y-8">
       {days.map(({ dateKey, dayNumber, dayName, entries: dayEntries }) => (
-        <div
-          key={dateKey}
-          style={{ display: "grid", gridTemplateColumns: "44px 1fr", gap: "0 20px" }}
-        >
-          {/* Date column */}
+        <div key={dateKey} style={{ display: "grid", gridTemplateColumns: "44px 1fr", gap: "0 20px" }}>
           <div style={{ textAlign: "right", paddingTop: 2, lineHeight: 1 }}>
             <div
               style={{
                 fontFamily: "var(--font-fraunces)",
                 fontWeight: 600,
                 fontSize: "1.15rem",
-                color: "var(--water-deep)",
+                color: "var(--water)",
               }}
             >
               {dayNumber}
@@ -167,16 +163,15 @@ function Logbook({ entries }: { entries: Entry[] }) {
                 fontSize: 10,
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
-                color: "var(--ink-soft)",
+                color: "var(--ink-mute)",
                 marginTop: 3,
+                fontFamily: "var(--font-inter-tight)",
               }}
             >
               {dayName}
             </div>
           </div>
-
-          {/* Entries with timeline line */}
-          <div style={{ borderLeft: "2px solid var(--border)", paddingLeft: 20 }}>
+          <div style={{ borderLeft: "2px solid var(--rule)", paddingLeft: 20 }}>
             {dayEntries.map((entry) => (
               <LogbookEntry key={entry.id} entry={entry} />
             ))}
@@ -188,121 +183,129 @@ function Logbook({ entries }: { entries: Entry[] }) {
 }
 
 export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewProps) {
-  const { electionCount, eventCount, topTag } = getWeekStats(entries);
   const entryById = new Map(entries.map((e) => [e.id, e]));
+  const electionCount = entries.filter((e) => e.election_relevant).length;
+
+  // Extract week number from digest or compute
+  const weekNo = digest?.week
+    ? parseInt(digest.week.split("-W")[1] ?? "0")
+    : Math.ceil((Date.now() - new Date(new Date().getFullYear(), 0, 1).getTime()) / 604800000);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
-      <div className="max-w-2xl lg:max-w-4xl mx-auto px-5 py-8">
-
-        {/* Header */}
-        <div className="mb-8">
-          <Link
-            href="/"
-            className="text-xs font-medium inline-block mb-4"
-            style={{ color: "var(--water-mid)" }}
-          >
-            ← Zum Feed
-          </Link>
-
-          {/* Heron spot illustration */}
-          <svg width="72" height="72" viewBox="0 0 80 80" fill="none" aria-hidden="true" style={{ opacity: 0.75, marginBottom: 8, display: "block" }}>
-            <g stroke="#143d56" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M34 60 L32 72" />
-              <path d="M40 60 L42 72" />
-              <path d="M30 50 C30 40, 45 40, 45 50 C45 60, 30 60, 30 50 Z" />
-              <path d="M42 48 C48 42, 46 34, 52 28 C56 24, 58 22, 60 20" />
-              <path d="M60 20 C62 19, 64 20, 63 22 C61 23, 59 22, 60 20 Z" />
-              <path d="M63 21 L70 19" />
-              <circle cx="62" cy="21" r="0.8" fill="#143d56" />
-              <path d="M32 50 C36 46, 40 46, 44 50" strokeOpacity="0.5" />
-              <line x1="20" y1="72" x2="60" y2="72" strokeOpacity="0.2" />
-            </g>
-          </svg>
-
-          <h1
-            className="text-3xl mt-2"
-            style={{
-              fontFamily: "var(--font-fraunces)",
-              fontWeight: 600,
-              letterSpacing: "-0.02em",
-              color: "var(--water-deep)",
-            }}
-          >
-            Diese Woche in Köpenick
-          </h1>
-          <p className="text-sm mt-1" style={{ color: "var(--ink-soft)" }}>
-            {weekRange}
-          </p>
-        </div>
-
-        {/* Stats strip */}
-        <div
-          className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-4 rounded-lg mb-8"
-          style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
+      {/* Slim header */}
+      <header
+        className="sticky top-0 z-20 flex items-center px-5 md:px-10 gap-4"
+        style={{
+          height: 60,
+          background: "var(--bg)",
+          borderBottom: "1px solid var(--rule)",
+        }}
+      >
+        <Link
+          href="/"
+          style={{
+            fontFamily: "var(--font-inter-tight)",
+            fontSize: 13,
+            color: "var(--ink-soft)",
+            textDecoration: "none",
+          }}
         >
-          <div>
-            <span
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 600,
-                fontSize: "1.5rem",
-                color: "var(--water-deep)",
-              }}
-            >
-              {entries.length}
-            </span>
-            <p className="text-xs mt-0.5" style={{ color: "var(--ink-soft)" }}>Einträge</p>
-          </div>
-          <div>
-            <span
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 600,
-                fontSize: "1.5rem",
-                color: "var(--brick)",
-              }}
-            >
-              {electionCount}
-            </span>
-            <p className="text-xs mt-0.5" style={{ color: "var(--ink-soft)" }}>wahlrelevant</p>
-          </div>
-          <div>
-            <span
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 600,
-                fontSize: "1.5rem",
-                color: "var(--forest)",
-              }}
-            >
-              {eventCount}
-            </span>
-            <p className="text-xs mt-0.5" style={{ color: "var(--ink-soft)" }}>Veranstaltungen</p>
-          </div>
-          {topTag && (
-            <div>
-              <span
-                style={{
-                  fontFamily: "var(--font-fraunces)",
-                  fontWeight: 600,
-                  fontSize: "1rem",
-                  color: "var(--water-deep)",
-                }}
-              >
-                {TAG_LABELS[topTag]}
-              </span>
-              <p className="text-xs mt-0.5" style={{ color: "var(--ink-soft)" }}>Top-Thema</p>
-            </div>
-          )}
+          ← Feed
+        </Link>
+        <span
+          style={{
+            fontFamily: "var(--font-fraunces)",
+            fontSize: 18,
+            color: "var(--ink)",
+            fontWeight: 500,
+          }}
+        >
+          Kiezradar ·{" "}
+          <i style={{ color: "var(--reed)", fontWeight: 400 }}>Wochenausgabe</i>
+        </span>
+        <div style={{ marginLeft: "auto", fontFamily: "var(--font-inter-tight)", fontSize: 11, color: "var(--ink-mute)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+          KW {weekNo} · 2026
         </div>
+      </header>
 
-        {/* AI digest topics (when available) */}
+      <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
+        {/* Hero */}
+        <section className="relative pt-8 pb-6 overflow-hidden">
+          {/* Panorama backdrop — desktop */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/illustrations/heron-schloss-panorama.png"
+            alt=""
+            aria-hidden="true"
+            className="illus-mark hidden md:block absolute"
+            style={{
+              width: 980,
+              right: 0,
+              top: 20,
+              opacity: 0.44,
+              pointerEvents: "none",
+              zIndex: 0,
+            }}
+          />
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <div
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                fontSize: 11,
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "var(--brick)",
+                marginBottom: 8,
+              }}
+            >
+              {weekRange}
+            </div>
+            <h1
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontWeight: 500,
+                color: "var(--ink)",
+                fontSize: "clamp(44px, 6vw, 64px)",
+                lineHeight: 0.96,
+                letterSpacing: "-0.03em",
+                margin: 0,
+              }}
+            >
+              Sieben Tage
+              <br />
+              <i style={{ color: "var(--reed)", fontWeight: 400 }}>am Müggelsee</i>
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontStyle: "italic",
+                color: "var(--ink-soft)",
+                fontSize: "clamp(15px, 2vw, 22px)",
+                marginTop: 16,
+                maxWidth: 540,
+                lineHeight: 1.45,
+              }}
+            >
+              {entries.length} Meldungen · {electionCount} mit Wahlbezug · KW {weekNo}
+            </p>
+          </div>
+        </section>
+
+        <WaveStrip />
+
+        {/* AI digest topics */}
         {digest && digest.topics.length > 0 && (
-          <div className="mb-10 space-y-5">
+          <div className="mt-8 mb-10 space-y-6">
             <h2
-              className="text-xs font-semibold uppercase tracking-widest"
-              style={{ color: "var(--ink-soft)", letterSpacing: "0.1em" }}
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                fontSize: 10,
+                fontWeight: 600,
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "var(--ink-mute)",
+              }}
             >
               KI-Wochenrückblick
             </h2>
@@ -313,16 +316,25 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               return (
                 <div key={topic.name}>
                   <h3
-                    className="text-base mb-1"
                     style={{
                       fontFamily: "var(--font-fraunces)",
                       fontWeight: 600,
-                      color: "var(--water-deep)",
+                      fontSize: "1.05rem",
+                      color: "var(--water)",
+                      marginBottom: 6,
                     }}
                   >
                     {topic.name}
                   </h3>
-                  <p className="text-sm leading-relaxed mb-2" style={{ color: "var(--ink-soft)" }}>
+                  <p
+                    style={{
+                      fontFamily: "var(--font-inter-tight)",
+                      fontSize: 14,
+                      lineHeight: 1.6,
+                      color: "var(--ink-soft)",
+                      marginBottom: 10,
+                    }}
+                  >
                     {topic.summary}
                   </p>
                   {topicEntries.length > 0 && (
@@ -331,11 +343,14 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
                         <Link
                           key={e.id}
                           href={`/eintrag/${e.slug ?? slugify(e.title)}`}
-                          className="text-xs px-2 py-1 rounded"
                           style={{
-                            border: "1px solid var(--border)",
-                            color: "var(--water-mid)",
-                            background: "var(--bg-card)",
+                            fontFamily: "var(--font-inter-tight)",
+                            fontSize: 11,
+                            padding: "3px 8px",
+                            borderRadius: 3,
+                            border: "1px solid var(--rule)",
+                            color: "var(--water-2)",
+                            textDecoration: "none",
                           }}
                         >
                           {e.title}
@@ -346,37 +361,72 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
                 </div>
               );
             })}
-            <p className="text-xs" style={{ color: "var(--ink-soft)", opacity: 0.6 }}>
-              KI-generiert · Stand:{" "}
-              {new Date(digest.generated_at).toLocaleDateString("de-DE")}
+            <p
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                fontSize: 11,
+                color: "var(--ink-mute)",
+                opacity: 0.7,
+              }}
+            >
+              KI-generiert · Stand: {new Date(digest.generated_at).toLocaleDateString("de-DE")}
             </p>
           </div>
         )}
 
-        {/* Logbook — always shown */}
-        <div>
+        {/* Logbook */}
+        <div className="pb-16">
           <h2
-            className="text-xs font-semibold uppercase tracking-widest mb-6"
-            style={{ color: "var(--ink-soft)", letterSpacing: "0.1em" }}
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              fontSize: 10,
+              fontWeight: 600,
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              color: "var(--ink-mute)",
+              marginBottom: 24,
+            }}
           >
             Wochenchronik
           </h2>
 
           {entries.length === 0 ? (
-            <div
-              className="rounded-lg p-5"
-              style={{ background: "var(--bg-card)", border: "1px solid var(--border)" }}
+            <p
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                fontSize: 14,
+                color: "var(--ink-soft)",
+                padding: "20px 0",
+              }}
             >
-              <p className="text-sm" style={{ color: "var(--ink-soft)" }}>
-                Der KI-Wochenrückblick wird jeden Sonntag automatisch generiert. Bis dahin sind
-                hier die relevantesten Einträge der Woche nach lokaler Relevanz sortiert.
-              </p>
-            </div>
+              Der KI-Wochenrückblick wird jeden Sonntag automatisch generiert. Bis dahin sind
+              hier die relevantesten Einträge der Woche.
+            </p>
           ) : (
             <Logbook entries={entries} />
           )}
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="relative mt-4" style={{ borderTop: "1px solid var(--rule)" }}>
+        <IllusBanner opacity={0.45} />
+        <div className="mx-auto max-w-[1280px] px-5 md:px-20 py-6 text-center">
+          <p
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              fontSize: 12,
+              color: "var(--ink-mute)",
+              lineHeight: 1.6,
+              maxWidth: 560,
+              margin: "0 auto",
+            }}
+          >
+            Wochenausgabe — automatisch zusammengefasst, redaktionell nicht geprüft.
+            Ein privates Lern- und Experimentierprojekt zweier Nachbarn.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

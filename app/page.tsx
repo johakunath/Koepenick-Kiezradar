@@ -2,112 +2,156 @@
 
 import { useMemo, useState } from "react";
 import type { Tag } from "@/lib/types";
-import type { District } from "@/lib/shared/koepenick-geo";
 import { getDisplayEntries, searchEntries } from "@/lib/data";
 import Header from "@/components/Header";
-import FilterBar from "@/components/FilterBar";
-import EntryCard from "@/components/EntryCard";
-import Footer from "@/components/Footer";
+import EntryCard, { EntryHero } from "@/components/EntryCard";
+import IllusMark from "@/components/IllusMark";
+import IllusBanner from "@/components/IllusBanner";
 
 const entries = getDisplayEntries();
-const electionCount = entries.filter((e) => e.election_relevant).length;
 
 export default function FeedPage() {
   const [activeTags, setActiveTags] = useState<Tag[]>([]);
-  const [activeDistricts, setActiveDistricts] = useState<District[]>([]);
-  const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
-    const base = entries.filter((e) => {
-      const tagMatch =
-        activeTags.length === 0 ||
-        e.tags.some((t) => activeTags.includes(t)) ||
-        (activeTags.includes("wahl") && e.election_relevant);
-      const districtMatch =
-        activeDistricts.length === 0 ||
-        (e.district != null && activeDistricts.includes(e.district as District));
-      return tagMatch && districtMatch;
-    });
-    return searchEntries(base, query);
-  }, [activeTags, activeDistricts, query]);
+    const base = activeTags.length
+      ? entries.filter(
+          (e) =>
+            e.tags.some((t) => activeTags.includes(t)) ||
+            (activeTags.includes("wahl") && e.election_relevant)
+        )
+      : entries;
+    return [...searchEntries(base, "")].sort(
+      (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+    );
+  }, [activeTags]);
 
-  const sorted = [...filtered].sort(
-    (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
-  );
+  function toggleTag(tag: Tag) {
+    setActiveTags((prev) =>
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
+    );
+  }
 
-  const noFilters = activeTags.length === 0 && activeDistricts.length === 0 && query.trim() === "";
-
-  const politikEntries = sorted.filter(
-    (e) => e.election_relevant || (e.political_relevance_score ?? 0) >= 0.6
-  );
-  const feedEntries = sorted.filter(
-    (e) => !e.election_relevant && (e.political_relevance_score ?? 0) < 0.6
-  );
+  const [hero, ...rest] = filtered;
+  const left = rest.filter((_, i) => i % 2 === 0);
+  const right = rest.filter((_, i) => i % 2 === 1);
 
   return (
-    <div className="min-h-screen" style={{ background: "var(--bg)" }}>
-      <Header count={entries.length} electionCount={electionCount} />
-
-      <FilterBar
+    <div className="relative min-h-screen" style={{ background: "var(--bg)" }}>
+      <Header
         activeTags={activeTags}
-        activeDistricts={activeDistricts}
-        query={query}
-        onToggleTag={(tag) =>
-          setActiveTags((prev) =>
-            prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
-          )
-        }
-        onToggleDistrict={(district) =>
-          setActiveDistricts((prev) =>
-            prev.includes(district) ? prev.filter((d) => d !== district) : [...prev, district]
-          )
-        }
-        onQueryChange={setQuery}
-        onReset={() => {
-          setActiveTags([]);
-          setActiveDistricts([]);
-          setQuery("");
-        }}
+        onToggle={toggleTag}
+        onReset={() => setActiveTags([])}
       />
 
-      <main className="px-5 pt-4">
-        <div className="max-w-2xl lg:max-w-4xl mx-auto space-y-5">
-          {sorted.length === 0 ? (
-            <div className="text-center py-12 text-sm" style={{ color: "var(--ink-soft)" }}>
-              Keine Einträge mit diesen Filtern.
-            </div>
-          ) : (
-            <>
-              {noFilters && politikEntries.length > 0 && (
-                <section className="space-y-4">
-                  <h2
-                    className="text-xs font-semibold uppercase tracking-widest"
-                    style={{ color: "var(--brick)", letterSpacing: "0.1em" }}
-                  >
-                    Politik &amp; Wahl 2026
-                  </h2>
-                  {politikEntries.map((entry) => (
-                    <EntryCard key={entry.id} entry={entry} />
-                  ))}
-                  {feedEntries.length > 0 && (
-                    <h2
-                      className="text-xs font-semibold uppercase tracking-widest pt-2"
-                      style={{ color: "var(--ink-soft)", letterSpacing: "0.1em" }}
-                    >
-                      Aktuell im Kiez
-                    </h2>
-                  )}
-                </section>
-              )}
-              {(noFilters ? feedEntries : sorted).map((entry) => (
-                <EntryCard key={entry.id} entry={entry} />
-              ))}
-            </>
-          )}
-        </div>
-      </main>
+      <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
+        {/* Watermark illustrations — desktop only */}
+        <IllusMark
+          src="/illustrations/illus-heron.png"
+          width={340}
+          className="top-[80px] right-[40px] hidden md:block"
+          opacity={0.34}
+        />
+        <IllusMark
+          src="/illustrations/illus-reeds.png"
+          width={220}
+          className="top-[520px] left-[20px] hidden md:block"
+          opacity={0.32}
+        />
+        <IllusMark
+          src="/illustrations/illus-carp.png"
+          width={210}
+          className="top-[920px] right-[40px] hidden md:block"
+          opacity={0.34}
+        />
+        <IllusMark
+          src="/illustrations/illus-oak.png"
+          width={170}
+          className="top-[1320px] left-[40px] hidden md:block"
+          opacity={0.32}
+        />
+        <IllusMark
+          src="/illustrations/illus-reeds.png"
+          width={170}
+          className="top-[1620px] right-[40px] hidden md:block"
+          opacity={0.30}
+        />
 
-      <Footer />
+        {filtered.length === 0 ? (
+          <div
+            className="py-16 text-center"
+            style={{ color: "var(--ink-mute)", fontSize: 14 }}
+          >
+            Keine Einträge mit diesen Filtern.
+          </div>
+        ) : (
+          <>
+            {/* Hero — first entry, full width */}
+            <section className="relative pt-8 md:pt-10" style={{ zIndex: 1 }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 12,
+                  marginBottom: 12,
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "var(--font-inter-tight)",
+                    fontSize: 10,
+                    fontWeight: 600,
+                    letterSpacing: "0.22em",
+                    textTransform: "uppercase",
+                    color: "var(--brick)",
+                  }}
+                >
+                  Aufmacher
+                </span>
+                <div
+                  style={{ flex: 1, height: 1, background: "var(--rule)", opacity: 0.6 }}
+                />
+              </div>
+              {hero && <EntryHero entry={hero} />}
+            </section>
+
+            {/* Body grid */}
+            <section className="relative pb-12 md:pb-16" style={{ zIndex: 1 }}>
+              {/* Mobile: single column */}
+              <div className="md:hidden">
+                {rest.map((e) => (
+                  <EntryCard key={e.id} entry={e} />
+                ))}
+              </div>
+              {/* Desktop: 2-column grid */}
+              <div className="hidden md:grid md:grid-cols-2 md:gap-x-14">
+                <div>{left.map((e) => <EntryCard key={e.id} entry={e} />)}</div>
+                <div>{right.map((e) => <EntryCard key={e.id} entry={e} />)}</div>
+              </div>
+            </section>
+          </>
+        )}
+      </div>
+
+      {/* Footer */}
+      <footer className="relative mt-8" style={{ borderTop: "1px solid var(--rule)" }}>
+        <IllusBanner opacity={0.45} />
+        <div className="mx-auto max-w-[1280px] px-5 md:px-20 py-6 text-center">
+          <p
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              fontSize: 12,
+              color: "var(--ink-mute)",
+              lineHeight: 1.6,
+              maxWidth: 560,
+              margin: "0 auto",
+            }}
+          >
+            Köpenick Kiezradar — privates Lern- und Experimentierprojekt zweier Nachbarn.
+            Keine offizielle Quelle. KI-Texte können irren, die verlinkten Originale bleiben maßgeblich.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }

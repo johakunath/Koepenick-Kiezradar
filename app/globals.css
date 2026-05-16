@@ -1,37 +1,102 @@
 @import "tailwindcss";
 
+/* ── Light mode (Müggelsee editorial) ─────────────────────────────────────── */
 :root {
-  --bg: #f2e8d5;
-  --bg-card: #faf4e8;
-  --water-deep: #143d56;
-  --water-mid: #2d6080;
-  --water-light: #b8d2e0;
-  --forest: #3a5c2a;
-  --sand: #d0bfa0;
-  --ink: #141f26;
-  --ink-soft: #445562;
-  --brick: #b85c3a;
-  --border: #ddd0b8;
+  --bg:        #f2e8d5;
+  --bg-deep:   #ead9b6;
+  --card:      #faf3e0;
+  --ink:       #0c2433;
+  --ink-soft:  #3d556a;
+  --ink-mute:  #8a8775;
+  --water:     #143d56;
+  --water-2:   #2a6a8a;
+  --water-pale:#bccfd9;
+  --reed:      #3e6845;
+  --reed-soft: #7a9569;
+  --brick:     #b85c3a;
+  --border:    #d9c89e;
+  --rule:      #c2b287;
+
+  /* backward-compat aliases for non-redesigned pages */
+  --bg-card:    var(--card);
+  --water-deep: var(--water);
+  --water-mid:  var(--water-2);
+  --water-light:var(--water-pale);
+  --forest:     var(--reed);
+  --sand:       var(--bg-deep);
+}
+
+/* ── Dark mode (Funkstation Köpenick) ─────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:        #0e1820;
+  --bg-deep:   #162834;
+  --card:      #162834;
+  --ink:       #e8e1d2;
+  --ink-soft:  #a4a094;
+  --ink-mute:  #6c7a82;
+  --water:     #7fc6b9;
+  --water-2:   #e9a23b;
+  --water-pale:#1c3340;
+  --reed:      #e9a23b;
+  --reed-soft: #6c7a82;
+  --brick:     #d96c4f;
+  --border:    #26404f;
+  --rule:      #26404f;
+
+  --bg-card:    var(--card);
+  --water-deep: var(--water);
+  --water-mid:  var(--water-2);
+  --water-light:var(--water-pale);
+  --forest:     var(--reed);
+  --sand:       var(--bg-deep);
 }
 
 @theme inline {
-  --color-bg: var(--bg);
-  --color-bg-card: var(--bg-card);
-  --color-water-deep: var(--water-deep);
-  --color-water-mid: var(--water-mid);
-  --color-water-light: var(--water-light);
-  --color-forest: var(--forest);
-  --color-sand: var(--sand);
-  --color-ink: var(--ink);
-  --color-ink-soft: var(--ink-soft);
-  --color-brick: var(--brick);
-  --color-border: var(--border);
-  --font-display: var(--font-fraunces);
-  --font-body: var(--font-inter-tight);
+  --color-bg:         var(--bg);
+  --color-bg-deep:    var(--bg-deep);
+  --color-card:       var(--card);
+  --color-ink:        var(--ink);
+  --color-ink-soft:   var(--ink-soft);
+  --color-ink-mute:   var(--ink-mute);
+  --color-water:      var(--water);
+  --color-water-2:    var(--water-2);
+  --color-reed:       var(--reed);
+  --color-brick:      var(--brick);
+  --color-rule:       var(--rule);
+  --color-bg-card:    var(--card);
+  --color-water-deep: var(--water);
+  --color-water-mid:  var(--water-2);
+  --color-forest:     var(--reed);
+  --color-border:     var(--rule);
+  --font-display:     var(--font-fraunces);
+  --font-body:        var(--font-inter-tight);
 }
 
 body {
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-inter-tight), system-ui, sans-serif;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Illustrations: multiply blend vanishes on sand; hidden on dark bg */
+.illus-mark {
+  mix-blend-mode: multiply;
+  transition: opacity 0.2s ease;
+}
+[data-theme="dark"] .illus-mark {
+  opacity: 0 !important;
+}
+[data-theme="dark"] .illus-banner {
+  mix-blend-mode: screen;
+  opacity: 0.08 !important;
+}
+
+/* Dark mode: entry cards get a panel treatment */
+[data-theme="dark"] .entry-card {
+  border: 1px solid var(--rule) !important;
+  border-radius: 6px !important;
+  background: var(--card) !important;
+  padding-left: 14px;
+  padding-right: 14px;
 }
