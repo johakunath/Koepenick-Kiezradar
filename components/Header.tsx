@@ -1,5 +1,6 @@
 import Link from "next/link";
 import RadarNav from "@/components/RadarNav";
+import IllustrationBanner from "@/components/IllustrationBanner";
 
 interface HeaderProps {
   count: number;
@@ -78,6 +79,9 @@ export default function Header({ count }: HeaderProps) {
           <span>{count} aktuelle Einträge</span>
         </div>
         <RadarNav />
+      </div>
+      <div className="mt-4 max-w-2xl lg:max-w-4xl mx-auto px-5">
+        <IllustrationBanner />
       </div>
     </header>
   );

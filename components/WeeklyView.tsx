@@ -204,6 +204,22 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
           >
             ← Zum Feed
           </Link>
+
+          {/* Heron spot illustration */}
+          <svg width="72" height="72" viewBox="0 0 80 80" fill="none" aria-hidden="true" style={{ opacity: 0.75, marginBottom: 8, display: "block" }}>
+            <g stroke="#143d56" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M34 60 L32 72" />
+              <path d="M40 60 L42 72" />
+              <path d="M30 50 C30 40, 45 40, 45 50 C45 60, 30 60, 30 50 Z" />
+              <path d="M42 48 C48 42, 46 34, 52 28 C56 24, 58 22, 60 20" />
+              <path d="M60 20 C62 19, 64 20, 63 22 C61 23, 59 22, 60 20 Z" />
+              <path d="M63 21 L70 19" />
+              <circle cx="62" cy="21" r="0.8" fill="#143d56" />
+              <path d="M32 50 C36 46, 40 46, 44 50" strokeOpacity="0.5" />
+              <line x1="20" y1="72" x2="60" y2="72" strokeOpacity="0.2" />
+            </g>
+          </svg>
+
           <h1
             className="text-3xl mt-2"
             style={{
