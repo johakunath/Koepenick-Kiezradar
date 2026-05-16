@@ -7,19 +7,23 @@ import { DISTRICTS, type District } from "@/lib/shared/koepenick-geo";
 interface FilterBarProps {
   activeTags: Tag[];
   activeDistricts: District[];
+  query: string;
   onToggleTag: (tag: Tag) => void;
   onToggleDistrict: (district: District) => void;
+  onQueryChange: (q: string) => void;
   onReset: () => void;
 }
 
 export default function FilterBar({
   activeTags,
   activeDistricts,
+  query,
   onToggleTag,
   onToggleDistrict,
+  onQueryChange,
   onReset,
 }: FilterBarProps) {
-  const hasActive = activeTags.length > 0 || activeDistricts.length > 0;
+  const hasActive = activeTags.length > 0 || activeDistricts.length > 0 || query.trim().length > 0;
 
   return (
     <div
@@ -60,27 +64,40 @@ export default function FilterBar({
           )}
         </div>
 
-        {/* Districts row */}
-        <div className="flex gap-1.5 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
-          {DISTRICTS.map((district) => {
-            const active = activeDistricts.includes(district);
-            return (
-              <button
-                key={district}
-                onClick={() => onToggleDistrict(district)}
-                className="rounded-full whitespace-nowrap transition-all duration-100 shrink-0"
-                style={{
-                  fontSize: "10.5px",
-                  padding: "2px 8px",
-                  ...(active
-                    ? { background: "var(--forest)", border: "1px solid var(--forest)", color: "var(--bg)" }
-                    : { background: "transparent", border: "1px solid var(--border)", color: "var(--ink-soft)" }),
-                }}
-              >
-                {district}
-              </button>
-            );
-          })}
+        {/* Districts + search row */}
+        <div className="flex items-center gap-2">
+          <div className="flex gap-1.5 overflow-x-auto flex-1 min-w-0" style={{ scrollbarWidth: "none" }}>
+            {DISTRICTS.map((district) => {
+              const active = activeDistricts.includes(district);
+              return (
+                <button
+                  key={district}
+                  onClick={() => onToggleDistrict(district)}
+                  className="rounded-full whitespace-nowrap transition-all duration-100 shrink-0"
+                  style={{
+                    fontSize: "10.5px",
+                    padding: "2px 8px",
+                    ...(active
+                      ? { background: "var(--forest)", border: "1px solid var(--forest)", color: "var(--bg)" }
+                      : { background: "transparent", border: "1px solid var(--border)", color: "var(--ink-soft)" }),
+                  }}
+                >
+                  {district}
+                </button>
+              );
+            })}
+          </div>
+          <input
+            value={query}
+            onChange={(e) => onQueryChange(e.target.value)}
+            placeholder="Suche…"
+            className="text-xs px-2.5 py-1 rounded-md outline-none shrink-0 w-28"
+            style={{
+              background: "rgba(255,255,255,0.5)",
+              border: "1px solid var(--border)",
+              color: "var(--ink)",
+            }}
+          />
         </div>
 
       </div>

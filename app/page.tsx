@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import type { Tag } from "@/lib/types";
 import type { District } from "@/lib/shared/koepenick-geo";
-import { getDisplayEntries } from "@/lib/data";
+import { getDisplayEntries, searchEntries } from "@/lib/data";
 import Header from "@/components/Header";
 import FilterBar from "@/components/FilterBar";
 import EntryCard from "@/components/EntryCard";
@@ -15,9 +15,10 @@ const electionCount = entries.filter((e) => e.election_relevant).length;
 export default function FeedPage() {
   const [activeTags, setActiveTags] = useState<Tag[]>([]);
   const [activeDistricts, setActiveDistricts] = useState<District[]>([]);
+  const [query, setQuery] = useState("");
 
   const filtered = useMemo(() => {
-    return entries.filter((e) => {
+    const base = entries.filter((e) => {
       const tagMatch =
         activeTags.length === 0 ||
         e.tags.some((t) => activeTags.includes(t)) ||
@@ -27,13 +28,14 @@ export default function FeedPage() {
         (e.district != null && activeDistricts.includes(e.district as District));
       return tagMatch && districtMatch;
     });
-  }, [activeTags, activeDistricts]);
+    return searchEntries(base, query);
+  }, [activeTags, activeDistricts, query]);
 
   const sorted = [...filtered].sort(
     (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
   );
 
-  const noFilters = activeTags.length === 0 && activeDistricts.length === 0;
+  const noFilters = activeTags.length === 0 && activeDistricts.length === 0 && query.trim() === "";
 
   const politikEntries = sorted.filter(
     (e) => e.election_relevant || (e.political_relevance_score ?? 0) >= 0.6
@@ -49,6 +51,7 @@ export default function FeedPage() {
       <FilterBar
         activeTags={activeTags}
         activeDistricts={activeDistricts}
+        query={query}
         onToggleTag={(tag) =>
           setActiveTags((prev) =>
             prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]
@@ -59,9 +62,11 @@ export default function FeedPage() {
             prev.includes(district) ? prev.filter((d) => d !== district) : [...prev, district]
           )
         }
+        onQueryChange={setQuery}
         onReset={() => {
           setActiveTags([]);
           setActiveDistricts([]);
+          setQuery("");
         }}
       />
 
