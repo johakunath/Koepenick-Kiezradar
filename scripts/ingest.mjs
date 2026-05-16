@@ -13,7 +13,7 @@ import { enrichWithAI } from "./lib/enrich.mjs";
 import { geocodeEntries } from "./lib/geocode.mjs";
 
 // Re-export parsers so parser-smoke-test.mjs can import from this file
-export { parsePoliceRss, parsePoliceHtml, parsePoliceSource, parseGermanDate } from "./sources/police.mjs";
+export { parsePoliceRss, parsePoliceHtml, parsePoliceSource } from "./sources/police.mjs";
 export { parseEventsHtml } from "./sources/events.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
