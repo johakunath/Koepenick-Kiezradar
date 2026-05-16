@@ -58,8 +58,8 @@ pnpm weekly-digest    # Wochenüberblick generieren
 | Berlin.de Veranstaltungen TK | aktiv, experimentell |
 | Bezirksamt Treptow-Köpenick | aktiv, experimentell |
 | BVV / politische Dokumente | experimentell |
-| VIZ Berlin (Baustellen) | vorbereitet, zuletzt nicht stabil erreichbar |
-| Amtsblatt Berlin | vorbereitet, zuletzt nicht stabil erreichbar |
+| VIZ Berlin (Baustellen) | kein öffentlicher API-Endpunkt — Azure Blob Storage mit VIZ-Credentials; CKAN-Auflösung via daten.berlin.de eingebaut, ob das von GitHub Actions erreichbar ist wird beim nächsten Cron klar |
+| Amtsblatt Berlin | URL korrigiert (umgezogen zu `/logistikservice/`); PDF-Scraping sollte wieder funktionieren |
 
 ---
 
@@ -67,7 +67,8 @@ pnpm weekly-digest    # Wochenüberblick generieren
 
 | Problem | Datei | Prio |
 |---|---|---|
-| VIZ / Amtsblatt manchmal 503 | `sources/viz.mjs`, `sources/amtsblatt.mjs` | Low — defensiv behandeln |
+| VIZ: kein öffentlicher Endpunkt — api.viz.berlin.de ist IP-restricted (Azure Blob Storage, OCIT-C Credentials nötig) | `sources/viz.mjs` | Low — CKAN-Fallback eingebaut, sonst akzeptiert |
+| Amtsblatt: Index-URL war 404 (umgezogen) | `sources/amtsblatt.mjs` | Behoben — neue URL eingetragen |
 | Duplikate: gleiche Meldung aus Bezirksamt + Events | data-Layer | High — nächster Schritt |
 | Kein Fehlerreport wenn Quelle crasht | `ingest.mjs` | Medium |
 
@@ -79,7 +80,8 @@ pnpm weekly-digest    # Wochenüberblick generieren
 2. **Multi-Source-URLs im Datenmodell** — Detailseite zeigt alle Quelllinks
 3. **Manueller Qualitäts-Check** — letzte 4 Wochen Einträge durchgehen, Fehlklassifikationen dokumentieren
 4. **Ingest-Error-Report** — bei Quell-Fehler GitHub Issue erstellen statt lautlos faillen
-5. **VIZ / Amtsblatt** — klare Entscheidung: aktivieren oder aus Cron entfernen
+5. **VIZ** — nach nächstem Cron prüfen ob CKAN-Auflösung funktioniert; wenn nicht, Quelle aus Cron entfernen (kein öffentlicher Endpunkt ohne VIZ-Registrierung)
+6. **Amtsblatt** — nach nächstem Cron prüfen ob neue URL funktioniert
 
 Danach: Wahl-2026-Sprint (siehe PRD.md §11).
 

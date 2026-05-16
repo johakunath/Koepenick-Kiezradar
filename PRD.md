@@ -51,8 +51,8 @@ Ein Eintrag kann mehrere Tags tragen. Legacy-Einträge mit `tag: string` werden 
 | Berlin.de Veranstaltungskalender TK | HTML-Scraping | aktiv, experimentell |
 | Bezirksamt Treptow-Köpenick | HTML + RSS | aktiv, experimentell |
 | BVV / politische Dokumente | HTML-Scraping | experimentell |
-| VIZ Berlin (Baustellen) | GeoJSON API | vorbereitet, zuletzt instabil |
-| Amtsblatt Berlin | HTML-Scraping | vorbereitet, zuletzt instabil |
+| VIZ Berlin (Baustellen) | GeoJSON via CKAN/daten.berlin.de | api.viz.berlin.de ist nicht öffentlich (IP-Allowlist, Azure Credentials); CKAN-Auflösung eingebaut — Status nach nächstem Cron |
+| Amtsblatt Berlin | HTML + PDF-Scraping | URL korrigiert (`/logistikservice/`); Status nach nächstem Cron |
 | Feuerwehr Berlin | — | offen / nicht begonnen |
 | BVG / S-Bahn Störungen | — | offen / Low Priority |
 
@@ -235,8 +235,8 @@ KI markiert passende Einträge mit `election_relevant: true`. Kein Parteibezug, 
 
 ### 🗺️ Iteration 5 — Quellen & Tiefe
 
-- [ ] **VIZ Berlin stabilisieren** oder aus Cron rausnehmen (klare Entscheidung)
-- [ ] **Amtsblatt Berlin** — erneuter Versuch nach Stabilisierungspause
+- [ ] **VIZ Berlin** — nach nächstem Cron: CKAN-Auflösung erfolgreich? Wenn ja, fertig. Wenn nein, Quelle aus Cron entfernen (api.viz.berlin.de ist nicht öffentlich zugänglich ohne VIZ-Registrierung)
+- [ ] **Amtsblatt Berlin** — URL auf `/logistikservice/` korrigiert; nach nächstem Cron verifizieren
 - [ ] **Feuerwehr Berlin** — Machbarkeitscheck (RSS? Webseite?)
 - [ ] **BVV/OParl** — Tiefere Normalisierung wenn Quellenformat klar
 
