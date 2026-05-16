@@ -52,7 +52,7 @@ async function main() {
     process.exit(1);
   }
 
-  const model = process.env.GEMINI_MODEL ?? "gemini-2.0-flash";
+  const model = process.env.GEMINI_MODEL ?? "gemini-1.5-flash";
   const prompt = `Du erstellst einen Wochenrückblick für den Kiezradar Köpenick.
 
 Analysiere diese ${weekEntries.length} Einträge aus der Woche ${range} und fasse sie in 3–5 Themen zusammen.
@@ -87,9 +87,21 @@ ${JSON.stringify(weekEntries.map((e) => ({ id: e.id, title: e.title, ai_summary:
   }
 
   const payload = await response.json();
-  const text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "{}";
-  const jsonMatch = text.match(/\{[\s\S]*\}/);
-  const parsed = JSON.parse(jsonMatch?.[0] ?? "{}");
+  const rawText = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "{}";
+  const text = rawText.replace(/^```(?:json)?\s*/m, "").replace(/\s*```\s*$/m, "").trim();
+  const start = text.indexOf("{");
+  const end = text.lastIndexOf("}");
+  let parsed = {};
+  if (start !== -1 && end !== -1) {
+    try {
+      parsed = JSON.parse(text.slice(start, end + 1));
+    } catch {
+      const lastItem = Math.max(text.lastIndexOf("},\n"), text.lastIndexOf('"}'));
+      if (lastItem > start) {
+        try { parsed = JSON.parse(text.slice(start, lastItem + 2) + "\n]}"); } catch {}
+      }
+    }
+  }
 
   const digest = {
     week,

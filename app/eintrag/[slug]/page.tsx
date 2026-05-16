@@ -1,9 +1,31 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowUpRight, CalendarDays, MapPin } from "lucide-react";
+import { ArrowUpRight, CalendarDays, FileText, MapPin } from "lucide-react";
 import RadarNav from "@/components/RadarNav";
 import { getDisplayEntries, getDistrictBySlug, getEntryBySlug, getTopicBySlug } from "@/lib/data";
-import { TAG_LABELS } from "@/lib/types";
+import { TAG_LABELS, type Tag } from "@/lib/types";
+
+const TAG_ACCENT: Record<Tag, string> = {
+  sicherheit: "#b85c3a",
+  verkehr: "#2d6080",
+  wahl: "#7a5c1e",
+  veranstaltung: "#3a5c2a",
+  verwaltung: "#143d56",
+  politik: "#143d56",
+  infrastruktur: "#5c4a1e",
+  sonstiges: "#7a7060",
+};
+
+const TAG_BG: Record<Tag, string> = {
+  sicherheit: "#fdf0eb",
+  verkehr: "#eaf3f8",
+  wahl: "#fdf5e6",
+  veranstaltung: "#ecf4ea",
+  verwaltung: "#e8f0f4",
+  politik: "#e8f0f4",
+  infrastruktur: "#f4ede8",
+  sonstiges: "#f4f1ec",
+};
 
 export function generateStaticParams() {
   return getDisplayEntries().map((entry) => ({ slug: entry.slug! }));
@@ -17,6 +39,21 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
   const district = entry.district_slug ? getDistrictBySlug(entry.district_slug) : undefined;
   const topics = entry.topic_slugs?.map((topicSlug) => getTopicBySlug(topicSlug)).filter(Boolean) ?? [];
 
+  const primaryTag = entry.tags[0] ?? "sonstiges";
+  const accentColor = TAG_ACCENT[primaryTag] ?? "#7a7060";
+
+  const related = getDisplayEntries()
+    .filter((e) => {
+      if (e.id === entry.id) return false;
+      const sharedTopic =
+        entry.topic_slugs && e.topic_slugs
+          ? entry.topic_slugs.some((t) => e.topic_slugs!.includes(t))
+          : false;
+      const sharedDistrict = entry.district_slug && e.district_slug === entry.district_slug;
+      return sharedTopic || sharedDistrict;
+    })
+    .slice(0, 3);
+
   return (
     <main className="min-h-screen px-5 py-8" style={{ background: "var(--bg)" }}>
       <div className="max-w-2xl lg:max-w-4xl mx-auto">
@@ -27,14 +64,25 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
 
         <article
           className="mt-6 p-6"
-          style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 12 }}
+          style={{
+            background: "var(--bg-card)",
+            border: "1px solid var(--border)",
+            borderLeft: `4px solid ${accentColor}`,
+            borderRadius: 12,
+          }}
         >
+          {/* Tag chips */}
           <div className="flex flex-wrap gap-2 mb-4">
             {entry.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs uppercase"
-                style={{ color: "var(--water-deep)", letterSpacing: "0.06em" }}
+                className="text-xs px-2 py-0.5 rounded"
+                style={{
+                  background: TAG_BG[tag] ?? "#f4f1ec",
+                  color: TAG_ACCENT[tag] ?? "#7a7060",
+                  fontWeight: 600,
+                  letterSpacing: "0.04em",
+                }}
               >
                 {TAG_LABELS[tag]}
               </span>
@@ -51,6 +99,24 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
           <p className="text-base leading-relaxed mb-6" style={{ color: "var(--ink-soft)" }}>
             {entry.ai_summary}
           </p>
+
+          {/* AI reasoning callout */}
+          {entry.ai_reasoning && (
+            <div
+              className="mb-6 px-4 py-3 rounded-lg"
+              style={{ background: "#e8f0f4", borderLeft: `3px solid ${accentColor}` }}
+            >
+              <p
+                className="text-xs uppercase mb-1"
+                style={{ color: accentColor, letterSpacing: "0.06em", fontWeight: 600 }}
+              >
+                Kiez-Einschätzung
+              </p>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--ink)" }}>
+                {entry.ai_reasoning}
+              </p>
+            </div>
+          )}
 
           <dl className="grid gap-3 sm:grid-cols-2 text-sm mb-6">
             <div>
@@ -98,17 +164,36 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
             </section>
           )}
 
-          {entry.ai_reasoning && (
-            <section className="mb-6">
-              <h2 className="text-sm font-medium mb-2" style={{ color: "var(--water-deep)" }}>
-                Warum relevant?
-              </h2>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
-                {entry.ai_reasoning}
+          {/* PDF excerpt block */}
+          {entry.pdf_excerpt && (
+            <section
+              className="mb-6 p-4 rounded-lg"
+              style={{ background: "#faf4e8", border: "1px solid var(--border)" }}
+            >
+              <div className="flex items-center gap-2 mb-2">
+                <FileText size={14} style={{ color: "var(--water-deep)" }} />
+                <h2 className="text-sm font-medium" style={{ color: "var(--water-deep)" }}>
+                  Originaldokument{entry.pdf_page ? ` · Seite ${entry.pdf_page}` : ""}
+                </h2>
+              </div>
+              <p className="text-sm leading-relaxed italic mb-2" style={{ color: "var(--ink-soft)" }}>
+                „{entry.pdf_excerpt}"
               </p>
+              {entry.document_url && (
+                <a
+                  href={`${entry.document_url}${entry.pdf_page ? `#page=${entry.pdf_page}` : ""}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-medium"
+                  style={{ color: "var(--water-mid)" }}
+                >
+                  Dokument öffnen ↗
+                </a>
+              )}
             </section>
           )}
 
+          {/* District + topic links */}
           <div className="flex flex-wrap gap-2 mb-6">
             {district && (
               <Link
@@ -144,6 +229,59 @@ export default async function EntryDetailPage({ params }: { params: Promise<{ sl
             Originalquelle öffnen <ArrowUpRight size={14} />
           </a>
         </article>
+
+        {/* Related entries */}
+        {related.length > 0 && (
+          <section className="mt-8">
+            <h2
+              className="text-sm uppercase mb-3"
+              style={{ color: "var(--ink-soft)", letterSpacing: "0.06em" }}
+            >
+              Ähnliche Einträge
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {related.map((rel) => {
+                const relAccent = TAG_ACCENT[rel.tags[0] ?? "sonstiges"] ?? "#7a7060";
+                return (
+                  <Link
+                    key={rel.id}
+                    href={`/eintrag/${rel.slug}`}
+                    className="block p-4 rounded-xl"
+                    style={{
+                      background: "var(--bg-card)",
+                      border: "1px solid var(--border)",
+                      borderLeft: `3px solid ${relAccent}`,
+                    }}
+                  >
+                    <div className="flex flex-wrap gap-1 mb-2">
+                      {rel.tags.slice(0, 2).map((tag) => (
+                        <span
+                          key={tag}
+                          className="text-xs"
+                          style={{ color: TAG_ACCENT[tag] ?? "#7a7060", fontWeight: 600 }}
+                        >
+                          {TAG_LABELS[tag]}
+                        </span>
+                      ))}
+                    </div>
+                    <p
+                      className="text-sm leading-snug mb-1 line-clamp-2"
+                      style={{ fontFamily: "var(--font-fraunces)", color: "var(--ink)" }}
+                    >
+                      {rel.title}
+                    </p>
+                    <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
+                      {new Date(rel.published_at).toLocaleDateString("de-DE", {
+                        day: "numeric",
+                        month: "short",
+                      })}
+                    </p>
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        )}
       </div>
     </main>
   );

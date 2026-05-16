@@ -1,0 +1,28 @@
+{
+  "week": "2026-W20",
+  "range": "11. Mai – 17. Mai 2026",
+  "generated_at": "2026-05-16T22:00:00.000Z",
+  "entry_count": 12,
+  "topics": [
+    {
+      "name": "Demokratie & Wahl 2026",
+      "summary": "Mehrere Veranstaltungen im Bezirk beschäftigten sich diese Woche mit dem Thema Demokratie und der bevorstehenden Wahl 2026. Ein Siebdruck-Workshop im Stadtteilzentrum lud Bürgerinnen und Bürger ein, sich kreativ mit politischer Partizipation auseinanderzusetzen. Im Gesprächscafé wurden aktuelle politische Fragen diskutiert.",
+      "entry_ids": ["7c1122d43a5739ac", "3689eddfd73ddd74"]
+    },
+    {
+      "name": "Infrastruktur & Energie",
+      "summary": "Nach den großflächigen Stromausfällen in Berlin befasst sich das Bezirksamt Treptow-Köpenick mit der Versorgungssicherheit und möglichen Konsequenzen für die Infrastruktur im Bezirk. Parallel dazu soll der Spielplatz an der Ottomar-Geschke-Straße in Köpenick ausgebaut werden. Am Müggelsee muss ein Parkplatz bei Rübezahl wegen Bauarbeiten zeitweise gesperrt werden.",
+      "entry_ids": ["740a26b6f7c3596e", "7f873c1be1264445", "de83fa41ebb9f893"]
+    },
+    {
+      "name": "Erinnerung & Geschichte",
+      "summary": "Der Gedenkstein auf dem Albineaplatz wurde nach Restaurierungsarbeiten wieder aufgestellt und erinnert an die Geschichte des Ortes. Eine Ausstellung und Veranstaltung im Bezirk widmet sich dem Schicksal von Zwangsarbeiterinnen und Zwangsarbeitern im Nationalsozialismus. Erinnerungskultur bleibt in Treptow-Köpenick ein wichtiges Thema.",
+      "entry_ids": ["f79990e67d325ed0", "4e921e8a75be2d80", "0a10d0ad0ae5189b"]
+    },
+    {
+      "name": "Bezirksleben & Service",
+      "summary": "Das Bezirksamt Treptow-Köpenick verlängert seinen Aufruf, den Bezirk bunter zu gestalten — Bürgerinnen und Bürger sind eingeladen, kreative Ideen einzureichen. Die Deutsche Post schließt eine Filiale in Köpenick und ändert damit das Filialnetz. Außerdem werden Geflügelveranstaltungen im Bezirk wegen eines erhöhten Biosicherheitsrisikos vorerst untersagt.",
+      "entry_ids": ["6c63373421dad931", "0f26e9c297302d1c", "f2d9e3828dc9a608"]
+    }
+  ]
+}
