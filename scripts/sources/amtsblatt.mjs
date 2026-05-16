@@ -2,8 +2,8 @@ import { PDFParse } from "pdf-parse";
 import { hashId, containsKoepenick, inferTags, inferLocation, KOEPENICK_KEYWORDS } from "../lib/shared.mjs";
 
 export const AMTSBLATT_INDEX_URLS = [
+  "https://www.berlin.de/landesverwaltungsamt/logistikservice/amtsblatt-fuer-berlin/",
   "https://www.berlin.de/landesverwaltungsamt/service/amtsblatt-fuer-berlin/",
-  "https://www.berlin.de/landesverwaltungsamt/zentrale-dienste/amtsblatt-fuer-berlin/",
   "https://www.berlin.de/sen/justiz/service/amtsblatt-fuer-berlin/",
 ];
 

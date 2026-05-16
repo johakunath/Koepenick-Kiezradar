@@ -1,39 +1,15 @@
-# HANDOVER.md - Projektübergabe & aktueller Stand
+# HANDOVER.md — Aktueller Stand & Übergabe
 
-> **Für KI-Assistenten (Claude Code, Codex):** Lies diese Datei vollständig, dann `CLAUDE.md`, dann `PRD.md`.
+> **Für KI-Assistenten:** Diese Datei zuerst lesen, dann `CLAUDE.md`, dann `PRD.md`.
+> Zuletzt aktualisiert: 16.05.2026
 
 ---
 
-## Stand: 16. Mai 2026
-
-**Wichtig:** GitHub `main` ist die Quelle der Wahrheit. Vor lokaler Arbeit immer zuerst `git fetch` / Pull bzw. neuen Branch von `origin/main` erstellen.
-
-Köpenick Kiezradar ist live auf Vercel:
+## Live-App
 
 https://koepenick-kiezradar.vercel.app/
 
-Der aktuelle Stand enthält deutlich mehr als Iteration 1:
-
-- Feed mit Tagfilter, Ortsfilter, Wahl-Watch und Search-Lite
-- Mehrfach-Tags pro Eintrag; Cards zeigen Tags als Chips
-- Wochenüberblick mit Digest-Unterstützung
-- Karte und geocodierte Einträge
-- Admin-Trigger für Ingestion
-- RSS-Feed unter `/feed.xml`
-- interne Detailseiten `/eintrag/[slug]`
-- Themen, Orte, Termine und Quellen-Seiten
-- Ingestion-Script mit Polizei, Veranstaltungen, Bezirksamt, BVV/Presse, VIZ/Amtsblatt-Versuchen
-- Parser-Smoke-Tests gegen Fixtures
-- JSON-Datenhaltung im Repo mit Archiv und Statusdatei
-
----
-
-## Arbeitsprinzip
-
-- Keine Claude-Änderungen zurückdrehen.
-- Keine Datenbank einführen, solange JSON + statische Seiten reichen.
-- VIZ, Amtsblatt und tiefe BVV/OParl-Anbindung defensiv behandeln; wenn Quellen technisch instabil sind, nicht erzwingen.
-- Map und Newsletter nicht weiter aufblasen, bis echte Datenqualität stabil ist.
+`main` ist die Quelle der Wahrheit. Vor jeder Arbeit: `git fetch && git pull`.
 
 ---
 
@@ -41,63 +17,80 @@ Der aktuelle Stand enthält deutlich mehr als Iteration 1:
 
 ```bash
 pnpm install
-pnpm dev
-pnpm build
-pnpm test:parsers
-pnpm ingest:dry
-GEMINI_API_KEY=xxx pnpm ingest
-pnpm weekly-digest
+pnpm dev              # lokaler Dev-Server
+pnpm build            # Produktions-Build (braucht Netzwerk für Google Fonts)
+pnpm test:parsers     # Parser Smoke Tests
+pnpm ingest:dry       # Ingest-Testlauf ohne AI-Enrichment (braucht Berlin.de-Zugriff)
+GEMINI_API_KEY=xxx pnpm ingest   # echter Ingest-Lauf
+pnpm weekly-digest    # Wochenüberblick generieren
 ```
-
-`pnpm build` braucht Netzwerkzugriff für Google Fonts. `pnpm ingest:dry` braucht Netzwerkzugriff auf Berlin.de.
 
 ---
 
-## Aktuelle Architektur
+## Was funktioniert
 
 | Bereich | Stand |
 |---|---|
-| App | Next.js App Router, TypeScript, Vercel |
-| UI | Feed, Karte, Woche, Detailseiten, Themen, Orte, Termine, Quellen |
-| Daten | JSON im Repo, Archiv unter `data/archive/`, Status unter `data/ingest-status.json` |
-| Ingestion | `scripts/ingest.mjs`, Gemini-Enrichment, GitHub Action Cron |
-| Tests | `pnpm test:parsers` für kritische Parser-Fälle |
-
-Tags sind ein Array (`tags: Tag[]`) und dürfen mehrere Kategorien tragen. Die App normalisiert Tags beim Lesen zusätzlich aus Quelle, Eventdaten, Wahlbezug und Textsignalen. Das KI-Enrichment soll 1-5 Tags liefern.
+| Feed | Tag-, Orts-, Wahl-Watch-, Search-Filter; Card mit Multi-Tag-Chips |
+| `/woche` | Logbook-Layout, KI-Digest, Top-Einträge der Woche |
+| `/karte` | Geocodierte Marker, Popup mit Summary |
+| `/eintrag/[id]` | Detailseite mit KI-Begründung und Originallink |
+| `/themen`, `/thema/[slug]` | Einträge nach Tag-Kategorie |
+| `/orte` | Einträge nach Ort |
+| `/termine`, `/termin/[slug]` | Zukünftige Veranstaltungen |
+| `/quellen` | Quellenübersicht |
+| `/feed.xml` | RSS-Feed |
+| `/admin` | Manueller Ingest-Trigger (kein Auth, nur intern) |
+| Ingestion | GitHub Action täglich 06:00 CET; scripts/ingest.mjs |
+| AI Enrichment | Gemini 2.0 Flash; Tags, Summary, Scores, Reasoning |
+| Geocoding | Adressextraktion aus Texten, lat/lng im Eintrag |
+| Deduplication | Hash-basiert; Re-Enrichment veralteter Einträge |
+| Archiv | `data/archive/YYYY-MM.json`, Statusdatei `data/ingest-status.json` |
+| Tests | `pnpm test:parsers` — Polizei-RSS, Polizei-HTML, Events |
 
 ---
 
 ## Datenquellen
 
-| Quelle | Stand |
+| Quelle | Status |
 |---|---|
-| Polizei Berlin | aktiv/experimentell, HTML-Fallback |
-| Berlin.de Veranstaltungen | aktiv/experimentell, Kategorien/Pagination werden herausgefiltert |
-| Bezirksamt TK | aktiv/experimentell |
+| Polizei Berlin (HTML + RSS) | aktiv, experimentell |
+| Berlin.de Veranstaltungen TK | aktiv, experimentell |
+| Bezirksamt Treptow-Köpenick | aktiv, experimentell |
 | BVV / politische Dokumente | experimentell |
-| VIZ Berlin | vorbereitet, zuletzt nicht erreichbar |
-| Amtsblatt Berlin | vorbereitet, zuletzt nicht erreichbar |
+| VIZ Berlin (Baustellen) | kein öffentlicher API-Endpunkt — Azure Blob Storage mit VIZ-Credentials; CKAN-Auflösung via daten.berlin.de eingebaut, ob das von GitHub Actions erreichbar ist wird beim nächsten Cron klar |
+| Amtsblatt Berlin | URL korrigiert (umgezogen zu `/logistikservice/`); PDF-Scraping sollte wieder funktionieren |
 
 ---
 
-## Out of Scope für den nächsten Schritt
+## Bekannte Probleme
 
-- Supabase/Vercel KV oder andere Datenbank
-- Newsletter
-- Accounts/Login
-- Vollständige journalistische Redaktion
-- Partei- oder Kandidatenbewertung
-- tiefe OParl-/BVV-Normalisierung, solange Quellenformate nicht stabil geklärt sind
-
----
-
-## Nächster sinnvoller Schritt
-
-1. Duplikate zusammenführen: gleiche reale Meldung aus Bezirksamt, Veranstaltungskalender oder BVV als einen kanonischen Eintrag anzeigen.
-2. Mehrere Quellenlinks pro Detailseite speichern und anzeigen.
-3. Danach Parser-Qualität weiter erhöhen und echte Quellenläufe manuell prüfen.
-4. Danach entscheiden, ob BVV/OParl, VIZ oder Amtsblatt als nächste robuste Quelle lohnt.
+| Problem | Datei | Prio |
+|---|---|---|
+| VIZ: kein öffentlicher Endpunkt — api.viz.berlin.de ist IP-restricted (Azure Blob Storage, OCIT-C Credentials nötig) | `sources/viz.mjs` | Low — CKAN-Fallback eingebaut, sonst akzeptiert |
+| Amtsblatt: Index-URL war 404 (umgezogen) | `sources/amtsblatt.mjs` | Behoben — neue URL eingetragen |
+| Duplikate: gleiche Meldung aus Bezirksamt + Events | data-Layer | High — nächster Schritt |
+| Kein Fehlerreport wenn Quelle crasht | `ingest.mjs` | Medium |
 
 ---
 
-*Letzte Aktualisierung: 16.05.2026 - Mehrfach-Tags und nächster Datenqualitäts-Schritt*
+## Nächste Schritte (Priorität)
+
+1. **Duplikate zusammenführen** — gleiche reale Meldung aus mehreren Quellen → ein kanonischer Eintrag, mehrere `source_urls[]`
+2. **Multi-Source-URLs im Datenmodell** — Detailseite zeigt alle Quelllinks
+3. **Manueller Qualitäts-Check** — letzte 4 Wochen Einträge durchgehen, Fehlklassifikationen dokumentieren
+4. **Ingest-Error-Report** — bei Quell-Fehler GitHub Issue erstellen statt lautlos faillen
+5. **VIZ** — nach nächstem Cron prüfen ob CKAN-Auflösung funktioniert; wenn nicht, Quelle aus Cron entfernen (kein öffentlicher Endpunkt ohne VIZ-Registrierung)
+6. **Amtsblatt** — nach nächstem Cron prüfen ob neue URL funktioniert
+
+Danach: Wahl-2026-Sprint (siehe PRD.md §11).
+
+---
+
+## Architektur-Prinzipien (nicht verhandelbar)
+
+- Kein Revert von Claude-Änderungen ohne Diskussion
+- Keine Datenbank einführen, solange JSON + statische Seiten reichen
+- VIZ / Amtsblatt defensiv — wenn instabil, nicht erzwingen
+- Map und Newsletter nicht aufblasen, bis Datenqualität stabil ist
+- Kein Over-Engineering: boring tech wins

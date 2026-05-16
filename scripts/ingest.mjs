@@ -8,12 +8,12 @@ import { parseEventsHtml, EVENTS_URL } from "./sources/events.mjs";
 import { parseBezirksamtSource, BEZIRKSAMT_RSS_URL, BEZIRKSAMT_PAGE_URL } from "./sources/bezirksamt.mjs";
 import { parseBvvAllrisRss, BVV_ALLRIS_RSS_URL, BVV_ALLRIS_PAGE_URL } from "./sources/bvv.mjs";
 import { fetchAmtsblattEntries } from "./sources/amtsblatt.mjs";
-import { parseVizBaustellenGeoJson, VIZ_BAUSTELLEN_URLS } from "./sources/viz.mjs";
+import { parseVizBaustellenGeoJson, VIZ_BAUSTELLEN_URLS, resolveVizUrl } from "./sources/viz.mjs";
 import { enrichWithAI } from "./lib/enrich.mjs";
 import { geocodeEntries } from "./lib/geocode.mjs";
 
 // Re-export parsers so parser-smoke-test.mjs can import from this file
-export { parsePoliceRss, parsePoliceHtml, parsePoliceSource, parseGermanDate } from "./sources/police.mjs";
+export { parsePoliceRss, parsePoliceHtml, parsePoliceSource } from "./sources/police.mjs";
 export { parseEventsHtml } from "./sources/events.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -139,13 +139,15 @@ async function main() {
   if (options.fixtureViz) {
     vizText = await fetchSource("viz-baustellen", VIZ_BAUSTELLEN_URLS[0], null, options.fixtureViz);
   } else {
-    for (const vizUrl of VIZ_BAUSTELLEN_URLS) {
+    const UA = "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)";
+    // Try CKAN first to resolve the actual GeoJSON download URL dynamically
+    const ckanUrl = await resolveVizUrl();
+    const urlsToTry = ckanUrl ? [ckanUrl, ...VIZ_BAUSTELLEN_URLS] : VIZ_BAUSTELLEN_URLS;
+    if (ckanUrl) console.log(`VIZ: CKAN resolved → ${ckanUrl}`);
+
+    for (const vizUrl of urlsToTry) {
       try {
-        const resp = await fetch(vizUrl, {
-          headers: {
-            "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)",
-          },
-        });
+        const resp = await fetch(vizUrl, { headers: { "user-agent": UA } });
         if (!resp.ok) {
           console.log(`VIZ: ${vizUrl} → ${resp.status}`);
           continue;
