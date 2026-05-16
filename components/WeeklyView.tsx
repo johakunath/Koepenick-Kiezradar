@@ -5,6 +5,7 @@ import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 import IllusBanner from "@/components/IllusBanner";
+import ThemeToggle from "@/components/ThemeToggle";
 
 interface DigestTopic {
   name: string;
@@ -193,43 +194,59 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
-      {/* Slim header */}
+      {/* Slim header — mirrors main Header layout */}
       <header
-        className="sticky top-0 z-20 flex items-center px-5 md:px-10 gap-4"
-        style={{
-          height: 60,
-          background: "var(--bg)",
-          borderBottom: "1px solid var(--rule)",
-        }}
+        className="sticky top-0 z-20 w-full"
+        style={{ height: 60, background: "var(--bg)", borderBottom: "1px solid var(--rule)" }}
       >
-        <Link
-          href="/"
-          style={{
-            fontFamily: "var(--font-inter-tight)",
-            fontSize: 13,
-            color: "var(--ink-soft)",
-            textDecoration: "none",
-          }}
-        >
-          ← Feed
-        </Link>
-        <span
-          style={{
-            fontFamily: "var(--font-fraunces)",
-            fontSize: 18,
-            color: "var(--ink)",
-            fontWeight: 500,
-          }}
-        >
-          Kiezradar ·{" "}
-          <i style={{ color: "var(--reed)", fontWeight: 400 }}>Wochenausgabe</i>
-        </span>
-        <div style={{ marginLeft: "auto", fontFamily: "var(--font-inter-tight)", fontSize: 11, color: "var(--ink-mute)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
-          KW {weekNo} · 2026
+        <div className="mx-auto max-w-[1280px] px-5 md:px-20 flex items-center gap-5 h-full">
+          <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
+            <div
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontWeight: 600,
+                fontSize: 20,
+                letterSpacing: "-0.022em",
+                lineHeight: 1,
+                color: "var(--water)",
+              }}
+            >
+              Kiezradar
+            </div>
+            <div
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                fontSize: 10,
+                letterSpacing: "0.14em",
+                textTransform: "uppercase",
+                color: "var(--ink-mute)",
+                marginTop: 2,
+              }}
+            >
+              <i style={{ fontStyle: "normal", color: "var(--reed)" }}>Wochenausgabe</i>
+              {" · "}KW {weekNo}
+            </div>
+          </Link>
+          <div style={{ flex: 1 }} />
+          {/* "← Feed" in same right position as "Diese Woche" on main header */}
+          <Link
+            href="/"
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              fontSize: 13,
+              fontWeight: 500,
+              color: "var(--water-2)",
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+          >
+            ← Feed
+          </Link>
+          <ThemeToggle />
         </div>
       </header>
 
-      <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
+      <div className="relative mx-auto max-w-[1280px] px-5 md:px-20 pt-4">
         {/* Hero */}
         <section className="relative pt-8 pb-6 overflow-hidden">
           {/* Panorama backdrop — desktop */}

@@ -85,18 +85,25 @@ body {
   transition: opacity 0.2s ease;
 }
 [data-theme="dark"] .illus-mark {
-  opacity: 0 !important;
+  filter: invert(1);
+  opacity: 0.12 !important;
+  mix-blend-mode: normal;
 }
 [data-theme="dark"] .illus-banner {
   mix-blend-mode: screen;
   opacity: 0.08 !important;
 }
 
-/* Dark mode: entry cards get a panel treatment */
-[data-theme="dark"] .entry-card {
-  border: 1px solid var(--rule) !important;
-  border-radius: 6px !important;
-  background: var(--card) !important;
+/* Entry cards: panel with background + hover frame */
+.entry-card {
+  border-radius: 6px;
+  background: var(--card);
+  border: 1px solid var(--border);
   padding-left: 14px;
   padding-right: 14px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.entry-card:hover {
+  box-shadow: 0 0 0 2px var(--water-2);
+  border-color: var(--water-2);
 }

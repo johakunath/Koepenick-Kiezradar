@@ -17,10 +17,10 @@ export function parsePoliceRss(xml) {
 
   return items
     .map((item) => {
-      const title = field(item, "title");
+      const title = decodeEntities(field(item, "title"));
       const sourceUrl = field(item, "link");
-      const rawExcerpt = field(item, "description");
-      const category = field(item, "category");
+      const rawExcerpt = decodeEntities(field(item, "description"));
+      const category = decodeEntities(field(item, "category"));
       const publishedAt = new Date(field(item, "pubDate") || Date.now()).toISOString();
       const text = `${title} ${rawExcerpt} ${category}`;
 

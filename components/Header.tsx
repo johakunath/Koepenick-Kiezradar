@@ -1,45 +1,36 @@
 "use client";
 
 import Link from "next/link";
-import type { Tag } from "@/lib/types";
-import { TAG_LABELS, ALL_TAGS } from "@/lib/types";
+import { usePathname } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 
-// Tags shown inline in the header (wahl + sonstiges excluded — too narrow)
-const HEADER_TAGS: Tag[] = ["verkehr", "sicherheit", "verwaltung", "politik", "infrastruktur", "veranstaltung"];
+const NAV_LINKS = [
+  { href: "/", label: "Feed" },
+  { href: "/karte", label: "Karte" },
+  { href: "/woche", label: "Woche" },
+  { href: "/termine", label: "Termine" },
+  { href: "/themen", label: "Themen" },
+  { href: "/quellen", label: "Quellen" },
+];
 
-interface HeaderProps {
-  activeTags: Tag[];
-  onToggle: (tag: Tag) => void;
-  onReset?: () => void;
-}
-
-export default function Header({ activeTags, onToggle, onReset }: HeaderProps) {
-  const today = new Date().toLocaleDateString("de-DE", { day: "numeric", month: "short", year: "numeric" });
-  const hasActive = activeTags.length > 0;
+export default function Header() {
+  const pathname = usePathname();
+  const today = new Date().toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" });
 
   return (
-    <>
-      {/* ── Main header row (60px) ───────────────────────────────────────── */}
-      <header
-        className="sticky top-0 z-20 flex items-center px-5 md:px-10"
-        style={{
-          height: 60,
-          background: "var(--bg)",
-          borderBottom: "1px solid var(--rule)",
-        }}
-      >
+    <header
+      className="sticky top-0 z-20 w-full"
+      style={{ background: "var(--bg)", borderBottom: "1px solid var(--rule)" }}
+    >
+      {/* Main row */}
+      <div className="mx-auto max-w-[1280px] px-5 md:px-20 flex items-center gap-5 h-[60px]">
         {/* Wordmark */}
-        <Link
-          href="/"
-          className="shrink-0 flex flex-col justify-center"
-          style={{ textDecoration: "none" }}
-        >
+        <Link href="/" style={{ textDecoration: "none", flexShrink: 0 }}>
           <div
             style={{
               fontFamily: "var(--font-fraunces)",
               fontWeight: 600,
-              fontSize: 22,
+              fontSize: 20,
               letterSpacing: "-0.022em",
               lineHeight: 1,
               color: "var(--water)",
@@ -51,93 +42,54 @@ export default function Header({ activeTags, onToggle, onReset }: HeaderProps) {
             style={{
               fontFamily: "var(--font-inter-tight)",
               fontSize: 10,
-              letterSpacing: "0.18em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
               color: "var(--ink-mute)",
               marginTop: 2,
             }}
           >
-            № 020 · Köpenick
+            Köpenick · {today}
           </div>
         </Link>
 
-        {/* Filter chips — desktop only, inline */}
+        {/* Nav links — desktop */}
         <nav
-          className="hidden lg:flex items-center gap-0 mx-6 flex-1 min-w-0"
+          className="hidden md:flex items-center gap-0 flex-1 min-w-0"
           style={{ overflowX: "auto", scrollbarWidth: "none" }}
         >
-          {HEADER_TAGS.map((tag) => {
-            const active = activeTags.includes(tag);
+          {NAV_LINKS.map(({ href, label }) => {
+            const active = pathname === href;
             return (
-              <button
-                key={tag}
-                onClick={() => onToggle(tag)}
-                aria-pressed={active}
+              <Link
+                key={href}
+                href={href}
                 style={{
-                  background: "none",
-                  border: "none",
-                  cursor: "pointer",
-                  padding: "4px 10px",
                   fontFamily: "var(--font-inter-tight)",
                   fontSize: 13,
-                  letterSpacing: "0.01em",
+                  padding: "4px 10px",
                   color: active ? "var(--ink)" : "var(--ink-soft)",
                   fontWeight: active ? 600 : 400,
+                  textDecoration: "none",
                   borderBottom: active ? "1.5px solid var(--water)" : "1.5px solid transparent",
                   whiteSpace: "nowrap",
                   transition: "color 0.1s",
+                  lineHeight: "52px",
                 }}
-                onMouseEnter={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "var(--ink)"; }}
-                onMouseLeave={(e) => { if (!active) (e.currentTarget as HTMLElement).style.color = "var(--ink-soft)"; }}
+                onMouseEnter={(e) => {
+                  if (!active) (e.currentTarget as HTMLElement).style.color = "var(--ink)";
+                }}
+                onMouseLeave={(e) => {
+                  if (!active) (e.currentTarget as HTMLElement).style.color = "var(--ink-soft)";
+                }}
               >
-                {TAG_LABELS[tag]}
-              </button>
+                {label}
+              </Link>
             );
           })}
-          {hasActive && onReset && (
-            <button
-              onClick={onReset}
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                padding: "4px 8px",
-                fontSize: 12,
-                color: "var(--ink-mute)",
-              }}
-              aria-label="Filter zurücksetzen"
-            >
-              ✕
-            </button>
-          )}
         </nav>
 
-        {/* Right: date + link + toggle */}
-        <div className="ml-auto flex items-center gap-4 shrink-0">
-          <span
-            className="hidden md:block"
-            style={{
-              fontFamily: "var(--font-inter-tight)",
-              fontSize: 11.5,
-              color: "var(--ink-mute)",
-            }}
-          >
-            {today}
-          </span>
-          <div style={{ width: 1, height: 16, background: "var(--rule)" }} className="hidden md:block" />
-          <Link
-            href="/woche"
-            style={{
-              fontFamily: "var(--font-inter-tight)",
-              fontSize: 13,
-              fontWeight: 500,
-              color: "var(--water-2)",
-              textDecoration: "none",
-              whiteSpace: "nowrap",
-            }}
-          >
-            Diese Woche ↗
-          </Link>
+        {/* Right */}
+        <div className="ml-auto md:ml-0 flex items-center gap-3 shrink-0">
           <ThemeToggle />
           <a
             href="/admin"
@@ -149,67 +101,42 @@ export default function Header({ activeTags, onToggle, onReset }: HeaderProps) {
             ·
           </a>
         </div>
-      </header>
+      </div>
 
-      {/* ── Mobile filter bar (44px, second sticky row) ──────────────────── */}
+      {/* Mobile nav — scrollable second row */}
       <div
-        className="lg:hidden sticky z-10 flex items-center px-5 gap-2"
+        className="md:hidden flex items-center overflow-x-auto px-5"
         style={{
-          top: 60,
-          height: 44,
-          background: "var(--bg)",
-          borderBottom: "1px solid var(--rule)",
-          overflowX: "auto",
+          height: 40,
+          borderTop: "1px solid var(--rule)",
           scrollbarWidth: "none",
+          gap: 0,
         }}
       >
-        <span
-          style={{
-            fontFamily: "var(--font-inter-tight)",
-            fontSize: 9.5,
-            letterSpacing: "0.15em",
-            textTransform: "uppercase",
-            color: "var(--ink-mute)",
-            whiteSpace: "nowrap",
-            flexShrink: 0,
-          }}
-        >
-          Ressorts
-        </span>
-        {ALL_TAGS.filter((t) => t !== "sonstiges").map((tag) => {
-          const active = activeTags.includes(tag);
+        {NAV_LINKS.map(({ href, label }) => {
+          const active = pathname === href;
           return (
-            <button
-              key={tag}
-              onClick={() => onToggle(tag)}
-              aria-pressed={active}
+            <Link
+              key={href}
+              href={href}
               style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                padding: "3px 8px",
                 fontFamily: "var(--font-inter-tight)",
                 fontSize: 12.5,
+                padding: "3px 9px",
                 color: active ? "var(--ink)" : "var(--ink-soft)",
                 fontWeight: active ? 600 : 400,
+                textDecoration: "none",
                 borderBottom: active ? "1.5px solid var(--water)" : "1.5px solid transparent",
                 whiteSpace: "nowrap",
                 flexShrink: 0,
+                lineHeight: "34px",
               }}
             >
-              {TAG_LABELS[tag]}
-            </button>
+              {label}
+            </Link>
           );
         })}
-        {hasActive && onReset && (
-          <button
-            onClick={onReset}
-            style={{ background: "none", border: "none", cursor: "pointer", fontSize: 12, color: "var(--ink-mute)", flexShrink: 0 }}
-          >
-            ✕
-          </button>
-        )}
       </div>
-    </>
+    </header>
   );
 }

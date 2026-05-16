@@ -1,7 +1,6 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import type { Entry } from "@/lib/types";
-import entriesData from "@/data/entries.json";
+import { getDisplayEntries, formatCurrentWeekRange } from "@/lib/data";
 import WeeklyView from "@/components/WeeklyView";
 
 interface DigestTopic {
@@ -34,25 +33,8 @@ async function loadLatestDigest(): Promise<Digest | null> {
 }
 
 export default async function WochePage() {
-  const allEntries = entriesData as Entry[];
-  const hasRealData = allEntries.some((e) => !e.is_mock);
-  const entries = (hasRealData ? allEntries.filter((e) => !e.is_mock) : allEntries).sort(
-    (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
-  );
+  const entries = getDisplayEntries();
   const digest = await loadLatestDigest();
-
-  const weekRange = digest?.range ?? (() => {
-    const now = new Date();
-    const monday = new Date(now);
-    monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
-    const sunday = new Date(monday);
-    sunday.setDate(monday.getDate() + 6);
-    return (
-      monday.toLocaleDateString("de-DE", { day: "numeric", month: "long" }) +
-      " – " +
-      sunday.toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })
-    );
-  })();
-
+  const weekRange = digest?.range ?? formatCurrentWeekRange();
   return <WeeklyView entries={entries} weekRange={weekRange} digest={digest} />;
 }

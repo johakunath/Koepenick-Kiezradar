@@ -4,27 +4,40 @@ import { useMemo, useState } from "react";
 import type { Tag } from "@/lib/types";
 import { getDisplayEntries, searchEntries } from "@/lib/data";
 import Header from "@/components/Header";
-import EntryCard, { EntryHero } from "@/components/EntryCard";
+import EntryCard from "@/components/EntryCard";
+import FilterBar from "@/components/FilterBar";
 import IllusMark from "@/components/IllusMark";
 import IllusBanner from "@/components/IllusBanner";
 
-const entries = getDisplayEntries();
+const allEntries = getDisplayEntries();
 
 export default function FeedPage() {
   const [activeTags, setActiveTags] = useState<Tag[]>([]);
+  const [activeDistricts, setActiveDistricts] = useState<string[]>([]);
+  const [query, setQuery] = useState("");
 
+  const weekNo = Math.ceil(
+    (Date.now() - new Date(new Date().getFullYear(), 0, 1).getTime()) / 604_800_000
+  );
+
+  // District + search filter (no tag filter) — used for FilterBar counts
+  const baseFiltered = useMemo(() => {
+    let base = allEntries;
+    if (activeDistricts.length > 0) {
+      base = base.filter((e) => e.district_slug && activeDistricts.includes(e.district_slug));
+    }
+    return searchEntries(base, query);
+  }, [activeDistricts, query]);
+
+  // Final display entries: base + tag filter
   const filtered = useMemo(() => {
-    const base = activeTags.length
-      ? entries.filter(
-          (e) =>
-            e.tags.some((t) => activeTags.includes(t)) ||
-            (activeTags.includes("wahl") && e.election_relevant)
-        )
-      : entries;
-    return [...searchEntries(base, "")].sort(
-      (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
+    if (activeTags.length === 0) return baseFiltered;
+    return baseFiltered.filter(
+      (e) =>
+        e.tags.some((t) => activeTags.includes(t)) ||
+        (activeTags.includes("wahl") && e.election_relevant)
     );
-  }, [activeTags]);
+  }, [baseFiltered, activeTags]);
 
   function toggleTag(tag: Tag) {
     setActiveTags((prev) =>
@@ -32,103 +45,145 @@ export default function FeedPage() {
     );
   }
 
-  const [hero, ...rest] = filtered;
-  const left = rest.filter((_, i) => i % 2 === 0);
-  const right = rest.filter((_, i) => i % 2 === 1);
+  function toggleDistrict(slug: string) {
+    setActiveDistricts((prev) =>
+      prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]
+    );
+  }
+
+  const left = filtered.filter((_, i) => i % 2 === 0);
+  const right = filtered.filter((_, i) => i % 2 === 1);
 
   return (
     <div className="relative min-h-screen" style={{ background: "var(--bg)" }}>
-      <Header
-        activeTags={activeTags}
-        onToggle={toggleTag}
-        onReset={() => setActiveTags([])}
-      />
+      <Header />
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
+        {/* Breadcrumb */}
+        <div
+          style={{
+            fontFamily: "var(--font-inter-tight)",
+            fontSize: 11,
+            color: "var(--ink-mute)",
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            paddingTop: 16,
+            paddingBottom: 12,
+          }}
+        >
+          Start › Feed
+        </div>
+
+        {/* Hero strip with panorama */}
+        <section className="relative pb-6 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/illustrations/heron-schloss-panorama.png"
+            alt=""
+            aria-hidden="true"
+            className="illus-mark hidden md:block absolute"
+            style={{
+              width: 820,
+              right: 0,
+              top: -10,
+              opacity: 0.38,
+              pointerEvents: "none",
+              zIndex: 0,
+            }}
+          />
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <h1
+              style={{
+                fontFamily: "var(--font-fraunces)",
+                fontWeight: 500,
+                color: "var(--ink)",
+                fontSize: "clamp(32px, 4vw, 48px)",
+                lineHeight: 1.0,
+                letterSpacing: "-0.025em",
+                margin: 0,
+              }}
+            >
+              Meldungen
+            </h1>
+            <p
+              style={{
+                fontFamily: "var(--font-inter-tight)",
+                color: "var(--ink-mute)",
+                fontSize: 13,
+                marginTop: 8,
+                lineHeight: 1.5,
+              }}
+            >
+              {filtered.length} Einträge aus Köpenick · KW {weekNo} · nach Datum sortiert
+            </p>
+          </div>
+        </section>
+
         {/* Watermark illustrations — desktop only */}
         <IllusMark
           src="/illustrations/illus-heron.png"
-          width={340}
-          className="top-[80px] right-[40px] hidden md:block"
-          opacity={0.34}
+          width={220}
+          className="top-[320px] right-[0px] hidden md:block"
+          opacity={0.28}
         />
         <IllusMark
           src="/illustrations/illus-reeds.png"
-          width={220}
-          className="top-[520px] left-[20px] hidden md:block"
-          opacity={0.32}
+          width={180}
+          className="top-[720px] left-[0px] hidden md:block"
+          opacity={0.26}
         />
         <IllusMark
           src="/illustrations/illus-carp.png"
-          width={210}
-          className="top-[920px] right-[40px] hidden md:block"
-          opacity={0.34}
-        />
-        <IllusMark
-          src="/illustrations/illus-oak.png"
           width={170}
-          className="top-[1320px] left-[40px] hidden md:block"
-          opacity={0.32}
-        />
-        <IllusMark
-          src="/illustrations/illus-reeds.png"
-          width={170}
-          className="top-[1620px] right-[40px] hidden md:block"
-          opacity={0.30}
+          className="top-[1120px] right-[0px] hidden md:block"
+          opacity={0.28}
         />
 
+        {/* Filter bar */}
+        <FilterBar
+          baseEntries={baseFiltered}
+          activeTags={activeTags}
+          onToggleTag={toggleTag}
+          onResetTags={() => setActiveTags([])}
+          activeDistricts={activeDistricts}
+          onToggleDistrict={toggleDistrict}
+          query={query}
+          onQuery={setQuery}
+        />
+
+        {/* Card grid */}
         {filtered.length === 0 ? (
           <div
             className="py-16 text-center"
-            style={{ color: "var(--ink-mute)", fontSize: 14 }}
+            style={{
+              color: "var(--ink-mute)",
+              fontSize: 14,
+              fontFamily: "var(--font-inter-tight)",
+            }}
           >
             Keine Einträge mit diesen Filtern.
           </div>
         ) : (
           <>
-            {/* Hero — first entry, full width */}
-            <section className="relative pt-8 md:pt-10" style={{ zIndex: 1 }}>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 12,
-                  marginBottom: 12,
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "var(--font-inter-tight)",
-                    fontSize: 10,
-                    fontWeight: 600,
-                    letterSpacing: "0.22em",
-                    textTransform: "uppercase",
-                    color: "var(--brick)",
-                  }}
-                >
-                  Aufmacher
-                </span>
-                <div
-                  style={{ flex: 1, height: 1, background: "var(--rule)", opacity: 0.6 }}
-                />
-              </div>
-              {hero && <EntryHero entry={hero} />}
-            </section>
-
-            {/* Body grid */}
-            <section className="relative pb-12 md:pb-16" style={{ zIndex: 1 }}>
-              {/* Mobile: single column */}
-              <div className="md:hidden">
-                {rest.map((e) => (
+            {/* Mobile: single column */}
+            <div className="md:hidden pb-12 space-y-3">
+              {filtered.map((e) => (
+                <EntryCard key={e.id} entry={e} />
+              ))}
+            </div>
+            {/* Desktop: 2-column grid */}
+            <div className="hidden md:grid md:grid-cols-2 md:gap-x-6 pb-16">
+              <div className="space-y-3">
+                {left.map((e) => (
                   <EntryCard key={e.id} entry={e} />
                 ))}
               </div>
-              {/* Desktop: 2-column grid */}
-              <div className="hidden md:grid md:grid-cols-2 md:gap-x-14">
-                <div>{left.map((e) => <EntryCard key={e.id} entry={e} />)}</div>
-                <div>{right.map((e) => <EntryCard key={e.id} entry={e} />)}</div>
+              <div className="space-y-3">
+                {right.map((e) => (
+                  <EntryCard key={e.id} entry={e} />
+                ))}
               </div>
-            </section>
+            </div>
           </>
         )}
       </div>

@@ -5,41 +5,41 @@ import type { Entry, Tag } from "@/lib/types";
 import { TAG_LABELS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 import Pegel from "@/components/Pegel";
+import { TAG_COLORS } from "@/components/FilterBar";
 
-function timeAgo(iso: string): string {
-  const hours = Math.floor((Date.now() - new Date(iso).getTime()) / 3_600_000);
-  if (hours < 1) return "gerade eben";
-  if (hours < 24) return `vor ${hours} Std.`;
-  const days = Math.floor(hours / 24);
-  return `vor ${days} Tag${days > 1 ? "en" : ""}`;
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString("de-DE", { day: "numeric", month: "short" });
 }
 
-function TagsRow({ tags, accentFirst = false }: { tags: Tag[]; accentFirst?: boolean }) {
+function TagsRow({ tags }: { tags: Tag[] }) {
   return (
-    <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-      {tags.map((t, i) => (
-        <span key={t} style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          {i > 0 && <span style={{ color: "var(--rule)", fontSize: 11 }}>·</span>}
+    <div style={{ display: "flex", gap: 5, flexWrap: "wrap", alignItems: "center" }}>
+      {tags.map((t) => {
+        const colors = TAG_COLORS[t];
+        return (
           <span
+            key={t}
             style={{
               fontFamily: "var(--font-inter-tight)",
-              fontSize: 10,
+              fontSize: 9.5,
               fontWeight: 600,
-              letterSpacing: "0.18em",
+              letterSpacing: "0.14em",
               textTransform: "uppercase",
-              color: accentFirst && i === 0 ? "var(--brick)" : "var(--water)",
+              color: colors.color,
+              background: colors.bg,
+              padding: "2px 6px",
+              borderRadius: 3,
             }}
           >
             {TAG_LABELS[t]}
           </span>
-        </span>
-      ))}
+        );
+      })}
     </div>
   );
 }
 
-function MetaRow({ entry, size = "sm" }: { entry: Entry; size?: "sm" | "lg" }) {
-  const fs = size === "lg" ? 12.5 : 11.5;
+function MetaRow({ entry }: { entry: Entry }) {
   const detailHref = `/eintrag/${entry.slug ?? slugify(entry.title)}`;
   return (
     <div
@@ -49,28 +49,35 @@ function MetaRow({ entry, size = "sm" }: { entry: Entry; size?: "sm" | "lg" }) {
         alignItems: "center",
         gap: 14,
         fontFamily: "var(--font-inter-tight)",
-        fontSize: fs,
+        fontSize: 11.5,
         color: "var(--ink-mute)",
-        letterSpacing: "0.01em",
       }}
     >
-      <span style={{ display: "flex", gap: 10, alignItems: "center", minWidth: 0 }}>
+      <span
+        style={{ display: "flex", gap: 8, alignItems: "center", minWidth: 0, flexWrap: "wrap" }}
+      >
         <span style={{ color: "var(--ink-soft)", whiteSpace: "nowrap" }}>{entry.location}</span>
         <span style={{ color: "var(--rule)" }}>·</span>
-        <span style={{ whiteSpace: "nowrap" }}>{timeAgo(entry.published_at)}</span>
+        <span style={{ whiteSpace: "nowrap" }}>{formatDate(entry.published_at)}</span>
         <span style={{ color: "var(--rule)" }}>·</span>
         <a
           href={entry.source_url}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "var(--ink-soft)", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", textDecoration: "none" }}
-          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water)")}
+          style={{
+            color: "var(--ink-soft)",
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            textDecoration: "none",
+          }}
+          onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water-2)")}
           onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--ink-soft)")}
         >
           {entry.source}
         </a>
       </span>
-      <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 8, flexShrink: 0 }}>
         <Pegel score={entry.local_relevance_score} />
         <Link
           href={detailHref}
@@ -86,34 +93,25 @@ function MetaRow({ entry, size = "sm" }: { entry: Entry; size?: "sm" | "lg" }) {
   );
 }
 
-// ── Standard card (grid, mobile list) ────────────────────────────────────────
-
-interface EntryCardProps {
-  entry: Entry;
-  variant?: "default" | "lg";
-}
-
-export default function EntryCard({ entry, variant = "default" }: EntryCardProps) {
-  const isLg = variant === "lg";
+export default function EntryCard({ entry }: { entry: Entry }) {
   const detailHref = `/eintrag/${entry.slug ?? slugify(entry.title)}`;
 
   return (
-    <article
-      className="entry-card"
-      style={{
-        borderTop: "1px solid var(--rule)",
-        paddingTop: isLg ? 22 : 18,
-        paddingBottom: isLg ? 26 : 22,
-        position: "relative",
-      }}
-    >
+    <article className="entry-card" style={{ paddingTop: 16, paddingBottom: 18, position: "relative" }}>
       {entry.is_mock && (
         <span
           style={{
-            position: "absolute", top: isLg ? 22 : 18, right: 0,
-            fontSize: 9, padding: "1px 5px", borderRadius: 3,
-            background: "rgba(180,120,40,0.1)", color: "var(--brick)",
-            fontFamily: "var(--font-inter-tight)", letterSpacing: "0.06em", textTransform: "uppercase",
+            position: "absolute",
+            top: 16,
+            right: 10,
+            fontSize: 9,
+            padding: "1px 5px",
+            borderRadius: 3,
+            background: "rgba(180,120,40,0.1)",
+            color: "var(--brick)",
+            fontFamily: "var(--font-inter-tight)",
+            letterSpacing: "0.06em",
+            textTransform: "uppercase",
           }}
         >
           Demo
@@ -128,10 +126,10 @@ export default function EntryCard({ entry, variant = "default" }: EntryCardProps
             fontFamily: "var(--font-fraunces)",
             fontWeight: 500,
             color: "var(--ink)",
-            fontSize: isLg ? 28 : 22,
-            lineHeight: isLg ? 1.12 : 1.18,
+            fontSize: 20,
+            lineHeight: 1.2,
             letterSpacing: "-0.014em",
-            margin: isLg ? "12px 0 12px" : "10px 0 10px",
+            margin: "8px 0 8px",
           }}
           onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water)")}
           onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
@@ -144,10 +142,9 @@ export default function EntryCard({ entry, variant = "default" }: EntryCardProps
         style={{
           fontFamily: "var(--font-inter-tight)",
           color: "var(--ink-soft)",
-          fontSize: isLg ? 15.5 : 14,
+          fontSize: 13.5,
           lineHeight: 1.55,
-          margin: isLg ? "0 0 18px" : "0 0 14px",
-          maxWidth: isLg ? 620 : 540,
+          margin: "0 0 12px",
           display: "-webkit-box",
           WebkitLineClamp: 2,
           WebkitBoxOrient: "vertical",
@@ -157,19 +154,19 @@ export default function EntryCard({ entry, variant = "default" }: EntryCardProps
         {entry.ai_summary}
       </p>
 
-      <MetaRow entry={entry} size={isLg ? "lg" : "sm"} />
+      <MetaRow entry={entry} />
     </article>
   );
 }
 
-// ── Hero / lead card (first entry on feed, large Fraunces) ────────────────────
+// ── Hero variant (used by WeeklyView featured story if needed) ────────────────
 
 export function EntryHero({ entry }: { entry: Entry }) {
   const detailHref = `/eintrag/${entry.slug ?? slugify(entry.title)}`;
 
   return (
     <article style={{ paddingTop: 8, paddingBottom: 32 }}>
-      <TagsRow tags={entry.tags} accentFirst />
+      <TagsRow tags={entry.tags} />
 
       <Link href={detailHref} style={{ textDecoration: "none" }}>
         <h2
@@ -177,11 +174,11 @@ export function EntryHero({ entry }: { entry: Entry }) {
             fontFamily: "var(--font-fraunces)",
             fontWeight: 500,
             color: "var(--ink)",
-            fontSize: "clamp(34px, 5vw, 56px)",
-            lineHeight: 1.02,
+            fontSize: "clamp(28px, 4vw, 44px)",
+            lineHeight: 1.05,
             letterSpacing: "-0.025em",
-            margin: "16px 0 18px",
-            maxWidth: 920,
+            margin: "12px 0 14px",
+            maxWidth: 800,
           }}
           onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water)")}
           onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
@@ -194,10 +191,10 @@ export function EntryHero({ entry }: { entry: Entry }) {
         style={{
           fontFamily: "var(--font-inter-tight)",
           color: "var(--ink-soft)",
-          fontSize: "clamp(15px, 2vw, 18px)",
+          fontSize: "clamp(14px, 1.8vw, 16px)",
           lineHeight: 1.55,
-          margin: "0 0 22px",
-          maxWidth: 720,
+          margin: "0 0 18px",
+          maxWidth: 640,
           display: "-webkit-box",
           WebkitLineClamp: 2,
           WebkitBoxOrient: "vertical",
@@ -207,7 +204,7 @@ export function EntryHero({ entry }: { entry: Entry }) {
         {entry.ai_summary}
       </p>
 
-      <MetaRow entry={entry} size="lg" />
+      <MetaRow entry={entry} />
     </article>
   );
 }

@@ -37,6 +37,8 @@ export const KOEPENICK_KEYWORDS = [
   "müggelheim",
   "schmöckwitz",
   "rahnsdorf",
+  // Köpenick postal codes — match reports that reference PLZ without district name
+  "12555", "12557", "12559", "12587", "12589",
 ];
 
 export const DISTRICT_KEYWORDS = [
@@ -76,6 +78,12 @@ export function decodeEntities(value = "") {
     .replaceAll("&apos;", "'")
     .replaceAll("&lt;", "<")
     .replaceAll("&gt;", ">")
+    .replaceAll("&nbsp;", " ")
+    .replaceAll("&ouml;", "ö").replaceAll("&Ouml;", "Ö")
+    .replaceAll("&auml;", "ä").replaceAll("&Auml;", "Ä")
+    .replaceAll("&uuml;", "ü").replaceAll("&Uuml;", "Ü")
+    .replaceAll("&szlig;", "ß")
+    .replaceAll("&ndash;", "–").replaceAll("&mdash;", "—")
     .replace(/&#(\d+);/g, (_, code) => {
       const n = Number(code);
       if (n === 173) return ""; // soft hyphen → strip
