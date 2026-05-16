@@ -848,7 +848,9 @@
     "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670291.php",
     "district": "Adlershof",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "lat": 52.4450491,
+    "lng": 13.5754153
   },
   {
     "id": "6",
@@ -932,7 +934,9 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "is_mock": false
+    "is_mock": false,
+    "lat": 52.4450491,
+    "lng": 13.5754153
   },
   {
     "id": "7",
@@ -1038,7 +1042,9 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "is_mock": false
+    "is_mock": false,
+    "lat": 52.4450491,
+    "lng": 13.5754153
   },
   {
     "id": "9a41531f8412845c",
@@ -1146,7 +1152,9 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "is_mock": false
+    "is_mock": false,
+    "lat": 52.4450491,
+    "lng": 13.5754153
   },
   {
     "id": "ad0e1127172cee5d",
@@ -1210,6 +1218,8 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "is_mock": false
+    "is_mock": false,
+    "lat": 52.4367583,
+    "lng": 13.6501033
   }
 ]
