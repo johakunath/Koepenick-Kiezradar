@@ -1,7 +1,7 @@
 import { TAGS, DISTRICT_KEYWORDS } from "./shared.mjs";
 
-const DEFAULT_GEMINI_MODEL = "gemini-1.5-flash";
-const GEMINI_FALLBACK_MODELS = [];
+const DEFAULT_GEMINI_MODEL = "gemini-2.0-flash";
+const GEMINI_FALLBACK_MODELS = ["gemini-2.0-flash-lite"];
 
 function parseJsonArray(raw) {
   // Strip markdown code fences Gemini sometimes wraps the response in

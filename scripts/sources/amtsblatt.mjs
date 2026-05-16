@@ -96,8 +96,8 @@ export async function fetchAmtsblattEntries() {
           pdf_excerpt: excerpt,
         });
       });
-    } catch {
-      // skip individual PDF errors
+    } catch (err) {
+      console.log(`Amtsblatt: PDF error for ${pdfUrl} → ${err.message}`);
     }
   }
 
