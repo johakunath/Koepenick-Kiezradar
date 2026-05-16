@@ -3,6 +3,31 @@ import { TAGS, DISTRICT_KEYWORDS } from "./shared.mjs";
 const DEFAULT_GEMINI_MODEL = "gemini-1.5-flash";
 const GEMINI_FALLBACK_MODELS = [];
 
+function parseJsonArray(raw) {
+  // Strip markdown code fences Gemini sometimes wraps the response in
+  const text = raw.replace(/^```(?:json)?\s*/m, "").replace(/\s*```\s*$/m, "").trim();
+
+  const start = text.indexOf("[");
+  const end = text.lastIndexOf("]");
+  if (start === -1 || end === -1) return [];
+
+  const candidate = text.slice(start, end + 1);
+
+  try {
+    return JSON.parse(candidate);
+  } catch {
+    // Truncate at last complete object and close the array
+    const lastItem = Math.max(candidate.lastIndexOf("},"), candidate.lastIndexOf("}]"));
+    if (lastItem > 0) {
+      try {
+        return JSON.parse(candidate.slice(0, lastItem + 1) + "]");
+      } catch {}
+    }
+    console.warn("AI response JSON could not be parsed, enrichment skipped for this batch.");
+    return [];
+  }
+}
+
 export async function enrichWithAI(entries, { skipClaude }) {
   if (skipClaude || entries.length === 0) return entries;
 
@@ -73,9 +98,8 @@ Eingabe:\n\n` +
     throw new Error(`Gemini API failed: ${failures.join(" | ")}`);
   }
 
-  const text = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "[]";
-  const jsonMatch = text.match(/\[[\s\S]*\]/);
-  const enriched = JSON.parse(jsonMatch?.[0] ?? "[]");
+  const raw = payload.candidates?.[0]?.content?.parts?.[0]?.text ?? "[]";
+  const enriched = parseJsonArray(raw);
   const byId = new Map(enriched.map((entry) => [entry.id, entry]));
 
   return entries.map((entry) => ({ ...entry, ...(byId.get(entry.id) ?? {}) }));

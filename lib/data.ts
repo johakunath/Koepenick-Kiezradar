@@ -249,7 +249,13 @@ function dedupeEntries(entries: Entry[]): Entry[] {
   const result: Entry[] = [];
 
   for (const entry of entries) {
-    const key = `${entry.source_id ?? entry.source}|${entry.source_url}|${entry.title}`;
+    // Events from the same source with the same title on the same day are the same event
+    // listed under multiple berlin.de categories — dedupe by title+date instead of URL.
+    const isEvent = entry.source_id === "berlin-events" || entry.kind === "veranstaltung";
+    const eventDay = (entry.event_start_at ?? entry.published_at).slice(0, 10);
+    const key = isEvent
+      ? `${entry.source_id ?? entry.source}|${entry.title}|${eventDay}`
+      : `${entry.source_id ?? entry.source}|${entry.source_url}|${entry.title}`;
     if (seen.has(key)) continue;
     seen.add(key);
     result.push(entry);

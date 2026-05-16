@@ -90,11 +90,23 @@ async function main() {
 
   const fetchSource = async (sourceId, primaryUrl, fallbackUrl, fixturePath) => {
     try {
-      const text = fixturePath
-        ? await readText(primaryUrl, fixturePath)
-        : await readText(primaryUrl).catch(async (e) =>
-            fallbackUrl ? readText(fallbackUrl) : Promise.reject(e)
-          );
+      let text;
+      if (fixturePath) {
+        text = await readText(primaryUrl, fixturePath);
+      } else {
+        try {
+          text = await readText(primaryUrl);
+        } catch (err) {
+          // Retry once after 3s on 429 rate-limit before trying fallback
+          if (err.message.includes("429")) {
+            console.log(`${sourceId}: 429 rate-limited, retrying in 3s…`);
+            await new Promise((r) => setTimeout(r, 3000));
+            try { text = await readText(primaryUrl); } catch {}
+          }
+          if (!text && fallbackUrl) text = await readText(fallbackUrl);
+          if (!text) throw err;
+        }
+      }
       sourceStatus[sourceId] = { status: "ok", text };
       return text;
     } catch (err) {
@@ -281,7 +293,15 @@ async function main() {
   await writeFile(STATUS_PATH, `${JSON.stringify(statusPayload, null, 2)}\n`, "utf8");
 
   const geocoded = await geocodeEntries(enriched);
-  const mergedWithCoords = mergeEntries(existing, geocoded);
+  // Also geocode existing entries that have addresses/location but no coordinates yet.
+  // Cap at 10 per run to stay within Nominatim's rate limit.
+  const BACKFILL_CAP = 10;
+  const needsGeocode = existing
+    .filter((e) => e.lat == null && !e.is_mock && (e.addresses?.length || (e.location && e.location !== "Treptow-Köpenick")))
+    .slice(0, BACKFILL_CAP);
+  const backfilled = needsGeocode.length > 0 ? await geocodeEntries(needsGeocode) : needsGeocode;
+
+  const mergedWithCoords = mergeEntries(mergeEntries(existing, geocoded), backfilled);
 
   await writeFile(
     ENTRIES_PATH,

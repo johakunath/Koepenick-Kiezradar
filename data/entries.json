@@ -591,7 +591,9 @@
     "ai_reasoning": "Die Veranstaltung ist lokal erreichbar und stärkt Austausch im unmittelbaren Kiez.",
     "event_start_at": "2026-05-22T14:00:00+02:00",
     "venue": "Volkspark Köpenick",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4508,
+    "lng": 13.565
   },
   {
     "id": "079087126b3a8e53",
@@ -635,7 +637,9 @@
     "election_relevant": true,
     "election_topic": "Innere Sicherheit",
     "ai_reasoning": "Direkter Bezug zur Altstadt, Wahlkampfthema Innere Sicherheit ist aktiv.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4578,
+    "lng": 13.5712
   },
   {
     "id": "2",
@@ -655,7 +659,9 @@
     "election_relevant": true,
     "election_topic": "Innere Sicherheit",
     "ai_reasoning": "BVV-Antrag mit direktem Bezug zu Köpenick und Wahlkampfthema.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4543,
+    "lng": 13.5823
   },
   {
     "id": "f2d9e3828dc9a608",
@@ -854,7 +860,9 @@
     "political_relevance_score": 0.2,
     "election_relevant": false,
     "ai_reasoning": "Lokal hochrelevant für Anwohner und Sommer-Aktivitäten in Köpenick.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4367,
+    "lng": 13.65
   },
   {
     "id": "ece17463edd72a70",
@@ -924,7 +932,9 @@
     "political_relevance_score": 0.15,
     "election_relevant": false,
     "ai_reasoning": "Lange Sperrung mit erheblichem Einfluss auf den Alltag in Spindlersfeld.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4679,
+    "lng": 13.5673
   },
   {
     "id": "c0de61da60a5422e",
@@ -971,7 +981,9 @@
     "election_relevant": true,
     "election_topic": "Bildung",
     "ai_reasoning": "Klares Wahlkampfthema Bildung, direkt mit Wahlkreis verknüpft.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4679,
+    "lng": 13.5673
   },
   {
     "id": "5",
@@ -989,7 +1001,9 @@
     "political_relevance_score": 0.25,
     "election_relevant": false,
     "ai_reasoning": "Alltagsrelevant, aber wenig politisch aufgeladen.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4554,
+    "lng": 13.5758
   },
   {
     "id": "6bc0051bb696a230",
@@ -1050,7 +1064,9 @@
     "political_relevance_score": 0.3,
     "election_relevant": false,
     "ai_reasoning": "Einzelfall, aber Hinweis auf bekannte Gefahrenstelle.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4578,
+    "lng": 13.5712
   },
   {
     "id": "f79990e67d325ed0",
@@ -1177,7 +1193,9 @@
     "election_relevant": true,
     "election_topic": "Sicherheit / Resilienz",
     "ai_reasoning": "Direkte Reaktion auf das Blackout-Trauma, Resilienz ist Wahlthema.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4555,
+    "lng": 13.58
   },
   {
     "id": "9",
@@ -1196,7 +1214,9 @@
     "election_relevant": true,
     "election_topic": "Wahl 2026",
     "ai_reasoning": "Wahl-organisatorisch zentral, direkter Bezug zum Bezirk.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4578,
+    "lng": 13.5712
   },
   {
     "id": "10",
@@ -1216,7 +1236,9 @@
     "election_relevant": true,
     "election_topic": "Wohnen",
     "ai_reasoning": "Wohnen ist das Top-Wahlthema, konkreter Bauantrag in unmittelbarer Nachbarschaft.",
-    "is_mock": true
+    "is_mock": true,
+    "lat": 52.4601,
+    "lng": 13.5694
   },
   {
     "id": "6a3a4d02ed7a8ad6",
