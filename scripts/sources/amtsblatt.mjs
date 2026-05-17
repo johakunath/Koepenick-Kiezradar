@@ -68,7 +68,11 @@ export async function fetchAmtsblattEntries() {
           .split(/\n/)
           .map((l) => l.trim())
           .filter((l) => l.length > 10 && l.length < 120);
-        const title = nearLines[0] ?? `Amtsblatt für Berlin – Seite ${pageIndex + 1}`;
+        // Require a well-formed title: starts uppercase, not a table fragment (no trailing hyphen or orphan paren)
+        const title = nearLines.find(
+          (l) => /^[A-ZÄÖÜ]/.test(l) && !l.endsWith("-") && !l.endsWith(")")
+        );
+        if (!title) return; // skip pages where only table fragments / truncated lines were found
 
         const pageNumber = pageIndex + 1;
         const pdfPageUrl = `${pdfUrl}#page=${pageNumber}`;
