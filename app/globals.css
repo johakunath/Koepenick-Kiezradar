@@ -97,7 +97,7 @@ body {
 /* Entry cards: panel with semi-transparent background + hover frame */
 .entry-card {
   border-radius: 6px;
-  background: rgba(250, 243, 224, 0.50);
+  background: rgba(250, 243, 224, 0.75);
   border: 1px solid var(--border);
   padding-left: 14px;
   padding-right: 14px;
@@ -108,5 +108,5 @@ body {
   border-color: var(--water-2);
 }
 [data-theme="dark"] .entry-card {
-  background: rgba(22, 40, 52, 0.50);
+  background: rgba(22, 40, 52, 0.75);
 }

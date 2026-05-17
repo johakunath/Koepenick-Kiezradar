@@ -151,8 +151,8 @@ export default function FeedPage() {
               margin: "0 auto",
             }}
           >
-            Köpenick Kiezradar — privates Lern- und Experimentierprojekt zweier Nachbarn.
-            Keine offizielle Quelle. KI-Texte können irren, die verlinkten Originale bleiben maßgeblich.
+            Köpenick Kiezradar — kein offizielles Angebot. KI-Texte können irren,
+            die verlinkten Originale bleiben maßgeblich.
           </p>
         </div>
       </footer>

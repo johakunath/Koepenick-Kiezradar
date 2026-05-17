@@ -374,7 +374,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
             }}
           >
             Wochenausgabe — automatisch zusammengefasst, redaktionell nicht geprüft.
-            Ein privates Lern- und Experimentierprojekt zweier Nachbarn.
+            Kein offizielles Angebot.
           </p>
         </div>
       </footer>

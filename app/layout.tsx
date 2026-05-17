@@ -76,19 +76,19 @@ export default function RootLayout({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
           className="illus-mark md:hidden"
-          style={{ position: "fixed", bottom: 0, left: -15, width: 160, opacity: 0.22, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", bottom: 0, left: -50, width: 160, opacity: 0.14, pointerEvents: "none", zIndex: 5 }}
         />
         {/* Reeds — bottom right (mirrored) */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
           className="illus-mark md:hidden"
-          style={{ position: "fixed", bottom: 0, right: -15, width: 160, opacity: 0.22, pointerEvents: "none", zIndex: 5, transform: "scaleX(-1)" }}
+          style={{ position: "fixed", bottom: 0, right: -50, width: 160, opacity: 0.14, pointerEvents: "none", zIndex: 5, transform: "scaleX(-1)" }}
         />
         {/* Carp — bottom center-right */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
           className="illus-mark md:hidden"
-          style={{ position: "fixed", bottom: 30, right: "20%", width: 150, opacity: 0.20, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", bottom: 20, right: "18%", width: 140, opacity: 0.13, pointerEvents: "none", zIndex: 5 }}
         />
         {children}
       </body>

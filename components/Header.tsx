@@ -10,7 +10,7 @@ const NAV_LINKS = [
   { href: "/woche", label: "Woche" },
   { href: "/termine", label: "Termine" },
   { href: "/themen", label: "Themen" },
-  { href: "/quellen", label: "Quellen" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Header() {
