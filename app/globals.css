@@ -89,10 +89,6 @@ body {
   opacity: 0.12 !important;
   mix-blend-mode: normal;
 }
-[data-theme="dark"] .illus-banner {
-  mix-blend-mode: screen;
-  opacity: 0.08 !important;
-}
 
 /* Images with sand background baked in — invert gently in dark mode */
 .illus-baked { transition: opacity 0.2s ease, filter 0.2s ease; }
