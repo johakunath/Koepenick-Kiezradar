@@ -35,54 +35,48 @@ export default function RootLayout({
       </head>
       <body className="min-h-full">
         {/* ── Background illustrations: zIndex 5 = above content (1), below header (20) ── */}
-        {/* Panorama — top right */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/illustrations/heron-schloss-panorama.png" alt="" aria-hidden="true"
-          className="illus-baked hidden md:block"
-          style={{ position: "fixed", top: 0, right: 0, width: 820, opacity: 0.25, pointerEvents: "none", zIndex: 5 }}
-        />
-        {/* Heron — right, mid viewport */}
+        {/* Heron — far right edge, mid viewport */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-heron.png" alt="" aria-hidden="true"
           className="illus-baked hidden md:block"
-          style={{ position: "fixed", right: -50, top: "38vh", width: 300, opacity: 0.22, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", right: -120, top: "32vh", width: 280, opacity: 0.18, pointerEvents: "none", zIndex: 5 }}
         />
-        {/* Reeds — left, lower mid */}
+        {/* Reeds — far left edge, lower mid */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
           className="illus-baked hidden md:block"
-          style={{ position: "fixed", left: -20, top: "55vh", width: 260, opacity: 0.20, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", left: -100, top: "58vh", width: 240, opacity: 0.16, pointerEvents: "none", zIndex: 5 }}
         />
-        {/* Carp — right, lower */}
+        {/* Carp — far right edge, lower */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
           className="illus-baked hidden md:block"
-          style={{ position: "fixed", right: -30, top: "72vh", width: 260, opacity: 0.20, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", right: -100, top: "72vh", width: 240, opacity: 0.16, pointerEvents: "none", zIndex: 5 }}
         />
         {/* ── Mobile illustrations ── */}
         {/* Hero — below header */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-mobile-hero.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
-          style={{ position: "fixed", top: 100, left: 0, width: "100%", opacity: 0.28, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", top: 100, left: 0, width: "100%", opacity: 0.22, pointerEvents: "none", zIndex: 5 }}
         />
         {/* Reeds — bottom left */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
-          style={{ position: "fixed", bottom: 0, left: -50, width: 160, opacity: 0.14, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", bottom: 0, left: -60, width: 160, opacity: 0.12, pointerEvents: "none", zIndex: 5 }}
         />
         {/* Reeds — bottom right (mirrored) */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
-          style={{ position: "fixed", bottom: 0, right: -50, width: 160, opacity: 0.14, pointerEvents: "none", zIndex: 5, transform: "scaleX(-1)" }}
+          style={{ position: "fixed", bottom: 0, right: -60, width: 160, opacity: 0.12, pointerEvents: "none", zIndex: 5, transform: "scaleX(-1)" }}
         />
         {/* Carp — bottom center-right */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
-          style={{ position: "fixed", bottom: 20, right: "18%", width: 140, opacity: 0.13, pointerEvents: "none", zIndex: 5 }}
+          style={{ position: "fixed", bottom: 20, right: "18%", width: 130, opacity: 0.11, pointerEvents: "none", zIndex: 5 }}
         />
         {children}
       </body>
