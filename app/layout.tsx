@@ -34,19 +34,36 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full">
-        {/* Panorama watermark — fixed, shows on all pages behind semi-transparent cards */}
+        {/* Desktop: panorama fixed top-right */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/illustrations/heron-schloss-panorama.png"
           alt=""
           aria-hidden="true"
-          className="illus-mark"
+          className="illus-mark hidden md:block"
           style={{
             position: "fixed",
             top: 0,
             right: 0,
-            width: "min(820px, 100vw)",
+            width: 820,
             opacity: 0.38,
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        />
+        {/* Mobile: hero image fixed below sticky header (60px nav + 40px mobile nav) */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/illustrations/illus-mobile-hero.png"
+          alt=""
+          aria-hidden="true"
+          className="illus-baked md:hidden"
+          style={{
+            position: "fixed",
+            top: 100,
+            left: 0,
+            width: "100%",
+            opacity: 0.55,
             pointerEvents: "none",
             zIndex: 0,
           }}

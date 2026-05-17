@@ -94,6 +94,10 @@ body {
   opacity: 0.08 !important;
 }
 
+/* Images with sand background baked in — invert gently in dark mode */
+.illus-baked { transition: opacity 0.2s ease, filter 0.2s ease; }
+[data-theme="dark"] .illus-baked { filter: invert(0.88) hue-rotate(180deg); opacity: 0.75; }
+
 /* Entry cards: panel with semi-transparent background + hover frame */
 .entry-card {
   border-radius: 6px;
