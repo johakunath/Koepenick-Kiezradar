@@ -37,8 +37,19 @@ export const KOEPENICK_KEYWORDS = [
   "müggelheim",
   "schmöckwitz",
   "rahnsdorf",
-  // Köpenick postal codes — match reports that reference PLZ without district name
+  // Treptow-Köpenick neighbourhoods missing from original list
+  "adlershof",
+  "schöneweide",
+  "schoeneweide",
+  "oberschöneweide",
+  "niederschöneweide",
+  "johannisthal",
+  "altglienicke",
+  "bohnsdorf",
+  "treptow",
+  // Postal codes — Köpenick + Adlershof/Schöneweide/Johannisthal/Altglienicke
   "12555", "12557", "12559", "12587", "12589",
+  "12489", "12439", "12459", "12487", "12524",
 ];
 
 export const DISTRICT_KEYWORDS = [
