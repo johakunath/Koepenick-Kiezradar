@@ -1,12 +1,16 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import dynamic from "next/dynamic";
+import Link from "next/link";
 import type { Tag } from "@/lib/types";
 import { getDisplayEntries, searchEntries } from "@/lib/data";
 import Header from "@/components/Header";
 import EntryCard from "@/components/EntryCard";
 import FilterBar from "@/components/FilterBar";
 import IllusBanner from "@/components/IllusBanner";
+
+const MiniMap = dynamic(() => import("@/components/MiniMap"), { ssr: false });
 
 const allEntries = getDisplayEntries();
 
@@ -59,32 +63,86 @@ export default function FeedPage() {
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-20">
         {/* Hero strip */}
-        <section className="relative pb-6 pt-6">
-          <div>
-            <h1
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 500,
-                color: "var(--ink)",
-                fontSize: "clamp(22px, 2.5vw, 30px)",
-                lineHeight: 1.1,
-                letterSpacing: "-0.02em",
-                margin: 0,
-              }}
-            >
-              Meldungen
-            </h1>
-            <p
-              style={{
-                fontFamily: "var(--font-inter-tight)",
-                color: "var(--ink-mute)",
-                fontSize: 13,
-                marginTop: 6,
-                lineHeight: 1.5,
-              }}
-            >
-              {filtered.length} Einträge aus Köpenick · KW {weekNo} · nach Datum sortiert
-            </p>
+        <section className="relative pb-4 pt-6">
+          <div className="flex items-start gap-6">
+            {/* Left: title + tagline + meta */}
+            <div className="flex-1 min-w-0">
+              <h1
+                style={{
+                  fontFamily: "var(--font-fraunces)",
+                  fontWeight: 500,
+                  color: "var(--ink)",
+                  fontSize: "clamp(22px, 2.5vw, 30px)",
+                  lineHeight: 1.1,
+                  letterSpacing: "-0.02em",
+                  margin: 0,
+                }}
+              >
+                Köpenick Kiezradar
+              </h1>
+              <p
+                style={{
+                  fontFamily: "var(--font-inter-tight)",
+                  color: "var(--ink-soft)",
+                  fontSize: 14,
+                  marginTop: 6,
+                  lineHeight: 1.55,
+                  maxWidth: 480,
+                }}
+              >
+                Was in Berlin-Köpenick gerade passiert — öffentliche Meldungen,
+                täglich automatisch gesammelt und zusammengefasst.
+              </p>
+              <div
+                className="flex items-center gap-4 flex-wrap"
+                style={{ marginTop: 10 }}
+              >
+                <p
+                  style={{
+                    fontFamily: "var(--font-inter-tight)",
+                    color: "var(--ink-mute)",
+                    fontSize: 12,
+                    lineHeight: 1.5,
+                    margin: 0,
+                  }}
+                >
+                  {filtered.length} Einträge · KW {weekNo} · nach Datum sortiert
+                </p>
+                <a
+                  href="mailto:kiezradar@mailbox.org?subject=Feedback Kiezradar"
+                  style={{
+                    fontFamily: "var(--font-inter-tight)",
+                    fontSize: 12,
+                    color: "var(--water-2)",
+                    textDecoration: "none",
+                    whiteSpace: "nowrap",
+                  }}
+                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.textDecoration = "underline")}
+                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.textDecoration = "none")}
+                >
+                  Feedback geben →
+                </a>
+              </div>
+            </div>
+
+            {/* Right: mini-map — desktop only */}
+            <div className="hidden md:block shrink-0">
+              <Link
+                href="/karte"
+                style={{
+                  width: 200,
+                  height: 140,
+                  borderRadius: 8,
+                  overflow: "hidden",
+                  border: "1px solid var(--border)",
+                  display: "block",
+                  textDecoration: "none",
+                }}
+                title="Zur Karte"
+              >
+                <MiniMap entries={allEntries} />
+              </Link>
+            </div>
           </div>
         </section>
 

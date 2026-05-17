@@ -8,6 +8,11 @@ import Pegel from "@/components/Pegel";
 import { TAG_COLORS } from "@/components/FilterBar";
 
 function formatDate(iso: string): string {
+  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (diff < 60 * 60 * 23) return "heute";
+  if (diff < 60 * 60 * 47) return "gestern";
+  const days = Math.round(diff / 86400);
+  if (days < 8) return `vor ${days} Tagen`;
   return new Date(iso).toLocaleDateString("de-DE", { day: "numeric", month: "short" });
 }
 
@@ -98,6 +103,8 @@ export default function EntryCard({ entry }: { entry: Entry }) {
 
   return (
     <article className="entry-card" style={{ paddingTop: 16, paddingBottom: 18, position: "relative" }}>
+      {/* Stretched link — makes the whole card clickable for the detail page */}
+      <Link href={detailHref} style={{ position: "absolute", inset: 0, borderRadius: 6 }} aria-hidden="true" tabIndex={-1} />
       {entry.is_mock && (
         <span
           style={{
@@ -120,7 +127,7 @@ export default function EntryCard({ entry }: { entry: Entry }) {
 
       <TagsRow tags={entry.tags} />
 
-      <Link href={detailHref} style={{ textDecoration: "none" }}>
+      <Link href={detailHref} style={{ textDecoration: "none", position: "relative", zIndex: 1 }}>
         <h3
           style={{
             fontFamily: "var(--font-fraunces)",
@@ -145,6 +152,8 @@ export default function EntryCard({ entry }: { entry: Entry }) {
           fontSize: 13.5,
           lineHeight: 1.55,
           margin: "0 0 12px",
+          position: "relative",
+          zIndex: 1,
           display: "-webkit-box",
           WebkitLineClamp: 2,
           WebkitBoxOrient: "vertical",
@@ -154,7 +163,9 @@ export default function EntryCard({ entry }: { entry: Entry }) {
         {entry.ai_summary}
       </p>
 
-      <MetaRow entry={entry} />
+      <div style={{ position: "relative", zIndex: 1 }}>
+        <MetaRow entry={entry} />
+      </div>
     </article>
   );
 }

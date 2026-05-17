@@ -92,8 +92,6 @@ export default function FilterBar({
         gap: 8,
         flexWrap: "wrap",
         padding: "10px 0",
-        borderTop: "1px solid var(--rule)",
-        borderBottom: "1px solid var(--rule)",
         marginBottom: 24,
       }}
     >
