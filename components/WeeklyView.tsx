@@ -360,7 +360,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
       </div>
 
       {/* Footer */}
-      <footer className="relative mt-4" style={{ borderTop: "1px solid var(--rule)" }}>
+      <footer className="relative mt-4" style={{ borderTop: "1px solid var(--rule)", position: "relative", zIndex: 6 }}>
         <IllusBanner />
         <div className="mx-auto max-w-[1280px] px-5 md:px-20 py-6 text-center">
           <p
