@@ -34,39 +34,42 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full">
-        {/* Desktop: panorama fixed top-right */}
+        {/* ── Desktop background illustrations (all position:fixed, content scrolls over) ── */}
+        {/* Panorama — top right */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/illustrations/heron-schloss-panorama.png"
-          alt=""
-          aria-hidden="true"
+        <img src="/illustrations/heron-schloss-panorama.png" alt="" aria-hidden="true"
           className="illus-mark hidden md:block"
-          style={{
-            position: "fixed",
-            top: 0,
-            right: 0,
-            width: 820,
-            opacity: 0.38,
-            pointerEvents: "none",
-            zIndex: 0,
-          }}
+          style={{ position: "fixed", top: 0, right: 0, width: 820, opacity: 0.38, pointerEvents: "none", zIndex: 0 }}
         />
-        {/* Mobile: hero image fixed below sticky header (60px nav + 40px mobile nav) */}
+        {/* Heron — right, mid viewport */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/illustrations/illus-mobile-hero.png"
-          alt=""
-          aria-hidden="true"
+        <img src="/illustrations/illus-heron.png" alt="" aria-hidden="true"
+          className="illus-mark hidden md:block"
+          style={{ position: "fixed", right: -50, top: "38vh", width: 320, opacity: 0.26, pointerEvents: "none", zIndex: 0 }}
+        />
+        {/* Reeds — left, lower mid */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
+          className="illus-mark hidden md:block"
+          style={{ position: "fixed", left: -20, top: "55vh", width: 280, opacity: 0.24, pointerEvents: "none", zIndex: 0 }}
+        />
+        {/* Carp — right, lower */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
+          className="illus-mark hidden md:block"
+          style={{ position: "fixed", right: -30, top: "72vh", width: 280, opacity: 0.26, pointerEvents: "none", zIndex: 0 }}
+        />
+        {/* Schloss Köpenick — bottom left */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-schloss-koepenick.png" alt="" aria-hidden="true"
+          className="illus-baked hidden md:block"
+          style={{ position: "fixed", left: 0, bottom: 0, width: 520, opacity: 0.50, pointerEvents: "none", zIndex: 0 }}
+        />
+        {/* ── Mobile: hero image fixed below sticky header (60px + 40px nav rows) ── */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-mobile-hero.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
-          style={{
-            position: "fixed",
-            top: 100,
-            left: 0,
-            width: "100%",
-            opacity: 0.55,
-            pointerEvents: "none",
-            zIndex: 0,
-          }}
+          style={{ position: "fixed", top: 100, left: 0, width: "100%", opacity: 0.55, pointerEvents: "none", zIndex: 0 }}
         />
         <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
       </body>
