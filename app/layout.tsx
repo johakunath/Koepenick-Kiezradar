@@ -35,11 +35,16 @@ export default function RootLayout({
       </head>
       <body className="min-h-full">
         {/* ── Background illustrations: zIndex 5 = above content (1), below header (20) ── */}
-        {/* Panorama — top right, desktop only */}
+        {/* Panorama — top right desktop, full-width mobile */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/heron-schloss-panorama.png" alt="" aria-hidden="true"
           className="illus-mark hidden md:block"
           style={{ position: "fixed", top: 0, right: 0, width: 900, opacity: 0.20, pointerEvents: "none", zIndex: 5 }}
+        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/heron-schloss-panorama.png" alt="" aria-hidden="true"
+          className="illus-mark md:hidden"
+          style={{ position: "fixed", top: 0, left: 0, width: "100%", opacity: 0.18, pointerEvents: "none", zIndex: 5 }}
         />
         {/* Heron — right edge, mid viewport */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
