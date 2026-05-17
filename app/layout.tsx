@@ -71,7 +71,7 @@ export default function RootLayout({
           className="illus-baked md:hidden"
           style={{ position: "fixed", top: 100, left: 0, width: "100%", opacity: 0.30, pointerEvents: "none", zIndex: 5 }}
         />
-        <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+        {children}
       </body>
     </html>
   );
