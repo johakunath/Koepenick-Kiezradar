@@ -65,11 +65,30 @@ export default function RootLayout({
           className="illus-baked hidden md:block"
           style={{ position: "fixed", left: 0, bottom: 0, width: 520, opacity: 0.32, pointerEvents: "none", zIndex: 5 }}
         />
-        {/* ── Mobile: hero image fixed below sticky header (60px + 40px nav rows) ── */}
+        {/* ── Mobile illustrations ── */}
+        {/* Hero — below header */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/illustrations/illus-mobile-hero.png" alt="" aria-hidden="true"
           className="illus-baked md:hidden"
           style={{ position: "fixed", top: 100, left: 0, width: "100%", opacity: 0.30, pointerEvents: "none", zIndex: 5 }}
+        />
+        {/* Reeds — bottom left */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
+          className="illus-mark md:hidden"
+          style={{ position: "fixed", bottom: 0, left: -15, width: 160, opacity: 0.22, pointerEvents: "none", zIndex: 5 }}
+        />
+        {/* Reeds — bottom right (mirrored) */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-reeds.png" alt="" aria-hidden="true"
+          className="illus-mark md:hidden"
+          style={{ position: "fixed", bottom: 0, right: -15, width: 160, opacity: 0.22, pointerEvents: "none", zIndex: 5, transform: "scaleX(-1)" }}
+        />
+        {/* Carp — bottom center-right */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
+          className="illus-mark md:hidden"
+          style={{ position: "fixed", bottom: 30, right: "20%", width: 150, opacity: 0.20, pointerEvents: "none", zIndex: 5 }}
         />
         {children}
       </body>
