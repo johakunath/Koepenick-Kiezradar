@@ -64,7 +64,7 @@ Pflichtfelder pro Eintrag:
 - id (unverändert)
 - ai_summary: 1–2 Sätze, sachlich, deutsch. Wenn kein Auszug vorhanden: nutze Fachwissen über Berliner Bezirksverwaltung, BVV und Lokalpolitik, um aus dem Titel eine informative Zusammenfassung zu generieren.
 - tags: Array, nur aus [${TAGS.join(", ")}], 1-5 Tags. Nutze mehrere Tags wenn mehrere Kategorien passen; Events nur "wahl" wenn inhaltlich Wahlbezug.
-- location: kurze Ortsbezeichnung im Bezirk
+- location: Genauer Ort aus dem Text (Platz, Straße, Kiez, S-Bahnhof, Gebäude o.ä.) — exakt aus Titel, Auszug oder Venue entnehmen, nicht raten. Nur bei völlig fehlender Information "Treptow-Köpenick" zurückgeben. Beispiel: "Cajamarcaplatz am S-Bahnhof Schöneweide" → "Schöneweide", nicht "Bahnhof Köpenick".
 - location_relevant: boolean
 - local_relevance_score: 0.0–1.0
 - political_relevance_score: 0.0–1.0

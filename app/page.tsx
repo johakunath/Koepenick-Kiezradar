@@ -108,20 +108,6 @@ export default function FeedPage() {
                 >
                   {filtered.length} Einträge · KW {weekNo} · nach Datum sortiert
                 </p>
-                <a
-                  href="mailto:kiezradar@mailbox.org?subject=Feedback Kiezradar"
-                  style={{
-                    fontFamily: "var(--font-inter-tight)",
-                    fontSize: 12,
-                    color: "var(--water-2)",
-                    textDecoration: "none",
-                    whiteSpace: "nowrap",
-                  }}
-                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.textDecoration = "underline")}
-                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.textDecoration = "none")}
-                >
-                  Feedback geben →
-                </a>
               </div>
             </div>
 
