@@ -115,10 +115,11 @@ async function main() {
     }
   };
 
+  // HTML page tried first — RSS has no per-item location, HTML has "Ereignisort:" field
   const policeText = await fetchSource(
     "polizei-berlin",
-    POLICE_RSS_URL,
     POLICE_PAGE_URL,
+    POLICE_RSS_URL,
     options.fixturePolice
   );
   const eventsHtml = await fetchSource("berlin-events", EVENTS_URL, null, options.fixtureEvents);
