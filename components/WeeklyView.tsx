@@ -54,23 +54,6 @@ function groupByDay(entries: Entry[]): DayGroup[] {
     });
 }
 
-function WaveStrip() {
-  return (
-    <svg
-      width="100%"
-      height="18"
-      viewBox="0 0 600 18"
-      preserveAspectRatio="none"
-      style={{ display: "block" }}
-      aria-hidden="true"
-    >
-      <g stroke="var(--water-2)" strokeWidth="1.2" fill="none" strokeLinecap="round" opacity="0.45">
-        <path d="M0 8 Q 30 2, 60 8 T 120 8 T 180 8 T 240 8 T 300 8 T 360 8 T 420 8 T 480 8 T 540 8 T 600 8" />
-        <path d="M0 13 Q 30 7, 60 13 T 120 13 T 180 13 T 240 13 T 300 13 T 360 13 T 420 13 T 480 13 T 540 13 T 600 13" opacity="0.6" />
-      </g>
-    </svg>
-  );
-}
 
 function LogbookEntry({ entry }: { entry: Entry }) {
   const primaryTag = entry.tags[0];
@@ -187,7 +170,6 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
   const entryById = new Map(entries.map((e) => [e.id, e]));
   const electionCount = entries.filter((e) => e.election_relevant).length;
 
-  // Extract week number from digest or compute
   const weekNo = digest?.week
     ? parseInt(digest.week.split("-W")[1] ?? "0")
     : Math.ceil((Date.now() - new Date(new Date().getFullYear(), 0, 1).getTime()) / 604800000);
@@ -198,52 +180,42 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
 
       <div className="relative mx-auto max-w-[1280px] px-5 md:px-20 pt-4">
         {/* Hero */}
-        <section className="relative pt-8 pb-6">
-          <div>
-            <div
-              style={{
-                fontFamily: "var(--font-inter-tight)",
-                fontSize: 11,
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                color: "var(--brick)",
-                marginBottom: 8,
-              }}
-            >
-              {weekRange}
-            </div>
-            <h1
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontWeight: 500,
-                color: "var(--ink)",
-                fontSize: "clamp(44px, 6vw, 64px)",
-                lineHeight: 0.96,
-                letterSpacing: "-0.03em",
-                margin: 0,
-              }}
-            >
-              Sieben Tage
-              <br />
-              <i style={{ color: "var(--reed)", fontWeight: 400 }}>am Müggelsee</i>
-            </h1>
-            <p
-              style={{
-                fontFamily: "var(--font-fraunces)",
-                fontStyle: "italic",
-                color: "var(--ink-soft)",
-                fontSize: "clamp(15px, 2vw, 22px)",
-                marginTop: 16,
-                maxWidth: 540,
-                lineHeight: 1.45,
-              }}
-            >
-              {entries.length} Meldungen · {electionCount} mit Wahlbezug · KW {weekNo}
-            </p>
-          </div>
+        <section className="relative pb-4 pt-6">
+          <h1
+            style={{
+              fontFamily: "var(--font-fraunces)",
+              fontWeight: 500,
+              color: "var(--ink)",
+              fontSize: "clamp(22px, 2.5vw, 30px)",
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              margin: 0,
+            }}
+          >
+            Wochenrückblick
+          </h1>
+          <p
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              color: "var(--ink-soft)",
+              fontSize: 14,
+              marginTop: 6,
+              lineHeight: 1.55,
+            }}
+          >
+            Was die Woche in Köpenick bewegt hat — automatisch zusammengefasst.
+          </p>
+          <p
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              color: "var(--ink-mute)",
+              fontSize: 12,
+              marginTop: 6,
+            }}
+          >
+            {weekRange} · KW {weekNo} · {entries.length} Meldungen{electionCount > 0 ? ` · ${electionCount} mit Wahlbezug` : ""}
+          </p>
         </section>
-
-        <WaveStrip />
 
         {/* AI digest topics */}
         {digest && digest.topics.length > 0 && (
