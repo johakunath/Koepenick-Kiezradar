@@ -62,11 +62,13 @@ function parseBezirksamtHtml(html) {
 
   return matches
     .map(([, dateText, href, titleHtml]) => {
-      const title = decodeEntities(titleHtml);
+      const title = decodeEntities(titleHtml).trim();
       if (!title) return null;
       const sourceUrl = href.startsWith("http")
         ? href
         : new URL(href, BEZIRKSAMT_PAGE_URL).toString();
+      // Reject sidebar/navigation links that point to other districts
+      if (!sourceUrl.includes("/ba-treptow-koepenick/")) return null;
       const publishedAt = parseGermanDate(dateText) ?? new Date().toISOString();
       const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(title);
 

@@ -245,7 +245,7 @@ async function main() {
         ? `berlin-events|${(e.title ?? "").trim().toLowerCase()}`
         : isEvent
           ? `${e.source_id ?? e.source}|${e.title}|${eventDay}`
-          : `${e.source_id ?? e.source}|${e.source_url}|${e.title}`;
+          : `${e.source_url}|${e.title}`;
       if (seen.has(key)) return false;
       seen.add(key);
       return true;
@@ -264,7 +264,19 @@ async function main() {
   ]).slice(0, options.limit);
 
   const knownIds = new Set(existing.map((entry) => entry.id));
-  const newEntries = prefillGeoFields(rawEntries.filter((entry) => !knownIds.has(entry.id)));
+  // For berlin-events, also track by title so same event with a new date_start URL isn't re-added
+  const knownEventTitles = new Set(
+    existing
+      .filter((e) => e.source_id === "berlin-events")
+      .map((e) => (e.title ?? "").trim().toLowerCase())
+  );
+  const newEntries = prefillGeoFields(
+    rawEntries.filter((entry) => {
+      if (knownIds.has(entry.id)) return false;
+      if (entry.source_id === "berlin-events" && knownEventTitles.has((entry.title ?? "").trim().toLowerCase())) return false;
+      return true;
+    })
+  );
 
   // Re-enrich entries whose ai_summary is still a thin placeholder (title echo or known fallback)
   const REENRICH_CAP = 10;
