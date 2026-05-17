@@ -40,12 +40,12 @@ export default function RootLayout({
           src="/illustrations/heron-schloss-panorama.png"
           alt=""
           aria-hidden="true"
-          className="illus-mark hidden md:block"
+          className="illus-mark"
           style={{
             position: "fixed",
             top: 0,
             right: 0,
-            width: 820,
+            width: "min(820px, 100vw)",
             opacity: 0.38,
             pointerEvents: "none",
             zIndex: 0,
