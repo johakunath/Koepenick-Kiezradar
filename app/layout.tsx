@@ -59,12 +59,6 @@ export default function RootLayout({
           className="illus-mark hidden md:block"
           style={{ position: "fixed", right: -30, top: "72vh", width: 280, opacity: 0.22, pointerEvents: "none", zIndex: 5 }}
         />
-        {/* Schloss Köpenick — bottom left */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/illustrations/illus-schloss-koepenick.png" alt="" aria-hidden="true"
-          className="illus-baked hidden md:block"
-          style={{ position: "fixed", left: 0, bottom: 0, width: 520, opacity: 0.32, pointerEvents: "none", zIndex: 5 }}
-        />
         {/* ── Mobile illustrations ── */}
         {/* Hero — below header */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
