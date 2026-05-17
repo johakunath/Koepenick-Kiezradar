@@ -58,12 +58,21 @@ export default function RootLayout({
           className="illus-mark hidden md:block"
           style={{ position: "fixed", left: 20, top: "58vh", width: 260, opacity: 0.25, pointerEvents: "none", zIndex: 5 }}
         />
-        {/* Carp — right edge, lower */}
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
-          className="illus-mark hidden md:block"
-          style={{ position: "fixed", right: 30, top: "72vh", width: 260, opacity: 0.25, pointerEvents: "none", zIndex: 5 }}
-        />
+        {/* Carp — right edge, lower; gradient wrapper fades left edge of watercolor bg */}
+        <div
+          className="hidden md:block"
+          style={{
+            position: "fixed", right: 0, top: "72vh", width: 280, zIndex: 5, pointerEvents: "none",
+            WebkitMaskImage: "linear-gradient(to right, transparent 0%, white 35%, white 100%)",
+            maskImage: "linear-gradient(to right, transparent 0%, white 35%, white 100%)",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/illustrations/illus-carp.png" alt="" aria-hidden="true"
+            className="illus-mark"
+            style={{ width: "100%", opacity: 0.28, pointerEvents: "none", display: "block" }}
+          />
+        </div>
         {/* ── Mobile illustrations — small edge accents only ── */}
         {/* Reeds — bottom left */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
