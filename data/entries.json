@@ -163,35 +163,6 @@
     "is_mock": false
   },
   {
-    "id": "4fbcb986c28f510c",
-    "source_id": "amtsblatt-berlin",
-    "source": "Amtsblatt für Berlin",
-    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_20_1165_1236_online.pdf?ts=1778822226#page=36",
-    "title": "Charlottenburg-",
-    "published_at": "2026-05-16T22:28:06.747Z",
-    "ingested_at": "2026-05-16T22:28:06.747Z",
-    "raw_excerpt": "teglitz- Zehlendorf Schöneberg Tempelhof-Schöneberg Tempelhof- Kreuzberg; Schöneberg Treptow- Köpenick Köpenick VerwBezirke Amtsgerichte 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Bürgerliche Rechtsstreitigkeiten Strafsachen *) darunter fallen sonstige Inanspruchnahmen der Schiedsperson",
-    "ai_summary": "teglitz- Zehlendorf Schöneberg Tempelhof-Schöneberg Tempelhof- Kreuzberg; Schöneberg Treptow- Köpenick Köpenick VerwBezirke Amtsgerichte 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Bürgerliche Rechtsstreitigkeiten Strafsachen *) darunter fallen sonstige Inanspruchnahmen der Schiedsperson",
-    "tags": [
-      "verwaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 36).",
-    "document_type": "pdf",
-    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_20_1165_1236_online.pdf?ts=1778822226",
-    "pdf_page": 36,
-    "pdf_excerpt": "teglitz- Zehlendorf Schöneberg Tempelhof-Schöneberg Tempelhof- Kreuzberg; Schöneberg Treptow- Köpenick Köpenick VerwBezirke Amtsgerichte 0 0 0 0 0 0 0 0 0 0 0 0 0 0 Bürgerliche Rechtsstreitigkeiten Strafsachen *) darunter fallen sonstige Inanspruchnahmen der Schiedsperson",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
-  },
-  {
     "id": "4e921e8a75be2d80",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
