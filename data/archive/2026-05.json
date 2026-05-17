@@ -108,6 +108,38 @@
     "is_mock": false
   },
   {
+    "id": "4a78d327c5482f7e",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_19_1129_1164_online.pdf?ts=1778217865#page=29",
+    "title": "tglassammelbehältern)",
+    "published_at": "2026-05-17T19:13:28.303Z",
+    "ingested_at": "2026-05-17T19:13:28.303Z",
+    "raw_excerpt": "n Glascontainern) 16. Daffinger Weg gegenüber Nummer 34/Graffplatz, 12623 Berlin 17. Röbeler Weg 23/Rahnsdorfer Straße, 12623 Berlin (befestigte Stellfläche) - 2 Container 18. Bergedorfer Straße/Eichenstraße, 12623 Berlin 19. Köpenicker Straße 198/Balzerplatz 8, 12683 Berlin Entsprechend dem Beschlu",
+    "ai_summary": "n Glascontainern) 16. Daffinger Weg gegenüber Nummer 34/Graffplatz, 12623 Berlin 17. Röbeler Weg 23/Rahnsdorfer Straße, 12623 Berlin (befestigte Stellfläche) - 2 Container 18. Bergedorfer Straße/Eichenstraße, 12623 Berlin 19. Köpenicker Straße 198/Balzerplatz 8, 12683 Berlin Entsprechend dem Beschlu",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 29).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_19_1129_1164_online.pdf?ts=1778217865",
+    "pdf_page": 29,
+    "pdf_excerpt": "n Glascontainern) 16. Daffinger Weg gegenüber Nummer 34/Graffplatz, 12623 Berlin 17. Röbeler Weg 23/Rahnsdorfer Straße, 12623 Berlin (befestigte Stellfläche) - 2 Container 18. Bergedorfer Straße/Eichenstraße, 12623 Berlin 19. Köpenicker Straße 198/Balzerplatz 8, 12683 Berlin Entsprechend dem Beschlu",
+    "district": "Rahnsdorf",
+    "addresses": [
+      "Balzerplatz 8"
+    ],
+    "street": "Balzerplatz",
+    "lat": 52.4869214,
+    "lng": 13.5591202,
+    "is_mock": false
+  },
+  {
     "id": "d346f35866059b16",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
