@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Link from "next/link";
 import { getEntriesForTopic, getTopics } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Themen – Köpenick Kiezradar",
+  description: "Thematische Übersicht der Meldungen aus Berlin-Köpenick: Verkehr, Sicherheit, Verwaltung und mehr.",
+  openGraph: {
+    title: "Themen – Köpenick Kiezradar",
+    description: "Thematische Übersicht der Meldungen aus Berlin-Köpenick: Verkehr, Sicherheit, Verwaltung und mehr.",
+  },
+};
 
 export default function TopicsPage() {
   const topics = getTopics();

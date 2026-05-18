@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { getDisplayEntries, formatCurrentWeekRange } from "@/lib/data";
 import WeeklyView from "@/components/WeeklyView";
+
+export const metadata: Metadata = {
+  title: "Wochenrückblick – Köpenick Kiezradar",
+  description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+  openGraph: {
+    title: "Wochenrückblick – Köpenick Kiezradar",
+    description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+  },
+};
 
 interface DigestTopic {
   name: string;

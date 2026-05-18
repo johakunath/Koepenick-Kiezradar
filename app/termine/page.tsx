@@ -1,7 +1,17 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { CalendarDays } from "lucide-react";
 import Header from "@/components/Header";
 import { getMeetings } from "@/lib/data";
+
+export const metadata: Metadata = {
+  title: "Termine – Köpenick Kiezradar",
+  description: "Veranstaltungen und offizielle Termine in Berlin-Köpenick.",
+  openGraph: {
+    title: "Termine – Köpenick Kiezradar",
+    description: "Veranstaltungen und offizielle Termine in Berlin-Köpenick.",
+  },
+};
 
 export default function MeetingsPage() {
   const meetings = getMeetings();

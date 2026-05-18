@@ -14,8 +14,13 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "Köpenick Kiezradar",
-  description: "Hyperlokales Monitoring-Tool für Berlin-Köpenick",
+  title: "Köpenick Kiezradar – Was passiert in Berlin-Köpenick",
+  description: "Öffentliche Meldungen aus Berlin-Köpenick, täglich automatisch gesammelt und zusammengefasst.",
+  openGraph: {
+    title: "Köpenick Kiezradar – Was passiert in Berlin-Köpenick",
+    description: "Öffentliche Meldungen aus Berlin-Köpenick, täglich automatisch gesammelt und zusammengefasst.",
+    siteName: "Köpenick Kiezradar",
+  },
 };
 
 export default function RootLayout({
