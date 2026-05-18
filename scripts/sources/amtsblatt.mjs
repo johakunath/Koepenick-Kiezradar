@@ -63,16 +63,21 @@ export async function fetchAmtsblattEntries() {
         const start = Math.max(0, mentionIdx - 100);
         const excerpt = pageText.slice(start, start + 300).replace(/\s+/g, " ").trim();
 
+        // Skip pages that are district-wide statistics tables (list multiple Berlin districts)
+        const BERLIN_DISTRICTS = ["charlottenburg", "friedrichshain", "mitte", "neukölln", "pankow", "reinickendorf", "spandau", "steglitz", "tempelhof", "marzahn", "lichtenberg"];
+        const districtHits = BERLIN_DISTRICTS.filter((d) => lc.includes(d)).length;
+        if (districtHits >= 4) return;
+
         const nearLines = pageText
           .slice(Math.max(0, mentionIdx - 400), mentionIdx + 400)
           .split(/\n/)
           .map((l) => l.trim())
           .filter((l) => l.length > 10 && l.length < 120);
-        // Require a well-formed title: starts uppercase, not a table fragment (no trailing hyphen or orphan paren)
+        // Require a well-formed title: starts uppercase, not a table fragment, has at least 2 words
         const title = nearLines.find(
-          (l) => /^[A-ZÄÖÜ]/.test(l) && !l.endsWith("-") && !l.endsWith(")")
+          (l) => /^[A-ZÄÖÜ]/.test(l) && !l.endsWith("-") && !l.endsWith(")") && l.includes(" ")
         );
-        if (!title) return; // skip pages where only table fragments / truncated lines were found
+        if (!title) return;
 
         const pageNumber = pageIndex + 1;
         const pdfPageUrl = `${pdfUrl}#page=${pageNumber}`;

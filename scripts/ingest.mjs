@@ -52,8 +52,17 @@ function prefillGeoFields(entries) {
   });
 }
 
+// Permanently excluded entries — bad Amtsblatt table rows / false positives
+const EXCLUDED_IDS = new Set([
+  "4a78d327c5482f7e", // "tglassammelbehältern)" — glass container table row
+  "d346f35866059b16", // "g III Nummer 8 eingetragene" — legal register table row
+  "4fbcb986c28f510c", // "Charlottenburg-" — district statistics table
+]);
+
 function mergeEntries(existing, incoming) {
-  const byId = new Map(existing.map((entry) => [entry.id, entry]));
+  const byId = new Map(
+    existing.filter((e) => !EXCLUDED_IDS.has(e.id)).map((entry) => [entry.id, entry])
+  );
 
   for (const entry of incoming) {
     const oldEntry = byId.get(entry.id);
