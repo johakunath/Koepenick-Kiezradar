@@ -1,5 +1,51 @@
 [
   {
+    "id": "5f6149c555d1aca6",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675747.php",
+    "title": "Bezirksamt informiert online über die Planungen zur Umgestaltung des Schmollerplatzes – Beteiligung auf mein.Berlin.de startet am 01.06.2026",
+    "published_at": "2026-06-01T12:00:00.000Z",
+    "ingested_at": "2026-06-01T09:29:41.292Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "7cbcf2b1b80a99b1",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675862.php",
+    "title": "Bezirksamt bewirbt sich für das Label „StadtGrün naturnah“ – Die Auszeichnung würdigt deutschlandweit besonderes Engagement für die Stadtnatur",
+    "published_at": "2026-06-01T12:00:00.000Z",
+    "ingested_at": "2026-06-01T09:29:41.293Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "54f17e99e06d1259",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -755,6 +801,30 @@
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "district": "Treptow",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "728ec3066cdeee5e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675438.php",
+    "title": "Ein musikalischer Sommerabend auf der Schlossinsel: Sängerin und Entertainerin Regina Thoss feiert 80. Geburtstag mit Konzert in Köpenick",
+    "published_at": "2026-05-29T12:00:00.000Z",
+    "ingested_at": "2026-06-01T09:29:41.293Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
