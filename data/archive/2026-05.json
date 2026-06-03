@@ -785,6 +785,34 @@
     "is_mock": false
   },
   {
+    "id": "ab6a4a7af11a98db",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675635.php",
+    "title": "Gedenken an die Opfer der „Köpenicker Blutwoche“ im Juni 2026",
+    "published_at": "2026-05-29T10:33:00.000Z",
+    "ingested_at": "2026-06-03T08:57:50.136Z",
+    "raw_excerpt": "Zum Gedenken an die Opfer der „Köpenicker Blutwoche“ finden in diesem Jahr folgende Veranstaltungen statt: Gedenkveranstaltung * Zeit: So., 21. Juni 2026, 18:00 Uhr * Ort: Gedenkstätte Köpenicker Blutwoche * Eröffnung: Marco Brauchmann, Bezirksstadtrat für Weiterbildung, Schule, Kultur und Sport * Grußwort:",
+    "ai_summary": "Zum Gedenken an die Opfer der „Köpenicker Blutwoche“ finden in diesem Jahr folgende Veranstaltungen statt: Gedenkveranstaltung * Zeit: So., 21. Juni 2026, 18:00 Uhr * Ort: Gedenkstätte Köpenicker Blutwoche * Eröffnung: Marco Brauchmann, Bezirksstadtrat für Weiterbildung, Schule, Kultur und Sport * Grußwort:",
+    "tags": [
+      "politik",
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675635.php",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "65330a99372f6527",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
