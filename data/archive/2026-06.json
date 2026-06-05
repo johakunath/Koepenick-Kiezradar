@@ -1,5 +1,32 @@
 [
   {
+    "id": "3e6fb7299b45378f",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=281557&ls=0&c=13&date_start=05.06.2026",
+    "title": "Ausstellung “Bitte stören! Strategien gegen Einsamkeit” - Ausstellungseröffnung 6. Juni, 19 Uhr",
+    "published_at": "2026-06-06T19:00:00.000Z",
+    "ingested_at": "2026-06-05T08:10:21.003Z",
+    "raw_excerpt": "Ort: Galerie Adlershof im Kulturzentrum Alte Schule in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 6. Juni um 19:00 in Galerie Adlershof im Kulturzentrum Alte Schule in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-06-06T19:00:00.000Z",
+    "venue": "Galerie Adlershof im Kulturzentrum Alte Schule in Treptow-Köpenick",
+    "district": "Adlershof",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "c30ba90b691c5879",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -24,6 +51,78 @@
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "9b4ba6ed576bdd2e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1677684.php",
+    "title": "Beiratswahlen für Menschen mit Behinderungen im Oktober 2026",
+    "published_at": "2026-06-04T12:00:00.000Z",
+    "ingested_at": "2026-06-05T08:10:21.004Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "wahl"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.6,
+    "election_relevant": true,
+    "election_topic": "Wahl 2026",
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "1e526e582dff33ae",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1677602.php",
+    "title": "Fahrradparkhaus am Bahnhof-Schöneweide erhält „Frame Work Skulpturen“",
+    "published_at": "2026-06-04T12:00:00.000Z",
+    "ingested_at": "2026-06-05T08:10:21.004Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "776a4b1e579c8945",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1677470.php",
+    "title": "BSR-Kieztag: Sperrmüllflohmarkt im Allende-Viertel am Samstag, dem 13.06.2026",
+    "published_at": "2026-06-04T12:00:00.000Z",
+    "ingested_at": "2026-06-05T08:10:21.004Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
     "is_mock": false
   },
   {
