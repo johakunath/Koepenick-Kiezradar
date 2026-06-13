@@ -1,5 +1,32 @@
 [
   {
+    "id": "c7c8063010b91ee0",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280138&ls=0&c=13&date_start=13.06.2026",
+    "title": "Woche der Religionen - (INTERRELIGIÖSER) GOTTESDIENST UND KURZE ANDACHT MIT LIEDERN und SOZIALE SOLIDARITÄT IM DIALOG",
+    "published_at": "2026-06-14T11:00:00.000Z",
+    "ingested_at": "2026-06-13T07:51:21.381Z",
+    "raw_excerpt": "Ort: Evangelische Kirche Johannisthal in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 14. Juni um 11:00 in Evangelische Kirche Johannisthal in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-06-14T11:00:00.000Z",
+    "venue": "Evangelische Kirche Johannisthal in Treptow-Köpenick",
+    "district": "Johannisthal",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "d5ccc5abc16b06e5",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -98,6 +125,54 @@
     "addresses": [],
     "lat": 52.4580492,
     "lng": 13.5916943,
+    "is_mock": false
+  },
+  {
+    "id": "1d99d4fa20cbe98f",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1681256.php",
+    "title": "Erstes Wartetrittbrett für Radfahrende im Bezirk steht an der Kreuzung Groß-Berliner Damm / Segelfliegerdamm in Johannisthal",
+    "published_at": "2026-06-12T12:00:00.000Z",
+    "ingested_at": "2026-06-13T07:51:21.382Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Johannisthal",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "423b3a095c10b4e3",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1681253.php",
+    "title": "Neue Perspektiven für junge Menschen: Manege gGmbH eröffnet Räume in der Radickestraße in Adlershof",
+    "published_at": "2026-06-12T12:00:00.000Z",
+    "ingested_at": "2026-06-13T07:51:21.382Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Adlershof",
+    "addresses": [],
     "is_mock": false
   },
   {
