@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-15T10:26:45.986Z",
+  "last_run": "2026-06-16T09:29:33.923Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -15,13 +15,13 @@
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 1,
+      "fetched": 5,
       "parsed": 20,
       "raw_items": 428
     },
     "bvv-tk": {
       "status": "ok",
-      "fetched": 0,
+      "fetched": 1,
       "parsed": 10,
       "raw_items": 10
     },
@@ -39,8 +39,8 @@
       "raw_items": 0
     }
   },
-  "new_entries": 1,
-  "total_entries": 172,
+  "new_entries": 6,
+  "total_entries": 178,
   "dry_run": false,
   "ai_error": "Gemini API failed: gemini-1.5-flash: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n | gemini-2.0-flash: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash is no longer available. Please update your code to use a newer model for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n | gemini-2.0-flash-lite: 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.0-flash-lite is no longer available. Please update your code to use a newer model for the latest features and improvements.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n"
 }

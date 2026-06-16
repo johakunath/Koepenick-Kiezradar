@@ -1,5 +1,76 @@
 [
   {
+    "id": "8d5b6ac59917d15b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1682013.php",
+    "title": "Wuhletreff – Programmhighlights im Juli 2026",
+    "published_at": "2026-06-16T12:00:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.433Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "fc8e24b61a4885a9",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1682012.php",
+    "title": "Ausstellung 20 Jahre Galerie Grünstraße vom 26. Juni bis 20. August 2026",
+    "published_at": "2026-06-16T12:00:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.433Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "2b5d6b2513bd010e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1682007.php",
+    "title": "Erweiterungsstandort der Fritz-Kühn-Schule (Mediencampus Altglienicke) erfolgreich übernommen",
+    "published_at": "2026-06-16T12:00:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.433Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Altglienicke",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "43b37540a9e56fbb",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -7,6 +78,52 @@
     "title": "Puderkiez sicherer und lebenswerter gestalten: Bezirksamt startet Online-Beteiligung am 15. Juni 2026",
     "published_at": "2026-06-15T12:00:00.000Z",
     "ingested_at": "2026-06-15T10:26:45.426Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "000be74883d681c7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1681704.php",
+    "title": "Sprechstunden des Bezirksamtes im Juli 2026",
+    "published_at": "2026-06-15T12:00:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.433Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "13064d78e528a980",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1682009.php",
+    "title": "Umweltbildung und Nachhaltigkeit in der deutsch-peruanischen Zusammenarbeit",
+    "published_at": "2026-06-15T12:00:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.433Z",
     "raw_excerpt": "",
     "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
     "tags": [
@@ -285,6 +402,38 @@
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "79477162c7a38a63",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1679241.php",
+    "title": "Workshop „Gelebte Bibliothek – Ressourcen, Begegnung und Kooperation“ am 26. Juni in der Mittelpunktbibliothek Alte Feuerwache Treptow",
+    "published_at": "2026-06-12T07:42:00.000Z",
+    "ingested_at": "2026-06-16T09:29:33.436Z",
+    "raw_excerpt": "* Zeit: 26. Juni 2026 von 16:00 bis 19:00 Uhr * Ort: Mittelpunktbibliothek Treptow, Michael-Brückner-Straße 9, 12439 Berlin Das Willkommensbüro InteraXion lädt in Kooperation mit der Stadtbibliothek Treptow-Köpenick und dem BEFaN (Bildung-Eltern-Familie-Nachbarschaft)-Netzwerk zum Workshop „Gelebte Bibliothek – Ressourcen, Begegnung und Kooperation“ ein:",
+    "ai_summary": "* Zeit: 26. Juni 2026 von 16:00 bis 19:00 Uhr * Ort: Mittelpunktbibliothek Treptow, Michael-Brückner-Straße 9, 12439 Berlin Das Willkommensbüro InteraXion lädt in Kooperation mit der Stadtbibliothek Treptow-Köpenick und dem BEFaN (Bildung-Eltern-Familie-Nachbarschaft)-Netzwerk zum Workshop „Gelebte Bibliothek – Ressourcen, Begegnung und Kooperation“ ein:",
+    "tags": [
+      "politik",
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1679241.php",
+    "district": "Treptow",
+    "addresses": [
+      "Brückner-Straße 9"
+    ],
+    "street": "Brückner-Straße",
+    "lat": 52.4430574,
+    "lng": 13.3390652,
     "is_mock": false
   },
   {
