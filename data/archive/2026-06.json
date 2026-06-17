@@ -1,5 +1,56 @@
 [
   {
+    "id": "6bdc7b5a393afba9",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=279823&ls=0&c=13&date_start=17.06.2026",
+    "title": "FAIRBINDEN – Ein Abend rund um das Thema Palmöl",
+    "published_at": "2026-06-19T19:00:00.000Z",
+    "ingested_at": "2026-06-17T09:05:04.880Z",
+    "raw_excerpt": "Ort: Weltladen Friedrichshagen – Die Zwickmühle in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 19. Juni um 19:00 in Weltladen Friedrichshagen – Die Zwickmühle in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-06-19T19:00:00.000Z",
+    "venue": "Weltladen Friedrichshagen – Die Zwickmühle in Treptow-Köpenick",
+    "district": "Friedrichshagen",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "c68cc4307d618999",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1682589.php",
+    "title": "Einbruchserie an der Regattastraße verursacht erheblichen Sachschaden",
+    "published_at": "2026-06-17T12:00:00.000Z",
+    "ingested_at": "2026-06-17T09:05:04.883Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "8d5b6ac59917d15b",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -313,6 +364,38 @@
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "district": "Adlershof",
     "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "893c22400f7f05ad",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1681253.php",
+    "title": "Neue Perspektiven für junge Menschen: Manege gGmbH eröffnet Räume in der Radickestraße in Adlershof",
+    "published_at": "2026-06-12T10:40:00.000Z",
+    "ingested_at": "2026-06-17T09:05:04.887Z",
+    "raw_excerpt": "Der katholische Träger Manege gGmbH hat am 10. Juni 2025 in der Radickestraße 48 in Adlershof neue Räumlichkeiten für junge Menschen eröffnet, die aufgrund schwieriger und komplexer Lebenslagen besondere Unterstützung benötigen. Manege gGmbH bietet einen geschützten Rahmen, in dem Jugendliche und junge Erwachsene bis 25 Jahre Stabilität, Orientierung und neue Perspektiven für ein selbstbestimmtes Leben entwickeln können.",
+    "ai_summary": "Der katholische Träger Manege gGmbH hat am 10. Juni 2025 in der Radickestraße 48 in Adlershof neue Räumlichkeiten für junge Menschen eröffnet, die aufgrund schwieriger und komplexer Lebenslagen besondere Unterstützung benötigen. Manege gGmbH bietet einen geschützten Rahmen, in dem Jugendliche und junge Erwachsene bis 25 Jahre Stabilität, Orientierung und neue Perspektiven für ein selbstbestimmtes Leben entwickeln können.",
+    "tags": [
+      "politik",
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1681253.php",
+    "district": "Adlershof",
+    "addresses": [
+      "Radickestraße 48"
+    ],
+    "street": "Radickestraße",
+    "lat": 52.4355011,
+    "lng": 13.5476095,
     "is_mock": false
   },
   {
