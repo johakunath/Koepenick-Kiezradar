@@ -123,6 +123,30 @@
     "is_mock": false
   },
   {
+    "id": "8ff4cbdb5fb7b82f",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1683926.php",
+    "title": "Baumfällungen in der Woche vom 22. bis 26. Juni 2026",
+    "published_at": "2026-06-19T12:00:00.000Z",
+    "ingested_at": "2026-06-20T07:53:19.279Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "d5e23413fc1fec5e",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
