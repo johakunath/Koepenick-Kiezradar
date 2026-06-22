@@ -1,5 +1,30 @@
 [
   {
+    "id": "e13c4a1740d57fad",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1684123.php",
+    "title": "Bedürftige Personen erhalten finanzielle Unterstützung in Treptow-Köpenick",
+    "published_at": "2026-06-22T12:00:00.000Z",
+    "ingested_at": "2026-06-22T09:50:07.823Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "6bdc7b5a393afba9",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
