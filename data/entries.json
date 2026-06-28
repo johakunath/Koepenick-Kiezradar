@@ -1,5 +1,32 @@
 [
   {
+    "id": "f0718e8a2e6d1344",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=284044&ls=0&c=13&date_start=28.06.2026",
+    "title": "Seniorenforum",
+    "published_at": "2026-06-30T15:00:00.000Z",
+    "ingested_at": "2026-06-28T07:53:17.509Z",
+    "raw_excerpt": "Ort: Rathaus Treptow in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 30. Juni um 15:00 in Rathaus Treptow in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-06-30T15:00:00.000Z",
+    "venue": "Rathaus Treptow in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "24867b07877e4323",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
