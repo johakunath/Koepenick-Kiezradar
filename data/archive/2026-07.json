@@ -1,0 +1,56 @@
+[
+  {
+    "id": "b3f0d89feca10eca",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=283906&ls=0&c=13&date_start=01.07.2026",
+    "title": "Hebräischer Chor",
+    "published_at": "2026-07-01T20:30:00.000Z",
+    "ingested_at": "2026-07-01T08:16:08.830Z",
+    "raw_excerpt": "Ort: KIEZKLUB Alte Schule in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 1. Juli um 20:30 in KIEZKLUB Alte Schule in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-07-01T20:30:00.000Z",
+    "venue": "KIEZKLUB Alte Schule in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "bd9fd4ad4bf0c311",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=284059&ls=0&c=13&date_start=01.07.2026",
+    "title": "Rundgang am Dorfanger Bohnsdorf",
+    "published_at": "2026-07-01T18:00:00.000Z",
+    "ingested_at": "2026-07-01T08:16:08.830Z",
+    "raw_excerpt": "Ort: Dorfplatz in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 1. Juli um 18:00 in Dorfplatz in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-07-01T18:00:00.000Z",
+    "venue": "Dorfplatz in Treptow-Köpenick",
+    "district": "Bohnsdorf",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  }
+]
