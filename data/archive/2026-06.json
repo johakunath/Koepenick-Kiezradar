@@ -158,6 +158,33 @@
     "is_mock": false
   },
   {
+    "id": "48666b2945ecbd1f",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1687316.php",
+    "title": "Dörpfeldstraße gesperrt",
+    "published_at": "2026-06-29T12:18:00.000Z",
+    "ingested_at": "2026-07-02T07:35:34.495Z",
+    "raw_excerpt": "Die BVG informiert: In der Dörpfeldstraße gibt es hitzebedingte Asphaltschäden, die dringend repariert werden müssen. Dazu wurde in Höhe der Hausnummer 20 seit dem 26. Juni 2026, ca. 7:00 Uhr, eine Vollsperrung für den motorisierten Individualverkehr eingerichtet, die voraussichtlich bis zum 2. Juli 2026 andauert. Der Straßenbahnverkehr ist nicht unterbrochen. Von der Sperrung betroffen ist der Bereich zwischen der Gellert- und der Thomas-Müntzer-Straße. Eine Umleitung wird ausgewiesen.",
+    "ai_summary": "Die BVG informiert: In der Dörpfeldstraße gibt es hitzebedingte Asphaltschäden, die dringend repariert werden müssen. Dazu wurde in Höhe der Hausnummer 20 seit dem 26. Juni 2026, ca. 7:00 Uhr, eine Vollsperrung für den motorisierten Individualverkehr eingerichtet, die voraussichtlich bis zum 2. Juli 2026 andauert. Der Straßenbahnverkehr ist nicht unterbrochen. Von der Sperrung betroffen ist der Bereich zwischen der Gellert- und der Thomas-Müntzer-Straße. Eine Umleitung wird ausgewiesen.",
+    "tags": [
+      "politik",
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1687316.php",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "b1bc5b1d6be3af08",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
