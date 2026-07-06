@@ -1,5 +1,32 @@
 [
   {
+    "id": "38d6831b899f245c",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=284047&ls=0&c=13&date_start=06.07.2026",
+    "title": "Lesung mit Dietmar Arnold und Helmut Müller-Enbergs - 07.07.2026 Operation Gold. Der Spionagetunnel in Berlin",
+    "published_at": "2026-07-07T18:30:00.000Z",
+    "ingested_at": "2026-07-06T08:24:57.966Z",
+    "raw_excerpt": "Ort: Stadtteilbibliothek Altglienicke in Treptow-Köpenick",
+    "ai_summary": "Veranstaltung am 7. Juli um 18:30 in Stadtteilbibliothek Altglienicke in Treptow-Köpenick.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-07-07T18:30:00.000Z",
+    "venue": "Stadtteilbibliothek Altglienicke in Treptow-Köpenick",
+    "district": "Altglienicke",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "3000251a085d44c7",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -6308,27 +6335,5 @@
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "is_mock": false
-  },
-  {
-    "id": "8",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/",
-    "title": "Notfallpunkte für Stromausfälle in Köpenick eingerichtet",
-    "published_at": "2026-05-10T10:00:00Z",
-    "ingested_at": "2026-05-10T11:00:00Z",
-    "ai_summary": "Als Konsequenz aus dem Blackout vom Januar 2026 hat das Bezirksamt drei feste Notfallpunkte in Köpenick benannt, an denen bei Stromausfall Informationen und Wärme verfügbar sein sollen.",
-    "tags": [
-      "infrastruktur",
-      "politik"
-    ],
-    "location": "Köpenick gesamt",
-    "local_relevance_score": 0.82,
-    "political_relevance_score": 0.7,
-    "election_relevant": true,
-    "election_topic": "Sicherheit / Resilienz",
-    "ai_reasoning": "Direkte Reaktion auf das Blackout-Trauma, Resilienz ist Wahlthema.",
-    "is_mock": true,
-    "lat": 52.4555,
-    "lng": 13.58
   }
 ]

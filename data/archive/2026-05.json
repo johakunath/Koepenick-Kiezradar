@@ -2728,48 +2728,5 @@
     "is_mock": true,
     "lat": 52.4555,
     "lng": 13.58
-  },
-  {
-    "id": "9",
-    "source": "Landeswahlleiter Berlin",
-    "source_url": "https://www.berlin.de/wahlen/",
-    "title": "Treptow-Köpenick erhält für Wahl 2026 zusätzlichen Wahlkreis",
-    "published_at": "2026-05-09T12:00:00Z",
-    "ingested_at": "2026-05-09T13:00:00Z",
-    "ai_summary": "Für die Abgeordnetenhauswahl am 20. September 2026 wird Treptow-Köpenick einen siebten Wahlkreis bekommen. Köpenick-Altstadt und Dammvorstadt werden neu zugeschnitten.",
-    "tags": [
-      "politik"
-    ],
-    "location": "Treptow-Köpenick gesamt",
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 1,
-    "election_relevant": true,
-    "election_topic": "Wahl 2026",
-    "ai_reasoning": "Wahl-organisatorisch zentral, direkter Bezug zum Bezirk.",
-    "is_mock": true,
-    "lat": 52.4578,
-    "lng": 13.5712
-  },
-  {
-    "id": "10",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/",
-    "title": "Bauantrag für 84 neue Wohnungen in der Dammvorstadt eingereicht",
-    "published_at": "2026-05-08T16:00:00Z",
-    "ingested_at": "2026-05-08T17:00:00Z",
-    "ai_summary": "Ein privater Investor hat einen Bauantrag für 84 Wohnungen auf einer Brachfläche in der Dammvorstadt eingereicht. Mietpreisbindung für 30 Prozent der Wohnungen vorgesehen.",
-    "tags": [
-      "infrastruktur",
-      "politik"
-    ],
-    "location": "Dammvorstadt",
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.85,
-    "election_relevant": true,
-    "election_topic": "Wohnen",
-    "ai_reasoning": "Wohnen ist das Top-Wahlthema, konkreter Bauantrag in unmittelbarer Nachbarschaft.",
-    "is_mock": true,
-    "lat": 52.4601,
-    "lng": 13.5694
   }
 ]
