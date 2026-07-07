@@ -2706,27 +2706,5 @@
     "election_relevant": false,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "is_mock": false
-  },
-  {
-    "id": "8",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/",
-    "title": "Notfallpunkte für Stromausfälle in Köpenick eingerichtet",
-    "published_at": "2026-05-10T10:00:00Z",
-    "ingested_at": "2026-05-10T11:00:00Z",
-    "ai_summary": "Als Konsequenz aus dem Blackout vom Januar 2026 hat das Bezirksamt drei feste Notfallpunkte in Köpenick benannt, an denen bei Stromausfall Informationen und Wärme verfügbar sein sollen.",
-    "tags": [
-      "infrastruktur",
-      "politik"
-    ],
-    "location": "Köpenick gesamt",
-    "local_relevance_score": 0.82,
-    "political_relevance_score": 0.7,
-    "election_relevant": true,
-    "election_topic": "Sicherheit / Resilienz",
-    "ai_reasoning": "Direkte Reaktion auf das Blackout-Trauma, Resilienz ist Wahlthema.",
-    "is_mock": true,
-    "lat": 52.4555,
-    "lng": 13.58
   }
 ]
