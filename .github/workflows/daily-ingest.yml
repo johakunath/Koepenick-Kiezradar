@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   ingest:
@@ -28,7 +29,7 @@ jobs:
         run: pnpm ingest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
 
       - name: Commit data changes
         run: |
@@ -41,3 +42,9 @@ jobs:
           git add data/entries.json data/archive data/ingest-status.json
           git commit -m "chore: ingest latest kiezradar data"
           git push
+
+      - name: Report ingest errors
+        if: always()
+        run: node scripts/report-ingest-errors.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

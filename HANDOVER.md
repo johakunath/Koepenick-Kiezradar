@@ -1,7 +1,7 @@
 # HANDOVER.md — Aktueller Stand & Übergabe
 
 > **Für KI-Assistenten:** Diese Datei zuerst lesen, dann `CLAUDE.md`, dann `PRD.md`.
-> Zuletzt aktualisiert: 16.05.2026
+> Zuletzt aktualisiert: 11.07.2026
 
 ---
 
@@ -70,16 +70,19 @@ pnpm weekly-digest    # Wochenüberblick generieren
 | VIZ: kein öffentlicher Endpunkt — api.viz.berlin.de ist IP-restricted (Azure Blob Storage, OCIT-C Credentials nötig) | `sources/viz.mjs` | Low — CKAN-Fallback eingebaut, sonst akzeptiert |
 | Amtsblatt: Index-URL war 404 (umgezogen) | `sources/amtsblatt.mjs` | Behoben — neue URL eingetragen |
 | Duplikate: gleiche Meldung aus Bezirksamt + Events | data-Layer | High — nächster Schritt |
-| Kein Fehlerreport wenn Quelle crasht | `ingest.mjs` | Medium |
+| KI-Enrichment war seit 21.05. tot (Gemini 1.5/2.0 von Google abgeschaltet, alle Modelle 404) | `lib/enrich.mjs` | Behoben 11.07. — Modelle auf 2.5-Flash aktualisiert, nach nächstem Cron prüfen |
+| Polizei-Parser lieferte seit 21.05. 0 Einträge (Markup-Änderung berlin.de) | `sources/police.mjs` | Behoben 11.07. — toleranterer Regex + RSS-Fallback, nach nächstem Cron prüfen |
+| Kein Fehlerreport wenn Quelle crasht | `ingest.mjs` | Behoben 11.07. — `report-ingest-errors.mjs` erstellt GitHub Issue |
+| Repo-Variable `GEMINI_MODEL` steht auf `gemini-1.5-flash` (404) | GitHub Settings → Variables | Low — Code fällt auf Defaults zurück, Variable trotzdem löschen/aktualisieren |
 
 ---
 
 ## Nächste Schritte (Priorität)
 
-1. **Duplikate zusammenführen** — gleiche reale Meldung aus mehreren Quellen → ein kanonischer Eintrag, mehrere `source_urls[]`
-2. **Multi-Source-URLs im Datenmodell** — Detailseite zeigt alle Quelllinks
-3. **Manueller Qualitäts-Check** — letzte 4 Wochen Einträge durchgehen, Fehlklassifikationen dokumentieren
-4. **Ingest-Error-Report** — bei Quell-Fehler GitHub Issue erstellen statt lautlos faillen
+1. **Pipeline-Fixes vom 11.07. verifizieren** — nach nächstem Cron: kein `ai_error` mehr in `ingest-status.json`, `polizei-berlin.parsed > 0`, neue Einträge haben echte `ai_summary`. Außerdem Repo-Variable `GEMINI_MODEL` löschen oder auf `gemini-2.5-flash` setzen
+2. **Duplikate zusammenführen** — gleiche reale Meldung aus mehreren Quellen → ein kanonischer Eintrag, mehrere `source_urls[]`
+3. **Multi-Source-URLs im Datenmodell** — Detailseite zeigt alle Quelllinks
+4. **Manueller Qualitäts-Check** — letzte 4 Wochen Einträge durchgehen, Fehlklassifikationen dokumentieren (Achtung: Einträge seit 21.05. haben nur Fallback-Summaries, Re-Enrichment läuft mit 10/Tag automatisch nach)
 5. **VIZ** — nach nächstem Cron prüfen ob CKAN-Auflösung funktioniert; wenn nicht, Quelle aus Cron entfernen (kein öffentlicher Endpunkt ohne VIZ-Registrierung)
 6. **Amtsblatt** — nach nächstem Cron prüfen ob neue URL funktioniert
 
