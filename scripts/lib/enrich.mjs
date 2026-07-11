@@ -1,7 +1,8 @@
 import { TAGS, DISTRICT_KEYWORDS } from "./shared.mjs";
 
-const DEFAULT_GEMINI_MODEL = "gemini-2.0-flash";
-const GEMINI_FALLBACK_MODELS = ["gemini-2.0-flash-lite"];
+const DEFAULT_GEMINI_MODEL = "gemini-2.5-flash";
+// gemini-flash-latest ist ein Alias und überlebt künftige Modell-Abschaltungen
+const GEMINI_FALLBACK_MODELS = ["gemini-2.5-flash-lite", "gemini-flash-latest"];
 
 function parseJsonArray(raw) {
   // Strip markdown code fences Gemini sometimes wraps the response in
@@ -89,7 +90,9 @@ Eingabe:\n\n` +
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { maxOutputTokens: 4000 },
+          // thinkingBudget 0: 2.5-Flash-Modelle denken sonst per Default und
+          // verbrauchen dabei maxOutputTokens → abgeschnittenes JSON
+          generationConfig: { maxOutputTokens: 4000, thinkingConfig: { thinkingBudget: 0 } },
         }),
       }
     );
