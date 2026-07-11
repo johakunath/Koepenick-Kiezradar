@@ -28,6 +28,55 @@
     "is_mock": false
   },
   {
+    "id": "3a677b82c23e47ce",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1692123.php",
+    "title": "Baumfällungen in der Woche vom 13. bis 17. Juli 2026",
+    "published_at": "2026-07-10T12:00:00.000Z",
+    "ingested_at": "2026-07-11T06:16:56.589Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "7ee4afac9908d9a6",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1691909.php",
+    "title": "Berliner Hausbesuche und Fahrbibliothek unterwegs: Informationen zu Angeboten und Unterstützungsmöglichkeiten vor Ort in Treptow-Köpenick",
+    "published_at": "2026-07-10T12:00:00.000Z",
+    "ingested_at": "2026-07-11T06:16:56.589Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "9730d33cf2552aa5",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
@@ -6332,55 +6381,5 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false
-  },
-  {
-    "id": "7bdc4d88a45265a8",
-    "source_id": "bvv-tk",
-    "source": "BVV Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
-    "title": "Sprechstunde des stellvertretenden Bezirksbürgermeisters im Mai verschoben",
-    "published_at": "2026-05-13T11:50:00.000Z",
-    "ingested_at": "2026-05-15T15:11:00.293Z",
-    "raw_excerpt": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
-    "ai_summary": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
-    "tags": [
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.7,
-    "election_relevant": false,
-    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
-    "district": "Treptow",
-    "addresses": [
-      "Ortolfstr. 164"
-    ],
-    "street": "Ortolfstr.",
-    "is_mock": false,
-    "lat": 52.4043458,
-    "lng": 13.5293307
-  },
-  {
-    "id": "3",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/",
-    "title": "Sanierung Strandbad Müggelsee verzögert sich um zwei Monate",
-    "published_at": "2026-05-13T11:15:00Z",
-    "ingested_at": "2026-05-13T12:00:00Z",
-    "ai_summary": "Wiedereröffnung des Strandbads erst Mitte Juli statt Mai. Grund: Verzögerungen bei der Wasserleitungssanierung.",
-    "tags": [
-      "infrastruktur"
-    ],
-    "location": "Müggelsee",
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Lokal hochrelevant für Anwohner und Sommer-Aktivitäten in Köpenick.",
-    "is_mock": true,
-    "lat": 52.4367,
-    "lng": 13.65
   }
 ]
