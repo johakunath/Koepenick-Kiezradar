@@ -51,7 +51,9 @@ export function parsePoliceRss(xml) {
 export function parsePoliceHtml(html) {
   const matches = [
     ...html.matchAll(
-      /(\d{1,2}\.\d{1,2}\.\d{4}\s+\d{1,2}:\d{2})\s*Uhr[\s\S]*?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>\s*Ereignisort:\s*([^<\n]+)/gi
+      // Zwischen Link und "Ereignisort:" dürfen Wrapper-Tags stehen —
+      // berlin.de ändert das Listen-Markup gelegentlich
+      /(\d{1,2}\.\d{1,2}\.\d{4}\s+\d{1,2}:\d{2})\s*Uhr[\s\S]*?<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>(?:\s|<[^>]*>|&nbsp;)*Ereignisort:\s*([^<\n]+)/gi
     ),
   ];
 

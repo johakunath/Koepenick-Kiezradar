@@ -125,7 +125,7 @@ async function main() {
   };
 
   // HTML page tried first — RSS has no per-item location, HTML has "Ereignisort:" field
-  const policeText = await fetchSource(
+  let policeText = await fetchSource(
     "polizei-berlin",
     POLICE_PAGE_URL,
     POLICE_RSS_URL,
@@ -203,7 +203,23 @@ async function main() {
     };
   }
 
-  const policeEntries = parsePoliceSource(policeText);
+  let policeEntries = parsePoliceSource(policeText);
+  // Defensiv: Lädt die HTML-Seite, aber der Parser findet 0 Einträge
+  // (Markup-Änderung), auf den stabileren RSS-Feed ausweichen.
+  if (policeEntries.length === 0 && policeText && !/<item\b/i.test(policeText) && !options.fixturePolice) {
+    try {
+      const rssText = await readText(POLICE_RSS_URL);
+      const rssEntries = parsePoliceSource(rssText);
+      if (rssEntries.length > 0) {
+        console.log(`Polizei: HTML lieferte 0 Einträge, RSS-Fallback lieferte ${rssEntries.length}.`);
+        policeText = rssText;
+        policeEntries = rssEntries;
+        sourceStatus["polizei-berlin"] = { status: "ok" };
+      }
+    } catch (err) {
+      console.log(`Polizei RSS-Fallback fehlgeschlagen: ${err.message}`);
+    }
+  }
   const eventsEntries = parseEventsHtml(eventsHtml);
   const bezirksamtEntries = parseBezirksamtSource(bezirksamtText);
   const bvvEntries = parseBvvAllrisRss(bvvText);
