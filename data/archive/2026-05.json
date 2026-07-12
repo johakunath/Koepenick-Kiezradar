@@ -1753,23 +1753,25 @@
     "published_at": "2026-05-18T14:30:00.000Z",
     "ingested_at": "2026-05-15T20:34:48.602Z",
     "raw_excerpt": "Ort: Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
-    "ai_summary": "Gesprächscafé im Stadtteilzentrum",
+    "ai_summary": "Das Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick veranstaltet ein Gesprächscafé, das zum Austausch und zur Begegnung einlädt.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.5,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Ein Gesprächscafé findet statt, um den Austausch unter Anwohnern zu fördern. Dies ist wichtig für die soziale Interaktion und den Zusammenhalt in der Gemeinschaft von Köpenick.",
     "event_start_at": "2026-05-18T14:30:00.000Z",
     "venue": "Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "election_topic": null
   },
   {
     "id": "05ee03a547f99852",
@@ -1849,24 +1851,26 @@
     "published_at": "2026-05-17T13:00:00.000Z",
     "ingested_at": "2026-05-15T20:34:48.602Z",
     "raw_excerpt": "Ort: Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
-    "ai_summary": "Siebdruck – Demokratie und Wahlen",
+    "ai_summary": "Im Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick wird ein Siebdruck-Workshop zum Thema Demokratie und Wahlen angeboten.",
     "tags": [
       "veranstaltung",
+      "politik",
       "wahl"
     ],
-    "location": "Köpenick",
+    "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.8,
+    "election_relevant": true,
+    "ai_reasoning": "Ein Siebdruck-Workshop befasst sich mit Demokratie und Wahlen. Dies fördert das politische Verständnis und die aktive Beteiligung der Bürger in Köpenick.",
     "event_start_at": "2026-05-17T13:00:00.000Z",
     "venue": "Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "election_topic": "Demokratie und Wahlen"
   },
   {
     "id": "d4c01fa29d6ea21c",
@@ -1877,23 +1881,26 @@
     "published_at": "2026-05-17T11:00:00.000Z",
     "ingested_at": "2026-05-15T20:34:48.602Z",
     "raw_excerpt": "Ort: Cajamarcaplatz am S-Bahnhof Schöneweide in Treptow-Köpenick",
-    "ai_summary": "Fairteilung am Sonntag",
+    "ai_summary": "Am Cajamarcaplatz am S-Bahnhof Schöneweide findet sonntags eine 'Fairteilung' statt.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
     "location": "Schöneweide",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.7,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Eine 'Fairteilung' findet am Cajamarcaplatz statt, was ein lokales Angebot für die Anwohner darstellt. Dies fördert den Austausch und die Gemeinschaft in Schöneweide.",
     "event_start_at": "2026-05-17T11:00:00.000Z",
     "venue": "Cajamarcaplatz am S-Bahnhof Schöneweide in Treptow-Köpenick",
-    "district": "Treptow",
+    "district": "Niederschöneweide",
     "addresses": [],
     "lat": 52.4580492,
     "lng": 13.5916943,
-    "is_mock": false
+    "is_mock": false,
+    "election_topic": null,
+    "street": null
   },
   {
     "id": "4e921e8a75be2d80",
@@ -1904,23 +1911,25 @@
     "published_at": "2026-05-16T15:00:00.000Z",
     "ingested_at": "2026-05-15T20:34:48.601Z",
     "raw_excerpt": "Ort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "ai_summary": "Alltag von Zwangsarbeiterinnen und Zwangsarbeitern im Nationalsozialismus",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick beleuchtet den Alltag von Zwangsarbeiterinnen und Zwangsarbeitern im Nationalsozialismus.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Eine Veranstaltung behandelt den Alltag von NS-Zwangsarbeitern. Dies trägt zur Aufarbeitung der Geschichte und zur Bildung der Bürger in Köpenick bei.",
     "event_start_at": "2026-05-16T15:00:00.000Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "election_topic": null
   },
   {
     "id": "5832a09de2a352dc",
@@ -1931,23 +1940,25 @@
     "published_at": "2026-05-16T10:00:00.000Z",
     "ingested_at": "2026-05-15T20:34:48.601Z",
     "raw_excerpt": "Ort: KGA Grüne Weide in Treptow-Köpenick",
-    "ai_summary": "Welche Vögel leben in unseren Gärten?",
+    "ai_summary": "In der KGA Grüne Weide in Treptow-Köpenick wird eine Veranstaltung abgehalten, die sich mit den in Gärten lebenden Vogelarten beschäftigt.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.05,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Eine Veranstaltung informiert über heimische Vogelarten in Gärten. Dies fördert das Umweltbewusstsein und die Naturkenntnis der Anwohner in Köpenick.",
     "event_start_at": "2026-05-16T10:00:00.000Z",
     "venue": "KGA Grüne Weide in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "election_topic": null
   },
   {
     "id": "2404032fb32f5cb9",
@@ -2200,19 +2211,25 @@
     "published_at": "2026-05-13T12:00:00.000Z",
     "ingested_at": "2026-05-15T12:59:53.285Z",
     "raw_excerpt": "",
-    "ai_summary": "Köpenick soll bunt werden: Bezirksamt verlängert Aufruf zum Festumzug des 65. Köpenicker Sommers",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick ruft zur Teilnahme am Festumzug des 65. Köpenicker Sommers auf und verlängert die Anmeldefrist, um den Stadtteil bunter zu gestalten.",
     "tags": [
-      "verwaltung"
+      "veranstaltung",
+      "verwaltung",
+      "politik"
     ],
     "location": "Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.7,
     "election_relevant": false,
-    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "ai_reasoning": "Das Bezirksamt verlängert den Aufruf zum Festumzug des Köpenicker Sommers. Dies ist wichtig, da es die lokale Gemeinschaft und die Identität des Stadtteils Köpenick stärkt.",
     "is_mock": false,
     "lat": 52.4450491,
-    "lng": 13.5754153
+    "lng": 13.5754153,
+    "election_topic": null,
+    "district": "Altstadt Köpenick",
+    "street": null,
+    "addresses": []
   },
   {
     "id": "2bccbb2e952b6d73",
@@ -2335,55 +2352,5 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false
-  },
-  {
-    "id": "7bdc4d88a45265a8",
-    "source_id": "bvv-tk",
-    "source": "BVV Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
-    "title": "Sprechstunde des stellvertretenden Bezirksbürgermeisters im Mai verschoben",
-    "published_at": "2026-05-13T11:50:00.000Z",
-    "ingested_at": "2026-05-15T15:11:00.293Z",
-    "raw_excerpt": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
-    "ai_summary": "Die für den 19. Mai 2026 geplante Sprechstunde des stellvertretenden Bezirksbürgemeisters und Jugendstadtrat André Grammelsdorff muss leider verschoben werden. Die nächste Sprechstunde findet am * Donnerstag, 28.05.2016 von 15:00 bis 17:00 Uhr im Familienzentrum im Kosmosviertel in der Ortolfstr. 164, 12524 Berlin statt. Tel.: (030) 90297 – 3266 Eine Anmeldung ist nicht notwendig.",
-    "tags": [
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.7,
-    "election_relevant": false,
-    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671010.php",
-    "district": "Treptow",
-    "addresses": [
-      "Ortolfstr. 164"
-    ],
-    "street": "Ortolfstr.",
-    "is_mock": false,
-    "lat": 52.4043458,
-    "lng": 13.5293307
-  },
-  {
-    "id": "3",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/",
-    "title": "Sanierung Strandbad Müggelsee verzögert sich um zwei Monate",
-    "published_at": "2026-05-13T11:15:00Z",
-    "ingested_at": "2026-05-13T12:00:00Z",
-    "ai_summary": "Wiedereröffnung des Strandbads erst Mitte Juli statt Mai. Grund: Verzögerungen bei der Wasserleitungssanierung.",
-    "tags": [
-      "infrastruktur"
-    ],
-    "location": "Müggelsee",
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Lokal hochrelevant für Anwohner und Sommer-Aktivitäten in Köpenick.",
-    "is_mock": true,
-    "lat": 52.4367,
-    "lng": 13.65
   }
 ]
