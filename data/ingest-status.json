@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-13T06:57:20.942Z",
+  "last_run": "2026-07-14T06:13:31.442Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -8,14 +8,14 @@
       "raw_items": 339
     },
     "berlin-events": {
-      "status": "error",
-      "error": "Fetch failed 503 for https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
+      "status": "ok",
       "fetched": 0,
-      "raw_items": 0
+      "parsed": 10,
+      "raw_items": 421
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 0,
+      "fetched": 3,
       "parsed": 20,
       "raw_items": 428
     },
@@ -39,7 +39,7 @@
       "raw_items": 0
     }
   },
-  "new_entries": 0,
-  "total_entries": 250,
+  "new_entries": 3,
+  "total_entries": 253,
   "dry_run": false
 }
