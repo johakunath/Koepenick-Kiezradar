@@ -1,15 +1,21 @@
 import type { Metadata } from "next";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { getDisplayEntries, formatCurrentWeekRange } from "@/lib/data";
+import {
+  getDisplayEntries,
+  formatCurrentWeekRange,
+  getEntriesForCurrentWeek,
+} from "@/lib/data";
 import WeeklyView from "@/components/WeeklyView";
 
 export const metadata: Metadata = {
-  title: "Wochenrückblick – Köpenick Kiezradar",
-  description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+  title: "Blick in die Woche – Köpenick Kiezradar",
+  description:
+    "Aktuelle Meldungen und Termine dieser Woche in Berlin-Köpenick, automatisch zusammengefasst.",
   openGraph: {
-    title: "Wochenrückblick – Köpenick Kiezradar",
-    description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+    title: "Blick in die Woche – Köpenick Kiezradar",
+    description:
+      "Aktuelle Meldungen und Termine dieser Woche in Berlin-Köpenick, automatisch zusammengefasst.",
   },
 };
 
@@ -43,8 +49,16 @@ async function loadLatestDigest(): Promise<Digest | null> {
 }
 
 export default async function WochePage() {
-  const entries = getDisplayEntries();
+  const entries = getEntriesForCurrentWeek(getDisplayEntries());
   const digest = await loadLatestDigest();
-  const weekRange = digest?.range ?? formatCurrentWeekRange();
-  return <WeeklyView entries={entries} weekRange={weekRange} digest={digest} />;
+  const currentWeekRange = formatCurrentWeekRange();
+  const currentDigest = digest?.range === currentWeekRange ? digest : null;
+
+  return (
+    <WeeklyView
+      entries={entries}
+      weekRange={currentWeekRange}
+      digest={currentDigest}
+    />
+  );
 }

@@ -2,11 +2,15 @@ import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
+const ROOT = path.resolve(
+  path.dirname(fileURLToPath(import.meta.url)),
+  "../..",
+);
 const GEOCODE_CACHE_PATH = path.join(ROOT, "data", "geocode-cache.json");
 
-const NOMINATIM_VIEWBOX = "13.09,52.68,13.76,52.34";
-const NOMINATIM_UA = "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)";
+const NOMINATIM_VIEWBOX = "13.44,52.56,13.76,52.34";
+const NOMINATIM_UA =
+  "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)";
 
 async function loadGeocodeCache() {
   try {
@@ -16,9 +20,25 @@ async function loadGeocodeCache() {
   }
 }
 
+const KNOWN_PLACES = [
+  { pattern: /cajamarcaplatz|cajamarca-?platz/i, lat: 52.4559, lng: 13.5107 },
+  {
+    pattern: /s-?bahnhof schöneweide|bahnhof schöneweide/i,
+    lat: 52.4547,
+    lng: 13.5103,
+  },
+];
+
+function knownPlaceLookup(query) {
+  const match = KNOWN_PLACES.find((place) => place.pattern.test(query));
+  return match ? { lat: match.lat, lng: match.lng } : null;
+}
+
 async function nominatimLookup(query) {
+  const known = knownPlaceLookup(query);
+  if (known) return known;
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
-    query + ", Berlin"
+    query + ", Berlin",
   )}&countrycodes=de&bounded=1&viewbox=${NOMINATIM_VIEWBOX}&format=json&limit=1`;
   try {
     const resp = await fetch(url, { headers: { "user-agent": NOMINATIM_UA } });
@@ -33,12 +53,14 @@ async function nominatimLookup(query) {
 
 export async function geocodeEntries(entries) {
   const cache = await loadGeocodeCache();
-  const toGeocode = entries.filter((e) => e.lat == null && (e.addresses?.length || e.location));
+  const toGeocode = entries.filter(
+    (e) => e.lat == null && (e.addresses?.length || e.venue || e.location),
+  );
   if (toGeocode.length === 0) return entries;
 
   let added = 0;
   for (const entry of toGeocode) {
-    const query = entry.addresses?.[0] ?? entry.location;
+    const query = entry.addresses?.[0] ?? entry.venue ?? entry.location;
     if (!query || query === "Treptow-Köpenick") continue;
 
     if (cache[query]) {
@@ -58,10 +80,18 @@ export async function geocodeEntries(entries) {
       entry.lng = coords.lng;
       added++;
     }
-    console.log(`Geocoded "${query}": ${coords ? `${coords.lat},${coords.lng}` : "not found"}`);
+    console.log(
+      `Geocoded "${query}": ${coords ? `${coords.lat},${coords.lng}` : "not found"}`,
+    );
   }
 
-  await writeFile(GEOCODE_CACHE_PATH, `${JSON.stringify(cache, null, 2)}\n`, "utf8");
-  console.log(`Geocoding: ${added} new coordinates (${toGeocode.length} entries checked)`);
+  await writeFile(
+    GEOCODE_CACHE_PATH,
+    `${JSON.stringify(cache, null, 2)}\n`,
+    "utf8",
+  );
+  console.log(
+    `Geocoding: ${added} new coordinates (${toGeocode.length} entries checked)`,
+  );
   return entries;
 }

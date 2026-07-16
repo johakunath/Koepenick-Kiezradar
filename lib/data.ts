@@ -20,6 +20,51 @@ import { ALL_TAGS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 export { slugify };
 
+const KOEPENICK_BOUNDS = {
+  latMin: 52.34,
+  latMax: 52.56,
+  lngMin: 13.44,
+  lngMax: 13.76,
+};
+
+const GENERIC_TK_COORDS = { lat: 52.4450491, lng: 13.5754153 };
+
+function isInsideKiezBounds(lat?: number, lng?: number): boolean {
+  if (lat == null || lng == null) return false;
+  return (
+    lat >= KOEPENICK_BOUNDS.latMin &&
+    lat <= KOEPENICK_BOUNDS.latMax &&
+    lng >= KOEPENICK_BOUNDS.lngMin &&
+    lng <= KOEPENICK_BOUNDS.lngMax
+  );
+}
+
+function hasGenericTkCoordinate(entry: Entry): boolean {
+  if (entry.lat == null || entry.lng == null) return false;
+  return (
+    Math.abs(entry.lat - GENERIC_TK_COORDS.lat) < 0.00001 &&
+    Math.abs(entry.lng - GENERIC_TK_COORDS.lng) < 0.00001
+  );
+}
+
+function normalizeCoordinates(entry: Entry): Pick<Entry, "lat" | "lng"> {
+  if (entry.lat == null || entry.lng == null) return {};
+
+  // Avoid showing the geographic centroid when geocoding only found the whole district.
+  if (
+    hasGenericTkCoordinate(entry) &&
+    /^(treptow-köpenick|köpenick)$/i.test(entry.location.trim())
+  ) {
+    return { lat: undefined, lng: undefined };
+  }
+
+  // The map is intentionally hyperlocal; hide Berlin-wide false positives instead of pinning them.
+  if (!isInsideKiezBounds(entry.lat, entry.lng))
+    return { lat: undefined, lng: undefined };
+
+  return { lat: entry.lat, lng: entry.lng };
+}
+
 const tagToTopic: Record<Tag, string> = {
   wahl: "wahl-2026",
   verkehr: "verkehr",
@@ -52,11 +97,18 @@ function truncateSentence(value: string, maxLength = 220): string {
 function isThinSummary(entry: Entry): boolean {
   const summary = compactText(entry.ai_summary);
   const title = compactText(entry.title);
-  return summary.length === 0 || summary.toLocaleLowerCase("de-DE") === title.toLocaleLowerCase("de-DE");
+  return (
+    summary.length === 0 ||
+    summary.toLocaleLowerCase("de-DE") === title.toLocaleLowerCase("de-DE")
+  );
 }
 
 function fallbackSummary(entry: Entry): string {
-  if ((entry.tags ?? []).includes("veranstaltung") || entry.kind === "veranstaltung" || entry.event_start_at) {
+  if (
+    (entry.tags ?? []).includes("veranstaltung") ||
+    entry.kind === "veranstaltung" ||
+    entry.event_start_at
+  ) {
     const date = entry.event_start_at
       ? new Date(entry.event_start_at).toLocaleString("de-DE", {
           day: "numeric",
@@ -70,7 +122,11 @@ function fallbackSummary(entry: Entry): string {
     if (where) return `Veranstaltung in ${where}.`;
   }
 
-  if (entry.raw_excerpt && compactText(entry.raw_excerpt).toLocaleLowerCase("de-DE") !== compactText(entry.title).toLocaleLowerCase("de-DE")) {
+  if (
+    entry.raw_excerpt &&
+    compactText(entry.raw_excerpt).toLocaleLowerCase("de-DE") !==
+      compactText(entry.title).toLocaleLowerCase("de-DE")
+  ) {
     return truncateSentence(entry.raw_excerpt);
   }
 
@@ -90,7 +146,9 @@ function fallbackSummary(entry: Entry): string {
 }
 
 function isTag(value: unknown): value is Tag {
-  return typeof value === "string" && (ALL_TAGS as readonly string[]).includes(value);
+  return (
+    typeof value === "string" && (ALL_TAGS as readonly string[]).includes(value)
+  );
 }
 
 function normalizeTags(entry: Entry): Tag[] {
@@ -113,7 +171,12 @@ function normalizeTags(entry: Entry): Tag[] {
 
   if (isTag(entry.tag)) tags.add(entry.tag);
   if (entry.election_relevant) tags.add("wahl");
-  if (entry.kind === "veranstaltung" || entry.event_start_at || entry.venue || sourceId === "berlin-events") {
+  if (
+    entry.kind === "veranstaltung" ||
+    entry.event_start_at ||
+    entry.venue ||
+    sourceId === "berlin-events"
+  ) {
     tags.add("veranstaltung");
   }
   if (sourceId === "polizei-berlin") tags.add("sicherheit");
@@ -123,10 +186,20 @@ function normalizeTags(entry: Entry): Tag[] {
     tags.add("verwaltung");
   }
 
-  if (/verkehr|unfall|straße|strasse|sperrung|bahn|radweg|fahrrad|baustelle/.test(haystack)) tags.add("verkehr");
-  if (/schule|kita|bau|sanierung|wasser|strom|brücke|infrastruktur/.test(haystack)) tags.add("infrastruktur");
-  if (/bvv|partei|antrag|senat|wahl|kandidat|abgeordnetenhaus/.test(haystack)) tags.add("politik");
-  if (/wahl|kandidat|wahlkreis|abgeordnetenhaus/.test(haystack)) tags.add("wahl");
+  if (
+    /verkehr|unfall|straße|strasse|sperrung|bahn|radweg|fahrrad|baustelle/.test(
+      haystack,
+    )
+  )
+    tags.add("verkehr");
+  if (
+    /schule|kita|bau|sanierung|wasser|strom|brücke|infrastruktur/.test(haystack)
+  )
+    tags.add("infrastruktur");
+  if (/bvv|partei|antrag|senat|wahl|kandidat|abgeordnetenhaus/.test(haystack))
+    tags.add("politik");
+  if (/wahl|kandidat|wahlkreis|abgeordnetenhaus/.test(haystack))
+    tags.add("wahl");
 
   if (tags.size > 1) tags.delete("sonstiges");
   if (tags.size === 0) tags.add("sonstiges");
@@ -152,7 +225,8 @@ export function getBodies(): Body[] {
 
 export function getMeetings(): Meeting[] {
   return [...(meetingsData as Meeting[])].sort(
-    (a, b) => new Date(a.meeting_at).getTime() - new Date(b.meeting_at).getTime()
+    (a, b) =>
+      new Date(a.meeting_at).getTime() - new Date(b.meeting_at).getTime(),
   );
 }
 
@@ -166,12 +240,19 @@ export function getLatestUpdate(): string | undefined {
 
 export function getDistrictForEntry(entry: Entry): DistrictRecord | undefined {
   if (entry.district_slug) {
-    return getDistricts().find((district) => district.slug === entry.district_slug);
+    return getDistricts().find(
+      (district) => district.slug === entry.district_slug,
+    );
   }
 
-  const haystack = `${entry.district ?? ""} ${entry.location ?? ""} ${entry.title ?? ""}`.toLocaleLowerCase("de-DE");
+  const haystack =
+    `${entry.district ?? ""} ${entry.location ?? ""} ${entry.title ?? ""}`.toLocaleLowerCase(
+      "de-DE",
+    );
   return getDistricts().find((district) =>
-    district.keywords.some((keyword) => haystack.includes(keyword.toLocaleLowerCase("de-DE")))
+    district.keywords.some((keyword) =>
+      haystack.includes(keyword.toLocaleLowerCase("de-DE")),
+    ),
   );
 }
 
@@ -206,13 +287,25 @@ export function normalizeEntry(entry: Entry): Entry {
       : entry.document_url || entry.document_type
         ? "dokument"
         : "meldung");
-  const baseEntry = { ...entry, source_id: sourceId, kind: normalizedKind, tags };
-  const topicSlugs = [...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)])];
+  const baseEntry = {
+    ...entry,
+    source_id: sourceId,
+    kind: normalizedKind,
+    tags,
+  };
+  const topicSlugs = [
+    ...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)]),
+  ];
+
+  const coordinates = normalizeCoordinates(baseEntry);
 
   return {
     ...baseEntry,
+    ...coordinates,
     slug: entry.slug ?? slugify(entry.title),
-    ai_summary: isThinSummary(baseEntry) ? fallbackSummary(baseEntry) : entry.ai_summary,
+    ai_summary: isThinSummary(baseEntry)
+      ? fallbackSummary(baseEntry)
+      : entry.ai_summary,
     topic_slugs: topicSlugs,
     district_slug: entry.district_slug ?? district?.slug,
   };
@@ -251,16 +344,18 @@ function dedupeEntries(entries: Entry[]): Entry[] {
   for (const entry of entries) {
     // Events from the same source with the same title on the same day are the same event
     // listed under multiple berlin.de categories — dedupe by title+date instead of URL.
-    const isEvent = entry.source_id === "berlin-events" || entry.kind === "veranstaltung";
+    const isEvent =
+      entry.source_id === "berlin-events" || entry.kind === "veranstaltung";
     const eventDay = (entry.event_start_at ?? entry.published_at).slice(0, 10);
     // berlin-events: same event appears with different date_start params — dedupe by title only.
     // Non-events: bezirksamt-tk and bvv-tk both scrape the same press-release URLs, so key
     // by source_url+title (not source_id) to catch cross-source dupes.
-    const key = entry.source_id === "berlin-events"
-      ? `berlin-events|${entry.title.trim().toLowerCase()}`
-      : isEvent
-        ? `${entry.source_id ?? entry.source}|${entry.title}|${eventDay}`
-        : `${entry.source_url}|${entry.title}`;
+    const key =
+      entry.source_id === "berlin-events"
+        ? `berlin-events|${entry.title.trim().toLowerCase()}`
+        : isEvent
+          ? `${entry.source_id ?? entry.source}|${entry.title}|${eventDay}`
+          : `${entry.source_url}|${entry.title}`;
     if (seen.has(key)) continue;
     seen.add(key);
     result.push(entry);
@@ -272,14 +367,21 @@ function dedupeEntries(entries: Entry[]): Entry[] {
 export function getEntries(): Entry[] {
   return (entriesData as Entry[])
     .map(normalizeEntry)
-    .sort((a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime());
+    .sort(
+      (a, b) =>
+        new Date(b.published_at).getTime() - new Date(a.published_at).getTime(),
+    );
 }
 
 export function getDisplayEntries(): Entry[] {
   const entries = getEntries();
   const hasRealData = entries.some((entry) => !entry.is_mock);
-  const displayEntries = hasRealData ? entries.filter((entry) => !entry.is_mock) : entries;
-  return dedupeEntries(displayEntries.filter((entry) => !isNavigationEvent(entry)));
+  const displayEntries = hasRealData
+    ? entries.filter((entry) => !entry.is_mock)
+    : entries;
+  return dedupeEntries(
+    displayEntries.filter((entry) => !isNavigationEvent(entry)),
+  );
 }
 
 export function getEntryBySlug(slug: string): Entry | undefined {
@@ -287,11 +389,15 @@ export function getEntryBySlug(slug: string): Entry | undefined {
 }
 
 export function getEntriesForTopic(topicSlug: string): Entry[] {
-  return getDisplayEntries().filter((entry) => entry.topic_slugs?.includes(topicSlug));
+  return getDisplayEntries().filter((entry) =>
+    entry.topic_slugs?.includes(topicSlug),
+  );
 }
 
 export function getEntriesForDistrict(districtSlug: string): Entry[] {
-  return getDisplayEntries().filter((entry) => entry.district_slug === districtSlug);
+  return getDisplayEntries().filter(
+    (entry) => entry.district_slug === districtSlug,
+  );
 }
 
 export function getTopicBySlug(slug: string): Topic | undefined {
@@ -323,8 +429,34 @@ export function searchEntries(entries: Entry[], query: string): Entry[] {
     ]
       .join(" ")
       .toLocaleLowerCase("de-DE")
-      .includes(normalized)
+      .includes(normalized),
   );
+}
+
+export function getCurrentWeekBounds(now = new Date()): {
+  start: Date;
+  end: Date;
+} {
+  const start = new Date(now);
+  const day = start.getDay() || 7;
+  start.setDate(start.getDate() - day + 1);
+  start.setHours(0, 0, 0, 0);
+
+  const end = new Date(start);
+  end.setDate(start.getDate() + 7);
+
+  return { start, end };
+}
+
+export function getEntriesForCurrentWeek(
+  entries: Entry[],
+  now = new Date(),
+): Entry[] {
+  const { start, end } = getCurrentWeekBounds(now);
+  return entries.filter((entry) => {
+    const relevantDate = new Date(entry.event_start_at ?? entry.published_at);
+    return relevantDate >= start && relevantDate < end;
+  });
 }
 
 export function formatCurrentWeekRange(now = new Date()): string {

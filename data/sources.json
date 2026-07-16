@@ -46,5 +46,37 @@
     "type": "pdf",
     "status": "error",
     "notes": "Index-URLs waren im letzten Lauf nicht erreichbar."
+  },
+  {
+    "id": "voebb-tk",
+    "name": "VÖBB Bibliotheken Treptow-Köpenick",
+    "url": "https://www.voebb.de/",
+    "type": "html",
+    "status": "planned",
+    "notes": "Feedback-Wunsch: gut gepflegte Bibliotheks- und Veranstaltungsseiten prüfen; erst nach Parser-/Datenqualitätsrunde aktivieren."
+  },
+  {
+    "id": "zfd",
+    "name": "Zentrum für Demokratie Treptow-Köpenick",
+    "url": "https://www.zentrum-fuer-demokratie.de/",
+    "type": "html",
+    "status": "planned",
+    "notes": "Feedback-Wunsch: lokale Demokratie-Veranstaltungen als mögliche Quelle evaluieren; benötigt Quellencheck und defensive Parser."
+  },
+  {
+    "id": "fez-berlin",
+    "name": "FEZ Berlin",
+    "url": "https://fez-berlin.de/",
+    "type": "html",
+    "status": "planned",
+    "notes": "Feedback-Wunsch: große lokale Veranstaltungseinrichtung; vor Aktivierung Terminformat und Köpenick-Relevanz prüfen."
+  },
+  {
+    "id": "demokratische-ortsverbaende",
+    "name": "Demokratische politische Ortsverbände",
+    "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/",
+    "type": "html",
+    "status": "planned",
+    "notes": "Feedback-Wunsch: nur öffentliche Termine/Meldungen demokratischer Ortsverbände, ohne parteipolitische Bewertung; braucht frischen Quellenplan."
   }
 ]
