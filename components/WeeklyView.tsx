@@ -24,6 +24,7 @@ interface Digest {
 interface WeeklyViewProps {
   entries: Entry[];
   weekRange: string;
+  weekNumber: number;
   digest?: Digest | null;
 }
 
@@ -34,22 +35,28 @@ interface DayGroup {
   entries: Entry[];
 }
 
+function getTimelineDate(entry: Entry): Date {
+  return new Date(entry.event_start_at ?? entry.published_at);
+}
+
 function groupByDay(entries: Entry[]): DayGroup[] {
   const groups = new Map<string, Entry[]>();
   for (const entry of entries) {
-    const key = new Date(entry.published_at).toISOString().slice(0, 10);
+    const key = getTimelineDate(entry).toISOString().slice(0, 10);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(entry);
   }
   return Array.from(groups.entries())
-    .sort(([a], [b]) => b.localeCompare(a))
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([key, dayEntries]) => {
       const d = new Date(key + "T12:00:00");
       return {
         dateKey: key,
         dayNumber: d.toLocaleDateString("de-DE", { day: "numeric" }),
         dayName: d.toLocaleDateString("de-DE", { weekday: "short" }),
-        entries: dayEntries,
+        entries: [...dayEntries].sort(
+          (a, b) => getTimelineDate(a).getTime() - getTimelineDate(b).getTime(),
+        ),
       };
     });
 }
@@ -183,17 +190,11 @@ function Logbook({ entries }: { entries: Entry[] }) {
 export default function WeeklyView({
   entries,
   weekRange,
+  weekNumber,
   digest,
 }: WeeklyViewProps) {
   const entryById = new Map(entries.map((e) => [e.id, e]));
   const electionCount = entries.filter((e) => e.election_relevant).length;
-
-  const weekNo = digest?.week
-    ? parseInt(digest.week.split("-W")[1] ?? "0")
-    : Math.ceil(
-        (Date.now() - new Date(new Date().getFullYear(), 0, 1).getTime()) /
-          604800000,
-      );
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
@@ -235,7 +236,7 @@ export default function WeeklyView({
               marginTop: 6,
             }}
           >
-            {weekRange} · KW {weekNo} · {entries.length} Meldungen
+            {weekRange} · KW {weekNumber} · {entries.length} Meldungen
             {electionCount > 0 ? ` · ${electionCount} mit Wahlbezug` : ""}
           </p>
         </section>

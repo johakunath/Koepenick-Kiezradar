@@ -20,51 +20,6 @@ import { ALL_TAGS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
 export { slugify };
 
-const KOEPENICK_BOUNDS = {
-  latMin: 52.34,
-  latMax: 52.56,
-  lngMin: 13.44,
-  lngMax: 13.76,
-};
-
-const GENERIC_TK_COORDS = { lat: 52.4450491, lng: 13.5754153 };
-
-function isInsideKiezBounds(lat?: number, lng?: number): boolean {
-  if (lat == null || lng == null) return false;
-  return (
-    lat >= KOEPENICK_BOUNDS.latMin &&
-    lat <= KOEPENICK_BOUNDS.latMax &&
-    lng >= KOEPENICK_BOUNDS.lngMin &&
-    lng <= KOEPENICK_BOUNDS.lngMax
-  );
-}
-
-function hasGenericTkCoordinate(entry: Entry): boolean {
-  if (entry.lat == null || entry.lng == null) return false;
-  return (
-    Math.abs(entry.lat - GENERIC_TK_COORDS.lat) < 0.00001 &&
-    Math.abs(entry.lng - GENERIC_TK_COORDS.lng) < 0.00001
-  );
-}
-
-function normalizeCoordinates(entry: Entry): Pick<Entry, "lat" | "lng"> {
-  if (entry.lat == null || entry.lng == null) return {};
-
-  // Avoid showing the geographic centroid when geocoding only found the whole district.
-  if (
-    hasGenericTkCoordinate(entry) &&
-    /^(treptow-köpenick|köpenick)$/i.test(entry.location.trim())
-  ) {
-    return { lat: undefined, lng: undefined };
-  }
-
-  // The map is intentionally hyperlocal; hide Berlin-wide false positives instead of pinning them.
-  if (!isInsideKiezBounds(entry.lat, entry.lng))
-    return { lat: undefined, lng: undefined };
-
-  return { lat: entry.lat, lng: entry.lng };
-}
-
 const tagToTopic: Record<Tag, string> = {
   wahl: "wahl-2026",
   verkehr: "verkehr",
@@ -297,11 +252,8 @@ export function normalizeEntry(entry: Entry): Entry {
     ...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)]),
   ];
 
-  const coordinates = normalizeCoordinates(baseEntry);
-
   return {
     ...baseEntry,
-    ...coordinates,
     slug: entry.slug ?? slugify(entry.title),
     ai_summary: isThinSummary(baseEntry)
       ? fallbackSummary(baseEntry)
@@ -431,6 +383,29 @@ export function searchEntries(entries: Entry[], query: string): Entry[] {
       .toLocaleLowerCase("de-DE")
       .includes(normalized),
   );
+}
+
+export function getIsoWeekId(date = new Date()): string {
+  const d = new Date(date);
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
+
+  const weekYear = d.getFullYear();
+  const weekOne = new Date(weekYear, 0, 4);
+  const weekNumber =
+    1 +
+    Math.round(
+      ((d.getTime() - weekOne.getTime()) / 86400000 -
+        3 +
+        ((weekOne.getDay() + 6) % 7)) /
+        7,
+    );
+
+  return `${weekYear}-W${String(weekNumber).padStart(2, "0")}`;
+}
+
+export function getIsoWeekNumber(date = new Date()): number {
+  return Number(getIsoWeekId(date).split("-W")[1]);
 }
 
 export function getCurrentWeekBounds(now = new Date()): {
