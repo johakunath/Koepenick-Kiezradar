@@ -24,6 +24,7 @@ interface Digest {
 interface WeeklyViewProps {
   entries: Entry[];
   weekRange: string;
+  weekNumber: number;
   digest?: Digest | null;
 }
 
@@ -34,26 +35,31 @@ interface DayGroup {
   entries: Entry[];
 }
 
+function getTimelineDate(entry: Entry): Date {
+  return new Date(entry.event_start_at ?? entry.published_at);
+}
+
 function groupByDay(entries: Entry[]): DayGroup[] {
   const groups = new Map<string, Entry[]>();
   for (const entry of entries) {
-    const key = new Date(entry.published_at).toISOString().slice(0, 10);
+    const key = getTimelineDate(entry).toISOString().slice(0, 10);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(entry);
   }
   return Array.from(groups.entries())
-    .sort(([a], [b]) => b.localeCompare(a))
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([key, dayEntries]) => {
       const d = new Date(key + "T12:00:00");
       return {
         dateKey: key,
         dayNumber: d.toLocaleDateString("de-DE", { day: "numeric" }),
         dayName: d.toLocaleDateString("de-DE", { weekday: "short" }),
-        entries: dayEntries,
+        entries: [...dayEntries].sort(
+          (a, b) => getTimelineDate(a).getTime() - getTimelineDate(b).getTime(),
+        ),
       };
     });
 }
-
 
 function LogbookEntry({ entry }: { entry: Entry }) {
   const primaryTag = entry.tags[0];
@@ -100,14 +106,22 @@ function LogbookEntry({ entry }: { entry: Entry }) {
           lineHeight: 1.35,
           textDecoration: "none",
         }}
-        onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--water)")}
-        onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--ink)")}
+        onMouseEnter={(e) =>
+          ((e.currentTarget as HTMLElement).style.color = "var(--water)")
+        }
+        onMouseLeave={(e) =>
+          ((e.currentTarget as HTMLElement).style.color = "var(--ink)")
+        }
       >
         {entry.title}
       </Link>
       <div
         className="flex gap-2 mt-1 flex-wrap"
-        style={{ color: "var(--ink-mute)", fontSize: 11, fontFamily: "var(--font-inter-tight)" }}
+        style={{
+          color: "var(--ink-mute)",
+          fontSize: 11,
+          fontFamily: "var(--font-inter-tight)",
+        }}
       >
         <span>{entry.location}</span>
         <span style={{ opacity: 0.5 }}>·</span>
@@ -130,7 +144,14 @@ function Logbook({ entries }: { entries: Entry[] }) {
   return (
     <div className="space-y-8">
       {days.map(({ dateKey, dayNumber, dayName, entries: dayEntries }) => (
-        <div key={dateKey} style={{ display: "grid", gridTemplateColumns: "44px 1fr", gap: "0 20px" }}>
+        <div
+          key={dateKey}
+          style={{
+            display: "grid",
+            gridTemplateColumns: "44px 1fr",
+            gap: "0 20px",
+          }}
+        >
           <div style={{ textAlign: "right", paddingTop: 2, lineHeight: 1 }}>
             <div
               style={{
@@ -166,13 +187,14 @@ function Logbook({ entries }: { entries: Entry[] }) {
   );
 }
 
-export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewProps) {
+export default function WeeklyView({
+  entries,
+  weekRange,
+  weekNumber,
+  digest,
+}: WeeklyViewProps) {
   const entryById = new Map(entries.map((e) => [e.id, e]));
   const electionCount = entries.filter((e) => e.election_relevant).length;
-
-  const weekNo = digest?.week
-    ? parseInt(digest.week.split("-W")[1] ?? "0")
-    : Math.ceil((Date.now() - new Date(new Date().getFullYear(), 0, 1).getTime()) / 604800000);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--bg)" }}>
@@ -192,7 +214,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               margin: 0,
             }}
           >
-            Wochenrückblick
+            Blick in die Woche
           </h1>
           <p
             style={{
@@ -203,7 +225,8 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               lineHeight: 1.55,
             }}
           >
-            Was die Woche in Köpenick bewegt hat — automatisch zusammengefasst.
+            Was diese Woche in Köpenick ansteht oder neu gemeldet wurde —
+            automatisch zusammengefasst.
           </p>
           <p
             style={{
@@ -213,7 +236,8 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               marginTop: 6,
             }}
           >
-            {weekRange} · KW {weekNo} · {entries.length} Meldungen{electionCount > 0 ? ` · ${electionCount} mit Wahlbezug` : ""}
+            {weekRange} · KW {weekNumber} · {entries.length} Meldungen
+            {electionCount > 0 ? ` · ${electionCount} mit Wahlbezug` : ""}
           </p>
         </section>
 
@@ -230,7 +254,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
                 color: "var(--ink-mute)",
               }}
             >
-              KI-Wochenrückblick
+              KI-Wochenblick
             </h2>
             {digest.topics.map((topic) => {
               const topicEntries = topic.entry_ids
@@ -292,7 +316,8 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
                 opacity: 0.7,
               }}
             >
-              KI-generiert · Stand: {new Date(digest.generated_at).toLocaleDateString("de-DE")}
+              KI-generiert · Stand:{" "}
+              {new Date(digest.generated_at).toLocaleDateString("de-DE")}
             </p>
           </div>
         )}
@@ -310,7 +335,7 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               marginBottom: 24,
             }}
           >
-            Wochenchronik
+            Diese Woche
           </h2>
 
           {entries.length === 0 ? (
@@ -322,8 +347,8 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
                 padding: "20px 0",
               }}
             >
-              Der KI-Wochenrückblick wird jeden Sonntag automatisch generiert. Bis dahin sind
-              hier die relevantesten Einträge der Woche.
+              Für die laufende Woche gibt es noch keine passenden Einträge. Neue
+              Meldungen und Termine erscheinen hier nach dem nächsten Import.
             </p>
           ) : (
             <Logbook entries={entries} />
@@ -332,7 +357,14 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
       </div>
 
       {/* Footer */}
-      <footer className="relative mt-4" style={{ borderTop: "1px solid var(--rule)", position: "relative", zIndex: 6 }}>
+      <footer
+        className="relative mt-4"
+        style={{
+          borderTop: "1px solid var(--rule)",
+          position: "relative",
+          zIndex: 6,
+        }}
+      >
         <IllusBanner />
         <div className="mx-auto max-w-[1280px] px-5 md:px-20 py-6 text-center">
           <p
@@ -345,8 +377,8 @@ export default function WeeklyView({ entries, weekRange, digest }: WeeklyViewPro
               margin: "0 auto",
             }}
           >
-            Wochenausgabe — automatisch zusammengefasst, redaktionell nicht geprüft.
-            Kein offizielles Angebot.
+            Blick in die Woche — automatisch zusammengefasst, redaktionell nicht
+            geprüft. Kein offizielles Angebot.
           </p>
         </div>
       </footer>

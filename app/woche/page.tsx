@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
-import { readdir, readFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { getDisplayEntries, formatCurrentWeekRange } from "@/lib/data";
+import {
+  getDisplayEntries,
+  formatCurrentWeekRange,
+  getEntriesForCurrentWeek,
+  getIsoWeekId,
+  getIsoWeekNumber,
+} from "@/lib/data";
 import WeeklyView from "@/components/WeeklyView";
 
 export const metadata: Metadata = {
-  title: "Wochenrückblick – Köpenick Kiezradar",
-  description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+  title: "Blick in die Woche – Köpenick Kiezradar",
+  description:
+    "Aktuelle Meldungen und Termine dieser Woche in Berlin-Köpenick, automatisch zusammengefasst.",
   openGraph: {
-    title: "Wochenrückblick – Köpenick Kiezradar",
-    description: "Die wichtigsten Ereignisse der Woche in Berlin-Köpenick, automatisch zusammengefasst.",
+    title: "Blick in die Woche – Köpenick Kiezradar",
+    description:
+      "Aktuelle Meldungen und Termine dieser Woche in Berlin-Köpenick, automatisch zusammengefasst.",
   },
 };
 
@@ -27,15 +35,15 @@ interface Digest {
   topics: DigestTopic[];
 }
 
-async function loadLatestDigest(): Promise<Digest | null> {
+async function loadDigestForWeek(weekId: string): Promise<Digest | null> {
   try {
-    const weeklyDir = path.join(process.cwd(), "data", "weekly");
-    const files = (await readdir(weeklyDir))
-      .filter((f) => f.endsWith(".json"))
-      .sort()
-      .reverse();
-    if (files.length === 0) return null;
-    const raw = await readFile(path.join(weeklyDir, files[0]), "utf8");
+    const digestPath = path.join(
+      process.cwd(),
+      "data",
+      "weekly",
+      `${weekId}.json`,
+    );
+    const raw = await readFile(digestPath, "utf8");
     return JSON.parse(raw) as Digest;
   } catch {
     return null;
@@ -43,8 +51,16 @@ async function loadLatestDigest(): Promise<Digest | null> {
 }
 
 export default async function WochePage() {
-  const entries = getDisplayEntries();
-  const digest = await loadLatestDigest();
-  const weekRange = digest?.range ?? formatCurrentWeekRange();
-  return <WeeklyView entries={entries} weekRange={weekRange} digest={digest} />;
+  const entries = getEntriesForCurrentWeek(getDisplayEntries());
+  const currentWeekId = getIsoWeekId();
+  const digest = await loadDigestForWeek(currentWeekId);
+
+  return (
+    <WeeklyView
+      entries={entries}
+      weekRange={formatCurrentWeekRange()}
+      weekNumber={getIsoWeekNumber()}
+      digest={digest}
+    />
+  );
 }

@@ -3,6 +3,7 @@
 import { MapContainer, TileLayer, CircleMarker } from "react-leaflet";
 import type { Entry } from "@/lib/types";
 import { TAG_COLORS } from "@/components/FilterBar";
+import { getMappableEntries } from "@/lib/shared/map-coordinates";
 import "leaflet/dist/leaflet.css";
 
 interface MiniMapProps {
@@ -10,7 +11,7 @@ interface MiniMapProps {
 }
 
 export default function MiniMap({ entries }: MiniMapProps) {
-  const mapped = entries.filter((e) => e.lat != null && e.lng != null);
+  const mapped = getMappableEntries(entries);
 
   return (
     <MapContainer
@@ -25,13 +26,20 @@ export default function MiniMap({ entries }: MiniMapProps) {
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       {mapped.map((entry) => {
-        const color = entry.tags[0] ? TAG_COLORS[entry.tags[0]]?.color : "var(--water-2)";
+        const color = entry.tags[0]
+          ? TAG_COLORS[entry.tags[0]]?.color
+          : "var(--water-2)";
         return (
           <CircleMarker
             key={entry.id}
-            center={[entry.lat!, entry.lng!]}
+            center={[entry.lat, entry.lng]}
             radius={5}
-            pathOptions={{ color, fillColor: color, fillOpacity: 0.75, weight: 1.5 }}
+            pathOptions={{
+              color,
+              fillColor: color,
+              fillOpacity: 0.75,
+              weight: 1.5,
+            }}
           />
         );
       })}

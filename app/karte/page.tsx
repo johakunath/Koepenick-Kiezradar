@@ -7,32 +7,39 @@ import type { Tag } from "@/lib/types";
 import { TAG_LABELS, ALL_TAGS } from "@/lib/types";
 import { DISTRICTS, type District } from "@/lib/shared/koepenick-geo";
 import { getDisplayEntries } from "@/lib/data";
+import { getMappableEntries } from "@/lib/shared/map-coordinates";
 import Header from "@/components/Header";
 
 const KiezMap = dynamic(() => import("@/components/KiezMap"), { ssr: false });
 
 const entries = getDisplayEntries();
-const mappable = entries.filter((e) => e.lat != null && e.lng != null);
+const mappable = getMappableEntries(entries);
 
 export default function KartePage() {
   const [activeTags, setActiveTags] = useState<Tag[]>([]);
   const [activeDistricts, setActiveDistricts] = useState<District[]>([]);
 
   const toggleTag = (tag: Tag) =>
-    setActiveTags((prev) => (prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag]));
+    setActiveTags((prev) =>
+      prev.includes(tag) ? prev.filter((t) => t !== tag) : [...prev, tag],
+    );
   const toggleDistrict = (d: District) =>
-    setActiveDistricts((prev) => (prev.includes(d) ? prev.filter((x) => x !== d) : [...prev, d]));
+    setActiveDistricts((prev) =>
+      prev.includes(d) ? prev.filter((x) => x !== d) : [...prev, d],
+    );
 
   const filtered = useMemo(
     () =>
       mappable.filter((e) => {
-        const tagOk = activeTags.length === 0 || e.tags.some((t) => activeTags.includes(t));
+        const tagOk =
+          activeTags.length === 0 || e.tags.some((t) => activeTags.includes(t));
         const districtOk =
           activeDistricts.length === 0 ||
-          (e.district != null && activeDistricts.includes(e.district as District));
+          (e.district != null &&
+            activeDistricts.includes(e.district as District));
         return tagOk && districtOk;
       }),
-    [activeTags, activeDistricts]
+    [activeTags, activeDistricts],
   );
 
   const hasFilters = activeTags.length > 0 || activeDistricts.length > 0;
@@ -42,12 +49,28 @@ export default function KartePage() {
       <Header />
 
       {/* Filter rows — aligned to content max-width */}
-      <div className="shrink-0" style={{ borderBottom: "1px solid var(--border)" }}>
+      <div
+        className="shrink-0"
+        style={{ borderBottom: "1px solid var(--border)" }}
+      >
         <div className="max-w-[1280px] mx-auto px-5 md:px-20 py-2 flex items-center gap-3 flex-wrap">
-          <span style={{ fontFamily: "var(--font-inter-tight)", fontSize: 10, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-mute)", whiteSpace: "nowrap" }}>
+          <span
+            style={{
+              fontFamily: "var(--font-inter-tight)",
+              fontSize: 10,
+              fontWeight: 600,
+              letterSpacing: "0.14em",
+              textTransform: "uppercase",
+              color: "var(--ink-mute)",
+              whiteSpace: "nowrap",
+            }}
+          >
             {filtered.length} von {mappable.length} kartiert
           </span>
-          <div className="flex gap-1.5 overflow-x-auto flex-1" style={{ scrollbarWidth: "none" }}>
+          <div
+            className="flex gap-1.5 overflow-x-auto flex-1"
+            style={{ scrollbarWidth: "none" }}
+          >
             {ALL_TAGS.filter((t) => t !== "sonstiges").map((tag) => {
               const active = activeTags.includes(tag);
               return (
@@ -71,7 +94,10 @@ export default function KartePage() {
               );
             })}
           </div>
-          <div className="flex gap-1.5 overflow-x-auto" style={{ scrollbarWidth: "none" }}>
+          <div
+            className="flex gap-1.5 overflow-x-auto"
+            style={{ scrollbarWidth: "none" }}
+          >
             {DISTRICTS.map((district) => {
               const active = activeDistricts.includes(district);
               return (
@@ -97,8 +123,17 @@ export default function KartePage() {
           </div>
           {hasFilters && (
             <button
-              onClick={() => { setActiveTags([]); setActiveDistricts([]); }}
-              style={{ fontSize: 12, color: "var(--ink-mute)", background: "none", border: "none", cursor: "pointer" }}
+              onClick={() => {
+                setActiveTags([]);
+                setActiveDistricts([]);
+              }}
+              style={{
+                fontSize: 12,
+                color: "var(--ink-mute)",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+              }}
             >
               ✕
             </button>
@@ -111,7 +146,10 @@ export default function KartePage() {
         {filtered.length === 0 ? (
           <div
             className="h-full flex flex-col items-center justify-center gap-3 rounded-xl"
-            style={{ border: "1px dashed var(--border)", color: "var(--ink-soft)" }}
+            style={{
+              border: "1px dashed var(--border)",
+              color: "var(--ink-soft)",
+            }}
           >
             <p className="text-sm">
               {mappable.length === 0
@@ -119,7 +157,11 @@ export default function KartePage() {
                 : "Keine Einträge mit diesen Filtern auf der Karte."}
             </p>
             {mappable.length === 0 && (
-              <Link href="/admin" className="text-xs" style={{ color: "var(--water-2)" }}>
+              <Link
+                href="/admin"
+                className="text-xs"
+                style={{ color: "var(--water-2)" }}
+              >
                 Ingest starten →
               </Link>
             )}
