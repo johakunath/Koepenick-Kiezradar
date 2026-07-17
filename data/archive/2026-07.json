@@ -1,5 +1,58 @@
 [
   {
+    "id": "d43bc7ea5e9103ba",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1694471.php",
+    "title": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche",
+    "published_at": "2026-07-16T12:00:00.000Z",
+    "ingested_at": "2026-07-17T06:19:48.419Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Gedenkstätte Köpenicker Blutwoche bietet öffentliche Führungen an, um an die Ereignisse von 1933 zu erinnern und über die NS-Verbrechen in Köpenick aufzuklären.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Gedenkstätte Köpenicker Blutwoche",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es werden öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche angeboten. Dies ist wichtig für Köpenick-Anwohner, um die lokale Geschichte und die Schrecken der NS-Zeit zu verstehen und zu gedenken.",
+    "district": "Altstadt Köpenick",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4553773,
+    "lng": 13.5795484,
+    "is_mock": false
+  },
+  {
+    "id": "eeef7da9524eeed5",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1694459.php",
+    "title": "Öffentliche Führungen durch die Ausstellung „zurückgeschaut | looking back“",
+    "published_at": "2026-07-16T12:00:00.000Z",
+    "ingested_at": "2026-07-17T06:19:48.419Z",
+    "raw_excerpt": "",
+    "ai_summary": "Es werden öffentliche Führungen durch die Ausstellung „zurückgeschaut | looking back“ angeboten, die voraussichtlich einen Rückblick auf bestimmte Themen oder Ereignisse bietet.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es werden öffentliche Führungen durch die Ausstellung „zurückgeschaut | looking back“ angeboten. Dies kann für Köpenick-Anwohner interessant sein, um neue Perspektiven oder Informationen zu einem bestimmten Thema zu erhalten.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "7a4cd87088e6887f",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
