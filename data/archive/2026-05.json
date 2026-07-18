@@ -2005,55 +2005,5 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false
-  },
-  {
-    "id": "e07c55a7e73332e0",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1670228.php",
-    "title": "Startschuss für den Aktionszeitraum zum Ehrentag: Treptow-Köpenick feiert Engagement und Nachbarschaft",
-    "published_at": "2026-05-15T12:00:00.000Z",
-    "ingested_at": "2026-05-17T10:09:25.038Z",
-    "raw_excerpt": "",
-    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
-    "tags": [
-      "verwaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
-  },
-  {
-    "id": "ea00b9c5b7611576",
-    "source_id": "bvv-tk",
-    "source": "BVV Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671325.php",
-    "title": "Autorinnenlesung: Julia Pustet",
-    "published_at": "2026-05-15T09:00:00.000Z",
-    "ingested_at": "2026-05-15T15:11:00.292Z",
-    "raw_excerpt": "Die Mittelpunktbibliothek Alte Feuerwache Treptow lädt am Donnerstag, 21.05. 2026, um 19:00 Uhr zur Lesung mit der Autorin Julia Pustet ein. Sie stellt ihren Roman „Alles ganz schlimm“ vor. Mitreißend und pointiert liefert Julia Pustet die Geschichte einer Frau, die sich mit der ganzen Welt konfrontiert, um am Ende nur wieder bei sich selbst anzukommen.",
-    "ai_summary": "Die Mittelpunktbibliothek Alte Feuerwache Treptow lädt am Donnerstag, 21.05. 2026, um 19:00 Uhr zur Lesung mit der Autorin Julia Pustet ein. Sie stellt ihren Roman „Alles ganz schlimm“ vor. Mitreißend und pointiert liefert Julia Pustet die Geschichte einer Frau, die sich mit der ganzen Welt konfrontiert, um am Ende nur wieder bei sich selbst anzukommen.",
-    "tags": [
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.7,
-    "election_relevant": false,
-    "ai_reasoning": "Antrag oder Vorlage der Bezirksverordnetenversammlung Treptow-Köpenick.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1671325.php",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
   }
 ]
