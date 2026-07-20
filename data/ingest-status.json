@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-19T06:32:52.452Z",
+  "last_run": "2026-07-20T06:50:28.025Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -35,8 +35,8 @@
     "amtsblatt-berlin": {
       "status": "ok",
       "fetched": 0,
-      "parsed": 3,
-      "raw_items": 3
+      "parsed": 0,
+      "raw_items": 0
     }
   },
   "new_entries": 0,
