@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-07-21T06:31:43.182Z",
+  "last_run": "2026-07-22T06:31:32.271Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
       "fetched": 0,
       "parsed": 0,
-      "raw_items": 339
+      "raw_items": 340
     },
     "berlin-events": {
       "status": "ok",

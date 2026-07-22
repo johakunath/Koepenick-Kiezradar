@@ -1,5 +1,32 @@
 [
   {
+    "id": "f566e6b87f398a91",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696205.php",
+    "title": "Bauarbeiten zur „Erneuerung Grünzug Britzer Verbindungskanal“ zwischen Kiefholzbrücke und Südostalleebrücke starten ab 3. August 2026",
+    "published_at": "2026-07-22T12:00:00.000Z",
+    "ingested_at": "2026-07-22T06:31:28.475Z",
+    "raw_excerpt": "",
+    "ai_summary": "Ab dem 3. August 2026 beginnen Bauarbeiten zur Erneuerung des Grünzugs Britzer Verbindungskanal zwischen der Kiefholzbrücke und der Südostalleebrücke. Dieses Projekt zielt darauf ab, die Qualität der Grünflächen und Wege entlang des Kanals zu verbessern.",
+    "tags": [
+      "infrastruktur",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Britzer Verbindungskanal",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es starten Bauarbeiten zur Erneuerung des Grünzugs Britzer Verbindungskanal, die die örtliche Infrastruktur betreffen. Dies ist für Anwohner wichtig, da es die Freizeitqualität und möglicherweise Verkehrsführungen in der Nähe beeinflussen kann.",
+    "addresses": [],
+    "lat": 52.4588533,
+    "lng": 13.4792221,
+    "is_mock": false
+  },
+  {
     "id": "5606910fc2585e54",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -23,6 +50,59 @@
     "addresses": [],
     "lat": 52.4660747,
     "lng": 13.5735973,
+    "is_mock": false
+  },
+  {
+    "id": "01d11d481511e8f1",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696001.php",
+    "title": "Sprechstunden des Bezirksamtes im August 2026",
+    "published_at": "2026-07-21T12:00:00.000Z",
+    "ingested_at": "2026-07-22T06:31:28.475Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick bietet im August 2026 Sprechstunden an, bei denen Bürgerinnen und Bürger Anliegen direkt mit der Verwaltung besprechen können. Diese Termine dienen dem direkten Austausch und der Klärung von Fragen.",
+    "tags": [
+      "verwaltung",
+      "politik"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Bezirksamt hält Sprechstunden ab, um Bürgern direkten Kontakt zur Verwaltung zu ermöglichen. Dies ist wichtig für Anwohner, um ihre Anliegen vorzubringen und Informationen zu erhalten.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "14f9fedc63f3f777",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1695963.php",
+    "title": "Führung über das sowjetische Ehrenmal in Treptow",
+    "published_at": "2026-07-21T12:00:00.000Z",
+    "ingested_at": "2026-07-22T06:31:28.475Z",
+    "raw_excerpt": "",
+    "ai_summary": "Es wird eine Führung über das sowjetische Ehrenmal in Treptow angeboten. Diese Veranstaltung bietet die Möglichkeit, die Geschichte und Bedeutung dieses wichtigen Denkmals im Bezirk Treptow-Köpenick zu erkunden.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Eine Führung über das sowjetische Ehrenmal in Treptow wird angeboten, um dessen Geschichte zu vermitteln. Dies ist für Anwohner wichtig, um die lokale Geschichte und Kultur besser kennenzulernen.",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "lat": 52.417893,
+    "lng": 13.6001848,
     "is_mock": false
   },
   {
