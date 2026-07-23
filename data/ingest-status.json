@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-22T06:31:32.271Z",
+  "last_run": "2026-07-23T06:32:52.628Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -17,7 +17,7 @@
       "status": "ok",
       "fetched": 3,
       "parsed": 20,
-      "raw_items": 427
+      "raw_items": 428
     },
     "bvv-tk": {
       "status": "ok",
@@ -34,12 +34,12 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "fetched": 0,
-      "parsed": 0,
-      "raw_items": 0
+      "fetched": 3,
+      "parsed": 3,
+      "raw_items": 3
     }
   },
-  "new_entries": 3,
-  "total_entries": 253,
+  "new_entries": 6,
+  "total_entries": 256,
   "dry_run": false
 }
