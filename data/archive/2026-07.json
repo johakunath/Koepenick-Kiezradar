@@ -113,6 +113,39 @@
     "is_mock": false
   },
   {
+    "id": "f817ef1bd018a8ea",
+    "source_id": "bvv-tk",
+    "source": "BVV Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831810.php",
+    "title": "Baumfällungen in der 31. Kalenderwoche 2019",
+    "published_at": "2026-07-25T20:42:00.000Z",
+    "ingested_at": "2026-07-27T07:36:05.693Z",
+    "raw_excerpt": "Das Straßen- und Grünflächenamt muss in der 31. Kalenderwoche aus Gründen der Verkehrssicherheit folgende Bäume fällen: 29.07.2019 Friedrichshagen Müggelseedamm * Baum-Nr.: Ü310/15 * Baumart: Robine * Umfang in cm: 183 * Höhe in m: 16 * Fällgrund: vergreiste Krone, Zwieselmorschung, Bruchgefahr Friedrichshagen Sportplatz Fürstenwalder Damm 366 * Baum-Nr.: S 76 * Baumart: Eiche * Umfang in cm: 240 * Höhe in m: 25 * Fällgrund:",
+    "ai_summary": "In der 31. Kalenderwoche 2019 müssen in Friedrichshagen am Müggelseedamm und am Fürstenwalder Damm Bäume gefällt werden. Dies geschieht aus Gründen der Verkehrssicherheit, da unter anderem eine Robine eine vergreiste Krone und eine Eiche Bruchgefahr aufweisen.",
+    "tags": [
+      "infrastruktur",
+      "sicherheit",
+      "verwaltung"
+    ],
+    "location": "Friedrichshagen",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Straßen- und Grünflächenamt führt Baumfällungen in Friedrichshagen durch, um die Verkehrssicherheit zu gewährleisten. Dies ist für Anwohner wichtig, da es direkte Auswirkungen auf das lokale Stadtbild und die Sicherheit im öffentlichen Raum hat.",
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2019/pressemitteilung.831810.php",
+    "district": "Friedrichshagen",
+    "addresses": [
+      "Fürstenwalder Damm 366"
+    ],
+    "street": "Müggelseedamm",
+    "lat": 52.4530388,
+    "lng": 13.6098295,
+    "is_mock": false
+  },
+  {
     "id": "67e334ca13970b19",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
