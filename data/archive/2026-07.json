@@ -1,5 +1,56 @@
 [
   {
+    "id": "7114e420213af2cd",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697755.php",
+    "title": "Mobile Beratung des FamilienServiceBüros im August 2026",
+    "published_at": "2026-07-28T12:00:00.000Z",
+    "ingested_at": "2026-07-28T06:29:25.023Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das FamilienServiceBüro bietet im August 2026 mobile Beratungsdienste an, um Familien und Bürger in Treptow-Köpenick direkt vor Ort zu unterstützen.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das FamilienServiceBüro bietet mobile Beratungen an, um Familien zugängliche Unterstützung zu ermöglichen. Dies ist wichtig für Köpenick-Anwohner, da es direkte Hilfe und Informationen zu sozialen Angeboten im Bezirk bietet.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "625443cdd8f471f1",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697196.php",
+    "title": "Internationales Sommerfest - das Festival für Vielfalt und Nachhaltigkeit!",
+    "published_at": "2026-07-27T12:00:00.000Z",
+    "ingested_at": "2026-07-28T06:29:25.024Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Internationale Sommerfest ist ein Festival in Treptow-Köpenick, das Vielfalt und Nachhaltigkeit durch verschiedene Aktivitäten und Kulturangebote feiert.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es findet ein internationales Sommerfest statt, das Vielfalt und Nachhaltigkeit thematisiert. Dies ist für Köpenick-Anwohner wichtig, da es eine Gelegenheit zum kulturellen Austausch und zur Gemeinschaftsbildung im Bezirk bietet.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "14fe531541c49174",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -324,6 +375,35 @@
     "ai_reasoning": "Der Eintrag gibt Informationen zu Baumfällungen in der 24. Kalenderwoche. Dies betrifft die lokale Umwelt und Grünflächen, was für Anwohner von direktem Interesse ist.",
     "district": "Treptow",
     "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "005607fd4d648858",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1672119.php",
+    "title": "Ein Spielplatz für alle: Das FEZ eröffnet Berlins neustes Inklusionsprojekt",
+    "published_at": "2026-07-25T12:00:00.000Z",
+    "ingested_at": "2026-07-28T06:29:25.024Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das FEZ-Berlin eröffnet einen neuen Inklusionsspielplatz, der als Berlins neustes Inklusionsprojekt konzipiert ist und Barrierefreiheit sowie gemeinsames Spielen für alle Kinder ermöglicht.",
+    "tags": [
+      "infrastruktur",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "FEZ",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das FEZ eröffnet einen neuen inklusiven Spielplatz, der für alle Kinder zugänglich ist. Dies ist für Köpenick-Anwohner wichtig, da es die Freizeitangebote verbessert und Inklusion im Bezirk fördert.",
+    "district": "Oberschöneweide",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4579599,
+    "lng": 13.5425661,
     "is_mock": false
   },
   {
