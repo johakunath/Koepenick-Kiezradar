@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-07-28T06:29:28.536Z",
+  "last_run": "2026-07-29T06:34:08.335Z",
   "sources": {
     "polizei-berlin": {
-      "status": "error",
-      "error": "Fetch failed 429 for https://www.berlin.de/polizei/polizeimeldungen/index/rss.php",
+      "status": "ok",
       "fetched": 0,
-      "raw_items": 0
+      "parsed": 0,
+      "raw_items": 340
     },
     "berlin-events": {
       "status": "ok",
@@ -15,7 +15,7 @@
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 3,
+      "fetched": 2,
       "parsed": 20,
       "raw_items": 428
     },
@@ -35,11 +35,11 @@
     "amtsblatt-berlin": {
       "status": "ok",
       "fetched": 0,
-      "parsed": 3,
-      "raw_items": 3
+      "parsed": 0,
+      "raw_items": 0
     }
   },
-  "new_entries": 3,
-  "total_entries": 253,
+  "new_entries": 2,
+  "total_entries": 252,
   "dry_run": false
 }

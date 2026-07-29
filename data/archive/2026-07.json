@@ -1,5 +1,32 @@
 [
   {
+    "id": "d20d398a62679c00",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1698147.php",
+    "title": "Köpenicker Salon im August: Konzert mit dem Duo Urupampa",
+    "published_at": "2026-07-29T12:00:00.000Z",
+    "ingested_at": "2026-07-29T06:34:05.913Z",
+    "raw_excerpt": "",
+    "ai_summary": "Der Köpenicker Salon veranstaltet im August ein Konzert mit dem Duo Urupampa, das südamerikanische Folklore-Musik präsentieren wird.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Ein Konzert des Duo Urupampa findet im Rahmen des Köpenicker Salons statt. Dies bietet Anwohnern eine kulturelle Freizeitaktivität und stärkt das lokale Gemeinschaftsleben.",
+    "district": "Altstadt Köpenick",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "7114e420213af2cd",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -23,6 +50,34 @@
     "ai_reasoning": "Das FamilienServiceBüro bietet mobile Beratungen an, um Familien zugängliche Unterstützung zu ermöglichen. Dies ist wichtig für Köpenick-Anwohner, da es direkte Hilfe und Informationen zu sozialen Angeboten im Bezirk bietet.",
     "district": "Treptow",
     "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "8fbd5d6a214083a8",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697866.php",
+    "title": "Umbau Bahnhof Köpenick – Sperrung der Bahnhofstraße und weitere Einschränkungen im August 2026",
+    "published_at": "2026-07-28T12:00:00.000Z",
+    "ingested_at": "2026-07-29T06:34:05.913Z",
+    "raw_excerpt": "",
+    "ai_summary": "Der Umbau des Bahnhofs Köpenick führt im August 2026 zu einer Sperrung der Bahnhofstraße und weiteren Verkehrsbeeinträchtigungen.",
+    "tags": [
+      "infrastruktur",
+      "verkehr"
+    ],
+    "location": "Bahnhof Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Der Bahnhof Köpenick wird umgebaut, was eine Sperrung der Bahnhofstraße im August 2026 zur Folge hat. Dies ist wichtig für Anwohner wegen erheblicher Auswirkungen auf den lokalen Verkehr und die Erreichbarkeit.",
+    "district": "Altstadt Köpenick",
+    "addresses": [],
+    "street": "Bahnhofstraße",
+    "lat": 52.4582325,
+    "lng": 13.5829527,
     "is_mock": false
   },
   {
