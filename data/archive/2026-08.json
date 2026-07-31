@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bc73c995b7862319",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=287368&ls=0&c=13&date_start=31.07.2026",
+    "title": "Ausstellung in der KungerKiez Galerie: VORBEIGEHEN von Schirin Moaiyeri",
+    "published_at": "2026-08-01T15:00:00.000Z",
+    "ingested_at": "2026-07-31T06:47:14.971Z",
+    "raw_excerpt": "Ort: Galerie Kungerkiez in Treptow-Köpenick",
+    "ai_summary": "Die KungerKiez Galerie in Treptow-Köpenick präsentiert die Ausstellung „VORBEIGEHEN“ der Künstlerin Schirin Moaiyeri, die am 1. August 2026 beginnt.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Kungerkiez",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "In der KungerKiez Galerie in Treptow-Köpenick wird eine Kunstausstellung eröffnet. Dies bietet Anwohnern eine kulturelle Freizeitaktivität direkt in ihrer Nähe.",
+    "event_start_at": "2026-08-01T15:00:00.000Z",
+    "venue": "Galerie Kungerkiez in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  }
+]
