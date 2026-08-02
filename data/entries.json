@@ -1,5 +1,33 @@
 [
   {
+    "id": "22e5be36b40d964e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=286516&ls=0&c=13&date_start=02.08.2026",
+    "title": "\"Frühstücks-Lesung\" im Café Plätzchen",
+    "published_at": "2026-08-04T09:30:00.000Z",
+    "ingested_at": "2026-08-02T06:36:12.583Z",
+    "raw_excerpt": "Ort: “Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "ai_summary": "Eine Frühstücks-Lesung findet im Café Plätzchen statt, organisiert vom \"Tausendfüßler\" e.V. WUHLETREFF.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "WUHLETREFF",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Es wird eine literarische Veranstaltung mit Frühstück im Café Plätzchen angeboten, organisiert von einem lokalen Verein. Dies ist für Anwohner relevant, da es eine Gelegenheit zur Freizeitgestaltung und sozialen Interaktion in ihrer unmittelbaren Umgebung darstellt.",
+    "event_start_at": "2026-08-04T09:30:00.000Z",
+    "venue": "“Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "7e46c85d2bf671cb",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -6564,33 +6592,6 @@
     "addresses": [],
     "lat": 52.4468976,
     "lng": 13.5615738,
-    "is_mock": false
-  },
-  {
-    "id": "fdfefea83ee141a5",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280249&ls=0&c=13&date_start=28.05.2026",
-    "title": "Back’ dir deinen Kiez",
-    "published_at": "2026-05-29T15:00:00.000Z",
-    "ingested_at": "2026-05-28T08:05:05.753Z",
-    "raw_excerpt": "Ort: Quartiersplatz im Kosmosviertel in Treptow-Köpenick",
-    "ai_summary": "Veranstaltung am 29. Mai um 15:00 in Quartiersplatz im Kosmosviertel in Treptow-Köpenick.",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-05-29T15:00:00.000Z",
-    "venue": "Quartiersplatz im Kosmosviertel in Treptow-Köpenick",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
     "is_mock": false
   }
 ]
