@@ -28,6 +28,31 @@
     "is_mock": false
   },
   {
+    "id": "233e3086f11ddbf2",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699158.php",
+    "title": "Fit und aktiv im Alter: 8. Olympiade 60+ lädt zum Mitmachen ein",
+    "published_at": "2026-08-03T12:00:00.000Z",
+    "ingested_at": "2026-08-03T07:31:31.569Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die 8. Olympiade 60+ lädt Senioren ein, an verschiedenen sportlichen Aktivitäten teilzunehmen, um fit und aktiv zu bleiben. Das Bezirksamt Treptow-Köpenick fördert damit die Gesundheitsprävention im Alter.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Senioren können bei der Olympiade 60+ ihre Fitness testen und soziale Kontakte knüpfen. Dies fördert die Gesundheit und das Gemeinschaftsgefühl der älteren Bevölkerung in Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "7e46c85d2bf671cb",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -6565,33 +6590,6 @@
     "addresses": [],
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
-  },
-  {
-    "id": "0411d5abdbb287bb",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280258&ls=0&c=13&date_start=28.05.2026",
-    "title": "Mit-Sing-Aktion für Alle",
-    "published_at": "2026-05-29T17:30:00.000Z",
-    "ingested_at": "2026-05-28T08:05:05.753Z",
-    "raw_excerpt": "Ort: Gemeinschaftsunterkunft Spindlersfeld Volkssolidarität e. V. in Treptow-Köpenick",
-    "ai_summary": "Veranstaltung am 29. Mai um 17:30 in Gemeinschaftsunterkunft Spindlersfeld Volkssolidarität e. V. in Treptow-Köpenick.",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Spindlersfeld",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-05-29T17:30:00.000Z",
-    "venue": "Gemeinschaftsunterkunft Spindlersfeld Volkssolidarität e. V. in Treptow-Köpenick",
-    "district": "Spindlersfeld",
-    "addresses": [],
-    "lat": 52.4468976,
-    "lng": 13.5615738,
     "is_mock": false
   }
 ]
