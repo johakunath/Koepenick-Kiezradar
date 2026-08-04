@@ -53,6 +53,56 @@
     "is_mock": false
   },
   {
+    "id": "489ce31529c36a9c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699164.php",
+    "title": "Autorin Svenja Leiber liest: 17. September",
+    "published_at": "2026-08-03T12:00:00.000Z",
+    "ingested_at": "2026-08-04T06:30:25.423Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Autorin Svenja Leiber liest am 17. September. Die Veranstaltung bietet Anwohnern eine kulturelle Bereicherung und die Möglichkeit, Literatur live zu erleben.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Svenja Leiber hält eine Lesung ab, die ein kulturelles Angebot für die Anwohnerschaft darstellt. Dies ist für Köpenick-Anwohner wichtig, da es eine Gelegenheit zur kulturellen Teilhabe und Freizeitgestaltung im Bezirk bietet.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "b41ad25070be7ba1",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699390.php",
+    "title": "Gemeinsam gegen Hitze - Kommunen der Flughafenregion setzen Klimaanpassung bereits um",
+    "published_at": "2026-08-03T12:00:00.000Z",
+    "ingested_at": "2026-08-04T06:30:25.423Z",
+    "raw_excerpt": "",
+    "ai_summary": "Kommunen in der Flughafenregion setzen Maßnahmen zur Klimaanpassung um, um gemeinsam gegen Hitze vorzugehen. Dies beinhaltet Strategien zur Reduzierung von Hitzeinseln und zur Verbesserung der Lebensqualität.",
+    "tags": [
+      "umwelt",
+      "infrastruktur",
+      "verwaltung",
+      "politik"
+    ],
+    "location": "Flughafenregion",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Kommunen der Flughafenregion setzen Maßnahmen gegen Hitze um, was die lokale Anpassung an den Klimawandel betrifft. Dies ist für Köpenick-Anwohner wichtig, da es direkte Auswirkungen auf die Lebensqualität und Umwelt im Bezirk hat.",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "7e46c85d2bf671cb",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
