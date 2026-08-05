@@ -379,59 +379,5 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false
-  },
-  {
-    "id": "6854ae5f7d950023",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280261&ls=0&c=13&date_start=29.05.2026",
-    "title": "Mitmachaktion: Aus dem Nähkästchen plaudern",
-    "published_at": "2026-05-30T10:00:00.000Z",
-    "ingested_at": "2026-05-29T08:02:05.941Z",
-    "raw_excerpt": "Ort: Textilwerkstatt Schutzhülle e.V. in Treptow-Köpenick",
-    "ai_summary": "Veranstaltung am 30. Mai um 10:00 in Textilwerkstatt Schutzhülle e.V. in Treptow-Köpenick.",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-05-30T10:00:00.000Z",
-    "venue": "Textilwerkstatt Schutzhülle e.V. in Treptow-Köpenick",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
-  },
-  {
-    "id": "1c406694c6a2f1b8",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280264&ls=0&c=13&date_start=29.05.2026",
-    "title": "Schöpfe dein Papier",
-    "published_at": "2026-05-30T10:00:00.000Z",
-    "ingested_at": "2026-05-29T08:02:05.942Z",
-    "raw_excerpt": "Ort: Keramikwerkstatt Schutzhülle e.V. in Treptow-Köpenick",
-    "ai_summary": "Veranstaltung am 30. Mai um 10:00 in Keramikwerkstatt Schutzhülle e.V. in Treptow-Köpenick.",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-05-30T10:00:00.000Z",
-    "venue": "Keramikwerkstatt Schutzhülle e.V. in Treptow-Köpenick",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
   }
 ]
