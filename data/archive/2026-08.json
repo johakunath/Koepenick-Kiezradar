@@ -1,5 +1,34 @@
 [
   {
+    "id": "a2c2e5d17e6f9ded",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700031.php",
+    "title": "Kostenlose Informationstage in der Jugendverkehrsschule Treptow-Köpenick",
+    "published_at": "2026-08-05T12:00:00.000Z",
+    "ingested_at": "2026-08-06T06:34:10.347Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Jugendverkehrsschule Treptow-Köpenick bietet kostenlose Informationstage an, um über wichtige Verkehrsthemen aufzuklären und die Verkehrssicherheit zu fördern.",
+    "tags": [
+      "verkehr",
+      "sicherheit",
+      "veranstaltung"
+    ],
+    "location": "Jugendverkehrsschule Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es finden kostenlose Informationstage in der Jugendverkehrsschule statt, die relevante Themen zur Verkehrssicherheit behandeln. Dies ist wichtig für Anwohner, um sich über präventive Maßnahmen zu informieren und die Sicherheit ihrer Kinder im Straßenverkehr zu gewährleisten.",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4584198,
+    "lng": 13.5457835,
+    "is_mock": false
+  },
+  {
     "id": "83674fe003957de5",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
