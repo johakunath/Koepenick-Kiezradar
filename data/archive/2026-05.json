@@ -243,32 +243,5 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false
-  },
-  {
-    "id": "a10912343be637f7",
-    "source_id": "amtsblatt-berlin",
-    "source": "Amtsblatt für Berlin",
-    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778#page=24",
-    "title": "Adelheidallee \tRein \tW 19 \tU \tgut",
-    "published_at": "2026-05-31T07:48:31.019Z",
-    "ingested_at": "2026-05-31T07:48:31.019Z",
-    "raw_excerpt": "548 - 786 G einfach Adlergestell TrKö O 573 - 785 U einfach Adlerplatz ChWi W K einfach Adlershofer Straße TrKö O K einfach Adlerstraße TrKö O K einfach Admiralstraße FrKr W K einfach Adolf-Heyden-Straße TrKö O K mittel Adolf-Martens-Straße StZe W K gut Adolf-Menzel-S",
-    "ai_summary": "548 - 786 G einfach Adlergestell TrKö O 573 - 785 U einfach Adlerplatz ChWi W K einfach Adlershofer Straße TrKö O K einfach Adlerstraße TrKö O K einfach Admiralstraße FrKr W K einfach Adolf-Heyden-Straße TrKö O K mittel Adolf-Martens-Straße StZe W K gut Adolf-Menzel-S",
-    "tags": [
-      "verkehr"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 24).",
-    "document_type": "pdf",
-    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778",
-    "pdf_page": 24,
-    "pdf_excerpt": "548 - 786 G einfach Adlergestell TrKö O 573 - 785 U einfach Adlerplatz ChWi W K einfach Adlershofer Straße TrKö O K einfach Adlerstraße TrKö O K einfach Admiralstraße FrKr W K einfach Adolf-Heyden-Straße TrKö O K mittel Adolf-Martens-Straße StZe W K gut Adolf-Menzel-S",
-    "district": "Adlershof",
-    "addresses": [],
-    "is_mock": false
   }
 ]

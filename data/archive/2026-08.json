@@ -1,5 +1,31 @@
 [
   {
+    "id": "4e9c4e7cc0745f1d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700019.php",
+    "title": "Beteiligung der Öffentlichkeit zum Bebauungsplan XV-25-1",
+    "published_at": "2026-08-06T12:00:00.000Z",
+    "ingested_at": "2026-08-07T05:42:26.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick leitet ein Beteiligungsverfahren für den Bebauungsplan XV-25-1 ein, bei dem Bürgerinnen und Bürger Stellungnahmen einreichen können.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.8,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Öffentlichkeit wird zur Stellungnahme zum Bebauungsplan XV-25-1 aufgerufen. Dies ist wichtig, da es die zukünftige Bebauung und Entwicklung von Treptow-Köpenick direkt beeinflusst und Anwohner somit mitgestalten können.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "a2c2e5d17e6f9ded",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",

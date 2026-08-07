@@ -1,5 +1,31 @@
 [
   {
+    "id": "4e9c4e7cc0745f1d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700019.php",
+    "title": "Beteiligung der Öffentlichkeit zum Bebauungsplan XV-25-1",
+    "published_at": "2026-08-06T12:00:00.000Z",
+    "ingested_at": "2026-08-07T05:42:26.285Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick leitet ein Beteiligungsverfahren für den Bebauungsplan XV-25-1 ein, bei dem Bürgerinnen und Bürger Stellungnahmen einreichen können.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.8,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Öffentlichkeit wird zur Stellungnahme zum Bebauungsplan XV-25-1 aufgerufen. Dies ist wichtig, da es die zukünftige Bebauung und Entwicklung von Treptow-Köpenick direkt beeinflusst und Anwohner somit mitgestalten können.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "a2c2e5d17e6f9ded",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -6559,35 +6585,6 @@
     "pdf_excerpt": "mittel An den Rohrbruchwiesen Span W K einfach An den Siedlergärten MaHe O K mittel An den Treptowers TrKö O K mittel An den Weiden Neuk W K einfach An den Zingerwiesen Pank O K mittel An der alten Gärtnerei TSch W K einfach An der Apostelkirche TSch W K einfach An der A",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
-  },
-  {
-    "id": "6a75cb768c1b36a1",
-    "source_id": "amtsblatt-berlin",
-    "source": "Amtsblatt für Berlin",
-    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778#page=23",
-    "title": "TrKö \tTreptow-Köpenick",
-    "published_at": "2026-05-31T07:48:31.019Z",
-    "ingested_at": "2026-05-31T07:48:31.019Z",
-    "raw_excerpt": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "ai_summary": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "tags": [
-      "infrastruktur"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 23).",
-    "document_type": "pdf",
-    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778",
-    "pdf_page": 23,
-    "pdf_excerpt": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "district": "Friedrichshagen",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
     "is_mock": false
   }
 ]
