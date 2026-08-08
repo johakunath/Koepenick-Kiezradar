@@ -214,34 +214,5 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false
-  },
-  {
-    "id": "6a75cb768c1b36a1",
-    "source_id": "amtsblatt-berlin",
-    "source": "Amtsblatt für Berlin",
-    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778#page=23",
-    "title": "TrKö \tTreptow-Köpenick",
-    "published_at": "2026-05-31T07:48:31.019Z",
-    "ingested_at": "2026-05-31T07:48:31.019Z",
-    "raw_excerpt": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "ai_summary": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "tags": [
-      "infrastruktur"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 23).",
-    "document_type": "pdf",
-    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_22_1305_1420_online.pdf?ts=1779956778",
-    "pdf_page": 23,
-    "pdf_excerpt": "TrKö Treptow-Köpenick Adlershof Adler Altglienicke Altgl Alt-Treptow Alttr Baumschulenweg Baums Bohnsdorf Bohnd Friedrichshagen Frihg Grünau Grüna Johannisthal Johth Köpenick Köpen Müggelheim Müggh Niederschöneweide Niesw Oberschöneweide Obers Plänterwald Plänt Rahnsdorf Rahnd Schmöck",
-    "district": "Friedrichshagen",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
   }
 ]
