@@ -1,5 +1,31 @@
 [
   {
+    "id": "6e64550fede27a4e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=287359&ls=0&c=13&date_start=10.08.2026",
+    "title": "Köpenicker Salon im August: Konzert mit dem Duo Urupampa",
+    "published_at": "2026-08-11T19:00:00.000Z",
+    "ingested_at": "2026-08-10T05:36:04.394Z",
+    "raw_excerpt": "Ort: Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
+    "ai_summary": "Der Köpenicker Salon veranstaltet im August ein Konzert mit dem Duo Urupampa im Stadtteilzentrum des Rabenhaus e.V.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Ein Konzert mit dem Duo Urupampa findet im Köpenicker Salon statt, organisiert vom Rabenhaus e.V. Dies bietet Köpenicker Anwohnern eine kulturelle Freizeitaktivität in ihrem Stadtteil.",
+    "event_start_at": "2026-08-11T19:00:00.000Z",
+    "venue": "Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "9d196bb09e8f2a3d",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",

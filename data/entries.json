@@ -1,5 +1,31 @@
 [
   {
+    "id": "6e64550fede27a4e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=287359&ls=0&c=13&date_start=10.08.2026",
+    "title": "Köpenicker Salon im August: Konzert mit dem Duo Urupampa",
+    "published_at": "2026-08-11T19:00:00.000Z",
+    "ingested_at": "2026-08-10T05:36:04.394Z",
+    "raw_excerpt": "Ort: Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
+    "ai_summary": "Der Köpenicker Salon veranstaltet im August ein Konzert mit dem Duo Urupampa im Stadtteilzentrum des Rabenhaus e.V.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Ein Konzert mit dem Duo Urupampa findet im Köpenicker Salon statt, organisiert vom Rabenhaus e.V. Dies bietet Köpenicker Anwohnern eine kulturelle Freizeitaktivität in ihrem Stadtteil.",
+    "event_start_at": "2026-08-11T19:00:00.000Z",
+    "venue": "Stadtteilzentrum des Rabenhaus e.V. in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "9d196bb09e8f2a3d",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -6581,29 +6607,6 @@
     "title": "Musikschulfest am 21. Juni 2026",
     "published_at": "2026-06-02T12:00:00.000Z",
     "ingested_at": "2026-06-03T08:57:50.134Z",
-    "raw_excerpt": "",
-    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
-    "tags": [
-      "verwaltung"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
-  },
-  {
-    "id": "5f6149c555d1aca6",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1675747.php",
-    "title": "Bezirksamt informiert online über die Planungen zur Umgestaltung des Schmollerplatzes – Beteiligung auf mein.Berlin.de startet am 01.06.2026",
-    "published_at": "2026-06-01T12:00:00.000Z",
-    "ingested_at": "2026-06-01T09:29:41.292Z",
     "raw_excerpt": "",
     "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
     "tags": [
