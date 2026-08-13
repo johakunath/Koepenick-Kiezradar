@@ -1,5 +1,33 @@
 [
   {
+    "id": "7050da33e441742b",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=286486&ls=0&c=13&date_start=13.08.2026",
+    "title": "Gemeinsames Gedenken zum 65. Jahrestag des Baus der Berliner Mauer",
+    "published_at": "2026-08-13T15:30:00.000Z",
+    "ingested_at": "2026-08-13T05:41:49.841Z",
+    "raw_excerpt": "Ort: Friedhof Baumschulenweg in Treptow-Köpenick",
+    "ai_summary": "Am 13. August 2026 findet auf dem Friedhof Baumschulenweg ein gemeinsames Gedenken zum 65. Jahrestag des Baus der Berliner Mauer statt.",
+    "tags": [
+      "veranstaltung",
+      "politik",
+      "sonstiges"
+    ],
+    "location": "Friedhof Baumschulenweg",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.8,
+    "election_relevant": false,
+    "ai_reasoning": "Es findet eine Gedenkveranstaltung zum Jahrestag des Mauerbaus statt, die an historische Ereignisse erinnert. Für Anwohner von Köpenick ist dies wichtig, um die lokale Geschichte und ihre Bedeutung zu verstehen und an einer öffentlichen Gedenkfeier teilzunehmen.",
+    "event_start_at": "2026-08-13T15:30:00.000Z",
+    "venue": "Friedhof Baumschulenweg in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "3e24b27a62cf5bcd",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -58,6 +86,32 @@
     "street": "Wilhelm-Bölsche-Straße",
     "lat": 52.4512328,
     "lng": 13.6191116,
+    "is_mock": false
+  },
+  {
+    "id": "c6cba90e256cb3d9",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1702011.php",
+    "title": "Sprechstunden des Bezirksamtes im September 2026",
+    "published_at": "2026-08-12T12:00:00.000Z",
+    "ingested_at": "2026-08-13T05:41:49.843Z",
+    "raw_excerpt": "",
+    "ai_summary": "Im September 2026 bietet das Bezirksamt Treptow-Köpenick spezielle Sprechstunden an, die Bürgern direkten Kontakt zu den Verwaltungsmitarbeitern ermöglichen.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Bezirksamt bietet Sprechstunden an, um Anliegen der Bürger direkt zu bearbeiten und Kontakt mit der Verwaltung zu ermöglichen. Dies ist für Anwohner wichtig, da sie so ihre Fragen klären und Probleme direkt mit den zuständigen Stellen besprechen können.",
+    "district": "Treptow",
+    "addresses": [],
     "is_mock": false
   },
   {
