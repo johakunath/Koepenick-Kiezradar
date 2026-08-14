@@ -2554,55 +2554,5 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false
-  },
-  {
-    "id": "c30ba90b691c5879",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=280456&ls=0&c=13&date_start=04.06.2026",
-    "title": "„Langen Woche der Kiezgeschichte“ - Von der Köpenicker Altstadt nach Spindlersfeld: ein Spaziergang zur Wäschereigeschichte",
-    "published_at": "2026-06-06T13:00:00.000Z",
-    "ingested_at": "2026-06-04T08:23:01.496Z",
-    "raw_excerpt": "Ort: Mutter Lustig in Treptow-Köpenick",
-    "ai_summary": "Veranstaltung am 6. Juni um 13:00 in Mutter Lustig in Treptow-Köpenick.",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-06-06T13:00:00.000Z",
-    "venue": "Mutter Lustig in Treptow-Köpenick",
-    "district": "Altstadt Köpenick",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
-  },
-  {
-    "id": "c6b4e5fe55e9cb70",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1677374.php",
-    "title": "Tag der Organspende 2026: Bezirksstadträtin Carolin Weingart ruft zu mehr Bewusstsein und Verantwortung auf",
-    "published_at": "2026-06-06T12:00:00.000Z",
-    "ingested_at": "2026-06-07T07:57:09.763Z",
-    "raw_excerpt": "",
-    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
-    "tags": [
-      "verwaltung"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
   }
 ]
