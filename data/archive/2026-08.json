@@ -1,5 +1,33 @@
 [
   {
+    "id": "3f6a353ede0c83a5",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=287371&ls=0&c=13&date_start=15.08.2026",
+    "title": "Finissage in der KungerKiez Galerie: VORBEIGEHEN von Schirin Moaiyeri",
+    "published_at": "2026-08-15T18:00:00.000Z",
+    "ingested_at": "2026-08-15T04:34:26.292Z",
+    "raw_excerpt": "Ort: Galerie Kungerkiez in Treptow-Köpenick",
+    "ai_summary": "Die Finissage der Ausstellung „VORBEIGEHEN“ von Schirin Moaiyeri findet in der Galerie Kungerkiez statt und markiert das Ende der Kunstpräsentation.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Kungerkiez",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Es findet die Finissage einer Kunstausstellung statt, welche das Ende der Ausstellung markiert. Dies ist eine kulturelle Veranstaltung, die das Freizeitangebot für Anwohner bereichert.",
+    "event_start_at": "2026-08-15T18:00:00.000Z",
+    "venue": "Galerie Kungerkiez in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "25623d6452d38f85",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -25,6 +53,32 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
+    "is_mock": false
+  },
+  {
+    "id": "9cf831008c600b4b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703153.php",
+    "title": "Baumfällungen in der Zeit vom 17. bis 21. August 2026",
+    "published_at": "2026-08-14T12:00:00.000Z",
+    "ingested_at": "2026-08-15T04:34:26.294Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick informiert über geplante Baumfällungen, die im Zeitraum vom 17. bis 21. August 2026 durchgeführt werden.",
+    "tags": [
+      "infrastruktur",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Bezirksamt kündigt Baumfällungen für eine spezifische Kalenderwoche an. Dies kann Auswirkungen auf das lokale Stadtbild und die Umwelt haben, was für Anwohner relevant ist.",
+    "district": "Treptow",
+    "addresses": [],
     "is_mock": false
   },
   {
