@@ -1,5 +1,31 @@
 [
   {
+    "id": "958ad2360e2f59ec",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=286525&ls=0&c=13&date_start=19.08.2026",
+    "title": "Wir bitten zu Tisch! Mittagessen im Wuhletreff",
+    "published_at": "2026-08-20T12:30:00.000Z",
+    "ingested_at": "2026-08-19T04:39:54.182Z",
+    "raw_excerpt": "Ort: “Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "ai_summary": "Der Wuhletreff in Treptow-Köpenick lädt zu einem Mittagessen ein, das vom Verein „Tausendfüßler“ e. V. organisiert wird.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "WUHLETREFF",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Beim Mittagessen im Wuhletreff können Anwohner der Nachbarschaft gemeinsam essen und sich austauschen. Dies fördert den sozialen Zusammenhalt und bietet eine Möglichkeit für Gemeinschaftserlebnisse.",
+    "event_start_at": "2026-08-20T12:30:00.000Z",
+    "venue": "“Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "4a6fcf77d4560666",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -26,6 +52,58 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
+    "is_mock": false
+  },
+  {
+    "id": "580a8eac8f9df2a7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704080.php",
+    "title": "Mit tiefer Trauer nimmt das Bezirksamt Treptow-Köpenick Abschied von Mathias Braesel",
+    "published_at": "2026-08-18T12:00:00.000Z",
+    "ingested_at": "2026-08-19T04:39:54.184Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick hat mit tiefer Trauer Abschied von Mathias Braesel genommen, dessen Tod eine Lücke in der Bezirksverwaltung hinterlässt.",
+    "tags": [
+      "verwaltung",
+      "politik"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Bezirksamt nimmt Abschied von einem verstorbenen Mitarbeiter, was die interne Struktur und das Personalwesen des Bezirksamtes betrifft. Dies zeigt die menschliche Seite der Verwaltung und betrifft indirekt die Funktionsfähigkeit der Bezirksverwaltung.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "8999a03343700b10",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699949.php",
+    "title": "Bauvorhaben: Erweiterungsneubau Schule an den Püttbergen",
+    "published_at": "2026-08-18T12:00:00.000Z",
+    "ingested_at": "2026-08-19T04:39:54.184Z",
+    "raw_excerpt": "",
+    "ai_summary": "Ein Erweiterungsneubau ist für die Schule an den Püttbergen geplant, um die Bildungsinfrastruktur in Treptow-Köpenick zu verbessern.",
+    "tags": [
+      "infrastruktur",
+      "verwaltung",
+      "politik"
+    ],
+    "location": "Püttbergen",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Es wird ein Erweiterungsneubau für die Schule an den Püttbergen geplant, was neue Kapazitäten für Schüler schafft. Dies ist für Anwohner wichtig, da es die Bildungssituation ihrer Kinder direkt betrifft und die lokale Infrastruktur verbessert.",
+    "addresses": [],
+    "lat": 52.433921,
+    "lng": 13.7037231,
     "is_mock": false
   },
   {
