@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-20T04:40:06.929Z",
+  "last_run": "2026-08-21T04:41:05.667Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -11,11 +11,11 @@
       "status": "ok",
       "fetched": 1,
       "parsed": 10,
-      "raw_items": 421
+      "raw_items": 422
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 5,
+      "fetched": 2,
       "parsed": 20,
       "raw_items": 428
     },
@@ -39,7 +39,7 @@
       "raw_items": 0
     }
   },
-  "new_entries": 6,
-  "total_entries": 256,
+  "new_entries": 3,
+  "total_entries": 253,
   "dry_run": false
 }

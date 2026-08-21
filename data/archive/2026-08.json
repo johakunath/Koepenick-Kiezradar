@@ -1,5 +1,32 @@
 [
   {
+    "id": "bfe99d07507d4b1c",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=289001&ls=0&c=13&date_start=21.08.2026",
+    "title": "Kiezspaziergang in italienischer Sprache",
+    "published_at": "2026-08-22T15:00:00.000Z",
+    "ingested_at": "2026-08-21T04:41:01.875Z",
+    "raw_excerpt": "Ort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick bietet einen Kiezspaziergang in italienischer Sprache an, der sich mit der Geschichte und den Ereignissen der NS-Zwangsarbeit befasst.",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Ein Kiezspaziergang in italienischer Sprache beleuchtet die Geschichte der NS-Zwangsarbeit. Dies ist für Anwohner wichtig, um die lokale Geschichte zu verstehen und an einem kulturellen Austausch teilzunehmen.",
+    "event_start_at": "2026-08-22T15:00:00.000Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "aea67d067c9ac164",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -51,6 +78,60 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
+    "is_mock": false
+  },
+  {
+    "id": "a27cd2c1c5625f9c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php",
+    "title": "Bezirke fordern die Absicherung der sozialen Infrastruktur in den Neuen Stadtquartieren",
+    "published_at": "2026-08-20T12:00:00.000Z",
+    "ingested_at": "2026-08-21T04:41:01.876Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Berliner Bezirke, darunter auch Treptow-Köpenick, fordern die gesicherte Finanzierung und den Ausbau der sozialen Infrastruktur in neu entstehenden Stadtquartieren, um eine umfassende Versorgung der Bewohner zu gewährleisten.",
+    "tags": [
+      "politik",
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.9,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Bezirke fordern eine Absicherung der sozialen Infrastruktur in neuen Stadtquartieren. Dies ist für Köpenick-Anwohner wichtig, da es die Verfügbarkeit von Kitas, Schulen und Freizeiteinrichtungen in wachsenden Gebieten direkt beeinflusst.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "32933692053af04d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php",
+    "title": "Fließstraße in Niederschöneweide wird erneuert: Bauarbeiten zwischen Flutstraße und Hasselwerderstraße starten am 24. August 2026",
+    "published_at": "2026-08-20T12:00:00.000Z",
+    "ingested_at": "2026-08-21T04:41:01.876Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Fließstraße in Niederschöneweide wird zwischen Flutstraße und Hasselwerderstraße erneuert, wobei die Bauarbeiten am 24. August 2026 beginnen.",
+    "tags": [
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Niederschöneweide",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Fließstraße in Niederschöneweide wird erneuert, was Bauarbeiten zwischen Flutstraße und Hasselwerderstraße ab dem 24. August 2026 bedeutet. Dies ist für Köpenick-Anwohner wichtig, da es zu Verkehrsbehinderungen und Umleitungen kommen kann.",
+    "district": "Niederschöneweide",
+    "addresses": [],
+    "street": "Fließstraße",
+    "lat": 52.4548197,
+    "lng": 13.5178766,
     "is_mock": false
   },
   {
