@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-21T04:41:05.667Z",
+  "last_run": "2026-08-22T04:35:53.251Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -9,19 +9,19 @@
     },
     "berlin-events": {
       "status": "ok",
-      "fetched": 1,
+      "fetched": 0,
       "parsed": 10,
-      "raw_items": 422
+      "raw_items": 423
     },
     "bezirksamt-tk": {
-      "status": "ok",
-      "fetched": 2,
-      "parsed": 20,
-      "raw_items": 428
+      "status": "error",
+      "error": "Fetch failed 429 for https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/",
+      "fetched": 0,
+      "raw_items": 0
     },
     "bvv-tk": {
       "status": "ok",
-      "fetched": 0,
+      "fetched": 8,
       "parsed": 10,
       "raw_items": 10
     },
@@ -34,12 +34,12 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "fetched": 0,
-      "parsed": 0,
-      "raw_items": 0
+      "fetched": 1,
+      "parsed": 3,
+      "raw_items": 3
     }
   },
-  "new_entries": 3,
-  "total_entries": 253,
+  "new_entries": 9,
+  "total_entries": 259,
   "dry_run": false
 }
