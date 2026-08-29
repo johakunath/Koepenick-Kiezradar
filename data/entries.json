@@ -1,5 +1,33 @@
 [
   {
+    "id": "b142153793ca7930",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=286531&ls=0&c=13&date_start=29.08.2026",
+    "title": "Montagscafé: Lenz & Friends",
+    "published_at": "2026-08-31T14:30:00.000Z",
+    "ingested_at": "2026-08-29T10:54:52.849Z",
+    "raw_excerpt": "Ort: “Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "ai_summary": "Das Montagscafé \"Lenz & Friends\" findet im \"Tausendfüßler\" e. V. WUHLETREFF statt und bietet Anwohnern eine Gelegenheit zum Austausch.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "WUHLETREFF",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Ein Montagscafé bietet Anwohnern eine soziale Zusammenkunft. Dies fördert den Gemeinschaftssinn und das soziale Leben im Kiez Treptow-Köpenick.",
+    "event_start_at": "2026-08-31T14:30:00.000Z",
+    "venue": "“Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "db95e42e4a13be7b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -6815,31 +6843,6 @@
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
-  },
-  {
-    "id": "2e3d528c298d9561",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1684765.php",
-    "title": "Nachruf: Das Bezirksamt Treptow-Köpenick von Berlin trauert um Bianca Klose",
-    "published_at": "2026-06-23T12:00:00.000Z",
-    "ingested_at": "2026-06-24T07:44:41.438Z",
-    "raw_excerpt": "",
-    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
-    "tags": [
-      "verwaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
-    "district": "Treptow",
-    "addresses": [],
-    "lat": 52.4450491,
-    "lng": 13.5754153,
     "is_mock": false
   }
 ]
