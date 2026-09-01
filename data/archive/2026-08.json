@@ -105,6 +105,35 @@
     "is_mock": false
   },
   {
+    "id": "e12a29586c11461d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708853.php",
+    "title": "Fertigstellung der Radickestraße in Adlershof",
+    "published_at": "2026-08-31T12:00:00.000Z",
+    "ingested_at": "2026-09-01T09:16:20.826Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Bauarbeiten zur Fertigstellung der Radickestraße im Stadtteil Adlershof sind abgeschlossen worden.",
+    "tags": [
+      "infrastruktur",
+      "verkehr",
+      "verwaltung"
+    ],
+    "location": "Radickestraße, Adlershof",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Radickestraße in Adlershof ist fertiggestellt worden, was die Infrastruktur verbessert. Dies ist für Anwohner wichtig, da es die Verkehrssituation und Lebensqualität in Adlershof direkt beeinflusst.",
+    "district": "Adlershof",
+    "addresses": [],
+    "street": "Radickestraße",
+    "lat": 52.436174,
+    "lng": 13.5496881,
+    "is_mock": false
+  },
+  {
     "id": "db95e42e4a13be7b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
