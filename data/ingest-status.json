@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-04T08:38:40.446Z",
+  "last_run": "2026-09-05T08:11:27.451Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -9,19 +9,19 @@
     },
     "berlin-events": {
       "status": "ok",
-      "fetched": 0,
+      "fetched": 1,
       "parsed": 10,
       "raw_items": 423
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 4,
+      "fetched": 0,
       "parsed": 20,
       "raw_items": 428
     },
     "bvv-tk": {
       "status": "ok",
-      "fetched": 1,
+      "fetched": 0,
       "parsed": 10,
       "raw_items": 10
     },
@@ -39,7 +39,7 @@
       "raw_items": 0
     }
   },
-  "new_entries": 5,
-  "total_entries": 255,
+  "new_entries": 1,
+  "total_entries": 251,
   "dry_run": false
 }
