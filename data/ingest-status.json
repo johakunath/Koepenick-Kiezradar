@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-09T08:49:18.980Z",
+  "last_run": "2026-09-10T08:47:50.055Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
@@ -9,21 +9,21 @@
     },
     "berlin-events": {
       "status": "ok",
-      "fetched": 1,
+      "fetched": 2,
       "parsed": 10,
       "raw_items": 424
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 2,
+      "fetched": 3,
       "parsed": 20,
       "raw_items": 430
     },
     "bvv-tk": {
-      "status": "ok",
+      "status": "error",
+      "error": "Fetch failed 429 for https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
       "fetched": 0,
-      "parsed": 10,
-      "raw_items": 10
+      "raw_items": 0
     },
     "viz-baustellen": {
       "status": "skipped",
@@ -39,7 +39,7 @@
       "raw_items": 0
     }
   },
-  "new_entries": 3,
-  "total_entries": 253,
+  "new_entries": 5,
+  "total_entries": 255,
   "dry_run": false
 }
