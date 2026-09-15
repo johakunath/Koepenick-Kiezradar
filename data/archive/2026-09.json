@@ -1,5 +1,58 @@
 [
   {
+    "id": "6ca3476665b594a4",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1713876.php",
+    "title": "Sperrung der Hämmerlingstraße von Mitte September bis Mitte Dezember",
+    "published_at": "2026-09-15T12:00:00.000Z",
+    "ingested_at": "2026-09-15T09:17:10.245Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Hämmerlingstraße wird voraussichtlich von Mitte September bis Mitte Dezember für den Verkehr gesperrt. Diese Maßnahme wird die lokale Infrastruktur und den Verkehrsfluss in Köpenick temporär beeinträchtigen.",
+    "tags": [
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Hämmerlingstraße",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Hämmerlingstraße wird von Mitte September bis Mitte Dezember gesperrt, was zu Umleitungen und Beeinträchtigungen im Verkehrsfluss führen wird. Anwohner müssen mit längeren Fahrzeiten und Änderungen im Nahverkehr rechnen, was den Alltag stark beeinflusst.",
+    "addresses": [],
+    "street": "Hämmerlingstraße",
+    "lat": 52.4594528,
+    "lng": 13.5732772,
+    "is_mock": false
+  },
+  {
+    "id": "92ec3db6b39759c4",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1713473.php",
+    "title": "Spielstraßenaktionstag am 22. September: Treptow-Köpenick schafft Raum für Spiel und Begegnung",
+    "published_at": "2026-09-15T12:00:00.000Z",
+    "ingested_at": "2026-09-15T09:17:10.245Z",
+    "raw_excerpt": "",
+    "ai_summary": "Am 22. September findet ein Spielstraßenaktionstag in Treptow-Köpenick statt, der öffentliche Räume für Spiel und Begegnung freigibt. Diese Initiative fördert die Gemeinschaft und kinderfreundliche Stadtentwicklung.",
+    "tags": [
+      "veranstaltung",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Ein Spielstraßenaktionstag am 22. September macht Straßen temporär für Kinder und Anwohner nutzbar, wodurch Spiel und Begegnung gefördert werden. Dies verbessert die Lebensqualität vor Ort und stärkt das Gemeinschaftsgefühl der Anwohner.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "9864df661b1d6076",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
