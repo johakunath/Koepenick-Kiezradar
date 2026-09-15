@@ -259,7 +259,7 @@ export function normalizeEntry(entry: Entry): Entry {
     kind: normalizedKind,
     tags,
   };
-  const titleDate = !entry.event_start_at && tags.includes("veranstaltung") ? eventDateFromTitle(entry.title) : null;
+  const titleDate = !entry.event_start_at && tags.includes("veranstaltung") ? eventDateFromTitle(entry.title, entry.published_at) : null;
   const topicSlugs = [
     ...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)]),
   ];
@@ -267,7 +267,7 @@ export function normalizeEntry(entry: Entry): Entry {
   return {
     ...baseEntry,
     slug: entry.slug ?? `${slugify(entry.title)}--${entry.id}`,
-    ...(titleDate ? { event_start_at: titleDate.iso, event_date_precision: "day" as const, event_date_origin: "title" as const } : {}),
+    ...(titleDate ? { event_start_at: titleDate.iso, event_date_precision: "day" as const, event_date_origin: titleDate.inferredYear ? "title-context" as const : "title" as const } : {}),
     ...(entry.event_start_at && !entry.event_date_precision ? { event_date_precision: "day" as const, event_date_origin: "legacy" as const } : {}),
     ai_summary: isThinSummary(baseEntry)
       ? fallbackSummary(baseEntry)

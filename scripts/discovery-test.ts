@@ -159,6 +159,15 @@ test("week boundaries and ISO year are independent of the server timezone", () =
   assert.equal(searchEntries([entry({ venue: "Testmuseum" })], "Testmuseum").length, 1);
 });
 
+test("yearless announcements require nearby publication context and do not remain upcoming forever", () => {
+  assert.equal(eventDateFromTitle("Familienfest am 13. September", "2026-09-01T12:00:00Z")?.iso, "2026-09-13T10:00:00.000Z");
+  assert.equal(eventDateFromTitle("Konzert am 4. Januar", "2026-12-20T12:00:00Z")?.iso, "2027-01-04T11:00:00.000Z");
+  assert.equal(eventDateFromTitle("Rückblick am 13. September", "2026-10-01T12:00:00Z"), null);
+  const expired = normalizeEntry(entry({ title: "Familienfest am 13. September", published_at: "2026-09-01T12:00:00Z", event_start_at: undefined }));
+  assert.equal(expired.event_date_origin, "title-context");
+  assert.equal(filterDiscovery([expired], DEFAULT_FILTERS, now).length, 0);
+});
+
 test("manual import requires a secret and cannot dispatch from a preview", async () => {
   const original = { secret: process.env.ADMIN_INGEST_SECRET, token: process.env.GITHUB_TOKEN, env: process.env.VERCEL_ENV, fetch: globalThis.fetch };
   let dispatched = 0;

@@ -37,7 +37,7 @@ export interface Entry {
   event_start_at?: string;
   event_end_at?: string;
   event_date_precision?: "day" | "time";
-  event_date_origin?: "source" | "title" | "legacy";
+  event_date_origin?: "source" | "title" | "title-context" | "legacy";
   summary_origin?: "ai" | "source" | "fallback";
   geocode_precision?: "address" | "venue" | "area";
   last_seen_at?: string;

@@ -38,6 +38,7 @@ export default async function EntryDetailPage({ params, searchParams }: {
       <div className="detail-facts my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-2">
         <div><p className="mb-1 flex items-center gap-2 text-xs uppercase tracking-wide text-ink-soft"><CalendarDays size={14} />{event ? "Wann" : "Veröffentlicht"}</p><p className="font-semibold">{formatEntryDate(entry)}</p>
           {entry.event_date_origin === "title" && <p className="mt-1 text-xs text-ink-soft">Datum aus der Ankündigung; Uhrzeit bitte beim Veranstalter prüfen.</p>}
+          {entry.event_date_origin === "title-context" && <p className="mt-1 text-xs text-ink-soft">Tag und Monat aus dem Titel; Jahr aus dem Veröffentlichungsdatum abgeleitet. Termin bitte in der Quelle bestätigen.</p>}
           {entry.event_date_origin === "legacy" && <p className="mt-1 text-xs text-ink-soft">Älterer Import: Die Uhrzeit ist noch nicht verifiziert.</p>}
           {expired && <p className="mt-2 font-semibold text-brick">Dieser Termin liegt in der Vergangenheit.</p>}
         </div>
