@@ -16,6 +16,8 @@ export interface Entry {
   source_record_id?: string;
   source: string;
   source_url: string;
+  source_refs?: SourceReference[];
+  alias_ids?: string[];
   title: string;
   published_at: string;
   ingested_at: string;
@@ -34,6 +36,12 @@ export interface Entry {
   ai_reasoning?: string;
   event_start_at?: string;
   event_end_at?: string;
+  event_date_precision?: "day" | "time";
+  event_date_origin?: "source" | "title" | "legacy";
+  summary_origin?: "ai" | "source" | "fallback";
+  geocode_precision?: "address" | "venue" | "area";
+  last_seen_at?: string;
+  enrichment_version?: number;
   venue?: string;
   document_type?: "rss" | "html" | "pdf" | "oparl" | "geojson";
   document_url?: string;
@@ -45,6 +53,23 @@ export interface Entry {
   lat?: number;
   lng?: number;
   is_mock?: boolean;
+}
+
+export interface SourceReference { name: string; url: string }
+
+export interface SourceHealth {
+  status: string;
+  parsed?: number;
+  fetched?: number;
+  raw_items?: number;
+  error?: string;
+  last_success_at?: string;
+}
+
+export interface IngestHealth {
+  last_run?: string;
+  sources: Record<string, SourceHealth>;
+  ai_error?: string;
 }
 
 export interface Topic {
@@ -78,6 +103,7 @@ export interface Body {
 }
 
 export interface Meeting {
+  is_mock?: boolean;
   slug: string;
   title: string;
   kind: "sitzung" | "veranstaltung";

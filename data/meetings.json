@@ -9,7 +9,8 @@
     "district_slug": "altstadt-koepenick",
     "source_url": "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
     "public_note": "Öffentliche Veranstaltung laut Berlin.de Veranstaltungskalender.",
-    "summary": "Nachbarschaft, Vereine und lokale Initiativen kommen im Volkspark Köpenick zusammen."
+    "summary": "Nachbarschaft, Vereine und lokale Initiativen kommen im Volkspark Köpenick zusammen.",
+    "is_mock": true
   },
   {
     "slug": "bvv-sitzung-mai-2026-schulplatzmangel",
@@ -23,6 +24,7 @@
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
     "public_note": "Beispieltermin bis zur echten BVV-Sitzungsanbindung.",
     "agenda_item": "Schulplatzmangel, Polizeipräsenz und lokale Infrastruktur",
-    "summary": "Mock-Sitzung für die spätere Darstellung von Gremien, Tagesordnung und Drucksachen."
+    "summary": "Mock-Sitzung für die spätere Darstellung von Gremien, Tagesordnung und Drucksachen.",
+    "is_mock": true
   }
 ]

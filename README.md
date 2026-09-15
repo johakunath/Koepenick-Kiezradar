@@ -62,7 +62,7 @@ Eine Datenbank kommt erst bei größerem Archiv, echter Volltextsuche, Admin-Kor
 
 ## Wichtige Routen
 
-- `/` Feed mit Tag-/Ortsfilter und Search-Lite
+- `/` Entdecken mit Heute-/Wochenend-/Interessenfilter, Suche und Kiezmeldungen
 - `/eintrag/[slug]` interne Detailseiten
 - `/themen`, `/thema/[slug]`
 - `/orte`
@@ -78,12 +78,16 @@ Eine Datenbank kommt erst bei größerem Archiv, echter Volltextsuche, Admin-Kor
 - Polizei Berlin Meldungen: https://www.berlin.de/polizei/polizeimeldungen/
 - Berlin.de Veranstaltungskalender Treptow-Köpenick: https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=
 - Bezirksamt Treptow-Köpenick Pressemitteilungen
-- BVV / politische Dokumente als experimentelle Quelle
+- BVV / politische Dokumente geplant; der frühere doppelte Pressefeed ist deaktiviert
 - VIZ Berlin und Amtsblatt sind vorbereitet, aber aktuell fehleranfällig und werden defensiv behandelt.
+
+## Aktueller Discovery-Review
+
+Siehe [Review und Rollout](docs/discovery-review.md) für Befunde, getrennte Funktions-/Design-Branches und Prüfschritte. `pnpm test` prüft Parser, Daten, Terminidentität, Archivierung, Filter und Zugriffsschutz. Details zur optionalen manuellen Import-Freigabe stehen in `.env.example`.
 
 ## Nächster Datenqualitäts-Schritt
 
-Mehrfach-Tags lösen noch keine Duplikate. Wenn dieselbe reale Meldung aus zwei Quellen kommt, z. B. Bezirksamt + Veranstaltungskalender, soll ein nächster PR kanonische Einträge, `duplicate_of`/`canonical_id` und mehrere Quellenlinks pro Detailseite einführen.
+Gleiche Quell-URLs und Termin-Vorkommen werden mit Mehrfach-Tags, Quellenlinks und Alias-IDs konsolidiert. Unterschiedliche URLs verschiedener Herausgeber werden noch nicht automatisch als dasselbe Ereignis erkannt.
 
 ## Lizenz
 

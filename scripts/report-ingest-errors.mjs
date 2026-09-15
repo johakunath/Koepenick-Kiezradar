@@ -23,8 +23,8 @@ function findProblems(status) {
   }
 
   for (const [sourceId, source] of Object.entries(status.sources ?? {})) {
-    if (source.status === "error") {
-      problems.push(`**Quelle \`${sourceId}\`:** Fetch fehlgeschlagen — ${source.error}`);
+    if (source.status === "error" || source.status === "warning") {
+      problems.push(`**Quelle \`${sourceId}\`:** Import eingeschränkt — ${source.error}`);
     } else if (
       source.status === "ok" &&
       source.parsed === 0 &&

@@ -15,7 +15,7 @@ export async function fetchAmtsblattEntries() {
 
   for (const url of AMTSBLATT_INDEX_URLS) {
     try {
-      const resp = await fetch(url, { headers: { "user-agent": UA } });
+      const resp = await fetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(20000) });
       if (!resp.ok) {
         console.log(`Amtsblatt: ${url} → ${resp.status}`);
         continue;
@@ -43,7 +43,7 @@ export async function fetchAmtsblattEntries() {
 
   for (const pdfUrl of pdfLinks) {
     try {
-      const resp = await fetch(pdfUrl, { headers: { "user-agent": UA } });
+      const resp = await fetch(pdfUrl, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(20000) });
       if (!resp.ok) continue;
 
       const buffer = Buffer.from(await resp.arrayBuffer());

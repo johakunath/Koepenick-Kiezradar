@@ -5,47 +5,32 @@ import { useState } from "react";
 export default function TriggerButton() {
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [secret, setSecret] = useState("");
 
-  const trigger = async () => {
+  async function trigger(event: React.FormEvent) {
+    event.preventDefault();
     setState("loading");
     try {
-      const res = await fetch("/api/trigger-ingest", { method: "POST" });
-      if (res.ok) {
-        setState("done");
-      } else {
+      const res = await fetch("/api/trigger-ingest", { method: "POST", headers: { Authorization: `Bearer ${secret}` } });
+      if (res.ok) { setSecret(""); setState("done"); }
+      else {
         const body = await res.json().catch(() => ({}));
         setErrorMsg(body.error ?? `HTTP ${res.status}`);
         setState("error");
       }
-    } catch {
-      setErrorMsg("Netzwerkfehler");
-      setState("error");
-    }
-  };
-
-  if (state === "done") {
-    return (
-      <p className="text-sm" style={{ color: "var(--forest)" }}>
-        Gestartet — läuft ca. 2 Min. auf GitHub Actions.
-      </p>
-    );
+    } catch { setErrorMsg("Netzwerkfehler"); setState("error"); }
   }
 
-  return (
-    <div className="space-y-2">
-      <button
-        onClick={trigger}
-        disabled={state === "loading"}
-        className="px-4 py-2 rounded text-sm font-medium transition-opacity disabled:opacity-50"
-        style={{ background: "var(--water-mid)", color: "#fff" }}
-      >
-        {state === "loading" ? "Wird gestartet…" : "Ingest jetzt starten"}
-      </button>
-      {state === "error" && (
-        <p className="text-xs" style={{ color: "var(--brick)" }}>
-          Fehler: {errorMsg}
-        </p>
-      )}
-    </div>
-  );
+  if (state === "done") return <p role="status" className="text-sm text-forest">Gestartet. Den Fortschritt findest du in GitHub Actions.</p>;
+
+  return <form onSubmit={trigger} className="space-y-3">
+    <label className="block text-sm">Admin-Schlüssel
+      <input type="password" value={secret} onChange={event => setSecret(event.target.value)} required autoComplete="off"
+        className="mt-1 block min-h-11 w-full rounded border border-border bg-bg px-3 text-ink" />
+    </label>
+    <button disabled={state === "loading"} className="min-h-11 rounded bg-water px-4 py-2 text-sm font-medium text-bg disabled:opacity-50">
+      {state === "loading" ? "Wird gestartet…" : "Ingest jetzt starten"}
+    </button>
+    {state === "error" && <p role="alert" className="text-sm text-brick">{errorMsg}</p>}
+  </form>;
 }

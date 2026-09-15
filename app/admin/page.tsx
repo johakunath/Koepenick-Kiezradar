@@ -5,7 +5,7 @@ import RadarNav from "@/components/RadarNav";
 import TriggerButton from "./trigger-button";
 
 interface SourceStatus {
-  status: "ok" | "error" | "skipped";
+  status: "ok" | "error" | "skipped" | "warning";
   fetched?: number;
   parsed?: number;
   raw_items?: number;
@@ -45,11 +45,11 @@ function timeAgo(iso: string): string {
 
 function friendlyAiError(error: string): string {
   if (error.includes("gemini-1.5-flash") && error.includes("NOT_FOUND")) {
-    return "Das bisherige Standardmodell gemini-1.5-flash ist für diese API nicht mehr verfügbar. Der nächste Lauf nutzt gemini-2.0-flash bzw. ein Fallback-Modell.";
+    return "Das konfigurierte Modell ist nicht mehr verfügbar. Prüfe GEMINI_MODEL in GitHub Actions.";
   }
 
   if (error.includes("GEMINI_API_KEY")) {
-    return "Der Gemini API-Key fehlt. In Vercel muss GEMINI_API_KEY gesetzt sein.";
+    return "Der Gemini API-Key fehlt. In GitHub Actions muss GEMINI_API_KEY als Secret gesetzt sein.";
   }
 
   return error.split("\n")[0] ?? error;
@@ -70,6 +70,7 @@ function sourceHint(id: string, source: SourceStatus): { text: string; tone: "mu
   if (source.status === "error") {
     return { text: source.error ?? "Unbekannter Fehler", tone: "error" };
   }
+  if (source.status === "warning") return { text: source.error ?? "Quelle nur teilweise geprüft", tone: "warning" };
 
   if ((source.parsed ?? 0) === 0) {
     return {
@@ -231,7 +232,7 @@ export default async function AdminPage() {
             Manueller Ingest
           </h2>
           <p className="text-xs" style={{ color: "var(--ink-soft)" }}>
-            Startet den GitHub Actions Workflow. Braucht GITHUB_TOKEN in den Vercel-Env-Vars.
+            Startet den GitHub Actions Workflow. Benötigt GITHUB_TOKEN und ADMIN_INGEST_SECRET in Vercel Production. Der Schlüssel wird nicht gespeichert.
           </p>
           <TriggerButton />
         </section>

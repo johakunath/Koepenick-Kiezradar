@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { consolidateEntries } from "../lib/shared/entry-identity.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ENTRIES_PATH = path.join(ROOT, "data", "entries.json");
@@ -34,8 +35,8 @@ async function main() {
   const now = new Date();
   const cutoff = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
 
-  const weekEntries = entries.filter(
-    (e) => !e.is_mock && new Date(e.published_at) >= cutoff
+  const weekEntries = consolidateEntries(entries).filter(
+    (e) => !e.is_mock && e.location_relevant !== false && new Date(e.event_start_at ?? e.published_at) >= cutoff && new Date(e.event_start_at ?? e.published_at) <= now
   );
 
   const week = isoWeek(now);
@@ -52,7 +53,7 @@ async function main() {
     process.exit(1);
   }
 
-  const model = process.env.GEMINI_MODEL ?? "gemini-2.0-flash";
+  const model = process.env.GEMINI_MODEL ?? "gemini-2.5-flash";
   const prompt = `Du erstellst einen Wochenrückblick für den Kiezradar Köpenick.
 
 Analysiere diese ${weekEntries.length} Einträge aus der Woche ${range} und fasse sie in 3–5 Themen zusammen.
@@ -74,10 +75,11 @@ ${JSON.stringify(weekEntries.map((e) => ({ id: e.id, title: e.title, ai_summary:
     `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
     {
       method: "POST",
+      signal: AbortSignal.timeout(45000),
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { maxOutputTokens: 2000 },
+        generationConfig: { maxOutputTokens: 2000, responseMimeType: "application/json", thinkingConfig: { thinkingBudget: 0 } },
       }),
     }
   );
@@ -103,6 +105,7 @@ ${JSON.stringify(weekEntries.map((e) => ({ id: e.id, title: e.title, ai_summary:
     }
   }
 
+  if (!Array.isArray(parsed.topics) || !parsed.topics.length) throw new Error("Leeres KI-Wochenfazit; vorhandene Datei bleibt erhalten.");
   const digest = {
     week,
     range,

@@ -11,8 +11,9 @@
     "ingest:dry": "node scripts/ingest.mjs --dry-run --skip-ai",
     "test:parsers": "node scripts/parser-smoke-test.mjs",
     "test:data": "tsx scripts/data-smoke-test.ts",
-    "test": "node scripts/parser-smoke-test.mjs && tsx scripts/data-smoke-test.ts",
-    "weekly-digest": "node scripts/weekly-digest.mjs"
+    "test": "node scripts/parser-smoke-test.mjs && tsx scripts/data-smoke-test.ts && tsx scripts/discovery-test.ts",
+    "weekly-digest": "node scripts/weekly-digest.mjs",
+    "test:discovery": "tsx scripts/discovery-test.ts"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

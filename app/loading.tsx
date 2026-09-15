@@ -1,0 +1,1 @@
+export default function Loading() { return <main role="status" className="mx-auto max-w-5xl px-5 py-20 text-ink-soft"><p className="font-display text-2xl">Dein Kiezradar wird geladen…</p><p className="mt-3 text-sm">Gleich sind die Einträge da.</p></main>; }

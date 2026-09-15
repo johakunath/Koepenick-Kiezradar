@@ -1,5 +1,3 @@
-"use client";
-
 import Header from "@/components/Header";
 import IllusBanner from "@/components/IllusBanner";
 import { getSources } from "@/lib/data";
@@ -8,6 +6,7 @@ const STATUS_LABELS: Record<string, string> = {
   active: "Aktiv",
   experimental: "Experimentell",
   error: "Fehlerhaft",
+  planned: "Geplant",
 };
 
 function StatusDot({ status }: { status: string }) {
@@ -143,12 +142,7 @@ export default function AboutPage() {
                       color: "var(--water)",
                       textDecoration: "none",
                     }}
-                    onMouseEnter={(e) =>
-                      ((e.currentTarget as HTMLElement).style.textDecoration = "underline")
-                    }
-                    onMouseLeave={(e) =>
-                      ((e.currentTarget as HTMLElement).style.textDecoration = "none")
-                    }
+                    className="hover:underline"
                   >
                     {source.name}
                   </a>

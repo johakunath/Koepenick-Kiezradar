@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  outputFileTracingIncludes: {
+    "/eintrag/*": ["./data/archive/*.json"],
+  },
 };
 
 export default nextConfig;

@@ -3,9 +3,10 @@ import {
   inferTags,
   inferLocation,
   fallbackSourceSummary,
-  parseGermanDate,
   decodeEntities,
 } from "../lib/shared.mjs";
+import { parseSourceDate } from "../../lib/shared/dates.mjs";
+import { canonicalSourceUrl } from "../../lib/shared/entry-identity.mjs";
 
 export const EVENTS_URL = "https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=";
 
@@ -77,24 +78,29 @@ export function parseEventsHtml(html) {
 
       if (!dateMatch) return null;
 
-      const eventStartAt = parseGermanDate(dateMatch[1]);
-      const publishedAt = eventStartAt ?? new Date().toISOString();
+      const parsedDate = parseSourceDate(decodeEntities(dateMatch[1]));
+      if (!parsedDate) return null;
+      const eventStartAt = parsedDate.iso;
+      const publishedAt = new Date().toISOString();
+      const endTime = decodeEntities(explicitTime?.[1] ?? "").match(/[-–]\s*(\d{1,2}:\d{2})/);
+      const endDate = endTime ? parseSourceDate(`${dateMatch[1].match(/\d{1,2}\.\d{1,2}\.\d{4}/)[0]} ${endTime[1]}`) : null;
       const venueMatch =
         item.match(/<dt>\s*Veranstaltungsort:\s*<\/dt>\s*<dd>([\s\S]*?)<\/dd>/i) ??
         item.match(/(?:Ort|Veranstaltungsort|venue):\s*([^<\n,]+)/i);
-      const venue = venueMatch ? decodeEntities(venueMatch[1].trim()) : undefined;
+      const venue = venueMatch ? decodeEntities(venueMatch[1].trim()).replace(/\s+in Treptow-Köpenick\s*$/i, "") : undefined;
       const summary = fallbackSourceSummary({ title, sourceId: "berlin-events", venue, eventStartAt });
 
       return {
-        id: hashId(["berlin-events", sourceUrl, title]),
+        id: hashId(["berlin-events", canonicalSourceUrl(sourceUrl), eventStartAt, venue]),
         source_id: "berlin-events",
         source: "Berlin.de Veranstaltungskalender",
         source_url: sourceUrl,
         title,
         published_at: publishedAt,
         ingested_at: new Date().toISOString(),
-        raw_excerpt: venue ? `Ort: ${venue}` : "",
+        raw_excerpt: decodeEntities(item).replace(/Zur Veranstaltung\s*$/, "").slice(0, 1200),
         ai_summary: summary,
+        summary_origin: "fallback",
         tags: inferTags(title, "berlin-events"),
         location: venue ? inferLocation(venue) : "Treptow-Köpenick",
         location_relevant: true,
@@ -103,6 +109,10 @@ export function parseEventsHtml(html) {
         election_relevant: false,
         ai_reasoning: "Veranstaltung im Bezirk Treptow-Köpenick.",
         event_start_at: eventStartAt ?? undefined,
+        event_end_at: endDate && endDate.iso > eventStartAt ? endDate.iso : undefined,
+        event_date_precision: parsedDate.precision,
+        event_date_origin: "source",
+        last_seen_at: publishedAt,
         venue,
       };
     })
@@ -110,4 +120,11 @@ export function parseEventsHtml(html) {
 
   console.log(`Events parsed: ${entries.length} from ${items.length} list items`);
   return entries;
+}
+
+export function nextEventsPage(html, baseUrl = EVENTS_URL) {
+  const next = html.match(/class="pager-item-next"[^>]*>\s*<a\b[^>]*href="([^"]+)"/i);
+  if (!next) return null;
+  const url = new URL(next[1].replaceAll("&amp;", "&"), baseUrl);
+  return url.origin === "https://www.berlin.de" && url.pathname === "/land/kalender/index.php" ? url.toString() : null;
 }

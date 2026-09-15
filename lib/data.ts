@@ -1,4 +1,6 @@
 import entriesData from "@/data/entries.json";
+import { readdirSync, readFileSync } from "node:fs";
+import path from "node:path";
 import topicsData from "@/data/topics.json";
 import districtsData from "@/data/districts.json";
 import sourcesData from "@/data/sources.json";
@@ -18,6 +20,9 @@ import type {
 } from "@/lib/types";
 import { ALL_TAGS } from "@/lib/types";
 import { slugify } from "@/lib/slug";
+import { consolidateEntries, canonicalSourceUrl } from "@/lib/shared/entry-identity.mjs";
+import { eventDateFromTitle, berlinDay, berlinDateTime, addDays } from "@/lib/shared/dates.mjs";
+import type { IngestHealth } from "@/lib/types";
 export { slugify };
 
 const tagToTopic: Record<Tag, string> = {
@@ -66,10 +71,10 @@ function fallbackSummary(entry: Entry): string {
   ) {
     const date = entry.event_start_at
       ? new Date(entry.event_start_at).toLocaleString("de-DE", {
+          timeZone: "Europe/Berlin",
           day: "numeric",
           month: "long",
-          hour: "2-digit",
-          minute: "2-digit",
+          ...(entry.event_date_precision === "time" ? { hour: "2-digit" as const, minute: "2-digit" as const } : {}),
         })
       : null;
     const where = entry.venue || entry.location;
@@ -128,8 +133,7 @@ function normalizeTags(entry: Entry): Tag[] {
   if (entry.election_relevant) tags.add("wahl");
   if (
     entry.kind === "veranstaltung" ||
-    entry.event_start_at ||
-    entry.venue ||
+    (entry.event_start_at && entry.source_id !== "viz-baustellen") ||
     sourceId === "berlin-events"
   ) {
     tags.add("veranstaltung");
@@ -179,7 +183,7 @@ export function getBodies(): Body[] {
 }
 
 export function getMeetings(): Meeting[] {
-  return [...(meetingsData as Meeting[])].sort(
+  return [...(meetingsData as Meeting[])].filter(meeting => !meeting.is_mock).sort(
     (a, b) =>
       new Date(a.meeting_at).getTime() - new Date(b.meeting_at).getTime(),
   );
@@ -193,6 +197,8 @@ export function getLatestUpdate(): string | undefined {
   return (ingestStatus as { last_run?: string }).last_run;
 }
 
+export function getIngestHealth(): IngestHealth { return ingestStatus as IngestHealth; }
+
 export function getDistrictForEntry(entry: Entry): DistrictRecord | undefined {
   if (entry.district_slug) {
     return getDistricts().find(
@@ -201,7 +207,7 @@ export function getDistrictForEntry(entry: Entry): DistrictRecord | undefined {
   }
 
   const haystack =
-    `${entry.district ?? ""} ${entry.location ?? ""} ${entry.title ?? ""}`.toLocaleLowerCase(
+    `${entry.district ?? ""} ${entry.location ?? ""} ${entry.venue ?? ""} ${entry.title ?? ""}`.toLocaleLowerCase(
       "de-DE",
     );
   return getDistricts().find((district) =>
@@ -232,6 +238,11 @@ function inferTopicSlugs(entry: Entry): string[] {
 }
 
 export function normalizeEntry(entry: Entry): Entry {
+  // This legacy importer is a second copy of the press feed, not BVV/OParl.
+  if (entry.source_id === "bvv-tk" && entry.source_url.includes("/pressemitteilung")) {
+    entry = { ...entry, source_id: "bezirksamt-tk", source: "Bezirksamt Treptow-Köpenick", document_type: "html" };
+  }
+  entry = { ...entry, source_refs: entry.source_refs?.map(ref => /bvv/i.test(ref.name) && ref.url.includes("/pressemitteilung") ? { ...ref, name: "Bezirksamt Treptow-Köpenick" } : ref) };
   const sourceId = entry.source_id ?? slugify(entry.source);
   const tags = normalizeTags({ ...entry, source_id: sourceId });
   const district = getDistrictForEntry(entry);
@@ -248,13 +259,16 @@ export function normalizeEntry(entry: Entry): Entry {
     kind: normalizedKind,
     tags,
   };
+  const titleDate = !entry.event_start_at && tags.includes("veranstaltung") ? eventDateFromTitle(entry.title) : null;
   const topicSlugs = [
     ...new Set([...(entry.topic_slugs ?? []), ...inferTopicSlugs(baseEntry)]),
   ];
 
   return {
     ...baseEntry,
-    slug: entry.slug ?? slugify(entry.title),
+    slug: entry.slug ?? `${slugify(entry.title)}--${entry.id}`,
+    ...(titleDate ? { event_start_at: titleDate.iso, event_date_precision: "day" as const, event_date_origin: "title" as const } : {}),
+    ...(entry.event_start_at && !entry.event_date_precision ? { event_date_precision: "day" as const, event_date_origin: "legacy" as const } : {}),
     ai_summary: isThinSummary(baseEntry)
       ? fallbackSummary(baseEntry)
       : entry.ai_summary,
@@ -289,33 +303,6 @@ function isNavigationEvent(entry: Entry): boolean {
   }
 }
 
-function dedupeEntries(entries: Entry[]): Entry[] {
-  const seen = new Set<string>();
-  const result: Entry[] = [];
-
-  for (const entry of entries) {
-    // Events from the same source with the same title on the same day are the same event
-    // listed under multiple berlin.de categories — dedupe by title+date instead of URL.
-    const isEvent =
-      entry.source_id === "berlin-events" || entry.kind === "veranstaltung";
-    const eventDay = (entry.event_start_at ?? entry.published_at).slice(0, 10);
-    // berlin-events: same event appears with different date_start params — dedupe by title only.
-    // Non-events: bezirksamt-tk and bvv-tk both scrape the same press-release URLs, so key
-    // by source_url+title (not source_id) to catch cross-source dupes.
-    const key =
-      entry.source_id === "berlin-events"
-        ? `berlin-events|${entry.title.trim().toLowerCase()}`
-        : isEvent
-          ? `${entry.source_id ?? entry.source}|${entry.title}|${eventDay}`
-          : `${entry.source_url}|${entry.title}`;
-    if (seen.has(key)) continue;
-    seen.add(key);
-    result.push(entry);
-  }
-
-  return result;
-}
-
 export function getEntries(): Entry[] {
   return (entriesData as Entry[])
     .map(normalizeEntry)
@@ -331,13 +318,23 @@ export function getDisplayEntries(): Entry[] {
   const displayEntries = hasRealData
     ? entries.filter((entry) => !entry.is_mock)
     : entries;
-  return dedupeEntries(
-    displayEntries.filter((entry) => !isNavigationEvent(entry)),
+  return consolidateEntries(
+    displayEntries.filter((entry) => entry.location_relevant !== false && canonicalSourceUrl(entry.source_url) && !isNavigationEvent(entry)),
   );
 }
 
 export function getEntryBySlug(slug: string): Entry | undefined {
-  return getDisplayEntries().find((entry) => entry.slug === slug);
+  const matches = (entry: Entry) => entry.slug === slug || entry.id === slug || entry.alias_ids?.includes(slug) || slugify(entry.title) === slug || entry.alias_ids?.some(id => slug.endsWith(`--${id}`));
+  const active = getDisplayEntries().find(matches);
+  if (active) return active;
+  // Keep old shared links usable after the 250-entry active window moves on.
+  const directory = path.join(process.cwd(), "data", "archive");
+  for (const file of readdirSync(directory).filter(file => /^\d{4}-\d{2}\.json$/.test(file)).sort().reverse()) {
+    const archived = (JSON.parse(readFileSync(path.join(directory, file), "utf8")) as Entry[])
+      .filter(entry => !entry.is_mock && entry.location_relevant !== false).map(normalizeEntry).find(matches);
+    if (archived) return archived;
+  }
+  return undefined;
 }
 
 export function getEntriesForTopic(topicSlug: string): Entry[] {
@@ -364,40 +361,20 @@ export function getMeetingBySlug(slug: string): Meeting | undefined {
   return getMeetings().find((meeting) => meeting.slug === slug);
 }
 
-export function searchEntries(entries: Entry[], query: string): Entry[] {
-  const normalized = query.trim().toLocaleLowerCase("de-DE");
-  if (!normalized) return entries;
-
-  return entries.filter((entry) =>
-    [
-      entry.title,
-      entry.ai_summary,
-      entry.location,
-      entry.district ?? "",
-      entry.source,
-      entry.election_topic ?? "",
-      entry.raw_excerpt ?? "",
-      ...(entry.tags ?? []),
-    ]
-      .join(" ")
-      .toLocaleLowerCase("de-DE")
-      .includes(normalized),
-  );
-}
+export { searchEntries } from "@/lib/shared/search";
 
 export function getIsoWeekId(date = new Date()): string {
-  const d = new Date(date);
-  d.setHours(0, 0, 0, 0);
-  d.setDate(d.getDate() + 3 - ((d.getDay() + 6) % 7));
+  const d = new Date(`${berlinDay(date)}T00:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 3 - ((d.getUTCDay() + 6) % 7));
 
-  const weekYear = d.getFullYear();
-  const weekOne = new Date(weekYear, 0, 4);
+  const weekYear = d.getUTCFullYear();
+  const weekOne = new Date(Date.UTC(weekYear, 0, 4));
   const weekNumber =
     1 +
     Math.round(
       ((d.getTime() - weekOne.getTime()) / 86400000 -
         3 +
-        ((weekOne.getDay() + 6) % 7)) /
+        ((weekOne.getUTCDay() + 6) % 7)) /
         7,
     );
 
@@ -412,15 +389,11 @@ export function getCurrentWeekBounds(now = new Date()): {
   start: Date;
   end: Date;
 } {
-  const start = new Date(now);
-  const day = start.getDay() || 7;
-  start.setDate(start.getDate() - day + 1);
-  start.setHours(0, 0, 0, 0);
-
-  const end = new Date(start);
-  end.setDate(start.getDate() + 7);
-
-  return { start, end };
+  const today = berlinDay(now);
+  const day = new Date(`${today}T12:00:00Z`).getUTCDay() || 7;
+  const monday = addDays(today, 1 - day);
+  const midnight = (day: string) => { const [y, m, d] = day.split("-").map(Number); return new Date(berlinDateTime(y, m, d, 0, 0)!); };
+  return { start: midnight(monday), end: midnight(addDays(monday, 7)) };
 }
 
 export function getEntriesForCurrentWeek(
@@ -435,18 +408,15 @@ export function getEntriesForCurrentWeek(
 }
 
 export function formatCurrentWeekRange(now = new Date()): string {
-  const start = new Date(now);
-  const day = start.getDay() || 7;
-  start.setDate(start.getDate() - day + 1);
-  start.setHours(0, 0, 0, 0);
-
-  const end = new Date(start);
-  end.setDate(start.getDate() + 6);
+  const { start, end: nextMonday } = getCurrentWeekBounds(now);
+  const end = new Date(nextMonday.getTime() - 1);
 
   return `${start.toLocaleDateString("de-DE", {
+    timeZone: "Europe/Berlin",
     day: "numeric",
     month: "long",
   })} – ${end.toLocaleDateString("de-DE", {
+    timeZone: "Europe/Berlin",
     day: "numeric",
     month: "long",
     year: "numeric",

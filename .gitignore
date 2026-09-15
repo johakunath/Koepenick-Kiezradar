@@ -4,6 +4,8 @@ out/
 
 # dependencies
 node_modules/
+.pnpm-store/
+.review/
 
 # env
 .env

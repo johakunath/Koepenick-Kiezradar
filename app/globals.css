@@ -110,3 +110,14 @@ body {
 [data-theme="dark"] .entry-card {
   background: rgba(22, 40, 52, 0.75);
 }
+
+:focus-visible { outline: 3px solid var(--water-2); outline-offset: 3px; }
+button, summary, select { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .6; }
+.radar-marker { display: grid; place-items: center; background: var(--water); color: var(--bg); border: 3px solid var(--card); border-radius: 50%; box-shadow: 0 2px 8px #0004; font: 600 14px system-ui; }
+.radar-marker-selected { background: var(--brick); box-shadow: 0 0 0 4px var(--water-pale); }
+.leaflet-container { background: var(--bg-deep); font-family: var(--font-inter-tight), sans-serif; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--card); color: var(--ink); }
+.leaflet-popup-content a { color: var(--water); }
+.leaflet-popup-content p { margin: 5px 0; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; animation-duration: 0s !important; } }

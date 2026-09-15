@@ -1,6 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { DISTRICT_KEYWORDS } from "./shared.mjs";
 
 const ROOT = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -41,7 +42,7 @@ async function nominatimLookup(query) {
     query + ", Berlin",
   )}&countrycodes=de&bounded=1&viewbox=${NOMINATIM_VIEWBOX}&format=json&limit=1`;
   try {
-    const resp = await fetch(url, { headers: { "user-agent": NOMINATIM_UA } });
+    const resp = await fetch(url, { headers: { "user-agent": NOMINATIM_UA }, signal: AbortSignal.timeout(15000) });
     if (!resp.ok) return null;
     const results = await resp.json();
     if (!results.length) return null;
@@ -52,18 +53,22 @@ async function nominatimLookup(query) {
 }
 
 export async function geocodeEntries(entries) {
+  entries = entries.map(e => ({ ...e }));
   const cache = await loadGeocodeCache();
+  const attempted = new Set();
   const toGeocode = entries.filter(
-    (e) => e.lat == null && (e.addresses?.length || e.venue || e.location),
+    (e) => (e.lat == null || e.lng == null) && (e.addresses?.length || e.venue || e.location),
   );
   if (toGeocode.length === 0) return entries;
 
   let added = 0;
   for (const entry of toGeocode) {
-    const query = entry.addresses?.[0] ?? entry.venue ?? entry.location;
+    const query = (entry.addresses?.[0] ?? entry.venue ?? entry.location)?.replace(/\s+in Treptow-Köpenick\s*$/i, "");
     if (!query || query === "Treptow-Köpenick") continue;
+    const generic = query === "Köpenick" || DISTRICT_KEYWORDS.some(([, label]) => label.toLowerCase() === query.toLowerCase());
+    entry.geocode_precision = generic ? "area" : entry.addresses?.length ? "address" : entry.venue ? "venue" : "area";
 
-    if (cache[query]) {
+    if (cache[query]?.lat != null && cache[query]?.lng != null) {
       if (cache[query].lat) {
         entry.lat = cache[query].lat;
         entry.lng = cache[query].lng;
@@ -71,10 +76,14 @@ export async function geocodeEntries(entries) {
       continue;
     }
 
+    // Retry failed places on the next run, at most once per query in this run.
+    if (attempted.has(query)) continue;
+    attempted.add(query);
     // Rate-limit: 1 req/sec per Nominatim policy
     await new Promise((r) => setTimeout(r, 1100));
     const coords = await nominatimLookup(query);
-    cache[query] = coords ?? { lat: null, lng: null };
+    // Never cache a temporary network failure as a permanent missing place.
+    if (coords) cache[query] = coords;
     if (coords) {
       entry.lat = coords.lat;
       entry.lng = coords.lng;

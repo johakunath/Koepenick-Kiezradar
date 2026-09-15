@@ -1,395 +1,129 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-
 import { readText, inferDistrictFromText, extractAddresses } from "./lib/shared.mjs";
 import { parsePoliceSource, POLICE_RSS_URL, POLICE_PAGE_URL } from "./sources/police.mjs";
-import { parseEventsHtml, EVENTS_URL } from "./sources/events.mjs";
+import { parseEventsHtml, nextEventsPage, EVENTS_URL } from "./sources/events.mjs";
 import { parseBezirksamtSource, BEZIRKSAMT_RSS_URL, BEZIRKSAMT_PAGE_URL } from "./sources/bezirksamt.mjs";
-import { parseBvvAllrisRss, BVV_ALLRIS_RSS_URL, BVV_ALLRIS_PAGE_URL } from "./sources/bvv.mjs";
 import { fetchAmtsblattEntries } from "./sources/amtsblatt.mjs";
 import { parseVizBaustellenGeoJson, VIZ_BAUSTELLEN_URLS, resolveVizUrl } from "./sources/viz.mjs";
 import { enrichWithAI } from "./lib/enrich.mjs";
 import { geocodeEntries } from "./lib/geocode.mjs";
+import { atomicJson, mergeEntries, writeArchive, retainActiveEntries, selectNewEntries } from "./lib/storage.mjs";
+import { entryIdentity, canonicalSourceUrl } from "../lib/shared/entry-identity.mjs";
 
-// Re-export parsers so parser-smoke-test.mjs can import from this file
 export { parsePoliceRss, parsePoliceHtml, parsePoliceSource } from "./sources/police.mjs";
 export { parseEventsHtml } from "./sources/events.mjs";
-
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const ENTRIES_PATH = path.join(ROOT, "data", "entries.json");
-const ARCHIVE_DIR = path.join(ROOT, "data", "archive");
-const STATUS_PATH = path.join(ROOT, "data", "ingest-status.json");
+const DATA = path.join(ROOT, "data");
+const EXCLUDED_IDS = new Set(["4a78d327c5482f7e", "d346f35866059b16", "4fbcb986c28f510c"]);
 
 function parseArgs() {
-  const args = new Set(process.argv.slice(2));
-  const valueAfter = (name) => {
-    const index = process.argv.indexOf(name);
-    return index >= 0 ? process.argv[index + 1] : undefined;
-  };
-
-  return {
-    dryRun: args.has("--dry-run"),
-    skipClaude: args.has("--skip-ai") || args.has("--skip-claude"),
-    fixturePolice: valueAfter("--fixture-polizei"),
-    fixtureEvents: valueAfter("--fixture-events"),
-    fixtureBezirksamt: valueAfter("--fixture-bezirksamt"),
-    fixtureBvv: valueAfter("--fixture-bvv"),
-    fixtureViz: valueAfter("--fixture-viz"),
-    skipAmtsblatt: args.has("--skip-amtsblatt"),
-    limit: Number(valueAfter("--limit") ?? "25"),
-  };
+  const args = process.argv.slice(2);
+  const value = key => args.includes(key) ? args[args.indexOf(key) + 1] : undefined;
+  const limit = Number(value("--limit") ?? 25);
+  if (!Number.isInteger(limit) || limit < 1 || limit > 40) throw new Error("--limit must be an integer between 1 and 40");
+  return { dryRun: args.includes("--dry-run"), skipClaude: args.includes("--skip-ai") || args.includes("--skip-claude"),
+    skipGeocode: args.includes("--skip-geocode"), skipAmtsblatt: args.includes("--skip-amtsblatt"),
+    skipViz: args.includes("--skip-viz"), limit,
+    fixtures: { "polizei-berlin": value("--fixture-polizei"), "berlin-events": value("--fixture-events"), "bezirksamt-tk": value("--fixture-bezirksamt"), "viz-baustellen": value("--fixture-viz") } };
 }
 
 function prefillGeoFields(entries) {
-  return entries.map((e) => {
-    if (e.district && e.addresses) return e;
-    const text = `${e.title} ${e.raw_excerpt ?? ""} ${e.location ?? ""}`;
-    const district = e.district ?? inferDistrictFromText(text);
+  return entries.map(e => {
+    const text = `${e.title} ${e.raw_excerpt ?? ""} ${e.venue ?? ""} ${e.location ?? ""}`;
     const addresses = e.addresses ?? extractAddresses(text);
-    const street = e.street ?? addresses[0]?.replace(/\s+\d+\w*$/, "") ?? undefined;
-    return { ...e, district, addresses, street };
+    return { ...e, district: e.district ?? inferDistrictFromText(text), addresses,
+      street: e.street ?? addresses[0]?.replace(/\s+\d+\w*$/, "") };
   });
-}
-
-// Permanently excluded entries — bad Amtsblatt table rows / false positives
-const EXCLUDED_IDS = new Set([
-  "4a78d327c5482f7e", // "tglassammelbehältern)" — glass container table row
-  "d346f35866059b16", // "g III Nummer 8 eingetragene" — legal register table row
-  "4fbcb986c28f510c", // "Charlottenburg-" — district statistics table
-]);
-
-function mergeEntries(existing, incoming) {
-  const byId = new Map(
-    existing.filter((e) => !EXCLUDED_IDS.has(e.id)).map((entry) => [entry.id, entry])
-  );
-
-  for (const entry of incoming) {
-    const oldEntry = byId.get(entry.id);
-    byId.set(
-      entry.id,
-      oldEntry ? { ...oldEntry, ...entry, is_mock: false } : { ...entry, is_mock: false }
-    );
-  }
-
-  return [...byId.values()].sort(
-    (a, b) => new Date(b.published_at).getTime() - new Date(a.published_at).getTime()
-  );
-}
-
-async function writeArchive(entries) {
-  await mkdir(ARCHIVE_DIR, { recursive: true });
-  const byMonth = new Map();
-
-  for (const entry of entries) {
-    const month = entry.published_at.slice(0, 7);
-    byMonth.set(month, [...(byMonth.get(month) ?? []), entry]);
-  }
-
-  for (const [month, monthEntries] of byMonth) {
-    const archivePath = path.join(ARCHIVE_DIR, `${month}.json`);
-    await writeFile(archivePath, `${JSON.stringify(monthEntries, null, 2)}\n`, "utf8");
-  }
 }
 
 async function main() {
   const options = parseArgs();
-  const existing = JSON.parse(await readFile(ENTRIES_PATH, "utf8"));
-  const sourceStatus = {};
-
-  const fetchSource = async (sourceId, primaryUrl, fallbackUrl, fixturePath) => {
-    try {
-      let text;
-      if (fixturePath) {
-        text = await readText(primaryUrl, fixturePath);
-      } else {
-        try {
-          text = await readText(primaryUrl);
-        } catch (err) {
-          // Retry once after 3s on 429 rate-limit before trying fallback
-          if (err.message.includes("429")) {
-            console.log(`${sourceId}: 429 rate-limited, retrying in 3s…`);
-            await new Promise((r) => setTimeout(r, 3000));
-            try { text = await readText(primaryUrl); } catch {}
+  const existing = JSON.parse(await readFile(path.join(DATA, "entries.json"), "utf8")).filter(e => !EXCLUDED_IDS.has(e.id));
+  const previous = JSON.parse(await readFile(path.join(DATA, "ingest-status.json"), "utf8"));
+  const startedAt = new Date().toISOString();
+  const sources = {};
+  const groups = [];
+  async function loadSource(id, urls, parse) {
+    let lastError;
+    for (const url of options.fixtures[id] ? urls.slice(0, 1) : urls) {
+      try {
+        const text = await readText(url, options.fixtures[id]);
+        let parsed = parse(text);
+        let rawItems = [...text.matchAll(/<item\b|<article\b[^>]*teaser--event|Ereignisort:/gi)].length;
+        if (!parsed.length && urls.indexOf(url) < urls.length - 1 && !options.fixtures[id]) continue;
+        let warning;
+        if (id === "berlin-events" && !options.fixtures[id]) {
+          const visited = new Set([url]);
+          let next = nextEventsPage(text, url);
+          while (next && visited.size < 5 && !visited.has(next)) {
+            visited.add(next);
+            try { const html = await readText(next); const rows = parse(html); parsed.push(...rows); rawItems += rows.length; next = nextEventsPage(html, next); }
+            catch { warning = "Weitere Kalenderseiten nicht erreichbar"; break; }
           }
-          if (!text && fallbackUrl) text = await readText(fallbackUrl);
-          if (!text) throw err;
+          if (next && visited.size >= 5) warning = "Kalender auf fünf Quellseiten begrenzt";
         }
-      }
-      sourceStatus[sourceId] = { status: "ok", text };
-      return text;
-    } catch (err) {
-      sourceStatus[sourceId] = { status: "error", error: err.message };
-      return "";
+        const valid = parsed.filter(e => e.id && e.title && canonicalSourceUrl(e.source_url) && Number.isFinite(Date.parse(e.published_at)));
+        if (valid.length !== parsed.length) warning = `${parsed.length - valid.length} ungültige Datensätze übersprungen`;
+        if (!valid.length && rawItems > 0) warning = "Quelle enthält Einträge, aber keine lokalen Treffer; Parser prüfen";
+        sources[id] = { status: warning ? "warning" : "ok", ...(warning ? { error: warning } : {}), parsed: valid.length, raw_items: rawItems,
+          last_success_at: valid.length ? startedAt : previous.sources?.[id]?.last_success_at };
+        groups.push(valid);
+        return;
+      } catch (error) { lastError = error; }
     }
-  };
-
-  // HTML page tried first — RSS has no per-item location, HTML has "Ereignisort:" field
-  let policeText = await fetchSource(
-    "polizei-berlin",
-    POLICE_PAGE_URL,
-    POLICE_RSS_URL,
-    options.fixturePolice
-  );
-  const eventsHtml = await fetchSource("berlin-events", EVENTS_URL, null, options.fixtureEvents);
-  const bezirksamtText = await fetchSource(
-    "bezirksamt-tk",
-    BEZIRKSAMT_RSS_URL,
-    BEZIRKSAMT_PAGE_URL,
-    options.fixtureBezirksamt
-  );
-  const bvvText = await fetchSource(
-    "bvv-tk",
-    BVV_ALLRIS_RSS_URL,
-    BVV_ALLRIS_PAGE_URL,
-    options.fixtureBvv
-  );
-
-  let vizText = null;
-  if (options.fixtureViz) {
-    vizText = await fetchSource("viz-baustellen", VIZ_BAUSTELLEN_URLS[0], null, options.fixtureViz);
-  } else {
-    const UA = "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)";
-    // Try CKAN first to resolve the actual GeoJSON download URL dynamically
-    const ckanUrl = await resolveVizUrl();
-    const urlsToTry = ckanUrl ? [ckanUrl, ...VIZ_BAUSTELLEN_URLS] : VIZ_BAUSTELLEN_URLS;
-    if (ckanUrl) console.log(`VIZ: CKAN resolved → ${ckanUrl}`);
-
-    for (const vizUrl of urlsToTry) {
-      try {
-        const resp = await fetch(vizUrl, { headers: { "user-agent": UA } });
-        if (!resp.ok) {
-          console.log(`VIZ: ${vizUrl} → ${resp.status}`);
-          continue;
-        }
-        vizText = await resp.text();
-        sourceStatus["viz-baustellen"] = { status: "ok" };
-        console.log(`VIZ: using ${vizUrl}`);
-        break;
-      } catch (err) {
-        console.log(`VIZ: ${vizUrl} → ${err.message}`);
-      }
-    }
-    if (!vizText) {
-      sourceStatus["viz-baustellen"] = {
-        status: "skipped",
-        error: "Optionale Quelle aktuell nicht erreichbar: alle VIZ-URLs lieferten Fehler",
-        raw_items: 0,
-      };
-    }
+    sources[id] = { status: "error", error: lastError?.message ?? "Keine Quelle erreichbar", parsed: 0, raw_items: 0, last_success_at: previous.sources?.[id]?.last_success_at };
   }
 
-  let amtsblattEntries = [];
-  try {
-    if (!options.skipAmtsblatt) {
-      amtsblattEntries = await fetchAmtsblattEntries();
-      sourceStatus["amtsblatt-berlin"] = {
-        status: "ok",
-        parsed: amtsblattEntries.length,
-        raw_items: amtsblattEntries.length,
-      };
-    } else {
-      sourceStatus["amtsblatt-berlin"] = {
-        status: "skipped",
-        error: "Optionale Quelle in diesem Lauf übersprungen",
-        raw_items: 0,
-      };
-    }
-  } catch (err) {
-    sourceStatus["amtsblatt-berlin"] = {
-      status: "skipped",
-      error: `Optionale Quelle aktuell nicht erreichbar: ${err.message}`,
-      raw_items: 0,
-    };
+  await loadSource("polizei-berlin", [POLICE_PAGE_URL, POLICE_RSS_URL], parsePoliceSource);
+  await loadSource("berlin-events", [EVENTS_URL], parseEventsHtml);
+  await loadSource("bezirksamt-tk", [BEZIRKSAMT_RSS_URL, BEZIRKSAMT_PAGE_URL], parseBezirksamtSource);
+  sources["bvv-tk"] = { status: "skipped", error: "Keine eigenständige BVV-Quelle angebunden; Pressemitteilungen laufen über Bezirksamt.", parsed: 0 };
+  if (options.skipViz) sources["viz-baustellen"] = { status: "skipped", parsed: 0 };
+  else {
+    const resolved = options.fixtures["viz-baustellen"] ? null : await resolveVizUrl();
+    await loadSource("viz-baustellen", [...new Set([resolved, ...VIZ_BAUSTELLEN_URLS].filter(Boolean))], parseVizBaustellenGeoJson);
+    if (sources["viz-baustellen"].status === "error") sources["viz-baustellen"].status = "skipped";
   }
-
-  let policeEntries = parsePoliceSource(policeText);
-  // Defensiv: Lädt die HTML-Seite, aber der Parser findet 0 Einträge
-  // (Markup-Änderung), auf den stabileren RSS-Feed ausweichen.
-  if (policeEntries.length === 0 && policeText && !/<item\b/i.test(policeText) && !options.fixturePolice) {
+  if (options.skipAmtsblatt) sources["amtsblatt-berlin"] = { status: "skipped", parsed: 0 };
+  else {
     try {
-      const rssText = await readText(POLICE_RSS_URL);
-      const rssEntries = parsePoliceSource(rssText);
-      if (rssEntries.length > 0) {
-        console.log(`Polizei: HTML lieferte 0 Einträge, RSS-Fallback lieferte ${rssEntries.length}.`);
-        policeText = rssText;
-        policeEntries = rssEntries;
-        sourceStatus["polizei-berlin"] = { status: "ok" };
-      }
-    } catch (err) {
-      console.log(`Polizei RSS-Fallback fehlgeschlagen: ${err.message}`);
-    }
-  }
-  const eventsEntries = parseEventsHtml(eventsHtml);
-  const bezirksamtEntries = parseBezirksamtSource(bezirksamtText);
-  const bvvEntries = parseBvvAllrisRss(bvvText);
-  const vizEntries = parseVizBaustellenGeoJson(vizText);
-
-  const countRawItems = (text, sourceType) => {
-    if (!text) return 0;
-    if (sourceType === "rss") return [...text.matchAll(/<item\b/gi)].length;
-    if (sourceType === "html") return [...text.matchAll(/<li\b/gi)].length;
-    if (sourceType === "json") {
-      try {
-        return (JSON.parse(text).features ?? JSON.parse(text).baustellen ?? []).length;
-      } catch {
-        return 0;
-      }
-    }
-    return 0;
-  };
-
-  const rawCounts = {
-    "polizei-berlin": countRawItems(policeText, /<item\b/i.test(policeText) ? "rss" : "html"),
-    "berlin-events": countRawItems(eventsHtml, "html"),
-    "bezirksamt-tk": countRawItems(bezirksamtText, /<item\b/i.test(bezirksamtText) ? "rss" : "html"),
-    "bvv-tk": countRawItems(bvvText, "rss"),
-    "viz-baustellen": countRawItems(vizText, "json"),
-  };
-
-  for (const [sourceId, parsed] of [
-    ["polizei-berlin", policeEntries],
-    ["berlin-events", eventsEntries],
-    ["bezirksamt-tk", bezirksamtEntries],
-    ["bvv-tk", bvvEntries],
-    ["viz-baustellen", vizEntries],
-  ]) {
-    if (sourceStatus[sourceId]?.status === "ok") {
-      sourceStatus[sourceId].parsed = parsed.length;
-      sourceStatus[sourceId].raw_items = rawCounts[sourceId];
-      delete sourceStatus[sourceId].text;
-    }
+      const entries = await fetchAmtsblattEntries();
+      groups.push(entries);
+      sources["amtsblatt-berlin"] = { status: "ok", parsed: entries.length, raw_items: entries.length, last_success_at: entries.length ? startedAt : previous.sources?.["amtsblatt-berlin"]?.last_success_at };
+    } catch (error) { sources["amtsblatt-berlin"] = { status: "skipped", error: error.message, parsed: 0 }; }
   }
 
-  // Deduplicate incoming entries before merging (mirrors data.ts dedupeEntries logic)
-  function dedupeRaw(entries) {
-    const seen = new Set();
-    return entries.filter((e) => {
-      const isEvent = e.source_id === "berlin-events" || e.kind === "veranstaltung";
-      const eventDay = (e.event_start_at ?? e.published_at ?? "").slice(0, 10);
-      const key = e.source_id === "berlin-events"
-        ? `berlin-events|${(e.title ?? "").trim().toLowerCase()}`
-        : isEvent
-          ? `${e.source_id ?? e.source}|${e.title}|${eventDay}`
-          : `${e.source_url}|${e.title}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-  }
-
-  // Cap per source so high-volume sources don't crowd out smaller/higher-quality ones
-  const PER_SOURCE_CAP = Math.max(5, Math.floor(options.limit / 3));
-  const rawEntries = dedupeRaw([
-    ...policeEntries.slice(0, PER_SOURCE_CAP),
-    ...eventsEntries.slice(0, PER_SOURCE_CAP),
-    ...bezirksamtEntries.slice(0, PER_SOURCE_CAP),
-    ...bvvEntries.slice(0, PER_SOURCE_CAP),
-    ...vizEntries.slice(0, PER_SOURCE_CAP),
-    ...amtsblattEntries.slice(0, PER_SOURCE_CAP),
-  ]).slice(0, options.limit);
-
-  const knownIds = new Set(existing.map((entry) => entry.id));
-  // For berlin-events, also track by title so same event with a new date_start URL isn't re-added
-  const knownEventTitles = new Set(
-    existing
-      .filter((e) => e.source_id === "berlin-events")
-      .map((e) => (e.title ?? "").trim().toLowerCase())
-  );
-  const newEntries = prefillGeoFields(
-    rawEntries.filter((entry) => {
-      if (knownIds.has(entry.id)) return false;
-      if (entry.source_id === "berlin-events" && knownEventTitles.has((entry.title ?? "").trim().toLowerCase())) return false;
-      return true;
-    })
-  );
-
-  // Re-enrich entries whose ai_summary is still a thin placeholder (title echo or known fallback)
-  const REENRICH_CAP = 10;
-  function isThinAiSummary(e) {
-    const s = (e.ai_summary ?? "").trim().toLowerCase();
-    const t = (e.title ?? "").trim().toLowerCase();
-    if (!s || s === t) return true;
-    return /^(offizielle pressemitteilung|veranstaltung im bezirk|bvv-vorgang|polizeimeldung|noch nicht ki)/.test(s);
-  }
-  const staleEntries = existing
-    .filter((e) => !e.is_mock && isThinAiSummary(e))
-    .slice(0, REENRICH_CAP);
-
+  const newEntries = prefillGeoFields(selectNewEntries(groups, existing, options.limit));
+  const seen = new Map(groups.flat().map(e => [entryIdentity(e), e]));
+  const refreshed = existing.map(e => {
+    const latest = seen.get(entryIdentity(e));
+    return latest ? { ...e, last_seen_at: startedAt,
+      ...(latest.event_date_origin === "source" ? { event_end_at: latest.event_end_at, event_date_precision: latest.event_date_precision } : {}) } : e;
+  });
+  const stale = refreshed.filter(e => !e.is_mock && e.enrichment_version !== 2).slice(0, 10);
   let enriched = newEntries;
-  let aiError = null;
-  try {
-    const toEnrich = [...newEntries, ...staleEntries];
-    const enrichedAll = prefillGeoFields(await enrichWithAI(toEnrich, options));
-    enriched = enrichedAll.slice(0, newEntries.length);
-    const enrichedStale = enrichedAll.slice(newEntries.length);
-    if (enrichedStale.length > 0) {
-      console.log(`Re-enriched ${enrichedStale.length} stale entries.`);
-      enriched = [...enriched, ...enrichedStale];
-    }
-  } catch (err) {
-    aiError = err.message;
-    console.warn(`AI enrichment skipped: ${aiError}`);
-  }
+  let aiError;
+  try { enriched = prefillGeoFields(await enrichWithAI([...newEntries, ...stale], options)); }
+  catch (error) { aiError = error.message; console.warn(`AI enrichment skipped: ${aiError}`); }
 
-  const merged = mergeEntries(existing, enriched);
+  for (const [id, status] of Object.entries(sources)) status.fetched = newEntries.filter(e => e.source_id === id).length;
+  const status = { last_run: startedAt, sources, new_entries: newEntries.length, dry_run: options.dryRun,
+    ai_status: options.skipClaude ? "skipped" : aiError ? "error" : "ok", ...(aiError ? { ai_error: aiError } : {}) };
+  console.log(`Parsed ${groups.flat().length} entries, ${newEntries.length} new. Dry run: ${options.dryRun}`);
+  if (options.dryRun) { console.log(JSON.stringify(status, null, 2)); return; }
 
-  console.log(
-    `Fetched ${rawEntries.length} relevant entries, ${newEntries.length} new. Dry run: ${options.dryRun}`
-  );
-
-  const statusPayload = {
-    last_run: new Date().toISOString(),
-    sources: Object.fromEntries(
-      Object.entries(sourceStatus).map(([id, s]) => [
-        id,
-        s.status === "ok"
-          ? {
-              status: "ok",
-              fetched: newEntries.filter((e) => e.source_id === id).length,
-              parsed: s.parsed ?? 0,
-              raw_items: s.raw_items ?? 0,
-            }
-          : s.status === "skipped"
-            ? { status: "skipped", error: s.error, fetched: 0, parsed: s.parsed ?? 0, raw_items: s.raw_items ?? 0 }
-            : { status: "error", error: s.error, fetched: 0, raw_items: s.raw_items ?? 0 },
-      ])
-    ),
-    new_entries: newEntries.length,
-    total_entries: merged.length,
-    dry_run: options.dryRun,
-    ...(aiError ? { ai_error: aiError } : {}),
-  };
-
-  if (options.dryRun) {
-    console.log(JSON.stringify(statusPayload, null, 2));
-    return;
-  }
-
-  await writeFile(STATUS_PATH, `${JSON.stringify(statusPayload, null, 2)}\n`, "utf8");
-
-  const geocoded = await geocodeEntries(enriched);
-  // Also geocode existing entries that have addresses/location but no coordinates yet.
-  // Cap at 10 per run to stay within Nominatim's rate limit.
-  const BACKFILL_CAP = 10;
-  const needsGeocode = existing
-    .filter((e) => e.lat == null && !e.is_mock && (e.addresses?.length || (e.location && e.location !== "Treptow-Köpenick")))
-    .slice(0, BACKFILL_CAP);
-  const backfilled = needsGeocode.length > 0 ? await geocodeEntries(needsGeocode) : needsGeocode;
-
-  const mergedWithCoords = mergeEntries(mergeEntries(existing, geocoded), backfilled);
-
-  await writeFile(
-    ENTRIES_PATH,
-    `${JSON.stringify(mergedWithCoords.slice(0, 250), null, 2)}\n`,
-    "utf8"
-  );
-  await writeArchive(mergedWithCoords);
+  const geocoded = options.skipGeocode ? enriched : await geocodeEntries(enriched);
+  const backfill = options.skipGeocode ? [] : await geocodeEntries(refreshed.filter(e => e.lat == null && !e.is_mock && (e.venue || e.addresses?.length)).slice(0, 10));
+  const merged = mergeEntries(mergeEntries(refreshed, backfill), geocoded);
+  const active = retainActiveEntries(merged);
+  // Archive first, then active snapshot, and publish status only when both succeeded.
+  await writeArchive(merged, path.join(DATA, "archive"));
+  await atomicJson(path.join(DATA, "entries.json"), active);
+  await atomicJson(path.join(DATA, "ingest-status.json"), { ...status, total_entries: active.length, archived_entries: merged.length - active.length });
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  main().catch((error) => {
-    console.error(error instanceof Error ? error.message : error);
-    process.exit(1);
-  });
+  main().catch(error => { console.error(error.message); process.exitCode = 1; });
 }
