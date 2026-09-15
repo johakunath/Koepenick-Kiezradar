@@ -25,7 +25,17 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "geocode_precision": "venue",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286531"
+      }
+    ],
+    "alias_ids": [],
+    "lat": 52.4660747,
+    "lng": 13.5735973
   },
   {
     "id": "c4872527ef86c80f",
@@ -50,7 +60,14 @@
     "ai_reasoning": "In der Woche vom 31. August bis 4. September 2026 werden im Bezirk Treptow-Köpenick Bäume gefällt. Dies kann das Stadtbild und die örtliche Verkehrssituation kurzfristig beeinflussen, da es sich um Maßnahmen zur Baumpflege handelt.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708540.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "7213a529267b327b",
@@ -76,7 +93,14 @@
     "ai_reasoning": "Der Eintrag befasst sich mit Unterstützungsmöglichkeiten für Menschen mit Mobilitätseinschränkungen bei Wahlen. Dies ist für Anwohner in Köpenick wichtig, um eine gleichberechtigte Wahlteilnahme sicherzustellen und die lokale Demokratie zu stärken.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697690.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "676385a693c55be6",
@@ -102,7 +126,14 @@
     "ai_reasoning": "Die Wahlbenachrichtigungen wurden versandt und informieren die Bürger über die Möglichkeit zur Stimmabgabe. Für Anwohner in Köpenick ist dies entscheidend, da sie dadurch die nötigen Informationen zur Teilnahme an der bevorstehenden Wahl erhalten.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697675.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "e12a29586c11461d",
@@ -131,7 +162,14 @@
     "street": "Radickestraße",
     "lat": 52.436174,
     "lng": 13.5496881,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708853.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "db95e42e4a13be7b",
@@ -158,7 +196,15 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "geocode_precision": "venue",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286813"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "580a507449e41452",
@@ -187,7 +233,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=288047"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "d52fd3e871b1f274",
@@ -221,7 +274,15 @@
     "election_topic": null,
     "lat": 52.4419874,
     "lng": 13.5831812,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-14T20:18:50.354Z",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_37_2645_2692_online.pdf?ts=1787900799"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "de3b09f5a9480995",
@@ -252,7 +313,15 @@
     "addresses": [],
     "street": "Köpenicker Straße",
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-14T20:18:50.354Z",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_37_2645_2692_online.pdf?ts=1787900799"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9b4b971c82c74b3a",
@@ -287,7 +356,15 @@
     "election_topic": null,
     "lat": 52.456649,
     "lng": 13.5780568,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-14T20:18:50.354Z",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_37_2645_2692_online.pdf?ts=1787900799"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "773124e4c22a9ea4",
@@ -317,7 +394,15 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-14T20:18:50.354Z",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_37_2645_2692_online.pdf?ts=1787900799"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "af672c4c73f5710c",
@@ -347,7 +432,15 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": "Wahlverfahren",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-14T20:18:50.354Z",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_37_2645_2692_online.pdf?ts=1787900799"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "aaa993d3f9644a7e",
@@ -372,7 +465,14 @@
     "ai_reasoning": "Das Bezirksamt Treptow-Köpenick veranstaltet eine Lesung. Dies bietet Anwohnern eine kulturelle und diskursive Möglichkeit zur Auseinandersetzung mit einem relevanten Thema.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708218.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "4f6abcd2186452e1",
@@ -397,7 +497,14 @@
     "election_topic": null,
     "ai_reasoning": "Das KungerKiezTheater wird nach Umbau wiedereröffnet und bietet den Anwohnern somit wieder eine lokale Kulturstätte. Dies ist wichtig für das kulturelle Angebot im Kiez.",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707924.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "4cf4efd2be204cb3",
@@ -425,7 +532,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287908"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "85873cf830a02a5e",
@@ -450,7 +564,14 @@
     "ai_reasoning": "Ein Workshop-Wochenende für Mädchen und FLINTA-Personen wird im Bezirk angeboten. Dies fördert die Partizipation und Entwicklung junger Menschen in Treptow-Köpenick.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707722.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "a50ccbbda625ed83",
@@ -477,7 +598,14 @@
     "ai_reasoning": "Eine Informationsveranstaltung richtet sich an EU-Bürger*innen bezüglich der Wahlen. Dies ist wichtig, um die Wahlbeteiligung zu fördern und über demokratische Prozesse zu informieren.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707700.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "60b66519c00f6d11",
@@ -503,7 +631,14 @@
     "ai_reasoning": "Eine neue Werkstatt für Denkmalpflege ist im Bezirk verfügbar. Dies unterstützt den Erhalt des kulturellen Erbes und trägt zur Attraktivität des Bezirks bei.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707690.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9b94493087076bf0",
@@ -531,7 +666,14 @@
     "street": null,
     "lat": 52.4549323,
     "lng": 13.5766447,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707406.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "b6edfdc8ca8f8ee5",
@@ -559,7 +701,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286528"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "075cfaec1dd5a4c7",
@@ -588,7 +737,14 @@
     "street": null,
     "lat": 52.4925634,
     "lng": 13.4598743,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1707011.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "cb1f7cdb50e3c22d",
@@ -613,7 +769,14 @@
     "ai_reasoning": "Dokumentationen von 20 Kieztouren sind nun online einsehbar. Dies ermöglicht Anwohnern, sich über lokale Initiativen und die Vielfalt ihrer Nachbarschaft zu informieren.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706974.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "4670da94cadabbf6",
@@ -641,7 +804,14 @@
     "street": null,
     "lat": 52.4493804,
     "lng": 13.6262724,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706955.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "e01edb3b340745d7",
@@ -669,7 +839,14 @@
     "street": null,
     "lat": 52.497163,
     "lng": 13.4516001,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706932.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "588b9f1433152ecd",
@@ -696,7 +873,14 @@
     "street": "Glienicker Straße",
     "lat": 52.4019876,
     "lng": 13.5518269,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706730.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "26b24ac0a78b9b07",
@@ -725,7 +909,14 @@
     "street": null,
     "lat": 52.4449369,
     "lng": 13.6759826,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706620.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "f3e32b9657346697",
@@ -752,7 +943,14 @@
     "ai_reasoning": "Das FamilienServiceBüro bietet mobile Beratungen an, um direkt vor Ort Unterstützung zu leisten. Dies ist wichtig für Anwohner, um unkompliziert Zugang zu sozialen Dienstleistungen zu erhalten.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706377.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "73b29c6a10941205",
@@ -782,7 +980,14 @@
     "street": null,
     "lat": 52.4378932,
     "lng": 13.5475496,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706291.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "77d872020dfe4673",
@@ -812,7 +1017,14 @@
     "street": "Grünauer Weg",
     "lat": 52.3784069,
     "lng": 13.6158927,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706217.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "860216a482a4b77a",
@@ -842,7 +1054,14 @@
     "street": null,
     "lat": 52.4884438,
     "lng": 13.4703145,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706105.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "bfe99d07507d4b1c",
@@ -869,7 +1088,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=289001"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "3a773651d721a031",
@@ -922,69 +1148,17 @@
     "election_topic": null,
     "lat": 52.4847756,
     "lng": 13.5380046,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_35_2253_2272_online.pdf?ts=1787290308"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "5cfa275d33dec3fc",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705811.php",
-    "title": "Kiezfest im Kosmosviertel am 5. September 2026 – 15 Jahre „Ein Kiez verbindet!“",
-    "published_at": "2026-08-21T12:00:00.000Z",
-    "ingested_at": "2026-08-23T04:40:09.502Z",
-    "raw_excerpt": "",
-    "ai_summary": "Das Kosmosviertel feiert am 5. September 2026 sein 15-jähriges Jubiläum unter dem Motto „Ein Kiez verbindet!“ mit einem Kiezfest.",
-    "tags": [
-      "veranstaltung",
-      "infrastruktur",
-      "sonstiges"
-    ],
-    "location": "Kosmosviertel",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Ein Kiezfest wird im Kosmosviertel anlässlich des 15-jährigen Bestehens von „Ein Kiez verbindet!“ veranstaltet. Dies bietet Anwohnern eine Gelegenheit zum Zusammentreffen, zur Stärkung der Gemeinschaft und zur Unterhaltung im lokalen Umfeld.",
-    "district": "Altglienicke",
-    "addresses": [],
-    "street": null,
-    "lat": 52.4029568,
-    "lng": 13.525709,
-    "is_mock": false
-  },
-  {
-    "id": "4296173dfe1ea0f5",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705703.php",
-    "title": "Temporäre Spielstraße in der Plönzeile am 28. August",
-    "published_at": "2026-08-21T12:00:00.000Z",
-    "ingested_at": "2026-08-23T04:40:09.502Z",
-    "raw_excerpt": "",
-    "ai_summary": "In der Plönzeile wird am 28. August eine temporäre Spielstraße eingerichtet, um den öffentlichen Raum für Kinder und Spiel zu nutzen.",
-    "tags": [
-      "verkehr",
-      "infrastruktur",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Plönzeile",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Eine temporäre Spielstraße wird in der Plönzeile eingerichtet, um Kindern sicheren Spielraum zu ermöglichen. Dies verbessert die Lebensqualität von Familien in Köpenick durch Schaffung sicherer und zugänglicher Spielbereiche im öffentlichen Raum.",
-    "district": "Köpenick",
-    "addresses": [],
-    "street": "Plönzeile",
-    "lat": 52.4618144,
-    "lng": 13.5231439,
-    "is_mock": false
-  },
-  {
-    "id": "4452d2d6fc4aade1",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705811.php",
@@ -995,6 +1169,7 @@
     "ai_summary": "Das Kiezfest „Ein Kiez verbindet!“ im Kosmosviertel feiert am 5. September 2026 sein 15-jähriges Bestehen mit einem Fest vor der Ortolfstraße 206b in Altglienicke.",
     "tags": [
       "veranstaltung",
+      "infrastruktur",
       "sonstiges"
     ],
     "location": "Quartiersplatz – vor der Ortolfstr. 206b",
@@ -1004,8 +1179,6 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Ein Kiezfest wird veranstaltet, um das 15-jährige Jubiläum der Initiative \"Ein Kiez verbindet\" zu feiern. Dies ist wichtig für Köpenick-Anwohner, da es eine Gelegenheit zum nachbarschaftlichen Austausch und zur Stärkung der Gemeinschaft in Altglienicke bietet.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705811.php",
     "district": "Altglienicke",
     "addresses": [
       "Ortolfstr. 206b"
@@ -1013,10 +1186,21 @@
     "street": "Ortolfstraße",
     "lat": 52.4029406,
     "lng": 13.5261251,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705811.php"
+      }
+    ],
+    "alias_ids": [
+      "4452d2d6fc4aade1"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705811.php"
   },
   {
-    "id": "49610fc6802305b4",
+    "id": "4296173dfe1ea0f5",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705703.php",
@@ -1028,8 +1212,9 @@
     "tags": [
       "verkehr",
       "infrastruktur",
-      "veranstaltung",
-      "sonstiges"
+      "verwaltung",
+      "sonstiges",
+      "veranstaltung"
     ],
     "location": "Plönzeile",
     "location_relevant": true,
@@ -1038,13 +1223,23 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Die Plönzeile wird für einen Nachmittag in eine Spielstraße umgewandelt, um mehr Lebensqualität und nachbarschaftliches Miteinander zu fördern. Dies ist wichtig für Köpenick-Anwohner, da es temporär den öffentlichen Raum für gemeinschaftliche Aktivitäten zugänglich macht und die Lebensqualität im Kiez erhöht.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705703.php",
+    "district": "Köpenick",
     "addresses": [],
     "street": "Plönzeile",
     "lat": 52.4606101,
     "lng": 13.525754,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705703.php"
+      }
+    ],
+    "alias_ids": [
+      "49610fc6802305b4"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705703.php"
   },
   {
     "id": "aea67d067c9ac164",
@@ -1072,7 +1267,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286156"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "958ad2360e2f59ec",
@@ -1098,64 +1300,17 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286525"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "a27cd2c1c5625f9c",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php",
-    "title": "Bezirke fordern die Absicherung der sozialen Infrastruktur in den Neuen Stadtquartieren",
-    "published_at": "2026-08-20T12:00:00.000Z",
-    "ingested_at": "2026-08-21T04:41:01.876Z",
-    "raw_excerpt": "",
-    "ai_summary": "Die Berliner Bezirke, darunter auch Treptow-Köpenick, fordern die gesicherte Finanzierung und den Ausbau der sozialen Infrastruktur in neu entstehenden Stadtquartieren, um eine umfassende Versorgung der Bewohner zu gewährleisten.",
-    "tags": [
-      "politik",
-      "verwaltung",
-      "infrastruktur"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": false,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.9,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Bezirke fordern eine Absicherung der sozialen Infrastruktur in neuen Stadtquartieren. Dies ist für Köpenick-Anwohner wichtig, da es die Verfügbarkeit von Kitas, Schulen und Freizeiteinrichtungen in wachsenden Gebieten direkt beeinflusst.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
-  },
-  {
-    "id": "32933692053af04d",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php",
-    "title": "Fließstraße in Niederschöneweide wird erneuert: Bauarbeiten zwischen Flutstraße und Hasselwerderstraße starten am 24. August 2026",
-    "published_at": "2026-08-20T12:00:00.000Z",
-    "ingested_at": "2026-08-21T04:41:01.876Z",
-    "raw_excerpt": "",
-    "ai_summary": "Die Fließstraße in Niederschöneweide wird zwischen Flutstraße und Hasselwerderstraße erneuert, wobei die Bauarbeiten am 24. August 2026 beginnen.",
-    "tags": [
-      "verkehr",
-      "infrastruktur"
-    ],
-    "location": "Niederschöneweide",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Die Fließstraße in Niederschöneweide wird erneuert, was Bauarbeiten zwischen Flutstraße und Hasselwerderstraße ab dem 24. August 2026 bedeutet. Dies ist für Köpenick-Anwohner wichtig, da es zu Verkehrsbehinderungen und Umleitungen kommen kann.",
-    "district": "Niederschöneweide",
-    "addresses": [],
-    "street": "Fließstraße",
-    "lat": 52.4548197,
-    "lng": 13.5178766,
-    "is_mock": false
-  },
-  {
-    "id": "5760b0a35d6b52dc",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php",
@@ -1176,14 +1331,23 @@
     "election_relevant": true,
     "election_topic": "Stadtentwicklung und Infrastruktur",
     "ai_reasoning": "Die Bezirke fordern den Senat auf, die Finanzierung und personelle Ausstattung der sozialen Infrastruktur in neuen Stadtquartieren zu sichern. Dies ist wichtig für Köpenick-Anwohner, da es die Grundlage für bedarfsgerechte Angebote in zukünftigen Wohngebieten schafft und die Lebensqualität direkt beeinflusst.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php"
+      }
+    ],
+    "alias_ids": [
+      "5760b0a35d6b52dc"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705384.php"
   },
   {
-    "id": "3d462305852a1c55",
+    "id": "32933692053af04d",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php",
@@ -1193,8 +1357,8 @@
     "raw_excerpt": "In Niederschöneweide entsteht auf dem Brachgelände des ehemaligen Hüttenwerkes Berliner Metallhütten und Halbzeugwerke (BMHW I) ein Wohngebiet mit einer Kita (B-Plan XV-11). Im Zuge der Bebauung des Plangebietes muss die anliegende Fließstraße zwischen Flutstraße und Hasselwerderstraße – einschließlich der Kreuzungsbereichs Fließstraße / Flutstraße und des nördlichen Gehwegs – ertüchtigt und ausgebaut werden. Das Straßen- und Grünflächenamt beginnt am Montag, 24.",
     "ai_summary": "Die Fließstraße in Niederschöneweide wird ab dem 24. August 2026 zwischen Flutstraße und Hasselwerderstraße erneuert, um die Infrastruktur für ein neues Wohngebiet und eine Kita zu verbessern.",
     "tags": [
-      "infrastruktur",
       "verkehr",
+      "infrastruktur",
       "verwaltung"
     ],
     "location": "Niederschöneweide",
@@ -1204,123 +1368,23 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Die Fließstraße in Niederschöneweide wird saniert, um die Infrastruktur für ein neues Wohngebiet mit Kita zu verbessern. Dies ist wichtig für Köpenick-Anwohner, da es die Verkehrssituation und die Zugänglichkeit in einem wachsenden Stadtteil direkt betrifft und die Lebensqualität erhöht.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php",
     "district": "Niederschöneweide",
     "addresses": [],
     "street": "Fließstraße",
     "lat": 52.4548197,
     "lng": 13.5178766,
-    "is_mock": false
-  },
-  {
-    "id": "22d808ea4ba2113e",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704850.php",
-    "title": "Sicherer Schulweg zum Schulstart: Rücksicht rund um Berliner Schulen",
-    "published_at": "2026-08-19T12:00:00.000Z",
-    "ingested_at": "2026-08-20T04:40:00.530Z",
-    "raw_excerpt": "",
-    "ai_summary": "Das Bezirksamt Treptow-Köpenick weist auf die Bedeutung eines sicheren Schulwegs zum Schulstart hin und fordert Rücksichtnahme im Umfeld Berliner Schulen.",
-    "tags": [
-      "sicherheit",
-      "verkehr",
-      "verwaltung"
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php"
+      }
     ],
-    "location": "Berliner Schulen",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Zum Schulstart wird die Wichtigkeit eines sicheren Schulwegs betont und zu erhöhter Rücksichtnahme aufgerufen. Dies betrifft alle Eltern und Verkehrsteilnehmer in Köpenick und trägt zur Sicherheit der Kinder bei.",
-    "addresses": [],
-    "lat": 52.445113,
-    "lng": 13.5170522,
-    "is_mock": false
-  },
-  {
-    "id": "2481c5e84a54d58d",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704800.php",
-    "title": "Eröffnung der Ausstellung „Die Kids sind nicht alright! 2“",
-    "published_at": "2026-08-19T12:00:00.000Z",
-    "ingested_at": "2026-08-20T04:40:00.530Z",
-    "raw_excerpt": "",
-    "ai_summary": "Es wird die Ausstellung „Die Kids sind nicht alright! 2“ eröffnet, die sich voraussichtlich mit jugendlichen Themen oder Problematiken in Berlin auseinandersetzt.",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
+    "alias_ids": [
+      "3d462305852a1c55"
     ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.5,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Eine neue Ausstellung mit dem Titel „Die Kids sind nicht alright! 2“ wird eröffnet. Dies bietet den Anwohnern eine kulturelle Möglichkeit und könnte relevante gesellschaftliche Themen beleuchten.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
-  },
-  {
-    "id": "0d94d23443730f81",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php",
-    "title": "12. Köpenicker Winzersommer lädt in die Altstadt ein",
-    "published_at": "2026-08-19T12:00:00.000Z",
-    "ingested_at": "2026-08-20T04:40:00.530Z",
-    "raw_excerpt": "",
-    "ai_summary": "Der 12. Köpenicker Winzersommer lädt Besucher in die Altstadt Köpenick ein, um regionale Weine und Kultur zu genießen.",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Altstadt Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Der 12. Köpenicker Winzersommer findet in der Altstadt Köpenick statt. Dieses jährliche Event zieht Anwohner und Besucher an und fördert das kulturelle und soziale Leben im Bezirk.",
-    "district": "Altstadt Köpenick",
-    "addresses": [],
-    "street": null,
-    "lat": 52.4466938,
-    "lng": 13.5769665,
-    "is_mock": false
-  },
-  {
-    "id": "f9e14c9dc62e711d",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704189.php",
-    "title": "Neuer Wochenmarkt in Johannisthal startet am 19. September 2026",
-    "published_at": "2026-08-19T12:00:00.000Z",
-    "ingested_at": "2026-08-20T04:40:00.530Z",
-    "raw_excerpt": "",
-    "ai_summary": "In Johannisthal startet am 19. September 2026 ein neuer Wochenmarkt, der die Nahversorgung und das lokale Angebot erweitern soll.",
-    "tags": [
-      "infrastruktur",
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Johannisthal",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Ein neuer Wochenmarkt wird am 19. September 2026 in Johannisthal eröffnet. Dies verbessert die lokale Versorgung und schafft einen neuen Treffpunkt für die Bewohner des Stadtteils.",
-    "district": "Johannisthal",
-    "addresses": [],
-    "street": null,
-    "lat": 52.4459114,
-    "lng": 13.504547,
-    "is_mock": false
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1705149.php"
   },
   {
     "id": "39f912e39b8e345b",
@@ -1346,10 +1410,17 @@
     "ai_reasoning": "Ein Denkmal für die Gefallenen der Einigungskriege wird restauriert. Diese Maßnahme erhält ein wichtiges Stück lokaler Geschichte und trägt zur Pflege des öffentlichen Raums bei.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703630.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
-    "id": "f987cff74600fba9",
+    "id": "22d808ea4ba2113e",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704850.php",
@@ -1370,14 +1441,25 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Das Ordnungsamt Treptow-Köpenick erinnert an die Bedeutung eines sicheren Schulwegs zum Schulstart. Dies ist wichtig für Köpenick-Anwohner, da es die Sicherheit der Kinder im Straßenverkehr betrifft und die Aufmerksamkeit aller Verkehrsteilnehmer fordert.",
+    "addresses": [],
+    "lat": 52.445113,
+    "lng": 13.5170522,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704850.php"
+      }
+    ],
+    "alias_ids": [
+      "f987cff74600fba9"
+    ],
     "document_type": "oparl",
     "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704850.php",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
+    "district": "Treptow"
   },
   {
-    "id": "65aa75c0f1c15643",
+    "id": "2481c5e84a54d58d",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704800.php",
@@ -1397,15 +1479,24 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Eine Kunstausstellung mit dem Titel „Die Kids sind nicht alright! 2“ eröffnet in Adlershof. Dies ist wichtig für Köpenick-Anwohner, da es ein kulturelles Angebot im Bezirk darstellt und eine Möglichkeit zur Auseinandersetzung mit zeitgenössischer Kunst bietet.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704800.php",
     "district": "Adlershof",
     "addresses": [],
-    "street": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704800.php"
+      }
+    ],
+    "alias_ids": [
+      "65aa75c0f1c15643"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704800.php",
+    "street": null
   },
   {
-    "id": "63e8f482a80b9610",
+    "id": "0d94d23443730f81",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php",
@@ -1425,17 +1516,26 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Der 12. Köpenicker Winzersommer lädt zu Weingenuss, Kulinarischem und Live-Musik in die Altstadt ein. Dies ist wichtig für Köpenick-Anwohner, da es ein beliebtes lokales Event ist, das die Gemeinschaft zusammenbringt und die Attraktivität des Bezirks fördert.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php",
     "district": "Altstadt Köpenick",
     "addresses": [],
     "street": null,
     "lat": 52.4466938,
     "lng": 13.5769665,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php"
+      }
+    ],
+    "alias_ids": [
+      "63e8f482a80b9610"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704602.php"
   },
   {
-    "id": "fc465d33bf068df4",
+    "id": "f9e14c9dc62e711d",
     "source_id": "bvv-tk",
     "source": "BVV Treptow-Köpenick",
     "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704189.php",
@@ -1445,8 +1545,8 @@
     "raw_excerpt": "Das Bezirksamt möchte auf die Pressemitteilung von Treffpunkt Wochenmarkt aufmerksam machen: * Zeit: Start Samstag, 19. September 2026, dann jeden Samstag von 8 bis 13 Uhr * Ort: Ecke Megedestraße/Sterndamm Frische Lebensmittel, regionale Angebote und ein neuer Treffpunkt für den Stadtteil: Am Samstag, dem 19. September 2026, eröffnet der neue Wochenmarkt in Berlin-Johannisthal.",
     "ai_summary": "Ein neuer Wochenmarkt startet am 19. September 2026 in Johannisthal an der Ecke Megedestraße/Sterndamm und findet dann jeden Samstag statt.",
     "tags": [
-      "veranstaltung",
       "infrastruktur",
+      "veranstaltung",
       "sonstiges"
     ],
     "location": "Ecke Megedestraße/Sterndamm",
@@ -1456,12 +1556,23 @@
     "election_relevant": false,
     "election_topic": null,
     "ai_reasoning": "Ein neuer Wochenmarkt wird in Johannisthal eröffnet, der jeden Samstag frische Lebensmittel und regionale Produkte anbietet. Dies ist wichtig für Köpenick-Anwohner, da es die Nahversorgung verbessert und einen neuen Treffpunkt im Stadtteil schafft.",
-    "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704189.php",
     "district": "Johannisthal",
     "addresses": [],
     "street": "Megedestraße",
-    "is_mock": false
+    "lat": 52.4459114,
+    "lng": 13.504547,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "BVV Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704189.php"
+      }
+    ],
+    "alias_ids": [
+      "fc465d33bf068df4"
+    ],
+    "document_type": "oparl",
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704189.php"
   },
   {
     "id": "4a6fcf77d4560666",
@@ -1490,7 +1601,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=289358"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "580a8eac8f9df2a7",
@@ -1515,7 +1633,14 @@
     "ai_reasoning": "Das Bezirksamt nimmt Abschied von einem verstorbenen Mitarbeiter, was die interne Struktur und das Personalwesen des Bezirksamtes betrifft. Dies zeigt die menschliche Seite der Verwaltung und betrifft indirekt die Funktionsfähigkeit der Bezirksverwaltung.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1704080.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "8999a03343700b10",
@@ -1542,7 +1667,14 @@
     "addresses": [],
     "lat": 52.433921,
     "lng": 13.7037231,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699949.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "b2d796999c24c66e",
@@ -1571,7 +1703,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=283264"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "b49a92a973811622",
@@ -1597,7 +1736,14 @@
     "ai_reasoning": "Dieser Eintrag kündigt das 30-jährige Jubiläum eines deutsch-spanischen Dichtertreffens an. Es ist für Köpenick-Anwohner wichtig, da es ein kulturelles Angebot des Bezirksamtes darstellt, das zur kulturellen Vielfalt beiträgt.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703819.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "16e49e57ff4dba2c",
@@ -1623,7 +1769,14 @@
     "ai_reasoning": "Der Eintrag informiert über das Programm des Wuhletreffs für September 2026. Für Köpenick-Anwohner ist dies relevant, um sich über Freizeit- und Bildungsangebote in ihrer Nähe zu informieren.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703608.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "39df7a7f4302b91b",
@@ -1652,7 +1805,14 @@
     "street": null,
     "lat": 52.4172936,
     "lng": 13.6250793,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703636.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "e20d2e5dbb03c3dd",
@@ -1679,7 +1839,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287947"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "3f6a353ede0c83a5",
@@ -1707,7 +1874,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287371"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "1f065ff5f3019b03",
@@ -1735,7 +1909,14 @@
     "street": null,
     "lat": 52.4367583,
     "lng": 13.6501033,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1703436.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "25623d6452d38f85",
@@ -1763,7 +1944,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286138"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9cf831008c600b4b",
@@ -1789,7 +1977,14 @@
     "ai_reasoning": "Das Bezirksamt kündigt Baumfällungen für eine spezifische Kalenderwoche an. Dies kann Auswirkungen auf das lokale Stadtbild und die Umwelt haben, was für Anwohner relevant ist.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1703153.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "526be66d90d470d8",
@@ -1822,7 +2017,14 @@
     "election_topic": null,
     "lat": 52.4031344,
     "lng": 13.569216,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_34_2213_2252_online.pdf?ts=1786683797"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "2f27084c4a050d52",
@@ -1851,7 +2053,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_34_2213_2252_online.pdf?ts=1786683797"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "7050da33e441742b",
@@ -1879,7 +2088,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286486"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "97b6e694d4bc1057",
@@ -1905,7 +2121,14 @@
     "ai_reasoning": "Die Freiwilligentage fördern bürgerschaftliches Engagement in verschiedenen Bereichen des Bezirks. Dies ist wichtig, um das Gemeinschaftsgefühl zu stärken und das soziale Miteinander in Köpenick zu verbessern.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1702788.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "7835ab7b8be429a4",
@@ -1933,7 +2156,14 @@
     "street": null,
     "lat": 52.4454164,
     "lng": 13.5752346,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1702519.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "3e24b27a62cf5bcd",
@@ -1965,7 +2195,14 @@
     "election_topic": null,
     "lat": 52.4548173,
     "lng": 13.5788551,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286183"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "4af724f72b1f0e52",
@@ -1994,7 +2231,14 @@
     "street": "Wilhelm-Bölsche-Straße",
     "lat": 52.4512328,
     "lng": 13.6191116,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699960.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "c6cba90e256cb3d9",
@@ -2020,7 +2264,14 @@
     "ai_reasoning": "Das Bezirksamt bietet Sprechstunden an, um Anliegen der Bürger direkt zu bearbeiten und Kontakt mit der Verwaltung zu ermöglichen. Dies ist für Anwohner wichtig, da sie so ihre Fragen klären und Probleme direkt mit den zuständigen Stellen besprechen können.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1702011.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "6e64550fede27a4e",
@@ -2046,7 +2297,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287359"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "98abab462a22a949",
@@ -2075,7 +2333,14 @@
     "street": null,
     "lat": 52.3990685,
     "lng": 13.5557483,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701696.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "fbcf956cde8bd671",
@@ -2103,7 +2368,14 @@
     "street": null,
     "lat": 52.417893,
     "lng": 13.6001848,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701689.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "6b8fb000b7d04711",
@@ -2131,7 +2403,14 @@
     "street": null,
     "lat": 52.4616938,
     "lng": 13.4815479,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701598.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "3f373ddc9682167d",
@@ -2157,7 +2436,14 @@
     "ai_reasoning": "Der Bezirk Treptow-Köpenick stellt Weichen für die Anpassung an den Klimawandel. Dies ist für Köpenick-Anwohner wichtig, da es direkte Auswirkungen auf ihre Lebensumwelt und zukünftige Stadtentwicklung hat.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701492.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "a5f93891938a4e3d",
@@ -2186,7 +2472,14 @@
     "street": null,
     "lat": 52.4154272,
     "lng": 13.5805633,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701491.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9d196bb09e8f2a3d",
@@ -2213,7 +2506,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286522"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "0df869c364da4ec7",
@@ -2239,7 +2539,14 @@
     "ai_reasoning": "Das Bezirksamt befragt die Öffentlichkeit zur Auswahl von Tourismus- und Stadtmarketingprojekten. Anwohner können hier direkt die zukünftige Entwicklung ihres Bezirks beeinflussen und mitgestalten.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701292.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "0202eb895a30c61e",
@@ -2265,7 +2572,14 @@
     "ai_reasoning": "Jugendliche aus Treptow-Köpenick können sich für eine internationale Begegnung in Tschechien anmelden. Dies bietet jungen Anwohnern die Chance auf kulturellen Austausch und neue Erfahrungen im Ausland.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701146.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9e6caf0c6f0a001e",
@@ -2290,7 +2604,14 @@
     "ai_reasoning": "Die Galerie Grünstraße eröffnet eine neue Kunstausstellung namens \"Ein Atelierbesuch\". Dies bietet Anwohnern die Möglichkeit, lokale Kultur und Kunst zu erleben.",
     "addresses": [],
     "street": "Grünstraße",
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701124.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "83a03f7570b3c8ca",
@@ -2319,7 +2640,14 @@
     "street": "Südostallee",
     "lat": 52.4527911,
     "lng": 13.5083097,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701111.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "b6f3b1b5320b9a48",
@@ -2343,7 +2671,14 @@
     "election_topic": null,
     "ai_reasoning": "Der Ausbildungstag Berlin Süd-Ost vernetzt junge Menschen mit Unternehmen der Region. Anwohner können hier Berufschancen entdecken und Kontakte für ihre berufliche Zukunft knüpfen.",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701107.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "87e8eda210ba91d4",
@@ -2369,7 +2704,14 @@
     "ai_reasoning": "Die Briefwahlstelle in Treptow-Köpenick ist nun für die Stimmabgabe geöffnet. Dies ist wichtig, da Anwohner jetzt ihre Stimme für anstehende Wahlen bequem per Brief abgeben können.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697655.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "d38d5965a9b8de06",
@@ -2394,7 +2736,14 @@
     "ai_reasoning": "Der Tag des offenen Denkmals findet am 12. und 13. September 2026 statt. Dies ist für Köpenick-Anwohner wichtig, da es die Gelegenheit bietet, lokale Geschichte und Infrastruktur zu entdecken.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1701297.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "f0c867ea70f137e0",
@@ -2422,7 +2771,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286597"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "d886a72b85fab802",
@@ -2451,7 +2807,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf?ts=1786084562"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "5215780048c9f1e4",
@@ -2484,7 +2847,14 @@
     "election_topic": null,
     "lat": 52.4391169,
     "lng": 13.6831306,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf?ts=1786084562"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "2fe0a475abd7251c",
@@ -2516,7 +2886,14 @@
     "election_topic": null,
     "lat": 52.4796028,
     "lng": 13.4501066,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_31_2001_2076_online.pdf?ts=1786084562"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "72bcf22cffc1e156",
@@ -2546,7 +2923,14 @@
     "election_topic": null,
     "lat": 52.4552462,
     "lng": 13.5795467,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_32_2077_2152_online.pdf?ts=1786084557"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "25253f8e9d8cc30a",
@@ -2576,7 +2960,14 @@
     "district": "Treptow",
     "addresses": [],
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_33_2153_2212_online.pdf?ts=1786084559"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "5509f6e725e1ec92",
@@ -2608,7 +2999,14 @@
     ],
     "street": "Postfach 91 02",
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_33_2153_2212_online.pdf?ts=1786084559"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "0408a9e42fdbf946",
@@ -2636,7 +3034,14 @@
     "street": "Keplerstraße",
     "lat": 52.4608013,
     "lng": 13.5313605,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700846.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9d0ef03ca2fda2e8",
@@ -2662,7 +3067,14 @@
     "ai_reasoning": "Geplante Baumfällungen finden vom 10. bis 22. August 2026 statt. Dies beeinflusst das lokale Ökosystem und die Lebensqualität der Anwohner in den betroffenen Bereichen.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700725.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "4e9c4e7cc0745f1d",
@@ -2688,7 +3100,14 @@
     "ai_reasoning": "Die Öffentlichkeit wird zur Stellungnahme zum Bebauungsplan XV-25-1 aufgerufen. Dies ist wichtig, da es die zukünftige Bebauung und Entwicklung von Treptow-Köpenick direkt beeinflusst und Anwohner somit mitgestalten können.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700019.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "a2c2e5d17e6f9ded",
@@ -2717,7 +3136,14 @@
     "street": null,
     "lat": 52.4584198,
     "lng": 13.5457835,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1700031.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "83674fe003957de5",
@@ -2746,7 +3172,14 @@
     "street": null,
     "lat": 52.4118651,
     "lng": 13.5425859,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699801.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "906de25af72a8677",
@@ -2772,7 +3205,14 @@
     "ai_reasoning": "Unternehmen aus Treptow-Köpenick treffen sich zu einem Stammtisch, um sich über Gemeinwohl-Themen auszutauschen. Dies ist für Anwohner in Köpenick wichtig, da eine starke lokale Wirtschaft indirekt die Lebensqualität und Angebote im Bezirk beeinflusst.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699799.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "8b213641799f39f7",
@@ -2797,7 +3237,14 @@
     "ai_reasoning": "Die Stadtbibliothek Treptow-Köpenick wird an diesem Tag für den Publikumsverkehr geschlossen sein. Dies ist für Köpenick-Anwohner wichtig, damit sie ihre Bibliotheksbesuche und Ausleihen entsprechend planen können.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699794.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "9676d56dfee8f27a",
@@ -2826,7 +3273,14 @@
     "street": null,
     "lat": 52.4624563,
     "lng": 13.5234762,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699779.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "22e5be36b40d964e",
@@ -2854,7 +3308,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286516"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "233e3086f11ddbf2",
@@ -2879,7 +3340,14 @@
     "ai_reasoning": "Senioren können bei der Olympiade 60+ ihre Fitness testen und soziale Kontakte knüpfen. Dies fördert die Gesundheit und das Gemeinschaftsgefühl der älteren Bevölkerung in Köpenick.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699158.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "489ce31529c36a9c",
@@ -2903,7 +3371,14 @@
     "ai_reasoning": "Svenja Leiber hält eine Lesung ab, die ein kulturelles Angebot für die Anwohnerschaft darstellt. Dies ist für Köpenick-Anwohner wichtig, da es eine Gelegenheit zur kulturellen Teilhabe und Freizeitgestaltung im Bezirk bietet.",
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699164.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "b41ad25070be7ba1",
@@ -2929,7 +3404,14 @@
     "election_topic": null,
     "ai_reasoning": "Kommunen der Flughafenregion setzen Maßnahmen gegen Hitze um, was die lokale Anpassung an den Klimawandel betrifft. Dies ist für Köpenick-Anwohner wichtig, da es direkte Auswirkungen auf die Lebensqualität und Umwelt im Bezirk hat.",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1699390.php"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "7e46c85d2bf671cb",
@@ -2956,7 +3438,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=279145"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "bc73c995b7862319",
@@ -2984,7 +3473,14 @@
     "addresses": [],
     "street": null,
     "election_topic": null,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287368"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "674f3a9b93b08b86",
@@ -3016,6 +3512,13 @@
     "election_topic": null,
     "lat": 52.4552462,
     "lng": 13.5795467,
-    "is_mock": false
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_32_2077_2152_online.pdf?ts=1785480047"
+      }
+    ],
+    "alias_ids": []
   }
 ]
