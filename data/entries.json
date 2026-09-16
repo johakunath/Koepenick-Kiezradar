@@ -1,45 +1,5 @@
 [
   {
-    "id": "173a256fefc62e78",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=0&c=13&date_start=14.09.2026",
-    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
-    "published_at": "2026-09-14T20:18:50.764Z",
-    "ingested_at": "2026-09-14T20:18:50.765Z",
-    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 15.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 15. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
-    "tags": [
-      "veranstaltung"
-    ],
-    "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
-    "event_start_at": "2026-09-15T08:00:00.000Z",
-    "event_end_at": "2026-09-15T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "geocode_precision": "venue",
-    "is_mock": false,
-    "lat": 52.4526094,
-    "lng": 13.5187979
-  },
-  {
     "id": "875700f0ba86545b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -77,6 +37,41 @@
     "lat": 52.445594,
     "lng": 13.5668943,
     "is_mock": false
+  },
+  {
+    "id": "ac8202483de6c4a9",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292726&ls=0&c=13&date_start=16.09.2026",
+    "title": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern",
+    "published_at": "2026-09-16T08:00:00.000Z",
+    "ingested_at": "2026-09-16T09:10:13.748Z",
+    "raw_excerpt": "Ort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
+    "ai_summary": "Die Ausstellung „Gegen das Vergessen“ zeigt Arbeiten von Luigi Toscano und Schülern im Alexander-von-Humboldt-Gymnasium, um an die Opfer des Nationalsozialismus zu erinnern.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Alexander-von-Humboldt-Gymnasium",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "In Treptow-Köpenick findet eine Ausstellung gegen das Vergessen statt, die zum Nachdenken über Geschichte anregen soll. Dies ist für Anwohner wichtig, da es eine lokale Bildungsveranstaltung mit historischem Bezug ist und die Gemeinschaft sensibilisiert.",
+    "event_start_at": "2026-09-16T08:00:00.000Z",
+    "venue": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
+    "district": "Adlershof",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292726"
+      }
+    ],
+    "alias_ids": []
   },
   {
     "id": "d085cc8ffbe7c907",
@@ -2198,7 +2193,14 @@
     "local_relevance_score": 0.7,
     "political_relevance_score": 0.3,
     "election_relevant": false,
+    "election_topic": null,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Adlershof",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false,
     "source_refs": [
       {
         "name": "Bezirksamt Treptow-Köpenick",
@@ -2206,12 +2208,7 @@
       }
     ],
     "alias_ids": [],
-    "district": "Adlershof",
-    "addresses": [],
-    "geocode_precision": "area",
-    "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
+    "geocode_precision": "area"
   },
   {
     "id": "6ca3476665b594a4",
@@ -2233,7 +2230,13 @@
     "local_relevance_score": 0.7,
     "political_relevance_score": 0.3,
     "election_relevant": false,
+    "election_topic": null,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "addresses": [],
+    "street": "Hämmerlingstraße",
+    "lat": 52.4594528,
+    "lng": 13.5732772,
+    "is_mock": false,
     "source_refs": [
       {
         "name": "Bezirksamt Treptow-Köpenick",
@@ -2241,9 +2244,7 @@
       }
     ],
     "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false
+    "district": "Treptow"
   },
   {
     "id": "92ec3db6b39759c4",
@@ -2264,7 +2265,11 @@
     "local_relevance_score": 0.7,
     "political_relevance_score": 0.3,
     "election_relevant": false,
+    "election_topic": null,
     "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false,
     "source_refs": [
       {
         "name": "Bezirksamt Treptow-Köpenick",
@@ -2272,12 +2277,49 @@
       }
     ],
     "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
     "geocode_precision": "area",
     "lat": 52.4450491,
-    "lng": 13.5754153,
-    "is_mock": false
+    "lng": 13.5754153
+  },
+  {
+    "id": "173a256fefc62e78",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=0&c=13&date_start=14.09.2026",
+    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
+    "published_at": "2026-09-14T20:18:50.764Z",
+    "ingested_at": "2026-09-14T20:18:50.765Z",
+    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 15.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 15. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-09-15T08:00:00.000Z",
+    "event_end_at": "2026-09-15T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false,
+    "lat": 52.4526094,
+    "lng": 13.5187979
   },
   {
     "id": "9864df661b1d6076",
@@ -2302,6 +2344,7 @@
     "ai_reasoning": "Dieser Eintrag bewirbt das Jubiläum einer Bäckerei in Friedrichshagen und hebt die lange Tradition hervor. Es ist für Anwohner wichtig, da es ein lokales Ereignis und die Geschichte eines ansässigen Geschäfts würdigt.",
     "district": "Friedrichshagen",
     "addresses": [],
+    "street": null,
     "lat": 52.4493804,
     "lng": 13.6262724,
     "is_mock": false,
@@ -2405,6 +2448,7 @@
     "venue": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
+    "street": null,
     "election_topic": null,
     "is_mock": false,
     "geocode_precision": "venue",
@@ -2517,6 +2561,7 @@
     "venue": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
+    "street": null,
     "election_topic": null,
     "is_mock": false,
     "geocode_precision": "venue",
@@ -9035,39 +9080,6 @@
       {
         "name": "Bezirksamt Treptow-Köpenick",
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1690815.php"
-      }
-    ],
-    "alias_ids": []
-  },
-  {
-    "id": "d7f2addd47114d83",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696619.php",
-    "title": "Briefwahl zur Wahl des Abgeordnetenhauses und der Bezirksverordnetenversammlung",
-    "published_at": "2026-07-23T12:00:00.000Z",
-    "ingested_at": "2026-07-23T06:32:45.200Z",
-    "raw_excerpt": "",
-    "ai_summary": "In Treptow-Köpenick ist die Beantragung der Briefwahl für die Wahl zum Abgeordnetenhaus und zur Bezirksverordnetenversammlung möglich. Dies ermöglicht es Bürgern, ihre Stimme bequem von zu Hause aus abzugeben.",
-    "tags": [
-      "wahl",
-      "politik",
-      "verwaltung"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 1,
-    "election_relevant": true,
-    "election_topic": "Abgeordnetenhauswahl, BVV-Wahl",
-    "ai_reasoning": "Bürger können die Briefwahl für die Wahlen zum Abgeordnetenhaus und zur BVV beantragen. Dies ist für Anwohner essenziell, um ihr Wahlrecht auszuüben und die lokale sowie landesweite Politik mitzugestalten.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false,
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1696619.php"
       }
     ],
     "alias_ids": []
