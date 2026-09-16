@@ -2,20 +2,21 @@
 
 /* ── Light mode (Müggelsee editorial) ─────────────────────────────────────── */
 :root {
-  --bg:        #f2e8d5;
-  --bg-deep:   #ead9b6;
-  --card:      #faf3e0;
+  color-scheme: light;
+  --bg:        #f6f2e9;
+  --bg-deep:   #eae6d8;
+  --card:      #fffdf7;
   --ink:       #0c2433;
-  --ink-soft:  #3d556a;
-  --ink-mute:  #8a8775;
-  --water:     #143d56;
+  --ink-soft:  #51636a;
+  --ink-mute:  #66736a;
+  --water:     #174b50;
   --water-2:   #2a6a8a;
   --water-pale:#bccfd9;
   --reed:      #3e6845;
   --reed-soft: #7a9569;
-  --brick:     #b85c3a;
-  --border:    #d9c89e;
-  --rule:      #c2b287;
+  --brick:     #9d4d32;
+  --border:    #dedfd3;
+  --rule:      #d1d4c8;
 
   /* backward-compat aliases for non-redesigned pages */
   --bg-card:    var(--card);
@@ -28,12 +29,13 @@
 
 /* ── Dark mode (Funkstation Köpenick) ─────────────────────────────────────── */
 [data-theme="dark"] {
+  color-scheme: dark;
   --bg:        #0e1820;
   --bg-deep:   #162834;
   --card:      #162834;
   --ink:       #e8e1d2;
   --ink-soft:  #a4a094;
-  --ink-mute:  #6c7a82;
+  --ink-mute:  #a3b0b6;
   --water:     #7fc6b9;
   --water-2:   #e9a23b;
   --water-pale:#1c3340;
@@ -111,13 +113,24 @@ body {
   background: rgba(22, 40, 52, 0.75);
 }
 
+::selection { background: var(--water-pale); color: var(--ink); }
+.discovery-card { box-shadow: 0 2px 4px #183e3c03; transition: border-color .18s ease, box-shadow .18s ease; }
+.discovery-card:hover { border-color: var(--water); box-shadow: 0 6px 20px #183e3c09; }
+.discovery-panorama { mask-image: linear-gradient(to right, transparent, black 20%, black 95%, transparent); }
+[data-theme="dark"] .discovery-panorama { opacity: .25; }
+.discovery-map-panel .leaflet-control-zoom a { width: 40px; height: 40px; line-height: 40px; color: var(--water); background: var(--card); }
+.discovery-map-panel .leaflet-popup-close-button { min-width: 36px; min-height: 36px; }
+.discovery-map-panel .leaflet-popup-content-wrapper { border-radius: 16px; }
+.discovery-map-panel .leaflet-popup-content { margin: 20px; }
+.detail-article { box-shadow: 0 8px 40px #183e3c06; }
+
 :focus-visible { outline: 3px solid var(--water-2); outline-offset: 3px; }
 button, summary, select { cursor: pointer; }
 button:disabled { cursor: wait; opacity: .6; }
 .radar-marker { display: grid; place-items: center; background: var(--water); color: var(--bg); border: 3px solid var(--card); border-radius: 50%; box-shadow: 0 2px 8px #0004; font: 600 14px system-ui; }
 .radar-marker-selected { background: var(--brick); box-shadow: 0 0 0 4px var(--water-pale); }
 .leaflet-container { background: var(--bg-deep); font-family: var(--font-inter-tight), sans-serif; }
-.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--card); color: var(--ink); }
+.discovery-map-panel .leaflet-popup-content-wrapper, .discovery-map-panel .leaflet-popup-tip { background: var(--card); color: var(--ink); }
 .leaflet-popup-content a { color: var(--water); }
 .leaflet-popup-content p { margin: 5px 0; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0s !important; animation-duration: 0s !important; } }
