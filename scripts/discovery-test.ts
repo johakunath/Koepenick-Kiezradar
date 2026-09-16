@@ -74,6 +74,17 @@ test("different venues and unrelated PDF notices remain distinct", () => {
   assert.equal(consolidateEntries([entry({ event_start_at: undefined, title: "Mitteilung A" }), entry({ event_start_at: undefined, title: "Mitteilung B" })]).length, 2);
   assert.equal(canonicalSourceUrl("javascript:alert(1)"), "");
 });
+
+test("legacy day-only calendar copies merge only with one unambiguous timed occurrence", () => {
+  const precise = entry({ id: "precise", venue: "Museum", event_start_at: "2026-09-19T08:00:00Z" });
+  const legacy = entry({ id: "legacy", venue: "Museum in Treptow-Köpenick", event_start_at: "2026-09-19T12:00:00Z", event_date_precision: "day" });
+  const merged = consolidateEntries([legacy, precise]);
+  assert.equal(merged.length, 1);
+  assert.equal(merged[0].event_start_at, precise.event_start_at);
+  assert.equal(merged[0].venue, "Museum");
+  assert.ok(merged[0].alias_ids?.includes("precise"));
+  assert.equal(consolidateEntries([legacy, precise, { ...precise, id: "second", event_start_at: "2026-09-19T15:00:00Z" }]).length, 3);
+});
 test("new records are selected before caps and across source groups and series", () => {
   const known = entry();
   const newer = entry({ id: "new", event_start_at: "2026-09-21T08:00:00Z" });
