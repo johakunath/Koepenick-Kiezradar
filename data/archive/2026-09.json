@@ -1,5 +1,33 @@
 [
   {
+    "id": "ac8202483de6c4a9",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292726&ls=0&c=13&date_start=16.09.2026",
+    "title": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern",
+    "published_at": "2026-09-16T08:00:00.000Z",
+    "ingested_at": "2026-09-16T09:10:13.748Z",
+    "raw_excerpt": "Ort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
+    "ai_summary": "Die Ausstellung „Gegen das Vergessen“ zeigt Arbeiten von Luigi Toscano und Schülern im Alexander-von-Humboldt-Gymnasium, um an die Opfer des Nationalsozialismus zu erinnern.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Alexander-von-Humboldt-Gymnasium",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "In Treptow-Köpenick findet eine Ausstellung gegen das Vergessen statt, die zum Nachdenken über Geschichte anregen soll. Dies ist für Anwohner wichtig, da es eine lokale Bildungsveranstaltung mit historischem Bezug ist und die Gemeinschaft sensibilisiert.",
+    "event_start_at": "2026-09-16T08:00:00.000Z",
+    "venue": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
+    "district": "Adlershof",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false
+  },
+  {
     "id": "6ca3476665b594a4",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -50,6 +78,34 @@
     "ai_reasoning": "Ein Spielstraßenaktionstag am 22. September macht Straßen temporär für Kinder und Anwohner nutzbar, wodurch Spiel und Begegnung gefördert werden. Dies verbessert die Lebensqualität vor Ort und stärkt das Gemeinschaftsgefühl der Anwohner.",
     "district": "Treptow",
     "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "6b6d83241a8415c5",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714179.php",
+    "title": "26. Adlershofer Herbstfest lädt zu Vielfalt, Begegnung und Wissenschaft ein",
+    "published_at": "2026-09-15T12:00:00.000Z",
+    "ingested_at": "2026-09-16T09:10:13.751Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das 26. Adlershofer Herbstfest bietet eine Mischung aus Kultur, Gemeinschaftsaktivitäten und wissenschaftlichen Themen für die Anwohner und Besucher des Stadtteils Adlershof.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Adlershof",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das jährliche Adlershofer Herbstfest lädt Anwohner und Besucher zu einem vielfältigen Programm ein. Es ist für die Gemeinschaft von Bedeutung, da es eine lokale Tradition ist, die Begegnung fördert und den Stadtteil belebt.",
+    "district": "Adlershof",
+    "addresses": [],
+    "street": null,
+    "lat": 52.4378932,
+    "lng": 13.5475496,
     "is_mock": false
   },
   {
