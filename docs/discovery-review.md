@@ -75,7 +75,7 @@ Branch: `codex/discovery-foundation`. It is deployable without the design branch
 The design branch is stacked on this foundation: merge the functional work first, then review its visual-only diff. Reverting the design commit keeps the functional improvements.
 
 ### Validation
-- 20 deterministic regression groups, existing parser smoke tests, existing data smoke tests and TypeScript passed.
+- 21 deterministic regression groups, existing parser smoke tests, existing data smoke tests and TypeScript passed.
 - Production build passed with Google Fonts network access.
 - Live source check on 15 September: 1 local police record, 10 district press records, 50 calendar occurrences across five pages. The pagination limit is explicitly reported.
 - Review snapshot refreshed without AI: 250 active records, 87 calendar records, 55 calendar occurrences dated 15 September or later. These are dates, not 55 unique activities.
@@ -87,3 +87,5 @@ Normal daily ingestion remains in GitHub Actions; JSON changes trigger the exist
 
 ### Browser-found date correction
 Yearless announcements such as “am 13. September” use publication context only within a 90-day future window, including year rollover. The inferred year is explicitly labelled on the detail page. This prevents an expired family event from remaining an undated upcoming hint. A regression test covers the case.
+
+Latest main imports through 4932876 are integrated. A legacy day-only calendar copy is merged with a verified timed occurrence only when its canonical URL, Berlin day and normalized venue match one unique known time. Multiple performances on a day remain separate; alias IDs preserve older links.
