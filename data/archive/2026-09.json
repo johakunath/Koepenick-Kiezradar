@@ -1,26 +1,26 @@
 [
   {
-    "id": "ac8202483de6c4a9",
+    "id": "03bbe2d32cece3ea",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292726&ls=0&c=13&date_start=16.09.2026",
-    "title": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern",
-    "published_at": "2026-09-16T08:00:00.000Z",
-    "ingested_at": "2026-09-16T09:10:13.748Z",
-    "raw_excerpt": "Ort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
-    "ai_summary": "Die Ausstellung „Gegen das Vergessen“ zeigt Arbeiten von Luigi Toscano und Schülern im Alexander-von-Humboldt-Gymnasium, um an die Opfer des Nationalsozialismus zu erinnern.",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292888&ls=0&c=13&date_start=17.09.2026",
+    "title": "26. Adlershofer Herbstfest lädt zu Vielfalt, Begegnung und Wissenschaft ein",
+    "published_at": "2026-09-19T11:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.249Z",
+    "raw_excerpt": "Ort: Kulturzentrum “Alte Schule” in Treptow-Köpenick",
+    "ai_summary": "Das 26. Adlershofer Herbstfest findet am 19. September 2026 im Kulturzentrum “Alte Schule” statt und bietet Vielfalt, Begegnung und Wissenschaft.",
     "tags": [
       "veranstaltung",
       "sonstiges"
     ],
-    "location": "Alexander-von-Humboldt-Gymnasium",
+    "location": "Kulturzentrum “Alte Schule”",
     "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.4,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
     "election_relevant": false,
-    "ai_reasoning": "In Treptow-Köpenick findet eine Ausstellung gegen das Vergessen statt, die zum Nachdenken über Geschichte anregen soll. Dies ist für Anwohner wichtig, da es eine lokale Bildungsveranstaltung mit historischem Bezug ist und die Gemeinschaft sensibilisiert.",
-    "event_start_at": "2026-09-16T08:00:00.000Z",
-    "venue": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
+    "ai_reasoning": "Das Adlershofer Herbstfest lädt Anwohner zu einem kulturellen Ereignis ein. Es fördert die Gemeinschaft und bietet Unterhaltung sowie Bildungsmöglichkeiten für alle Altersgruppen.",
+    "event_start_at": "2026-09-19T11:00:00.000Z",
+    "venue": "Kulturzentrum “Alte Schule” in Treptow-Köpenick",
     "district": "Adlershof",
     "addresses": [],
     "street": null,
@@ -29,7 +29,281 @@
     "source_refs": [
       {
         "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292726"
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292888"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "816da454cdd7b55b",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=0&c=13&date_start=17.09.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-09-17T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.249Z",
+    "raw_excerpt": "Ort: Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "ai_summary": "Die Galerie Johannisthal in Treptow-Köpenick präsentiert die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“, die am 17. September 2026 eröffnet wird.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Eine neue Kunstausstellung wird in der Galerie Rathaus Johannisthal eröffnet. Dies bietet Anwohnern eine kulturelle Bereicherung und die Möglichkeit, lokale Künstler zu unterstützen.",
+    "event_start_at": "2026-09-17T12:00:00.000Z",
+    "venue": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "district": "Johannisthal",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "cef90ca2d511847e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715076.php",
+    "title": "Bezirksamt saniert ab 19. Oktober 2026 Wege in der Grünanlage Altglienicker Aue an der Lehmusstraße in Altglienicke",
+    "published_at": "2026-09-17T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.250Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt saniert ab dem 19. Oktober 2026 Wege in der Grünanlage Altglienicker Aue an der Lehmusstraße in Altglienicke.",
+    "tags": [
+      "infrastruktur",
+      "verwaltung"
+    ],
+    "location": "Grünanlage Altglienicker Aue",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Wege in der Grünanlage Altglienicker Aue werden saniert, was die Zugänglichkeit und Attraktivität der Anlage verbessert. Dies ist für Anwohner wichtig, da es ihre Naherholung direkt betrifft.",
+    "district": "Altglienicke",
+    "addresses": [],
+    "street": "Lehmusstraße",
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715076.php"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "8d05726f9b16fbdc",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714936.php",
+    "title": "Cake*Talks - Theorie meets Praxis: Die Wahlen zum Abgeordnetenhaus 2026",
+    "published_at": "2026-09-17T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.250Z",
+    "raw_excerpt": "",
+    "ai_summary": "Die Reihe \"Cake*Talks\" diskutiert die Wahlen zum Abgeordnetenhaus 2026 unter dem Motto „Theorie meets Praxis“.",
+    "tags": [
+      "politik",
+      "wahl",
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.9,
+    "election_relevant": true,
+    "election_topic": "Abgeordnetenhauswahlen 2026",
+    "ai_reasoning": "Diese Veranstaltung behandelt die kommenden Abgeordnetenhauswahlen 2026 aus theoretischer und praktischer Sicht. Sie ist relevant, da sie das politische Verständnis der Anwohner fördert und auf die Wahlen vorbereitet.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714936.php"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "2af49d846584c699",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715008.php",
+    "title": "Informationen zu den letzten Tagen vor der Wahl",
+    "published_at": "2026-09-17T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.250Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Bezirksamt informiert über die letzten Tage vor der Wahl und gibt wichtige Hinweise zur Stimmabgabe und zum Ablauf.",
+    "tags": [
+      "politik",
+      "wahl",
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 1,
+    "election_relevant": true,
+    "election_topic": "Allgemeine Wahlen",
+    "ai_reasoning": "Hier werden wichtige Informationen zu den finalen Tagen vor einer Wahl bereitgestellt. Dies ist entscheidend für Anwohner, um ihre Wahlrechte korrekt auszuüben und sich umfassend zu informieren.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715008.php"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "71d19ac86cd28d68",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787#page=10",
+    "title": "Bekanntmachung vom 27. August 2026",
+    "published_at": "2026-09-17T09:18:29.272Z",
+    "ingested_at": "2026-09-17T09:18:29.272Z",
+    "raw_excerpt": "eine ca. 1 073 m² große Teilfläche des Flur- stückes 98, der Flur 117, Gemarkung Neukölln zwischen Treptower Straße und Thiemann- straße, gemäß § 4 Absatz 1 Satz 3 des Berliner Straßengesetzes (BerlStrG) vom 13. Juli 1999 (GVBl. S. 380), das zuletzt durch Gesetz vom 25. Juni 2026 (GVBl. S. 486) geä",
+    "ai_summary": "Eine amtliche Bekanntmachung vom 27. August 2026 betrifft eine 1073 m² große Teilfläche des Flurstückes 98, Flur 117, Gemarkung Neukölln, zwischen Treptower Straße und Thiemannstraße.",
+    "tags": [
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Treptower Straße und Thiemannstraße",
+    "location_relevant": true,
+    "local_relevance_score": 0.3,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Diese Bekanntmachung betrifft eine Flurstücksfläche in Neukölln, die an der Grenze zu Treptow-Köpenick liegt. Sie ist für Anwohner der angrenzenden Stadtteile relevant, da sie potenzielle Änderungen im öffentlichen Raum oder Eigentum betreffen könnte.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787",
+    "pdf_page": 10,
+    "pdf_excerpt": "eine ca. 1 073 m² große Teilfläche des Flur- stückes 98, der Flur 117, Gemarkung Neukölln zwischen Treptower Straße und Thiemann- straße, gemäß § 4 Absatz 1 Satz 3 des Berliner Straßengesetzes (BerlStrG) vom 13. Juli 1999 (GVBl. S. 380), das zuletzt durch Gesetz vom 25. Juni 2026 (GVBl. S. 486) geä",
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Treptower Straße",
+    "election_topic": null,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "0b6867b3f54e96ac",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787#page=12",
+    "title": "ABl. Nr. 39 / 11. September 2026 \t2760",
+    "published_at": "2026-09-17T09:18:29.272Z",
+    "ingested_at": "2026-09-17T09:18:29.272Z",
+    "raw_excerpt": "tember 2026 2760 Maßstab: 1:1000 Orange = Teileingezogene Fläche Stuttgarter Straße Thiemannstraße Treptower Straße Sonnenallee",
+    "ai_summary": "Das Amtsblatt Nr. 39 vom 11. September 2026 enthält eine Karte im Maßstab 1:1000, die eine teileingezogene Fläche im Bereich Stuttgarter Straße, Thiemannstraße, Treptower Straße und Sonnenallee zeigt.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Stuttgarter Straße, Thiemannstraße, Treptower Straße, Sonnenallee",
+    "location_relevant": true,
+    "local_relevance_score": 0.3,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Das Amtsblatt zeigt eine Karte mit einer teileingezogenen Fläche im Grenzbereich zu Treptow-Köpenick. Dies könnte Anwohner der angrenzenden Gebiete betreffen, da es Änderungen der Flächennutzung oder des Verkehrsflusses anzeigen könnte.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787",
+    "pdf_page": 12,
+    "pdf_excerpt": "tember 2026 2760 Maßstab: 1:1000 Orange = Teileingezogene Fläche Stuttgarter Straße Thiemannstraße Treptower Straße Sonnenallee",
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Treptower Straße",
+    "election_topic": null,
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_39_2749_2776_online.pdf?ts=1789109787"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "c59ab29623ebff85",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714764.php",
+    "title": "Straßen- und Grünflächenamt stellt weitere 118 Fahrradbügel an 24 Standorten auf – Beteiligung weiter möglich",
+    "published_at": "2026-09-16T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.250Z",
+    "raw_excerpt": "",
+    "ai_summary": "Das Straßen- und Grünflächenamt installiert weitere 118 Fahrradbügel an 24 Standorten in Treptow-Köpenick, wobei die Beteiligung der Bürger weiterhin möglich ist.",
+    "tags": [
+      "verkehr",
+      "infrastruktur",
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Das Straßen- und Grünflächenamt errichtet neue Fahrradbügel zur Verbesserung der Fahrradinfrastruktur. Dies ist wichtig für Anwohner, da es die Verkehrssicherheit und die Nutzung des Fahrrads als Verkehrsmittel fördert.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714764.php"
+      }
+    ],
+    "alias_ids": []
+  },
+  {
+    "id": "4ba0d60566d160ea",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714546.php",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-09-16T12:00:00.000Z",
+    "ingested_at": "2026-09-17T09:18:30.250Z",
+    "raw_excerpt": "",
+    "ai_summary": "Eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ beleuchtet Frauen und queere Personen im Ehrenamt.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges",
+      "politik"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "election_topic": null,
+    "ai_reasoning": "Die Ausstellung thematisiert die wichtige Rolle von Frauen und queeren Personen im Ehrenamt. Sie ist für Anwohner relevant, da sie zur Förderung von Vielfalt und gesellschaftlichem Engagement im Bezirk beiträgt.",
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false,
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714546.php"
       }
     ],
     "alias_ids": []
@@ -621,7 +895,7 @@
     "is_mock": false
   },
   {
-    "id": "875700f0ba86545b",
+    "id": "ac8202483de6c4a9",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
     "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292726&ls=0&c=13&date_start=15.09.2026",
@@ -630,9 +904,9 @@
     "ingested_at": "2026-09-15T20:21:32.399Z",
     "raw_excerpt": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern Ausstellungen Kunst, Kultur Bildung, Schule Termin: 16.09.2026 08:00 Uhr Veranstaltungsort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick ",
     "ai_summary": "Veranstaltung am 16. September um 08:00 in Alexander-von-Humboldt-Gymnasium.",
-    "summary_origin": "fallback",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
     "location": "Treptow-Köpenick",
     "location_relevant": true,
@@ -641,23 +915,28 @@
     "election_relevant": false,
     "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
     "event_start_at": "2026-09-16T06:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:32.398Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
+    "district": "Treptow",
+    "addresses": [],
+    "street": null,
+    "election_topic": null,
+    "is_mock": false,
     "source_refs": [
       {
         "name": "Berlin.de Veranstaltungskalender",
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292726"
       }
     ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
+    "alias_ids": [
+      "875700f0ba86545b"
+    ],
+    "summary_origin": "fallback",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-15T20:21:32.398Z",
     "geocode_precision": "venue",
     "lat": 52.445594,
-    "lng": 13.5668943,
-    "is_mock": false
+    "lng": 13.5668943
   },
   {
     "id": "6b6d83241a8415c5",
