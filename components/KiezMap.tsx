@@ -14,10 +14,15 @@ function MapController({ entries, selectedId, onBoundsChange, fitKey }: {
   const map = useMap();
   const points = useMemo(() => getMappableEntries(entries), [entries]);
   const latestPoints = useRef(points);
+  const lastBounds = useRef("");
   latestPoints.current = points;
   const report = () => {
     const b = map.getBounds();
-    onBoundsChange?.({ north: b.getNorth(), south: b.getSouth(), west: b.getWest(), east: b.getEast() });
+    const bounds = { north: b.getNorth(), south: b.getSouth(), west: b.getWest(), east: b.getEast() };
+    const key = Object.values(bounds).map(value => value.toFixed(7)).join(",");
+    if (key === lastBounds.current) return;
+    lastBounds.current = key;
+    onBoundsChange?.(bounds);
   };
   useMapEvents({ moveend: report, resize: report });
   useEffect(() => {
@@ -35,6 +40,7 @@ function MapController({ entries, selectedId, onBoundsChange, fitKey }: {
 }
 
 function PlaceMarker({ entries, selectedId, onSelect, returnTo }: { entries: Array<Entry & { lat: number; lng: number }>; selectedId?: string; onSelect?: (id: string) => void; returnTo: string }) {
+  const map = useMap();
   const marker = useRef<L.Marker>(null);
   const selected = entries.some(e => e.id === selectedId);
   const icon = useMemo(() => L.divIcon({
@@ -46,7 +52,7 @@ function PlaceMarker({ entries, selectedId, onSelect, returnTo }: { entries: Arr
   return <Marker ref={marker} position={[entries[0].lat, entries[0].lng]} icon={icon}
     title={`${entries.length} Einträge: ${entries[0].venue || entries[0].location}`}
     eventHandlers={{ click: () => onSelect?.(entries[0].id) }}>
-    <Popup maxWidth={310} maxHeight={260} autoPan={false}>
+    <Popup maxWidth={Math.min(310, Math.max(140, map.getSize().x - 90))} maxHeight={Math.min(260, Math.max(100, map.getSize().y - 120))} autoPanPadding={[24, 24]}>
       <div className="space-y-4 font-body">{entries.map(entry => <div key={entry.id}>
         <p className="text-xs font-semibold">{formatEntryDate(entry)}</p>
         <button type="button" onClick={() => onSelect?.(entry.id)} className="my-1 text-left text-sm font-semibold underline">{entry.title}</button>

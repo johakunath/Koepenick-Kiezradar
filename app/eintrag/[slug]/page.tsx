@@ -33,10 +33,10 @@ export default async function EntryDetailPage({ params, searchParams }: {
   if (expired) mapParams.set("when", "past");
   return <div className="min-h-screen bg-bg"><Header /><main id="main-content" className="detail-shell relative z-10 mx-auto max-w-4xl px-5 py-7 md:px-10">
     <Link href={back} className="inline-flex min-h-11 items-center text-sm text-water underline">← Zurück zur Auswahl</Link>
-    <article className="detail-article mt-4 rounded-xl border border-border bg-card p-5 md:p-8">
-      <div className="mb-4 flex flex-wrap gap-2">{entry.tags.map(tag => <span key={tag} className="rounded bg-bg-deep px-2 py-1 text-xs text-ink-soft">{TAG_LABELS[tag]}</span>)}</div>
-      <h1 className="font-display text-3xl leading-tight md:text-4xl">{entry.title}</h1>
-      <div className="detail-facts my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-2">
+    <article className="detail-article mt-4 rounded-2xl border border-border bg-card p-5 md:p-10">
+      <div className="mb-5 flex flex-wrap gap-2">{entry.tags.map(tag => <span key={tag} className="rounded-full bg-bg-deep px-3 py-1 text-xs text-ink-soft">{TAG_LABELS[tag]}</span>)}</div>
+      <h1 className="font-display text-3xl leading-[1.15] tracking-tight md:text-[40px]">{entry.title}</h1>
+      <div className="detail-facts my-7 grid gap-5 rounded-xl border border-border bg-bg p-5 sm:grid-cols-2">
         <div><p className="mb-1 flex items-center gap-2 text-xs uppercase tracking-wide text-ink-soft"><CalendarDays size={14} />{event ? "Wann" : "Veröffentlicht"}</p><p className="font-semibold">{formatEntryDate(entry)}</p>
           {entry.event_date_origin === "title" && <p className="mt-1 text-xs text-ink-soft">Datum aus der Ankündigung; Uhrzeit bitte beim Veranstalter prüfen.</p>}
           {entry.event_date_origin === "title-context" && <p className="mt-1 text-xs text-ink-soft">Tag und Monat aus dem Titel; Jahr aus dem Veröffentlichungsdatum abgeleitet. Termin bitte in der Quelle bestätigen.</p>}
