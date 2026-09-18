@@ -13,7 +13,7 @@ export const VIZ_BAUSTELLEN_URLS = VIZ_FALLBACK_URLS;
 
 export async function resolveVizUrl() {
   try {
-    const res = await fetch(CKAN_API, { headers: { "Accept": "application/json" } });
+    const res = await fetch(CKAN_API, { headers: { "Accept": "application/json" }, signal: AbortSignal.timeout(15000) });
     if (!res.ok) return null;
     const json = await res.json();
     const resources = json?.result?.resources ?? [];

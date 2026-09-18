@@ -1,4 +1,5 @@
 import type { Entry } from "@/lib/types";
+import { DISTRICTS } from "./koepenick-geo";
 
 const MAP_BOUNDS = {
   latMin: 52.34,
@@ -34,6 +35,9 @@ export function hasMappableCoordinates(entry: Entry): entry is Entry & {
   lng: number;
 } {
   if (entry.lat == null || entry.lng == null) return false;
+  if (!Number.isFinite(entry.lat) || !Number.isFinite(entry.lng)) return false;
+  if (entry.geocode_precision === "area") return false;
+  if (!entry.geocode_precision && !entry.venue && !entry.addresses?.length && ["Köpenick", "Treptow-Köpenick", ...DISTRICTS].some(area => area.toLocaleLowerCase("de-DE") === entry.location.trim().toLocaleLowerCase("de-DE"))) return false;
   if (isGenericDistrictPin(entry)) return false;
   return isInsideMapBounds(entry.lat, entry.lng);
 }

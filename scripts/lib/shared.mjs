@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { parseSourceDate } from "../../lib/shared/dates.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
@@ -178,6 +179,7 @@ export function fallbackSourceSummary({ title, rawExcerpt, sourceId, venue, even
   if (sourceId === "berlin-events") {
     const date = eventStartAt
       ? new Date(eventStartAt).toLocaleString("de-DE", {
+          timeZone: "Europe/Berlin",
           day: "numeric",
           month: "long",
           hour: "2-digit",
@@ -214,16 +216,7 @@ export function field(block, name) {
 }
 
 export function parseGermanDate(text) {
-  const match = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})(?:\D+(\d{1,2}):(\d{2}))?/);
-  if (!match) return null;
-  const [, day, month, year, hour = "12", minute = "00"] = match;
-  return new Date(
-    Number(year),
-    Number(month) - 1,
-    Number(day),
-    Number(hour),
-    Number(minute)
-  ).toISOString();
+  return parseSourceDate(text)?.iso ?? null;
 }
 
 export async function readText(url, fixturePath) {
@@ -231,6 +224,7 @@ export async function readText(url, fixturePath) {
     return readFile(path.resolve(ROOT, fixturePath), "utf8");
   }
   const response = await fetch(url, {
+    signal: AbortSignal.timeout(20000),
     headers: {
       "user-agent": "Koepenick-Kiezradar/0.2 (+https://github.com/johakunath/Koepenick-Kiezradar)",
     },

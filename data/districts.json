@@ -3,48 +3,164 @@
     "slug": "altstadt-koepenick",
     "label": "Altstadt Köpenick",
     "description": "Historischer Kern rund um Schlossinsel, Rathaus und Alt-Köpenick.",
-    "keywords": ["altstadt", "alt-köpenick", "alt-koepenick", "schlossinsel"]
+    "keywords": [
+      "altstadt",
+      "alt-köpenick",
+      "alt-koepenick",
+      "schlossinsel"
+    ]
   },
   {
     "slug": "dammvorstadt",
     "label": "Dammvorstadt",
     "description": "Wohn- und Geschäftsquartier zwischen Bahnhofstraße und Altstadt.",
-    "keywords": ["dammvorstadt"]
+    "keywords": [
+      "dammvorstadt"
+    ]
   },
   {
     "slug": "bahnhof-koepenick",
     "label": "Bahnhof Köpenick",
     "description": "Umfeld von S-Bahnhof, Bahnhofstraße und Verkehrsknoten.",
-    "keywords": ["bahnhof köpenick", "bahnhof koepenick", "bahnhofstraße", "bahnhofstrasse"]
+    "keywords": [
+      "bahnhof köpenick",
+      "bahnhof koepenick",
+      "bahnhofstraße",
+      "bahnhofstrasse"
+    ]
   },
   {
     "slug": "spindlersfeld",
     "label": "Spindlersfeld",
     "description": "Quartier südlich der Altstadt mit Verkehr, Schule und Wohnentwicklung.",
-    "keywords": ["spindlersfeld"]
+    "keywords": [
+      "spindlersfeld"
+    ]
   },
   {
     "slug": "friedrichshagen",
     "label": "Friedrichshagen",
     "description": "Kiez am Müggelsee mit Kultur, Verkehr und Naherholung.",
-    "keywords": ["friedrichshagen"]
+    "keywords": [
+      "friedrichshagen"
+    ]
   },
   {
     "slug": "mueggelheim",
     "label": "Müggelheim",
     "description": "Ortsteil am Müggelsee mit Natur-, Verkehr- und Infrastrukturthemen.",
-    "keywords": ["müggelheim", "mueggelheim", "müggelsee", "mueggelsee"]
+    "keywords": [
+      "müggelheim",
+      "mueggelheim",
+      "müggelsee",
+      "mueggelsee"
+    ]
   },
   {
     "slug": "wendenschloss",
     "label": "Wendenschloss",
     "description": "Wohngebiet an Dahme und Müggelspree mit Fähr- und Verkehrsthemen.",
-    "keywords": ["wendenschloss"]
+    "keywords": [
+      "wendenschloss"
+    ]
+  },
+  {
+    "slug": "grunau",
+    "label": "Grünau",
+    "description": "Veranstaltungen und Meldungen aus Grünau.",
+    "keywords": [
+      "grünau"
+    ]
+  },
+  {
+    "slug": "adlershof",
+    "label": "Adlershof",
+    "description": "Veranstaltungen und Meldungen aus Adlershof.",
+    "keywords": [
+      "adlershof"
+    ]
+  },
+  {
+    "slug": "kollnische-heide",
+    "label": "Köllnische Heide",
+    "description": "Veranstaltungen und Meldungen aus Köllnische Heide.",
+    "keywords": [
+      "köllnische heide"
+    ]
+  },
+  {
+    "slug": "rahnsdorf",
+    "label": "Rahnsdorf",
+    "description": "Veranstaltungen und Meldungen aus Rahnsdorf.",
+    "keywords": [
+      "rahnsdorf"
+    ]
+  },
+  {
+    "slug": "schmockwitz",
+    "label": "Schmöckwitz",
+    "description": "Veranstaltungen und Meldungen aus Schmöckwitz.",
+    "keywords": [
+      "schmöckwitz"
+    ]
+  },
+  {
+    "slug": "bohnsdorf",
+    "label": "Bohnsdorf",
+    "description": "Veranstaltungen und Meldungen aus Bohnsdorf.",
+    "keywords": [
+      "bohnsdorf"
+    ]
+  },
+  {
+    "slug": "niederschoneweide",
+    "label": "Niederschöneweide",
+    "description": "Veranstaltungen und Meldungen aus Niederschöneweide.",
+    "keywords": [
+      "niederschöneweide"
+    ]
+  },
+  {
+    "slug": "oberschoneweide",
+    "label": "Oberschöneweide",
+    "description": "Veranstaltungen und Meldungen aus Oberschöneweide.",
+    "keywords": [
+      "oberschöneweide"
+    ]
+  },
+  {
+    "slug": "johannisthal",
+    "label": "Johannisthal",
+    "description": "Veranstaltungen und Meldungen aus Johannisthal.",
+    "keywords": [
+      "johannisthal"
+    ]
+  },
+  {
+    "slug": "altglienicke",
+    "label": "Altglienicke",
+    "description": "Veranstaltungen und Meldungen aus Altglienicke.",
+    "keywords": [
+      "altglienicke"
+    ]
+  },
+  {
+    "slug": "treptow",
+    "label": "Treptow",
+    "description": "Veranstaltungen und Meldungen aus Treptow.",
+    "keywords": [
+      "treptow"
+    ]
   },
   {
     "slug": "treptow-koepenick",
     "label": "Treptow-Köpenick",
     "description": "Bezirksweite Vorgänge mit möglicher Relevanz für Köpenick.",
-    "keywords": ["treptow-köpenick", "treptow-koepenick", "köpenick", "koepenick"]
+    "keywords": [
+      "treptow-köpenick",
+      "treptow-koepenick",
+      "köpenick",
+      "koepenick"
+    ]
   }
 ]

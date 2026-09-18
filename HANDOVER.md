@@ -1,7 +1,13 @@
 # HANDOVER.md — Aktueller Stand & Übergabe
 
 > **Für KI-Assistenten:** Diese Datei zuerst lesen, dann `CLAUDE.md`, dann `PRD.md`.
-> Zuletzt aktualisiert: 11.07.2026
+> Zuletzt aktualisiert: 15.09.2026
+
+## Aktuelle Review-Branches
+
+`codex/discovery-foundation`: Datenpipeline, echte Termine, gemeinsame Karten-/Listenfilter und geschützter Import. Siehe `docs/discovery-review.md` für Befunde, Tests und Grenzen. Noch nicht produktiv deployed.
+
+Der getrennte Design-Branch baut darauf auf. Architektur und Konfiguration stehen aktuell in `ARCHITECTURE.md`. Die folgenden Abschnitte beschreiben den historischen Stand vor diesem Review.
 
 ---
 

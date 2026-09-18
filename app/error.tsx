@@ -1,0 +1,2 @@
+"use client";
+export default function ErrorPage({ reset }: { reset: () => void }) { return <main className="mx-auto max-w-2xl px-5 py-20"><h1 className="font-display text-3xl">Der Radar hat gerade eine Pause.</h1><p className="mt-4 text-ink-soft">Die Seite konnte nicht geladen werden. Versuche es noch einmal.</p><button className="mt-6 min-h-12 rounded-lg bg-water px-5 text-bg" onClick={reset}>Erneut versuchen</button><a className="ml-5 text-water underline" href="/">Zur Startseite</a></main>; }

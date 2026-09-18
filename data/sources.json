@@ -28,8 +28,8 @@
     "name": "BVV Treptow-Köpenick",
     "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/bezirksverordnetenversammlung/",
     "type": "html",
-    "status": "experimental",
-    "notes": "Erste politische Dokumentquelle; tiefere Gremienstruktur bleibt Folgearbeit."
+    "status": "planned",
+    "notes": "Noch keine eigenständige BVV-Quelle angebunden. Der frühere Import nutzte den Bezirksamts-Pressefeed; diese Meldungen werden jetzt korrekt zugeordnet."
   },
   {
     "id": "viz-baustellen",
@@ -42,10 +42,10 @@
   {
     "id": "amtsblatt-berlin",
     "name": "Amtsblatt für Berlin",
-    "url": "https://www.berlin.de/landesverwaltungsamt/service/amtsblatt-fuer-berlin/",
+    "url": "https://www.berlin.de/landesverwaltungsamt/logistikservice/amtsblatt-fuer-berlin/",
     "type": "pdf",
-    "status": "error",
-    "notes": "Index-URLs waren im letzten Lauf nicht erreichbar."
+    "status": "experimental",
+    "notes": "PDF-Import experimentell; der aktuelle Laufstatus steht bei der Quelle. Einzelne PDFs können fehlen."
   },
   {
     "id": "voebb-tk",

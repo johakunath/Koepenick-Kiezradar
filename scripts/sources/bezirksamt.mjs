@@ -9,7 +9,7 @@ import {
 } from "../lib/shared.mjs";
 
 export const BEZIRKSAMT_RSS_URL =
-  "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/index/rss.php";
+  "https://www.berlin.de/presse/pressemitteilungen/index/feed?institutions%5B%5D=Bezirksamt+Treptow-K%C3%B6penick";
 export const BEZIRKSAMT_PAGE_URL =
   "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/";
 
@@ -68,7 +68,7 @@ function parseBezirksamtHtml(html) {
         ? href
         : new URL(href, BEZIRKSAMT_PAGE_URL).toString();
       // Reject sidebar/navigation links that point to other districts
-      if (!sourceUrl.includes("/ba-treptow-koepenick/")) return null;
+      if (!sourceUrl.includes("/ba-treptow-koepenick/") || !/pressemitteilung\.\d+\.php/.test(sourceUrl)) return null;
       const publishedAt = parseGermanDate(dateText) ?? new Date().toISOString();
       const hasElectionTopic = /wahl|kandidat|wahlkreis/i.test(title);
 

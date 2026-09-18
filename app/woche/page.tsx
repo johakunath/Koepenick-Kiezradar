@@ -9,6 +9,7 @@ import {
   getIsoWeekNumber,
 } from "@/lib/data";
 import WeeklyView from "@/components/WeeklyView";
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Blick in die Woche – Köpenick Kiezradar",
