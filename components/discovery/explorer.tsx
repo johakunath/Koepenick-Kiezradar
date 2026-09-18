@@ -5,19 +5,21 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Map, List, ArrowRight, Compass } from "lucide-react";
 import type { Entry, DistrictRecord, IngestHealth } from "@/lib/types";
-import { DEFAULT_FILTERS, filterDiscovery, filterParams, parseFilters, groupOccurrences, healthMessage, insideBounds, PERIODS, type DiscoveryFilters, type Point, type Bounds } from "@/lib/shared/discovery";
+import { DEFAULT_FILTERS, filterDiscovery, parseFilters, groupOccurrences, healthMessage, insideBounds, PERIODS, type DiscoveryFilters, type Point, type Bounds } from "@/lib/shared/discovery";
+import { discoveryListPath, discoveryUrl, type DiscoveryListPath } from "@/lib/shared/discovery-navigation";
 import { getMappableEntries } from "@/lib/shared/map-coordinates";
 import DiscoveryFiltersBar from "./discovery-filters";
 import DiscoveryCard from "./discovery-card";
 
 const KiezMap = dynamic(() => import("@/components/KiezMap"), { ssr: false, loading: () => <div role="status" className="flex h-full min-h-80 items-center justify-center bg-bg-deep text-ink-soft">Karte wird geladen…</div> });
 
-export default function Explorer({ entries, districts, health, initialFilters, initialMap, initialSelected, initialNow }: {
+export default function Explorer({ entries, districts, health, initialFilters, initialMap, initialListPath, initialSelected, initialNow }: {
   entries: Entry[]; districts: DistrictRecord[]; health: IngestHealth; initialFilters: DiscoveryFilters;
-  initialMap: boolean; initialSelected: string; initialNow: string;
+  initialMap: boolean; initialListPath: DiscoveryListPath; initialSelected: string; initialNow: string;
 }) {
   const [filters, setFilters] = useState(initialFilters);
   const [mapView, setMapView] = useState(initialMap);
+  const [listPath, setListPath] = useState(initialListPath);
   const [selected, setSelected] = useState(initialSelected);
   const [now, setNow] = useState(new Date(initialNow));
   const [visible, setVisible] = useState(12);
@@ -36,6 +38,7 @@ export default function Explorer({ entries, districts, health, initialFilters, i
     const restore = () => {
       const params = new URLSearchParams(window.location.search);
       setFilters(parseFilters(params)); setMapView(window.location.pathname === "/karte");
+      setListPath(discoveryListPath(window.location.pathname, params));
       setSelected(params.get("selected") ?? ""); setArea(undefined); setVisible(12);
     };
     window.addEventListener("popstate", restore);
@@ -48,15 +51,11 @@ export default function Explorer({ entries, districts, health, initialFilters, i
   const mapped = useMemo(() => getMappableEntries(groups.map(g => g.entry)), [groups]);
   const activeSelected = groups.some(g => g.entry.id === selected) ? selected : "";
   const visibleCount = Math.max(visible, groups.findIndex(g => g.entry.id === activeSelected) + 1);
-  const params = filterParams(filters);
-  if (activeSelected) params.set("selected", activeSelected);
-  const returnTo = `${mapView ? "/karte" : "/"}${params.size ? `?${params}` : ""}`;
+  const returnTo = discoveryUrl(filters, mapView, listPath, activeSelected);
   const missing = groups.length - mapped.length;
 
   function writeUrl(next: DiscoveryFilters, map = mapView, selectedId = "", push = false) {
-    const query = filterParams(next);
-    if (selectedId) query.set("selected", selectedId);
-    const url = `${map ? "/karte" : "/"}${query.size ? `?${query}` : ""}`;
+    const url = discoveryUrl(next, map, listPath, selectedId);
     if (push) window.history.pushState(null, "", url);
     else window.history.replaceState(null, "", url);
   }

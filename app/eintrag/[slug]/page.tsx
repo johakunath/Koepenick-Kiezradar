@@ -27,6 +27,7 @@ export default async function EntryDetailPage({ params, searchParams }: {
     canonicalSourceUrl(e.source_url) === canonicalSourceUrl(entry.source_url) && (e.event_end_at ? Date.parse(e.event_end_at) >= Date.now() : berlinDay(e.event_start_at) >= berlinDay()))
     .sort((a, b) => a.event_start_at!.localeCompare(b.event_start_at!)).slice(0, 12);
   const mapParams = new URLSearchParams(back.split("?")[1] ?? "");
+  if (back.split("?")[0] === "/termine") mapParams.set("list", "termine");
   mapParams.set("selected", entry.id);
   if (!event) mapParams.set("mode", "news");
   if (expired) mapParams.set("when", "past");

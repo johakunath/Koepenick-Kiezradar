@@ -10,6 +10,7 @@ import { filterDiscovery, DEFAULT_FILTERS, periodBounds, interestsForEntry, pars
 import { normalizeEntry, getDisplayEntries, getEntryBySlug, getCurrentWeekBounds, getIsoWeekId, searchEntries } from "../lib/data";
 import { POST } from "../app/api/trigger-ingest/route";
 import { hasMappableCoordinates } from "../lib/shared/map-coordinates";
+import { discoveryListPath, discoveryUrl } from "../lib/shared/discovery-navigation";
 import { writeArchive, retainActiveEntries, selectNewEntries } from "./lib/storage.mjs";
 import { applyEnrichment } from "./lib/enrich.mjs";
 import { parseEventsHtml, nextEventsPage } from "./sources/events.mjs";
@@ -129,6 +130,30 @@ test("filter URL round trip and invalid values", () => {
   assert.deepEqual(parseFilters(filterParams(filters)), filters);
   assert.equal(parseFilters(new URLSearchParams("when=toString&interest=constructor&tag=evil")).period, "upcoming");
 });
+test("Termine filters and detail return links retain the list route across map navigation", () => {
+  const filters = { ...DEFAULT_FILTERS, query: "Musik & Kunst", period: "weekend" as const };
+  const listUrl = new URL(discoveryUrl(filters, false, "/termine", "event-a"), "https://example.test");
+  assert.equal(listUrl.pathname, "/termine");
+  assert.deepEqual(parseFilters(listUrl.searchParams), filters);
+  assert.equal(listUrl.searchParams.get("selected"), "event-a");
+  const detail = new URL(`/eintrag/event-a?from=${encodeURIComponent(listUrl.pathname + listUrl.search)}`, listUrl);
+  assert.equal(detail.searchParams.get("from"), listUrl.pathname + listUrl.search);
+
+  const mapUrl = new URL(discoveryUrl(filters, true, "/termine", "event-a"), listUrl);
+  assert.equal(mapUrl.pathname, "/karte");
+  const restoredPath = discoveryListPath(mapUrl.pathname, mapUrl.searchParams);
+  assert.equal(restoredPath, "/termine");
+  assert.equal(discoveryUrl(parseFilters(mapUrl.searchParams), false, restoredPath, mapUrl.searchParams.get("selected")!), listUrl.pathname + listUrl.search);
+  assert.equal(discoveryListPath(listUrl.pathname, listUrl.searchParams), "/termine");
+  assert.equal(discoveryUrl(DEFAULT_FILTERS, false, restoredPath), "/termine");
+});
+test("feed and direct map links retain their defaults and ignore unsupported list routes", () => {
+  assert.equal(discoveryUrl(DEFAULT_FILTERS, false, "/"), "/");
+  assert.equal(discoveryUrl(DEFAULT_FILTERS, true, "/"), "/karte");
+  assert.equal(discoveryListPath("/karte", new URLSearchParams()), "/");
+  assert.equal(discoveryListPath("/karte", new URLSearchParams("list=https://example.test")), "/");
+  assert.equal(discoveryListPath("/", new URLSearchParams("list=termine")), "/");
+});
 test("AI output cannot change source facts, invent a location or silently pass incomplete JSON", () => {
   const source = entry();
   const enriched = applyEnrichment(source, { id: source.id, ai_summary: "Kurzinfo", source_url: "https://evil.invalid", lat: 0, event_start_at: "2030-01-01", location: "Paris", tags: ["invalid", "kultur"], local_relevance_score: 4 });
@@ -179,7 +204,7 @@ test("yearless announcements require nearby publication context and do not remai
   assert.equal(filterDiscovery([expired], DEFAULT_FILTERS, now).length, 0);
 });
 
-test("manual import requires a secret and cannot dispatch from a preview", async () => {
+test("manual import requires credentials and an explicit production environment", async () => {
   const original = { secret: process.env.ADMIN_INGEST_SECRET, token: process.env.GITHUB_TOKEN, env: process.env.VERCEL_ENV, fetch: globalThis.fetch };
   let dispatched = 0;
   globalThis.fetch = async () => { dispatched++; return new Response(null, { status: 204 }); };
@@ -194,7 +219,14 @@ test("manual import requires a secret and cannot dispatch from a preview", async
     const authorized = () => new Request("https://example.test", { method: "POST", headers: { authorization: "Bearer test-only-secret" } });
     assert.equal((await POST(authorized())).status, 200);
     assert.equal(dispatched, 1);
-    process.env.VERCEL_ENV = "preview";
+    for (const environment of [undefined, "", "preview", "development", "staging"]) {
+      if (environment === undefined) delete process.env.VERCEL_ENV;
+      else process.env.VERCEL_ENV = environment;
+      assert.equal((await POST(authorized())).status, 503, `must reject environment: ${environment}`);
+      assert.equal(dispatched, 1, "disabled environments must never call GitHub");
+    }
+    process.env.VERCEL_ENV = "production";
+    delete process.env.GITHUB_TOKEN;
     assert.equal((await POST(authorized())).status, 503);
     assert.equal(dispatched, 1);
   } finally {
