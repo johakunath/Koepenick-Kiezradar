@@ -3,7 +3,7 @@ import { createHash, timingSafeEqual } from "node:crypto";
 export async function POST(request: Request) {
   const secret = process.env.ADMIN_INGEST_SECRET;
   const token = process.env.GITHUB_TOKEN;
-  if (!secret || !token || (process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production")) {
+  if (!secret || !token || process.env.VERCEL_ENV !== "production") {
     return Response.json({ error: "Manueller Import hier deaktiviert. Nutze GitHub Actions." }, { status: 503 });
   }
   const provided = request.headers.get("authorization")?.replace(/^Bearer /, "") ?? "";
