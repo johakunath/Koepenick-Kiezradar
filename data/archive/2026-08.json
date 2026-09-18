@@ -240,7 +240,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=288047"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "lat": 52.4685507,
+    "lng": 13.5543359
   },
   {
     "id": "d52fd3e871b1f274",
@@ -539,7 +542,8 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=287908"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue"
   },
   {
     "id": "85873cf830a02a5e",
@@ -708,7 +712,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286528"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "lat": 52.4660747,
+    "lng": 13.5735973
   },
   {
     "id": "075cfaec1dd5a4c7",
@@ -1095,7 +1102,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=289001"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979
   },
   {
     "id": "3a773651d721a031",
@@ -1274,7 +1284,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286156"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "lat": 52.4434519,
+    "lng": 13.5022281
   },
   {
     "id": "958ad2360e2f59ec",

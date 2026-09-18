@@ -1,29 +1,146 @@
 [
   {
-    "id": "03bbe2d32cece3ea",
+    "id": "a7fa54fee737f1cb",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292888&ls=0&c=13&date_start=17.09.2026",
-    "title": "26. Adlershofer Herbstfest lädt zu Vielfalt, Begegnung und Wissenschaft ein",
-    "published_at": "2026-09-19T11:00:00.000Z",
-    "ingested_at": "2026-09-17T09:18:30.249Z",
-    "raw_excerpt": "Ort: Kulturzentrum “Alte Schule” in Treptow-Köpenick",
-    "ai_summary": "Das 26. Adlershofer Herbstfest findet am 19. September 2026 im Kulturzentrum “Alte Schule” statt und bietet Vielfalt, Begegnung und Wissenschaft.",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293014&ls=0&c=13&date_start=18.09.2026",
+    "title": "PREMIERE am KungerKiezTheater (KKT) - „Yvonne, Prinzessin von Burgund“",
+    "published_at": "2026-09-18T08:53:28.284Z",
+    "ingested_at": "2026-09-18T08:53:28.284Z",
+    "raw_excerpt": "PREMIERE am KungerKiezTheater (KKT) - „Yvonne, Prinzessin von Burgund“ Tanz, Theater Kunst, Kultur Termin: 20.09.2026 19:00 Uhr Veranstaltungsort: KungerKiezTheater in Treptow-Köpenick ",
+    "ai_summary": "Am 20. September 2026 findet die PREMIERE von „Yvonne, Prinzessin von Burgund“ im KungerKiezTheater in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
     "tags": [
       "veranstaltung",
       "sonstiges"
     ],
-    "location": "Kulturzentrum “Alte Schule”",
+    "location": "KungerKiezTheater in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Das KungerKiezTheater ist ein spezifischer Veranstaltungsort in Treptow-Köpenick und damit direkt lokal relevant.",
+    "event_start_at": "2026-09-20T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-18T08:53:28.284Z",
+    "venue": "KungerKiezTheater",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293014"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "a1b186f3240faeab",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293014&ls=0&c=13&date_start=18.09.2026",
+    "title": "PREMIERE am KungerKiezTheater (KKT) - „Yvonne, Prinzessin von Burgund“",
+    "published_at": "2026-09-18T08:53:28.283Z",
+    "ingested_at": "2026-09-18T08:53:28.283Z",
+    "raw_excerpt": "PREMIERE am KungerKiezTheater (KKT) - „Yvonne, Prinzessin von Burgund“ Tanz, Theater Kunst, Kultur Termin: 19.09.2026 19:00 Uhr Veranstaltungsort: KungerKiezTheater in Treptow-Köpenick ",
+    "ai_summary": "Die PREMIERE des Stücks „Yvonne, Prinzessin von Burgund“ findet am 19. September 2026 im KungerKiezTheater in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "KungerKiezTheater in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die PREMIERE findet im KungerKiezTheater in Treptow-Köpenick statt, was einen direkten lokalen Bezug auf Bezirksebene hat.",
+    "event_start_at": "2026-09-19T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-18T08:53:28.283Z",
+    "venue": "KungerKiezTheater",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293014"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "8cc20aaf0e5ed492",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=0&c=13&date_start=18.09.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-09-18T08:53:28.283Z",
+    "ingested_at": "2026-09-18T08:53:28.283Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 19.09.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ findet am 19. September 2026 in der Galerie Johannisthal statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort \"Galerie Rathaus Johannisthal in Treptow-Köpenick\" zeigt einen direkten lokalen Bezug zu Johannisthal im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-09-19T13:00:00.000Z",
+    "event_end_at": "2026-09-19T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-18T08:53:28.283Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "03bbe2d32cece3ea",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292888&ls=0&c=13&date_start=18.09.2026",
+    "title": "26. Adlershofer Herbstfest lädt zu Vielfalt, Begegnung und Wissenschaft ein",
+    "published_at": "2026-09-18T08:53:28.282Z",
+    "ingested_at": "2026-09-18T08:53:28.282Z",
+    "raw_excerpt": "26. Adlershofer Herbstfest lädt zu Vielfalt, Begegnung und Wissenschaft ein Feste, Events Kinder, Jugendliche Kunst, Kultur Termin: 19.09.2026 11:00 - 19:00 Uhr Veranstaltungsort: Kulturzentrum “Alte Schule” in Treptow-Köpenick ",
+    "ai_summary": "Das 26. Adlershofer Herbstfest findet am 19. September 2026 im Kulturzentrum “Alte Schule” in Treptow-Köpenick statt und bietet Vielfalt, Begegnung und Wissenschaft.",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Kulturzentrum “Alte Schule” in Treptow-Köpenick",
     "location_relevant": true,
     "local_relevance_score": 0.8,
-    "political_relevance_score": 0,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Das Adlershofer Herbstfest lädt Anwohner zu einem kulturellen Ereignis ein. Es fördert die Gemeinschaft und bietet Unterhaltung sowie Bildungsmöglichkeiten für alle Altersgruppen.",
-    "event_start_at": "2026-09-19T11:00:00.000Z",
-    "venue": "Kulturzentrum “Alte Schule” in Treptow-Köpenick",
+    "ai_reasoning": "Das Adlershofer Herbstfest findet im Kulturzentrum “Alte Schule” in Treptow-Köpenick statt, was einen klaren lokalen Bezug hat.",
+    "event_start_at": "2026-09-19T09:00:00.000Z",
+    "venue": "Kulturzentrum “Alte Schule”",
     "district": "Adlershof",
     "addresses": [],
-    "street": null,
     "election_topic": null,
     "is_mock": false,
     "source_refs": [
@@ -32,7 +149,234 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292888"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [
+      "8c07afb6fc285836"
+    ],
+    "geocode_precision": "venue",
+    "lat": 52.4389607,
+    "lng": 13.5497686,
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "event_end_at": "2026-09-19T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-18T08:53:28.282Z"
+  },
+  {
+    "id": "cc9c174e304fc21c",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=0&c=13&date_start=18.09.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-09-18T08:53:28.281Z",
+    "ingested_at": "2026-09-18T08:53:28.281Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 18.09.2026 12:00 - 17:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "In der Galerie Johannisthal in Treptow-Köpenick findet am 18. September 2026 die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was einen klaren lokalen Bezug darstellt.",
+    "event_start_at": "2026-09-18T10:00:00.000Z",
+    "event_end_at": "2026-09-18T15:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-18T08:53:28.281Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "7b241db95b78f6ad",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715895.php",
+    "title": "Neue Ausstellung am Alten Markt",
+    "published_at": "2026-09-18T08:41:00.000Z",
+    "ingested_at": "2026-09-18T08:53:28.734Z",
+    "raw_excerpt": "* Vernissage: 18.09.2026, 19 Uhr * Ausstellungsdauer: bis 07.11.2026 * Ort: Mittelpunktbibliothek Köpenick, Alter Markt 2, 12555 Berlin Am Freitag, dem 18. September 2026, wird in der Mittelpunktbibliothek Köpenick eine neue Ausstellung eröffnet: Naturblicke – Cöpenicker Zeichenstunde und Skulpturen von Tamara Schwieger. Die Cöpenicker Zeichenstunde findet seit 2019 wöchentlich in der Mittelpunktbibliothek Köpenick statt.",
+    "ai_summary": "Eine neue Ausstellung mit dem Titel „Naturblicke – Cöpenicker Zeichenstunde und Skulpturen von Tamara Schwieger“ wird am 18. September 2026 in der Mittelpunktbibliothek Köpenick eröffnet und ist bis zum 7. November 2026 zu sehen.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Mittelpunktbibliothek Köpenick, Alter Markt 2, 12555 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet in der Mittelpunktbibliothek Köpenick am Alten Markt statt, was eine direkte lokale Verankerung zeigt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715895.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [
+      "Alter Markt 2, 12555 Berlin"
+    ],
+    "street": "Alter Markt 2",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4458824,
+    "lng": 13.57904,
+    "is_mock": false
+  },
+  {
+    "id": "eff76d48deb618df",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715674.php",
+    "title": "25.09. - 03.10.2026: Veranstaltungen zur Interkulturellen Woche in Treptow-Köpenick",
+    "published_at": "2026-09-18T05:55:00.000Z",
+    "ingested_at": "2026-09-18T08:53:28.734Z",
+    "raw_excerpt": "Die Interkulturelle Woche findet in diesem Jahr in Berlin vom 25. September bis 4. Oktober 2026. statt. Im Rahmen der Aktionswoche finden vom 25. September bis zum 3. Oktober 2026 unterschiedliche Führungen durch das Dokumentationszentrum NS-Zwangsarbeit statt, das dieser Tage 20-jähriges Jubiläum feiert. Darüber hinaus gibt es unter dem Motto #dafür! zahlreiche Begegnungsangebote, zu denen Sie herzlich eingeladen sind:",
+    "ai_summary": "Die Interkulturelle Woche in Berlin findet vom 25. September bis 4. Oktober 2026 statt, wobei in Treptow-Köpenick vom 25. September bis 3. Oktober Führungen im Dokumentationszentrum NS-Zwangsarbeit und weitere Begegnungsangebote unter dem Motto #dafür! angeboten werden.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Die Interkulturelle Woche umfasst Veranstaltungen und Angebote in Treptow-Köpenick, was eine lokale Relevanz auf Bezirksebene darstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715674.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "3f3d7b61f0384103",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715664.php",
+    "title": "Polen entdecken – mitten in Treptow-Köpenick",
+    "published_at": "2026-09-18T05:40:00.000Z",
+    "ingested_at": "2026-09-18T08:53:28.734Z",
+    "raw_excerpt": "Berlin und Warschau feiern das 35-jährige Bestehen ihrer Städtepartnerschaft. Unter dem Motto „Näher als du denkst“ wird das deutsch-polnische Jubiläumsjahr mit zahlreichen Veranstaltungen begangen. * Programm – Berlin Warszawa Auch der Bezirk Treptow-Köpenick beteiligt sich im Rahmen der Städtepartnerschaft mit Warschau-Mokotów an dem Programm. Das Bezirksamt Treptow-Köpenick lädt gemeinsam mit der Deutsch-Polnischen Gesellschaft Berlin e. V.",
+    "ai_summary": "Berlin und Warschau feiern das 35-jährige Bestehen ihrer Städtepartnerschaft. Der Bezirk Treptow-Köpenick beteiligt sich im Rahmen der Städtepartnerschaft mit Warschau-Mokotów an dem Programm.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "politik",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Der Bezirk Treptow-Köpenick ist explizit als beteiligter Ort der Städtepartnerschaft und des Programms genannt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715664.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "b3f2259b59df3c82",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715490.php",
+    "title": "Schmerzmittel im Sport: Gesundheit vor Leistungsdruck",
+    "published_at": "2026-09-17T13:29:00.000Z",
+    "ingested_at": "2026-09-18T08:53:28.734Z",
+    "raw_excerpt": "Vom 14. bis 20. September 2026 findet die 7. Berliner Aktionswoche gegen Medikamentenmissbrauch statt. In diesem Jahr steht der verantwortungsvolle Umgang mit Schmerzmitteln im Sport und in Sportvereinen im Mittelpunkt. Auch der Bezirk Treptow-Köpenick beteiligt sich an der berlinweiten Aktion in Form eines Sensibilisierungsschreibens an Treptow-Köpenicker Sportvereine. Dieses richtet sich insbesondere an Vorstände, Verantwortliche und Trainerinnen und Trainer sowie deren Mitglieder.",
+    "ai_summary": "Die 7. Berliner Aktionswoche gegen Medikamentenmissbrauch findet vom 14. bis 20. September 2026 statt, wobei der Bezirk Treptow-Köpenick Sportvereine zum verantwortungsvollen Umgang mit Schmerzmitteln sensibilisiert.",
+    "tags": [
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Der Bezirk Treptow-Köpenick beteiligt sich aktiv an der berlinweiten Aktion, indem er Sportvereine im Bezirk anspricht.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715490.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "93d94b22d259247b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715411.php",
+    "title": "Neue Geräte für den Spielplatz im Bellevuepark in Köpenick – Arbeiten starten ab 21. September 2026",
+    "published_at": "2026-09-17T12:01:00.000Z",
+    "ingested_at": "2026-09-18T08:53:28.734Z",
+    "raw_excerpt": "* Zeit: ab 21. September 2026 * Ort: Spielplatz im Bellevuepark Einmal alles neu: Das Straßen- und Grünflächenamt tauscht alle alten, in die Jahre gekommenen Spielgeräte auf dem Spielplatz im Bellevuepark in Köpenick komplett gegen neue aus – und erweitert dabei zusätzlich das Spielangebot. Die Arbeiten starten ab 21. September 2026. Vorgesehen sind eine Seilpyramide mit Aussichtskorb, ein Balancierbalken mit Hüpfpalisaden, eine Spielkombination mit Röhrenrutsche und eine neue Schaukel.",
+    "ai_summary": "Ab dem 21. September 2026 beginnen im Bellevuepark in Köpenick Arbeiten zum Austausch und zur Erweiterung von Spielgeräten auf dem Spielplatz.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Spielplatz im Bellevuepark in Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 1,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Der genannte Ort \"Spielplatz im Bellevuepark in Köpenick\" ist spezifisch und direkt lokal relevant für Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715411.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
   },
   {
     "id": "816da454cdd7b55b",
@@ -43,22 +387,21 @@
     "published_at": "2026-09-17T12:00:00.000Z",
     "ingested_at": "2026-09-17T09:18:30.249Z",
     "raw_excerpt": "Ort: Galerie Rathaus Johannisthal in Treptow-Köpenick",
-    "ai_summary": "Die Galerie Johannisthal in Treptow-Köpenick präsentiert die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“, die am 17. September 2026 eröffnet wird.",
+    "ai_summary": "In der Galerie Rathaus Johannisthal in Treptow-Köpenick wird die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“ eröffnet.",
     "tags": [
       "veranstaltung",
       "sonstiges"
     ],
-    "location": "Galerie Rathaus Johannisthal",
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Eine neue Kunstausstellung wird in der Galerie Rathaus Johannisthal eröffnet. Dies bietet Anwohnern eine kulturelle Bereicherung und die Möglichkeit, lokale Künstler zu unterstützen.",
+    "ai_reasoning": "Der Veranstaltungsort ist explizit als Galerie Rathaus Johannisthal in Treptow-Köpenick angegeben, was eine hohe lokale Relevanz impliziert.",
     "event_start_at": "2026-09-17T12:00:00.000Z",
     "venue": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
     "district": "Johannisthal",
     "addresses": [],
-    "street": null,
     "election_topic": null,
     "is_mock": false,
     "source_refs": [
@@ -67,7 +410,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "cef90ca2d511847e",
@@ -100,7 +446,8 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715076.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "8d05726f9b16fbdc",
@@ -133,7 +480,8 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714936.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "2af49d846584c699",
@@ -166,7 +514,8 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1715008.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "71d19ac86cd28d68",
@@ -273,7 +622,8 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714764.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "4ba0d60566d160ea",
@@ -306,7 +656,8 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714546.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "25f35eea75d76e2f",
@@ -747,17 +1098,18 @@
     "published_at": "2026-09-15T20:21:32.640Z",
     "ingested_at": "2026-09-15T20:21:32.641Z",
     "raw_excerpt": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern Ausstellungen Kunst, Kultur Bildung, Schule Termin: 22.09.2026 08:00 Uhr Veranstaltungsort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 22. September um 08:00 in Alexander-von-Humboldt-Gymnasium.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung \"Gegen das Vergessen\" mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern findet am 22. September 2026 im Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet in einer lokalen Bildungseinrichtung im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
     "event_start_at": "2026-09-22T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -775,7 +1127,8 @@
     "geocode_precision": "venue",
     "lat": 52.445594,
     "lng": 13.5668943,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "9c325e3d4d01ebdf",
@@ -786,21 +1139,22 @@
     "published_at": "2026-09-15T20:21:32.403Z",
     "ingested_at": "2026-09-15T20:21:32.403Z",
     "raw_excerpt": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern Ausstellungen Kunst, Kultur Bildung, Schule Termin: 21.09.2026 08:00 Uhr Veranstaltungsort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 21. September um 08:00 in Alexander-von-Humboldt-Gymnasium.",
-    "summary_origin": "fallback",
+    "ai_summary": "Eine Ausstellung namens \"Gegen das Vergessen\" mit Werken von Luigi Toscano und Schülern wird am 21. September 2026 im Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick eröffnet.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet in einer lokalen Bildungseinrichtung im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
     "event_start_at": "2026-09-21T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:32.403Z",
+    "last_seen_at": "2026-09-18T08:53:27.636Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -814,7 +1168,8 @@
     "geocode_precision": "venue",
     "lat": 52.445594,
     "lng": 13.5668943,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "b85ff281e4b35816",
@@ -825,21 +1180,22 @@
     "published_at": "2026-09-15T20:21:32.401Z",
     "ingested_at": "2026-09-15T20:21:32.401Z",
     "raw_excerpt": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern Ausstellungen Kunst, Kultur Bildung, Schule Termin: 18.09.2026 08:00 Uhr Veranstaltungsort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. September um 08:00 in Alexander-von-Humboldt-Gymnasium.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung „Gegen das Vergessen“ mit Werken von Luigi Toscano und Schülern wird im Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.6,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-09-18T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:32.401Z",
+    "last_seen_at": "2026-09-18T08:53:27.636Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -853,7 +1209,8 @@
     "geocode_precision": "venue",
     "lat": 52.445594,
     "lng": 13.5668943,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "b76794b34f01acbd",
@@ -864,17 +1221,18 @@
     "published_at": "2026-09-15T20:21:32.400Z",
     "ingested_at": "2026-09-15T20:21:32.400Z",
     "raw_excerpt": "„Gegen das Vergessen“: Ausstellung mit Arbeiten von Luigi Toscano und Schülerinnen und Schülern Ausstellungen Kunst, Kultur Bildung, Schule Termin: 17.09.2026 08:00 Uhr Veranstaltungsort: Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. September um 08:00 in Alexander-von-Humboldt-Gymnasium.",
-    "summary_origin": "fallback",
+    "ai_summary": "Eine Ausstellung mit Arbeiten von Luigi Toscano und Schülern findet im Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Alexander-von-Humboldt-Gymnasium in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.6,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-09-17T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -892,7 +1250,8 @@
     "geocode_precision": "venue",
     "lat": 52.445594,
     "lng": 13.5668943,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "ac8202483de6c4a9",
@@ -2329,22 +2688,23 @@
     "published_at": "2026-09-14T20:18:50.768Z",
     "ingested_at": "2026-09-14T20:18:50.768Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 20.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 20. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung \"Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart\" wird am 20. September 2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.5,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet explizit im Bezirk Treptow-Köpenick statt und hat somit einen direkten lokalen Bezug.",
     "event_start_at": "2026-09-20T08:00:00.000Z",
     "event_end_at": "2026-09-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-18T08:53:27.636Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2358,7 +2718,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "c7bf1f858c4c99c6",
@@ -2409,22 +2770,23 @@
     "published_at": "2026-09-14T20:18:50.767Z",
     "ingested_at": "2026-09-14T20:18:50.767Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 18.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick findet die Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der genannte Veranstaltungsort im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick weist einen direkten lokalen Bezug auf.",
     "event_start_at": "2026-09-18T08:00:00.000Z",
     "event_end_at": "2026-09-18T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-18T08:53:27.636Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2438,7 +2800,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "140f8ea1efca1665",
@@ -2449,22 +2812,23 @@
     "published_at": "2026-09-14T20:18:50.767Z",
     "ingested_at": "2026-09-14T20:18:50.767Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 19.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 19. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Eine Ausstellung zum Thema Zwangsarbeit in Vergangenheit und Gegenwart findet am 19. September 2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.5,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet explizit im Bezirk Treptow-Köpenick statt und hat somit einen direkten lokalen Bezug.",
     "event_start_at": "2026-09-19T08:00:00.000Z",
     "event_end_at": "2026-09-19T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-18T08:53:27.636Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2478,7 +2842,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "f89836c77b78b1c6",
@@ -2489,17 +2854,18 @@
     "published_at": "2026-09-14T20:18:50.766Z",
     "ingested_at": "2026-09-14T20:18:50.766Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 17.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. September um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ wird im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der genannte Veranstaltungsort im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick weist einen direkten lokalen Bezug auf.",
     "event_start_at": "2026-09-17T08:00:00.000Z",
     "event_end_at": "2026-09-17T16:00:00.000Z",
     "event_date_precision": "time",
@@ -2518,7 +2884,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "d085cc8ffbe7c907",
@@ -2886,7 +3253,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-09-15T20:21:31.952Z"
+    "last_seen_at": "2026-09-18T08:53:27.636Z"
   },
   {
     "id": "2f9aaa81405624d6",

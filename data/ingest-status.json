@@ -1,45 +1,51 @@
 {
-  "last_run": "2026-09-17T09:18:40.985Z",
+  "last_run": "2026-09-18T08:53:27.636Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
-      "fetched": 0,
-      "parsed": 0,
-      "raw_items": 339
+      "parsed": 1,
+      "raw_items": 50,
+      "last_success_at": "2026-09-18T08:53:27.636Z",
+      "fetched": 0
     },
     "berlin-events": {
-      "status": "ok",
-      "fetched": 2,
+      "status": "warning",
+      "error": "Weitere Kalenderseiten nicht erreichbar",
       "parsed": 10,
-      "raw_items": 434
+      "raw_items": 10,
+      "last_success_at": "2026-09-18T08:53:27.636Z",
+      "fetched": 5
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "fetched": 5,
-      "parsed": 20,
-      "raw_items": 432
+      "parsed": 10,
+      "raw_items": 10,
+      "last_success_at": "2026-09-18T08:53:27.636Z",
+      "fetched": 5
     },
     "bvv-tk": {
-      "status": "ok",
-      "fetched": 0,
-      "parsed": 10,
-      "raw_items": 10
+      "status": "skipped",
+      "error": "Keine eigenständige BVV-Quelle angebunden; Pressemitteilungen laufen über Bezirksamt.",
+      "parsed": 0,
+      "fetched": 0
     },
     "viz-baustellen": {
       "status": "skipped",
-      "error": "Optionale Quelle aktuell nicht erreichbar: alle VIZ-URLs lieferten Fehler",
-      "fetched": 0,
+      "error": "Fetch failed 404 for https://api.viz.berlin.de/daten/baustellen",
       "parsed": 0,
-      "raw_items": 0
+      "raw_items": 0,
+      "fetched": 0
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "fetched": 2,
-      "parsed": 2,
-      "raw_items": 2
+      "parsed": 0,
+      "raw_items": 0,
+      "fetched": 0
     }
   },
-  "new_entries": 9,
-  "total_entries": 259,
-  "dry_run": false
+  "new_entries": 10,
+  "dry_run": false,
+  "ai_status": "ok",
+  "total_entries": 250,
+  "archived_entries": 9
 }
