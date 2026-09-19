@@ -1320,7 +1320,10 @@
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286525"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "geocode_precision": "venue",
+    "lat": 52.4660747,
+    "lng": 13.5735973
   },
   {
     "id": "a27cd2c1c5625f9c",

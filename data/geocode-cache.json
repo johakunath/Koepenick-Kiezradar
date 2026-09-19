@@ -86,5 +86,25 @@
   "S-Bahnhof Köpenick": {
     "lat": 52.4685507,
     "lng": 13.5543359
+  },
+  "Peenestraße 47": {
+    "lat": 52.4151428,
+    "lng": 13.5327493
+  },
+  "Forum Adlershof": {
+    "lat": 52.4318192,
+    "lng": 13.5330535
+  },
+  "Zentrum für Demokratie Treptow-Köpenick": {
+    "lat": 52.4562129,
+    "lng": 13.5105727
+  },
+  "Ortolfstraße 182/ 184": {
+    "lat": 52.4032966,
+    "lng": 13.5286859
+  },
+  "Theater Ost": {
+    "lat": 52.4336061,
+    "lng": 13.5392054
   }
 }
