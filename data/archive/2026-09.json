@@ -1,5 +1,461 @@
 [
   {
+    "id": "6e7922fcdffd79bf",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=76",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2852",
+    "published_at": "2026-09-20T09:09:45.047Z",
+    "ingested_at": "2026-09-20T09:09:45.047Z",
+    "raw_excerpt": "rgasse Westseite Kiefholzstraße Lohmühlenstraße Bouchestraße südlich Kinzerallee Puchanstraße Bahnhofstraße beidseitig Kirschenbaumstraße Kietzer Straße Jägerstraße Müggelheimer Straße beidseitig Königsseestraße Dahmestraße Königsseestraße 18 Südseite Bohnsdorfer Weg Rudower Straße be",
+    "ai_summary": "rgasse Westseite Kiefholzstraße Lohmühlenstraße Bouchestraße südlich Kinzerallee Puchanstraße Bahnhofstraße beidseitig Kirschenbaumstraße Kietzer Straße Jägerstraße Müggelheimer Straße beidseitig Königsseestraße Dahmestraße Königsseestraße 18 Südseite Bohnsdorfer Weg Rudower Straße be",
+    "tags": [
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 76).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 76,
+    "pdf_excerpt": "rgasse Westseite Kiefholzstraße Lohmühlenstraße Bouchestraße südlich Kinzerallee Puchanstraße Bahnhofstraße beidseitig Kirschenbaumstraße Kietzer Straße Jägerstraße Müggelheimer Straße beidseitig Königsseestraße Dahmestraße Königsseestraße 18 Südseite Bohnsdorfer Weg Rudower Straße be",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Müggelheim",
+    "addresses": [
+      "Königsseestraße 18"
+    ],
+    "street": "Königsseestraße",
+    "geocode_precision": "address",
+    "lat": 52.4210863,
+    "lng": 13.5805725,
+    "is_mock": false
+  },
+  {
+    "id": "a48bdaafe3f7c15a",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=78",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2854",
+    "published_at": "2026-09-20T09:09:45.047Z",
+    "ingested_at": "2026-09-20T09:09:45.047Z",
+    "raw_excerpt": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2854 Treptow-Köpenick Widmung einer öffentlichen Grün- und Erholungsanlage Bekanntmachung vom 24. März 2026 TiefGrün GSO 9 Telefon: 90297-5814 oder 90297-0, intern 9297-5814 Das Bezirksamt Treptow-Köpenick von Berlin, Abteilung Stadtentwicklung, Straßen",
+    "ai_summary": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2854 Treptow-Köpenick Widmung einer öffentlichen Grün- und Erholungsanlage Bekanntmachung vom 24. März 2026 TiefGrün GSO 9 Telefon: 90297-5814 oder 90297-0, intern 9297-5814 Das Bezirksamt Treptow-Köpenick von Berlin, Abteilung Stadtentwicklung, Straßen",
+    "tags": [
+      "verkehr",
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 78).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 78,
+    "pdf_excerpt": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2854 Treptow-Köpenick Widmung einer öffentlichen Grün- und Erholungsanlage Bekanntmachung vom 24. März 2026 TiefGrün GSO 9 Telefon: 90297-5814 oder 90297-0, intern 9297-5814 Das Bezirksamt Treptow-Köpenick von Berlin, Abteilung Stadtentwicklung, Straßen",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "f273d9c851606f43",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=79",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2855",
+    "published_at": "2026-09-20T09:09:45.047Z",
+    "ingested_at": "2026-09-20T09:09:45.047Z",
+    "raw_excerpt": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2855 Treptow-Köpenick Grundstücksnummerierungen Bekanntmachung vom 10. September 2026 Verm 35 Telefon: 90297-2183 oder 90297, intern 9297-2183 Das Bezirksamt Treptow-Köpenick von Berlin, Stadtentwicklungsamt, Fachbereich Vermessung, hat folgende Grundst",
+    "ai_summary": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2855 Treptow-Köpenick Grundstücksnummerierungen Bekanntmachung vom 10. September 2026 Verm 35 Telefon: 90297-2183 oder 90297, intern 9297-2183 Das Bezirksamt Treptow-Köpenick von Berlin, Stadtentwicklungsamt, Fachbereich Vermessung, hat folgende Grundst",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 79).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 79,
+    "pdf_excerpt": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2855 Treptow-Köpenick Grundstücksnummerierungen Bekanntmachung vom 10. September 2026 Verm 35 Telefon: 90297-2183 oder 90297, intern 9297-2183 Das Bezirksamt Treptow-Köpenick von Berlin, Stadtentwicklungsamt, Fachbereich Vermessung, hat folgende Grundst",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "d79e5bce6ee6ea89",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=80",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2856",
+    "published_at": "2026-09-20T09:09:45.047Z",
+    "ingested_at": "2026-09-20T09:09:45.047Z",
+    "raw_excerpt": "/ 18. September 2026 2856 Straßen Grundstücksnummern alt (bisher) Grundstücksnummern neu Ortsteil Johannisthal Segelfliegerdamm 9, 11, 13, 15, 17, 19, 21, 23 9, 11, 13, 15, 17, 19, 21, 23 Segelfliegerdamm 35 35 Segelfliegerdamm 37 37 Ortsteil Köpenick Finkeldeweg 112, 112 A 112 A, 112 B, 11",
+    "ai_summary": "/ 18. September 2026 2856 Straßen Grundstücksnummern alt (bisher) Grundstücksnummern neu Ortsteil Johannisthal Segelfliegerdamm 9, 11, 13, 15, 17, 19, 21, 23 9, 11, 13, 15, 17, 19, 21, 23 Segelfliegerdamm 35 35 Segelfliegerdamm 37 37 Ortsteil Köpenick Finkeldeweg 112, 112 A 112 A, 112 B, 11",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 80).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 80,
+    "pdf_excerpt": "/ 18. September 2026 2856 Straßen Grundstücksnummern alt (bisher) Grundstücksnummern neu Ortsteil Johannisthal Segelfliegerdamm 9, 11, 13, 15, 17, 19, 21, 23 9, 11, 13, 15, 17, 19, 21, 23 Segelfliegerdamm 35 35 Segelfliegerdamm 37 37 Ortsteil Köpenick Finkeldeweg 112, 112 A 112 A, 112 B, 11",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [
+      "Segelfliegerdamm 9",
+      "Segelfliegerdamm 35",
+      "Segelfliegerdamm 37",
+      "Finkeldeweg 112"
+    ],
+    "street": "Segelfliegerdamm",
+    "geocode_precision": "address",
+    "lat": 52.4441447,
+    "lng": 13.5104161,
+    "is_mock": false
+  },
+  {
+    "id": "880708b963e9c78c",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=58",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2834",
+    "published_at": "2026-09-20T09:09:45.046Z",
+    "ingested_at": "2026-09-20T09:09:45.046Z",
+    "raw_excerpt": "ke Neudecker Weg Glashüter Weg südliche Seite 31.07.2027 August-Foehlich-Straße Neudecker Weg Köpenicker Straße östlich 17.12.2028 Bornsdorfer Straße Bornsdorfer Straße 14 Bornsdorfer Straße/Saltykowstraße beidseitig 03.03.2029 Fritz-Erler-Allee Lipschitzallee Efeuweg nördlich 31.12.",
+    "ai_summary": "ke Neudecker Weg Glashüter Weg südliche Seite 31.07.2027 August-Foehlich-Straße Neudecker Weg Köpenicker Straße östlich 17.12.2028 Bornsdorfer Straße Bornsdorfer Straße 14 Bornsdorfer Straße/Saltykowstraße beidseitig 03.03.2029 Fritz-Erler-Allee Lipschitzallee Efeuweg nördlich 31.12.",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 58).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 58,
+    "pdf_excerpt": "ke Neudecker Weg Glashüter Weg südliche Seite 31.07.2027 August-Foehlich-Straße Neudecker Weg Köpenicker Straße östlich 17.12.2028 Bornsdorfer Straße Bornsdorfer Straße 14 Bornsdorfer Straße/Saltykowstraße beidseitig 03.03.2029 Fritz-Erler-Allee Lipschitzallee Efeuweg nördlich 31.12.",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "a05e29e0ad9f8942",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=75",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2851",
+    "published_at": "2026-09-20T09:09:45.046Z",
+    "ingested_at": "2026-09-20T09:09:45.046Z",
+    "raw_excerpt": "idseitig Adlergestell Platz der Befreiung Ahornallee Aßmannstraße Fürstenwalder Damm beidseitig Alt-Köpenick beidseitig Alter Markt beidseitig Alt-Müggelheim Altheiderstraße beidseitig An der Wuhlheide Rudolf-Rühl-Allee Einmündungsbereich Mittelinseln und gegenüber Am Alten Fenn beidseitig",
+    "ai_summary": "idseitig Adlergestell Platz der Befreiung Ahornallee Aßmannstraße Fürstenwalder Damm beidseitig Alt-Köpenick beidseitig Alter Markt beidseitig Alt-Müggelheim Altheiderstraße beidseitig An der Wuhlheide Rudolf-Rühl-Allee Einmündungsbereich Mittelinseln und gegenüber Am Alten Fenn beidseitig",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Altstadt Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 75).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 75,
+    "pdf_excerpt": "idseitig Adlergestell Platz der Befreiung Ahornallee Aßmannstraße Fürstenwalder Damm beidseitig Alt-Köpenick beidseitig Alter Markt beidseitig Alt-Müggelheim Altheiderstraße beidseitig An der Wuhlheide Rudolf-Rühl-Allee Einmündungsbereich Mittelinseln und gegenüber Am Alten Fenn beidseitig",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Altstadt Köpenick",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4466938,
+    "lng": 13.5769665,
+    "is_mock": false
+  },
+  {
+    "id": "36b5e4230a408498",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=48",
+    "title": "Adolfstraße \tBrodauer Platz \tB 1/5",
+    "published_at": "2026-09-20T09:09:45.045Z",
+    "ingested_at": "2026-09-20T09:09:45.045Z",
+    "raw_excerpt": "Alberichstraße Balzer Straße Hadubrandstraße östlich/westlich Albrecht-Dürer-Straße Am Waldberg Köpenicker Straße nördlich/südlich Köpenicker Straße Fortunaallee südlich 133 149 nördlich Alt-Biesdorf Blumberger Damm Mozartstraße nördlich Alt-Hellersdorf außer 29, 31 Alt-Mahlsdorf Alte H",
+    "ai_summary": "Alberichstraße Balzer Straße Hadubrandstraße östlich/westlich Albrecht-Dürer-Straße Am Waldberg Köpenicker Straße nördlich/südlich Köpenicker Straße Fortunaallee südlich 133 149 nördlich Alt-Biesdorf Blumberger Damm Mozartstraße nördlich Alt-Hellersdorf außer 29, 31 Alt-Mahlsdorf Alte H",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 48).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 48,
+    "pdf_excerpt": "Alberichstraße Balzer Straße Hadubrandstraße östlich/westlich Albrecht-Dürer-Straße Am Waldberg Köpenicker Straße nördlich/südlich Köpenicker Straße Fortunaallee südlich 133 149 nördlich Alt-Biesdorf Blumberger Damm Mozartstraße nördlich Alt-Hellersdorf außer 29, 31 Alt-Mahlsdorf Alte H",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "aa7e550fa92d9770",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=49",
+    "title": "Chalottenstraße \tOberfeldstraße \tHiltrudstraße \tGesamt",
+    "published_at": "2026-09-20T09:09:45.045Z",
+    "ingested_at": "2026-09-20T09:09:45.045Z",
+    "raw_excerpt": "traße Dankratweg südlich Debenzer Straße Deutschhofer Allee Dingolfinger Straße Dirschauer Straße Köpenicker Straße Am Waldberg von Ameburger Straße Am Waldberg östlich 31.12.2028 Dompfaffenweg 1 31 nördlich Donathstraße An der Schule Mozartstraße Lortzingstraße Mozartstraße Dorfstraße M",
+    "ai_summary": "traße Dankratweg südlich Debenzer Straße Deutschhofer Allee Dingolfinger Straße Dirschauer Straße Köpenicker Straße Am Waldberg von Ameburger Straße Am Waldberg östlich 31.12.2028 Dompfaffenweg 1 31 nördlich Donathstraße An der Schule Mozartstraße Lortzingstraße Mozartstraße Dorfstraße M",
+    "tags": [
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 49).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 49,
+    "pdf_excerpt": "traße Dankratweg südlich Debenzer Straße Deutschhofer Allee Dingolfinger Straße Dirschauer Straße Köpenicker Straße Am Waldberg von Ameburger Straße Am Waldberg östlich 31.12.2028 Dompfaffenweg 1 31 nördlich Donathstraße An der Schule Mozartstraße Lortzingstraße Mozartstraße Dorfstraße M",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [
+      "Dompfaffenweg 1"
+    ],
+    "street": "Dompfaffenweg",
+    "geocode_precision": "address",
+    "lat": 52.5352031,
+    "lng": 13.5424571,
+    "is_mock": false
+  },
+  {
+    "id": "4fdc742c9686ff29",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=51",
+    "title": "ABl. Nr. 40 / 18. September 2026 \t2827",
+    "published_at": "2026-09-20T09:09:45.045Z",
+    "ingested_at": "2026-09-20T09:09:45.045Z",
+    "raw_excerpt": "nördlich Hatzenporter Weg Hauptweg Havelländer Ring Haynstraße beidseitig Heerstraße Heesestraße Köpenicker Straße Dramburger Straße nördlich Heidestraße Köpenicker Straße Fortunaallee südlich Heidenauer Straße Heinrich-Grüber-Straße Ridbacher Straße Grottkauer Straße östlich Heinrich-Grü",
+    "ai_summary": "nördlich Hatzenporter Weg Hauptweg Havelländer Ring Haynstraße beidseitig Heerstraße Heesestraße Köpenicker Straße Dramburger Straße nördlich Heidestraße Köpenicker Straße Fortunaallee südlich Heidenauer Straße Heinrich-Grüber-Straße Ridbacher Straße Grottkauer Straße östlich Heinrich-Grü",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 51).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 51,
+    "pdf_excerpt": "nördlich Hatzenporter Weg Hauptweg Havelländer Ring Haynstraße beidseitig Heerstraße Heesestraße Köpenicker Straße Dramburger Straße nördlich Heidestraße Köpenicker Straße Fortunaallee südlich Heidenauer Straße Heinrich-Grüber-Straße Ridbacher Straße Grottkauer Straße östlich Heinrich-Grü",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "cd3f650b60578f36",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015#page=8",
+    "title": "Stadt II W 4-11",
+    "published_at": "2026-09-20T09:09:45.043Z",
+    "ingested_at": "2026-09-20T09:09:45.043Z",
+    "raw_excerpt": "ahnhofs Blankenburg, eine Teilfläche der Parkanlage am Ilsenburggraben, eine Teilfläche südlich der Bahnhofstraße, die Fläche der ehemaligen Polizeischule und der späteren Fachhochschule für Technik und Wirtschaft, eine Teilfläche südlich des Fließgrabens, eine Teilfläche westlich und östlich der He",
+    "ai_summary": "ahnhofs Blankenburg, eine Teilfläche der Parkanlage am Ilsenburggraben, eine Teilfläche südlich der Bahnhofstraße, die Fläche der ehemaligen Polizeischule und der späteren Fachhochschule für Technik und Wirtschaft, eine Teilfläche südlich des Fließgrabens, eine Teilfläche westlich und östlich der He",
+    "tags": [
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 8).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
+    "pdf_page": 8,
+    "pdf_excerpt": "ahnhofs Blankenburg, eine Teilfläche der Parkanlage am Ilsenburggraben, eine Teilfläche südlich der Bahnhofstraße, die Fläche der ehemaligen Polizeischule und der späteren Fachhochschule für Technik und Wirtschaft, eine Teilfläche südlich des Fließgrabens, eine Teilfläche westlich und östlich der He",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "b2b08e4bab816537",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293134&ls=40&c=13&date_start=20.09.2026",
+    "title": "Polen entdecken – mitten in Treptow-Köpenick",
+    "published_at": "2026-09-20T09:09:39.931Z",
+    "ingested_at": "2026-09-20T09:09:39.931Z",
+    "raw_excerpt": "Polen entdecken – mitten in Treptow-Köpenick Lesungen, Vorträge Kunst, Kultur Infoveranstaltungen Termin: 06.10.2026 19:00 Uhr Veranstaltungsort: Mittelpunktbibliothek Köpenick in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 6. Oktober um 19:00 in Mittelpunktbibliothek Köpenick.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-10-06T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-20T09:09:39.931Z",
+    "venue": "Mittelpunktbibliothek Köpenick",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293134"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4458824,
+    "lng": 13.57904,
+    "is_mock": false
+  },
+  {
+    "id": "e182847b5598c2b2",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=20.09.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-09-20T09:09:39.930Z",
+    "ingested_at": "2026-09-20T09:09:39.930Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 06.10.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 6. Oktober um 12:00 in Galerie Rathaus Johannisthal.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-10-06T10:00:00.000Z",
+    "event_end_at": "2026-10-06T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-20T09:09:39.930Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
     "id": "ecca1112b4f7926d",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -24,7 +480,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.620Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -64,7 +520,7 @@
     "event_end_at": "2026-10-03T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.619Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -104,7 +560,7 @@
     "event_end_at": "2026-10-02T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.618Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -144,7 +600,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.616Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Theater Ost",
     "source_refs": [
       {
@@ -186,7 +642,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.616Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -225,7 +681,7 @@
     "event_start_at": "2026-09-30T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.246Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -265,7 +721,7 @@
     "event_end_at": "2026-09-30T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.245Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -305,7 +761,7 @@
     "event_end_at": "2026-09-29T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.244Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -345,7 +801,7 @@
     "event_end_at": "2026-09-28T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:13.242Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -384,7 +840,7 @@
     "event_start_at": "2026-09-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.882Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -424,7 +880,7 @@
     "event_end_at": "2026-09-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.881Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -464,7 +920,7 @@
     "event_start_at": "2026-09-25T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.879Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Manfred-Schmitz-Saal",
     "source_refs": [
       {
@@ -504,7 +960,7 @@
     "event_end_at": "2026-09-25T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.879Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -545,7 +1001,7 @@
     "event_start_at": "2026-09-24T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.523Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Zentrum für Demokratie Treptow-Köpenick",
     "source_refs": [
       {
@@ -588,7 +1044,7 @@
     "event_end_at": "2026-09-24T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.523Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -628,7 +1084,7 @@
     "event_end_at": "2026-09-23T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.521Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Forum Adlershof",
     "source_refs": [
       {
@@ -670,7 +1126,7 @@
     "event_end_at": "2026-09-23T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.521Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -710,7 +1166,7 @@
     "event_end_at": "2026-09-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:12.519Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -749,7 +1205,7 @@
     "event_end_at": "2026-09-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.818Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -804,7 +1260,8 @@
     "geocode_precision": "address",
     "lat": 52.4151428,
     "lng": 13.5327493,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "5e65268cef877bb7",
@@ -838,7 +1295,8 @@
     "addresses": [],
     "summary_origin": "ai",
     "enrichment_version": 2,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "3b174efa8c06b9aa",
@@ -870,7 +1328,8 @@
     "addresses": [],
     "summary_origin": "ai",
     "enrichment_version": 2,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "19fc97d3149c0bfd",
@@ -912,7 +1371,8 @@
     "geocode_precision": "address",
     "lat": 52.4032966,
     "lng": 13.5286859,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "b0a422bd4c5934ea",
@@ -949,7 +1409,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "a7fa54fee737f1cb",
@@ -975,7 +1436,7 @@
     "event_start_at": "2026-09-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -1192,7 +1653,7 @@
     "lat": 52.4458824,
     "lng": 13.57904,
     "is_mock": false,
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "eff76d48deb618df",
@@ -1227,7 +1688,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "3f3d7b61f0384103",
@@ -1263,7 +1724,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "b3f2259b59df3c82",
@@ -1297,7 +1758,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "93d94b22d259247b",
@@ -1333,7 +1794,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "816da454cdd7b55b",
@@ -1404,7 +1865,7 @@
       }
     ],
     "alias_ids": [],
-    "last_seen_at": "2026-09-19T08:40:11.063Z"
+    "last_seen_at": "2026-09-20T09:09:37.462Z"
   },
   {
     "id": "8d05726f9b16fbdc",
@@ -1717,7 +2178,7 @@
     "event_start_at": "2026-10-02T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1756,7 +2217,7 @@
     "event_start_at": "2026-09-30T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1795,7 +2256,7 @@
     "event_start_at": "2026-10-01T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1834,7 +2295,7 @@
     "event_start_at": "2026-09-29T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1873,7 +2334,7 @@
     "event_start_at": "2026-09-28T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1913,7 +2374,7 @@
     "event_start_at": "2026-09-24T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1954,7 +2415,7 @@
     "event_start_at": "2026-09-25T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -1995,7 +2456,7 @@
     "event_start_at": "2026-09-23T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2037,7 +2498,7 @@
     "event_end_at": "2026-09-22T19:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2078,7 +2539,7 @@
     "event_start_at": "2026-09-22T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2119,7 +2580,7 @@
     "event_start_at": "2026-09-21T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -3029,7 +3490,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -3109,7 +3570,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3149,7 +3610,7 @@
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3189,7 +3650,7 @@
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3229,7 +3690,7 @@
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3269,7 +3730,7 @@
     "event_end_at": "2026-10-01T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3309,7 +3770,7 @@
     "event_end_at": "2026-09-29T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3349,7 +3810,7 @@
     "event_end_at": "2026-09-30T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3389,7 +3850,7 @@
     "event_end_at": "2026-09-27T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3430,7 +3891,7 @@
     "event_end_at": "2026-09-26T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3471,7 +3932,7 @@
     "event_end_at": "2026-09-27T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3511,7 +3972,7 @@
     "event_start_at": "2026-09-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -3553,7 +4014,7 @@
     "event_end_at": "2026-09-25T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3595,7 +4056,7 @@
     "event_end_at": "2026-09-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3637,7 +4098,7 @@
     "event_end_at": "2026-09-24T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3679,7 +4140,7 @@
     "event_end_at": "2026-09-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3721,7 +4182,7 @@
     "event_end_at": "2026-09-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-19T08:40:11.063Z",
+    "last_seen_at": "2026-09-20T09:09:37.462Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {

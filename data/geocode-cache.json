@@ -106,5 +106,21 @@
   "Theater Ost": {
     "lat": 52.4336061,
     "lng": 13.5392054
+  },
+  "Dompfaffenweg 1": {
+    "lat": 52.5352031,
+    "lng": 13.5424571
+  },
+  "Altstadt Köpenick": {
+    "lat": 52.4466938,
+    "lng": 13.5769665
+  },
+  "Königsseestraße 18": {
+    "lat": 52.4210863,
+    "lng": 13.5805725
+  },
+  "Segelfliegerdamm 9": {
+    "lat": 52.4441447,
+    "lng": 13.5104161
   }
 }
