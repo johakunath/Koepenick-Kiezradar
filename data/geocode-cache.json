@@ -126,5 +126,13 @@
   "Bürgerhaus Altglienicke": {
     "lat": 52.4032966,
     "lng": 13.5286859
+  },
+  "Dörpfeldstraße 54-56, 12489 Berlin": {
+    "lat": 52.4410088,
+    "lng": 13.5567833
+  },
+  "Sterndamm 102, 12487 Berlin": {
+    "lat": 52.443532,
+    "lng": 13.5022688
   }
 }

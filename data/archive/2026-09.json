@@ -1,5 +1,129 @@
 [
   {
+    "id": "eb1f7e7ec0890321",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293326&ls=30&c=13&date_start=22.09.2026",
+    "title": "Neue Grundschule Peenestraße: Schul- und Sportamt lädt zur Informationsveranstaltung ein",
+    "published_at": "2026-09-22T09:10:10.903Z",
+    "ingested_at": "2026-09-22T09:10:10.903Z",
+    "raw_excerpt": "Neue Grundschule Peenestraße: Schul- und Sportamt lädt zur Informationsveranstaltung ein Bildung, Schule Infoveranstaltungen Termin: 01.10.2026 17:00 Uhr Veranstaltungsort: Grundschule Peenestraße in Treptow-Köpenick ",
+    "ai_summary": "Das Schul- und Sportamt lädt zu einer Informationsveranstaltung über die neue Grundschule Peenestraße ein, die am 1. Oktober 2026 stattfindet.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verkehr",
+      "infrastruktur",
+      "verwaltung"
+    ],
+    "location": "Grundschule Peenestraße in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung betrifft eine neue Grundschule und findet im Bezirk Treptow-Köpenick statt, was eine direkte lokale Relevanz impliziert.",
+    "event_start_at": "2026-10-01T15:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-22T09:10:10.903Z",
+    "venue": "Grundschule Peenestraße",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293326"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow-Köpenick",
+    "addresses": [],
+    "street": "Peenestraße",
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "5c4ec8a330aeede6",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1716725.php",
+    "title": "Zahlreiche Veranstaltungen in den Galerien Johannisthal & Adlershof zur Kommunale Kunstwoche Berlin, 02.-11.10.2206",
+    "published_at": "2026-09-21T11:44:00.000Z",
+    "ingested_at": "2026-09-22T09:10:11.395Z",
+    "raw_excerpt": "* Zeit: 02.-11.10.2026 * Ort: Galerie Adlershof im Kulturzentrum Alte Schule, Dörpfeldstraße 54-56, 12489 Berlin Die Kunstwoche der Kommunalen Galerien findet vom 2. bis 11. Oktober 2026 statt. In dieser Zeit öffnen 36 Galerien ihre Türen und zeigen die Werke von 150 Künstlerinnen und Künstlern. Die Galerien Treptow-Köpenick sind ebenfalls mit einer Vielzahl an Veranstaltungen vertreten. Los geht es am Dienstag, dem 6. Oktober 2026, um 18:30 Uhr in der Galerie Johannisthal.",
+    "ai_summary": "Die Kommunale Kunstwoche Berlin findet vom 2. bis 11. Oktober 2206 statt, wobei die Galerien in Treptow-Köpenick, speziell in Johannisthal und Adlershof, zahlreiche Veranstaltungen anbieten.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Adlershof im Kulturzentrum Alte Schule, Dörpfeldstraße 54-56, 12489 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Kommunale Kunstwoche erwähnt explizit Galerien in Johannisthal und Adlershof innerhalb Treptow-Köpenicks, was einen klaren lokalen Bezug hat.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1716725.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Dörpfeldstraße 54-56, 12489 Berlin"
+    ],
+    "street": "Dörpfeldstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4410088,
+    "lng": 13.5567833,
+    "is_mock": false
+  },
+  {
+    "id": "c1fdc313c417b911",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1716644.php",
+    "title": "Die Abenteuer der ersten Pilotinnen – Workshop und Museumsrallye für Kinder im Museum Treptow, 20.10.2026",
+    "published_at": "2026-09-21T09:52:00.000Z",
+    "ingested_at": "2026-09-22T09:10:11.396Z",
+    "raw_excerpt": "* Zeit: 20. Oktober 2026, 15:00 – 17:00 Uhr * Ort: Museum Treptow im Alten Rathaus Johannisthal, Ratssaal, 1. Etage Sterndamm 102, 12487 Berlin Am Dienstag, dem 20. Oktober 2026, findet von 15:00 bis 17:00 Uhr eine Lesung mit Workshop im Museum Treptow statt. Katja Spitzer und Gareth Harmer lesen aus ihrem Kinderbuch »Die Abenteuer der ersten Pilotinnen«. Danach geht’s auf Rallye durchs Museum: Quizfragen lösen, Hinweise finden und spannende Exponate entdecken.",
+    "ai_summary": "Am 20. Oktober 2026 findet im Museum Treptow ein Workshop und eine Museumsrallye für Kinder statt, bei der aus dem Kinderbuch „Die Abenteuer der ersten Pilotinnen“ gelesen wird.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Museum Treptow im Alten Rathaus Johannisthal, Ratssaal, 1. Etage Sterndamm 102, 12487 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Museum Treptow in Johannisthal statt, was eine direkte lokale Relevanz für den Bezirk Treptow-Köpenick darstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1716644.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [
+      "Sterndamm 102, 12487 Berlin"
+    ],
+    "street": "Sterndamm",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.443532,
+    "lng": 13.5022688,
+    "is_mock": false
+  },
+  {
     "id": "4994b19c9f384e89",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -23,7 +147,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:38.507Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -65,7 +189,7 @@
     "event_end_at": "2026-09-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.802Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Bürgerhaus Altglienicke",
     "source_refs": [
       {
@@ -470,21 +594,22 @@
     "published_at": "2026-09-20T09:09:39.931Z",
     "ingested_at": "2026-09-20T09:09:39.931Z",
     "raw_excerpt": "Polen entdecken – mitten in Treptow-Köpenick Lesungen, Vorträge Kunst, Kultur Infoveranstaltungen Termin: 06.10.2026 19:00 Uhr Veranstaltungsort: Mittelpunktbibliothek Köpenick in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 6. Oktober um 19:00 in Mittelpunktbibliothek Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Mittelpunktbibliothek Köpenick in Treptow-Köpenick ist am 6. Oktober 2026 Veranstaltungsort für eine Lesung und Infoveranstaltung zum Thema \"Polen entdecken\". Die Veranstaltung wird unter Kunst und Kultur gelistet.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Mittelpunktbibliothek Köpenick in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die genaue Angabe der Mittelpunktbibliothek Köpenick in Treptow-Köpenick als Veranstaltungsort belegt den lokalen Bezug.",
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -498,7 +623,8 @@
     "geocode_precision": "venue",
     "lat": 52.4458824,
     "lng": 13.57904,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "e182847b5598c2b2",
@@ -509,22 +635,23 @@
     "published_at": "2026-09-20T09:09:39.930Z",
     "ingested_at": "2026-09-20T09:09:39.930Z",
     "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 06.10.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 6. Oktober um 12:00 in Galerie Rathaus Johannisthal.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 6. Oktober 2026 findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt. Die Veranstaltung wird als Kunst und Kultur beschrieben.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort \"Galerie Rathaus Johannisthal in Treptow-Köpenick\" zeigt einen direkten lokalen Bezug zu Johannisthal und Treptow-Köpenick.",
     "event_start_at": "2026-10-06T10:00:00.000Z",
     "event_end_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -536,7 +663,8 @@
     "district": "Johannisthal",
     "addresses": [],
     "geocode_precision": "venue",
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "ecca1112b4f7926d",
@@ -563,7 +691,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -603,7 +731,7 @@
     "event_end_at": "2026-10-03T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -643,7 +771,7 @@
     "event_end_at": "2026-10-02T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -683,7 +811,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Theater Ost",
     "source_refs": [
       {
@@ -725,7 +853,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -764,7 +892,7 @@
     "event_start_at": "2026-09-30T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -804,7 +932,7 @@
     "event_end_at": "2026-09-30T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -844,7 +972,7 @@
     "event_end_at": "2026-09-29T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -884,7 +1012,7 @@
     "event_end_at": "2026-09-28T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -923,7 +1051,7 @@
     "event_start_at": "2026-09-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -963,7 +1091,7 @@
     "event_end_at": "2026-09-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1003,7 +1131,7 @@
     "event_start_at": "2026-09-25T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Manfred-Schmitz-Saal",
     "source_refs": [
       {
@@ -1043,7 +1171,7 @@
     "event_end_at": "2026-09-25T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1084,7 +1212,7 @@
     "event_start_at": "2026-09-24T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Zentrum für Demokratie Treptow-Köpenick",
     "source_refs": [
       {
@@ -1127,7 +1255,7 @@
     "event_end_at": "2026-09-24T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1167,7 +1295,7 @@
     "event_end_at": "2026-09-23T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Forum Adlershof",
     "source_refs": [
       {
@@ -1209,7 +1337,7 @@
     "event_end_at": "2026-09-23T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1249,7 +1377,7 @@
     "event_end_at": "2026-09-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1344,7 +1472,7 @@
     "lat": 52.4151428,
     "lng": 13.5327493,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "5e65268cef877bb7",
@@ -1379,7 +1507,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "3b174efa8c06b9aa",
@@ -1412,7 +1540,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "19fc97d3149c0bfd",
@@ -1455,7 +1583,7 @@
     "lat": 52.4032966,
     "lng": 13.5286859,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "b0a422bd4c5934ea",
@@ -1493,7 +1621,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "a7fa54fee737f1cb",
@@ -1736,7 +1864,7 @@
     "lat": 52.4458824,
     "lng": 13.57904,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "eff76d48deb618df",
@@ -1771,7 +1899,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "3f3d7b61f0384103",
@@ -1807,7 +1935,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "b3f2259b59df3c82",
@@ -1841,7 +1969,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-21T09:45:36.141Z"
+    "last_seen_at": "2026-09-22T09:10:08.651Z"
   },
   {
     "id": "93d94b22d259247b",
@@ -2169,17 +2297,18 @@
     "published_at": "2026-09-15T20:21:33.157Z",
     "ingested_at": "2026-09-15T20:21:33.157Z",
     "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Spielstätten von Hertha BSC und Zwangsarbeitslager Kunst, Kultur Termin: 07.10.2026 18:30 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 7. Oktober um 18:30 in Dokumentationszentrum NS-Zwangsarbeit.",
-    "summary_origin": "fallback",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick veranstaltet am 7. Oktober 2026 eine Veranstaltung zum Thema „Spielstätten von Hertha BSC und Zwangsarbeitslager“. Es handelt sich um eine Veranstaltung aus dem Bereich Kunst und Kultur.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort liegt explizit in Treptow-Köpenick und ist somit direkt lokal relevant.",
     "event_start_at": "2026-10-07T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -2197,7 +2326,8 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "43b13d26f3a14c66",
@@ -2208,17 +2338,18 @@
     "published_at": "2026-09-15T20:21:33.156Z",
     "ingested_at": "2026-09-15T20:21:33.156Z",
     "raw_excerpt": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche Infoveranstaltungen Termin: 07.10.2026 18:00 Uhr Veranstaltungsort: Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 7. Oktober um 18:00 in Gedenkstätte „Köpenicker Blutwoche“.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick bietet am 7. Oktober 2026 öffentliche Führungen an. Diese Infoveranstaltung behandelt die historische Thematik der Köpenicker Blutwoche.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort ist eine Gedenkstätte, die explizit in Treptow-Köpenick verortet ist und sich auf ein lokales historisches Ereignis bezieht.",
     "event_start_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -2236,7 +2367,8 @@
     "geocode_precision": "venue",
     "lat": 52.4549647,
     "lng": 13.5786101,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "4391aebfe6467ff8",
@@ -2262,7 +2394,7 @@
     "event_start_at": "2026-10-02T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2303,7 +2435,7 @@
     "event_start_at": "2026-09-30T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2344,7 +2476,7 @@
     "event_start_at": "2026-10-01T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2385,7 +2517,7 @@
     "event_start_at": "2026-09-29T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2426,7 +2558,7 @@
     "event_start_at": "2026-09-28T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2467,7 +2599,7 @@
     "event_start_at": "2026-09-24T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2508,7 +2640,7 @@
     "event_start_at": "2026-09-25T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2549,7 +2681,7 @@
     "event_start_at": "2026-09-23T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -2591,7 +2723,7 @@
     "event_end_at": "2026-09-22T19:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2632,7 +2764,7 @@
     "event_start_at": "2026-09-22T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -3569,21 +3701,22 @@
     "published_at": "2026-09-14T20:18:51.324Z",
     "ingested_at": "2026-09-14T20:18:51.324Z",
     "raw_excerpt": "Europäische Union Lesung „111 Gründe, Polen zu lieben“ Lesungen, Vorträge Kunst, Kultur Termin: 06.10.2026 19:00 Uhr Veranstaltungsort: Mittelpunktbibliothek Köpenick in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 6. Oktober um 19:00 in Mittelpunktbibliothek Köpenick in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 6. Oktober 2026 findet in der Mittelpunktbibliothek Köpenick in Treptow-Köpenick eine Lesung mit dem Titel „111 Gründe, Polen zu lieben“ statt. Dies wird als Kunst- und Kulturveranstaltung im Kontext der Europäischen Union eingeordnet.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Mittelpunktbibliothek Köpenick in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die genaue Angabe der Mittelpunktbibliothek Köpenick in Treptow-Köpenick als Veranstaltungsort belegt den lokalen Bezug.",
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -3597,7 +3730,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4458824,
-    "lng": 13.57904
+    "lng": 13.57904,
+    "enrichment_version": 2
   },
   {
     "id": "48025ecfa4bea97a",
@@ -3608,22 +3742,23 @@
     "published_at": "2026-09-14T20:18:51.324Z",
     "ingested_at": "2026-09-14T20:18:51.325Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 07.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 7. Oktober um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick findet eine Ausstellung zum Thema Zwangsarbeit in Vergangenheit und Gegenwart statt. Die Ausstellung mit dem Titel „Forced to Work – Willing to Survive“ beginnt am 7. Oktober 2026.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort liegt explizit in Treptow-Köpenick und ist somit direkt lokal relevant.",
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3637,7 +3772,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "a8242470409ed4e1",
@@ -3648,22 +3784,23 @@
     "published_at": "2026-09-14T20:18:51.323Z",
     "ingested_at": "2026-09-14T20:18:51.324Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 06.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 6. Oktober um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung \"Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart\" wird am 6. Oktober 2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick präsentiert. Weitere Informationen sind der Quelle zu entnehmen.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort ist explizit als in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-10-06T08:00:00.000Z",
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3677,7 +3814,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "5553fe5ebecc262f",
@@ -3688,22 +3826,23 @@
     "published_at": "2026-09-14T20:18:51.052Z",
     "ingested_at": "2026-09-14T20:18:51.052Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 02.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 2. Oktober um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 2. Oktober 2026 findet eine Ausstellung zum Thema „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ im Dokumentationszentrum NS-Zwangsarbeit statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-10-02T08:00:00.000Z",
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3712,12 +3851,13 @@
       }
     ],
     "alias_ids": [],
-    "district": "Treptow",
+    "district": "Treptow-Köpenick",
     "addresses": [],
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "141b034ddfe21555",
@@ -3728,22 +3868,23 @@
     "published_at": "2026-09-14T20:18:51.052Z",
     "ingested_at": "2026-09-14T20:18:51.052Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 03.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 3. Oktober um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ wird am 3. Oktober 2026 im Dokumentationszentrum NS-Zwangsarbeit fortgesetzt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-10-03T08:00:00.000Z",
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3752,12 +3893,13 @@
       }
     ],
     "alias_ids": [],
-    "district": "Treptow",
+    "district": "Treptow-Köpenick",
     "addresses": [],
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "694e997588118561",
@@ -3768,22 +3910,23 @@
     "published_at": "2026-09-14T20:18:51.052Z",
     "ingested_at": "2026-09-14T20:18:51.053Z",
     "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 04.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 4. Oktober um 10:00 in Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick.",
-    "summary_origin": "fallback",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick zeigt am 4. Oktober 2026 die Ausstellung \"Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart\". Details zur Ausstellung sind in der Quelle verfügbar.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Der Veranstaltungsort ist explizit als in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
     "event_start_at": "2026-10-04T08:00:00.000Z",
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3797,7 +3940,8 @@
     "geocode_precision": "venue",
     "is_mock": false,
     "lat": 52.4526094,
-    "lng": 13.5187979
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "3705ac4354c475bd",
@@ -3824,7 +3968,7 @@
     "event_end_at": "2026-10-01T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3866,7 +4010,7 @@
     "event_end_at": "2026-09-29T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3908,7 +4052,7 @@
     "event_end_at": "2026-09-30T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3950,7 +4094,7 @@
     "event_end_at": "2026-09-27T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3992,7 +4136,7 @@
     "event_end_at": "2026-09-26T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4034,7 +4178,7 @@
     "event_end_at": "2026-09-27T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4075,7 +4219,7 @@
     "event_start_at": "2026-09-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -4117,7 +4261,7 @@
     "event_end_at": "2026-09-25T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4159,7 +4303,7 @@
     "event_end_at": "2026-09-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4201,7 +4345,7 @@
     "event_end_at": "2026-09-24T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4285,7 +4429,7 @@
     "event_end_at": "2026-09-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-21T09:45:36.141Z",
+    "last_seen_at": "2026-09-22T09:10:08.651Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
