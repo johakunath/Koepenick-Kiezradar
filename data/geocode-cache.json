@@ -138,5 +138,17 @@
   "Dörpfeldstraße 30": {
     "lat": 52.4370563,
     "lng": 13.5454341
+  },
+  "Pegasuseck 5, 12524 Berlin": {
+    "lat": 52.4064926,
+    "lng": 13.5287107
+  },
+  "12555 Berlin": {
+    "lat": 52.4628393,
+    "lng": 13.578872
+  },
+  "Mittelpunktbibliothek Alte Feuerwache Treptow,": {
+    "lat": 52.4539929,
+    "lng": 13.5142752
   }
 }
