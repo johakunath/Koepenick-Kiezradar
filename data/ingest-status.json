@@ -1,27 +1,27 @@
 {
-  "last_run": "2026-09-24T09:07:57.500Z",
+  "last_run": "2026-09-25T09:28:33.818Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
       "parsed": 3,
       "raw_items": 50,
-      "last_success_at": "2026-09-24T09:07:57.500Z",
-      "fetched": 2
+      "last_success_at": "2026-09-25T09:28:33.818Z",
+      "fetched": 0
     },
     "berlin-events": {
       "status": "warning",
       "error": "Weitere Kalenderseiten nicht erreichbar",
-      "parsed": 20,
-      "raw_items": 20,
-      "last_success_at": "2026-09-24T09:07:57.500Z",
-      "fetched": 1
+      "parsed": 30,
+      "raw_items": 30,
+      "last_success_at": "2026-09-25T09:28:33.818Z",
+      "fetched": 3
     },
     "bezirksamt-tk": {
       "status": "ok",
-      "parsed": 10,
-      "raw_items": 10,
-      "last_success_at": "2026-09-24T09:07:57.500Z",
-      "fetched": 4
+      "parsed": 20,
+      "raw_items": 0,
+      "last_success_at": "2026-09-25T09:28:33.818Z",
+      "fetched": 2
     },
     "bvv-tk": {
       "status": "skipped",
@@ -37,15 +37,16 @@
       "fetched": 0
     },
     "amtsblatt-berlin": {
-      "status": "skipped",
-      "error": "Amtsblatt index fetch failed: all URLs returned errors",
-      "parsed": 0,
-      "fetched": 0
+      "status": "ok",
+      "parsed": 13,
+      "raw_items": 13,
+      "last_success_at": "2026-09-25T09:28:33.818Z",
+      "fetched": 1
     }
   },
-  "new_entries": 7,
+  "new_entries": 6,
   "dry_run": false,
   "ai_status": "ok",
   "total_entries": 250,
-  "archived_entries": 7
+  "archived_entries": 6
 }

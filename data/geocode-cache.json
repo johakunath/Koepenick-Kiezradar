@@ -150,5 +150,13 @@
   "Mittelpunktbibliothek Alte Feuerwache Treptow,": {
     "lat": 52.4539929,
     "lng": 13.5142752
+  },
+  "Dörpfeldstraße": {
+    "lat": 52.4410088,
+    "lng": 13.5567833
+  },
+  "Bahnhof Köpenick": {
+    "lat": 52.4582123,
+    "lng": 13.5823726
   }
 }
