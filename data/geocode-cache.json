@@ -158,5 +158,9 @@
   "Bahnhof Köpenick": {
     "lat": 52.4582123,
     "lng": 13.5823726
+  },
+  "Altglienicke": {
+    "lat": 52.4118651,
+    "lng": 13.5425859
   }
 }

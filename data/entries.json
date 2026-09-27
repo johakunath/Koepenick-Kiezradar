@@ -1,87 +1,5 @@
 [
   {
-    "id": "9fd262b10e21d10a",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=10&c=13&date_start=14.09.2026",
-    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
-    "published_at": "2026-09-14T20:18:51.049Z",
-    "ingested_at": "2026-09-14T20:18:51.049Z",
-    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 26.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick lädt am 26. September 2026 zur Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ ein.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort ist ein spezifisches Zentrum in Treptow-Köpenick, was eine klare lokale Relevanz aufweist.",
-    "event_start_at": "2026-09-26T08:00:00.000Z",
-    "event_end_at": "2026-09-26T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "geocode_precision": "venue",
-    "is_mock": false,
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "enrichment_version": 2
-  },
-  {
-    "id": "7bef96b82c018f69",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=20&c=13&date_start=19.09.2026",
-    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
-    "published_at": "2026-09-19T08:40:12.881Z",
-    "ingested_at": "2026-09-19T08:40:12.881Z",
-    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 26.09.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“ wird in der Galerie Rathaus Johannisthal in Treptow-Köpenick am 26. September 2026 eröffnet. Weitere Details sind der Quelle zu entnehmen.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.6,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick und dem Ortsteil Johannisthal genannt.",
-    "event_start_at": "2026-09-26T13:00:00.000Z",
-    "event_end_at": "2026-09-26T17:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
-    "venue": "Galerie Rathaus Johannisthal",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Johannisthal",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "is_mock": false
-  },
-  {
     "id": "b58e4ff62795416a",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -106,7 +24,7 @@
     "event_end_at": "2026-09-27T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -148,7 +66,7 @@
     "event_end_at": "2026-09-27T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -189,7 +107,7 @@
     "event_start_at": "2026-09-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -228,7 +146,7 @@
     "event_start_at": "2026-09-28T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -270,7 +188,7 @@
     "event_end_at": "2026-09-28T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -309,7 +227,7 @@
     "event_start_at": "2026-09-29T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -351,7 +269,7 @@
     "event_end_at": "2026-09-29T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -393,7 +311,7 @@
     "event_end_at": "2026-09-29T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -435,7 +353,7 @@
     "event_end_at": "2026-09-29T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -474,7 +392,7 @@
     "event_start_at": "2026-09-30T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -516,7 +434,7 @@
     "event_end_at": "2026-09-30T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -558,7 +476,7 @@
     "event_end_at": "2026-09-30T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -600,7 +518,7 @@
     "event_end_at": "2026-09-30T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -639,7 +557,7 @@
     "event_start_at": "2026-09-30T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -680,7 +598,7 @@
     "event_start_at": "2026-10-01T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -722,7 +640,7 @@
     "event_end_at": "2026-10-01T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -764,7 +682,7 @@
     "event_end_at": "2026-10-01T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -806,7 +724,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -847,7 +765,7 @@
     "event_start_at": "2026-10-01T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Grundschule Peenestraße",
     "source_refs": [
       {
@@ -888,7 +806,7 @@
     "event_end_at": "2026-10-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Theater Ost",
     "source_refs": [
       {
@@ -929,7 +847,7 @@
     "event_start_at": "2026-10-02T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -971,7 +889,7 @@
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1013,7 +931,7 @@
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1055,7 +973,7 @@
     "event_end_at": "2026-10-02T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1095,7 +1013,7 @@
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:41.827Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1137,7 +1055,7 @@
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1179,7 +1097,7 @@
     "event_end_at": "2026-10-03T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1219,7 +1137,7 @@
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:42.163Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1261,7 +1179,7 @@
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1303,7 +1221,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1342,7 +1260,7 @@
     "event_start_at": "2026-10-05T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:42.164Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Evangelische Stadtkirchengemeinde Köpenick",
     "source_refs": [
       {
@@ -1382,7 +1300,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:42.165Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1424,7 +1342,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1466,7 +1384,7 @@
     "event_end_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1505,7 +1423,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -1546,7 +1464,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -1588,7 +1506,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:42.511Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1629,7 +1547,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -1671,7 +1589,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1713,7 +1631,7 @@
     "event_end_at": "2026-10-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "last_seen_at": "2026-09-27T09:53:45.411Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2642,7 +2560,7 @@
     "lat": 52.4410088,
     "lng": 13.5567833,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "aa967b64cc81001c",
@@ -2682,7 +2600,7 @@
     "lat": 52.4582123,
     "lng": 13.5823726,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "ceecb498d807c7a4",
@@ -2717,7 +2635,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "ac6cb1c0900c441d",
@@ -2752,7 +2670,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "99acfe098cefd7a3",
@@ -2789,7 +2707,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "771ff532e903b208",
@@ -3258,7 +3176,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "a8eae441b707e073",
@@ -3299,7 +3217,7 @@
     "lat": 52.4064926,
     "lng": 13.5287107,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "8d2fe3b754d65cd2",
@@ -3340,7 +3258,7 @@
     "lat": 52.4628393,
     "lng": 13.578872,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "daeb9258dd6da691",
@@ -3377,7 +3295,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "5c4ec8a330aeede6",
@@ -3420,7 +3338,7 @@
     "lat": 52.4410088,
     "lng": 13.5567833,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "c1fdc313c417b911",
@@ -3461,7 +3379,7 @@
     "lat": 52.443532,
     "lng": 13.5022688,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "02ea8864810ed344",
@@ -3596,16 +3514,17 @@
     "published_at": "2026-09-20T09:09:45.047Z",
     "ingested_at": "2026-09-20T09:09:45.047Z",
     "raw_excerpt": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2855 Treptow-Köpenick Grundstücksnummerierungen Bekanntmachung vom 10. September 2026 Verm 35 Telefon: 90297-2183 oder 90297, intern 9297-2183 Das Bezirksamt Treptow-Köpenick von Berlin, Stadtentwicklungsamt, Fachbereich Vermessung, hat folgende Grundst",
-    "ai_summary": "Bezirksämter ABl. Nr. 40 / 18. September 2026 2855 Treptow-Köpenick Grundstücksnummerierungen Bekanntmachung vom 10. September 2026 Verm 35 Telefon: 90297-2183 oder 90297, intern 9297-2183 Das Bezirksamt Treptow-Köpenick von Berlin, Stadtentwicklungsamt, Fachbereich Vermessung, hat folgende Grundst",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick hat eine Bekanntmachung zu Grundstücksnummerierungen im Fachbereich Vermessung veröffentlicht.",
     "tags": [
-      "verwaltung"
+      "verwaltung",
+      "infrastruktur"
     ],
-    "location": "Köpenick",
+    "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.8,
     "political_relevance_score": 0.5,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 79).",
+    "ai_reasoning": "Die Information betrifft direkt das Bezirksamt Treptow-Köpenick und Grundstücksnummerierungen, was einen hohen lokalen Bezug hat.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 79,
@@ -3622,7 +3541,9 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "d79e5bce6ee6ea89",
@@ -3633,16 +3554,18 @@
     "published_at": "2026-09-20T09:09:45.047Z",
     "ingested_at": "2026-09-20T09:09:45.047Z",
     "raw_excerpt": "/ 18. September 2026 2856 Straßen Grundstücksnummern alt (bisher) Grundstücksnummern neu Ortsteil Johannisthal Segelfliegerdamm 9, 11, 13, 15, 17, 19, 21, 23 9, 11, 13, 15, 17, 19, 21, 23 Segelfliegerdamm 35 35 Segelfliegerdamm 37 37 Ortsteil Köpenick Finkeldeweg 112, 112 A 112 A, 112 B, 11",
-    "ai_summary": "/ 18. September 2026 2856 Straßen Grundstücksnummern alt (bisher) Grundstücksnummern neu Ortsteil Johannisthal Segelfliegerdamm 9, 11, 13, 15, 17, 19, 21, 23 9, 11, 13, 15, 17, 19, 21, 23 Segelfliegerdamm 35 35 Segelfliegerdamm 37 37 Ortsteil Köpenick Finkeldeweg 112, 112 A 112 A, 112 B, 11",
+    "ai_summary": "Neue Grundstücksnummerierungen wurden für den Segelfliegerdamm in Johannisthal und den Finkeldeweg in Köpenick bekannt gegeben.",
     "tags": [
-      "verkehr"
+      "verkehr",
+      "infrastruktur",
+      "verwaltung"
     ],
     "location": "Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 80).",
+    "ai_reasoning": "Die Bekanntmachung spezifischer Grundstücksnummerierungen in Johannisthal und Köpenick weist einen sehr starken lokalen Bezug auf.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 80,
@@ -3665,7 +3588,9 @@
     "geocode_precision": "address",
     "lat": 52.4441447,
     "lng": 13.5104161,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "880708b963e9c78c",
@@ -3676,16 +3601,19 @@
     "published_at": "2026-09-20T09:09:45.046Z",
     "ingested_at": "2026-09-20T09:09:45.046Z",
     "raw_excerpt": "ke Neudecker Weg Glashüter Weg südliche Seite 31.07.2027 August-Foehlich-Straße Neudecker Weg Köpenicker Straße östlich 17.12.2028 Bornsdorfer Straße Bornsdorfer Straße 14 Bornsdorfer Straße/Saltykowstraße beidseitig 03.03.2029 Fritz-Erler-Allee Lipschitzallee Efeuweg nördlich 31.12.",
-    "ai_summary": "ke Neudecker Weg Glashüter Weg südliche Seite 31.07.2027 August-Foehlich-Straße Neudecker Weg Köpenicker Straße östlich 17.12.2028 Bornsdorfer Straße Bornsdorfer Straße 14 Bornsdorfer Straße/Saltykowstraße beidseitig 03.03.2029 Fritz-Erler-Allee Lipschitzallee Efeuweg nördlich 31.12.",
+    "ai_summary": "Die Quelle listet verschiedene Straßen und Wege mit zugehörigen Zeitangaben, weitere Details sind der Quelle zu entnehmen.",
     "tags": [
-      "verkehr"
+      "verkehr",
+      "infrastruktur",
+      "verwaltung",
+      "sonstiges"
     ],
     "location": "Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 58).",
+    "ai_reasoning": "Die Nennung spezifischer Straßen und Wege deutet auf eine lokale Relevanz hin, auch wenn der genaue Kontext fehlt.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 58,
@@ -3697,11 +3625,16 @@
       }
     ],
     "alias_ids": [],
-    "addresses": [],
+    "addresses": [
+      "Bornsdorfer Straße 14"
+    ],
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "street": "Neudecker Weg"
   },
   {
     "id": "a05e29e0ad9f8942",
@@ -3712,16 +3645,19 @@
     "published_at": "2026-09-20T09:09:45.046Z",
     "ingested_at": "2026-09-20T09:09:45.046Z",
     "raw_excerpt": "idseitig Adlergestell Platz der Befreiung Ahornallee Aßmannstraße Fürstenwalder Damm beidseitig Alt-Köpenick beidseitig Alter Markt beidseitig Alt-Müggelheim Altheiderstraße beidseitig An der Wuhlheide Rudolf-Rühl-Allee Einmündungsbereich Mittelinseln und gegenüber Am Alten Fenn beidseitig",
-    "ai_summary": "idseitig Adlergestell Platz der Befreiung Ahornallee Aßmannstraße Fürstenwalder Damm beidseitig Alt-Köpenick beidseitig Alter Markt beidseitig Alt-Müggelheim Altheiderstraße beidseitig An der Wuhlheide Rudolf-Rühl-Allee Einmündungsbereich Mittelinseln und gegenüber Am Alten Fenn beidseitig",
+    "ai_summary": "Die Quelle enthält eine Liste von Straßennamen in Treptow-Köpenick, was auf lokale Gegebenheiten hinweist.",
     "tags": [
-      "verkehr"
+      "verkehr",
+      "infrastruktur",
+      "verwaltung",
+      "sonstiges"
     ],
     "location": "Altstadt Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 75).",
+    "ai_reasoning": "Die Auflistung bekannter Straßennamen im Bezirk weist auf eine lokale Relevanz für Treptow-Köpenick hin.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 75,
@@ -3738,7 +3674,10 @@
     "geocode_precision": "area",
     "lat": 52.4466938,
     "lng": 13.5769665,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "street": "Adlergestell"
   },
   {
     "id": "36b5e4230a408498",
@@ -3749,16 +3688,18 @@
     "published_at": "2026-09-20T09:09:45.045Z",
     "ingested_at": "2026-09-20T09:09:45.045Z",
     "raw_excerpt": "Alberichstraße Balzer Straße Hadubrandstraße östlich/westlich Albrecht-Dürer-Straße Am Waldberg Köpenicker Straße nördlich/südlich Köpenicker Straße Fortunaallee südlich 133 149 nördlich Alt-Biesdorf Blumberger Damm Mozartstraße nördlich Alt-Hellersdorf außer 29, 31 Alt-Mahlsdorf Alte H",
-    "ai_summary": "Alberichstraße Balzer Straße Hadubrandstraße östlich/westlich Albrecht-Dürer-Straße Am Waldberg Köpenicker Straße nördlich/südlich Köpenicker Straße Fortunaallee südlich 133 149 nördlich Alt-Biesdorf Blumberger Damm Mozartstraße nördlich Alt-Hellersdorf außer 29, 31 Alt-Mahlsdorf Alte H",
+    "ai_summary": "Die Quelle listet mehrere Straßennamen und deren relative Lage zueinander auf, weitere Details sind in der Quelle ersichtlich.",
     "tags": [
-      "verkehr"
+      "verkehr",
+      "infrastruktur",
+      "sonstiges"
     ],
     "location": "Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "location_relevant": false,
+    "local_relevance_score": 0.3,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 48).",
+    "ai_reasoning": "Obwohl einige Straßen genannt werden, die auch im Berliner Raum existieren, gibt es keinen direkten Hinweis auf Treptow-Köpenick, weshalb der lokale Bezug gering ist.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 48,
@@ -3774,7 +3715,10 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "street": "Adolfstraße"
   },
   {
     "id": "aa7e550fa92d9770",
@@ -3785,17 +3729,18 @@
     "published_at": "2026-09-20T09:09:45.045Z",
     "ingested_at": "2026-09-20T09:09:45.045Z",
     "raw_excerpt": "traße Dankratweg südlich Debenzer Straße Deutschhofer Allee Dingolfinger Straße Dirschauer Straße Köpenicker Straße Am Waldberg von Ameburger Straße Am Waldberg östlich 31.12.2028 Dompfaffenweg 1 31 nördlich Donathstraße An der Schule Mozartstraße Lortzingstraße Mozartstraße Dorfstraße M",
-    "ai_summary": "traße Dankratweg südlich Debenzer Straße Deutschhofer Allee Dingolfinger Straße Dirschauer Straße Köpenicker Straße Am Waldberg von Ameburger Straße Am Waldberg östlich 31.12.2028 Dompfaffenweg 1 31 nördlich Donathstraße An der Schule Mozartstraße Lortzingstraße Mozartstraße Dorfstraße M",
+    "ai_summary": "Der Auszug listet verschiedene Straßen in Köpenick auf, die mit Daten bis zum 31.12.2028 in Verbindung gebracht werden, Details zur Art des Zusammenhangs fehlen jedoch.",
     "tags": [
       "verkehr",
-      "infrastruktur"
+      "infrastruktur",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Köpenicker Straße",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 49).",
+    "ai_reasoning": "Der Auszug nennt explizit die Köpenicker Straße und weitere Straßen, die in Köpenick liegen könnten, was einen direkten lokalen Bezug herstellt.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 49,
@@ -3807,14 +3752,14 @@
       }
     ],
     "alias_ids": [],
-    "addresses": [
-      "Dompfaffenweg 1"
-    ],
-    "street": "Dompfaffenweg",
+    "addresses": [],
+    "street": "Köpenicker Straße",
     "geocode_precision": "address",
     "lat": 52.5352031,
     "lng": 13.5424571,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "4fdc742c9686ff29",
@@ -3825,16 +3770,18 @@
     "published_at": "2026-09-20T09:09:45.045Z",
     "ingested_at": "2026-09-20T09:09:45.045Z",
     "raw_excerpt": "nördlich Hatzenporter Weg Hauptweg Havelländer Ring Haynstraße beidseitig Heerstraße Heesestraße Köpenicker Straße Dramburger Straße nördlich Heidestraße Köpenicker Straße Fortunaallee südlich Heidenauer Straße Heinrich-Grüber-Straße Ridbacher Straße Grottkauer Straße östlich Heinrich-Grü",
-    "ai_summary": "nördlich Hatzenporter Weg Hauptweg Havelländer Ring Haynstraße beidseitig Heerstraße Heesestraße Köpenicker Straße Dramburger Straße nördlich Heidestraße Köpenicker Straße Fortunaallee südlich Heidenauer Straße Heinrich-Grüber-Straße Ridbacher Straße Grottkauer Straße östlich Heinrich-Grü",
+    "ai_summary": "Der ABl. Nr. 40 vom 18. September 2026 listet verschiedene Straßen auf, darunter die Köpenicker Straße, ohne weitere Details zu spezifischen Themen oder Maßnahmen.",
     "tags": [
-      "verkehr"
+      "verkehr",
+      "verwaltung",
+      "sonstiges"
     ],
-    "location": "Köpenick",
+    "location": "Köpenicker Straße",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 51).",
+    "ai_reasoning": "Der Auszug nennt explizit die Köpenicker Straße, was einen direkten lokalen Bezug herstellt.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 51,
@@ -3850,7 +3797,10 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "street": "Köpenicker Straße"
   },
   {
     "id": "cd3f650b60578f36",
@@ -3861,17 +3811,19 @@
     "published_at": "2026-09-20T09:09:45.043Z",
     "ingested_at": "2026-09-20T09:09:45.043Z",
     "raw_excerpt": "ahnhofs Blankenburg, eine Teilfläche der Parkanlage am Ilsenburggraben, eine Teilfläche südlich der Bahnhofstraße, die Fläche der ehemaligen Polizeischule und der späteren Fachhochschule für Technik und Wirtschaft, eine Teilfläche südlich des Fließgrabens, eine Teilfläche westlich und östlich der He",
-    "ai_summary": "ahnhofs Blankenburg, eine Teilfläche der Parkanlage am Ilsenburggraben, eine Teilfläche südlich der Bahnhofstraße, die Fläche der ehemaligen Polizeischule und der späteren Fachhochschule für Technik und Wirtschaft, eine Teilfläche südlich des Fließgrabens, eine Teilfläche westlich und östlich der He",
+    "ai_summary": "Der Auszug beschreibt verschiedene Teilflächen, darunter eine ehemalige Polizeischule und Fachhochschule für Technik und Wirtschaft, ohne genaue geografische Eingrenzung auf Treptow-Köpenick.",
     "tags": [
       "verkehr",
-      "infrastruktur"
+      "infrastruktur",
+      "verwaltung",
+      "sonstiges"
     ],
     "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.5,
+    "location_relevant": false,
+    "local_relevance_score": 0.1,
+    "political_relevance_score": 0,
     "election_relevant": false,
-    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 8).",
+    "ai_reasoning": "Es gibt keine konkreten Ortsnamen oder Adressen, die direkt auf Köpenick oder Treptow-Köpenick verweisen.",
     "document_type": "pdf",
     "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_online.pdf?ts=1789716015",
     "pdf_page": 8,
@@ -3885,6 +3837,48 @@
     "alias_ids": [],
     "district": "Treptow",
     "addresses": [],
+    "is_mock": false,
+    "summary_origin": "ai",
+    "enrichment_version": 2
+  },
+  {
+    "id": "7bef96b82c018f69",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=20&c=13&date_start=19.09.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-09-19T08:40:12.881Z",
+    "ingested_at": "2026-09-19T08:40:12.881Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 26.09.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“ wird in der Galerie Rathaus Johannisthal in Treptow-Köpenick am 26. September 2026 eröffnet. Weitere Details sind der Quelle zu entnehmen.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick und dem Ortsteil Johannisthal genannt.",
+    "event_start_at": "2026-09-26T13:00:00.000Z",
+    "event_end_at": "2026-09-26T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
     "is_mock": false
   },
   {
@@ -4253,7 +4247,7 @@
     "lat": 52.4151428,
     "lng": 13.5327493,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "5e65268cef877bb7",
@@ -4288,7 +4282,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-09-26T09:13:40.181Z"
+    "last_seen_at": "2026-09-27T09:53:45.411Z"
   },
   {
     "id": "3b174efa8c06b9aa",
@@ -4834,18 +4828,18 @@
     "published_at": "2026-09-17T12:00:00.000Z",
     "ingested_at": "2026-09-17T09:18:30.250Z",
     "raw_excerpt": "",
-    "ai_summary": "Das Bezirksamt saniert ab dem 19. Oktober 2026 Wege in der Grünanlage Altglienicker Aue an der Lehmusstraße in Altglienicke.",
+    "ai_summary": "Das Bezirksamt saniert ab dem 19. Oktober 2026 die Wege in der Grünanlage Altglienicker Aue an der Lehmusstraße in Altglienicke.",
     "tags": [
       "infrastruktur",
       "verwaltung"
     ],
-    "location": "Grünanlage Altglienicker Aue",
+    "location": "Altglienicke",
     "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.3,
+    "local_relevance_score": 1,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Wege in der Grünanlage Altglienicker Aue werden saniert, was die Zugänglichkeit und Attraktivität der Anlage verbessert. Dies ist für Anwohner wichtig, da es ihre Naherholung direkt betrifft.",
+    "ai_reasoning": "Die Sanierung findet in Altglienicke statt und betrifft eine lokale Grünanlage, was einen direkten lokalen Bezug hat.",
     "district": "Altglienicke",
     "addresses": [],
     "street": "Lehmusstraße",
@@ -4857,7 +4851,12 @@
       }
     ],
     "alias_ids": [],
-    "last_seen_at": "2026-09-25T09:28:33.818Z"
+    "last_seen_at": "2026-09-25T09:28:33.818Z",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4118651,
+    "lng": 13.5425859
   },
   {
     "id": "8d05726f9b16fbdc",
@@ -4868,7 +4867,7 @@
     "published_at": "2026-09-17T12:00:00.000Z",
     "ingested_at": "2026-09-17T09:18:30.250Z",
     "raw_excerpt": "",
-    "ai_summary": "Die Reihe \"Cake*Talks\" diskutiert die Wahlen zum Abgeordnetenhaus 2026 unter dem Motto „Theorie meets Praxis“.",
+    "ai_summary": "Die Veranstaltung \"Cake*Talks\" thematisiert die Wahlen zum Abgeordnetenhaus 2026, Details zum Veranstaltungsort fehlen jedoch.",
     "tags": [
       "politik",
       "wahl",
@@ -4876,11 +4875,11 @@
     ],
     "location": "Treptow-Köpenick",
     "location_relevant": false,
-    "local_relevance_score": 0.5,
-    "political_relevance_score": 0.9,
+    "local_relevance_score": 0.2,
+    "political_relevance_score": 1,
     "election_relevant": true,
-    "election_topic": "Abgeordnetenhauswahlen 2026",
-    "ai_reasoning": "Diese Veranstaltung behandelt die kommenden Abgeordnetenhauswahlen 2026 aus theoretischer und praktischer Sicht. Sie ist relevant, da sie das politische Verständnis der Anwohner fördert und auf die Wahlen vorbereitet.",
+    "election_topic": "Wahlen zum Abgeordnetenhaus 2026",
+    "ai_reasoning": "Obwohl der Ort nicht genannt wird, haben die Wahlen zum Abgeordnetenhaus 2026 eine hohe politische Relevanz für alle Berliner Bezirke, einschließlich Treptow-Köpenick.",
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
@@ -4891,7 +4890,9 @@
       }
     ],
     "alias_ids": [],
-    "last_seen_at": "2026-09-25T09:28:33.818Z"
+    "last_seen_at": "2026-09-25T09:28:33.818Z",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "2af49d846584c699",
@@ -5551,6 +5552,48 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153
+  },
+  {
+    "id": "9fd262b10e21d10a",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=10&c=13&date_start=14.09.2026",
+    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
+    "published_at": "2026-09-14T20:18:51.049Z",
+    "ingested_at": "2026-09-14T20:18:51.049Z",
+    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 26.09.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick lädt am 26. September 2026 zur Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“ ein.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort ist ein spezifisches Zentrum in Treptow-Köpenick, was eine klare lokale Relevanz aufweist.",
+    "event_start_at": "2026-09-26T08:00:00.000Z",
+    "event_end_at": "2026-09-26T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-09-26T09:13:40.181Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false,
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "enrichment_version": 2
   },
   {
     "id": "50915391d137a02a",
