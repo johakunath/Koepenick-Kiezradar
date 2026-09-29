@@ -1,11 +1,11 @@
 {
-  "last_run": "2026-09-28T10:42:40.895Z",
+  "last_run": "2026-09-29T10:29:46.186Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
       "parsed": 2,
       "raw_items": 50,
-      "last_success_at": "2026-09-28T10:42:40.895Z",
+      "last_success_at": "2026-09-29T10:29:46.186Z",
       "fetched": 0
     },
     "berlin-events": {
@@ -13,15 +13,15 @@
       "error": "Kalender auf fünf Quellseiten begrenzt",
       "parsed": 50,
       "raw_items": 50,
-      "last_success_at": "2026-09-28T10:42:40.895Z",
-      "fetched": 3
+      "last_success_at": "2026-09-29T10:29:46.186Z",
+      "fetched": 2
     },
     "bezirksamt-tk": {
       "status": "ok",
       "parsed": 10,
       "raw_items": 10,
-      "last_success_at": "2026-09-28T10:42:40.895Z",
-      "fetched": 1
+      "last_success_at": "2026-09-29T10:29:46.186Z",
+      "fetched": 4
     },
     "bvv-tk": {
       "status": "skipped",
@@ -38,15 +38,15 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "parsed": 11,
-      "raw_items": 11,
+      "parsed": 0,
+      "raw_items": 0,
       "last_success_at": "2026-09-28T10:42:40.895Z",
       "fetched": 0
     }
   },
-  "new_entries": 4,
+  "new_entries": 6,
   "dry_run": false,
   "ai_status": "ok",
   "total_entries": 250,
-  "archived_entries": 4
+  "archived_entries": 6
 }

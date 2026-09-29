@@ -166,5 +166,17 @@
   "Groß-Berliner Damm 154": {
     "lat": 52.4341892,
     "lng": 13.5314764
+  },
+  "Schlossinsel Köpenick, 12557 Berlin": {
+    "lat": 52.4441651,
+    "lng": 13.5737597
+  },
+  "Alt-Treptow": {
+    "lat": 52.4925634,
+    "lng": 13.4598743
+  },
+  "Karl-Kunger-Straße 15": {
+    "lat": 52.4909034,
+    "lng": 13.4475196
   }
 }
