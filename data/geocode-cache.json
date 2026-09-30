@@ -178,5 +178,13 @@
   "Karl-Kunger-Straße 15": {
     "lat": 52.4909034,
     "lng": 13.4475196
+  },
+  "Schlossinsel Köpenick": {
+    "lat": 52.4430914,
+    "lng": 13.5730106
+  },
+  "Schloss Köpenick": {
+    "lat": 52.4438598,
+    "lng": 13.5727293
   }
 }
