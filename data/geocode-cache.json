@@ -186,5 +186,21 @@
   "Schloss Köpenick": {
     "lat": 52.4438598,
     "lng": 13.5727293
+  },
+  "Luisenstraße 16, 12557 Berlin": {
+    "lat": 52.4410181,
+    "lng": 13.5782431
+  },
+  "Puchanstr. 9, 12555 Berlin": {
+    "lat": 52.4546904,
+    "lng": 13.5793944
+  },
+  "Seelenbinderstraße 54, 12555": {
+    "lat": 52.455179,
+    "lng": 13.5828391
+  },
+  "Berlin": {
+    "lat": 52.4911206,
+    "lng": 13.4547183
   }
 }

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "0345ad0103c75c76",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720331.php",
+    "title": "Sanierungsarbeiten auf der Salvador-Allende-Straße zwischen Fürstenwalder Damm und Friedrichshagener Straße starten ab 12. Oktober 2026",
+    "published_at": "2026-10-01T09:10:00.000Z",
+    "ingested_at": "2026-10-01T10:47:48.499Z",
+    "raw_excerpt": "Die Fahrbahn der Salvador-Allende-Straße zwischen den Einmündungen zum Fürstenwalder Damm und der Friedrichshagener Straße weist tiefe Spurrillen und seitliche Verdrückungen des Asphalts auf. Um die Verkehrssicherheit weiter gewährleisten zu können, saniert das Straßen- und Grünflächenamt diesen Abschnitt ab 12. Oktober bis voraussichtlich 4. November 2026.",
+    "ai_summary": "Ab dem 12. Oktober 2026 beginnen Sanierungsarbeiten auf der Salvador-Allende-Straße zwischen Fürstenwalder Damm und Friedrichshagener Straße zur Gewährleistung der Verkehrssicherheit.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Salvador-Allende-Straße zwischen Fürstenwalder Damm und Friedrichshagener Straße",
+    "location_relevant": true,
+    "local_relevance_score": 1,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Die Sanierungsarbeiten betreffen eine spezifische Straße im Bezirk und wirken sich direkt auf den lokalen Verkehr aus.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720331.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Friedrichshagen",
+    "addresses": [],
+    "street": "Salvador-Allende-Straße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
+    "id": "229e5b8648f73797",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720284.php",
+    "title": "Öffentliche Sitzung des Bezirkswahlausschusses am 2. Oktober 2026",
+    "published_at": "2026-10-01T08:14:00.000Z",
+    "ingested_at": "2026-10-01T10:47:48.499Z",
+    "raw_excerpt": "Der Bezirkswahlausschuss Treptow-Köpenick tagt öffentlich. * Datum: Freitag, 2. Oktober 2026 * Uhrzeit: 11 Uhr * Ort: Bezirksamt Treptow-Köpenick von Berlin, Luisenstraße 16, 12557 Berlin, Raum 023 Gegenstand der Sitzung Feststellung des endgültigen Ergebnisses der Wahlen zum Abgeordnetenhaus von Berlin und zur Bezirksverordnetenversammlung Treptow-Köpenick am 20. September 2026.",
+    "ai_summary": "Am 2. Oktober 2026 findet eine öffentliche Sitzung des Bezirkswahlausschusses im Bezirksamt Treptow-Köpenick statt, um die Ergebnisse der Wahlen zum Abgeordnetenhaus und zur Bezirksverordnetenversammlung festzustellen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "wahl",
+      "politik"
+    ],
+    "location": "Bezirksamt Treptow-Köpenick von Berlin, Luisenstraße 16, 12557 Berlin, Raum 023",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 1,
+    "election_relevant": true,
+    "election_topic": "Feststellung des Wahlergebnisses",
+    "ai_reasoning": "Die Sitzung des Bezirkswahlausschusses zur Feststellung von Wahlergebnissen hat eine direkte lokale und politische Relevanz für Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720284.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Köpenick",
+    "addresses": [
+      "Luisenstraße 16, 12557 Berlin"
+    ],
+    "street": "Luisenstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4410181,
+    "lng": 13.5782431,
+    "is_mock": false
+  },
+  {
+    "id": "bde44db299971aa5",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720277.php",
+    "title": "Köpenicker Salon: Venedig – Zwischen altem Glanz und modernem Sehnsuchtsort Foto-Präsentation einer faszinierenden Stadt",
+    "published_at": "2026-10-01T07:57:00.000Z",
+    "ingested_at": "2026-10-01T10:47:48.500Z",
+    "raw_excerpt": "Das Bezirksamt möchte auf Pressemitteilungen von Rabenhaus e.V. – Mobile Stadtteilarbeit aufmerksam machen. * Zeit: 13. Oktober, 18:30 Uhr * Ort: Stadtteilzentrum des Rabenhaus e.V., Puchanstr. 9, 12555 Berlin Im Rahmen des Köpenicker Salons, der monatlichen Kulturreihe des Rabenhaus e. V. wird in einer reich bebilderten Präsentation das Flair der Stadt vermittelt.",
+    "ai_summary": "Der Köpenicker Salon präsentiert am 13. Oktober eine Foto-Präsentation über Venedig im Stadtteilzentrum des Rabenhaus e.V. in Berlin.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Stadtteilzentrum des Rabenhaus e.V., Puchanstr. 9, 12555 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Das Bezirksamt macht auf eine Veranstaltung eines lokalen Vereins im Stadtteilzentrum aufmerksam, was eine lokale Relevanz impliziert.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720277.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Köpenick",
+    "addresses": [
+      "Puchanstr. 9, 12555 Berlin"
+    ],
+    "street": "Puchanstr.",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4546904,
+    "lng": 13.5793944,
+    "is_mock": false
+  },
+  {
+    "id": "15cd309d5a43afd4",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720274.php",
+    "title": "Zahlreiche Veranstaltungen in den Galerien Johannisthal & Adlershof zur Kommunale Kunstwoche Berlin, 2.-11. Oktober 2026",
+    "published_at": "2026-10-01T07:46:00.000Z",
+    "ingested_at": "2026-10-01T10:47:48.500Z",
+    "raw_excerpt": "* Zeit: 02.-11.10.2026 * Ort: Galerie Adlershof im Kulturzentrum Alte Schule, Dörpfeldstraße 54-56, 12489 Berlin Die Kunstwoche der Kommunalen Galerien findet vom 2. bis 11. Oktober 2026 statt. In dieser Zeit öffnen 36 Galerien ihre Türen und zeigen die Werke von 150 Künstlerinnen und Künstlern. Die Galerien Treptow-Köpenick sind ebenfalls mit einer Vielzahl an Veranstaltungen vertreten. Los geht es am Dienstag, dem 6. Oktober 2026, um 18:30 Uhr in der Galerie Johannisthal.",
+    "ai_summary": "Die Kommunale Kunstwoche Berlin findet vom 2. bis 11. Oktober 2026 statt, mit zahlreichen Veranstaltungen in den Galerien Johannisthal und Adlershof, die am 6. Oktober in der Galerie Johannisthal beginnen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in mehreren Galerien in den Bezirken Johannisthal und Adlershof statt, was einen klaren lokalen Bezug hat.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720274.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Dörpfeldstraße 54-56, 12489 Berlin"
+    ],
+    "street": "Dörpfeldstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4410088,
+    "lng": 13.5567833,
+    "is_mock": false
+  },
+  {
+    "id": "d70183a662998263",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720135.php",
+    "title": "Jüdische Identitäten und Antisemitismus im Punk: Multimediale Buchvorstellung mit dem Herausgeber Tobias Johann",
+    "published_at": "2026-10-01T04:50:00.000Z",
+    "ingested_at": "2026-10-01T10:47:48.500Z",
+    "raw_excerpt": "* Zeit: 10.10.2026 um 18:00 Uhr * Ort: CAFE – Haus der Jugend Köpenick, Seelenbinderstraße 54, 12555 Im CAFE – Haus der Jugend Köpenick wird ein Sammelband vorgestellt, der sich mit einem selten beleuchteten Thema befasst: dem Verhältnis von Punk, jüdischen Identitäten und Antisemitismus. Der Herausgeber Tobias Johann präsentiert das Buch in einer multimedialen Lesung. Im Anschluss beginnt um 20:00 Uhr ein Punk-Konzert.",
+    "ai_summary": "Im CAFE – Haus der Jugend Köpenick findet am 10. Oktober 2026 eine Buchvorstellung zum Thema Punk, jüdische Identitäten und Antisemitismus statt, gefolgt von einem Punk-Konzert.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "CAFE – Haus der Jugend Köpenick, Seelenbinderstraße 54, 12555",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in einer spezifischen Einrichtung in Köpenick statt, was einen klaren lokalen Bezug herstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720135.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Köpenick",
+    "addresses": [
+      "Seelenbinderstraße 54, 12555"
+    ],
+    "street": "Seelenbinderstraße 54",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.455179,
+    "lng": 13.5828391,
+    "is_mock": false
+  }
+]
