@@ -33,7 +33,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-02T10:22:10.020Z"
   },
   {
     "id": "c24e54b7f9eea431",
@@ -66,7 +67,8 @@
     "addresses": [],
     "summary_origin": "ai",
     "enrichment_version": 2,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-02T10:22:10.020Z"
   },
   {
     "id": "51e036fe80274255",
@@ -126,7 +128,7 @@
     "event_end_at": "2026-10-11T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:16.498Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -167,7 +169,7 @@
     "event_start_at": "2026-10-09T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:16.495Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Schloss Köpenick",
     "source_refs": [
       {
@@ -208,7 +210,7 @@
     "event_start_at": "2026-10-09T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:16.494Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Schlossinsel Köpenick",
     "source_refs": [
       {
@@ -288,7 +290,7 @@
     "event_end_at": "2026-10-10T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -328,7 +330,7 @@
     "event_end_at": "2026-10-04T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -595,7 +597,7 @@
     "event_end_at": "2026-10-10T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -637,7 +639,7 @@
     "event_end_at": "2026-10-09T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -679,7 +681,7 @@
     "event_end_at": "2026-10-09T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -760,7 +762,7 @@
     "event_end_at": "2026-10-08T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -800,7 +802,7 @@
     "event_end_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -842,7 +844,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -884,7 +886,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -925,7 +927,7 @@
     "event_start_at": "2026-10-05T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Evangelische Stadtkirchengemeinde Köpenick",
     "source_refs": [
       {
@@ -965,7 +967,7 @@
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1007,7 +1009,7 @@
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1103,7 +1105,7 @@
     "lat": 52.4582123,
     "lng": 13.5823726,
     "is_mock": false,
-    "last_seen_at": "2026-09-28T10:42:40.895Z"
+    "last_seen_at": "2026-10-02T10:22:10.020Z"
   },
   {
     "id": "8bbbdfd6af18c0cc",
@@ -1130,7 +1132,7 @@
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1341,7 +1343,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-01T10:47:47.332Z"
+    "last_seen_at": "2026-10-02T10:22:10.020Z"
   },
   {
     "id": "99acfe098cefd7a3",
@@ -1840,7 +1842,7 @@
     "event_end_at": "2026-10-07T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dörpfeldstraße 30",
     "source_refs": [
       {
@@ -1883,7 +1885,7 @@
     "event_end_at": "2026-10-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2201,7 +2203,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2702,7 +2704,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2744,7 +2746,7 @@
     "event_end_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2784,7 +2786,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2824,7 +2826,7 @@
     "event_end_at": "2026-10-03T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2864,7 +2866,7 @@
     "event_end_at": "2026-10-02T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -4430,7 +4432,7 @@
     "event_start_at": "2026-10-07T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4471,7 +4473,7 @@
     "event_start_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -4512,7 +4514,7 @@
     "event_start_at": "2026-10-02T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Alexander-von-Humboldt-Gymnasium",
     "source_refs": [
       {
@@ -5458,7 +5460,7 @@
     "event_end_at": "2026-10-15T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5500,7 +5502,7 @@
     "event_end_at": "2026-10-13T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5542,7 +5544,7 @@
     "event_end_at": "2026-10-14T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5584,7 +5586,7 @@
     "event_end_at": "2026-10-11T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-15T20:21:31.952Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5626,7 +5628,7 @@
     "event_end_at": "2026-10-11T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5667,7 +5669,7 @@
     "event_start_at": "2026-10-09T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -5709,7 +5711,7 @@
     "event_end_at": "2026-10-09T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5751,7 +5753,7 @@
     "event_end_at": "2026-10-10T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5792,7 +5794,7 @@
     "event_start_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -5834,7 +5836,7 @@
     "event_end_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5875,7 +5877,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -5917,7 +5919,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5959,7 +5961,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -6001,7 +6003,7 @@
     "event_end_at": "2026-10-02T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -6043,7 +6045,7 @@
     "event_end_at": "2026-10-03T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -6085,7 +6087,7 @@
     "event_end_at": "2026-10-04T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-30T10:21:13.506Z",
+    "last_seen_at": "2026-10-02T10:22:10.020Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -7903,7 +7905,7 @@
     "published_at": "2026-09-07T06:54:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.955Z",
     "raw_excerpt": "Das Bezirksamt Treptow-Köpenick trauert um Uwe Creutzmann, der Ende August 2026 im Alter von 82 Jahren verstorben ist. Uwe Creutzmann war Journalist mit Leib und Seele. Über 35 Jahre lang prägte er das Senioren-Magazin Treptow-Köpenick und machte es zu einer festen Institution im Bezirk. 1991 war er an der Gründung des Magazins beteiligt und übernahm dessen redaktionelle Leitung.",
-    "ai_summary": "Das Bezirksamt Treptow-Köpenick trauert um Uwe Creutzmann, der Ende August 2026 im Alter von 82 Jahren verstarb. Er prägte über 35 Jahre lang das Senioren-Magazin Treptow-Köpenick.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick trauert um Uwe Creutzmann, der Ende August 2026 im Alter von 82 Jahren verstarb. Er prägte über 35 Jahre lang das Senioren-Magazin Treptow-Köpenick als Journalist und redaktioneller Leiter.",
     "tags": [
       "verwaltung",
       "politik",
@@ -7911,12 +7913,12 @@
     ],
     "location": "Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.4,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.5,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Das Bezirksamt Treptow-Köpenick betrauert den Tod eines langjährigen Journalisten, der das Senioren-Magazin prägte. Dies ist für Anwohner wichtig, da es das lokale Medienwesen betrifft und eine Persönlichkeit ehrt, die sich für den Bezirk engagiert hat.",
-    "district": "Treptow",
+    "ai_reasoning": "Die Nachricht betrifft das Bezirksamt und ein lokales Magazin von Treptow-Köpenick, wodurch ein hoher lokaler Bezug besteht.",
+    "district": "Treptow-Köpenick",
     "addresses": [],
     "is_mock": false,
     "source_refs": [
@@ -7929,7 +7931,9 @@
       "f5b71d01b0fa570e"
     ],
     "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710886.php"
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710886.php",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "581a325099c3c82c",
@@ -7940,7 +7944,7 @@
     "published_at": "2026-09-07T06:00:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.955Z",
     "raw_excerpt": "Vier Spaziergänge laden im September und Oktober zu ungewöhnlichen Einblicken in Geschichte, Architektur, Wirtschaft und Nachbarschaft ein. Adlershof kann mehr als Wissenschaft und Technologie. Hinter dem bekannten Forschungs- und Wirtschaftsstandort verbirgt sich ein Ort mit bewegter Geschichte, außergewöhnlicher Architektur, einer lebendigen Einkaufsstraße und einer engagierten Nachbarschaft.",
-    "ai_summary": "Die Reihe „Brückenschlag on Tour 2026“ lädt im September und Oktober zu vier Spaziergängen ein, die ungewöhnliche Einblicke in Geschichte, Architektur, Wirtschaft und Nachbarschaft von Adlershof bieten.",
+    "ai_summary": "Die Initiative „Brückenschlag on Tour 2026“ lädt im September und Oktober zu vier Spaziergängen ein, um Adlershof in seinen verschiedenen Facetten zu entdecken. Die Spaziergänge bieten Einblicke in Geschichte, Architektur, Wirtschaft und Nachbarschaft des Standorts.",
     "tags": [
       "veranstaltung",
       "sonstiges",
@@ -7948,14 +7952,13 @@
     ],
     "location": "Adlershof",
     "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.2,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Vier Spaziergänge bieten ungewöhnliche Einblicke in Adlershofs Geschichte, Architektur, Wirtschaft und Nachbarschaft. Dies ist für Anwohner relevant, da es die Möglichkeit bietet, den eigenen Stadtteil neu zu entdecken und das Gemeinschaftsgefühl zu stärken.",
+    "ai_reasoning": "Die Spaziergänge finden explizit in Adlershof statt, einem Ortsteil von Treptow-Köpenick.",
     "district": "Adlershof",
     "addresses": [],
-    "street": null,
     "lat": 52.4378932,
     "lng": 13.5475496,
     "is_mock": false,
@@ -7969,7 +7972,9 @@
       "5be3106ee398d143"
     ],
     "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710864.php"
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710864.php",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "ef946f25f02f6c19",
@@ -7980,21 +7985,21 @@
     "published_at": "2026-09-04T15:00:00.000Z",
     "ingested_at": "2026-09-02T08:34:43.421Z",
     "raw_excerpt": "Ort: Baergarten in Treptow-Köpenick",
-    "ai_summary": "Das Internationale Sommerfest, ein Festival für Vielfalt und Nachhaltigkeit, findet im Baergarten in Treptow-Köpenick statt.",
+    "ai_summary": "Das Internationale Sommerfest, ein Festival für Vielfalt und Nachhaltigkeit, findet im Baergarten in Treptow-Köpenick statt. Details zum Programm und genaue Uhrzeiten sind der Quelle zu entnehmen.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Baergarten",
+    "location": "Baergarten in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.8,
+    "local_relevance_score": 0.7,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Ein Sommerfest feiert Vielfalt und Nachhaltigkeit im Baergarten in Treptow-Köpenick. Anwohner können hier ein lokales Festival besuchen und sich mit Themen wie Vielfalt und Nachhaltigkeit auseinandersetzen.",
+    "ai_reasoning": "Der Veranstaltungsort Baergarten befindet sich in Treptow-Köpenick und ist explizit genannt.",
     "event_start_at": "2026-09-04T15:00:00.000Z",
     "venue": "Baergarten in Treptow-Köpenick",
-    "district": "Treptow",
+    "district": "Treptow-Köpenick",
     "addresses": [],
-    "street": null,
     "election_topic": null,
     "is_mock": false,
     "geocode_precision": "venue",
@@ -8006,7 +8011,9 @@
     ],
     "alias_ids": [],
     "lat": 52.4602423,
-    "lng": 13.5057814
+    "lng": 13.5057814,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "4a151ccdb4d1298e",
@@ -8017,20 +8024,20 @@
     "published_at": "2026-09-04T12:00:00.000Z",
     "ingested_at": "2026-09-04T08:38:35.033Z",
     "raw_excerpt": "",
-    "ai_summary": "Das KungerKiezTheater (KKT) feiert die Premiere des Stücks \"Yvonne, Prinzessin von Burgund\". Dies ist ein kulturelles Ereignis für die Bewohner des Kiez.",
+    "ai_summary": "Die Premiere von „Yvonne, Prinzessin von Burgund“ findet am KungerKiezTheater (KKT) statt.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "KungerKiezTheater",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.1,
+    "location": "KungerKiezTheater (KKT)",
+    "location_relevant": false,
+    "local_relevance_score": 0.1,
+    "political_relevance_score": 0,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Die Premiere von \"Yvonne, Prinzessin von Burgund\" findet im KungerKiezTheater statt. Dies ist eine kulturelle Veranstaltung, die das Freizeitangebot für Anwohner in Treptow-Köpenick bereichert.",
+    "ai_reasoning": "Der Ort 'KungerKiezTheater' lässt sich nicht eindeutig einem der vorgegebenen Bezirke von Treptow-Köpenick zuordnen, da keine präzisen Ortsangaben vorliegen.",
     "district": "Treptow",
     "addresses": [],
-    "street": null,
     "is_mock": false,
     "source_refs": [
       {
@@ -8038,7 +8045,10 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710396.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area"
   },
   {
     "id": "e8486bbd776521f8",
@@ -8049,21 +8059,22 @@
     "published_at": "2026-09-04T07:43:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.955Z",
     "raw_excerpt": "* Zeit: 10.09.2026, 19 Uhr * Ort: Galerie Adlershof im Kulturzentrum Alte Schule, Dörpfeldstr. 54-56, 12489 Berlin Am 10. September 2026 wird die Regisseurin und Autorin Laura Laabs (*1985 in Ost-Berlin) aus ihrem Roman „Adlergestell“ lesen. Die Lesung findet in der Galerie Adlershof im Kulturzentrum Alte Schule statt und beginnt um 19 Uhr. Die Romanfiguren Lenka, Chaline und die Erzählerin wachsen Tür an Tür auf, an der großen Berliner Ausfallstraße, dem Adlergestell.",
-    "ai_summary": "Am 10. September 2026 liest Laura Laabs aus ihrem Roman „Adlergestell“ in der Galerie Adlershof im Kulturzentrum Alte Schule in der Dörpfeldstraße 54-56.",
+    "ai_summary": "Am 10. September 2026 liest Laura Laabs um 19 Uhr aus ihrem Roman „Adlergestell“ in der Galerie Adlershof, Kulturzentrum Alte Schule in Berlin-Adlershof.",
     "tags": [
       "veranstaltung",
-      "kultur"
+      "kultur",
+      "sonstiges"
     ],
-    "location": "Galerie Adlershof im Kulturzentrum Alte Schule",
+    "location": "Galerie Adlershof im Kulturzentrum Alte Schule, Dörpfeldstr. 54-56, 12489 Berlin",
     "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Laura Laabs liest aus ihrem Roman „Adlergestell“, der das Aufwachsen an dieser Ausfallstraße thematisiert. Dies ist für Anwohner wichtig, da es ein kulturelles Angebot im Ortsteil ist und lokale Bezüge der Literatur aufgreift.",
+    "ai_reasoning": "Die Lesung findet in Adlershof statt, was den lokalen Bezug herstellt.",
     "district": "Adlershof",
     "addresses": [
-      "Dörpfeldstraße 54-56"
+      "Dörpfeldstr. 54-56, 12489 Berlin"
     ],
     "is_mock": false,
     "source_refs": [
@@ -8077,9 +8088,11 @@
     ],
     "document_type": "oparl",
     "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710440.php",
-    "street": "Dörpfeldstraße",
+    "street": "Dörpfeldstr.",
     "lat": 52.4410088,
-    "lng": 13.5567833
+    "lng": 13.5567833,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "bcfe7ffd82291343",
@@ -8090,21 +8103,21 @@
     "published_at": "2026-09-04T05:51:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.955Z",
     "raw_excerpt": "Die Deckschicht des Hauptweges auf dem Friedhof Bohnsdorf ist verschlissen und muss saniert werden. Die Arbeiten im Eingangsbereich sollen zwischen 7. und 18. September 2026 ausgeführt werden. In dieser Zeit ist mit Einschränkungen zu rechnen. Das Bezirksamt bittet um Verständnis.",
-    "ai_summary": "Das Bezirksamt beginnt am 7. September 2026 mit der Sanierung des Hauptweges auf dem Friedhof Bohnsdorf. Die Arbeiten im Eingangsbereich dauern voraussichtlich bis zum 18. September 2026.",
+    "ai_summary": "Das Bezirksamt saniert vom 7. bis 18. September 2026 den verschlissenen Hauptweg im Eingangsbereich des Friedhofs Bohnsdorf.",
     "tags": [
       "infrastruktur",
-      "verwaltung"
+      "verwaltung",
+      "sonstiges"
     ],
     "location": "Friedhof Bohnsdorf",
     "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.3,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Das Bezirksamt saniert den Hauptweg auf dem Friedhof Bohnsdorf, um die Begehbarkeit zu verbessern. Dies ist für Anwohner relevant, da es die lokale Infrastruktur betrifft und mit temporären Einschränkungen auf dem Friedhof verbunden ist.",
+    "ai_reasoning": "Die Sanierung durch das Bezirksamt auf dem Friedhof Bohnsdorf hat direkten lokalen Bezug zu Bohnsdorf.",
     "district": "Bohnsdorf",
     "addresses": [],
-    "street": null,
     "lat": 52.3999267,
     "lng": 13.5586295,
     "is_mock": false,
@@ -8118,7 +8131,9 @@
       "1084e04a8305aa82"
     ],
     "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710385.php"
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710385.php",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "afcabc39d0d2e12d",
@@ -8129,23 +8144,24 @@
     "published_at": "2026-09-04T05:43:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.955Z",
     "raw_excerpt": "* Zeit: 16.09.2026, 18 Uhr * Ort: Johannes-Werner-Straße 8, 12487 Berlin Am Mittwoch, dem 16. September 2026, wird um 18 Uhr in der Johannes-Werner-Straße 8 in Johannisthal eine Gedenktafel für Luigi (Lutz) Colani (1928–2019) eingeweiht. Zur Eröffnung spricht Marco Brauchmann, Bezirksstadtrat für Weiterbildung, Schule, Kultur und Sport.",
-    "ai_summary": "Am 16. September 2026 wird um 18 Uhr in der Johannes-Werner-Straße 8 in Johannisthal eine Gedenktafel für den Industriedesigner Luigi Colani eingeweiht. Bezirksstadtrat Marco Brauchmann wird die Eröffnungsrede halten.",
+    "ai_summary": "Am 16. September 2026 wird um 18 Uhr in der Johannes-Werner-Straße 8 in Johannisthal eine Gedenktafel für den Industriedesigner Luigi Colani eingeweiht, wobei Bezirksstadtrat Marco Brauchmann sprechen wird.",
     "tags": [
       "veranstaltung",
       "sonstiges",
       "kultur",
-      "politik"
+      "politik",
+      "verwaltung"
     ],
-    "location": "Johannes-Werner-Straße 8",
+    "location": "Johannes-Werner-Straße 8, 12487 Berlin",
     "location_relevant": true,
     "local_relevance_score": 0.8,
-    "political_relevance_score": 0.5,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Eine Gedenktafel für Luigi Colani wird in Johannisthal eingeweiht, mit Teilnahme eines Bezirksstadtrats. Dies ist für Anwohner wichtig, da es an eine bedeutende Persönlichkeit erinnert und das kulturelle Gedächtnis des Stadtteils stärkt.",
+    "ai_reasoning": "Die Einweihung einer Gedenktafel in Johannisthal mit Beteiligung des Bezirksstadtrats hat einen klaren lokalen Bezug zu Johannisthal.",
     "district": "Johannisthal",
     "addresses": [
-      "Johannes-Werner-Straße 8"
+      "Johannes-Werner-Straße 8, 12487 Berlin"
     ],
     "is_mock": false,
     "source_refs": [
@@ -8161,7 +8177,9 @@
     "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1710382.php",
     "street": "Johannes-Werner-Straße",
     "lat": 52.4408854,
-    "lng": 13.5036278
+    "lng": 13.5036278,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "02beb82c77132fe2",
@@ -8172,22 +8190,21 @@
     "published_at": "2026-09-03T17:00:00.000Z",
     "ingested_at": "2026-09-01T09:16:20.824Z",
     "raw_excerpt": "Ort: Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
-    "ai_summary": "In der Gedenkstätte „Köpenicker Blutwoche“ finden Vorträge und Diskussionen zu archäologischen Ausgrabungen statt, die sich mit NS-Zwangsarbeit am Bahnhof Köpenick befassen.",
+    "ai_summary": "In der Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick finden Vorträge und Diskussionen zu archäologischen Ausgrabungen bezüglich NS-Zwangsarbeit am Bahnhof Köpenick statt.",
     "tags": [
       "veranstaltung",
       "sonstiges"
     ],
-    "location": "Gedenkstätte „Köpenicker Blutwoche“",
+    "location": "Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.5,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Es werden archäologische Funde zur NS-Zwangsarbeit am Bahnhof Köpenick vorgestellt und diskutiert. Dies ist für Anwohner wichtig, da es die lokale Geschichte aufarbeitet und zur Erinnerungskultur in Köpenick beiträgt.",
+    "ai_reasoning": "Die Veranstaltung findet in der Gedenkstätte „Köpenicker Blutwoche“ statt und thematisiert Ausgrabungen am Bahnhof Köpenick, was einen starken lokalen Bezug herstellt.",
     "event_start_at": "2026-09-03T17:00:00.000Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
-    "district": "Altstadt Köpenick",
+    "district": "Treptow",
     "addresses": [],
-    "street": null,
     "election_topic": null,
     "is_mock": false,
     "geocode_precision": "venue",
@@ -8199,7 +8216,9 @@
     ],
     "alias_ids": [],
     "lat": 52.4549647,
-    "lng": 13.5786101
+    "lng": 13.5786101,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "16b20f1f0642f806",
@@ -8210,20 +8229,20 @@
     "published_at": "2026-09-03T06:00:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.956Z",
     "raw_excerpt": "Die „JFE Grimau“ ist die einzige Jugendfreizeiteinrichtung im Ortsteil Adlershof und damit ein unverzichtbarer Bestandteil der sozialen Infrastruktur vor Ort. Mit dem geplanten Neubau in der Waldstraße 37 erhält die Einrichtung künftig ein modernes und bedarfsgerechtes Gebäude, das Kindern und Jugendlichen vielfältige Möglichkeiten für Freizeit, Begegnung und Bewegung bieten wird.",
-    "ai_summary": "Ein Ersatzneubau für die Jugendfreizeiteinrichtung Grimau mitsamt den Außenanlagen ist auf dem Grundstück Waldstraße 37 in Berlin-Adlershof geplant. Die Einrichtung ist ein unverzichtbarer Bestandteil der sozialen Infrastruktur Adlershofs.",
+    "ai_summary": "Die Jugendfreizeiteinrichtung \"JFE Grimau\" in Adlershof erhält einen Ersatzneubau mit modernen Räumlichkeiten für Kinder und Jugendliche. Sie ist die einzige ihrer Art im Ortsteil und ein wichtiger Bestandteil der sozialen Infrastruktur.",
     "tags": [
       "infrastruktur",
       "verwaltung",
       "jugend",
       "politik"
     ],
-    "location": "Waldstraße 37",
+    "location": "Waldstraße 37 in 12489 Berlin-Adlershof",
     "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.7,
+    "local_relevance_score": 1,
+    "political_relevance_score": 0.5,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Ein Ersatzneubau für die Jugendfreizeiteinrichtung Grimau in Adlershof ist geplant. Dies ist für Anwohner wichtig, da es die soziale Infrastruktur stärkt und moderne Freizeitangebote für Kinder und Jugendliche im Ortsteil schafft.",
+    "ai_reasoning": "Der Neubau einer Jugendfreizeiteinrichtung ist direkt an einem spezifischen Ort in Adlershof angesiedelt und relevant für die lokale Gemeinschaft.",
     "district": "Adlershof",
     "addresses": [
       "Waldstraße 37"
@@ -8242,7 +8261,9 @@
       "f222dfd3bd2f2bc6"
     ],
     "document_type": "oparl",
-    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706099.php"
+    "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1706099.php",
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "e28647bb162d2f62",
@@ -8253,7 +8274,7 @@
     "published_at": "2026-09-02T12:50:00.000Z",
     "ingested_at": "2026-09-07T09:06:25.956Z",
     "raw_excerpt": "Das Straßen- und Grünflächenamt muss in der Zeit vom 31. August bis 6. September 2026 (36. Kalenderwoche) aus Gründen der Verkehrssicherheit folgenden Baum fällen: Rahnsdorf Straße 546 05.09.2026 * Baum-Nr: ohne * Baumart: Birke * Umfang in cm: 126 * Höhe in m: 21 * Fällgrund: Baum abgestorben Der Tatbestand einer Legalausnahme gem. § 39 Abs. 5 Satz 2 Nr.",
-    "ai_summary": "Das Straßen- und Grünflächenamt wird in der Woche vom 31. August bis 6. September 2026 eine abgestorbene Birke in Rahnsdorf, Straße 546, aus Gründen der Verkehrssicherheit fällen.",
+    "ai_summary": "Das Straßen- und Grünflächenamt plant die Fällung eines abgestorbenen Baumes in der Rahnsdorfer Straße 546 in der Kalenderwoche 36 im Jahr 2026. Die Maßnahme erfolgt aus Gründen der Verkehrssicherheit.",
     "tags": [
       "sicherheit",
       "infrastruktur",
@@ -8263,15 +8284,17 @@
     "location": "Rahnsdorf Straße 546",
     "location_relevant": true,
     "local_relevance_score": 0.7,
-    "political_relevance_score": 0.2,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Eine abgestorbene Birke wird in Rahnsdorf aus Gründen der Verkehrssicherheit gefällt. Dies ist für Anwohner wichtig, da es die Sicherheit im öffentlichen Raum betrifft und eine potenzielle Gefahr beseitigt.",
+    "ai_reasoning": "Die Baumfällung findet an einer spezifischen Adresse in Rahnsdorf statt und betrifft somit direkt das lokale Umfeld.",
     "document_type": "oparl",
     "document_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1709731.php",
     "district": "Rahnsdorf",
-    "addresses": [],
-    "street": "Straße 546",
+    "addresses": [
+      "Rahnsdorf Straße 546"
+    ],
+    "street": "Rahnsdorf Straße",
     "lat": 52.4384919,
     "lng": 13.7223287,
     "is_mock": false,
@@ -8283,7 +8306,9 @@
     ],
     "alias_ids": [
       "6d58cc9beedffe87"
-    ]
+    ],
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "a83628997e9a7a63",

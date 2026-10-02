@@ -202,5 +202,17 @@
   "Berlin": {
     "lat": 52.4911206,
     "lng": 13.4547183
+  },
+  "online": {
+    "lat": 52.5295927,
+    "lng": 13.574828
+  },
+  "Bezirksamt Treptow-Köpenick": {
+    "lat": 52.4475949,
+    "lng": 13.5761769
+  },
+  "Der Geheimtipp": {
+    "lat": 52.4357173,
+    "lng": 13.5424238
   }
 }
