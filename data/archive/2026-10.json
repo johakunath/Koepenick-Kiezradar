@@ -1,5 +1,196 @@
 [
   {
+    "id": "2b35b05c4170f6d2",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=294070&ls=40&c=13&date_start=03.10.2026",
+    "title": "„Zukunft im Gespräch\" N° 06: Anne Rabe liest aus „Die Möglichkeit von Glück\"",
+    "published_at": "2026-10-03T09:44:13.169Z",
+    "ingested_at": "2026-10-03T09:44:13.169Z",
+    "raw_excerpt": "„Zukunft im Gespräch\" N° 06: Anne Rabe liest aus „Die Möglichkeit von Glück\" Lesungen, Vorträge Termin: 15.10.2026 19:00 Uhr Veranstaltungsort: Industriesalon Schöneweide in Treptow-Köpenick ",
+    "ai_summary": "Anne Rabe liest am 15. Oktober 2026 aus „Die Möglichkeit von Glück“ im Industriesalon Schöneweide in Treptow-Köpenick.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Industriesalon Schöneweide in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Lesung findet an einem spezifischen Veranstaltungsort in Oberschöneweide, einem Ortsteil von Treptow-Köpenick, statt.",
+    "event_start_at": "2026-10-15T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-03T09:44:13.169Z",
+    "venue": "Industriesalon Schöneweide",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=294070"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4603338,
+    "lng": 13.5179898,
+    "is_mock": false
+  },
+  {
+    "id": "e354286a094c40e8",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=03.10.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-10-03T09:44:13.168Z",
+    "ingested_at": "2026-10-03T09:44:13.168Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 15.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick befasst sich vom 15. Oktober 2026 bis zum 18. Oktober 2026 mit dem Wandel und der Bedeutung des Gedenkens.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet an einem spezifischen Ort in Treptow-Köpenick statt und hat einen kulturellen Bezug zur lokalen Geschichte.",
+    "event_start_at": "2026-10-15T08:00:00.000Z",
+    "event_end_at": "2026-10-15T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-03T09:44:13.168Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "c829d0fd0885f05e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=03.10.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-10-03T09:44:13.168Z",
+    "ingested_at": "2026-10-03T09:44:13.168Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 15.10.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ findet am 15. Oktober 2026 in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung wird in einer Galerie in Johannisthal, einem Ortsteil von Treptow-Köpenick, veranstaltet.",
+    "event_start_at": "2026-10-15T10:00:00.000Z",
+    "event_end_at": "2026-10-15T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-03T09:44:13.168Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "b7209118802dc6d8",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721042.php",
+    "title": "Bürgermedaille 2027: Treptow-Köpenick sucht engagierte Bürgerinnen und Bürger",
+    "published_at": "2026-10-02T11:43:00.000Z",
+    "ingested_at": "2026-10-03T09:44:13.286Z",
+    "raw_excerpt": "Vorschläge für die Auszeichnung können noch bis zum 31. Dezember 2026 eingereicht werden Treptow-Köpenick lebt vom Engagement seiner Bürgerinnen und Bürger. Ob in Vereinen und Initiativen, im sozialen Bereich, in der Nachbarschaft, im Sport, in der Kultur oder an vielen anderen Stellen: Ehrenamtlich Engagierte leisten einen wichtigen Beitrag für das Zusammenleben und die Gemeinschaft im Bezirk.",
+    "ai_summary": "Treptow-Köpenick sucht engagierte Bürgerinnen und Bürger für die Bürgermedaille 2027; Vorschläge können bis zum 31. Dezember 2026 eingereicht werden.",
+    "tags": [
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Der Aufruf zur Bürgermedaille bezieht sich direkt auf den gesamten Bezirk Treptow-Köpenick und würdigt bürgerschaftliches Engagement.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721042.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "2fa25562cc943f6e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720916.php",
+    "title": "Baumaßnahmen im Bereich Lange Brücke und am Köllnischen Platz",
+    "published_at": "2026-10-02T10:50:00.000Z",
+    "ingested_at": "2026-10-03T09:44:13.287Z",
+    "raw_excerpt": "* Zeitraum: 4. bis 30. Oktober 2026 sowie 25. November bis 9. Dezember 2026 Wie die BVG mitteilt, sind im Bereich der Langen Brücke und am Köllnischen Platz Gleisinstandsetzungsarbeiten geplant. Die Arbeiten finden in zwei Abschnitten statt: vom 4. bis 30. Oktober 2026 auf der Langen Brücke sowie vom 25. November bis 9. Dezember 2026 am Köllnischen Platz.",
+    "ai_summary": "Die BVG plant Gleisinstandsetzungsarbeiten an der Langen Brücke und am Köllnischen Platz in zwei Abschnitten vom 4. bis 30. Oktober 2026 und vom 25. November bis 9. Dezember 2026.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "verkehr"
+    ],
+    "location": "Lange Brücke und am Köllnischen Platz",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Baumaßnahmen betreffen spezifische und wichtige Infrastrukturpunkte in Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720916.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
     "id": "8bd369785b57abc1",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
@@ -40,7 +231,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "address",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "aba179ad0365dc9f",
@@ -67,7 +259,7 @@
     "event_end_at": "2026-10-14T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.688Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -109,7 +301,7 @@
     "event_end_at": "2026-10-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.688Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -148,7 +340,7 @@
     "event_start_at": "2026-10-13T14:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.687Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Der Geheimtipp",
     "source_refs": [
       {
@@ -190,7 +382,7 @@
     "event_end_at": "2026-10-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.687Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -230,7 +422,7 @@
     "event_end_at": "2026-10-13T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.686Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -272,7 +464,7 @@
     "event_end_at": "2026-10-11T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.685Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -314,7 +506,7 @@
     "event_end_at": "2026-10-12T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-02T10:22:12.685Z",
+    "last_seen_at": "2026-10-03T09:44:10.659Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -364,7 +556,8 @@
     "geocode_precision": "area",
     "lat": 52.5295927,
     "lng": 13.574828,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "cd4b068724cc5098",
@@ -399,7 +592,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "b2f0bbc05943e789",
@@ -436,7 +630,8 @@
     "geocode_precision": "area",
     "lat": 52.4475949,
     "lng": 13.5761769,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "ec1778add2816a97",
@@ -472,7 +667,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "0345ad0103c75c76",
@@ -509,7 +705,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "229e5b8648f73797",
@@ -552,7 +748,7 @@
     "lat": 52.4410181,
     "lng": 13.5782431,
     "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "bde44db299971aa5",
@@ -593,7 +789,7 @@
     "lat": 52.4546904,
     "lng": 13.5793944,
     "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "15cd309d5a43afd4",
@@ -636,7 +832,7 @@
     "lat": 52.4410088,
     "lng": 13.5567833,
     "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
+    "last_seen_at": "2026-10-03T09:44:10.659Z"
   },
   {
     "id": "d70183a662998263",

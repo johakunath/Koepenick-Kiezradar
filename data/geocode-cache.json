@@ -214,5 +214,13 @@
   "Der Geheimtipp": {
     "lat": 52.4357173,
     "lng": 13.5424238
+  },
+  "Industriesalon Schöneweide": {
+    "lat": 52.4603338,
+    "lng": 13.5179898
+  },
+  "Treptow Köpenick": {
+    "lat": 52.417893,
+    "lng": 13.6001848
   }
 }
