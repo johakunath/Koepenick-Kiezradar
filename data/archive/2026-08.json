@@ -8,22 +8,21 @@
     "published_at": "2026-08-31T14:30:00.000Z",
     "ingested_at": "2026-08-29T10:54:52.849Z",
     "raw_excerpt": "Ort: “Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
-    "ai_summary": "Das Montagscafé \"Lenz & Friends\" findet im \"Tausendfüßler\" e. V. WUHLETREFF statt und bietet Anwohnern eine Gelegenheit zum Austausch.",
+    "ai_summary": "Das Montagscafé mit Lenz & Friends findet im \"Tausendfüßler\" e. V. WUHLETREFF in Treptow-Köpenick statt.",
     "tags": [
       "veranstaltung",
       "sonstiges"
     ],
-    "location": "WUHLETREFF",
+    "location": "“Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.6,
-    "political_relevance_score": 0,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Ein Montagscafé bietet Anwohnern eine soziale Zusammenkunft. Dies fördert den Gemeinschaftssinn und das soziale Leben im Kiez Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltungsbeschreibung nennt explizit Treptow-Köpenick als Ort des Geschehens.",
     "event_start_at": "2026-08-31T14:30:00.000Z",
     "venue": "“Tausendfüßler” e. V. WUHLETREFF in Treptow-Köpenick",
     "district": "Treptow",
     "addresses": [],
-    "street": null,
     "election_topic": null,
     "is_mock": false,
     "geocode_precision": "venue",
@@ -35,7 +34,9 @@
     ],
     "alias_ids": [],
     "lat": 52.4660747,
-    "lng": 13.5735973
+    "lng": 13.5735973,
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "c4872527ef86c80f",
@@ -46,18 +47,19 @@
     "published_at": "2026-08-31T12:00:00.000Z",
     "ingested_at": "2026-08-31T10:40:51.627Z",
     "raw_excerpt": "",
-    "ai_summary": "Das Bezirksamt Treptow-Köpenick informiert über geplante Baumfällungen, die in der Woche vom 31. August bis zum 4. September 2026 stattfinden werden. Diese Maßnahmen sind Teil der Baumerhaltung und -pflege im Bezirk.",
+    "ai_summary": "Öffentliche Quellen berichten über Baumfällungen in der Woche vom 31. August bis 4. September 2026. Details zu genauen Orten und Umfang stehen in der Quelle.",
     "tags": [
       "infrastruktur",
-      "verwaltung"
+      "verwaltung",
+      "sonstiges"
     ],
     "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
+    "location_relevant": false,
+    "local_relevance_score": 0.3,
     "political_relevance_score": 0.2,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "In der Woche vom 31. August bis 4. September 2026 werden im Bezirk Treptow-Köpenick Bäume gefällt. Dies kann das Stadtbild und die örtliche Verkehrssituation kurzfristig beeinflussen, da es sich um Maßnahmen zur Baumpflege handelt.",
+    "ai_reasoning": "Baumfällungen haben einen potenziellen lokalen Bezug, auch wenn der genaue Ort nicht genannt wird.",
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
@@ -67,7 +69,9 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708540.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "7213a529267b327b",
@@ -78,19 +82,19 @@
     "published_at": "2026-08-31T12:00:00.000Z",
     "ingested_at": "2026-08-31T10:40:51.627Z",
     "raw_excerpt": "",
-    "ai_summary": "Die Stadtverwaltung Treptow-Köpenick stellt Informationen und Unterstützung zur barrierefreien Teilnahme an Wahlen bereit, um Wählerinnen und Wähler mit Mobilitätseinschränkungen den Zugang zu erleichtern.",
+    "ai_summary": "Informationen zur barrierefreien Wahl bieten Unterstützung für Wählerinnen und Wähler mit Mobilitätseinschränkungen.",
     "tags": [
       "wahl",
       "verwaltung",
       "politik"
     ],
     "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.9,
+    "location_relevant": false,
+    "local_relevance_score": 0.2,
+    "political_relevance_score": 0.7,
     "election_relevant": true,
-    "election_topic": "Barrierefreiheit bei Wahlen",
-    "ai_reasoning": "Der Eintrag befasst sich mit Unterstützungsmöglichkeiten für Menschen mit Mobilitätseinschränkungen bei Wahlen. Dies ist für Anwohner in Köpenick wichtig, um eine gleichberechtigte Wahlteilnahme sicherzustellen und die lokale Demokratie zu stärken.",
+    "election_topic": "Barrierefreiheit",
+    "ai_reasoning": "Der Artikel behandelt ein allgemeines Wahlinformationsthema, das für alle Bezirke gleichermaßen relevant ist.",
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
@@ -100,7 +104,9 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697690.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "676385a693c55be6",
@@ -111,19 +117,19 @@
     "published_at": "2026-08-31T12:00:00.000Z",
     "ingested_at": "2026-08-31T10:40:51.628Z",
     "raw_excerpt": "",
-    "ai_summary": "Das Bezirksamt Treptow-Köpenick informiert über den Versand der Wahlbenachrichtigungen, die alle wahlberechtigten Bürgerinnen und Bürger in Kürze erhalten oder bereits erhalten haben sollten.",
+    "ai_summary": "Die Wahlbenachrichtigungen wurden versandt, was auf eine bevorstehende Wahl hindeutet.",
     "tags": [
       "wahl",
       "verwaltung",
       "politik"
     ],
     "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.9,
+    "location_relevant": false,
+    "local_relevance_score": 0.2,
+    "political_relevance_score": 0.8,
     "election_relevant": true,
     "election_topic": "Wahlbenachrichtigungen",
-    "ai_reasoning": "Die Wahlbenachrichtigungen wurden versandt und informieren die Bürger über die Möglichkeit zur Stimmabgabe. Für Anwohner in Köpenick ist dies entscheidend, da sie dadurch die nötigen Informationen zur Teilnahme an der bevorstehenden Wahl erhalten.",
+    "ai_reasoning": "Der Versand von Wahlbenachrichtigungen ist ein bundesweites oder landesweites Ereignis, ohne spezifischen lokalen Bezug zur Eingabe.",
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
@@ -133,7 +139,9 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697675.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "e12a29586c11461d",
@@ -144,19 +152,19 @@
     "published_at": "2026-08-31T12:00:00.000Z",
     "ingested_at": "2026-09-01T09:16:20.826Z",
     "raw_excerpt": "",
-    "ai_summary": "Die Bauarbeiten zur Fertigstellung der Radickestraße im Stadtteil Adlershof sind abgeschlossen worden.",
+    "ai_summary": "Die Fertigstellung der Radickestraße in Adlershof wird vermeldet. Details dazu sind in der Quelle zu finden.",
     "tags": [
       "infrastruktur",
       "verkehr",
       "verwaltung"
     ],
-    "location": "Radickestraße, Adlershof",
+    "location": "Adlershof",
     "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.6,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
     "election_topic": null,
-    "ai_reasoning": "Die Radickestraße in Adlershof ist fertiggestellt worden, was die Infrastruktur verbessert. Dies ist für Anwohner wichtig, da es die Verkehrssituation und Lebensqualität in Adlershof direkt beeinflusst.",
+    "ai_reasoning": "Die Fertigstellung einer Straße betrifft die lokale Infrastruktur und damit direkt die Anwohner des Bezirks.",
     "district": "Adlershof",
     "addresses": [],
     "street": "Radickestraße",
@@ -169,7 +177,9 @@
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708853.php"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2
   },
   {
     "id": "db95e42e4a13be7b",
@@ -180,31 +190,38 @@
     "published_at": "2026-08-30T10:00:00.000Z",
     "ingested_at": "2026-08-28T16:26:07.071Z",
     "raw_excerpt": "Ort: FEZ Berlin, Kinder-, Jugend- und Familienzentrum in Treptow-Köpenick",
-    "ai_summary": "Das FEZ Berlin in Treptow-Köpenick veranstaltet am 30. August 2026 das RABATZ-Familienfestival von Radio Teddy mit dem Thema Europa.",
+    "ai_summary": "Das RABATZ-Familienfestival von Radio Teddy findet im FEZ Berlin in Treptow-Köpenick statt und hat einen Europa-Bezug. Nähere Informationen sind in der Quelle verfügbar.",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "FEZ Berlin",
+    "location": "FEZ Berlin, Kinder-, Jugend- und Familienzentrum in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.8,
+    "local_relevance_score": 0.7,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Ein Familienfestival im FEZ Berlin mit Bezug zu Europa wird veranstaltet. Dies ist eine Freizeitaktivität für Anwohner von Köpenick und dem Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Das Festival findet in einer bekannten Einrichtung im Bezirk Treptow-Köpenick statt und ist für Familien in der Region von Interesse.",
     "event_start_at": "2026-08-30T10:00:00.000Z",
     "venue": "FEZ Berlin, Kinder-, Jugend- und Familienzentrum in Treptow-Köpenick",
-    "district": "Treptow",
-    "addresses": [],
-    "street": null,
+    "district": "Treptow-Köpenick",
+    "addresses": [
+      "FEZ Berlin"
+    ],
+    "street": "FEZ Berlin",
     "election_topic": null,
     "is_mock": false,
-    "geocode_precision": "venue",
+    "geocode_precision": "address",
     "source_refs": [
       {
         "name": "Berlin.de Veranstaltungskalender",
         "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=286813"
       }
     ],
-    "alias_ids": []
+    "alias_ids": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "lat": 52.4613612,
+    "lng": 13.5490859
   },
   {
     "id": "580a507449e41452",

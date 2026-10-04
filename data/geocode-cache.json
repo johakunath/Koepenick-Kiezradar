@@ -222,5 +222,13 @@
   "Treptow Köpenick": {
     "lat": 52.417893,
     "lng": 13.6001848
+  },
+  "Rathaus Treptow": {
+    "lat": 52.4830803,
+    "lng": 13.4809153
+  },
+  "FEZ Berlin": {
+    "lat": 52.4613612,
+    "lng": 13.5490859
   }
 }
