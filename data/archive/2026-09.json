@@ -68,7 +68,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "51e036fe80274255",
@@ -844,7 +844,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -886,7 +886,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -927,7 +927,7 @@
     "event_start_at": "2026-10-05T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Evangelische Stadtkirchengemeinde Köpenick",
     "source_refs": [
       {
@@ -1105,7 +1105,7 @@
     "lat": 52.4582123,
     "lng": 13.5823726,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "8bbbdfd6af18c0cc",
@@ -2203,7 +2203,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2704,7 +2704,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2746,7 +2746,7 @@
     "event_end_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2786,7 +2786,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -5877,7 +5877,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -5919,7 +5919,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5961,7 +5961,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {

@@ -1,5 +1,75 @@
 [
   {
+    "id": "892f7dbe364bd51d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721394.php",
+    "title": "Gartenarbeitsschule Treptow-Köpenick wächst weiter - mehr Raum für Natur, Lernen und Entdecken",
+    "published_at": "2026-10-05T09:01:00.000Z",
+    "ingested_at": "2026-10-05T11:16:15.678Z",
+    "raw_excerpt": "Die Gartenarbeitsschule Treptow-Köpenick wächst weiter: Nach der Erweiterung um eine Streuobstwiese im Jahr 2024 ist nun auch das unmittelbar angrenzende Wäldchen dauerhaft Teil des grünen Lernortes. Die neue Fläche wurde inzwischen eingefriedet und kann künftig in die pädagogische Arbeit der Gartenarbeitsschule einbezogen werden. Damit ist die Gartenarbeitsschule in den vergangenen Jahren deutlich gewachsen:",
+    "ai_summary": "Die Gartenarbeitsschule Treptow-Köpenick hat ihre Fläche durch eine Streuobstwiese und ein angrenzendes Wäldchen erweitert, um mehr Raum für pädagogische Arbeit im Grünen zu schaffen.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Artikel beschreibt die Erweiterung einer lokalen Einrichtung in Treptow-Köpenick und hat somit einen direkten lokalen Bezug.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721394.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "025da5f9b3afa8c7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721384.php",
+    "title": "Bezirksamt führt Fahrradstraße in der Bouchéstraße zwischen Karl-Kunger-Straße und Kiefholzstraße weiter - Markierungsarbeiten ab 12. Oktober 2026",
+    "published_at": "2026-10-05T08:56:00.000Z",
+    "ingested_at": "2026-10-05T11:16:15.679Z",
+    "raw_excerpt": "Seit Ende vergangenen Jahres ist die Bouchéstraße zwischen Karl-Kunger-Straße und Heidelbergerstraße eine Fahrradstraße. Jetzt folgt der nächste Abschnitt: Ab 12. Oktober 2026 führt das Straßen- und Grünflächenamt die Markierungsarbeiten für die Einrichtung der Fahrradstraße zwischen den Einmündungen zur Karl-Kunger-Straße und zur Kiefholzstraße durch. Bereits am 1. und 2.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick setzt die Einrichtung einer Fahrradstraße in der Bouchéstraße fort; ab 12. Oktober 2026 beginnen Markierungsarbeiten zwischen Karl-Kunger-Straße und Kiefholzstraße.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Bouchéstraße zwischen Karl-Kunger-Straße und Kiefholzstraße",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Der Artikel kündigt eine konkrete Infrastrukturmaßnahme in einer spezifischen Straße an, was eine hohe lokale Relevanz für Anwohner hat.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721384.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Bouchéstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
     "id": "a4dabd10d9b8ac0e",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -238,7 +308,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "2fa25562cc943f6e",
@@ -274,7 +344,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "8bd369785b57abc1",
@@ -643,7 +713,7 @@
     "lat": 52.5295927,
     "lng": 13.574828,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "cd4b068724cc5098",
@@ -679,7 +749,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "b2f0bbc05943e789",
@@ -717,7 +787,7 @@
     "lat": 52.4475949,
     "lng": 13.5761769,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "ec1778add2816a97",
@@ -754,7 +824,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "0345ad0103c75c76",
@@ -791,7 +861,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "229e5b8648f73797",
@@ -834,7 +904,7 @@
     "lat": 52.4410181,
     "lng": 13.5782431,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "bde44db299971aa5",

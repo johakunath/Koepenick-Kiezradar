@@ -1,131 +1,5 @@
 [
   {
-    "id": "f098c7bd20a03ffa",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=30&c=13&date_start=26.09.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-09-26T09:13:42.163Z",
-    "ingested_at": "2026-09-26T09:13:42.163Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 04.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Eine Ausstellung über Wandel und Bedeutung von Gedenken wird im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.5,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-04T08:00:00.000Z",
-    "event_end_at": "2026-10-04T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow-Köpenick",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "694e997588118561",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=10&c=13&date_start=14.09.2026",
-    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
-    "published_at": "2026-09-14T20:18:51.052Z",
-    "ingested_at": "2026-09-14T20:18:51.053Z",
-    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 04.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick zeigt am 4. Oktober 2026 die Ausstellung \"Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart\". Details zur Ausstellung sind in der Quelle verfügbar.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort ist explizit als in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-04T08:00:00.000Z",
-    "event_end_at": "2026-10-04T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "geocode_precision": "venue",
-    "is_mock": false,
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "enrichment_version": 2
-  },
-  {
-    "id": "664b3cab6514381e",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=294091&ls=20&c=13&date_start=29.09.2026",
-    "title": "Öffentliche Führung \"Wie erinnern wir? Wie erinnerst du?\"",
-    "published_at": "2026-09-29T10:29:48.768Z",
-    "ingested_at": "2026-09-29T10:29:48.768Z",
-    "raw_excerpt": "DZNSZA Öffentliche Führung \"Wie erinnern wir? Wie erinnerst du?\" Ausstellungen Bildung, Schule Termin: 04.10.2026 14:00 - 15:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick bietet am 4. Oktober 2026 eine öffentliche Führung zum Thema \"Wie erinnern wir? Wie erinnerst du?\" an, die sich mit Ausstellungen und Bildung befasst.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick genannt, was einen starken lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-04T12:00:00.000Z",
-    "event_end_at": "2026-10-04T13:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=294091"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
     "id": "ecca1112b4f7926d",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -150,7 +24,7 @@
     "event_end_at": "2026-10-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -189,7 +63,7 @@
     "event_start_at": "2026-10-05T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Evangelische Stadtkirchengemeinde Köpenick",
     "source_refs": [
       {
@@ -229,7 +103,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -271,7 +145,7 @@
     "event_end_at": "2026-10-06T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -313,7 +187,7 @@
     "event_end_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -352,7 +226,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -393,7 +267,7 @@
     "event_start_at": "2026-10-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -435,7 +309,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -476,7 +350,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -518,7 +392,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-05T11:16:14.076Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2233,6 +2107,76 @@
     "enrichment_version": 2
   },
   {
+    "id": "892f7dbe364bd51d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721394.php",
+    "title": "Gartenarbeitsschule Treptow-Köpenick wächst weiter - mehr Raum für Natur, Lernen und Entdecken",
+    "published_at": "2026-10-05T09:01:00.000Z",
+    "ingested_at": "2026-10-05T11:16:15.678Z",
+    "raw_excerpt": "Die Gartenarbeitsschule Treptow-Köpenick wächst weiter: Nach der Erweiterung um eine Streuobstwiese im Jahr 2024 ist nun auch das unmittelbar angrenzende Wäldchen dauerhaft Teil des grünen Lernortes. Die neue Fläche wurde inzwischen eingefriedet und kann künftig in die pädagogische Arbeit der Gartenarbeitsschule einbezogen werden. Damit ist die Gartenarbeitsschule in den vergangenen Jahren deutlich gewachsen:",
+    "ai_summary": "Die Gartenarbeitsschule Treptow-Köpenick hat ihre Fläche durch eine Streuobstwiese und ein angrenzendes Wäldchen erweitert, um mehr Raum für pädagogische Arbeit im Grünen zu schaffen.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Artikel beschreibt die Erweiterung einer lokalen Einrichtung in Treptow-Köpenick und hat somit einen direkten lokalen Bezug.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721394.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "025da5f9b3afa8c7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721384.php",
+    "title": "Bezirksamt führt Fahrradstraße in der Bouchéstraße zwischen Karl-Kunger-Straße und Kiefholzstraße weiter - Markierungsarbeiten ab 12. Oktober 2026",
+    "published_at": "2026-10-05T08:56:00.000Z",
+    "ingested_at": "2026-10-05T11:16:15.679Z",
+    "raw_excerpt": "Seit Ende vergangenen Jahres ist die Bouchéstraße zwischen Karl-Kunger-Straße und Heidelbergerstraße eine Fahrradstraße. Jetzt folgt der nächste Abschnitt: Ab 12. Oktober 2026 führt das Straßen- und Grünflächenamt die Markierungsarbeiten für die Einrichtung der Fahrradstraße zwischen den Einmündungen zur Karl-Kunger-Straße und zur Kiefholzstraße durch. Bereits am 1. und 2.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick setzt die Einrichtung einer Fahrradstraße in der Bouchéstraße fort; ab 12. Oktober 2026 beginnen Markierungsarbeiten zwischen Karl-Kunger-Straße und Kiefholzstraße.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Bouchéstraße zwischen Karl-Kunger-Straße und Kiefholzstraße",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Der Artikel kündigt eine konkrete Infrastrukturmaßnahme in einer spezifischen Straße an, was eine hohe lokale Relevanz für Anwohner hat.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721384.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Bouchéstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
     "id": "b7209118802dc6d8",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -2264,7 +2208,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "2fa25562cc943f6e",
@@ -2300,7 +2244,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "8bd369785b57abc1",
@@ -2382,7 +2326,7 @@
     "lat": 52.5295927,
     "lng": 13.574828,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "cd4b068724cc5098",
@@ -2418,7 +2362,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "b2f0bbc05943e789",
@@ -2456,7 +2400,7 @@
     "lat": 52.4475949,
     "lng": 13.5761769,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "ec1778add2816a97",
@@ -2493,7 +2437,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "0345ad0103c75c76",
@@ -2530,7 +2474,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "229e5b8648f73797",
@@ -2573,7 +2517,7 @@
     "lat": 52.4410181,
     "lng": 13.5782431,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "bde44db299971aa5",
@@ -2770,7 +2714,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "51e036fe80274255",
@@ -2842,6 +2786,48 @@
     "geocode_precision": "area",
     "is_mock": false,
     "last_seen_at": "2026-10-01T10:47:47.332Z"
+  },
+  {
+    "id": "664b3cab6514381e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=294091&ls=20&c=13&date_start=29.09.2026",
+    "title": "Öffentliche Führung \"Wie erinnern wir? Wie erinnerst du?\"",
+    "published_at": "2026-09-29T10:29:48.768Z",
+    "ingested_at": "2026-09-29T10:29:48.768Z",
+    "raw_excerpt": "DZNSZA Öffentliche Führung \"Wie erinnern wir? Wie erinnerst du?\" Ausstellungen Bildung, Schule Termin: 04.10.2026 14:00 - 15:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick bietet am 4. Oktober 2026 eine öffentliche Führung zum Thema \"Wie erinnern wir? Wie erinnerst du?\" an, die sich mit Ausstellungen und Bildung befasst.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort ist explizit in Treptow-Köpenick genannt, was einen starken lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-04T12:00:00.000Z",
+    "event_end_at": "2026-10-04T13:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=294091"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
   },
   {
     "id": "1ea177da92ae61f1",
@@ -3110,6 +3096,48 @@
     "last_seen_at": "2026-09-30T10:21:13.506Z"
   },
   {
+    "id": "f098c7bd20a03ffa",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=30&c=13&date_start=26.09.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-09-26T09:13:42.163Z",
+    "ingested_at": "2026-09-26T09:13:42.163Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 04.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung über Wandel und Bedeutung von Gedenken wird im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-04T08:00:00.000Z",
+    "event_end_at": "2026-10-04T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow-Köpenick",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
     "id": "25518b8b29f05409",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -3230,7 +3258,7 @@
     "lat": 52.4582123,
     "lng": 13.5823726,
     "is_mock": false,
-    "last_seen_at": "2026-10-04T10:28:01.763Z"
+    "last_seen_at": "2026-10-05T11:16:14.076Z"
   },
   {
     "id": "8bbbdfd6af18c0cc",
@@ -6984,6 +7012,48 @@
     "enrichment_version": 2
   },
   {
+    "id": "694e997588118561",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=10&c=13&date_start=14.09.2026",
+    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
+    "published_at": "2026-09-14T20:18:51.052Z",
+    "ingested_at": "2026-09-14T20:18:51.053Z",
+    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 04.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick zeigt am 4. Oktober 2026 die Ausstellung \"Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart\". Details zur Ausstellung sind in der Quelle verfügbar.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort ist explizit als in Treptow-Köpenick genannt, was einen klaren lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-04T08:00:00.000Z",
+    "event_end_at": "2026-10-04T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false,
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "enrichment_version": 2
+  },
+  {
     "id": "141b034ddfe21555",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -9886,79 +9956,6 @@
       {
         "name": "Bezirksamt Treptow-Köpenick",
         "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697690.php"
-      }
-    ],
-    "alias_ids": [],
-    "summary_origin": "ai",
-    "enrichment_version": 2
-  },
-  {
-    "id": "676385a693c55be6",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697675.php",
-    "title": "Wahlbenachrichtigungen wurden versandt",
-    "published_at": "2026-08-31T12:00:00.000Z",
-    "ingested_at": "2026-08-31T10:40:51.628Z",
-    "raw_excerpt": "",
-    "ai_summary": "Die Wahlbenachrichtigungen wurden versandt, was auf eine bevorstehende Wahl hindeutet.",
-    "tags": [
-      "wahl",
-      "verwaltung",
-      "politik"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": false,
-    "local_relevance_score": 0.2,
-    "political_relevance_score": 0.8,
-    "election_relevant": true,
-    "election_topic": "Wahlbenachrichtigungen",
-    "ai_reasoning": "Der Versand von Wahlbenachrichtigungen ist ein bundesweites oder landesweites Ereignis, ohne spezifischen lokalen Bezug zur Eingabe.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false,
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1697675.php"
-      }
-    ],
-    "alias_ids": [],
-    "summary_origin": "ai",
-    "enrichment_version": 2
-  },
-  {
-    "id": "e12a29586c11461d",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708853.php",
-    "title": "Fertigstellung der Radickestraße in Adlershof",
-    "published_at": "2026-08-31T12:00:00.000Z",
-    "ingested_at": "2026-09-01T09:16:20.826Z",
-    "raw_excerpt": "",
-    "ai_summary": "Die Fertigstellung der Radickestraße in Adlershof wird vermeldet. Details dazu sind in der Quelle zu finden.",
-    "tags": [
-      "infrastruktur",
-      "verkehr",
-      "verwaltung"
-    ],
-    "location": "Adlershof",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Die Fertigstellung einer Straße betrifft die lokale Infrastruktur und damit direkt die Anwohner des Bezirks.",
-    "district": "Adlershof",
-    "addresses": [],
-    "street": "Radickestraße",
-    "lat": 52.436174,
-    "lng": 13.5496881,
-    "is_mock": false,
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1708853.php"
       }
     ],
     "alias_ids": [],

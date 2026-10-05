@@ -1,27 +1,27 @@
 {
-  "last_run": "2026-10-04T10:28:01.763Z",
+  "last_run": "2026-10-05T11:16:14.076Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
       "parsed": 1,
       "raw_items": 50,
-      "last_success_at": "2026-10-04T10:28:01.763Z",
+      "last_success_at": "2026-10-05T11:16:14.076Z",
       "fetched": 0
     },
     "berlin-events": {
       "status": "warning",
-      "error": "Kalender auf fünf Quellseiten begrenzt",
-      "parsed": 50,
-      "raw_items": 50,
-      "last_success_at": "2026-10-04T10:28:01.763Z",
-      "fetched": 2
+      "error": "Weitere Kalenderseiten nicht erreichbar",
+      "parsed": 10,
+      "raw_items": 10,
+      "last_success_at": "2026-10-05T11:16:14.076Z",
+      "fetched": 0
     },
     "bezirksamt-tk": {
       "status": "ok",
       "parsed": 10,
       "raw_items": 10,
-      "last_success_at": "2026-10-04T10:28:01.763Z",
-      "fetched": 0
+      "last_success_at": "2026-10-05T11:16:14.076Z",
+      "fetched": 2
     },
     "bvv-tk": {
       "status": "skipped",
@@ -40,7 +40,7 @@
       "status": "ok",
       "parsed": 1,
       "raw_items": 1,
-      "last_success_at": "2026-10-04T10:28:01.763Z",
+      "last_success_at": "2026-10-05T11:16:14.076Z",
       "fetched": 0
     }
   },
