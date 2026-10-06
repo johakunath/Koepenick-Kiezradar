@@ -230,5 +230,29 @@
   "FEZ Berlin": {
     "lat": 52.4613612,
     "lng": 13.5490859
+  },
+  "Baumschulenweg": {
+    "lat": 52.4616938,
+    "lng": 13.4815479
+  },
+  "Rathaus Köpenick & Altstadt Köpenick": {
+    "lat": 52.4454164,
+    "lng": 13.5752346
+  },
+  "Neue Krugallee 4, 12435 Berlin": {
+    "lat": 52.4832869,
+    "lng": 13.4805847
+  },
+  "Rathaus Köpenick": {
+    "lat": 52.4454164,
+    "lng": 13.5752346
+  },
+  "Friedhof Altglienicke": {
+    "lat": 52.4113522,
+    "lng": 13.5264467
+  },
+  "Bürgeramt I": {
+    "lat": 52.4196257,
+    "lng": 13.4792834
   }
 }

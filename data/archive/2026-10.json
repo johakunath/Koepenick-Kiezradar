@@ -1,5 +1,358 @@
 [
   {
+    "id": "9beae50cb9e21c89",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293923&ls=40&c=13&date_start=06.10.2026",
+    "title": "120 Jahre Köpenickiade – Sonderaufführung der Hauptmanngarde",
+    "published_at": "2026-10-06T11:05:57.009Z",
+    "ingested_at": "2026-10-06T11:05:57.009Z",
+    "raw_excerpt": "BA-TK 120 Jahre Köpenickiade – Sonderaufführung der Hauptmanngarde Feste, Events Kunst, Kultur Termin: 16.10.2026 16:00 Uhr Veranstaltungsort: Rathaus Köpenick & Altstadt Köpenick in Treptow-Köpenick ",
+    "ai_summary": "Die Hauptmanngarde führt am 16. Oktober 2026 eine Sonderaufführung im Rathaus Köpenick und in der Altstadt Köpenick anlässlich der 120 Jahre Köpenickiade auf.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Köpenick & Altstadt Köpenick in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Rathaus Köpenick und in der Altstadt Köpenick statt, was eine hohe lokale Relevanz für diesen Bezirksteil hat.",
+    "event_start_at": "2026-10-16T14:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-06T11:05:57.009Z",
+    "venue": "Rathaus Köpenick & Altstadt Köpenick",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293923"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Altstadt Köpenick",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4454164,
+    "lng": 13.5752346,
+    "is_mock": false
+  },
+  {
+    "id": "8839ef319e736769",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293926&ls=40&c=13&date_start=06.10.2026",
+    "title": "Eröffnung der Ausstellung “Das Rathaus Köpenick – Wahrzeichen in Backstein“",
+    "published_at": "2026-10-06T11:05:57.009Z",
+    "ingested_at": "2026-10-06T11:05:57.009Z",
+    "raw_excerpt": "BA-TK Eröffnung der Ausstellung “Das Rathaus Köpenick – Wahrzeichen in Backstein“ Ausstellungen Kunst, Kultur Termin: 16.10.2026 17:00 Uhr Veranstaltungsort: Rathaus Köpenick in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung namens „Das Rathaus Köpenick – Wahrzeichen in Backstein“ wird am 16. Oktober 2026 um 17:00 Uhr im Rathaus Köpenick eröffnet. Sie befasst sich mit Kunst und Kultur.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Köpenick in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort ist das Rathaus Köpenick, welches direkt im Bezirk Treptow-Köpenick liegt und einen starken lokalen Bezug hat.",
+    "event_start_at": "2026-10-16T15:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-06T11:05:57.009Z",
+    "venue": "Rathaus Köpenick",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293926"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4454164,
+    "lng": 13.5752346,
+    "is_mock": false
+  },
+  {
+    "id": "159f889bc30e6e26",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293929&ls=40&c=13&date_start=06.10.2026",
+    "title": "Filmvorführung „Der Hauptmann von Köpenick“ (1931) im Wartesaal vom Bürgeramt",
+    "published_at": "2026-10-06T11:05:57.009Z",
+    "ingested_at": "2026-10-06T11:05:57.009Z",
+    "raw_excerpt": "BA-TK Filmvorführung „Der Hauptmann von Köpenick“ (1931) im Wartesaal vom Bürgeramt Feste, Events Bühnen, Filme Kunst, Kultur Termin: 16.10.2026 17:45 Uhr Veranstaltungsort: Bürgeramt I in Treptow-Köpenick ",
+    "ai_summary": "Am 16. Oktober 2026 um 17:45 Uhr wird im Wartesaal des Bürgeramtes I in Treptow-Köpenick der Film „Der Hauptmann von Köpenick“ (1931) gezeigt. Es handelt sich um ein Event im Bereich Kunst und Kultur.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Bürgeramt I in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Filmvorführung findet im Bürgeramt I statt, welches direkt im Bezirk Treptow-Köpenick liegt und somit einen klaren lokalen Bezug aufweist.",
+    "event_start_at": "2026-10-16T15:45:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-06T11:05:57.009Z",
+    "venue": "Bürgeramt I",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293929"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4196257,
+    "lng": 13.4792834,
+    "is_mock": false
+  },
+  {
+    "id": "3a6ef05b86d17d84",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=06.10.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-10-06T11:05:57.009Z",
+    "ingested_at": "2026-10-06T11:05:57.009Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 17.10.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Die Ausstellung „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt wird am 17. Oktober 2026 um 08:00 Uhr im Rathaus Treptow in Treptow-Köpenick eröffnet. Die Ausstellung konzentriert sich auf Kunst und Kultur.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet im Rathaus Treptow statt, welches direkt im Bezirk Treptow-Köpenick liegt und einen starken lokalen Bezug hat.",
+    "event_start_at": "2026-10-17T06:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-06T11:05:57.009Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "0ee2a8e6ce1ed2bd",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=06.10.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-10-06T11:05:57.008Z",
+    "ingested_at": "2026-10-06T11:05:57.008Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 16.10.2026 12:00 - 17:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Die Galerie Johannisthal in Treptow-Köpenick veranstaltet am 16. Oktober 2026 die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet in der Galerie Rathaus Johannisthal statt, die sich im Bezirk Treptow-Köpenick befindet.",
+    "event_start_at": "2026-10-16T10:00:00.000Z",
+    "event_end_at": "2026-10-16T15:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-06T11:05:57.008Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "a9e74c75fabc9a2d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721733.php",
+    "title": "Innenentwicklungskonzept Baumschulenweg: Studie zur städtebaulichen Quartiersentwicklung beschlossen",
+    "published_at": "2026-10-06T06:53:00.000Z",
+    "ingested_at": "2026-10-06T11:05:57.291Z",
+    "raw_excerpt": "Für den Bereich Baumschulenweg hat der Bezirk Treptow-Köpenick eine städtebauliche Studie zur Quartiersentwicklung erstellen lassen. Das sogenannte Innenentwicklungskonzept, kurz IEK, wurde am 29. September 2026 vom Bezirksamt Treptow-Köpenick beschlossen. Zusammengefasst könnten laut Konzept ca. 660 neue Wohnungen, ca.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick hat ein Innenentwicklungskonzept für Baumschulenweg beschlossen, welches eine städtebauliche Quartiersentwicklung mit ca. 660 neuen Wohnungen vorsieht.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "politik"
+    ],
+    "location": "Baumschulenweg",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.8,
+    "election_relevant": true,
+    "election_topic": "Stadtentwicklung",
+    "ai_reasoning": "Der Beschluss des Innenentwicklungskonzepts durch das Bezirksamt hat direkte Auswirkungen auf die Entwicklung des Ortsteils Baumschulenweg im Bezirk Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721733.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4616938,
+    "lng": 13.4815479,
+    "is_mock": false
+  },
+  {
+    "id": "480cf8dc56093340",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721621.php",
+    "title": "14.10.2026: Die Frau, die inspiriert - Nachmittag für Frauen im Rathaus Treptow",
+    "published_at": "2026-10-06T06:49:00.000Z",
+    "ingested_at": "2026-10-06T11:05:57.292Z",
+    "raw_excerpt": "Die Akademie Rapsodia Berlin e. V. lädt gemeinsam mit dem Bezirksamt Treptow-Köpenick zu Kultur, Austausch und Begegnung ein * Zeit: 24.10.2026, 14–19 Uhr * Ort: Rathaus Treptow, Neue Krugallee 4, 12435 Berlin Ein besonderer Nachmittag mit Musik, Kultur, persönlichen Geschichten und Möglichkeiten zum Austausch findet am Samstag, 24. Oktober 2026, von 14 bis 19 Uhr im Rathaus Treptow, Neue Krugallee 4, 12435 Berlin, statt. Die Akademie Rapsodia Berlin e. V.",
+    "ai_summary": "Die Akademie Rapsodia Berlin e. V. lädt zusammen mit dem Bezirksamt Treptow-Köpenick am 24. Oktober 2026 zu einem Nachmittag für Frauen ins Rathaus Treptow ein.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow, Neue Krugallee 4, 12435 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Rathaus Treptow statt, einem spezifischen Ort innerhalb des Bezirks Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721621.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Neue Krugallee 4, 12435 Berlin"
+    ],
+    "street": "Neue Krugallee",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4832869,
+    "lng": 13.4805847,
+    "is_mock": false
+  },
+  {
+    "id": "20c616faf603f323",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1721644.php",
+    "title": "Zwei Personen bei Auseinandersetzung zwischen Jugendgruppen verletzt",
+    "published_at": "2026-10-05T13:38:00.000Z",
+    "ingested_at": "2026-10-06T11:05:54.548Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Zwei Personen wurden bei einer Auseinandersetzung zwischen Jugendgruppen in Treptow-Köpenick verletzt.",
+    "tags": [
+      "sicherheit",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Vorfall ereignete sich im Bezirk Treptow-Köpenick, was eine direkte lokale Relevanz darstellt.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1721644.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "ec4135d40535123e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721637.php",
+    "title": "Dritter Pflegeeinsatz im Ehrenhain für die Gefallenen des Ersten Weltkrieges auf dem Friedhof Altglienicke",
+    "published_at": "2026-10-05T13:20:00.000Z",
+    "ingested_at": "2026-10-06T11:05:57.292Z",
+    "raw_excerpt": "Am Vorabend des Tages der Deutschen Einheit führte bereits zum dritten Mal die Reservistenarbeitsgemeinschaft Kriegsgräberfürsorge Berlin einen Pflegeeinsatz auf dem städtischen Friedhof Altglienicke durch. Im dortigen Ehrenhain für 144 Gefallene des Ersten Weltkrieges erinnern mehr als 100 Gedenksteine an Altglienicker Opfer des Ersten Weltkrieges. Aufgrund seiner Lage im früheren Todesstreifen an der Mauer zu West-Berlin war der Ehrenhain jahrzehntelang unzugänglich.",
+    "ai_summary": "Die Reservistenarbeitsgemeinschaft Kriegsgräberfürsorge Berlin führte einen Pflegeeinsatz im Ehrenhain für die Gefallenen des Ersten Weltkrieges auf dem Friedhof Altglienicke durch. Dieser Ehrenhain erinnert an über 100 Altglienicker Opfer und war aufgrund seiner Lage im ehemaligen Todesstreifen jahrelang unzugänglich.",
+    "tags": [
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Friedhof Altglienicke",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Der Ehrenhain befindet sich auf dem städtischen Friedhof Altglienicke, was einen direkten lokalen Bezug zu Altglienicke im Bezirk Treptow-Köpenick herstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1721637.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Altglienicke",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4113522,
+    "lng": 13.5264467,
+    "is_mock": false
+  },
+  {
     "id": "892f7dbe364bd51d",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -31,7 +384,8 @@
     "addresses": [],
     "summary_origin": "ai",
     "enrichment_version": 2,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "025da5f9b3afa8c7",
@@ -67,7 +421,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "a4dabd10d9b8ac0e",
@@ -94,7 +449,7 @@
     "event_end_at": "2026-10-16T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:04.367Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -136,7 +491,7 @@
     "event_start_at": "2026-10-16T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:04.366Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -177,7 +532,7 @@
     "event_start_at": "2026-10-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Industriesalon Schöneweide",
     "source_refs": [
       {
@@ -219,7 +574,7 @@
     "event_end_at": "2026-10-15T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -261,7 +616,7 @@
     "event_end_at": "2026-10-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -308,7 +663,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-05T11:16:14.076Z"
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "2fa25562cc943f6e",
@@ -344,7 +699,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-05T11:16:14.076Z"
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "8bd369785b57abc1",
@@ -415,7 +770,7 @@
     "event_end_at": "2026-10-14T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -457,7 +812,7 @@
     "event_end_at": "2026-10-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -496,7 +851,7 @@
     "event_start_at": "2026-10-13T14:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Der Geheimtipp",
     "source_refs": [
       {
@@ -538,7 +893,7 @@
     "event_end_at": "2026-10-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -578,7 +933,7 @@
     "event_end_at": "2026-10-13T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -620,7 +975,7 @@
     "event_end_at": "2026-10-11T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -662,7 +1017,7 @@
     "event_end_at": "2026-10-12T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-06T11:05:53.902Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -713,7 +1068,7 @@
     "lat": 52.5295927,
     "lng": 13.574828,
     "is_mock": false,
-    "last_seen_at": "2026-10-05T11:16:14.076Z"
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "cd4b068724cc5098",
@@ -749,7 +1104,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-05T11:16:14.076Z"
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "b2f0bbc05943e789",
@@ -787,7 +1142,7 @@
     "lat": 52.4475949,
     "lng": 13.5761769,
     "is_mock": false,
-    "last_seen_at": "2026-10-05T11:16:14.076Z"
+    "last_seen_at": "2026-10-06T11:05:53.902Z"
   },
   {
     "id": "ec1778add2816a97",
