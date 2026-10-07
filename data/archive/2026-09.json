@@ -68,7 +68,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-06T11:05:53.902Z"
+    "last_seen_at": "2026-10-07T10:55:03.911Z"
   },
   {
     "id": "51e036fe80274255",
@@ -128,7 +128,7 @@
     "event_end_at": "2026-10-11T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -169,7 +169,7 @@
     "event_start_at": "2026-10-09T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Schloss Köpenick",
     "source_refs": [
       {
@@ -210,7 +210,7 @@
     "event_start_at": "2026-10-09T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-04T10:28:01.763Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Schlossinsel Köpenick",
     "source_refs": [
       {
@@ -290,7 +290,7 @@
     "event_end_at": "2026-10-10T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -597,7 +597,7 @@
     "event_end_at": "2026-10-10T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -639,7 +639,7 @@
     "event_end_at": "2026-10-09T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -681,7 +681,7 @@
     "event_end_at": "2026-10-09T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -762,7 +762,7 @@
     "event_end_at": "2026-10-08T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -802,7 +802,7 @@
     "event_end_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -844,7 +844,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1842,7 +1842,7 @@
     "event_end_at": "2026-10-07T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dörpfeldstraße 30",
     "source_refs": [
       {
@@ -1885,7 +1885,7 @@
     "event_end_at": "2026-10-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2203,7 +2203,7 @@
     "event_start_at": "2026-10-07T08:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -4432,7 +4432,7 @@
     "event_start_at": "2026-10-07T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4473,7 +4473,7 @@
     "event_start_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -5292,7 +5292,7 @@
     "event_end_at": "2026-10-18T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-14T20:18:51.604Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5334,7 +5334,7 @@
     "event_end_at": "2026-10-16T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5376,7 +5376,7 @@
     "event_end_at": "2026-10-17T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-09-14T20:18:51.603Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5418,7 +5418,7 @@
     "event_end_at": "2026-10-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5460,7 +5460,7 @@
     "event_end_at": "2026-10-15T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5502,7 +5502,7 @@
     "event_end_at": "2026-10-13T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5544,7 +5544,7 @@
     "event_end_at": "2026-10-14T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5586,7 +5586,7 @@
     "event_end_at": "2026-10-11T13:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5628,7 +5628,7 @@
     "event_end_at": "2026-10-11T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5669,7 +5669,7 @@
     "event_start_at": "2026-10-09T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -5711,7 +5711,7 @@
     "event_end_at": "2026-10-09T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5753,7 +5753,7 @@
     "event_end_at": "2026-10-10T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5794,7 +5794,7 @@
     "event_start_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -5836,7 +5836,7 @@
     "event_end_at": "2026-10-08T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -5919,7 +5919,7 @@
     "event_end_at": "2026-10-07T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
+    "last_seen_at": "2026-10-07T10:55:03.911Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
