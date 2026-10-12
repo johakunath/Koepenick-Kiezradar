@@ -266,5 +266,13 @@
   "Nachbarschaftstreff Kietzer Feld": {
     "lat": 52.4243079,
     "lng": 13.5901831
+  },
+  "Bahnhofstraße 9": {
+    "lat": 52.4548956,
+    "lng": 13.5775286
+  },
+  "Dammvorstadt": {
+    "lat": 52.4549323,
+    "lng": 13.5766447
   }
 }
