@@ -286,5 +286,17 @@
   "Dörpfeldstr. 56": {
     "lat": 52.43894,
     "lng": 13.5500737
+  },
+  "Salvador-Allende-Straße": {
+    "lat": 52.4464842,
+    "lng": 13.5938337
+  },
+  "Dörpfeldstr. 56, 12489 Berlin": {
+    "lat": 52.43894,
+    "lng": 13.5500737
+  },
+  "Mörikestraße 13, 12437 Berlin": {
+    "lat": 52.4650249,
+    "lng": 13.4840679
   }
 }
