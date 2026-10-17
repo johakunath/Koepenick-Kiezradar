@@ -302,5 +302,29 @@
   "Kunger-Straße 29": {
     "lat": 52.4882801,
     "lng": 13.4500199
+  },
+  "Sowjetisches Ehrenmal Treptow": {
+    "lat": 52.4876653,
+    "lng": 13.4688201
+  },
+  "Michael-Brückner-Straße 9, 12439 Berlin": {
+    "lat": 52.4539929,
+    "lng": 13.5142752
+  },
+  "Bezirksamt": {
+    "lat": 52.5176896,
+    "lng": 13.452815
+  },
+  "Dörpfeldstraße 54, 12489 Berlin": {
+    "lat": 52.4388584,
+    "lng": 13.5498617
+  },
+  "Salvador-Allende-Str. 89": {
+    "lat": 52.445424,
+    "lng": 13.5933567
+  },
+  "Rahnsdorfer Straße": {
+    "lat": 52.4984753,
+    "lng": 13.6136849
   }
 }
