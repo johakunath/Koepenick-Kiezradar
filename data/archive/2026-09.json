@@ -5250,7 +5250,7 @@
     "event_start_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-17T08:21:39.822Z",
+    "last_seen_at": "2026-10-18T08:41:52.661Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -5292,7 +5292,7 @@
     "event_end_at": "2026-10-18T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-17T08:21:39.822Z",
+    "last_seen_at": "2026-10-18T08:41:52.661Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
