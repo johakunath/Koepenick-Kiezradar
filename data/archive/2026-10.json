@@ -1,5 +1,46 @@
 [
   {
+    "id": "fa74c9ccceb2c65d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728066.php",
+    "title": "BENN-Nachbarschaftsforum im Allende-Viertel: Jahresplanung 2027",
+    "published_at": "2026-10-20T08:53:00.000Z",
+    "ingested_at": "2026-10-20T09:16:37.646Z",
+    "raw_excerpt": "Das Bezirksamt Treptow-Köpenick möchte auf eine Pressemitteilung des BENN Allende-Viertel aufmerksam machen. * Zeit: Donnerstag, 5. November 2026, 18:00–20:00 Uhr * Ort: KIEZKLUB Allende Salvador-Allende-Straße 89 12559 Berlin Das BENN-Team Allende lädt am Donnerstag, dem 5. November 2026, von 18 bis 20 Uhr zum BENN-Nachbarschaftsforum in den KIEZKLUB Allende ein.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick weist auf das BENN-Nachbarschaftsforum im Allende-Viertel am 5. November 2026 von 18 bis 20 Uhr im KIEZKLUB Allende hin. Dort wird die Jahresplanung 2027 besprochen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "KIEZKLUB Allende Salvador-Allende-Straße 89 12559 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Allende-Viertel in Treptow-Köpenick statt und wird vom Bezirksamt beworben, was eine hohe lokale Relevanz begründet.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728066.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Salvador-Allende-Straße 89 12559 Berlin"
+    ],
+    "street": "Salvador-Allende-Straße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.445424,
+    "lng": 13.5933567,
+    "is_mock": false
+  },
+  {
     "id": "6625dcfde7eedccb",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -159,7 +200,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "d9a21550971d9dec",
@@ -692,7 +734,7 @@
     "lat": 52.4118651,
     "lng": 13.5425859,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "86db8aa7bf4e8aef",
@@ -734,7 +776,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "d94c0e3c17b51765",
@@ -770,7 +812,7 @@
     "lat": 52.5176896,
     "lng": 13.452815,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "ff091078c36c47b0",
@@ -808,7 +850,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "2315b95605b8724f",
@@ -851,7 +893,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "d14e00dd5f5c969b",
@@ -891,7 +933,7 @@
     "enrichment_version": 2,
     "geocode_precision": "address",
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "6b1cf2f068f28586",
@@ -932,7 +974,7 @@
     "lat": 52.4458824,
     "lng": 13.57904,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "af6bfd5ba792b7a4",
@@ -975,7 +1017,7 @@
     "lat": 52.4410088,
     "lng": 13.5567833,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "0b0f0cec9f6f9619",
@@ -1501,7 +1543,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -1700,7 +1742,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "04239f0fc4fdbe44",
@@ -2332,7 +2374,7 @@
     "event_end_at": "2026-10-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2374,7 +2416,7 @@
     "event_end_at": "2026-10-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2456,7 +2498,7 @@
     "event_start_at": "2026-10-23T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2506,7 +2548,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2667,7 +2709,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2696,7 +2738,7 @@
     "event_end_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Nachbarschaftstreff Kietzer Feld",
     "source_refs": [
       {
@@ -2737,7 +2779,7 @@
     "event_start_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2786,7 +2828,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-19T09:42:49.487Z"
+    "last_seen_at": "2026-10-20T09:16:35.405Z"
   },
   {
     "id": "2ef9233b21c2e2a7",
@@ -2813,7 +2855,7 @@
     "event_end_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2853,7 +2895,7 @@
     "event_end_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2895,7 +2937,7 @@
     "event_end_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2936,7 +2978,7 @@
     "event_start_at": "2026-10-21T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -2978,7 +3020,7 @@
     "event_start_at": "2026-10-22T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3020,7 +3062,7 @@
     "event_end_at": "2026-10-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3060,7 +3102,7 @@
     "event_end_at": "2026-10-21T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3102,7 +3144,7 @@
     "event_end_at": "2026-10-20T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -3144,7 +3186,7 @@
     "event_start_at": "2026-10-21T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3186,7 +3228,7 @@
     "event_end_at": "2026-10-21T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3346,7 +3388,7 @@
     "event_end_at": "2026-10-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3386,7 +3428,7 @@
     "event_end_at": "2026-10-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3428,7 +3470,7 @@
     "event_end_at": "2026-10-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3470,7 +3512,7 @@
     "event_start_at": "2026-10-20T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-19T09:42:49.487Z",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
