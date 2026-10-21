@@ -1,5 +1,154 @@
 [
   {
+    "id": "d4f4dd0b8f147c5a",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728666.php",
+    "title": "Podiumsdiskussion „Europa kontrovers: Frieden sichern – zivile Resilienz in Berlin und Europa stärken“ am 4. November",
+    "published_at": "2026-10-21T08:58:00.000Z",
+    "ingested_at": "2026-10-21T09:13:07.069Z",
+    "raw_excerpt": "* Zeit: 04.11.2026, 148 Uhr * Ort: Haus 13 auf dem Pfefferberg, Schönhauser Allee 176, 10119 Berlin Die Europabeauftragten der Berliner Bezirke laden gemeinsam mit ihren Kooperationspartnern zu einer Podiumsdiskussion über gesellschaftliche Widerstandsfähigkeit und Krisenvorsorge ein. Die Veranstaltung findet am Mittwoch, dem 4. November 2026, um 18 Uhr im Haus 13 auf dem Pfefferberg, Schönhauser Allee 176, 10119 Berlin, statt. Frieden in Europa braucht mehr als Diplomatie und Verteidigung.",
+    "ai_summary": "Eine Podiumsdiskussion zum Thema gesellschaftliche Widerstandsfähigkeit und Krisenvorsorge findet am 4. November 2026 um 18 Uhr in Berlin statt, organisiert von den Europabeauftragten der Berliner Bezirke.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "sonstiges"
+    ],
+    "location": "Haus 13 auf dem Pfefferberg, Schönhauser Allee 176, 10119 Berlin",
+    "location_relevant": false,
+    "local_relevance_score": 0.1,
+    "political_relevance_score": 0.8,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in einem anderen Berliner Bezirk statt und hat keinen direkten lokalen Bezug zu Köpenick oder Treptow-Köpenick, auch wenn Bezirksbeauftragte beteiligt sind.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728666.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Schönhauser Allee 176, 10119 Berlin"
+    ],
+    "street": "Schönhauser Allee 176",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "is_mock": false
+  },
+  {
+    "id": "4087e96a0e81af86",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728660.php",
+    "title": "„No Place is the Space“ - Finissage im Rosengarten am 23. Oktober 2026",
+    "published_at": "2026-10-21T08:51:00.000Z",
+    "ingested_at": "2026-10-21T09:13:07.069Z",
+    "raw_excerpt": "* Zeit: 23.10.2026, 17:00 Uhr * Ort: Rosengarten im Treptower Park Zum bereits vierzehnten Mal präsentiert(e) der Bezirk Treptow-Köpenick von Berlin ein temporäres Kunstprojekt im Rosengarten des Treptower Parks. Als Ergebnis des diesjährigen Wettbewerbs für den öffentlichen Raum bereicherte die künstlerische Arbeit: „No Place is the Space“ der Berliner Künstlerin Andrea Böning einen Sommer lang diesen Platz.",
+    "ai_summary": "Der Bezirk Treptow-Köpenick präsentiert zum vierzehnten Mal ein temporäres Kunstprojekt im Rosengarten des Treptower Parks, dessen Finissage am 23. Oktober 2026 um 17:00 Uhr stattfindet.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Rosengarten im Treptower Park",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Treptower Park statt und wird vom Bezirk Treptow-Köpenick präsentiert, was einen direkten lokalen Bezug herstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728660.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
+    "id": "64da376df057e641",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728580.php",
+    "title": "Öffentliche Führungen durch die Ausstellung „zurückgeschaut | looking back“",
+    "published_at": "2026-10-21T07:36:00.000Z",
+    "ingested_at": "2026-10-21T09:13:07.069Z",
+    "raw_excerpt": "Die nächsten öffentlichen Führungen durch die Ausstellung „zurückgeschaut | looking back“ im Museum Treptow finden zu folgenden Terminen statt: * Do., 12.11.2026, um 18 Uhr * Sa., 28.11.2026, um 14 Uhr * Mi., 9.12.2026, um 18 Uhr Vom 1. Mai bis 15. Oktober 1896 fand im Treptower Park die „Erste Deutsche Kolonialausstellung“ statt. An der Großveranstaltung waren Politik, Wirtschaft und Kirchen sowie ethnologische und naturwissenschaftliche Museen beteiligt.",
+    "ai_summary": "Das Museum Treptow bietet im November und Dezember 2026 öffentliche Führungen durch die Ausstellung „zurückgeschaut | looking back“ an, die sich mit der Ersten Deutschen Kolonialausstellung von 1896 befasst.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Museum Treptow",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Führungen finden im Museum Treptow statt, was einen klaren lokalen Bezug zu Treptow-Köpenick herstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728580.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4434519,
+    "lng": 13.5022281,
+    "is_mock": false
+  },
+  {
+    "id": "96113f05ca8df571",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728517.php",
+    "title": "Aufruf zur Bewerbung um aktive Mitgliedschaft im bezirklichen Beirat für Partizipation und Integration Treptow-Köpenick",
+    "published_at": "2026-10-21T06:36:00.000Z",
+    "ingested_at": "2026-10-21T09:13:07.069Z",
+    "raw_excerpt": "Treptow-Köpenick lädt alle interessierten Menschen mit Migrations- und Fluchtgeschichte auf, die in Treptow-Köpenick leben, hier arbeiten, studieren, eine Ausbildung machen oder sich ehrenamtlich engagieren: Bewerben Sie sich für eine Mitgliedschaft im neu zu konstituierenden bezirklichen Migrationsbeirat.",
+    "ai_summary": "Treptow-Köpenick ruft Menschen mit Migrations- und Fluchtgeschichte, die im Bezirk leben oder arbeiten, zur Bewerbung für eine aktive Mitgliedschaft im neu zu konstituierenden bezirklichen Beirat für Partizipation und Integration auf.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "sonstiges"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.7,
+    "election_relevant": true,
+    "election_topic": "Partizipation und Integration",
+    "ai_reasoning": "Der Aufruf zur Bewerbung richtet sich explizit an Bewohner und Engagierte im Bezirk Treptow-Köpenick und betrifft die Zusammensetzung eines bezirklichen Beirats, was einen starken lokalen und politischen Bezug aufweist.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728517.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "fa74c9ccceb2c65d",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -38,7 +187,8 @@
     "geocode_precision": "address",
     "lat": 52.445424,
     "lng": 13.5933567,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "6625dcfde7eedccb",
@@ -201,7 +351,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "d9a21550971d9dec",
@@ -734,7 +884,7 @@
     "lat": 52.4118651,
     "lng": 13.5425859,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "86db8aa7bf4e8aef",
@@ -776,7 +926,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "d94c0e3c17b51765",
@@ -812,7 +962,7 @@
     "lat": 52.5176896,
     "lng": 13.452815,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "ff091078c36c47b0",
@@ -850,7 +1000,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "2315b95605b8724f",
@@ -1543,7 +1693,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-21T09:13:05.690Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -1742,7 +1892,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z"
+    "last_seen_at": "2026-10-21T09:13:05.690Z"
   },
   {
     "id": "04239f0fc4fdbe44",
@@ -2548,7 +2698,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-21T09:13:05.690Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
