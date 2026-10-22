@@ -1,212 +1,5 @@
 [
   {
-    "id": "2a6dd5aab8a8bb62",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=09.10.2026",
-    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
-    "published_at": "2026-10-09T11:11:28.053Z",
-    "ingested_at": "2026-10-09T11:11:28.053Z",
-    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 21.10.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick findet am 21. Oktober 2026 eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt statt. Weitere Informationen sind der Quelle zu entnehmen.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Rathaus Treptow in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet im Rathaus Treptow statt, was eine direkte lokale Verankerung im Bezirk Treptow-Köpenick darstellt.",
-    "event_start_at": "2026-10-21T06:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
-    "venue": "Rathaus Treptow",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4830803,
-    "lng": 13.4809153,
-    "is_mock": false
-  },
-  {
-    "id": "b9a78697385c0d53",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=09.10.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-10-09T11:11:28.054Z",
-    "ingested_at": "2026-10-09T11:11:28.054Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 21.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick findet am 21. Oktober 2026 von 10:00 bis 18:00 Uhr die Ausstellung „Wie erinnern wir? Wie erinnerst du?“ statt. Diese Ausstellung behandelt den Wandel und die Bedeutung des Gedenkens.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet direkt im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-21T08:00:00.000Z",
-    "event_end_at": "2026-10-21T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow-Köpenick",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "5b00d6083afe2216",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=40&c=13&date_start=09.10.2026",
-    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
-    "published_at": "2026-10-09T11:11:28.053Z",
-    "ingested_at": "2026-10-09T11:11:28.053Z",
-    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 21.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick präsentiert am 21. Oktober 2026 die Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“. Weitere Informationen hierzu sind in der Quelle verfügbar.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.6,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-21T08:00:00.000Z",
-    "event_end_at": "2026-10-21T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "08be569f1559709d",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=10.10.2026",
-    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
-    "published_at": "2026-10-10T10:28:42.816Z",
-    "ingested_at": "2026-10-10T10:28:42.817Z",
-    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 21.10.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "In der Galerie Rathaus Johannisthal in Treptow-Köpenick findet am 21.10.2026 die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt, die sich Kunst und Kultur widmet.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-21T10:00:00.000Z",
-    "event_end_at": "2026-10-21T17:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
-    "venue": "Galerie Rathaus Johannisthal",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Johannisthal",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "is_mock": false
-  },
-  {
-    "id": "407e7a4927872c64",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292738&ls=40&c=13&date_start=10.10.2026",
-    "title": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche",
-    "published_at": "2026-10-10T10:28:42.817Z",
-    "ingested_at": "2026-10-10T10:28:42.817Z",
-    "raw_excerpt": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche Infoveranstaltungen Termin: 21.10.2026 18:00 Uhr Veranstaltungsort: Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick ",
-    "ai_summary": "Am 21.10.2026 werden öffentliche Führungen durch die Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick angeboten.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Die Führung findet in der Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick statt, wodurch ein direkter lokaler Bezug gegeben ist.",
-    "event_start_at": "2026-10-21T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
-    "venue": "Gedenkstätte „Köpenicker Blutwoche“",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292738"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4549647,
-    "lng": 13.5786101,
-    "is_mock": false
-  },
-  {
     "id": "c736f25f352f0c0b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -231,7 +24,7 @@
     "event_start_at": "2026-10-22T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -273,7 +66,7 @@
     "event_end_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -315,7 +108,7 @@
     "event_end_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -357,7 +150,7 @@
     "event_end_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -397,7 +190,7 @@
     "event_end_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Nachbarschaftstreff Kietzer Feld",
     "source_refs": [
       {
@@ -438,7 +231,7 @@
     "event_start_at": "2026-10-22T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -479,7 +272,7 @@
     "event_start_at": "2026-10-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -521,7 +314,7 @@
     "event_start_at": "2026-10-23T06:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -563,7 +356,7 @@
     "event_end_at": "2026-10-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -605,7 +398,7 @@
     "event_end_at": "2026-10-23T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1824,6 +1617,83 @@
     "enrichment_version": 2
   },
   {
+    "id": "1cb98b837bc6dd57",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728750.php",
+    "title": "10.000 Krokusse für den Bellevuepark: Gartenarbeitsschule lässt den Frühling erblühen",
+    "published_at": "2026-10-21T11:20:00.000Z",
+    "ingested_at": "2026-10-22T09:16:05.540Z",
+    "raw_excerpt": "Am Mittwoch, dem 14. Oktober 2026, fand im Bellevuepark an der Friedrichshagener Straße in Treptow-Köpenick eine besondere Pflanzaktion statt. Gemeinsam mit Schülerinnen und Schülern der Hauptmann-von-Köpenick-Schule (09G23) brachte die Gartenarbeitsschule Treptow-Köpenick insgesamt 10.000 Krokusse in die Erde. Von 8 bis 14 Uhr waren die Kinder mit großem Engagement im Einsatz, um den Park nicht nur bunter, sondern vor allem ökologisch wertvoller zu gestalten.",
+    "ai_summary": "Am 14. Oktober 2026 pflanzten Schüler der Hauptmann-von-Köpenick-Schule gemeinsam mit der Gartenarbeitsschule Treptow-Köpenick 10.000 Krokusse im Bellevuepark.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Bellevuepark an der Friedrichshagener Straße in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Pflanzaktion fand explizit im Bellevuepark in Treptow-Köpenick statt, was eine direkte lokale Relevanz aufweist.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728750.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Friedrichshagener Straße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
+    "id": "c665f9ca4d3b276c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728740.php",
+    "title": "Bezirksamt ergänzt Gehweg und schafft mehr Platz für Bäume in der Heidelberger Straße in Alt-Treptow",
+    "published_at": "2026-10-21T10:52:00.000Z",
+    "ingested_at": "2026-10-22T09:16:05.540Z",
+    "raw_excerpt": "In der Heidelberger Straße in Alt-Treptow wird von der Hausnummer 62 bis zur Treptower Straße ein neuer, 75 Meter langer Gehwegabschnitt errichtet. Damit wird nicht nur die Sicherheit für Zufußgehende erhöht, sondern auch eine Lücke im Gehwegnetz geschlossen. Die vorhandene Fläche war bislang unbefestigt. Die Arbeiten sollen von 2. November 2026 bis 18. Dezember 2026 stattfinden. Als Teil der Maßnahme werden auch sechs neue Baumscheiben angelegt.",
+    "ai_summary": "In Alt-Treptow wird in der Heidelberger Straße ein 75 Meter langer Gehwegabschnitt ergänzt und sechs neue Baumscheiben angelegt, um die Sicherheit zu erhöhen und eine Lücke im Gehwegnetz zu schließen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Heidelberger Straße in Alt-Treptow",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Die Baumaßnahme zur Ergänzung des Gehwegs findet in der Heidelberger Straße in Alt-Treptow statt und betrifft direkt die lokale Infrastruktur und Sicherheit.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1728740.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Hausnummer 62",
+      "Treptower Straße"
+    ],
+    "street": "Heidelberger Straße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "is_mock": false
+  },
+  {
     "id": "d4f4dd0b8f147c5a",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -1859,7 +1729,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "address",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "4087e96a0e81af86",
@@ -1894,7 +1765,8 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "64da376df057e641",
@@ -1932,7 +1804,8 @@
     "geocode_precision": "area",
     "lat": 52.4434519,
     "lng": 13.5022281,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "96113f05ca8df571",
@@ -1970,7 +1843,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "fa74c9ccceb2c65d",
@@ -2012,7 +1886,7 @@
     "lat": 52.445424,
     "lng": 13.5933567,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z"
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "e94abceba7ba96b8",
@@ -2050,7 +1924,7 @@
     "enrichment_version": 2,
     "geocode_precision": "area",
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z"
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "100f9e06cadcb480",
@@ -2128,7 +2002,7 @@
     "lat": 52.4118651,
     "lng": 13.5425859,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z"
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "86db8aa7bf4e8aef",
@@ -2170,7 +2044,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z"
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "d94c0e3c17b51765",
@@ -2526,7 +2400,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-18T08:41:52.661Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2565,7 +2439,7 @@
     "district": "Rahnsdorf",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-10-18T08:41:52.661Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2,
     "street": "Rahnsdorfer Straße",
@@ -2611,7 +2485,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-18T08:41:52.661Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2653,7 +2527,7 @@
     "street": "Kennedy-Platz",
     "geocode_precision": "address",
     "is_mock": false,
-    "last_seen_at": "2026-10-18T08:41:52.661Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2731,7 +2605,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2804,7 +2678,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z"
+    "last_seen_at": "2026-10-22T09:16:03.753Z"
   },
   {
     "id": "04239f0fc4fdbe44",
@@ -3236,7 +3110,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-10-21T09:13:05.690Z",
+    "last_seen_at": "2026-10-22T09:16:03.753Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -3434,6 +3308,213 @@
     "enrichment_version": 2,
     "is_mock": false,
     "last_seen_at": "2026-10-20T09:16:35.405Z"
+  },
+  {
+    "id": "407e7a4927872c64",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292738&ls=40&c=13&date_start=10.10.2026",
+    "title": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche",
+    "published_at": "2026-10-10T10:28:42.817Z",
+    "ingested_at": "2026-10-10T10:28:42.817Z",
+    "raw_excerpt": "Öffentliche Führungen durch die Gedenkstätte Köpenicker Blutwoche Infoveranstaltungen Termin: 21.10.2026 18:00 Uhr Veranstaltungsort: Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick ",
+    "ai_summary": "Am 21.10.2026 werden öffentliche Führungen durch die Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick angeboten.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Führung findet in der Gedenkstätte „Köpenicker Blutwoche“ in Treptow-Köpenick statt, wodurch ein direkter lokaler Bezug gegeben ist.",
+    "event_start_at": "2026-10-21T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "venue": "Gedenkstätte „Köpenicker Blutwoche“",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292738"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4549647,
+    "lng": 13.5786101,
+    "is_mock": false
+  },
+  {
+    "id": "08be569f1559709d",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=10.10.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-10-10T10:28:42.816Z",
+    "ingested_at": "2026-10-10T10:28:42.817Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 21.10.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "In der Galerie Rathaus Johannisthal in Treptow-Köpenick findet am 21.10.2026 die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt, die sich Kunst und Kultur widmet.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-21T10:00:00.000Z",
+    "event_end_at": "2026-10-21T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "b9a78697385c0d53",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=09.10.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-10-09T11:11:28.054Z",
+    "ingested_at": "2026-10-09T11:11:28.054Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 21.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick findet am 21. Oktober 2026 von 10:00 bis 18:00 Uhr die Ausstellung „Wie erinnern wir? Wie erinnerst du?“ statt. Diese Ausstellung behandelt den Wandel und die Bedeutung des Gedenkens.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet direkt im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-21T08:00:00.000Z",
+    "event_end_at": "2026-10-21T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow-Köpenick",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "2a6dd5aab8a8bb62",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=09.10.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-10-09T11:11:28.053Z",
+    "ingested_at": "2026-10-09T11:11:28.053Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 21.10.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick findet am 21. Oktober 2026 eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt statt. Weitere Informationen sind der Quelle zu entnehmen.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet im Rathaus Treptow statt, was eine direkte lokale Verankerung im Bezirk Treptow-Köpenick darstellt.",
+    "event_start_at": "2026-10-21T06:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "5b00d6083afe2216",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=277177&ls=40&c=13&date_start=09.10.2026",
+    "title": "Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart",
+    "published_at": "2026-10-09T11:11:28.053Z",
+    "ingested_at": "2026-10-09T11:11:28.053Z",
+    "raw_excerpt": "DZNSZA Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart Ausstellungen Termin: 21.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick präsentiert am 21. Oktober 2026 die Ausstellung „Forced to Work – Willing to Survive | Zwangsarbeit in Vergangenheit und Gegenwart“. Weitere Informationen hierzu sind in der Quelle verfügbar.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-21T08:00:00.000Z",
+    "event_end_at": "2026-10-21T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-20T09:16:35.405Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=277177"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
   },
   {
     "id": "eaa61f23b9599224",
@@ -9958,78 +10039,5 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "geocode_precision": "area"
-  },
-  {
-    "id": "c59ab29623ebff85",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714764.php",
-    "title": "Straßen- und Grünflächenamt stellt weitere 118 Fahrradbügel an 24 Standorten auf – Beteiligung weiter möglich",
-    "published_at": "2026-09-16T12:00:00.000Z",
-    "ingested_at": "2026-09-17T09:18:30.250Z",
-    "raw_excerpt": "",
-    "ai_summary": "Das Straßen- und Grünflächenamt installiert weitere 118 Fahrradbügel an 24 Standorten, wobei eine Bürgerbeteiligung weiterhin möglich ist.",
-    "tags": [
-      "verkehr",
-      "infrastruktur",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Die Installation von Fahrradbügeln durch das Straßen- und Grünflächenamt ist eine Maßnahme zur Verbesserung der lokalen Infrastruktur.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false,
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714764.php"
-      }
-    ],
-    "alias_ids": [],
-    "last_seen_at": "2026-09-18T08:53:27.636Z",
-    "summary_origin": "ai",
-    "enrichment_version": 2
-  },
-  {
-    "id": "4ba0d60566d160ea",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714546.php",
-    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
-    "published_at": "2026-09-16T12:00:00.000Z",
-    "ingested_at": "2026-09-17T09:18:30.250Z",
-    "raw_excerpt": "",
-    "ai_summary": "Eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ thematisiert Frauen und queere Personen, die sich ehrenamtlich engagieren.",
-    "tags": [
-      "veranstaltung",
-      "sonstiges",
-      "politik"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.3,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "election_topic": null,
-    "ai_reasoning": "Ohne weitere Ortsangaben ist die lokale Relevanz einer allgemeinen Ausstellung für Treptow-Köpenick gering, Details sind in der Quelle zu finden.",
-    "district": "Treptow",
-    "addresses": [],
-    "is_mock": false,
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1714546.php"
-      }
-    ],
-    "alias_ids": [],
-    "last_seen_at": "2026-09-18T08:53:27.636Z",
-    "summary_origin": "ai",
-    "enrichment_version": 2
   }
 ]
