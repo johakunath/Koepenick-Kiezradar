@@ -330,5 +330,17 @@
   "Salvador-Allende-Straße 89 12559 Berlin": {
     "lat": 52.445424,
     "lng": 13.5933567
+  },
+  "Amtsgericht Köpenick": {
+    "lat": 52.4552462,
+    "lng": 13.5795467
+  },
+  "Plönzeile": {
+    "lat": 52.4618144,
+    "lng": 13.5231439
+  },
+  "Alter Markt 1, 12555 Berlin": {
+    "lat": 52.4453993,
+    "lng": 13.5791621
   }
 }
