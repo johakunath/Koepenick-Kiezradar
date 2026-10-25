@@ -1,27 +1,28 @@
 {
-  "last_run": "2026-10-24T08:45:12.301Z",
+  "last_run": "2026-10-25T09:00:53.009Z",
   "sources": {
     "polizei-berlin": {
-      "status": "ok",
-      "parsed": 2,
-      "raw_items": 50,
+      "status": "error",
+      "error": "Fetch failed 404 for https://www.berlin.de/polizei/polizeimeldungen/index/rss.php",
+      "parsed": 0,
+      "raw_items": 0,
       "last_success_at": "2026-10-24T08:45:12.301Z",
       "fetched": 0
     },
     "berlin-events": {
       "status": "warning",
       "error": "Kalender auf fünf Quellseiten begrenzt",
-      "parsed": 50,
-      "raw_items": 50,
-      "last_success_at": "2026-10-24T08:45:12.301Z",
-      "fetched": 4
+      "parsed": 40,
+      "raw_items": 40,
+      "last_success_at": "2026-10-25T09:00:53.009Z",
+      "fetched": 0
     },
     "bezirksamt-tk": {
       "status": "ok",
       "parsed": 10,
       "raw_items": 10,
-      "last_success_at": "2026-10-24T08:45:12.301Z",
-      "fetched": 6
+      "last_success_at": "2026-10-25T09:00:53.009Z",
+      "fetched": 0
     },
     "bvv-tk": {
       "status": "skipped",
@@ -38,15 +39,15 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "parsed": 2,
-      "raw_items": 2,
-      "last_success_at": "2026-10-24T08:45:12.301Z",
-      "fetched": 2
+      "parsed": 6,
+      "raw_items": 6,
+      "last_success_at": "2026-10-25T09:00:53.009Z",
+      "fetched": 0
     }
   },
-  "new_entries": 12,
+  "new_entries": 0,
   "dry_run": false,
   "ai_status": "ok",
   "total_entries": 250,
-  "archived_entries": 12
+  "archived_entries": 0
 }
