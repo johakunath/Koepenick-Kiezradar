@@ -342,5 +342,9 @@
   "Alter Markt 1, 12555 Berlin": {
     "lat": 52.4453993,
     "lng": 13.5791621
+  },
+  "Waldfriedhof Oberschöneweide": {
+    "lat": 52.4640509,
+    "lng": 13.5320126
   }
 }
