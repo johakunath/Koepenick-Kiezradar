@@ -346,5 +346,37 @@
   "Waldfriedhof Oberschöneweide": {
     "lat": 52.4640509,
     "lng": 13.5320126
+  },
+  "Dörpfeldstraße 54": {
+    "lat": 52.4388584,
+    "lng": 13.5498617
+  },
+  "Allende-Center": {
+    "lat": 52.4416484,
+    "lng": 13.5874999
+  },
+  "Büchnerweg 43-47": {
+    "lat": 52.4368224,
+    "lng": 13.5576065
+  },
+  "Baumschulenstr. 31": {
+    "lat": 52.4639952,
+    "lng": 13.485755
+  },
+  "Bouchéstraße": {
+    "lat": 52.4909674,
+    "lng": 13.449664
+  },
+  "Dorfanger Bohnsdorf": {
+    "lat": 52.3990685,
+    "lng": 13.5557483
+  },
+  "Groß-Berliner Damm 154, 12489 Berlin": {
+    "lat": 52.4341892,
+    "lng": 13.5314764
+  },
+  "Rahnsdorf": {
+    "lat": 52.4358729,
+    "lng": 13.7018024
   }
 }

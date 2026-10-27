@@ -1,5 +1,392 @@
 [
   {
+    "id": "c6d4643cb81bbc66",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731329.php",
+    "title": "Dialog-Veranstaltung in Adlershof: Neue Kontakte knüpfen und gemeinsam Ideen für die Dörpfeldstraße, aber auch andere Einkaufsstraßenentwickeln",
+    "published_at": "2026-10-27T09:01:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "* Zeit: Dienstag, 10. November 2026, 19:00–20:30 Uhr * Ort: Kulturzentrum Alte Schule, Dörpfeldstraße 54, Berlin-Adlershof Das Geschäftsstraßenmanagement lädt Gewerbetreibende und weitere Akteur*innen zum Austausch und zur Vernetzung ein. Wie lassen sich aktuelle Herausforderungen im Geschäftsalltag bewältigen? Welche Anlaufstellen bieten Unterstützung bei rechtlichen, organisatorischen oder standortbezogenen Fragen? Und wie kann die Zusammenarbeit vor Ort gestärkt werden?",
+    "ai_summary": "Eine Dialog-Veranstaltung in Berlin-Adlershof lädt Gewerbetreibende und Akteur*innen am 10. November 2026 ein, um Ideen für die Dörpfeldstraße und andere Einkaufsstraßen zu entwickeln und sich zu vernetzen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung"
+    ],
+    "location": "Kulturzentrum Alte Schule, Dörpfeldstraße 54, Berlin-Adlershof",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in Berlin-Adlershof statt und konzentriert sich auf die Entwicklung lokaler Einkaufsstraßen wie die Dörpfeldstraße.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731329.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Dörpfeldstraße 54"
+    ],
+    "street": "Dörpfeldstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4388584,
+    "lng": 13.5498617,
+    "is_mock": false
+  },
+  {
+    "id": "f81af0ecad29d488",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731292.php",
+    "title": "Wintertreff im Allende-Center: Nachbarschaftliche Begegnungen in der kalten Jahreszeit",
+    "published_at": "2026-10-27T08:44:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Das Bezirksamt möchte auf eine Pressemitteilung des BENN-Team Allende-Viertel aufmerksam machen. Das BENN-Team Allende-Viertel lädt gemeinsam mit der Mobilen Stadtteilarbeit (MoSt) und den Community Health Nurses (CHNs) der DRK Kliniken Berlin Köpenick von November 2026 bis März 2027 zum Wintertreff im Allende-Center ein. Jeden zweiten und vierten Dienstag im Monat von 15 bis 17 Uhr können alle Anwohnenden und Interessierten vorbeikommen.",
+    "ai_summary": "Das Bezirksamt macht auf den Wintertreff im Allende-Center aufmerksam, der von November 2026 bis März 2027 alle Anwohnenden und Interessierten zu nachbarschaftlichen Begegnungen einlädt.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Allende-Center",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Der Wintertreff im Allende-Center ist ein lokales Angebot für Anwohnende des Allende-Viertels in Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731292.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4416484,
+    "lng": 13.5874999,
+    "is_mock": false
+  },
+  {
+    "id": "862dd1e3f453d8ee",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731281.php",
+    "title": "BSR-Kieztag: Sperrmüllflohmarkt in Adlershof am 05.11.2026 von 13 bis 18 Uhr",
+    "published_at": "2026-10-27T08:44:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Das Bezirksamt Treptow-Köpenick von Berlin und die Berliner Stadtreinigung (BSR) veranstalten gemeinsam einen BSR-Kieztag / Sperrmüllflohmarkt * am Donnerstag, den 05.11.2026 * von 13 bis 18 Uhr * im Büchnerweg 43-47, 12489 Berlin. Bei den BSR-Kieztagen können private Haushalte kostenfrei Sperrmüll, Elektroaltgeräte und Alttextilien abgeben.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick und die BSR veranstalten am 05. November 2026 einen Kieztag und Sperrmüllflohmarkt in Adlershof, wo private Haushalte kostenfrei Sperrmüll abgeben können.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Büchnerweg 43-47, 12489 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Dieser BSR-Kieztag findet direkt in Adlershof statt und bietet einen lokalen Service für die dortigen Haushalte.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731281.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Büchnerweg 43-47"
+    ],
+    "street": "Büchnerweg",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4368224,
+    "lng": 13.5576065,
+    "is_mock": false
+  },
+  {
+    "id": "505f0ebc1691900a",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731261.php",
+    "title": "BSR-Kieztag: Sperrmüllflohmarkt in Baumschulenweg am 31.10.2026 von 8 bis 13 Uhr",
+    "published_at": "2026-10-27T08:34:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Das Bezirksamt Treptow-Köpenick von Berlin, die Berliner Stadtreinigung (BSR), der Betreiber des EDEKA Marktes in der Baumschulenstrasse und eine engagierte Anwohnerin veranstalten in Kooperation einen BSR-Kieztag / Sperrmüllflohmarkt * am Samstag, den 31.10.2026 * von 8 bis 13 Uhr * in der Baumschulenstr. 31, 12437 Berlin (Parkplatz des EDEKA Marktes). Bei den BSR-Kieztagen können private Haushalte kostenfrei Sperrmüll, Elektroaltgeräte und Alttextilien abgeben.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick, die BSR und weitere Partner organisieren am 31. Oktober 2026 einen Sperrmüllflohmarkt in der Baumschulenstraße in Baumschulenweg, bei dem Haushalte kostenlos Sperrmüll, Elektroaltgeräte und Alttextilien entsorgen können.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Baumschulenstr. 31, 12437 Berlin (Parkplatz des EDEKA Marktes)",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Der BSR-Kieztag findet in Baumschulenweg statt und bietet einen lokalen Entsorgungsservice für die Anwohner.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731261.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Baumschulenstr. 31"
+    ],
+    "street": "Baumschulenstr.",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4639952,
+    "lng": 13.485755,
+    "is_mock": false
+  },
+  {
+    "id": "4e7402056cc69a04",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731053.php",
+    "title": "Bezirksamt richtet Modalfilter in der Bouchéstraße in Alt-Treptow ein: Das ändert sich für den Verkehr",
+    "published_at": "2026-10-27T08:28:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Das vom Bezirksamt gemeinsam mit den Anwohnenden erarbeitete Verkehrskonzept für den Karl-Kunger-Kiez sieht einen Modalfilter in der neu eingerichteten Fahrradstraße in der Bouchéstraße zwischen Kiefholzstraße und Heidelberger Straße zur Reduzierung des Durchgangsverkehrs vor. Diese sogenannte „Diagonalsperre“ wird in der Kiefholzstraße an der Ecke Bouchéstraße eingebaut und besteht aus insgesamt zehn Pollern, von denen fünf herausnehmbar sind.",
+    "ai_summary": "Das Bezirksamt richtet in der Bouchéstraße in Alt-Treptow einen Modalfilter ein, um den Durchgangsverkehr in der neu eingerichteten Fahrradstraße zu reduzieren.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "politik"
+    ],
+    "location": "Bouchéstraße",
+    "location_relevant": true,
+    "local_relevance_score": 0.95,
+    "political_relevance_score": 0.7,
+    "election_relevant": false,
+    "ai_reasoning": "Die Einrichtung eines Modalfilters in der Bouchéstraße ist eine direkte verkehrspolitische Maßnahme, die den lokalen Verkehr in Alt-Treptow betrifft.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731053.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Bouchéstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4909674,
+    "lng": 13.449664,
+    "is_mock": false
+  },
+  {
+    "id": "bb1a9be962f93675",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731052.php",
+    "title": "Umgestaltung Dorfanger Bohnsdorf: Straßenbauarbeiten beginnen ab 5. November 2026",
+    "published_at": "2026-10-27T05:24:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Die Baumaßnahmen zur klima- und denkmalgerechten Umgestaltung des Dorfangers Bohnsdorf schreiten voran. Ab 5. November 2026 betreffen die Arbeiten auch den angrenzenden Straßenraum: Die Leitungen und Abläufe in der Straße „Dorfplatz“ (beide Richtungen) werden erneuert, um zukünftig eine nachhaltige Regenwasserbewirtschaftung gewährleisten zu können.",
+    "ai_summary": "Ab dem 5. November 2026 beginnen Straßenbauarbeiten am Dorfanger Bohnsdorf, um die Leitungen und Abläufe in der Straße „Dorfplatz“ für eine nachhaltige Regenwasserbewirtschaftung zu erneuern.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Dorfanger Bohnsdorf",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Die Baumaßnahmen finden direkt am Dorfanger Bohnsdorf statt, was eine hohe lokale Relevanz für den Stadtteil Bohnsdorf hat.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731052.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Bohnsdorf",
+    "addresses": [],
+    "street": "Dorfplatz",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.3990685,
+    "lng": 13.5557483,
+    "is_mock": false
+  },
+  {
+    "id": "4766387f2e9eb4aa",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731042.php",
+    "title": "Bezirksamt veröffentlicht Sondernutzungskonzept für den öffentlichen Straßenraum",
+    "published_at": "2026-10-26T14:22:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Der öffentliche Straßenraum muss vielen Anforderungen genügen. Zum einen sind hier verschiedene Verkehrsarten unterwegs, zum anderen wird das öffentliche Straßenland für wirtschaftliche, kulturelle und soziale Zwecke genutzt. Nutzungsarten, die über den sogenannten „Gemeingebrauch“ hinausgehen, sind eine genehmigungspflichtige Sondernutzung des öffentlichen Straßenlandes.",
+    "ai_summary": "Das Bezirksamt hat ein Sondernutzungskonzept für den öffentlichen Straßenraum veröffentlicht, das die Nutzung über den Gemeingebrauch hinaus als genehmigungspflichtig definiert.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "politik",
+      "sonstiges"
+    ],
+    "location": "öffentlichen Straßenraum",
+    "location_relevant": false,
+    "local_relevance_score": 0.3,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Das Konzept betrifft den gesamten öffentlichen Straßenraum des Bezirks, ohne spezifische lokale Schwerpunkte.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731042.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
+    "id": "d6187e9848b3054b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731062.php",
+    "title": "Mobile Beratung des FamilienServiceBüros im November 2026",
+    "published_at": "2026-10-26T13:05:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.339Z",
+    "raw_excerpt": "Das FamilienServiceBüro Treptow-Köpenick ist die zentrale Erstanlaufstelle des Jugendamtes für Familien aus Treptow-Köpenick. (Werdende) Eltern können sich informieren und beraten lassen zu Themen und Fragen rund um die Familie, zu den Leistungen des Jugendamtes (Kitagutschein, Elterngeld, Unterhaltsvorschuss, etc.) und familienbezogenen Angeboten im Bezirk. Hierfür können die Öffnungszeiten des Familienservicebüros am Groß-Berliner Damm 154, 12489 Berlin, genutzt werden:",
+    "ai_summary": "Das FamilienServiceBüro Treptow-Köpenick bietet im November 2026 mobile Beratung an und dient als zentrale Erstanlaufstelle des Jugendamtes für Familien im Bezirk.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur",
+      "sonstiges"
+    ],
+    "location": "Groß-Berliner Damm 154, 12489 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Das FamilienServiceBüro hat eine feste Adresse im Bezirk Treptow-Köpenick und bietet Dienstleistungen für Familien aus diesem Bezirk an.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731062.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Groß-Berliner Damm 154, 12489 Berlin"
+    ],
+    "street": "Groß-Berliner Damm",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4341892,
+    "lng": 13.5314764,
+    "is_mock": false
+  },
+  {
+    "id": "c5f46099581335c1",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731036.php",
+    "title": "Baumfällungen in der Woche vom 26. bis 30. Oktober 2026",
+    "published_at": "2026-10-26T12:15:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.340Z",
+    "raw_excerpt": "Das Straßen- und Grünflächenamt muss in der Woche vom 26. bis 30. Oktober 2026 (44. Kalenderwoche) aus Gründen der Verkehrssicherheit folgende Bäume fällen: Rahnsdorf An den Bänken 28.10.2026 * Baum-Nr.: 16/3 * Baumart: Birke * Umfang in cm: 179 * Höhe in m: 21 * Fällgrund: Baum abgestorben Rahnsdorf Wiesenstr. 28.10.2026 * Baum-Nr.: 18/2 * Baumart: Birke * Umfang in cm: 112 * Höhe in m: 21 * Fällgrund: Pilzbefall in der Krone Rahnsdorf Wiesenstr.",
+    "ai_summary": "In der Woche vom 26. bis 30. Oktober 2026 sind Baumfällungen in Rahnsdorf aus Gründen der Verkehrssicherheit geplant, darunter abgestorbene und pilzbefallene Birken.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "sicherheit"
+    ],
+    "location": "Rahnsdorf",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Die Baumfällungen betreffen spezifische Standorte in Rahnsdorf, was eine hohe lokale Relevanz für diesen Stadtteil darstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731036.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Rahnsdorf",
+    "addresses": [],
+    "street": "An den Bänken",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4358729,
+    "lng": 13.7018024,
+    "is_mock": false
+  },
+  {
+    "id": "c45e0f95cdd47a3f",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731033.php",
+    "title": "Grünes Licht für Radfahrstreifen an der Bundesstraße B96a stadtauswärts: Bezirksamt markiert bis Ende des Jahres weitere Abschnitte",
+    "published_at": "2026-10-26T12:10:00.000Z",
+    "ingested_at": "2026-10-27T09:40:43.340Z",
+    "raw_excerpt": "Weitere verkehrsrechtliche Anordnungen für die Einrichtung von Radfahrstreifen entlang der Bundesstraße B96a liegen seit Kurzem vor. Das Straßen- und Grünflächenamt kann nun voraussichtlich bis Ende des Jahres 2026 weitere Abschnitte auf der Fahrbahn der Köpenicker Landstraße und der Straße „Am Treptower Park“ markieren. Ziel ist es, eine durchgängige Streckenverbindung für den Radverkehr zu schaffen.",
+    "ai_summary": "Das Straßen- und Grünflächenamt markiert voraussichtlich bis Ende 2026 weitere Abschnitte von Radfahrstreifen entlang der Bundesstraße B96a, um eine durchgängige Verbindung für Radfahrer zu schaffen.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Bundesstraße B96a stadtauswärts",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Die Einrichtung der Radfahrstreifen auf der B96a betrifft spezifische Straßen im Bezirk Treptow-Köpenick und verbessert die lokale Infrastruktur.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1731033.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "street": "Köpenicker Landstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
     "id": "260f35166682cd41",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -412,7 +799,7 @@
     "lat": 52.4552462,
     "lng": 13.5795467,
     "is_mock": false,
-    "last_seen_at": "2026-10-25T09:00:53.009Z"
+    "last_seen_at": "2026-10-27T09:40:41.199Z"
   },
   {
     "id": "61ed065dd1453bd0",
@@ -454,7 +841,7 @@
     "enrichment_version": 2,
     "geocode_precision": "address",
     "is_mock": false,
-    "last_seen_at": "2026-10-25T09:00:53.009Z"
+    "last_seen_at": "2026-10-27T09:40:41.199Z"
   },
   {
     "id": "98066929028d9b6c",
@@ -1389,7 +1776,7 @@
     "event_start_at": "2026-11-03T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1555,7 +1942,7 @@
     "event_start_at": "2026-11-02T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1597,7 +1984,7 @@
     "event_end_at": "2026-11-02T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1983,7 +2370,7 @@
     "event_end_at": "2026-10-31T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2024,7 +2411,7 @@
     "event_start_at": "2026-11-01T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2066,7 +2453,7 @@
     "event_end_at": "2026-11-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2146,7 +2533,7 @@
     "event_start_at": "2026-10-31T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2188,7 +2575,7 @@
     "event_end_at": "2026-10-31T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2230,7 +2617,7 @@
     "event_end_at": "2026-10-30T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2270,7 +2657,7 @@
     "event_start_at": "2026-10-30T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2312,7 +2699,7 @@
     "event_end_at": "2026-10-30T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2354,7 +2741,7 @@
     "event_end_at": "2026-10-29T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2396,7 +2783,7 @@
     "event_end_at": "2026-10-29T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2436,7 +2823,7 @@
     "event_end_at": "2026-10-28T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2476,7 +2863,7 @@
     "event_start_at": "2026-10-29T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2518,7 +2905,7 @@
     "event_end_at": "2026-10-28T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3246,7 +3633,7 @@
     "event_start_at": "2026-10-27T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3288,7 +3675,7 @@
     "event_end_at": "2026-10-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3330,7 +3717,7 @@
     "event_end_at": "2026-10-27T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3370,7 +3757,7 @@
     "event_start_at": "2026-10-28T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-26T09:54:38.933Z",
+    "last_seen_at": "2026-10-27T09:40:41.199Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
