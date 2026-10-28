@@ -378,5 +378,13 @@
   "Rahnsdorf": {
     "lat": 52.4358729,
     "lng": 13.7018024
+  },
+  "Mittelpunktbibliothek Treptow": {
+    "lat": 52.4539929,
+    "lng": 13.5142752
+  },
+  "Stadtteilbibliothek Altglienicke": {
+    "lat": 52.4033811,
+    "lng": 13.5286278
   }
 }
