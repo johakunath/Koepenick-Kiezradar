@@ -386,5 +386,9 @@
   "Stadtteilbibliothek Altglienicke": {
     "lat": 52.4033811,
     "lng": 13.5286278
+  },
+  "Müggelheimer Damm": {
+    "lat": 52.4329831,
+    "lng": 13.6070581
   }
 }
