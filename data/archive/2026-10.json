@@ -1,5 +1,237 @@
 [
   {
+    "id": "3311fc11c42c4e4d",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682#page=65",
+    "title": "ABl. Nr. 47 / 30. Oktober 2026 \t3441",
+    "published_at": "2026-10-31T10:15:05.350Z",
+    "ingested_at": "2026-10-31T10:15:05.350Z",
+    "raw_excerpt": "l. Nr. 47 / 30. Oktober 2026 3441 02 Buchholz Nord (Bezirk Pankow)* 04 Krummendammer Heide (Bezirk Treptow-Köpenick) 07 Rieselfelder Gatow Karolinenhöhe (Bezirk Spandau)* Die im Standardverfahren durchgeführte Änderung liegt mit Begründung einschließlich Umweltbericht sowie den wesentlichen umweltb",
+    "ai_summary": "Die Änderung eines Standardverfahrens betrifft unter anderem die Krummendammer Heide im Bezirk Treptow-Köpenick und liegt mit Begründung und Umweltbericht zur Einsicht aus. Weitere Details sind der Quelle zu entnehmen.",
+    "tags": [
+      "sonstiges",
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Krummendammer Heide (Bezirk Treptow-Köpenick)",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Der Auszug erwähnt direkt die Krummendammer Heide im Bezirk Treptow-Köpenick als betroffenen Ort einer Änderung.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682",
+    "pdf_page": 65,
+    "pdf_excerpt": "l. Nr. 47 / 30. Oktober 2026 3441 02 Buchholz Nord (Bezirk Pankow)* 04 Krummendammer Heide (Bezirk Treptow-Köpenick) 07 Rieselfelder Gatow Karolinenhöhe (Bezirk Spandau)* Die im Standardverfahren durchgeführte Änderung liegt mit Begründung einschließlich Umweltbericht sowie den wesentlichen umweltb",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "is_mock": false
+  },
+  {
+    "id": "248ee3ee4198f5b1",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682#page=37",
+    "title": "ABl. Nr. 47 / 30. Oktober 2026 \t3413",
+    "published_at": "2026-10-31T10:15:05.349Z",
+    "ingested_at": "2026-10-31T10:15:05.349Z",
+    "raw_excerpt": "² BGF Tabelle 4 Sachwertfaktoren für Objekte in den Altbezirken Neukölln (422), Tempelhof (370) und Köpenick (88) zum Stichtag BRW 01.01.2025 (EUR/m²) vorläufiger Sachwert des Grundstücks (EUR) 300.000 500.000 700.000 900.000 1.000.000 380 1,00 0,91 0,82 0,72 0,68 400 1,00 0,91 0,82 0,7",
+    "ai_summary": "Dieser Auszug behandelt Sachwertfaktoren für Objekte in Altbezirken wie Köpenick zum Stichtag 01.01.2025.",
+    "tags": [
+      "sonstiges",
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Der Text erwähnt Sachwertfaktoren speziell für Objekte im Altbezirk Köpenick, was einen direkten lokalen Bezug herstellt.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682",
+    "pdf_page": 37,
+    "pdf_excerpt": "² BGF Tabelle 4 Sachwertfaktoren für Objekte in den Altbezirken Neukölln (422), Tempelhof (370) und Köpenick (88) zum Stichtag BRW 01.01.2025 (EUR/m²) vorläufiger Sachwert des Grundstücks (EUR) 300.000 500.000 700.000 900.000 1.000.000 380 1,00 0,91 0,82 0,72 0,68 400 1,00 0,91 0,82 0,7",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Köpenick",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "646f602300245890",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682#page=14",
+    "title": "ABl. Nr. 47 / 30. Oktober 2026 \t3390",
+    "published_at": "2026-10-31T10:15:05.348Z",
+    "ingested_at": "2026-10-31T10:15:05.348Z",
+    "raw_excerpt": "Charlottenburg, Schmargendorf, Grunewald, Charlottenburg-Nord, Halensee, Schöneberg, Friedenau, Alt-Treptow, Fennpfuhl und Rummelsburg angewendet werden. Dagegen können diese Vergleichsfaktoren in allen nicht genannten Ortsteilen angewendet werden. Aufgrund der mathematisch-statistischen Analyse für",
+    "ai_summary": "Dieser Auszug listet Ortsteile wie Alt-Treptow auf, für die Vergleichsfaktoren zur mathematisch-statistischen Analyse angewendet werden können.",
+    "tags": [
+      "sonstiges",
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.4,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Text nennt Alt-Treptow als einen Ortsteil, in dem bestimmte Vergleichsfaktoren angewendet werden können, was einen indirekten lokalen Bezug herstellt.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682",
+    "pdf_page": 14,
+    "pdf_excerpt": "Charlottenburg, Schmargendorf, Grunewald, Charlottenburg-Nord, Halensee, Schöneberg, Friedenau, Alt-Treptow, Fennpfuhl und Rummelsburg angewendet werden. Dagegen können diese Vergleichsfaktoren in allen nicht genannten Ortsteilen angewendet werden. Aufgrund der mathematisch-statistischen Analyse für",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "b106e4221117c73d",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682#page=23",
+    "title": "ABl. Nr. 47 / 30. Oktober 2026 \t3399",
+    "published_at": "2026-10-31T10:15:05.348Z",
+    "ingested_at": "2026-10-31T10:15:05.348Z",
+    "raw_excerpt": "Veröffentlichungen ABl. Nr. 47 / 30. Oktober 2026 3399 Häufigkeit Prozent Niederschöneweide 10 0,3 Altglienicke 35 1,1 Adlershof 8 0,3 Bohnsdorf 34 1,1 Oberschöneweide 1 0,0 Köpenick 36 1,2 Friedrichshagen 4 0,1 Rahnsdorf 15 0,5 Grünau 3 0,1 Müggelheim 16 0,5 Schmöckwitz 10 0",
+    "ai_summary": "Dieser Auszug des Amtsblatts vom 30. Oktober 2026 zeigt Häufigkeits- und Prozentwerte für verschiedene Ortsteile, darunter Niederschöneweide, Altglienicke, Adlershof, Bohnsdorf, Oberschöneweide, Köpenick, Friedrichshagen, Rahnsdorf, Grünau, Müggelheim und Schmöckwitz.",
+    "tags": [
+      "sonstiges",
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Der Text listet eine Reihe von Ortsteilen auf, die zu Treptow-Köpenick gehören, und weist ihnen statistische Werte zu, was einen starken lokalen Bezug darstellt.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682",
+    "pdf_page": 23,
+    "pdf_excerpt": "Veröffentlichungen ABl. Nr. 47 / 30. Oktober 2026 3399 Häufigkeit Prozent Niederschöneweide 10 0,3 Altglienicke 35 1,1 Adlershof 8 0,3 Bohnsdorf 34 1,1 Oberschöneweide 1 0,0 Köpenick 36 1,2 Friedrichshagen 4 0,1 Rahnsdorf 15 0,5 Grünau 3 0,1 Müggelheim 16 0,5 Schmöckwitz 10 0",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Niederschöneweide",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "8e0067def44f7875",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682#page=12",
+    "title": "Die zum 01.01.2025 geltenden Regelungen werden nachfolgend wiedergegeben:",
+    "published_at": "2026-10-31T10:15:05.347Z",
+    "ingested_at": "2026-10-31T10:15:05.347Z",
+    "raw_excerpt": "Drei Tannen, Von-Repkow-Platz • Zusammengesetzte Straßennamen schreibt man zusammen Zum Beispiel: Bahnhofstraße, Rathausgasse, Bismarckring, Beethovenplatz, Schlossallee, Neumarkt, Langgasse, Hochstraße Aber bei dekliniertem Adjektiv: Neuer Markt, Lange Gasse, Hohe Straße • Getrennt schreibt man",
+    "ai_summary": "Die Veröffentlichung enthält Regeln zur Zusammensetzung von Straßennamen, illustriert mit Beispielen wie 'Bahnhofstraße' und 'Neuer Markt'.",
+    "tags": [
+      "verkehr",
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": false,
+    "local_relevance_score": 0,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Der Text behandelt allgemeine Regeln zur Schreibweise von Straßennamen und enthält keine spezifischen lokalen Bezüge zu Köpenick oder Treptow-Köpenick.",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682",
+    "pdf_page": 12,
+    "pdf_excerpt": "Drei Tannen, Von-Repkow-Platz • Zusammengesetzte Straßennamen schreibt man zusammen Zum Beispiel: Bahnhofstraße, Rathausgasse, Bismarckring, Beethovenplatz, Schlossallee, Neumarkt, Langgasse, Hochstraße Aber bei dekliniertem Adjektiv: Neuer Markt, Lange Gasse, Hohe Straße • Getrennt schreibt man",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_47_3377_3496_online.pdf?ts=1793344682"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
+    "id": "4f41a8f6f078b249",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1733141.php",
+    "title": "Weihnachtsgeschichte III: Junge Stimmen aus Bukarest und Musik aus Lateinamerika im Rathaus Treptow",
+    "published_at": "2026-10-30T12:34:00.000Z",
+    "ingested_at": "2026-10-31T10:14:57.756Z",
+    "raw_excerpt": "Das Bezirksamt Treptow-Köpenick möchte auf eine Pressemitteilung der Akademie Rapsodia Berlin e.V. aufmerksam machen. Akademie Rapsodia Berlin e.V. lädt am 28. November zu einem vorweihnachtlichen Nachmittag mit Musik, Kunst und Begegnung ein * Zeit: 28. November 2026, 14:00 Uhr * Ort: Rathaus Treptow, Neue Krugallee 4, 12435 Berlin Harfenklänge aus Berlin, junge Chorstimmen aus Rumänien und Musik aus Lateinamerika: Am Samstag, dem 28. November 2026, lädt die Akademie Rapsodia Berlin e.V.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick lädt am 28. November 2026 zu einem vorweihnachtlichen Nachmittag mit Musik, Kunst und Begegnung im Rathaus Treptow ein.",
+    "tags": [
+      "verwaltung",
+      "veranstaltung"
+    ],
+    "location": "Rathaus Treptow, Neue Krugallee 4, 12435 Berlin",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Rathaus Treptow statt, was einen direkten lokalen Bezug zu Treptow-Köpenick herstellt.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1733141.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Neue Krugallee 4, 12435 Berlin"
+    ],
+    "street": "Neue Krugallee 4",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4832869,
+    "lng": 13.4805847,
+    "is_mock": false
+  },
+  {
     "id": "4c7d14c0f1d47e09",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -35,7 +267,8 @@
     "geocode_precision": "area",
     "lat": 52.4329831,
     "lng": 13.6070581,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -69,7 +302,8 @@
     "addresses": [],
     "summary_origin": "ai",
     "enrichment_version": 2,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "43f821332b0c25ac",
@@ -236,7 +470,7 @@
     "lat": 52.443532,
     "lng": 13.5022688,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "83e5db4388a15015",
@@ -263,7 +497,7 @@
     "event_end_at": "2026-11-14T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -345,7 +579,7 @@
     "event_start_at": "2026-11-14T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -387,7 +621,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -429,7 +663,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -482,7 +716,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "29176f98fc027635",
@@ -520,7 +754,7 @@
     "lat": 52.4033811,
     "lng": 13.5286278,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "abd2cdc908ba2c2c",
@@ -637,7 +871,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "f81af0ecad29d488",
@@ -674,7 +908,7 @@
     "lat": 52.4416484,
     "lng": 13.5874999,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "862dd1e3f453d8ee",
@@ -715,7 +949,7 @@
     "lat": 52.4368224,
     "lng": 13.5576065,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "505f0ebc1691900a",
@@ -758,7 +992,7 @@
     "lat": 52.4639952,
     "lng": 13.485755,
     "is_mock": false,
-    "last_seen_at": "2026-10-30T10:45:21.089Z"
+    "last_seen_at": "2026-10-31T10:14:54.430Z"
   },
   {
     "id": "4e7402056cc69a04",
@@ -1054,7 +1288,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1096,7 +1330,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1138,7 +1372,7 @@
     "event_start_at": "2026-11-13T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1180,7 +1414,7 @@
     "event_end_at": "2026-11-11T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1222,7 +1456,7 @@
     "event_start_at": "2026-11-12T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1264,7 +1498,7 @@
     "event_end_at": "2026-11-12T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1305,7 +1539,7 @@
     "event_start_at": "2026-11-10T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -1347,7 +1581,7 @@
     "event_start_at": "2026-11-11T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1512,7 +1746,7 @@
     "event_end_at": "2026-11-10T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1555,7 +1789,7 @@
     "event_start_at": "2026-11-10T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1597,7 +1831,7 @@
     "event_end_at": "2026-11-08T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1639,7 +1873,7 @@
     "event_start_at": "2026-11-09T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1919,7 +2153,7 @@
     "event_start_at": "2026-11-08T10:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
@@ -1961,7 +2195,7 @@
     "event_start_at": "2026-11-07T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2003,7 +2237,7 @@
     "event_end_at": "2026-11-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2045,7 +2279,7 @@
     "event_start_at": "2026-11-08T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2087,7 +2321,7 @@
     "event_end_at": "2026-11-08T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2129,7 +2363,7 @@
     "event_start_at": "2026-11-05T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2171,7 +2405,7 @@
     "event_end_at": "2026-11-05T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2213,7 +2447,7 @@
     "event_start_at": "2026-11-06T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2255,7 +2489,7 @@
     "event_end_at": "2026-11-06T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-29T10:45:55.751Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2296,7 +2530,7 @@
     "event_start_at": "2026-11-04T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -2338,7 +2572,7 @@
     "event_end_at": "2026-11-04T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2378,7 +2612,7 @@
     "event_end_at": "2026-11-03T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2420,7 +2654,7 @@
     "event_start_at": "2026-11-03T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2462,7 +2696,7 @@
     "event_end_at": "2026-11-03T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2502,7 +2736,7 @@
     "event_start_at": "2026-11-04T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2544,7 +2778,7 @@
     "event_end_at": "2026-11-04T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2586,7 +2820,7 @@
     "event_start_at": "2026-11-02T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2628,7 +2862,7 @@
     "event_end_at": "2026-11-02T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3014,7 +3248,7 @@
     "event_end_at": "2026-10-31T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3055,7 +3289,7 @@
     "event_start_at": "2026-11-01T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3097,7 +3331,7 @@
     "event_end_at": "2026-11-01T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3177,7 +3411,7 @@
     "event_start_at": "2026-10-31T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3219,7 +3453,7 @@
     "event_end_at": "2026-10-31T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-10-30T10:45:21.089Z",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
