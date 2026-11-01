@@ -1,129 +1,5 @@
 [
   {
-    "id": "d9a21550971d9dec",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=18.10.2026",
-    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
-    "published_at": "2026-10-18T08:41:55.016Z",
-    "ingested_at": "2026-10-18T08:41:55.016Z",
-    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 31.10.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird am 31.10.2026 eine Ausstellung unter dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt gezeigt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Rathaus Treptow in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.6,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet im Rathaus Treptow in Treptow-Köpenick statt, was eine direkte lokale Relevanz für den Bezirk darstellt.",
-    "event_start_at": "2026-10-31T07:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-31T10:14:54.430Z",
-    "venue": "Rathaus Treptow",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4830803,
-    "lng": 13.4809153,
-    "is_mock": false
-  },
-  {
-    "id": "4c239cb445b8e0bd",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=18.10.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-10-18T08:41:55.016Z",
-    "ingested_at": "2026-10-18T08:41:55.017Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 31.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Eine Ausstellung zum Thema Wandel und Bedeutung des Gedenkens, mit dem Titel „Wie erinnern wir? Wie erinnerst du?“, wird am 31.10.2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug für den Bezirk herstellt.",
-    "event_start_at": "2026-10-31T09:00:00.000Z",
-    "event_end_at": "2026-10-31T17:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-31T10:14:54.430Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "6625dcfde7eedccb",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=19.10.2026",
-    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
-    "published_at": "2026-10-19T09:42:52.551Z",
-    "ingested_at": "2026-10-19T09:42:52.551Z",
-    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 31.10.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Die Galerie Johannisthal in Treptow-Köpenick eröffnet am 31. Oktober 2026 die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“. Weitere Details sind in der Quelle zu finden.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-31T14:00:00.000Z",
-    "event_end_at": "2026-10-31T18:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-31T10:14:54.430Z",
-    "venue": "Galerie Rathaus Johannisthal",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Johannisthal",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "is_mock": false
-  },
-  {
     "id": "a1265f01775b0289",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -1836,6 +1712,38 @@
     "is_mock": false
   },
   {
+    "id": "f1c242c7042e83f9",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733413.php",
+    "title": "Schwerer Raub auf Tankstelle",
+    "published_at": "2026-10-31T10:16:00.000Z",
+    "ingested_at": "2026-11-01T11:07:02.402Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "In Treptow-Köpenick wurde ein schwerer Raub auf eine Tankstelle verübt. Details zum genauen Hergang stehen in der Quelle.",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Der Vorfall ereignete sich direkt im Bezirk Treptow-Köpenick und betrifft die lokale Sicherheit.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733413.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
     "id": "3311fc11c42c4e4d",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
@@ -2065,7 +1973,8 @@
     "geocode_precision": "address",
     "lat": 52.4832869,
     "lng": 13.4805847,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "4c7d14c0f1d47e09",
@@ -2104,7 +2013,7 @@
     "lat": 52.4329831,
     "lng": 13.6070581,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -2139,7 +2048,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "9d1463cdce0a823a",
@@ -2180,7 +2089,7 @@
     "lat": 52.443532,
     "lng": 13.5022688,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "0ce73da253f729e7",
@@ -2218,7 +2127,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "29176f98fc027635",
@@ -2256,7 +2165,7 @@
     "lat": 52.4033811,
     "lng": 13.5286278,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "abd2cdc908ba2c2c",
@@ -2373,7 +2282,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "f81af0ecad29d488",
@@ -2410,7 +2319,7 @@
     "lat": 52.4416484,
     "lng": 13.5874999,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "862dd1e3f453d8ee",
@@ -2451,7 +2360,7 @@
     "lat": 52.4368224,
     "lng": 13.5576065,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "505f0ebc1691900a",
@@ -2494,7 +2403,7 @@
     "lat": 52.4639952,
     "lng": 13.485755,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "4e7402056cc69a04",
@@ -3474,6 +3383,46 @@
     "last_seen_at": "2026-10-23T09:11:43.149Z"
   },
   {
+    "id": "6625dcfde7eedccb",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=40&c=13&date_start=19.10.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-10-19T09:42:52.551Z",
+    "ingested_at": "2026-10-19T09:42:52.551Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 31.10.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Die Galerie Johannisthal in Treptow-Köpenick eröffnet am 31. Oktober 2026 die Ausstellung „Mukenge/ Schellhammer. Fleshy Works“. Weitere Details sind in der Quelle zu finden.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
+    "event_start_at": "2026-10-31T14:00:00.000Z",
+    "event_end_at": "2026-10-31T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
     "id": "e94abceba7ba96b8",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -3510,6 +3459,90 @@
     "geocode_precision": "area",
     "is_mock": false,
     "last_seen_at": "2026-10-23T09:11:43.149Z"
+  },
+  {
+    "id": "d9a21550971d9dec",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=18.10.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-10-18T08:41:55.016Z",
+    "ingested_at": "2026-10-18T08:41:55.016Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 31.10.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird am 31.10.2026 eine Ausstellung unter dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt gezeigt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet im Rathaus Treptow in Treptow-Köpenick statt, was eine direkte lokale Relevanz für den Bezirk darstellt.",
+    "event_start_at": "2026-10-31T07:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "4c239cb445b8e0bd",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=18.10.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-10-18T08:41:55.016Z",
+    "ingested_at": "2026-10-18T08:41:55.017Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 31.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung zum Thema Wandel und Bedeutung des Gedenkens, mit dem Titel „Wie erinnern wir? Wie erinnerst du?“, wird am 31.10.2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt, was einen klaren lokalen Bezug für den Bezirk herstellt.",
+    "event_start_at": "2026-10-31T09:00:00.000Z",
+    "event_end_at": "2026-10-31T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-10-31T10:14:54.430Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
   },
   {
     "id": "8aa5e10956866e0c",
@@ -9997,55 +10030,5 @@
     "geocode_precision": "area",
     "is_mock": false,
     "last_seen_at": "2026-09-30T10:21:13.506Z"
-  },
-  {
-    "id": "771ff532e903b208",
-    "source_id": "amtsblatt-berlin",
-    "source": "Amtsblatt für Berlin",
-    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_barrierefrei.pdf?ts=1790145029#page=76",
-    "title": "ABl. Nr. 40 / 18. September 2026 \t2852",
-    "published_at": "2026-09-23T09:10:50.221Z",
-    "ingested_at": "2026-09-23T09:10:50.221Z",
-    "raw_excerpt": "rgasse Westseite Kiefholzstraße Lohmühlenstraße Bouchestraße südlich Kinzerallee Puchanstraße Bahnhofstraße beidseitig Kirschenbaumstraße Kietzer Straße Jägerstraße Müggelheimer Straße beidseitig Königsseestraße Dahmestraße Königsseestraße 18 Südseite Bohnsdorfer Weg Rudower Straße be",
-    "ai_summary": "Das Amtsblatt Nr. 40 vom 18. September 2026 listet verschiedene Straßen und Orte in Bezug auf Köpenick und umliegende Gebiete auf. Die genauen Inhalte der Bekanntmachung sind der Quelle zu entnehmen.",
-    "tags": [
-      "verkehr",
-      "infrastruktur",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Der Auszug nennt mehrere Straßen in Köpenick und angrenzenden Gebieten (z.B. Müggelheimer Straße, Bohnsdorfer Weg), was einen starken lokalen Bezug herstellt.",
-    "document_type": "pdf",
-    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_barrierefrei.pdf?ts=1790145029",
-    "pdf_page": 76,
-    "pdf_excerpt": "rgasse Westseite Kiefholzstraße Lohmühlenstraße Bouchestraße südlich Kinzerallee Puchanstraße Bahnhofstraße beidseitig Kirschenbaumstraße Kietzer Straße Jägerstraße Müggelheimer Straße beidseitig Königsseestraße Dahmestraße Königsseestraße 18 Südseite Bohnsdorfer Weg Rudower Straße be",
-    "source_refs": [
-      {
-        "name": "Amtsblatt für Berlin",
-        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_40_2777_2872_barrierefrei.pdf?ts=1790145029"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Müggelheim",
-    "addresses": [
-      "Kiefholzstraße",
-      "Lohmühlenstraße",
-      "Bouchestraße",
-      "Kinzerallee",
-      "Puchanstraße"
-    ],
-    "street": "Königsseestraße",
-    "geocode_precision": "address",
-    "lat": 52.4210863,
-    "lng": 13.5805725,
-    "is_mock": false,
-    "last_seen_at": "2026-09-28T10:42:40.895Z",
-    "summary_origin": "ai",
-    "enrichment_version": 2
   }
 ]

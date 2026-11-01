@@ -1,5 +1,37 @@
 [
   {
+    "id": "f1c242c7042e83f9",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733413.php",
+    "title": "Schwerer Raub auf Tankstelle",
+    "published_at": "2026-10-31T10:16:00.000Z",
+    "ingested_at": "2026-11-01T11:07:02.402Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "In Treptow-Köpenick wurde ein schwerer Raub auf eine Tankstelle verübt. Details zum genauen Hergang stehen in der Quelle.",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Der Vorfall ereignete sich direkt im Bezirk Treptow-Köpenick und betrifft die lokale Sicherheit.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733413.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
     "id": "3311fc11c42c4e4d",
     "source_id": "amtsblatt-berlin",
     "source": "Amtsblatt für Berlin",
@@ -229,7 +261,8 @@
     "geocode_precision": "address",
     "lat": 52.4832869,
     "lng": 13.4805847,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "4c7d14c0f1d47e09",
@@ -268,7 +301,7 @@
     "lat": 52.4329831,
     "lng": 13.6070581,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -303,7 +336,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "43f821332b0c25ac",
@@ -470,7 +503,7 @@
     "lat": 52.443532,
     "lng": 13.5022688,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "83e5db4388a15015",
@@ -716,7 +749,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "29176f98fc027635",
@@ -754,7 +787,7 @@
     "lat": 52.4033811,
     "lng": 13.5286278,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "abd2cdc908ba2c2c",
@@ -871,7 +904,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "f81af0ecad29d488",
@@ -908,7 +941,7 @@
     "lat": 52.4416484,
     "lng": 13.5874999,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "862dd1e3f453d8ee",
@@ -949,7 +982,7 @@
     "lat": 52.4368224,
     "lng": 13.5576065,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "505f0ebc1691900a",
@@ -992,7 +1025,7 @@
     "lat": 52.4639952,
     "lng": 13.485755,
     "is_mock": false,
-    "last_seen_at": "2026-10-31T10:14:54.430Z"
+    "last_seen_at": "2026-11-01T11:07:01.682Z"
   },
   {
     "id": "4e7402056cc69a04",
