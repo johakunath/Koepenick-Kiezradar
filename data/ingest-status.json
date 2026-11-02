@@ -1,26 +1,26 @@
 {
-  "last_run": "2026-11-01T11:07:01.682Z",
+  "last_run": "2026-11-02T12:06:37.380Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
-      "parsed": 1,
+      "parsed": 2,
       "raw_items": 50,
-      "last_success_at": "2026-11-01T11:07:01.682Z",
+      "last_success_at": "2026-11-02T12:06:37.380Z",
       "fetched": 1
     },
     "berlin-events": {
-      "status": "error",
-      "error": "Fetch failed 429 for https://www.berlin.de/land/kalender/index.php?c=13&suchmaske=",
-      "parsed": 0,
-      "raw_items": 0,
-      "last_success_at": "2026-10-31T10:14:54.430Z",
-      "fetched": 0
+      "status": "warning",
+      "error": "Kalender auf fünf Quellseiten begrenzt",
+      "parsed": 50,
+      "raw_items": 50,
+      "last_success_at": "2026-11-02T12:06:37.380Z",
+      "fetched": 11
     },
     "bezirksamt-tk": {
       "status": "ok",
       "parsed": 10,
       "raw_items": 10,
-      "last_success_at": "2026-11-01T11:07:01.682Z",
+      "last_success_at": "2026-11-02T12:06:37.380Z",
       "fetched": 0
     },
     "bvv-tk": {
@@ -38,15 +38,16 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "parsed": 0,
-      "raw_items": 0,
-      "last_success_at": "2026-10-31T10:14:54.430Z",
+      "parsed": 7,
+      "raw_items": 7,
+      "last_success_at": "2026-11-02T12:06:37.380Z",
       "fetched": 0
     }
   },
-  "new_entries": 1,
+  "new_entries": 12,
   "dry_run": false,
-  "ai_status": "ok",
+  "ai_status": "error",
+  "ai_error": "Incomplete AI result for 5dc3ce2d9aff40b1",
   "total_entries": 250,
-  "archived_entries": 1
+  "archived_entries": 12
 }
