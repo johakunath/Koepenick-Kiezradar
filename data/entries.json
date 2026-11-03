@@ -1,87 +1,5 @@
 [
   {
-    "id": "98bec496746ffd5f",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=30&c=13&date_start=23.10.2026",
-    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
-    "published_at": "2026-10-23T09:11:45.617Z",
-    "ingested_at": "2026-10-23T09:11:45.617Z",
-    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 02.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird ab dem 2. November 2026 eine Ausstellung zum Thema „Vielfalt sichtbar machen“ gezeigt, die sich Frauen und queeren Personen im Ehrenamt widmet.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Rathaus Treptow in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet an einem spezifischen Ort in Treptow-Köpenick statt und ist damit lokal relevant.",
-    "event_start_at": "2026-11-02T07:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-11-02T12:06:37.380Z",
-    "venue": "Rathaus Treptow",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4830803,
-    "lng": 13.4809153,
-    "is_mock": false
-  },
-  {
-    "id": "e13ff0739f8c1a3f",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=30&c=13&date_start=23.10.2026",
-    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
-    "published_at": "2026-10-23T09:11:45.617Z",
-    "ingested_at": "2026-10-23T09:11:45.617Z",
-    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 02.11.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Am 2. November 2026 findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Die Ausstellung findet an einem spezifischen Ort in Treptow-Köpenick statt und ist damit lokal relevant.",
-    "event_start_at": "2026-11-02T11:00:00.000Z",
-    "event_end_at": "2026-11-02T18:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-11-02T12:06:37.380Z",
-    "venue": "Galerie Rathaus Johannisthal",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Johannisthal",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "is_mock": false
-  },
-  {
     "id": "ec758dc3e6d4ada6",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -1635,17 +1553,18 @@
     "published_at": "2026-11-02T12:06:40.324Z",
     "ingested_at": "2026-11-02T12:06:40.324Z",
     "raw_excerpt": "Sowjetisches Ehrenmal in Berlin-Treptow: Kritische Führung in mehreren Sprachen Lesungen, Vorträge Spaziergänge, Ausflüge Bildung, Schule Termin: 15.11.2026 13:00 Uhr Veranstaltungsort: Sowjetisches Ehrenmal Treptow in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 15. November um 13:00 in Sowjetisches Ehrenmal Treptow.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 15.11.2026 findet am Sowjetischen Ehrenmal in Berlin-Treptow eine kritische Führung in mehreren Sprachen statt, die sich mit Bildung und Geschichte befasst.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Sowjetisches Ehrenmal Treptow in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet an einem spezifischen Ort in Treptow-Köpenick statt und richtet sich an die Öffentlichkeit.",
     "event_start_at": "2026-11-15T12:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -1663,7 +1582,8 @@
     "geocode_precision": "venue",
     "lat": 52.4876653,
     "lng": 13.4688201,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "47b6f0389cbcb4ec",
@@ -1674,18 +1594,19 @@
     "published_at": "2026-11-02T12:06:40.806Z",
     "ingested_at": "2026-11-02T12:06:40.806Z",
     "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 16.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 16. November um 08:00 in Rathaus Treptow.",
-    "summary_origin": "fallback",
+    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird am 16.11.2026 eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt gezeigt.",
+    "summary_origin": "ai",
     "tags": [
       "veranstaltung",
-      "verwaltung"
+      "verwaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Rathaus Treptow in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Diese Ausstellung findet im Rathaus Treptow statt und hat lokalen Bezug durch den Veranstaltungsort und das Thema Ehrenamt.",
     "event_start_at": "2026-11-16T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -1703,7 +1624,8 @@
     "geocode_precision": "venue",
     "lat": 52.4830803,
     "lng": 13.4809153,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "019a0eab2f86feb5",
@@ -1714,18 +1636,19 @@
     "published_at": "2026-11-02T12:06:40.806Z",
     "ingested_at": "2026-11-02T12:06:40.806Z",
     "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 17.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. November um 08:00 in Rathaus Treptow.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 17.11.2026 ist im Rathaus Treptow in Treptow-Köpenick die Ausstellung „Vielfalt sichtbar machen“ zu sehen, die Frauen und queere Personen im Ehrenamt thematisiert.",
+    "summary_origin": "ai",
     "tags": [
       "veranstaltung",
-      "verwaltung"
+      "verwaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Rathaus Treptow in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung im Rathaus Treptow behandelt ein gesellschaftlich relevantes Thema und ist somit lokal von Interesse.",
     "event_start_at": "2026-11-17T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -1743,7 +1666,8 @@
     "geocode_precision": "venue",
     "lat": 52.4830803,
     "lng": 13.4809153,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "5a241a6ea1ff093d",
@@ -1754,17 +1678,18 @@
     "published_at": "2026-11-02T12:06:40.807Z",
     "ingested_at": "2026-11-02T12:06:40.807Z",
     "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 17.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
-    "summary_origin": "fallback",
+    "ai_summary": "Am 17.11.2026 findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick eine Ausstellung statt, die sich mit dem Wandel und der Bedeutung des Gedenkens befasst.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet an einem benannten Ort im Bezirk statt und ist von lokalem kulturellem und bildungspolitischem Interesse.",
     "event_start_at": "2026-11-17T09:00:00.000Z",
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
@@ -1783,7 +1708,8 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "397c4aed2e003b24",
@@ -1794,17 +1720,18 @@
     "published_at": "2026-11-02T12:06:40.806Z",
     "ingested_at": "2026-11-02T12:06:40.807Z",
     "raw_excerpt": "dznsza Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen Ausstellungen Termin: 17.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
-    "summary_origin": "fallback",
+    "ai_summary": "Eine Ausstellung mit dem Titel „Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen“ findet im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet direkt im Bezirk Treptow-Köpenick statt.",
     "event_start_at": "2026-11-17T09:00:00.000Z",
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
@@ -1823,7 +1750,8 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "168e318143fbfa3d",
@@ -1834,17 +1762,18 @@
     "published_at": "2026-11-02T12:06:40.807Z",
     "ingested_at": "2026-11-02T12:06:40.808Z",
     "raw_excerpt": "CCB Fotoclub Berlin Treptow / Montage Pressestelle TK „Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal Ausstellungen Termin: 17.11.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 17. November um 12:00 in Galerie Rathaus Johannisthal.",
-    "summary_origin": "fallback",
+    "ai_summary": "Der CCB Fotoclub Berlin Treptow zeigt in der Galerie Johannisthal die Ausstellung „Bilder des Jahres 2026“.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.7,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt, was eine direkte lokale Relevanz hat.",
     "event_start_at": "2026-11-17T11:00:00.000Z",
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
@@ -1861,7 +1790,8 @@
     "district": "Johannisthal",
     "addresses": [],
     "geocode_precision": "venue",
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "53fd4ef339dd6423",
@@ -1872,18 +1802,19 @@
     "published_at": "2026-11-02T12:06:40.808Z",
     "ingested_at": "2026-11-02T12:06:40.808Z",
     "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 18.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. November um 08:00 in Rathaus Treptow.",
-    "summary_origin": "fallback",
+    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird eine Ausstellung über Frauen und queere Personen im Ehrenamt unter dem Titel „Vielfalt sichtbar machen“ gezeigt.",
+    "summary_origin": "ai",
     "tags": [
       "veranstaltung",
-      "verwaltung"
+      "verwaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Rathaus Treptow in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.4,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Ausstellung findet im Rathaus Treptow statt, was eine hohe lokale Relevanz für den Bezirk Treptow-Köpenick darstellt.",
     "event_start_at": "2026-11-18T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
@@ -1901,7 +1832,8 @@
     "geocode_precision": "venue",
     "lat": 52.4830803,
     "lng": 13.4809153,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "814b489be9f8b681",
@@ -1912,17 +1844,18 @@
     "published_at": "2026-11-02T12:06:40.809Z",
     "ingested_at": "2026-11-02T12:06:40.809Z",
     "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 18.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
-    "summary_origin": "fallback",
+    "ai_summary": "Eine Ausstellung mit dem Titel „Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken“ wird im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick präsentiert.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet im Dokumentationszentrum NS-Zwangsarbeit im Bezirk Treptow-Köpenick statt.",
     "event_start_at": "2026-11-18T09:00:00.000Z",
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
@@ -1941,7 +1874,8 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "59978f5f5cf36715",
@@ -1952,17 +1886,18 @@
     "published_at": "2026-11-02T12:06:40.808Z",
     "ingested_at": "2026-11-02T12:06:40.808Z",
     "raw_excerpt": "dznsza Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen Ausstellungen Termin: 18.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
-    "summary_origin": "fallback",
+    "ai_summary": "Die Ausstellung „Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen“ ist im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick zu sehen.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
-    "political_relevance_score": 0.1,
+    "local_relevance_score": 0.6,
+    "political_relevance_score": 0.2,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet direkt im Bezirk Treptow-Köpenick statt.",
     "event_start_at": "2026-11-18T09:00:00.000Z",
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
@@ -1981,7 +1916,8 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "1b9996433c64cdb2",
@@ -1992,17 +1928,18 @@
     "published_at": "2026-11-02T12:06:40.809Z",
     "ingested_at": "2026-11-02T12:06:40.809Z",
     "raw_excerpt": "CCB Fotoclub Berlin Treptow / Montage Pressestelle TK „Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal Ausstellungen Termin: 18.11.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
-    "ai_summary": "Veranstaltung am 18. November um 12:00 in Galerie Rathaus Johannisthal.",
-    "summary_origin": "fallback",
+    "ai_summary": "Der CCB Fotoclub Berlin Treptow präsentiert im November 2026 eine Ausstellung mit dem Titel „Bilder des Jahres 2026“ in der Galerie Rathaus Johannisthal. Die Veranstaltung zeigt die fotografische Vielfalt des Clubs.",
+    "summary_origin": "ai",
     "tags": [
-      "veranstaltung"
+      "veranstaltung",
+      "sonstiges"
     ],
-    "location": "Treptow-Köpenick",
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
     "location_relevant": true,
-    "local_relevance_score": 0.75,
+    "local_relevance_score": 0.7,
     "political_relevance_score": 0.1,
     "election_relevant": false,
-    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "ai_reasoning": "Die Veranstaltung findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick statt und hat somit einen direkten lokalen Bezug.",
     "event_start_at": "2026-11-18T11:00:00.000Z",
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
@@ -2019,7 +1956,8 @@
     "district": "Johannisthal",
     "addresses": [],
     "geocode_precision": "venue",
-    "is_mock": false
+    "is_mock": false,
+    "enrichment_version": 2
   },
   {
     "id": "d515f02514b60cd7",
@@ -2061,6 +1999,39 @@
     "is_mock": false
   },
   {
+    "id": "74f6970242e42c34",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733749.php",
+    "title": "Raub auf Tankstelle",
+    "published_at": "2026-11-02T12:09:00.000Z",
+    "ingested_at": "2026-11-03T11:43:31.009Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Eine Tankstelle in Treptow-Köpenick war der Ereignisort eines Raubes.",
+    "tags": [
+      "sicherheit",
+      "sonstiges"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.2,
+    "election_relevant": false,
+    "ai_reasoning": "Der Vorfall ereignete sich direkt im Bezirk Treptow-Köpenick und betrifft die lokale Sicherheit.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1733749.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "is_mock": false
+  },
+  {
     "id": "2ea74bc299ed1d07",
     "source_id": "polizei-berlin",
     "source": "Polizei Berlin",
@@ -2091,7 +2062,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "f1c242c7042e83f9",
@@ -2124,7 +2096,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "3311fc11c42c4e4d",
@@ -2362,7 +2334,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "4c7d14c0f1d47e09",
@@ -2401,7 +2373,7 @@
     "lat": 52.4329831,
     "lng": 13.6070581,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -2436,7 +2408,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "9d1463cdce0a823a",
@@ -2477,7 +2449,7 @@
     "lat": 52.443532,
     "lng": 13.5022688,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "0ce73da253f729e7",
@@ -2515,7 +2487,7 @@
     "lat": 52.4539929,
     "lng": 13.5142752,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "29176f98fc027635",
@@ -2553,7 +2525,7 @@
     "lat": 52.4033811,
     "lng": 13.5286278,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "abd2cdc908ba2c2c",
@@ -2670,7 +2642,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "f81af0ecad29d488",
@@ -2707,7 +2679,7 @@
     "lat": 52.4416484,
     "lng": 13.5874999,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "862dd1e3f453d8ee",
@@ -2748,7 +2720,7 @@
     "lat": 52.4368224,
     "lng": 13.5576065,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "505f0ebc1691900a",
@@ -2791,7 +2763,7 @@
     "lat": 52.4639952,
     "lng": 13.485755,
     "is_mock": false,
-    "last_seen_at": "2026-11-02T12:06:37.380Z"
+    "last_seen_at": "2026-11-03T11:43:30.497Z"
   },
   {
     "id": "4e7402056cc69a04",
@@ -3423,6 +3395,88 @@
     "geocode_precision": "area",
     "is_mock": false,
     "last_seen_at": "2026-10-30T10:45:21.089Z"
+  },
+  {
+    "id": "98bec496746ffd5f",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=30&c=13&date_start=23.10.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-10-23T09:11:45.617Z",
+    "ingested_at": "2026-10-23T09:11:45.617Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 02.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Im Rathaus Treptow in Treptow-Köpenick wird ab dem 2. November 2026 eine Ausstellung zum Thema „Vielfalt sichtbar machen“ gezeigt, die sich Frauen und queeren Personen im Ehrenamt widmet.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.4,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet an einem spezifischen Ort in Treptow-Köpenick statt und ist damit lokal relevant.",
+    "event_start_at": "2026-11-02T07:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-02T12:06:37.380Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "e13ff0739f8c1a3f",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292954&ls=30&c=13&date_start=23.10.2026",
+    "title": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal",
+    "published_at": "2026-10-23T09:11:45.617Z",
+    "ingested_at": "2026-10-23T09:11:45.617Z",
+    "raw_excerpt": "Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ in der Galerie Johannisthal Ausstellungen Kunst, Kultur Termin: 02.11.2026 12:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Am 2. November 2026 findet in der Galerie Rathaus Johannisthal in Treptow-Köpenick die Ausstellungseröffnung „Mukenge/ Schellhammer. Fleshy Works“ statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Galerie Rathaus Johannisthal in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Ausstellung findet an einem spezifischen Ort in Treptow-Köpenick statt und ist damit lokal relevant.",
+    "event_start_at": "2026-11-02T11:00:00.000Z",
+    "event_end_at": "2026-11-02T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-02T12:06:37.380Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292954"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "is_mock": false
   },
   {
     "id": "101da217428e0691",
@@ -9976,48 +10030,6 @@
     ],
     "alias_ids": [],
     "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "b4a9bf84e9441ced",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=30&c=13&date_start=26.09.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-09-26T09:13:42.165Z",
-    "ingested_at": "2026-09-26T09:13:42.165Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 06.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Das Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick präsentiert eine Ausstellung zum Wandel und der Bedeutung des Gedenkens.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.5,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet im Bezirk Treptow-Köpenick statt, was einen direkten lokalen Bezug herstellt.",
-    "event_start_at": "2026-10-06T08:00:00.000Z",
-    "event_end_at": "2026-10-06T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-06T11:05:53.902Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow-Köpenick",
     "addresses": [],
     "enrichment_version": 2,
     "geocode_precision": "venue",
