@@ -1,5 +1,87 @@
 [
   {
+    "id": "ef7bb882d295bf2d",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735285.php",
+    "title": "Weiterer Abschnitt für den Radverkehr entlang der Bundesstraße B 96a fertiggestellt – Bezirksamt lädt zum gemeinsamen Anradeln am 11. November ein",
+    "published_at": "2026-11-05T11:04:00.000Z",
+    "ingested_at": "2026-11-05T11:58:50.455Z",
+    "raw_excerpt": "Das Bezirksamt Treptow-Köpenick lädt am Mittwoch, dem 11. November 2026, zum gemeinsamen Anradeln eines weiteren Abschnitts der Radverkehrsanlage entlang der Bundesstraße B 96a ein. Der Abschnitt zwischen „Am Treptower Park/ Ecke Rethelstraße“ und „Köpenicker Landstraße/ Ecke Trojanstraße“ wird planmäßig fertiggestellt. Treffpunkt ist um 13:00 Uhr in der Köpenicker Landstraße 48. Von dort aus wird der neu fertiggestellte Abschnitt gemeinsam mit dem Fahrrad erkundet.",
+    "ai_summary": "Das Bezirksamt Treptow-Köpenick lädt zum gemeinsamen Anradeln eines neu fertiggestellten Abschnitts der Radverkehrsanlage entlang der B 96a am 11. November 2026 ein, der zwischen \"Am Treptower Park/ Ecke Rethelstraße\" und \"Köpenicker Landstraße/ Ecke Trojanstraße\" liegt.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur",
+      "veranstaltung"
+    ],
+    "location": "Köpenicker Landstraße 48",
+    "location_relevant": true,
+    "local_relevance_score": 0.8,
+    "political_relevance_score": 0.6,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung betrifft die Infrastruktur und den Verkehr innerhalb des Bezirks Treptow-Köpenick und wird vom Bezirksamt organisiert.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735285.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Köpenicker Landstraße 48"
+    ],
+    "street": "Köpenicker Landstraße",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4789077,
+    "lng": 13.4762342,
+    "is_mock": false
+  },
+  {
+    "id": "d542a812ef524b38",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1734935.php",
+    "title": "Einladung zum 29. Unternehmensstammtisch Gemeinwohl Treptow-Köpenick",
+    "published_at": "2026-11-04T14:19:00.000Z",
+    "ingested_at": "2026-11-05T11:58:50.455Z",
+    "raw_excerpt": "* Zeit: 17.11.2026, 17:00 Uhr * Ort: BVV-Saal im Rathaus Treptow (Neue Krugallee 4, 12435 Berlin) Zum Novembertermin trifft sich der Unternehmensstammtisch Gemeinwohl Treptow-Köpenick einmal anders: Gemeinsam besuchen die Teilnehmenden die 1. Beteiligungsveranstaltung zum Klimaanpassungskonzept Treptow-Köpenick, zu der das Bezirksamt einlädt. Starkregen, Hitze und Trockenheit stellen den Bezirk vor neue Herausforderungen.",
+    "ai_summary": "Der 29. Unternehmensstammtisch Gemeinwohl Treptow-Köpenick findet am 17. November 2026 im BVV-Saal des Rathauses Treptow statt und beinhaltet den Besuch der 1. Beteiligungsveranstaltung zum Klimaanpassungskonzept des Bezirks.",
+    "tags": [
+      "verwaltung",
+      "politik",
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "BVV-Saal im Rathaus Treptow (Neue Krugallee 4, 12435 Berlin)",
+    "location_relevant": true,
+    "local_relevance_score": 0.9,
+    "political_relevance_score": 0.8,
+    "election_relevant": false,
+    "ai_reasoning": "Der Stammtisch und die Beteiligungsveranstaltung zum Klimaanpassungskonzept finden im Rathaus Treptow statt und betreffen den gesamten Bezirk.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1734935.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Neue Krugallee 4, 12435 Berlin"
+    ],
+    "street": "Neue Krugallee",
+    "summary_origin": "ai",
+    "enrichment_version": 2,
+    "geocode_precision": "address",
+    "lat": 52.4832869,
+    "lng": 13.4805847,
+    "is_mock": false
+  },
+  {
     "id": "af362165d967ba55",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -244,7 +326,8 @@
     "geocode_precision": "address",
     "lat": 52.4832869,
     "lng": 13.4805847,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-05T11:58:47.599Z"
   },
   {
     "id": "74f6970242e42c34",
@@ -278,7 +361,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-04T11:55:59.313Z"
+    "last_seen_at": "2026-11-05T11:58:47.599Z"
   },
   {
     "id": "d515f02514b60cd7",
@@ -768,7 +851,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-04T11:55:59.313Z",
+    "last_seen_at": "2026-11-05T11:58:47.599Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   }
