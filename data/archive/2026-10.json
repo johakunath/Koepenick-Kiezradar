@@ -30,7 +30,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "3311fc11c42c4e4d",
@@ -268,7 +268,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "4c7d14c0f1d47e09",
@@ -307,7 +307,7 @@
     "lat": 52.4329831,
     "lng": 13.6070581,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -369,7 +369,7 @@
     "event_end_at": "2026-11-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -411,7 +411,7 @@
     "event_start_at": "2026-11-15T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -453,7 +453,7 @@
     "event_end_at": "2026-11-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -536,7 +536,7 @@
     "event_end_at": "2026-11-14T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -578,7 +578,7 @@
     "event_end_at": "2026-11-14T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -618,7 +618,7 @@
     "event_start_at": "2026-11-14T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -660,7 +660,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -702,7 +702,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1327,7 +1327,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1369,7 +1369,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1411,7 +1411,7 @@
     "event_start_at": "2026-11-13T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1453,7 +1453,7 @@
     "event_end_at": "2026-11-11T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1495,7 +1495,7 @@
     "event_start_at": "2026-11-12T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1537,7 +1537,7 @@
     "event_end_at": "2026-11-12T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1578,7 +1578,7 @@
     "event_start_at": "2026-11-10T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -1620,7 +1620,7 @@
     "event_start_at": "2026-11-11T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1785,7 +1785,7 @@
     "event_end_at": "2026-11-10T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1828,7 +1828,7 @@
     "event_start_at": "2026-11-10T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1870,7 +1870,7 @@
     "event_end_at": "2026-11-08T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1912,7 +1912,7 @@
     "event_start_at": "2026-11-09T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2192,7 +2192,7 @@
     "event_start_at": "2026-11-08T10:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
@@ -2234,7 +2234,7 @@
     "event_start_at": "2026-11-07T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2276,7 +2276,7 @@
     "event_end_at": "2026-11-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2318,7 +2318,7 @@
     "event_start_at": "2026-11-08T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2360,7 +2360,7 @@
     "event_end_at": "2026-11-08T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {

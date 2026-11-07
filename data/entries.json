@@ -1,130 +1,5 @@
 [
   {
-    "id": "83b320e0070b233f",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=23.10.2026",
-    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
-    "published_at": "2026-10-23T09:11:46.021Z",
-    "ingested_at": "2026-10-23T09:11:46.021Z",
-    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 06.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
-    "ai_summary": "Eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt wird ab dem 6. November 2026 im Rathaus Treptow in Treptow-Köpenick gezeigt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Rathaus Treptow in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet in einem spezifischen Bezirk und im Rathaus statt, was eine direkte lokale Relevanz darstellt.",
-    "event_start_at": "2026-11-06T07:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
-    "venue": "Rathaus Treptow",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4830803,
-    "lng": 13.4809153,
-    "is_mock": false
-  },
-  {
-    "id": "a8d86e62909bcc22",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=23.10.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-10-23T09:11:46.021Z",
-    "ingested_at": "2026-10-23T09:11:46.022Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 06.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Eine Ausstellung zum Thema Wandel und Bedeutung des Gedenkens findet am 06. November 2026 im Dokumentationszentrum NS-Zwangsarbeit statt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.5,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort liegt in Treptow-Köpenick und ist somit lokal relevant.",
-    "event_start_at": "2026-11-06T09:00:00.000Z",
-    "event_end_at": "2026-11-06T17:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
-  },
-  {
-    "id": "1a26f6628ee0538f",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=269038&ls=40&c=13&date_start=14.09.2026",
-    "title": "„Ich klage an“ (Deutschland, 1941, Regie: Wolfgang Liebeneiner)",
-    "published_at": "2026-09-14T20:18:51.852Z",
-    "ingested_at": "2026-09-14T20:18:51.852Z",
-    "raw_excerpt": "„Ich klage an“ (Deutschland, 1941, Regie: Wolfgang Liebeneiner) Ausstellungen Bühnen, Filme Infoveranstaltungen Termin: 06.11.2026 19:00 Uhr Veranstaltungsort: Museum Treptow in Treptow-Köpenick ",
-    "ai_summary": "Im Museum Treptow in Treptow-Köpenick wird am 06.11.2026 der Film „Ich klage an“ (Deutschland, 1941, Regie: Wolfgang Liebeneiner) gezeigt. Die Veranstaltung ist als Ausstellung, Bühne, Film und Infoveranstaltung kategorisiert.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Museum Treptow in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.7,
-    "political_relevance_score": 0.2,
-    "election_relevant": false,
-    "ai_reasoning": "Der Veranstaltungsort Museum Treptow in Treptow-Köpenick begründet die lokale Relevanz.",
-    "event_start_at": "2026-11-06T18:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
-    "venue": "Museum Treptow",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=269038"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "geocode_precision": "venue",
-    "is_mock": false,
-    "lat": 52.4434519,
-    "lng": 13.5022281,
-    "enrichment_version": 2
-  },
-  {
     "id": "9f592b32b3d4d716",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -149,7 +24,7 @@
     "event_start_at": "2026-11-07T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -191,7 +66,7 @@
     "event_end_at": "2026-11-07T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -233,7 +108,7 @@
     "event_start_at": "2026-11-08T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -275,7 +150,7 @@
     "event_end_at": "2026-11-08T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -316,7 +191,7 @@
     "event_start_at": "2026-11-08T10:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
@@ -358,7 +233,7 @@
     "event_end_at": "2026-11-08T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -400,7 +275,7 @@
     "event_start_at": "2026-11-09T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -443,7 +318,7 @@
     "event_start_at": "2026-11-10T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -485,7 +360,7 @@
     "event_end_at": "2026-11-10T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -526,7 +401,7 @@
     "event_start_at": "2026-11-10T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Mittelpunktbibliothek Alte Feuerwache Treptow,",
     "source_refs": [
       {
@@ -568,7 +443,7 @@
     "event_start_at": "2026-11-11T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -610,7 +485,7 @@
     "event_end_at": "2026-11-11T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -652,7 +527,7 @@
     "event_start_at": "2026-11-12T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -694,7 +569,7 @@
     "event_end_at": "2026-11-12T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -736,7 +611,7 @@
     "event_start_at": "2026-11-13T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -778,7 +653,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -820,7 +695,7 @@
     "event_end_at": "2026-11-13T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -862,7 +737,7 @@
     "event_start_at": "2026-11-14T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -904,7 +779,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -946,7 +821,7 @@
     "event_end_at": "2026-11-14T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -988,7 +863,7 @@
     "event_end_at": "2026-11-14T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1030,7 +905,7 @@
     "event_end_at": "2026-11-14T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1070,7 +945,7 @@
     "event_start_at": "2026-11-15T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1112,7 +987,7 @@
     "event_end_at": "2026-11-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1154,7 +1029,7 @@
     "event_end_at": "2026-11-15T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1195,7 +1070,7 @@
     "event_start_at": "2026-11-15T12:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
@@ -1237,7 +1112,7 @@
     "event_start_at": "2026-11-16T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1279,7 +1154,7 @@
     "event_start_at": "2026-11-17T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1321,7 +1196,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1363,7 +1238,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1405,7 +1280,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1445,7 +1320,7 @@
     "event_start_at": "2026-11-18T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1487,7 +1362,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1529,7 +1404,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1571,7 +1446,7 @@
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1610,7 +1485,7 @@
     "event_start_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -1651,7 +1526,7 @@
     "event_start_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -1691,7 +1566,7 @@
     "event_start_at": "2026-11-19T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1733,7 +1608,7 @@
     "event_end_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1775,7 +1650,7 @@
     "event_end_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1817,7 +1692,7 @@
     "event_end_at": "2026-11-19T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1856,7 +1731,7 @@
     "event_start_at": "2026-11-20T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.305Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1896,7 +1771,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.306Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1936,7 +1811,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.306Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1976,7 +1851,7 @@
     "event_end_at": "2026-11-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.307Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2014,7 +1889,7 @@
     "event_start_at": "2026-11-21T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.307Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2028,6 +1903,86 @@
     "geocode_precision": "venue",
     "lat": 52.4830803,
     "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "1aa584c56717712b",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=295565&ls=40&c=13&date_start=07.11.2026",
+    "title": "Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen",
+    "published_at": "2026-11-07T10:55:45.450Z",
+    "ingested_at": "2026-11-07T10:55:45.450Z",
+    "raw_excerpt": "dznsza Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen Ausstellungen Termin: 21.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T09:00:00.000Z",
+    "event_end_at": "2026-11-21T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-07T10:55:45.450Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=295565"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "9ccdaa55a3a7c05a",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=07.11.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-11-07T10:55:45.450Z",
+    "ingested_at": "2026-11-07T10:55:45.450Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 21.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T09:00:00.000Z",
+    "event_end_at": "2026-11-21T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-07T10:55:45.450Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
     "is_mock": false
   },
   {
@@ -2054,7 +2009,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-06T11:55:12.307Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2068,6 +2023,147 @@
     "geocode_precision": "venue",
     "lat": 52.4526094,
     "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "ea315a1975880fc6",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=296735&ls=40&c=13&date_start=07.11.2026",
+    "title": "„Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal",
+    "published_at": "2026-11-07T10:55:45.450Z",
+    "ingested_at": "2026-11-07T10:55:45.451Z",
+    "raw_excerpt": "CCB Fotoclub Berlin Treptow / Montage Pressestelle TK „Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal Ausstellungen Termin: 21.11.2026 15:00 - 19:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 15:00 in Galerie Rathaus Johannisthal.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T14:00:00.000Z",
+    "event_end_at": "2026-11-21T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-07T10:55:45.450Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=296735"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "ad273281bbc2a228",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735911.php",
+    "title": "Un:umstrittenes Erbe? Ein philosophisches Café zu Ernst Moritz Arndt in der Erinnerungskultur",
+    "published_at": "2026-11-06T12:30:00.000Z",
+    "ingested_at": "2026-11-07T10:55:45.560Z",
+    "raw_excerpt": "* Zeit: Mittwoch, 02.12.2026, 18:00 Uhr * Ort: Bürgersaal des Kulturzentrums, Alte Schule Adlershof, Dörpfeldstraße 54, 12489 Berlin Am Mittwoch, dem 2. Dezember 2026 findet um 18:00 Uhr im Kulturzentrum Alte Schule Adlershof im Rahmen der Veranstaltungsreihe „Un:umstrittenes Erbe?“ ein philosophisches Café zu Ernst Moritz Arndt in der Erinnerungskultur statt. Bei dieser Veranstaltung werden Texte von Ernst Moritz Arndt gelesen und gemeinsam diskutiert.",
+    "ai_summary": "* Zeit: Mittwoch, 02.12.2026, 18:00 Uhr * Ort: Bürgersaal des Kulturzentrums, Alte Schule Adlershof, Dörpfeldstraße 54, 12489 Berlin Am Mittwoch, dem 2. Dezember 2026 findet um 18:00 Uhr im Kulturzentrum Alte Schule Adlershof im Rahmen der Veranstaltungsreihe „Un:umstrittenes Erbe?“ ein philosophisches Café zu Ernst Moritz Arndt in der Erinnerungskultur statt. Bei dieser Veranstaltung werden Texte von Ernst Moritz Arndt gelesen und gemeinsam diskutiert.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735911.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Dörpfeldstraße 54"
+    ],
+    "street": "Dörpfeldstraße",
+    "geocode_precision": "address",
+    "lat": 52.4388584,
+    "lng": 13.5498617,
+    "is_mock": false
+  },
+  {
+    "id": "1b6ddcbe04476ebd",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735897.php",
+    "title": "125 Jahre Stadtteilbibliothek in Friedrichshagen - Festwoche 9.-12.11.2026",
+    "published_at": "2026-11-06T12:18:00.000Z",
+    "ingested_at": "2026-11-07T10:55:45.561Z",
+    "raw_excerpt": "Die Stadtteilbibliothek in Friedrichshagen feiert in 2026 ein ganz besonderes Jubiläum, sie wird 125 Jahre alt. Aus diesem Anlass ist für November eine Festwoche inklusive einer kleinen Ausstellung zur Historie der Bibliothek und zum Namensgeber Johannes Bobrowski geplant.",
+    "ai_summary": "Die Stadtteilbibliothek in Friedrichshagen feiert in 2026 ein ganz besonderes Jubiläum, sie wird 125 Jahre alt. Aus diesem Anlass ist für November eine Festwoche inklusive einer kleinen Ausstellung zur Historie der Bibliothek und zum Namensgeber Johannes Bobrowski geplant.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735897.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Friedrichshagen",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "86bc48c936f44320",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735896.php",
+    "title": "75 Jahre Joseph-Schmidt-Musikschule – Großer Festakt im FEZ Berlin",
+    "published_at": "2026-11-06T12:16:00.000Z",
+    "ingested_at": "2026-11-07T10:55:45.561Z",
+    "raw_excerpt": "Musik und Tanz zum Jubiläum: Am 19. November 2026 feiert die Joseph-Schmidt-Musikschule Treptow-Köpenick ihr 75-jähriges Bestehen mit einem Festakt auf der Astrid-Lindgren-Bühne im FEZ Berlin. * Zeit: Donnerstag, 19. November 2026, um 18:00 Uhr * Ort: Festakt auf der Astrid-Lindgren-Bühne, Freizeit- und Erholungszentrum (FEZ) Berlin, Straße zum FEZ 2, 12459 Berlin Seit ihrer Gründung am 19. Februar 1951 ist die Musikschule ein fester Bestandteil des kulturellen Lebens in Treptow-Köpenick.",
+    "ai_summary": "Musik und Tanz zum Jubiläum: Am 19. November 2026 feiert die Joseph-Schmidt-Musikschule Treptow-Köpenick ihr 75-jähriges Bestehen mit einem Festakt auf der Astrid-Lindgren-Bühne im FEZ Berlin. * Zeit: Donnerstag, 19. November 2026, um 18:00 Uhr * Ort: Festakt auf der Astrid-Lindgren-Bühne, Freizeit- und Erholungszentrum (FEZ) Berlin, Straße zum FEZ 2, 12459 Berlin Seit ihrer Gründung am 19. Februar 1951 ist die Musikschule ein fester Bestandteil des kulturellen Lebens in Treptow-Köpenick.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1735896.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
     "is_mock": false
   },
   {
@@ -2173,7 +2269,8 @@
     "alias_ids": [],
     "district": "Friedrichshagen",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "a78ecde79e9fd5c5",
@@ -2210,7 +2307,8 @@
     "geocode_precision": "address",
     "lat": 52.4559155,
     "lng": 13.5970528,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "ef7bb882d295bf2d",
@@ -2252,7 +2350,7 @@
     "lat": 52.4789077,
     "lng": 13.4762342,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "d542a812ef524b38",
@@ -2294,7 +2392,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "6f3549843b3c8471",
@@ -2337,7 +2435,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "74f6970242e42c34",
@@ -2371,7 +2469,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "2ea74bc299ed1d07",
@@ -2405,7 +2503,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "last_seen_at": "2026-11-07T10:55:42.875Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   },
@@ -2440,7 +2538,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "3311fc11c42c4e4d",
@@ -2678,7 +2776,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "4c7d14c0f1d47e09",
@@ -2717,7 +2815,7 @@
     "lat": 52.4329831,
     "lng": 13.6070581,
     "is_mock": false,
-    "last_seen_at": "2026-11-06T11:55:08.828Z"
+    "last_seen_at": "2026-11-07T10:55:42.875Z"
   },
   {
     "id": "6683d40f80652a7b",
@@ -3739,6 +3837,90 @@
     "geocode_precision": "area",
     "is_mock": false,
     "last_seen_at": "2026-10-30T10:45:21.089Z"
+  },
+  {
+    "id": "83b320e0070b233f",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=23.10.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-10-23T09:11:46.021Z",
+    "ingested_at": "2026-10-23T09:11:46.021Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 06.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung mit dem Titel „Vielfalt sichtbar machen“ über Frauen und queere Personen im Ehrenamt wird ab dem 6. November 2026 im Rathaus Treptow in Treptow-Köpenick gezeigt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "verwaltung",
+      "sonstiges"
+    ],
+    "location": "Rathaus Treptow in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Die Veranstaltung findet in einem spezifischen Bezirk und im Rathaus statt, was eine direkte lokale Relevanz darstellt.",
+    "event_start_at": "2026-11-06T07:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "a8d86e62909bcc22",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=23.10.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-10-23T09:11:46.021Z",
+    "ingested_at": "2026-10-23T09:11:46.022Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 06.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Eine Ausstellung zum Thema Wandel und Bedeutung des Gedenkens findet am 06. November 2026 im Dokumentationszentrum NS-Zwangsarbeit statt.",
+    "summary_origin": "ai",
+    "tags": [
+      "veranstaltung",
+      "sonstiges"
+    ],
+    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.5,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Der Veranstaltungsort liegt in Treptow-Köpenick und ist somit lokal relevant.",
+    "event_start_at": "2026-11-06T09:00:00.000Z",
+    "event_end_at": "2026-11-06T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-06T11:55:08.828Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "enrichment_version": 2,
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
   },
   {
     "id": "089db7d77312e70b",
@@ -9849,193 +10031,5 @@
     "lng": 13.5567833,
     "is_mock": false,
     "last_seen_at": "2026-10-04T10:28:01.763Z"
-  },
-  {
-    "id": "d70183a662998263",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720135.php",
-    "title": "Jüdische Identitäten und Antisemitismus im Punk: Multimediale Buchvorstellung mit dem Herausgeber Tobias Johann",
-    "published_at": "2026-10-01T04:50:00.000Z",
-    "ingested_at": "2026-10-01T10:47:48.500Z",
-    "raw_excerpt": "* Zeit: 10.10.2026 um 18:00 Uhr * Ort: CAFE – Haus der Jugend Köpenick, Seelenbinderstraße 54, 12555 Im CAFE – Haus der Jugend Köpenick wird ein Sammelband vorgestellt, der sich mit einem selten beleuchteten Thema befasst: dem Verhältnis von Punk, jüdischen Identitäten und Antisemitismus. Der Herausgeber Tobias Johann präsentiert das Buch in einer multimedialen Lesung. Im Anschluss beginnt um 20:00 Uhr ein Punk-Konzert.",
-    "ai_summary": "Im CAFE – Haus der Jugend Köpenick findet am 10. Oktober 2026 eine Buchvorstellung zum Thema Punk, jüdische Identitäten und Antisemitismus statt, gefolgt von einem Punk-Konzert.",
-    "tags": [
-      "verwaltung",
-      "verkehr",
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "CAFE – Haus der Jugend Köpenick, Seelenbinderstraße 54, 12555",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.1,
-    "election_relevant": false,
-    "ai_reasoning": "Die Veranstaltung findet in einer spezifischen Einrichtung in Köpenick statt, was einen klaren lokalen Bezug herstellt.",
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720135.php"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Köpenick",
-    "addresses": [
-      "Seelenbinderstraße 54, 12555"
-    ],
-    "street": "Seelenbinderstraße 54",
-    "summary_origin": "ai",
-    "enrichment_version": 2,
-    "geocode_precision": "address",
-    "lat": 52.455179,
-    "lng": 13.5828391,
-    "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
-  },
-  {
-    "id": "b2a324880ee97aa1",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720145.php",
-    "title": "Bezirksamt nimmt ab 5. Oktober 2026 verkehrsberuhigende Maßnahmen in der Lohmühlenstraße in Alt-Treptow vor",
-    "published_at": "2026-09-30T13:58:00.000Z",
-    "ingested_at": "2026-10-01T10:47:48.500Z",
-    "raw_excerpt": "Nachdem Ende 2025 der erste Bauabschnitt der Fahrradstraße in der Bouchéstraße fertiggestellt wurde, folgt nun eine weitere verkehrsberuhigende Maßnahme in Alt-Treptow, die sich aus dem Kiezblockkonzept für den Kungerkiez ableitet: Das Straßen- und Grünflächenamt baut ab dem 5. Oktober 2026 den nördlichen Gehweg in der Lohmühlenstraße zwischen der Kiefholzstraße und Karl-Kunger-Straße um.",
-    "ai_summary": "Ab dem 5. Oktober 2026 beginnt das Straßen- und Grünflächenamt mit dem Umbau des nördlichen Gehwegs in der Lohmühlenstraße in Alt-Treptow, um verkehrsberuhigende Maßnahmen umzusetzen.",
-    "tags": [
-      "verwaltung",
-      "verkehr",
-      "infrastruktur"
-    ],
-    "location": "Lohmühlenstraße zwischen der Kiefholzstraße und Karl-Kunger-Straße",
-    "location_relevant": true,
-    "local_relevance_score": 0.9,
-    "political_relevance_score": 0.4,
-    "election_relevant": false,
-    "ai_reasoning": "Die Maßnahme betrifft direkt eine Straße in Alt-Treptow und ist Teil eines lokalen Kiezblockkonzepts.",
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1720145.php"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "street": "Lohmühlenstraße",
-    "summary_origin": "ai",
-    "enrichment_version": 2,
-    "geocode_precision": "area",
-    "is_mock": false,
-    "last_seen_at": "2026-10-02T10:22:10.020Z"
-  },
-  {
-    "id": "c24e54b7f9eea431",
-    "source_id": "polizei-berlin",
-    "source": "Polizei Berlin",
-    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1720036.php",
-    "title": "Schüsse von Motorroller in Treptow-Köpenick",
-    "published_at": "2026-09-30T12:09:00.000Z",
-    "ingested_at": "2026-10-01T10:47:47.953Z",
-    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
-    "ai_summary": "In Treptow-Köpenick wurden Schüsse von einem Motorroller gemeldet, wobei Details in der Quelle zu finden sind.",
-    "tags": [
-      "sicherheit",
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Der Vorfall ereignete sich direkt im Bezirk Treptow-Köpenick, was einen hohen lokalen Bezug herstellt.",
-    "source_refs": [
-      {
-        "name": "Polizei Berlin",
-        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1720036.php"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "summary_origin": "ai",
-    "enrichment_version": 2,
-    "is_mock": false,
-    "last_seen_at": "2026-10-08T11:12:18.578Z"
-  },
-  {
-    "id": "51e036fe80274255",
-    "source_id": "bezirksamt-tk",
-    "source": "Bezirksamt Treptow-Köpenick",
-    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1719988.php",
-    "title": "Neues Angebot: Online-Infoabende zur ehrenamtlichen Vormundschaft",
-    "published_at": "2026-09-30T11:41:00.000Z",
-    "ingested_at": "2026-10-01T10:47:48.500Z",
-    "raw_excerpt": "* Zeit: 22.10.2026, 18 Uhr Ab September informiert die Koordinierungsstelle regelmäßig online über die Möglichkeiten und Aufgaben einer ehrenamtlichen Vormundschaft. Interessierte können sich unkompliziert per Link in die Videokonferenz zuschalten, sich informieren und ihre Fragen direkt an die Koordinatorin für ehrenamtliche Vormundschaften richten.",
-    "ai_summary": "Ab September informiert die Koordinierungsstelle regelmäßig online über ehrenamtliche Vormundschaften, wobei der nächste Infoabend am 22. Oktober 2026 um 18 Uhr stattfindet.",
-    "tags": [
-      "verwaltung",
-      "sonstiges"
-    ],
-    "location": "Treptow-Köpenick",
-    "location_relevant": false,
-    "local_relevance_score": 0.2,
-    "political_relevance_score": 0.3,
-    "election_relevant": false,
-    "ai_reasoning": "Die Online-Infoabende sind nicht an einen spezifischen physischen Ort gebunden und können von überall aus besucht werden.",
-    "source_refs": [
-      {
-        "name": "Bezirksamt Treptow-Köpenick",
-        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1719988.php"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "summary_origin": "ai",
-    "enrichment_version": 2,
-    "is_mock": false
-  },
-  {
-    "id": "591b76f62c3743c0",
-    "source_id": "berlin-events",
-    "source": "Berlin.de Veranstaltungskalender",
-    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=30.09.2026",
-    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
-    "published_at": "2026-09-30T10:21:16.498Z",
-    "ingested_at": "2026-09-30T10:21:16.498Z",
-    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 11.10.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
-    "ai_summary": "Eine Ausstellung über Wandel und Bedeutung von Gedenken mit dem Titel „Wie erinnern wir? Wie erinnerst du?“ findet am 11.10.2026 im Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick statt.",
-    "summary_origin": "ai",
-    "tags": [
-      "veranstaltung",
-      "sonstiges"
-    ],
-    "location": "Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick",
-    "location_relevant": true,
-    "local_relevance_score": 0.8,
-    "political_relevance_score": 0.5,
-    "election_relevant": false,
-    "ai_reasoning": "Das Dokumentationszentrum NS-Zwangsarbeit befindet sich direkt in Treptow-Köpenick und die Ausstellung hat somit einen klaren lokalen Bezug.",
-    "event_start_at": "2026-10-11T08:00:00.000Z",
-    "event_end_at": "2026-10-11T16:00:00.000Z",
-    "event_date_precision": "time",
-    "event_date_origin": "source",
-    "last_seen_at": "2026-10-11T10:40:28.973Z",
-    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
-    "source_refs": [
-      {
-        "name": "Berlin.de Veranstaltungskalender",
-        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
-      }
-    ],
-    "alias_ids": [],
-    "district": "Treptow",
-    "addresses": [],
-    "enrichment_version": 2,
-    "geocode_precision": "venue",
-    "lat": 52.4526094,
-    "lng": 13.5187979,
-    "is_mock": false
   }
 ]
