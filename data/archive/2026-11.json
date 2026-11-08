@@ -1,5 +1,71 @@
 [
   {
+    "id": "f8393273736a5e06",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1736196.php",
+    "title": "Volksverhetzende Musik abgespielt",
+    "published_at": "2026-11-07T12:28:00.000Z",
+    "ingested_at": "2026-11-08T11:07:24.275Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Treptow-Köpenick",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Meldung nennt Treptow-Köpenick oder einen Ort im Köpenicker Kerngebiet.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1736196.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "8557bba42bb4483a",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1736190.php",
+    "title": "Schnittverletzungen an Händen und einem Bein",
+    "published_at": "2026-11-07T11:04:00.000Z",
+    "ingested_at": "2026-11-08T11:07:24.275Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Treptow-Köpenick",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Meldung nennt Treptow-Köpenick oder einen Ort im Köpenicker Kerngebiet.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1736190.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "1aa584c56717712b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -153,7 +219,8 @@
     "geocode_precision": "address",
     "lat": 52.4388584,
     "lng": 13.5498617,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "1b6ddcbe04476ebd",
@@ -183,7 +250,8 @@
     "alias_ids": [],
     "district": "Friedrichshagen",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "86bc48c936f44320",
@@ -218,7 +286,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "f5836086a8d50fa3",
@@ -255,7 +324,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "38d657145f7c79a2",
@@ -291,7 +361,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "6a4602bb8f7a3dee",
@@ -562,7 +633,7 @@
     "district": "Friedrichshagen",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "a78ecde79e9fd5c5",
@@ -600,7 +671,7 @@
     "lat": 52.4559155,
     "lng": 13.5970528,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "ef7bb882d295bf2d",
@@ -642,7 +713,7 @@
     "lat": 52.4789077,
     "lng": 13.4762342,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "d542a812ef524b38",
@@ -684,7 +755,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "af362165d967ba55",
@@ -932,7 +1003,7 @@
     "lat": 52.4832869,
     "lng": 13.4805847,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "74f6970242e42c34",
@@ -966,7 +1037,7 @@
     "summary_origin": "ai",
     "enrichment_version": 2,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z"
+    "last_seen_at": "2026-11-08T11:07:23.601Z"
   },
   {
     "id": "d515f02514b60cd7",
@@ -1456,7 +1527,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-07T10:55:42.875Z",
+    "last_seen_at": "2026-11-08T11:07:23.601Z",
     "summary_origin": "ai",
     "enrichment_version": 2
   }
