@@ -402,5 +402,13 @@
   "Kinzerallee 27": {
     "lat": 52.4545198,
     "lng": 13.5777973
+  },
+  "Kulturküche Bohnsdorf": {
+    "lat": 52.4015333,
+    "lng": 13.5704821
+  },
+  "Kulturhaus baumschulenweg": {
+    "lat": 52.465534,
+    "lng": 13.4893339
   }
 }
