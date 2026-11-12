@@ -410,5 +410,21 @@
   "Kulturhaus baumschulenweg": {
     "lat": 52.465534,
     "lng": 13.4893339
+  },
+  "Mosischstraße 10": {
+    "lat": 52.4682737,
+    "lng": 13.4853258
+  },
+  "Krugallee 4": {
+    "lat": 52.4684559,
+    "lng": 13.4942225
+  },
+  "Baumschulenstraße 80": {
+    "lat": 52.4601527,
+    "lng": 13.4804661
+  },
+  "Hille-Straße 1": {
+    "lat": 52.4548452,
+    "lng": 13.6214007
   }
 }
