@@ -1,5 +1,259 @@
 [
   {
+    "id": "efac072e011fd11d",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521#page=80",
+    "title": "ABl. Nr. 50 / 13. November 2026 \t3676",
+    "published_at": "2026-11-13T11:57:55.828Z",
+    "ingested_at": "2026-11-13T11:57:55.828Z",
+    "raw_excerpt": "ABl. Nr. 50 / 13. November 2026 3676 Gerichte Gerichte Aufgebote Amtsgericht Köpenick Aktenzeichen 71 II 11/26 Herr Frank Nitschke, Rinntaler Steig 4, 12559 Berlin, hat den Antrag auf Kraftloserklärung mehrerer abhandengekommener Urkunden bei Gericht eingereicht. Es handelt sich um den Grundschuldb",
+    "ai_summary": "ABl. Nr. 50 / 13. November 2026 3676 Gerichte Gerichte Aufgebote Amtsgericht Köpenick Aktenzeichen 71 II 11/26 Herr Frank Nitschke, Rinntaler Steig 4, 12559 Berlin, hat den Antrag auf Kraftloserklärung mehrerer abhandengekommener Urkunden bei Gericht eingereicht. Es handelt sich um den Grundschuldb",
+    "tags": [
+      "politik",
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 80).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521",
+    "pdf_page": 80,
+    "pdf_excerpt": "ABl. Nr. 50 / 13. November 2026 3676 Gerichte Gerichte Aufgebote Amtsgericht Köpenick Aktenzeichen 71 II 11/26 Herr Frank Nitschke, Rinntaler Steig 4, 12559 Berlin, hat den Antrag auf Kraftloserklärung mehrerer abhandengekommener Urkunden bei Gericht eingereicht. Es handelt sich um den Grundschuldb",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "12f3228401a16b40",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521#page=81",
+    "title": "ABl. Nr. 50 / 13. November 2026 \t3677",
+    "published_at": "2026-11-13T11:57:55.828Z",
+    "ingested_at": "2026-11-13T11:57:55.828Z",
+    "raw_excerpt": "ABl. Nr. 50 / 13. November 2026 3677 Gerichte Amtsgericht Köpenick Aktenzeichen 71 II 07/26 Der Grundschuldbrief, Gruppe 02, Briefnummer 16959377, über die im Grundbuch des Amtsgerichts Köpenick, Gemarkung Treptow, Blatt 15671N, in Abteilung III Nummer 4 eingetragene Grundschuld zu 105 000 Euro 15",
+    "ai_summary": "ABl. Nr. 50 / 13. November 2026 3677 Gerichte Amtsgericht Köpenick Aktenzeichen 71 II 07/26 Der Grundschuldbrief, Gruppe 02, Briefnummer 16959377, über die im Grundbuch des Amtsgerichts Köpenick, Gemarkung Treptow, Blatt 15671N, in Abteilung III Nummer 4 eingetragene Grundschuld zu 105 000 Euro 15",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Bahnhof Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 81).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521",
+    "pdf_page": 81,
+    "pdf_excerpt": "ABl. Nr. 50 / 13. November 2026 3677 Gerichte Amtsgericht Köpenick Aktenzeichen 71 II 07/26 Der Grundschuldbrief, Gruppe 02, Briefnummer 16959377, über die im Grundbuch des Amtsgerichts Köpenick, Gemarkung Treptow, Blatt 15671N, in Abteilung III Nummer 4 eingetragene Grundschuld zu 105 000 Euro 15",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_50_3597_3680_online.pdf?ts=1794559521"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4582123,
+    "lng": 13.5823726,
+    "is_mock": false
+  },
+  {
+    "id": "9830d6dd4d9f95cd",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1739060.php",
+    "title": "Neue Spielgeräte für den Kinderspielplatz Philipp-Jacob-Rauch-Straße 64 in Müggelheim",
+    "published_at": "2026-11-13T11:50:00.000Z",
+    "ingested_at": "2026-11-13T11:57:49.148Z",
+    "raw_excerpt": "Die Arbeiten beginnen voraussichtlich bereits in der 47. KW 2026 (16. bis 22. November 2026) Das Straßen- und Grünflächenamt tauscht die alten, in die Jahre gekommenen Spielgeräte auf diesem Spielplatz komplett gegen neue aus und erweitert dabei zusätzlich das Spielangebot. Für die Ausführung der Arbeiten muss der Spielplatz aus Sicherheitsgründen mit einem stabilen Bauzaun eingezäunt werden und ist nicht nutzbar.",
+    "ai_summary": "Die Arbeiten beginnen voraussichtlich bereits in der 47. KW 2026 (16. bis 22. November 2026) Das Straßen- und Grünflächenamt tauscht die alten, in die Jahre gekommenen Spielgeräte auf diesem Spielplatz komplett gegen neue aus und erweitert dabei zusätzlich das Spielangebot. Für die Ausführung der Arbeiten muss der Spielplatz aus Sicherheitsgründen mit einem stabilen Bauzaun eingezäunt werden und ist nicht nutzbar.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1739060.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Müggelheim",
+    "addresses": [
+      "Rauch-Straße 64"
+    ],
+    "street": "Rauch-Straße",
+    "geocode_precision": "address",
+    "lat": 52.4153263,
+    "lng": 13.6497516,
+    "is_mock": false
+  },
+  {
+    "id": "af2b540cafb551fe",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738969.php",
+    "title": "Wenn Clowns grau werden: BULABAN bringt Humor und Fantasie nach Treptow-Köpenick",
+    "published_at": "2026-11-13T09:22:00.000Z",
+    "ingested_at": "2026-11-13T11:57:49.149Z",
+    "raw_excerpt": "Das Bezirksamt möchte auf die Pressemitteilung vom ABC-Hirschgarten aufmerksam machen: Zeit: Donnerstag, 10. Dezember 2026, 10 Uhr und Samstag, 12. Dezember, 16 Uhr Ort: ABC Hirschgarten – Saal, Hirschgartenstraße 14, 12555 Berlin Jeder weiß, dass Clowns niemals so handeln, wie es von ihnen erwartet wird: Aus Gehen wird Stürzen, Sitzen sieht aus wie Tanzen, ihr Essen ist lebendig und macht eine Sauerei …",
+    "ai_summary": "Das Bezirksamt möchte auf die Pressemitteilung vom ABC-Hirschgarten aufmerksam machen: Zeit: Donnerstag, 10. Dezember 2026, 10 Uhr und Samstag, 12. Dezember, 16 Uhr Ort: ABC Hirschgarten – Saal, Hirschgartenstraße 14, 12555 Berlin Jeder weiß, dass Clowns niemals so handeln, wie es von ihnen erwartet wird: Aus Gehen wird Stürzen, Sitzen sieht aus wie Tanzen, ihr Essen ist lebendig und macht eine Sauerei …",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738969.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Hirschgartenstraße 14"
+    ],
+    "street": "Hirschgartenstraße",
+    "geocode_precision": "address",
+    "lat": 52.4559155,
+    "lng": 13.5970528,
+    "is_mock": false
+  },
+  {
+    "id": "5f95be3190dec0e7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738966.php",
+    "title": "Chanukka gemeinsam feiern: Jüdisches Lichterfest in der Alten Schule Adlershof",
+    "published_at": "2026-11-13T08:25:00.000Z",
+    "ingested_at": "2026-11-13T11:57:49.149Z",
+    "raw_excerpt": "Ein Nachmittag mit Kreativität, Musik und Begegnung – offen für Menschen aller Religionen und Weltanschauungen Veranstaltungsinformationen * Datum: Sonntag, 6. Dezember 2026 * Zeit: 14 bis 18 Uhr * Ort: Kulturzentrum Alte Schule Adlershof, Dörpfeldstraße 54, 12489 Berlin * Eintritt:",
+    "ai_summary": "Ein Nachmittag mit Kreativität, Musik und Begegnung – offen für Menschen aller Religionen und Weltanschauungen Veranstaltungsinformationen * Datum: Sonntag, 6. Dezember 2026 * Zeit: 14 bis 18 Uhr * Ort: Kulturzentrum Alte Schule Adlershof, Dörpfeldstraße 54, 12489 Berlin * Eintritt:",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738966.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Dörpfeldstraße 54"
+    ],
+    "street": "Dörpfeldstraße",
+    "geocode_precision": "address",
+    "lat": 52.4388584,
+    "lng": 13.5498617,
+    "is_mock": false
+  },
+  {
+    "id": "6a9faf753538cecc",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1712872.php",
+    "title": "Festnahmen nach versuchtem Totschlag – Sieben Personen in Untersuchungshaft",
+    "published_at": "2026-11-12T14:45:00.000Z",
+    "ingested_at": "2026-11-13T11:57:46.807Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Treptow-Köpenick",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Meldung nennt Treptow-Köpenick oder einen Ort im Köpenicker Kerngebiet.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1712872.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "f5fc444b955bd17c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738582.php",
+    "title": "Besser Radfahren über die Landesgrenze: Grünauer Weg nach Pflasterbearbeitung wird eingeweiht",
+    "published_at": "2026-11-12T11:48:00.000Z",
+    "ingested_at": "2026-11-13T11:57:49.149Z",
+    "raw_excerpt": "Zeit: 20. November 2026, um 13 Uhr Ort: Grünauer Weg im Ortsteil Schmöckwitz Bezirk Treptow-Köpenick und Gemeinde Eichwalde weihen verbesserte Radwegeverbindung gemeinsam ein Der Grünauer Weg in Schmöckwitz ist auf einem rund 350 Meter langen Abschnitt erfolgreich mit dem Verfahren „Precision Grinding“ bearbeitet worden. Das Kopfsteinpflaster wurde abgeschliffen und geglättet, sodass eine deutlich besser befahrbare Oberfläche für Radfahrende entstanden ist.",
+    "ai_summary": "Zeit: 20. November 2026, um 13 Uhr Ort: Grünauer Weg im Ortsteil Schmöckwitz Bezirk Treptow-Köpenick und Gemeinde Eichwalde weihen verbesserte Radwegeverbindung gemeinsam ein Der Grünauer Weg in Schmöckwitz ist auf einem rund 350 Meter langen Abschnitt erfolgreich mit dem Verfahren „Precision Grinding“ bearbeitet worden. Das Kopfsteinpflaster wurde abgeschliffen und geglättet, sodass eine deutlich besser befahrbare Oberfläche für Radfahrende entstanden ist.",
+    "tags": [
+      "verwaltung",
+      "verkehr"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1738582.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Grünau",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "db982430185be0e7",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -31,7 +285,8 @@
     "geocode_precision": "area",
     "lat": 52.4466938,
     "lng": 13.5769665,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "78a92d36a40ee44d",
@@ -69,7 +324,8 @@
     "geocode_precision": "address",
     "lat": 52.4682737,
     "lng": 13.4853258,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "4575473c487d8972",
@@ -105,7 +361,8 @@
     "geocode_precision": "address",
     "lat": 52.4684559,
     "lng": 13.4942225,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "6fab69d42b80f3e4",
@@ -139,7 +396,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "1ab083b13c0299ac",
@@ -170,7 +428,8 @@
     "alias_ids": [],
     "district": "Johannisthal",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "95e1dbf28beae2ef",
@@ -205,7 +464,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "3cfa53b9a6078ddf",
@@ -535,7 +795,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.814Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -576,7 +836,7 @@
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.814Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -614,7 +874,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.339Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Rathaus Treptow, BVV-Saal",
     "source_refs": [
       {
@@ -651,7 +911,7 @@
     "event_start_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.339Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Kulturhaus baumschulenweg",
     "source_refs": [
       {
@@ -691,7 +951,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.339Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -732,7 +992,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.339Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -770,7 +1030,7 @@
     "event_end_at": "2026-11-16T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:44:00.337Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -811,7 +1071,7 @@
     "event_end_at": "2026-11-14T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:59.858Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -850,7 +1110,7 @@
     "event_end_at": "2026-11-13T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-12T12:20:39.024Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1602,7 +1862,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-12T12:20:39.024Z"
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "8557bba42bb4483a",
@@ -1636,7 +1896,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-12T12:20:39.024Z"
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "1aa584c56717712b",
@@ -1898,7 +2158,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-12T12:20:39.024Z"
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "38d657145f7c79a2",
@@ -1935,7 +2195,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-12T12:20:39.024Z"
+    "last_seen_at": "2026-11-13T11:57:46.053Z"
   },
   {
     "id": "6a4602bb8f7a3dee",
@@ -2709,7 +2969,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2751,7 +3011,7 @@
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2791,7 +3051,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2833,7 +3093,7 @@
     "event_start_at": "2026-11-18T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2875,7 +3135,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2917,7 +3177,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2957,7 +3217,7 @@
     "event_start_at": "2026-11-16T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2999,7 +3259,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3041,7 +3301,7 @@
     "event_start_at": "2026-11-17T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3082,7 +3342,7 @@
     "event_start_at": "2026-11-15T12:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-13T11:57:46.053Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
