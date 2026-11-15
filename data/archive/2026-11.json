@@ -1,5 +1,119 @@
 [
   {
+    "id": "d79c53b185cde289",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298262&ls=40&c=13&date_start=15.11.2026",
+    "title": "Ein Mann, ein Stück! – Frankes Lese-Theater Nr. 3: LYSISTRATA, eine Komödie von Aristophanes",
+    "published_at": "2026-11-15T11:48:48.972Z",
+    "ingested_at": "2026-11-15T11:48:48.972Z",
+    "raw_excerpt": "Holger Franke Ein Mann, ein Stück! – Frankes Lese-Theater Nr. 3: LYSISTRATA, eine Komödie von Aristophanes Lesungen, Vorträge Termin: 21.11.2026 19:00 Uhr Veranstaltungsort: KungerKiez Theater (Im Treptower Park Center/ 1. OG) in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 19:00 in KungerKiez Theater (Im Treptower Park Center/ 1. OG).",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-15T11:48:48.972Z",
+    "venue": "KungerKiez Theater (Im Treptower Park Center/ 1. OG)",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298262"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "7b8f9c987527ac69",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298256&ls=40&c=13&date_start=15.11.2026",
+    "title": "Ein Mann, ein Stück! – Frankes Lese-Theater Nr. 3: LYSISTRATA, eine Komödie von Aristophanes",
+    "published_at": "2026-11-15T11:48:48.972Z",
+    "ingested_at": "2026-11-15T11:48:48.973Z",
+    "raw_excerpt": "Kungerkiezinitiative e.V. Ein Mann, ein Stück! – Frankes Lese-Theater Nr. 3: LYSISTRATA, eine Komödie von Aristophanes Lesungen, Vorträge Bühnen, Filme Tanz, Theater Termin: 21.11.2026 19:00 Uhr Veranstaltungsort: KungerKiezTheater in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 19:00 in KungerKiezTheater.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-15T11:48:48.972Z",
+    "venue": "KungerKiezTheater",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298256"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "64b8662d0c61fa32",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298076&ls=40&c=13&date_start=15.11.2026",
+    "title": "Trickfilm-Workshop für Kinder im Museum Treptow am 21.11.2026",
+    "published_at": "2026-11-15T11:48:48.971Z",
+    "ingested_at": "2026-11-15T11:48:48.971Z",
+    "raw_excerpt": "Museen Treptow-Köpenick, Gestaltung: Claudia Bachmann Trickfilm-Workshop für Kinder im Museum Treptow am 21.11.2026 Kinder, Jugendliche Termin: 21.11.2026 14:00 - 18:00 Uhr Veranstaltungsort: Museum Treptow in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 21. November um 14:00 in Museum Treptow.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-21T13:00:00.000Z",
+    "event_end_at": "2026-11-21T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-15T11:48:48.971Z",
+    "venue": "Museum Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298076"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4434519,
+    "lng": 13.5022281,
+    "is_mock": false
+  },
+  {
     "id": "2813fdd498f1033d",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -24,7 +138,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:06.406Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -61,7 +175,7 @@
     "event_start_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:06.404Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Köpenick & Altstadt Köpenick",
     "source_refs": [
       {
@@ -102,7 +216,7 @@
     "event_end_at": "2026-11-20T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:06.403Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -187,7 +301,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "bac4930433527794",
@@ -223,7 +338,8 @@
     ],
     "street": "Beutelweg",
     "geocode_precision": "address",
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "efac072e011fd11d",
@@ -338,7 +454,7 @@
     "lat": 52.4153263,
     "lng": 13.6497516,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "af2b540cafb551fe",
@@ -376,7 +492,7 @@
     "lat": 52.4559155,
     "lng": 13.5970528,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "5f95be3190dec0e7",
@@ -415,7 +531,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "6a9faf753538cecc",
@@ -449,7 +565,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "f5fc444b955bd17c",
@@ -484,7 +600,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "db982430185be0e7",
@@ -519,7 +635,7 @@
     "lat": 52.4466938,
     "lng": 13.5769665,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "78a92d36a40ee44d",
@@ -558,7 +674,7 @@
     "lat": 52.4682737,
     "lng": 13.4853258,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "4575473c487d8972",
@@ -595,7 +711,7 @@
     "lat": 52.4684559,
     "lng": 13.4942225,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "6fab69d42b80f3e4",
@@ -630,7 +746,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "1ab083b13c0299ac",
@@ -662,7 +778,7 @@
     "district": "Johannisthal",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "95e1dbf28beae2ef",
@@ -832,7 +948,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -872,7 +988,7 @@
     "event_start_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "FEZ Berlin, Kinder-, Jugend- und Familienzentrum",
     "source_refs": [
       {
@@ -909,7 +1025,7 @@
     "event_start_at": "2026-11-19T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -949,7 +1065,7 @@
     "event_end_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -990,7 +1106,7 @@
     "event_end_at": "2026-11-19T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1028,7 +1144,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -1069,7 +1185,7 @@
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1107,7 +1223,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow, BVV-Saal",
     "source_refs": [
       {
@@ -1144,7 +1260,7 @@
     "event_start_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturhaus baumschulenweg",
     "source_refs": [
       {
@@ -1184,7 +1300,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -1225,7 +1341,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1263,7 +1379,7 @@
     "event_end_at": "2026-11-16T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -1674,7 +1790,7 @@
     "event_start_at": "2026-11-22T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-10T12:18:06.406Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1714,7 +1830,7 @@
     "event_end_at": "2026-11-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-10T12:18:06.406Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1754,7 +1870,7 @@
     "event_end_at": "2026-11-20T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2095,7 +2211,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "8557bba42bb4483a",
@@ -2129,7 +2245,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-14T11:16:03.707Z"
+    "last_seen_at": "2026-11-15T11:48:45.720Z"
   },
   {
     "id": "1aa584c56717712b",
@@ -2155,7 +2271,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2195,7 +2311,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2235,7 +2351,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-10T12:18:03.665Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2454,7 +2570,7 @@
     "event_end_at": "2026-11-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2492,7 +2608,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2532,7 +2648,7 @@
     "event_start_at": "2026-11-21T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2572,7 +2688,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2612,7 +2728,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2652,7 +2768,7 @@
     "event_start_at": "2026-11-20T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2879,7 +2995,7 @@
     "event_end_at": "2026-11-19T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2919,7 +3035,7 @@
     "event_end_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2961,7 +3077,7 @@
     "event_end_at": "2026-11-19T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-11T11:43:58.079Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3002,7 +3118,7 @@
     "event_start_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -3042,7 +3158,7 @@
     "event_start_at": "2026-11-19T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3160,7 +3276,7 @@
     "event_start_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Gedenkstätte „Köpenicker Blutwoche“",
     "source_refs": [
       {
@@ -3202,7 +3318,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3244,7 +3360,7 @@
     "event_end_at": "2026-11-18T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3284,7 +3400,7 @@
     "event_end_at": "2026-11-18T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3326,7 +3442,7 @@
     "event_start_at": "2026-11-18T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3368,7 +3484,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3410,7 +3526,7 @@
     "event_end_at": "2026-11-17T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3450,7 +3566,7 @@
     "event_start_at": "2026-11-16T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3492,7 +3608,7 @@
     "event_end_at": "2026-11-17T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3534,7 +3650,7 @@
     "event_start_at": "2026-11-17T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3575,7 +3691,7 @@
     "event_start_at": "2026-11-15T12:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-14T11:16:03.707Z",
+    "last_seen_at": "2026-11-15T11:48:45.720Z",
     "venue": "Sowjetisches Ehrenmal Treptow",
     "source_refs": [
       {
