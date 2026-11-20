@@ -1,5 +1,590 @@
 [
   {
+    "id": "f98d75832266ed56",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=293752&ls=40&c=13&date_start=20.11.2026",
+    "title": "Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken",
+    "published_at": "2026-11-20T12:37:10.857Z",
+    "ingested_at": "2026-11-20T12:37:10.857Z",
+    "raw_excerpt": "Dokumentationszentrum NS-Zwangsarbeit Wie erinnern wir? Wie erinnerst du? | Eine Ausstellung über Wandel und Bedeutung von Gedenken Ausstellungen Termin: 27.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T09:00:00.000Z",
+    "event_end_at": "2026-11-27T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.857Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=293752"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "efe0e0b17eeb5e5b",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=296735&ls=40&c=13&date_start=20.11.2026",
+    "title": "„Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal",
+    "published_at": "2026-11-20T12:37:10.857Z",
+    "ingested_at": "2026-11-20T12:37:10.857Z",
+    "raw_excerpt": "CCB Fotoclub Berlin Treptow / Montage Pressestelle TK „Bilder des Jahres 2026“ - CCB Fotoclub zeigt fotografische Vielfalt in der Galerie Johannisthal Ausstellungen Termin: 27.11.2026 12:00 - 17:00 Uhr Veranstaltungsort: Galerie Rathaus Johannisthal in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 12:00 in Galerie Rathaus Johannisthal.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T11:00:00.000Z",
+    "event_end_at": "2026-11-27T16:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.857Z",
+    "venue": "Galerie Rathaus Johannisthal",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=296735"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Johannisthal",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "f618507e6580370d",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298874&ls=40&c=13&date_start=20.11.2026",
+    "title": "Junge Bühne - KungerKiezTheater präsentiert: \"Elysion – auf der Suche nach dem Ich\"",
+    "published_at": "2026-11-20T12:37:10.857Z",
+    "ingested_at": "2026-11-20T12:37:10.858Z",
+    "raw_excerpt": "Michael Reinhold Schmitz Junge Bühne - KungerKiezTheater präsentiert: \"Elysion – auf der Suche nach dem Ich\" Tanz, Theater Termin: 27.11.2026 19:00 Uhr Veranstaltungsort: KungerKiez Theater (Im Treptower Park Center/ 1. OG) in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 19:00 in KungerKiez Theater (Im Treptower Park Center/ 1. OG).",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.857Z",
+    "venue": "KungerKiez Theater (Im Treptower Park Center/ 1. OG)",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298874"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "92dbc0138148ff65",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298973&ls=40&c=13&date_start=20.11.2026",
+    "title": "Ausstellungseröffnung „Guck mal auf den Stadtplan Berlin rechts unten“ in der Galerie Adlershof",
+    "published_at": "2026-11-20T12:37:10.857Z",
+    "ingested_at": "2026-11-20T12:37:10.857Z",
+    "raw_excerpt": "Benjamin Friedl Ausstellungseröffnung „Guck mal auf den Stadtplan Berlin rechts unten“ in der Galerie Adlershof Ausstellungen Termin: 27.11.2026 19:00 Uhr Veranstaltungsort: Galerie Adlershof im Kulturzentrum Alte Schule in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 19:00 in Galerie Adlershof im Kulturzentrum Alte Schule.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.857Z",
+    "venue": "Galerie Adlershof im Kulturzentrum Alte Schule",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298973"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "is_mock": false
+  },
+  {
+    "id": "14ed1f7daddad74c",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=292876&ls=40&c=13&date_start=20.11.2026",
+    "title": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt",
+    "published_at": "2026-11-20T12:37:10.856Z",
+    "ingested_at": "2026-11-20T12:37:10.856Z",
+    "raw_excerpt": "„Vielfalt sichtbar machen“: Ausstellung über Frauen und queere Personen im Ehrenamt Ausstellungen Frauen Kunst, Kultur Termin: 27.11.2026 08:00 Uhr Veranstaltungsort: Rathaus Treptow in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 08:00 in Rathaus Treptow.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung",
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T07:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.856Z",
+    "venue": "Rathaus Treptow",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=292876"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4830803,
+    "lng": 13.4809153,
+    "is_mock": false
+  },
+  {
+    "id": "78134f289086eedd",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298052&ls=40&c=13&date_start=20.11.2026",
+    "title": "Workshop: Wie die Bilder laufen lernen",
+    "published_at": "2026-11-20T12:37:10.856Z",
+    "ingested_at": "2026-11-20T12:37:10.856Z",
+    "raw_excerpt": "Kulturhaus Baumschulenweg Workshop: Wie die Bilder laufen lernen Kunst, Kultur Bildung, Schule Infoveranstaltungen Termin: 27.11.2026 09:00 - 13:00 Uhr Veranstaltungsort: Kulturhaus baumschulenweg in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 09:00 in Kulturhaus baumschulenweg.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T08:00:00.000Z",
+    "event_end_at": "2026-11-27T12:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.856Z",
+    "venue": "Kulturhaus baumschulenweg",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298052"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.465534,
+    "lng": 13.4893339,
+    "is_mock": false
+  },
+  {
+    "id": "cdad4b3261b25b9a",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=295565&ls=40&c=13&date_start=20.11.2026",
+    "title": "Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen",
+    "published_at": "2026-11-20T12:37:10.856Z",
+    "ingested_at": "2026-11-20T12:37:10.856Z",
+    "raw_excerpt": "dznsza Eine andere Italienische Reise. Der Zweite Weltkrieg in Italien: Orte, Geschichte und Erinnerungen Ausstellungen Termin: 27.11.2026 10:00 - 18:00 Uhr Veranstaltungsort: Dokumentationszentrum NS-Zwangsarbeit in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 27. November um 10:00 in Dokumentationszentrum NS-Zwangsarbeit.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-27T09:00:00.000Z",
+    "event_end_at": "2026-11-27T17:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.856Z",
+    "venue": "Dokumentationszentrum NS-Zwangsarbeit",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=295565"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4526094,
+    "lng": 13.5187979,
+    "is_mock": false
+  },
+  {
+    "id": "06965b57a3241f8f",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298211&ls=40&c=13&date_start=20.11.2026",
+    "title": "Lesung mit Jana Heinicke: Muttergefühle am 26. November 2026 in der Stadtteilbibliothek Friedrichshagen",
+    "published_at": "2026-11-20T12:37:10.855Z",
+    "ingested_at": "2026-11-20T12:37:10.855Z",
+    "raw_excerpt": "BA-TK Lesung mit Jana Heinicke: Muttergefühle am 26. November 2026 in der Stadtteilbibliothek Friedrichshagen Lesungen, Vorträge Termin: 26.11.2026 19:00 Uhr Veranstaltungsort: Stadtteilbibliothek Friedrichshagen in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 26. November um 19:00 in Stadtteilbibliothek Friedrichshagen.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-26T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.855Z",
+    "venue": "Stadtteilbibliothek Friedrichshagen",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298211"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Friedrichshagen",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4548013,
+    "lng": 13.6214013,
+    "is_mock": false
+  },
+  {
+    "id": "8df388b7de184a1e",
+    "source_id": "berlin-events",
+    "source": "Berlin.de Veranstaltungskalender",
+    "source_url": "https://www.berlin.de/land/kalender/index.php?detail=298064&ls=40&c=13&date_start=20.11.2026",
+    "title": "Reisevortrag - Hans Neumann: Mit dem Fahrrad durch Kanada",
+    "published_at": "2026-11-20T12:37:10.855Z",
+    "ingested_at": "2026-11-20T12:37:10.855Z",
+    "raw_excerpt": "Kulturküche Bohnsdorf Reisevortrag - Hans Neumann: Mit dem Fahrrad durch Kanada Lesungen, Vorträge Freizeit, Sport Termin: 26.11.2026 19:00 Uhr Veranstaltungsort: Kulturküche Bohnsdorf in Treptow-Köpenick ",
+    "ai_summary": "Veranstaltung am 26. November um 19:00 in Kulturküche Bohnsdorf.",
+    "summary_origin": "fallback",
+    "tags": [
+      "veranstaltung",
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Veranstaltung im Bezirk Treptow-Köpenick.",
+    "event_start_at": "2026-11-26T18:00:00.000Z",
+    "event_date_precision": "time",
+    "event_date_origin": "source",
+    "last_seen_at": "2026-11-20T12:37:10.855Z",
+    "venue": "Kulturküche Bohnsdorf",
+    "source_refs": [
+      {
+        "name": "Berlin.de Veranstaltungskalender",
+        "url": "https://www.berlin.de/land/kalender/index.php?c=13&detail=298064"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Bohnsdorf",
+    "addresses": [],
+    "geocode_precision": "venue",
+    "lat": 52.4015333,
+    "lng": 13.5704821,
+    "is_mock": false
+  },
+  {
+    "id": "987063fb8265518a",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741965.php",
+    "title": "Treptow-Köpenick beteiligt sich an Wunschbaum-Aktion für mehr Zusammenhalt",
+    "published_at": "2026-11-20T12:30:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.967Z",
+    "raw_excerpt": "Zeit: 24.11.2026 – 11.12.2026 Orte: * Rathaus Köpenick, Hauptmann-Ausstellung, Alt-Köpenick 21, 12555 Berlin sowie * Rathaus Treptow, Foyer, Neue Krugallee 4, 12435 Berlin Der Bezirk Treptow-Köpenick steht bereit, über 300 Sterne an Kinder und Jugendliche zu verteilen. Mit der Wunschbaumaktion 2026 des Vereins „Schenk doch mal ein Lächeln e.V.“ soll sozialbenachteiligten Kindern eine große Freude bereitet werden.",
+    "ai_summary": "Zeit: 24.11.2026 – 11.12.2026 Orte: * Rathaus Köpenick, Hauptmann-Ausstellung, Alt-Köpenick 21, 12555 Berlin sowie * Rathaus Treptow, Foyer, Neue Krugallee 4, 12435 Berlin Der Bezirk Treptow-Köpenick steht bereit, über 300 Sterne an Kinder und Jugendliche zu verteilen. Mit der Wunschbaumaktion 2026 des Vereins „Schenk doch mal ein Lächeln e.V.“ soll sozialbenachteiligten Kindern eine große Freude bereitet werden.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Bahnhof Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741965.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Altstadt Köpenick",
+    "addresses": [
+      "Krugallee 4"
+    ],
+    "street": "Krugallee",
+    "geocode_precision": "address",
+    "lat": 52.4684559,
+    "lng": 13.4942225,
+    "is_mock": false
+  },
+  {
+    "id": "b2ca825e441330ce",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741555.php",
+    "title": "Allende-Viertel: Dritter Kiez-Weihnachtsmarkt im Seniorenheim",
+    "published_at": "2026-11-20T08:51:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.968Z",
+    "raw_excerpt": "Zeit: 4. Dezember 2026, 15:00 bis 16:00 Uhr Ort: Seniorenheim Müggelschlößchenweg, Müggelschlößchenweg 46, 12559 Berlin Am Freitag, den 4. Dezember 2026, findet von 15:00 bis 19:00 Uhr zum dritten Mal der Kiez-Weihnachtsmarkt im Seniorenheim Müggelschlößchenweg 46 in Berlin-Köpenick statt.",
+    "ai_summary": "Zeit: 4. Dezember 2026, 15:00 bis 16:00 Uhr Ort: Seniorenheim Müggelschlößchenweg, Müggelschlößchenweg 46, 12559 Berlin Am Freitag, den 4. Dezember 2026, findet von 15:00 bis 19:00 Uhr zum dritten Mal der Kiez-Weihnachtsmarkt im Seniorenheim Müggelschlößchenweg 46 in Berlin-Köpenick statt.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741555.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [
+      "Müggelschlößchenweg 46"
+    ],
+    "street": "Müggelschlößchenweg",
+    "geocode_precision": "address",
+    "lat": 52.440096,
+    "lng": 13.60238,
+    "is_mock": false
+  },
+  {
+    "id": "ec6c32a8c7b19a7b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741693.php",
+    "title": "Gründung des Frauenbeirates: Engagierte Mitstreiterinnen gesucht!",
+    "published_at": "2026-11-20T08:39:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.968Z",
+    "raw_excerpt": "Bewerbungen zur aktiven Mitarbeit sind bis zum 31. Dezember 2026 möglich In Treptow-Köpenick wird erstmal ein Frauenbeirat berufen. Für den Beirat werden Frauen gesucht, die ihre Perspektive in die Gestaltung des Bezirks einbringen möchten. Der Frauenbeirat berät Bezirksamt und Bezirksverordnetenversammlung zu allem, was Frauen im Bezirk betrifft. Er zeigt auf, wo Frauen benachteiligt werden, macht Vorschläge für Verbesserungen und kann eigene Anträge und Stellungnahmen einbringen.",
+    "ai_summary": "Bewerbungen zur aktiven Mitarbeit sind bis zum 31. Dezember 2026 möglich In Treptow-Köpenick wird erstmal ein Frauenbeirat berufen. Für den Beirat werden Frauen gesucht, die ihre Perspektive in die Gestaltung des Bezirks einbringen möchten. Der Frauenbeirat berät Bezirksamt und Bezirksverordnetenversammlung zu allem, was Frauen im Bezirk betrifft. Er zeigt auf, wo Frauen benachteiligt werden, macht Vorschläge für Verbesserungen und kann eigene Anträge und Stellungnahmen einbringen.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741693.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "16ffe4187ba5737c",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741576.php",
+    "title": "Vielfältiges Adventsprogramm im Allende-Viertel lädt zum Mitmachen ein",
+    "published_at": "2026-11-20T08:21:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.968Z",
+    "raw_excerpt": "Zeit: 24. November bis 26. Dezember 2026 Ort: Allende-Viertel, Berlin-Köpenick Auch in diesem Jahr finden im Allende-Viertel zahlreiche Veranstaltungen rund um die Adventszeit statt. Vom 24. November bis zum 26. Dezember erwartet die Bewohner*innen ein abwechslungsreiches Programm mit kreativen, kulturellen und gemeinschaftlichen Angeboten. Zahlreiche lokale Einrichtungen und Initiativen gestalten die Veranstaltungen.",
+    "ai_summary": "Zeit: 24. November bis 26. Dezember 2026 Ort: Allende-Viertel, Berlin-Köpenick Auch in diesem Jahr finden im Allende-Viertel zahlreiche Veranstaltungen rund um die Adventszeit statt. Vom 24. November bis zum 26. Dezember erwartet die Bewohner*innen ein abwechslungsreiches Programm mit kreativen, kulturellen und gemeinschaftlichen Angeboten. Zahlreiche lokale Einrichtungen und Initiativen gestalten die Veranstaltungen.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741576.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "d099b9609b8883d4",
+    "source_id": "polizei-berlin",
+    "source": "Polizei Berlin",
+    "source_url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1741570.php",
+    "title": "Raub im Supermarkt",
+    "published_at": "2026-11-19T15:52:00.000Z",
+    "ingested_at": "2026-11-20T12:37:08.630Z",
+    "raw_excerpt": "Ereignisort: Treptow-Köpenick",
+    "ai_summary": "Treptow-Köpenick",
+    "tags": [
+      "sicherheit"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.1,
+    "election_relevant": false,
+    "ai_reasoning": "Die Meldung nennt Treptow-Köpenick oder einen Ort im Köpenicker Kerngebiet.",
+    "source_refs": [
+      {
+        "name": "Polizei Berlin",
+        "url": "https://www.berlin.de/polizei/polizeimeldungen/2026/pressemitteilung.1741570.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "676a14c83b91c3d7",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741493.php",
+    "title": "Bildungsmesse in Altglienicke: Weiterführende Schulen stellen sich vor",
+    "published_at": "2026-11-19T13:55:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.968Z",
+    "raw_excerpt": "Zeit: 24. November, 16:30 bis 18:00 Uhr Ort: Grundschule am Pegasuseck, Mehrzweckraum, Pegasuseck 5, 12524 Berlin Am Dienstag, 24. November 2026, von 16:30 bis 18:00 Uhr findet im Mehrzweckraum der Schule am Pegasuseck eine Bildungsmesse zum Übergang von der Grundschule auf die weiterführende Schule statt. Mit dem Anne-Frank-Gymnasium, der Gemeinschaftsschule Adlershof, dem Medien-Campus Altglienicke (ehem.",
+    "ai_summary": "Zeit: 24. November, 16:30 bis 18:00 Uhr Ort: Grundschule am Pegasuseck, Mehrzweckraum, Pegasuseck 5, 12524 Berlin Am Dienstag, 24. November 2026, von 16:30 bis 18:00 Uhr findet im Mehrzweckraum der Schule am Pegasuseck eine Bildungsmesse zum Übergang von der Grundschule auf die weiterführende Schule statt. Mit dem Anne-Frank-Gymnasium, der Gemeinschaftsschule Adlershof, dem Medien-Campus Altglienicke (ehem.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741493.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "3f2363294874fa6b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741456.php",
+    "title": "Ausstellungseröffnung „Guck mal auf den Stadtplan Berlin rechts unten“ in der Galerie Adlershof",
+    "published_at": "2026-11-19T13:45:00.000Z",
+    "ingested_at": "2026-11-20T12:37:10.968Z",
+    "raw_excerpt": "Zum Jahresende widmet sich die Galerie Adlershof in einer großen internationalen Gruppenausstellung „Guck mal auf den Stadtplan Berlin rechts unten“ den in Treptow-Köpenick lebenden und arbeitenden Künstlerinnen und Künstlern. Die Arbeiten von Michael Augustinski, Stefka Ammon, Betty Böhm, Téa Boyarchuk, Benjamin Busch, Michele Caliari, Liz Crossley, Marita Czepa, Manaf Halbouni, Fabian Hesse &",
+    "ai_summary": "Zum Jahresende widmet sich die Galerie Adlershof in einer großen internationalen Gruppenausstellung „Guck mal auf den Stadtplan Berlin rechts unten“ den in Treptow-Köpenick lebenden und arbeitenden Künstlerinnen und Künstlern. Die Arbeiten von Michael Augustinski, Stefka Ammon, Betty Böhm, Téa Boyarchuk, Benjamin Busch, Michele Caliari, Liz Crossley, Marita Czepa, Manaf Halbouni, Fabian Hesse &",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1741456.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
     "id": "98023a9c9e88002b",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -23,7 +608,7 @@
     "event_end_at": "2026-11-26T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.793Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Mittelpunktbibliothek Treptow",
     "source_refs": [
       {
@@ -63,7 +648,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.792Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -103,7 +688,7 @@
     "event_end_at": "2026-11-26T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.792Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -141,7 +726,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.792Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -181,7 +766,7 @@
     "event_start_at": "2026-11-26T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.791Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -221,7 +806,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.791Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -261,7 +846,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.790Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -300,7 +885,7 @@
     "event_start_at": "2026-11-25T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:28.790Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -348,7 +933,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "8df3be1234b097fd",
@@ -380,7 +966,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "40498ea9ab250d7e",
@@ -406,7 +993,7 @@
     "event_end_at": "2026-11-25T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -444,7 +1031,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -484,7 +1071,7 @@
     "event_start_at": "2026-11-25T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -524,7 +1111,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -564,7 +1151,7 @@
     "event_end_at": "2026-11-24T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -604,7 +1191,7 @@
     "event_end_at": "2026-11-24T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -642,7 +1229,7 @@
     "event_end_at": "2026-11-24T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -682,7 +1269,7 @@
     "event_end_at": "2026-11-22T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -722,7 +1309,7 @@
     "event_end_at": "2026-11-24T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -771,7 +1358,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "2007531618581b30",
@@ -797,7 +1384,7 @@
     "event_end_at": "2026-11-23T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -843,7 +1430,7 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "d79c53b185cde289",
@@ -868,7 +1455,7 @@
     "event_start_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "KungerKiez Theater (Im Treptower Park Center/ 1. OG)",
     "source_refs": [
       {
@@ -905,7 +1492,7 @@
     "event_start_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -943,7 +1530,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -984,7 +1571,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1021,7 +1608,7 @@
     "event_start_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Köpenick & Altstadt Köpenick",
     "source_refs": [
       {
@@ -1062,7 +1649,7 @@
     "event_end_at": "2026-11-20T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1148,7 +1735,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "bac4930433527794",
@@ -1411,7 +1998,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-20T12:37:08.212Z"
   },
   {
     "id": "f5fc444b955bd17c",
@@ -1794,7 +2381,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2476,7 +3063,7 @@
     "event_start_at": "2026-11-23T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2516,7 +3103,7 @@
     "event_start_at": "2026-11-24T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2556,7 +3143,7 @@
     "event_end_at": "2026-11-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2596,7 +3183,7 @@
     "event_end_at": "2026-11-22T14:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2636,7 +3223,7 @@
     "event_start_at": "2026-11-22T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2676,7 +3263,7 @@
     "event_end_at": "2026-11-22T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2716,7 +3303,7 @@
     "event_end_at": "2026-11-20T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -3117,7 +3704,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-18T12:46:07.149Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3157,7 +3744,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3197,7 +3784,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3416,7 +4003,7 @@
     "event_end_at": "2026-11-20T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -3454,7 +4041,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3494,7 +4081,7 @@
     "event_start_at": "2026-11-21T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3534,7 +4121,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3574,7 +4161,7 @@
     "event_end_at": "2026-11-20T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3614,7 +4201,7 @@
     "event_start_at": "2026-11-20T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-19T12:37:24.932Z",
+    "last_seen_at": "2026-11-20T12:37:08.212Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {

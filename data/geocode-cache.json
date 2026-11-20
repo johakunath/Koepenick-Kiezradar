@@ -430,5 +430,13 @@
   "Rauch-Straße 64": {
     "lat": 52.4153263,
     "lng": 13.6497516
+  },
+  "Stadtteilbibliothek Friedrichshagen": {
+    "lat": 52.4548013,
+    "lng": 13.6214013
+  },
+  "Müggelschlößchenweg 46": {
+    "lat": 52.440096,
+    "lng": 13.60238
   }
 }
