@@ -1,5 +1,221 @@
 [
   {
+    "id": "21f8c8f717b2d323",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100#page=55",
+    "title": "Widmung von Straßenland",
+    "published_at": "2026-11-21T12:17:23.984Z",
+    "ingested_at": "2026-11-21T12:17:23.984Z",
+    "raw_excerpt": "Gesetz vom 25. Juni 2026 (GVBl. S. 486) geändert worden ist, werden folgende Flächen, als Teil der Bahnhofstraße, als öffentliches Straßenland gewidmet: Gemarkung Lichtenrade, Flur 1, Flurstück 2564 mit einer Größe von 146 m², gelegen an der Bahnhofstraße 32 und Flurstück 2566 mit einer Größe von 4",
+    "ai_summary": "Gesetz vom 25. Juni 2026 (GVBl. S. 486) geändert worden ist, werden folgende Flächen, als Teil der Bahnhofstraße, als öffentliches Straßenland gewidmet: Gemarkung Lichtenrade, Flur 1, Flurstück 2564 mit einer Größe von 146 m², gelegen an der Bahnhofstraße 32 und Flurstück 2566 mit einer Größe von 4",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 55).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100",
+    "pdf_page": 55,
+    "pdf_excerpt": "Gesetz vom 25. Juni 2026 (GVBl. S. 486) geändert worden ist, werden folgende Flächen, als Teil der Bahnhofstraße, als öffentliches Straßenland gewidmet: Gemarkung Lichtenrade, Flur 1, Flurstück 2564 mit einer Größe von 146 m², gelegen an der Bahnhofstraße 32 und Flurstück 2566 mit einer Größe von 4",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Bahnhofstraße 32"
+    ],
+    "street": "Bahnhofstraße",
+    "geocode_precision": "address",
+    "lat": 52.5208413,
+    "lng": 13.5558337,
+    "is_mock": false
+  },
+  {
+    "id": "009b9840046ead3b",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100#page=57",
+    "title": "ABl. Nr. 51 / 20. November 2026 \t3737",
+    "published_at": "2026-11-21T12:17:23.984Z",
+    "ingested_at": "2026-11-21T12:17:23.984Z",
+    "raw_excerpt": "Bezirksämter ABl. Nr. 51 / 20. November 2026 3737 I I I 3030 33 II 30 I II 29 32 Bahnhofstraße Pfarrer-Lütkehaus-Platz Steinstraße 2563 2687 2566 2562 2564 2565 2561 Geoinformation Berlin Kartenausschnitt Flurkarte Maßstab 1:500 Aktualität 25.06.2026 21:30 Uhr Bezirk Tempelhof-Schöneberg Fl",
+    "ai_summary": "Bezirksämter ABl. Nr. 51 / 20. November 2026 3737 I I I 3030 33 II 30 I II 29 32 Bahnhofstraße Pfarrer-Lütkehaus-Platz Steinstraße 2563 2687 2566 2562 2564 2565 2561 Geoinformation Berlin Kartenausschnitt Flurkarte Maßstab 1:500 Aktualität 25.06.2026 21:30 Uhr Bezirk Tempelhof-Schöneberg Fl",
+    "tags": [
+      "verkehr"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 57).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100",
+    "pdf_page": 57,
+    "pdf_excerpt": "Bezirksämter ABl. Nr. 51 / 20. November 2026 3737 I I I 3030 33 II 30 I II 29 32 Bahnhofstraße Pfarrer-Lütkehaus-Platz Steinstraße 2563 2687 2566 2562 2564 2565 2561 Geoinformation Berlin Kartenausschnitt Flurkarte Maßstab 1:500 Aktualität 25.06.2026 21:30 Uhr Bezirk Tempelhof-Schöneberg Fl",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [
+      "Steinstraße 2563"
+    ],
+    "street": "Steinstraße",
+    "geocode_precision": "address",
+    "lat": 52.5515069,
+    "lng": 13.4823779,
+    "is_mock": false
+  },
+  {
+    "id": "7e9a70e2f97e7a9e",
+    "source_id": "amtsblatt-berlin",
+    "source": "Amtsblatt für Berlin",
+    "source_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100#page=14",
+    "title": "ABl. Nr. 51 / 20. November 2026 \t3694",
+    "published_at": "2026-11-21T12:17:23.982Z",
+    "ingested_at": "2026-11-21T12:17:23.982Z",
+    "raw_excerpt": "s Spranger Senatorin für Inneres und Sport, Berlin (Vorsitzende) Oliver Igel Bezirksbürgermeister Treptow-Köpenick, (Stellvertretender Vorsitzender) Aziz Bozkurt Staatssekretär für Soziales, Berlin Tanja Mildenberger (bis 30.08.2025) Staatssekretärin für Finanzen, Berlin Thomas Härtel Präsident",
+    "ai_summary": "s Spranger Senatorin für Inneres und Sport, Berlin (Vorsitzende) Oliver Igel Bezirksbürgermeister Treptow-Köpenick, (Stellvertretender Vorsitzender) Aziz Bozkurt Staatssekretär für Soziales, Berlin Tanja Mildenberger (bis 30.08.2025) Staatssekretärin für Finanzen, Berlin Thomas Härtel Präsident",
+    "tags": [
+      "politik"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.75,
+    "political_relevance_score": 0.5,
+    "election_relevant": false,
+    "ai_reasoning": "Köpenick-Bezug im Amtsblatt für Berlin (Seite 14).",
+    "document_type": "pdf",
+    "document_url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100",
+    "pdf_page": 14,
+    "pdf_excerpt": "s Spranger Senatorin für Inneres und Sport, Berlin (Vorsitzende) Oliver Igel Bezirksbürgermeister Treptow-Köpenick, (Stellvertretender Vorsitzender) Aziz Bozkurt Staatssekretär für Soziales, Berlin Tanja Mildenberger (bis 30.08.2025) Staatssekretärin für Finanzen, Berlin Thomas Härtel Präsident",
+    "source_refs": [
+      {
+        "name": "Amtsblatt für Berlin",
+        "url": "https://www.berlin.de/landesverwaltungsamt/_assets/logistikservice/amtsblatt-fuer-berlin/abl_2026_51_3681_3756_online.pdf?ts=1795155100"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4450491,
+    "lng": 13.5754153,
+    "is_mock": false
+  },
+  {
+    "id": "8ae92f6c0fd5d100",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742081.php",
+    "title": "Köpenicker Salon: Weihnachtliche Klänge mit der Akkordeonistin Galyna Classe",
+    "published_at": "2026-11-20T14:53:00.000Z",
+    "ingested_at": "2026-11-21T12:17:14.319Z",
+    "raw_excerpt": "Zeit: 8. Dezember 2026, 18:30 Uhr Ort: Stadtteilzentrum des Rabenhaus e.V., Puchanstr. 9, 12555 Berlin Eintritt: 5 Euro Wenn draußen die Lichter funkeln und die Weihnachtszeit näher rückt, laden wir Sie zu einem ganz besonderen musikalischen Moment ein. Lassen Sie sich von den stimmungsvollen Klängen der Akkordeonistin Galyna Classe und ihrem E-Akkordeon verzaubern.",
+    "ai_summary": "Zeit: 8. Dezember 2026, 18:30 Uhr Ort: Stadtteilzentrum des Rabenhaus e.V., Puchanstr. 9, 12555 Berlin Eintritt: 5 Euro Wenn draußen die Lichter funkeln und die Weihnachtszeit näher rückt, laden wir Sie zu einem ganz besonderen musikalischen Moment ein. Lassen Sie sich von den stimmungsvollen Klängen der Akkordeonistin Galyna Classe und ihrem E-Akkordeon verzaubern.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742081.php"
+      }
+    ],
+    "alias_ids": [],
+    "addresses": [
+      "Puchanstr. 9"
+    ],
+    "street": "Puchanstr.",
+    "geocode_precision": "address",
+    "lat": 52.4546904,
+    "lng": 13.5793944,
+    "is_mock": false
+  },
+  {
+    "id": "14fc9d9fea3ff080",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742052.php",
+    "title": "Weihnachtshaus im Kulturzentrum Alte Schule Adlershof",
+    "published_at": "2026-11-20T14:10:00.000Z",
+    "ingested_at": "2026-11-21T12:17:14.320Z",
+    "raw_excerpt": "Zeit: 28. November 2026, 14:00 bis 19.00 Uhr. Ort: Kulturzentrum Alte Schule Adlershof Wir laden Sie herzlich ein, am Samstag, dem 28. November 2026, von 14:00 bis 19:00 Uhr das festliche Weihnachtshaus im Kulturzentrum Alte Schule Adlershof zu besuchen. Freuen Sie sich auf ein vielfältiges Programm für Groß und Klein – mit spannenden Beiträgen und stimmungsvollen Momenten.",
+    "ai_summary": "Zeit: 28. November 2026, 14:00 bis 19.00 Uhr. Ort: Kulturzentrum Alte Schule Adlershof Wir laden Sie herzlich ein, am Samstag, dem 28. November 2026, von 14:00 bis 19:00 Uhr das festliche Weihnachtshaus im Kulturzentrum Alte Schule Adlershof zu besuchen. Freuen Sie sich auf ein vielfältiges Programm für Groß und Klein – mit spannenden Beiträgen und stimmungsvollen Momenten.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742052.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
+    "id": "ba9cb8d17c7db867",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742021.php",
+    "title": "Treptow-Köpenick setzt ein starkes Zeichen gegen Gewalt an Frauen und Mädchen - Flaggenhissung am 25. November 2026 vor dem Rathaus Köpenick",
+    "published_at": "2026-11-20T13:14:00.000Z",
+    "ingested_at": "2026-11-21T12:17:14.320Z",
+    "raw_excerpt": "Im Monat November setzen zahlreiche Projekte, Beratungsstellen und das Bezirksamt Treptow-Köpenick unter dem Thema „Gemeinsam stark – Für ein Leben ohne Gewalt“ ein klares Zeichen gegen geschlechtsspezifische Gewalt und für Solidarität mit den Betroffenen. Bei vielfältigen Veranstaltungen wie Lesungen oder Workshops wird auf die Dringlichkeit des Themas aufmerksam gemacht. Am 25.",
+    "ai_summary": "Im Monat November setzen zahlreiche Projekte, Beratungsstellen und das Bezirksamt Treptow-Köpenick unter dem Thema „Gemeinsam stark – Für ein Leben ohne Gewalt“ ein klares Zeichen gegen geschlechtsspezifische Gewalt und für Solidarität mit den Betroffenen. Bei vielfältigen Veranstaltungen wie Lesungen oder Workshops wird auf die Dringlichkeit des Themas aufmerksam gemacht. Am 25.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Bahnhof Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742021.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "geocode_precision": "area",
+    "lat": 52.4582123,
+    "lng": 13.5823726,
+    "is_mock": false
+  },
+  {
     "id": "f98d75832266ed56",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -385,7 +601,8 @@
     "geocode_precision": "address",
     "lat": 52.4684559,
     "lng": 13.4942225,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "b2ca825e441330ce",
@@ -420,7 +637,8 @@
     "geocode_precision": "address",
     "lat": 52.440096,
     "lng": 13.60238,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "ec6c32a8c7b19a7b",
@@ -453,7 +671,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "16ffe4187ba5737c",
@@ -485,7 +704,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "d099b9609b8883d4",
@@ -518,7 +738,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "676a14c83b91c3d7",
@@ -549,7 +770,8 @@
     "alias_ids": [],
     "district": "Adlershof",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "3f2363294874fa6b",
@@ -582,7 +804,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "98023a9c9e88002b",
@@ -934,7 +1157,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "8df3be1234b097fd",
@@ -1455,7 +1678,7 @@
     "event_start_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "KungerKiez Theater (Im Treptower Park Center/ 1. OG)",
     "source_refs": [
       {
@@ -1492,7 +1715,7 @@
     "event_start_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "KungerKiezTheater",
     "source_refs": [
       {
@@ -1530,7 +1753,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Museum Treptow",
     "source_refs": [
       {
@@ -1571,7 +1794,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "galerie grünstraße /collegium artis e.V.",
     "source_refs": [
       {
@@ -1735,7 +1958,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "bac4930433527794",
@@ -1998,7 +2221,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-21T12:17:12.719Z"
   },
   {
     "id": "f5fc444b955bd17c",
@@ -3223,7 +3446,7 @@
     "event_start_at": "2026-11-22T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -3704,7 +3927,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3744,7 +3967,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -3784,7 +4007,7 @@
     "event_end_at": "2026-11-21T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -4041,7 +4264,7 @@
     "event_end_at": "2026-11-21T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -4081,7 +4304,7 @@
     "event_start_at": "2026-11-21T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-20T12:37:08.212Z",
+    "last_seen_at": "2026-11-21T12:17:12.719Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
