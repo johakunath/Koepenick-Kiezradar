@@ -1,5 +1,36 @@
 [
   {
+    "id": "34ac9d19d1a8400e",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742462.php",
+    "title": "Baumfällungen in der Woche vom 23. bis 27. November 2026",
+    "published_at": "2026-11-23T11:00:00.000Z",
+    "ingested_at": "2026-11-23T14:11:28.101Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1742462.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "7524784eaa627e82",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -710,7 +741,7 @@
     "lat": 52.5208413,
     "lng": 13.5558337,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "009b9840046ead3b",
@@ -751,7 +782,7 @@
     "lat": 52.5515069,
     "lng": 13.4823779,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "7e9a70e2f97e7a9e",
@@ -789,7 +820,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "8ae92f6c0fd5d100",
@@ -825,7 +856,7 @@
     "lat": 52.4546904,
     "lng": 13.5793944,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "14fc9d9fea3ff080",
@@ -857,7 +888,7 @@
     "district": "Adlershof",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "ba9cb8d17c7db867",
@@ -891,7 +922,7 @@
     "lat": 52.4582123,
     "lng": 13.5823726,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "f98d75832266ed56",
@@ -1280,7 +1311,7 @@
     "lat": 52.4684559,
     "lng": 13.4942225,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "b2ca825e441330ce",
@@ -1316,7 +1347,7 @@
     "lat": 52.440096,
     "lng": 13.60238,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "ec6c32a8c7b19a7b",
@@ -1350,7 +1381,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "16ffe4187ba5737c",
@@ -1383,7 +1414,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "d099b9609b8883d4",
@@ -1449,7 +1480,7 @@
     "district": "Adlershof",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "3f2363294874fa6b",
@@ -1483,7 +1514,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "98023a9c9e88002b",
@@ -1835,7 +1866,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-22T12:21:21.355Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "8df3be1234b097fd",
@@ -1868,7 +1899,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "40498ea9ab250d7e",
@@ -2187,6 +2218,36 @@
     "is_mock": false
   },
   {
+    "id": "f636de3d7eb7e8b8",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1740844.php",
+    "title": "Premiere im KungerKiezTheater - die Junge Bühne präsentiert: \"Elysion - auf der Suche nach dem Ich\"",
+    "published_at": "2026-11-18T11:00:00.000Z",
+    "ingested_at": "2026-11-23T14:11:28.103Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1740844.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "4779362ba74ee18c",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -2227,6 +2288,36 @@
     "is_mock": false
   },
   {
+    "id": "082838736ee0d317",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1740212.php",
+    "title": "KungerKiezTheater zeigt neue Weihnachtsproduktion für Kinder",
+    "published_at": "2026-11-17T11:00:00.000Z",
+    "ingested_at": "2026-11-23T14:11:28.103Z",
+    "raw_excerpt": "",
+    "ai_summary": "Offizielle Meldung des Bezirksamts Treptow-Köpenick. Details stehen in der Originalquelle.",
+    "tags": [
+      "verwaltung"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1740212.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "44be3d52b7ac12fa",
     "source_id": "bezirksamt-tk",
     "source": "Bezirksamt Treptow-Köpenick",
@@ -2259,7 +2350,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "2007531618581b30",
@@ -2331,7 +2422,7 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-20T12:37:08.212Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "d79c53b185cde289",
@@ -2673,7 +2764,7 @@
     "street": "Beutelweg",
     "geocode_precision": "address",
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "efac072e011fd11d",
@@ -2788,7 +2879,7 @@
     "lat": 52.4153263,
     "lng": 13.6497516,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "af2b540cafb551fe",
@@ -2826,7 +2917,7 @@
     "lat": 52.4559155,
     "lng": 13.5970528,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "5f95be3190dec0e7",
@@ -2865,7 +2956,7 @@
     "lat": 52.4388584,
     "lng": 13.5498617,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "6a9faf753538cecc",
@@ -2934,7 +3025,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "db982430185be0e7",
@@ -2969,7 +3060,7 @@
     "lat": 52.4466938,
     "lng": 13.5769665,
     "is_mock": false,
-    "last_seen_at": "2026-11-19T12:37:24.932Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "78a92d36a40ee44d",
@@ -3008,7 +3099,7 @@
     "lat": 52.4682737,
     "lng": 13.4853258,
     "is_mock": false,
-    "last_seen_at": "2026-11-18T12:46:07.149Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "4575473c487d8972",
@@ -3045,7 +3136,7 @@
     "lat": 52.4684559,
     "lng": 13.4942225,
     "is_mock": false,
-    "last_seen_at": "2026-11-18T12:46:07.149Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "6fab69d42b80f3e4",
@@ -3080,7 +3171,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-16T12:31:00.784Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "1ab083b13c0299ac",
@@ -3112,7 +3203,7 @@
     "district": "Johannisthal",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-15T11:48:45.720Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "95e1dbf28beae2ef",
@@ -3148,7 +3239,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-13T11:57:46.053Z"
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "3cfa53b9a6078ddf",
@@ -3186,7 +3277,8 @@
     "geocode_precision": "address",
     "lat": 52.4601527,
     "lng": 13.4804661,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "afb6b391062c4744",
@@ -3223,7 +3315,8 @@
     "geocode_precision": "address",
     "lat": 52.4548452,
     "lng": 13.6214007,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "9cb739d8b201d525",
@@ -3256,7 +3349,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-23T14:11:26.457Z"
   },
   {
     "id": "4929435e88a8b9b6",
