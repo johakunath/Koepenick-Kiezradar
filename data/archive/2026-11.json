@@ -1,5 +1,75 @@
 [
   {
+    "id": "48f9e9da4bb9df98",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1743586.php",
+    "title": "Adventskonzert der Joseph-Schmidt-Musikschule am 12.12.2026",
+    "published_at": "2026-11-25T12:38:00.000Z",
+    "ingested_at": "2026-11-25T13:59:37.225Z",
+    "raw_excerpt": "* Zeit: 12. Dezember 2026, um 16:00 Uhr * Ort: Verklärungskirche Adlershof, Arndtstraße 11-15 in 12489 Berlin Die Joseph-Schmidt-Musikschule Treptow-Köpenick lädt herzlich am Samstag, dem 12. Dezember 2026, um 16:00 Uhr zum traditionellen Adventskonzert ein. Das Konzert findet in der Verklärungskirche Adlershof, Arndtstraße 11-15 in 12489 Berlin statt. Es werden sowohl solistische Beiträge wie auch große Ensembles der Musikschule zu hören sein.",
+    "ai_summary": "* Zeit: 12. Dezember 2026, um 16:00 Uhr * Ort: Verklärungskirche Adlershof, Arndtstraße 11-15 in 12489 Berlin Die Joseph-Schmidt-Musikschule Treptow-Köpenick lädt herzlich am Samstag, dem 12. Dezember 2026, um 16:00 Uhr zum traditionellen Adventskonzert ein. Das Konzert findet in der Verklärungskirche Adlershof, Arndtstraße 11-15 in 12489 Berlin statt. Es werden sowohl solistische Beiträge wie auch große Ensembles der Musikschule zu hören sein.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1743586.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Adlershof",
+    "addresses": [
+      "Arndtstraße 11"
+    ],
+    "street": "Arndtstraße",
+    "geocode_precision": "address",
+    "lat": 52.4830517,
+    "lng": 13.5890981,
+    "is_mock": false
+  },
+  {
+    "id": "b93f03c918f5448b",
+    "source_id": "bezirksamt-tk",
+    "source": "Bezirksamt Treptow-Köpenick",
+    "source_url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1743410.php",
+    "title": "Grüner Anger Plänterwald: In dieser Woche starten Bauarbeiten in der Grünanlage Galileistraße / Orionstraße",
+    "published_at": "2026-11-25T07:55:00.000Z",
+    "ingested_at": "2026-11-25T13:59:37.226Z",
+    "raw_excerpt": "Die Grünanlage „Galileistraße /Orionstraße“ auf dem zukünftigen „Grünen Anger“ im Plänterwald soll aufgewertet werden. Nun starten die ersten Bauarbeiten: Bereits in dieser Woche erfolgen zunächst Abbruch- und Rodungsarbeiten. Bis Mitte 2027 soll dann auf der rund 7.000 m² großen Grünfläche ein klimaresilienter, naturnaher und generationsübergreifender Begegnungsraum für Erholung, Bewegung und Naturerlebnis entstehen. Als zentrales landschaftliches Element wird eine ca.",
+    "ai_summary": "Die Grünanlage „Galileistraße /Orionstraße“ auf dem zukünftigen „Grünen Anger“ im Plänterwald soll aufgewertet werden. Nun starten die ersten Bauarbeiten: Bereits in dieser Woche erfolgen zunächst Abbruch- und Rodungsarbeiten. Bis Mitte 2027 soll dann auf der rund 7.000 m² großen Grünfläche ein klimaresilienter, naturnaher und generationsübergreifender Begegnungsraum für Erholung, Bewegung und Naturerlebnis entstehen. Als zentrales landschaftliches Element wird eine ca.",
+    "tags": [
+      "verwaltung",
+      "verkehr",
+      "infrastruktur"
+    ],
+    "location": "Treptow-Köpenick",
+    "location_relevant": true,
+    "local_relevance_score": 0.7,
+    "political_relevance_score": 0.3,
+    "election_relevant": false,
+    "ai_reasoning": "Offizielle Pressemitteilung des Bezirksamts Treptow-Köpenick.",
+    "source_refs": [
+      {
+        "name": "Bezirksamt Treptow-Köpenick",
+        "url": "https://www.berlin.de/ba-treptow-koepenick/aktuelles/pressemitteilungen/2026/pressemitteilung.1743410.php"
+      }
+    ],
+    "alias_ids": [],
+    "district": "Treptow",
+    "addresses": [],
+    "is_mock": false
+  },
+  {
     "id": "3789018901bfb565",
     "source_id": "berlin-events",
     "source": "Berlin.de Veranstaltungskalender",
@@ -309,7 +379,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "0ce6d51564748759",
@@ -342,7 +413,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "ce2d4f0a54c4e842",
@@ -380,7 +452,8 @@
     "geocode_precision": "address",
     "lat": 52.437899,
     "lng": 13.5511588,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "f64a5e64b4bab966",
@@ -410,7 +483,8 @@
     "alias_ids": [],
     "district": "Adlershof",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "88ba0afb18988b7c",
@@ -446,7 +520,8 @@
     "geocode_precision": "address",
     "lat": 52.4559155,
     "lng": 13.5970528,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "34ac9d19d1a8400e",
@@ -478,7 +553,7 @@
     "district": "Treptow",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-24T14:39:10.880Z"
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "3f91b107443f1cca",
@@ -511,7 +586,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "7524784eaa627e82",
@@ -1334,7 +1410,8 @@
     "alias_ids": [],
     "district": "Treptow",
     "addresses": [],
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "da3e8b0dbe16b08f",
@@ -1368,7 +1445,8 @@
     "geocode_precision": "area",
     "lat": 52.4450491,
     "lng": 13.5754153,
-    "is_mock": false
+    "is_mock": false,
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "8ae92f6c0fd5d100",
@@ -1404,7 +1482,7 @@
     "lat": 52.4546904,
     "lng": 13.5793944,
     "is_mock": false,
-    "last_seen_at": "2026-11-24T14:39:10.880Z"
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "14fc9d9fea3ff080",
@@ -1436,7 +1514,7 @@
     "district": "Adlershof",
     "addresses": [],
     "is_mock": false,
-    "last_seen_at": "2026-11-24T14:39:10.880Z"
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "ba9cb8d17c7db867",
@@ -1496,7 +1574,7 @@
     "event_end_at": "2026-11-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1536,7 +1614,7 @@
     "event_end_at": "2026-11-27T16:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -1610,7 +1688,7 @@
     "event_start_at": "2026-11-27T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Galerie Adlershof im Kulturzentrum Alte Schule",
     "source_refs": [
       {
@@ -1648,7 +1726,7 @@
     "event_start_at": "2026-11-27T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -1688,7 +1766,7 @@
     "event_end_at": "2026-11-27T12:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Kulturhaus baumschulenweg",
     "source_refs": [
       {
@@ -1728,7 +1806,7 @@
     "event_end_at": "2026-11-27T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -1767,7 +1845,7 @@
     "event_start_at": "2026-11-26T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Stadtteilbibliothek Friedrichshagen",
     "source_refs": [
       {
@@ -1807,7 +1885,7 @@
     "event_start_at": "2026-11-26T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -1996,7 +2074,7 @@
     "lat": 52.4450491,
     "lng": 13.5754153,
     "is_mock": false,
-    "last_seen_at": "2026-11-24T14:39:10.880Z"
+    "last_seen_at": "2026-11-25T13:59:34.780Z"
   },
   {
     "id": "676a14c83b91c3d7",
@@ -2088,7 +2166,7 @@
     "event_end_at": "2026-11-26T15:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Mittelpunktbibliothek Treptow",
     "source_refs": [
       {
@@ -2128,7 +2206,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2168,7 +2246,7 @@
     "event_end_at": "2026-11-26T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2206,7 +2284,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -2246,7 +2324,7 @@
     "event_start_at": "2026-11-26T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2286,7 +2364,7 @@
     "event_end_at": "2026-11-26T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2326,7 +2404,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Kulturküche Bohnsdorf",
     "source_refs": [
       {
@@ -2365,7 +2443,7 @@
     "event_start_at": "2026-11-25T16:30:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Mittelpunktbibliothek Köpenick",
     "source_refs": [
       {
@@ -2473,7 +2551,7 @@
     "event_end_at": "2026-11-25T18:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Galerie Rathaus Johannisthal",
     "source_refs": [
       {
@@ -2511,7 +2589,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
@@ -2551,7 +2629,7 @@
     "event_start_at": "2026-11-25T07:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Rathaus Treptow",
     "source_refs": [
       {
@@ -2591,7 +2669,7 @@
     "event_end_at": "2026-11-25T17:00:00.000Z",
     "event_date_precision": "time",
     "event_date_origin": "source",
-    "last_seen_at": "2026-11-24T14:39:10.880Z",
+    "last_seen_at": "2026-11-25T13:59:34.780Z",
     "venue": "Dokumentationszentrum NS-Zwangsarbeit",
     "source_refs": [
       {
