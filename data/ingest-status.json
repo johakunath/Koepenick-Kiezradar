@@ -1,27 +1,27 @@
 {
-  "last_run": "2026-11-26T13:39:03.783Z",
+  "last_run": "2026-11-27T13:35:09.666Z",
   "sources": {
     "polizei-berlin": {
       "status": "ok",
       "parsed": 5,
       "raw_items": 50,
-      "last_success_at": "2026-11-26T13:39:03.783Z",
-      "fetched": 1
+      "last_success_at": "2026-11-27T13:35:09.666Z",
+      "fetched": 0
     },
     "berlin-events": {
       "status": "warning",
       "error": "Kalender auf fünf Quellseiten begrenzt",
       "parsed": 50,
       "raw_items": 50,
-      "last_success_at": "2026-11-26T13:39:03.783Z",
-      "fetched": 11
+      "last_success_at": "2026-11-27T13:35:09.666Z",
+      "fetched": 8
     },
     "bezirksamt-tk": {
       "status": "ok",
       "parsed": 10,
       "raw_items": 10,
-      "last_success_at": "2026-11-26T13:39:03.783Z",
-      "fetched": 4
+      "last_success_at": "2026-11-27T13:35:09.666Z",
+      "fetched": 3
     },
     "bvv-tk": {
       "status": "skipped",
@@ -38,16 +38,16 @@
     },
     "amtsblatt-berlin": {
       "status": "ok",
-      "parsed": 3,
-      "raw_items": 3,
+      "parsed": 0,
+      "raw_items": 0,
       "last_success_at": "2026-11-26T13:39:03.783Z",
       "fetched": 0
     }
   },
-  "new_entries": 16,
+  "new_entries": 11,
   "dry_run": false,
   "ai_status": "error",
   "ai_error": "Gemini gemini-2.5-flash: HTTP 402",
   "total_entries": 250,
-  "archived_entries": 16
+  "archived_entries": 11
 }
